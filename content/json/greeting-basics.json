@@ -1,0 +1,117 @@
+{
+  "topic": {
+    "title": "인사 기본 표현",
+    "category": "일상생활",
+    "difficulty": "초급",
+    "description": "일상에서 가장 많이 사용하는 기본적인 인사 표현들을 배워보세요.",
+    "total_sentences": 5
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요! 반갑습니다."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "저는 김철수라고 합니다."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "만나서 정말 기뻐요."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "오늘 날씨가 정말 좋네요."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "어떻게 지내세요?"
+    }
+  ],
+  "english_scripts": [
+    {
+      "sentence_order": 1,
+      "english_text": "Hello! Nice to meet you.",
+      "chunked_text": "Hello! | Nice to meet you."
+    },
+    {
+      "sentence_order": 2,
+      "english_text": "My name is Kim Chulsoo.",
+      "chunked_text": "My name is | Kim Chulsoo."
+    },
+    {
+      "sentence_order": 3,
+      "english_text": "I'm really happy to meet you.",
+      "chunked_text": "I'm really happy | to meet you."
+    },
+    {
+      "sentence_order": 4,
+      "english_text": "The weather is really nice today.",
+      "chunked_text": "The weather is | really nice | today."
+    },
+    {
+      "sentence_order": 5,
+      "english_text": "How are you doing?",
+      "chunked_text": "How are you | doing?"
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "인사",
+        "반가움",
+        "이름 소개"
+      ],
+      "target_sentence": "Hello! Nice to meet you.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "김철수",
+        "자기소개"
+      ],
+      "target_sentence": "My name is Kim Chulsoo.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "기쁨",
+        "만남"
+      ],
+      "target_sentence": "I'm really happy to meet you.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "날씨",
+        "좋음",
+        "오늘"
+      ],
+      "target_sentence": "The weather is really nice today.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "안부",
+        "어떻게"
+      ],
+      "target_sentence": "How are you doing?",
+      "difficulty_percentage": 70
+    }
+  ]
+}

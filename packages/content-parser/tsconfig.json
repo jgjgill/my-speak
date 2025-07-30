@@ -1,0 +1,14 @@
+{
+	"extends": "@repo/typescript-config/base.json",
+	"compilerOptions": {
+		"lib": ["es2022"],
+		"types": ["node"],
+		"baseUrl": ".",
+		"paths": {
+			"@packages/*": ["../*"],
+			"@repo/*": ["../*"]
+		}
+	},
+	"include": ["src/**/*"],
+	"exclude": ["node_modules", "dist"]
+}
