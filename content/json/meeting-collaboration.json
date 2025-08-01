@@ -1,0 +1,228 @@
+{
+  "topic": {
+    "title": "회의 및 협업",
+    "category": "업무/학업",
+    "difficulty": "중급",
+    "description": "업무 환경에서 자주 사용되는 회의 진행과 팀 협업 표현들을 학습합니다.",
+    "total_sentences": 7
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "오늘 오후 3시에 중요한 프로젝트 회의가 있습니다."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "지난주에 우리가 논의했던 마케팅 전략에 대해 다시 검토해야 합니다."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "각 팀원들이 준비한 자료를 발표할 예정이며, 특히 예산 배분과 일정 관리가 핵심 이슈가 될 것 같습니다."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "만약 모든 부서가 협력한다면, 이번 프로젝트는 성공적으로 완료될 수 있을 것입니다."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "하지만 예상치 못한 문제가 발생할 가능성도 있으므로, 백업 계획을 미리 준비해 두는 것이 좋겠습니다."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "회의 후에는 결정된 사항들을 문서로 정리하여 모든 관련자에게 공유할 계획입니다."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "다음주까지 각자의 역할과 책임을 명확히 하고, 첫 번째 중간 점검을 실시하겠습니다."
+    }
+  ],
+  "english_scripts": [
+    {
+      "sentence_order": 1,
+      "english_text": "We have an important project meeting at 3 PM today.",
+      "chunked_text": "We have | an important project meeting | at 3 PM today."
+    },
+    {
+      "sentence_order": 2,
+      "english_text": "We need to review the marketing strategy that we discussed last week.",
+      "chunked_text": "We need to review | the marketing strategy | that we discussed last week."
+    },
+    {
+      "sentence_order": 3,
+      "english_text": "Each team member will present the materials they've prepared, and budget allocation and schedule management will likely be the key issues.",
+      "chunked_text": "Each team member | will present the materials | they've prepared, | and budget allocation | and schedule management | will likely be | the key issues."
+    },
+    {
+      "sentence_order": 4,
+      "english_text": "If all departments cooperate, this project can be completed successfully.",
+      "chunked_text": "If all departments | cooperate, | this project can be | completed successfully."
+    },
+    {
+      "sentence_order": 5,
+      "english_text": "However, there's also a possibility that unexpected problems might occur, so it would be good to prepare backup plans in advance.",
+      "chunked_text": "However, | there's also a possibility | that unexpected problems | might occur, | so it would be good to | prepare backup plans | in advance."
+    },
+    {
+      "sentence_order": 6,
+      "english_text": "After the meeting, we plan to organize the decided matters into documents and share them with all stakeholders.",
+      "chunked_text": "After the meeting, | we plan to organize | the decided matters | into documents | and share them | with all stakeholders."
+    },
+    {
+      "sentence_order": 7,
+      "english_text": "By next week, we'll clarify each person's role and responsibilities, and conduct the first interim review.",
+      "chunked_text": "By next week, | we'll clarify | each person's role | and responsibilities, | and conduct | the first interim review."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "오늘 오후",
+        "중요한 회의",
+        "프로젝트"
+      ],
+      "target_sentence": "We have an important project meeting at 3 PM today.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "지난주 논의",
+        "마케팅 전략",
+        "재검토"
+      ],
+      "target_sentence": "We need to review the marketing strategy that we discussed last week.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "각 팀원",
+        "자료 발표",
+        "예산 배분"
+      ],
+      "target_sentence": "Each team member will present the materials they've prepared, and budget allocation and schedule management will likely be the key issues.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "모든 부서 협력",
+        "프로젝트 성공"
+      ],
+      "target_sentence": "If all departments cooperate, this project can be completed successfully.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "예상치 못한 문제",
+        "백업 계획"
+      ],
+      "target_sentence": "However, there's also a possibility that unexpected problems might occur, so it would be good to prepare backup plans in advance.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "회의 후",
+        "문서 정리",
+        "관련자 공유"
+      ],
+      "target_sentence": "After the meeting, we plan to organize the decided matters into documents and share them with all stakeholders.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "다음주까지",
+        "역할 명확화",
+        "중간 점검"
+      ],
+      "target_sentence": "By next week, we'll clarify each person's role and responsibilities, and conduct the first interim review.",
+      "difficulty_percentage": 70
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 1,
+      "korean_phrase": "중요한 프로젝트 회의",
+      "english_phrase": "important project meeting",
+      "difficulty_level": 3
+    },
+    {
+      "sentence_order": 2,
+      "korean_phrase": "마케팅 전략",
+      "english_phrase": "marketing strategy",
+      "difficulty_level": 3
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "예산 배분",
+      "english_phrase": "budget allocation",
+      "difficulty_level": 3
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "일정 관리",
+      "english_phrase": "schedule management",
+      "difficulty_level": 3
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "모든 부서가 협력한다면",
+      "english_phrase": "all departments cooperate",
+      "difficulty_level": 3
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "예상치 못한 문제",
+      "english_phrase": "unexpected problems",
+      "difficulty_level": 3
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "백업 계획",
+      "english_phrase": "backup plans",
+      "difficulty_level": 3
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "문서로 정리하여",
+      "english_phrase": "organize into documents",
+      "difficulty_level": 3
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "관련자에게 공유",
+      "english_phrase": "share with all stakeholders",
+      "difficulty_level": 3
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "역할과 책임을 명확히",
+      "english_phrase": "clarify each person's role and responsibilities",
+      "difficulty_level": 3
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "중간 점검",
+      "english_phrase": "interim review",
+      "difficulty_level": 3
+    }
+  ]
+}
