@@ -128,6 +128,44 @@ export type Database = {
           },
         ]
       }
+      learning_points: {
+        Row: {
+          created_at: string | null
+          difficulty_level: number | null
+          english_phrase: string
+          id: string
+          korean_phrase: string
+          sentence_order: number
+          topic_id: string | null
+        }
+        Insert: {
+          created_at?: string | null
+          difficulty_level?: number | null
+          english_phrase: string
+          id?: string
+          korean_phrase: string
+          sentence_order: number
+          topic_id?: string | null
+        }
+        Update: {
+          created_at?: string | null
+          difficulty_level?: number | null
+          english_phrase?: string
+          id?: string
+          korean_phrase?: string
+          sentence_order?: number
+          topic_id?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "learning_points_topic_id_fkey"
+            columns: ["topic_id"]
+            isOneToOne: false
+            referencedRelation: "topics"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       topics: {
         Row: {
           category: string
@@ -189,6 +227,86 @@ export type Database = {
         Relationships: [
           {
             foreignKeyName: "user_progress_topic_id_fkey"
+            columns: ["topic_id"]
+            isOneToOne: false
+            referencedRelation: "topics"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      user_selected_points: {
+        Row: {
+          id: string
+          learning_point_id: string | null
+          selected_at: string | null
+          topic_id: string | null
+          user_id: string
+        }
+        Insert: {
+          id?: string
+          learning_point_id?: string | null
+          selected_at?: string | null
+          topic_id?: string | null
+          user_id?: string
+        }
+        Update: {
+          id?: string
+          learning_point_id?: string | null
+          selected_at?: string | null
+          topic_id?: string | null
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "user_selected_points_learning_point_id_fkey"
+            columns: ["learning_point_id"]
+            isOneToOne: false
+            referencedRelation: "learning_points"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "user_selected_points_topic_id_fkey"
+            columns: ["topic_id"]
+            isOneToOne: false
+            referencedRelation: "topics"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      user_translations: {
+        Row: {
+          created_at: string | null
+          id: string
+          korean_text: string
+          sentence_order: number
+          topic_id: string | null
+          updated_at: string | null
+          user_id: string
+          user_translation: string
+        }
+        Insert: {
+          created_at?: string | null
+          id?: string
+          korean_text: string
+          sentence_order: number
+          topic_id?: string | null
+          updated_at?: string | null
+          user_id?: string
+          user_translation: string
+        }
+        Update: {
+          created_at?: string | null
+          id?: string
+          korean_text?: string
+          sentence_order?: number
+          topic_id?: string | null
+          updated_at?: string | null
+          user_id?: string
+          user_translation?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "user_translations_topic_id_fkey"
             columns: ["topic_id"]
             isOneToOne: false
             referencedRelation: "topics"

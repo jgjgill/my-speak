@@ -16,6 +16,10 @@
     "dev": {
       "cache": false,
       "persistent": true
+    },
+    "update-types": {
+      "cache": false,
+      "outputs": ["supabase-types.ts"]
     }
   }
 }

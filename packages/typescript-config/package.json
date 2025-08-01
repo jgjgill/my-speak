@@ -5,5 +5,11 @@
 	"license": "MIT",
 	"publishConfig": {
 		"access": "public"
+	},
+	"scripts": {
+		"update-types": "dotenv -e .env.local -- sh -c 'npx supabase gen types typescript --project-id \"$PROJECT_REF\" --schema public > supabase-types.ts'"
+	},
+	"devDependencies": {
+		"dotenv-cli": "^7.4.4"
 	}
 }
