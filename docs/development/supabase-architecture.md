@@ -5,6 +5,12 @@
 영어 학습 5단계 시스템을 위한 Supabase 데이터베이스 설계 문서입니다.
 이 문서는 모노레포의 `@repo/typescript-config` 패키지에서 관리되며, 모든 앱에서 일관된 타입 정의를 사용할 수 있도록 합니다.
 
+## Auth 시스템
+
+### 구글 OAuth 연동
+- Supabase Auth를 통한 구글 OAuth 로그인
+- 자동 프로필 생성 및 RLS 보안 정책 적용
+
 ## 핵심 테이블 구조
 
 ### 1. topics (학습 주제 관리)
@@ -82,11 +88,28 @@ CREATE TABLE keyword_speeches (
 - `keywords`: 키워드 배열
 - `difficulty_percentage`: 정보 제공 비율 (70%, 50%, 30%, null)
 
-### 5. user_progress (학습 진도 추적)
+### 5. profiles (사용자 프로필)
+```sql
+CREATE TABLE profiles (
+  id UUID REFERENCES auth.users PRIMARY KEY,
+  email TEXT,
+  display_name TEXT,
+  avatar_url TEXT,
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT now(),
+  updated_at TIMESTAMP WITH TIME ZONE DEFAULT now()
+);
+```
+
+**역할**: 사용자 프로필 정보를 관리합니다.
+- `id`: Supabase Auth users 테이블과 연결
+- `display_name`: 사용자 표시 이름 (구글 OAuth에서 자동 설정)
+- `avatar_url`: 프로필 이미지 URL
+
+### 6. user_progress (학습 진도 추적)
 ```sql
 CREATE TABLE user_progress (
   id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
-  user_id TEXT NOT NULL, -- 임시로 TEXT (향후 auth 연동)
+  user_id UUID REFERENCES auth.users(id) ON DELETE CASCADE,
   topic_id UUID REFERENCES topics(id) ON DELETE CASCADE,
   current_stage INTEGER DEFAULT 1 CHECK (current_stage >= 1 AND current_stage <= 5),
   completed_sentences INTEGER[] DEFAULT '{}', -- 완료한 문장 번호들
@@ -97,11 +120,12 @@ CREATE TABLE user_progress (
 ```
 
 **역할**: 사용자별 학습 진도를 추적합니다.
+- `user_id`: Supabase Auth 사용자 참조
 - `current_stage`: 현재 진행 중인 학습 단계
 - `completed_sentences`: 완료한 문장들의 순서 번호 배열
 - `practice_count`: 연습 횟수
 
-### 6. learning_points (학습 포인트 관리)
+### 7. learning_points (학습 포인트 관리)
 ```sql
 CREATE TABLE learning_points (
   id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
@@ -120,40 +144,109 @@ CREATE TABLE learning_points (
 - `english_phrase`: 대응하는 영어 표현 (영어 스크립트와 정확히 일치)
 - `difficulty_level`: 난이도 (1=쉬움 ~ 5=어려움)
 
-### 7. user_selected_points (사용자 선택 학습 포인트)
+### 8. user_selected_points (사용자 선택 학습 포인트)
 ```sql
 CREATE TABLE user_selected_points (
   id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
-  user_id TEXT NOT NULL DEFAULT 'test-user',
+  user_id UUID REFERENCES auth.users(id) ON DELETE CASCADE,
   topic_id UUID REFERENCES topics(id) ON DELETE CASCADE,
   learning_point_id UUID REFERENCES learning_points(id) ON DELETE CASCADE,
-  selected_at TIMESTAMP WITH TIME ZONE DEFAULT now()
+  selected_at TIMESTAMP WITH TIME ZONE DEFAULT now(),
+  CONSTRAINT unique_user_learning_point UNIQUE(user_id, learning_point_id)
 );
 ```
 
 **역할**: 사용자가 1단계에서 어려워한 표현들을 추적합니다.
+- `user_id`: Supabase Auth 사용자 참조
 - `learning_point_id`: 사용자가 선택한 학습 포인트
 - `selected_at`: 선택한 시점
+- **중복 방지**: 같은 사용자가 같은 학습 포인트를 중복 선택하지 않도록 제약
 
-### 8. user_translations (사용자 번역 저장)
+### 9. user_translations (사용자 번역 저장)
 ```sql
 CREATE TABLE user_translations (
   id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
-  user_id TEXT NOT NULL DEFAULT 'test-user',
+  user_id UUID REFERENCES auth.users(id) ON DELETE CASCADE,
   topic_id UUID REFERENCES topics(id) ON DELETE CASCADE,
   sentence_order INTEGER NOT NULL,
   korean_text TEXT NOT NULL,
   user_translation TEXT NOT NULL,
+  is_completed BOOLEAN DEFAULT false,
   created_at TIMESTAMP WITH TIME ZONE DEFAULT now(),
-  updated_at TIMESTAMP WITH TIME ZONE DEFAULT now()
+  updated_at TIMESTAMP WITH TIME ZONE DEFAULT now(),
+  CONSTRAINT unique_user_sentence_translation UNIQUE(user_id, topic_id, sentence_order)
 );
 ```
 
 **역할**: 사용자가 입력한 번역을 저장하고 학습 이력을 관리합니다.
+- `user_id`: Supabase Auth 사용자 참조
 - `sentence_order`: 번역한 문장의 순서
 - `korean_text`: 원본 한글 문장
 - `user_translation`: 사용자가 입력한 영어 번역
+- `is_completed`: 번역 완료 여부 (1단계 토글 기능)
 - `updated_at`: 수정 시점 (트리거로 자동 업데이트)
+- **중복 방지**: 같은 사용자가 같은 문장을 중복 번역하지 않도록 제약
+
+## 보안 정책 (RLS - Row Level Security)
+
+### 사용자 데이터 보호
+
+모든 사용자 관련 테이블에 RLS가 활성화되어 있어 각 사용자는 자신의 데이터만 접근할 수 있습니다.
+
+```sql
+-- profiles 테이블 보안 정책
+ALTER TABLE profiles ENABLE ROW LEVEL SECURITY;
+
+CREATE POLICY "Users can view own profile" ON profiles
+  FOR SELECT USING (auth.uid() = id);
+CREATE POLICY "Users can update own profile" ON profiles
+  FOR UPDATE USING (auth.uid() = id);
+
+-- user_translations 테이블 보안 정책
+ALTER TABLE user_translations ENABLE ROW LEVEL SECURITY;
+
+CREATE POLICY "Users can view own translations" ON user_translations
+  FOR SELECT USING (auth.uid() = user_id);
+CREATE POLICY "Users can insert own translations" ON user_translations
+  FOR INSERT WITH CHECK (auth.uid() = user_id);
+CREATE POLICY "Users can update own translations" ON user_translations
+  FOR UPDATE USING (auth.uid() = user_id);
+
+-- user_selected_points 테이블 보안 정책
+ALTER TABLE user_selected_points ENABLE ROW LEVEL SECURITY;
+
+CREATE POLICY "Users can view own selected points" ON user_selected_points
+  FOR SELECT USING (auth.uid() = user_id);
+CREATE POLICY "Users can insert own selected points" ON user_selected_points
+  FOR INSERT WITH CHECK (auth.uid() = user_id);
+CREATE POLICY "Users can delete own selected points" ON user_selected_points
+  FOR DELETE USING (auth.uid() = user_id);
+```
+
+### 자동 프로필 생성
+새 사용자가 OAuth로 가입하면 자동으로 프로필이 생성됩니다.
+
+```sql
+-- 새 사용자 프로필 자동 생성 함수
+CREATE OR REPLACE FUNCTION public.handle_new_user()
+RETURNS trigger AS $$
+BEGIN
+  INSERT INTO public.profiles (id, email, display_name, avatar_url)
+  VALUES (
+    new.id,
+    new.email,
+    new.raw_user_meta_data->>'full_name',
+    new.raw_user_meta_data->>'avatar_url'
+  );
+  return new;
+END;
+$$ LANGUAGE plpgsql SECURITY DEFINER;
+
+-- 트리거 설정
+CREATE TRIGGER on_auth_user_created
+  AFTER INSERT ON auth.users
+  FOR EACH ROW EXECUTE PROCEDURE public.handle_new_user();
+```
 
 ## 인덱스 설계
 
@@ -169,6 +262,7 @@ CREATE INDEX idx_learning_points_topic_id ON learning_points(topic_id);
 CREATE INDEX idx_learning_points_sentence_order ON learning_points(sentence_order);
 CREATE INDEX idx_user_selected_points_user_topic ON user_selected_points(user_id, topic_id);
 CREATE INDEX idx_user_translations_user_topic ON user_translations(user_id, topic_id);
+CREATE INDEX idx_profiles_email ON profiles(email);
 ```
 
 ## 데이터 플로우

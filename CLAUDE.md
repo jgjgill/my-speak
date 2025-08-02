@@ -6,6 +6,25 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 영어 스피킹 학습 플랫폼 `my-speak`는 한→영 번역과 키워드 스피치를 통한 5단계 학습 시스템을 제공합니다. Turborepo 기반 모노레포 구조로 웹 앱과 네이티브 앱, 그리고 공유 패키지들을 관리합니다.
 
+## 개발 환경
+
+### 패키지 매니저
+- **pnpm** 사용
+- 워크스페이스 기반 모노레포 관리
+
+### 의존성 설치
+```bash
+# 전체 프로젝트 의존성 설치
+pnpm install
+
+# 특정 워크스페이스에 의존성 추가
+pnpm add [package] --filter=web
+pnpm add [package] --filter=content-parser
+
+# 개발 의존성 추가
+pnpm add -D [package] --filter=web
+```
+
 ## 개발 명령어
 
 ### 기본 개발 워크플로우
