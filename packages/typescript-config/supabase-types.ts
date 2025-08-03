@@ -166,6 +166,33 @@ export type Database = {
           },
         ]
       }
+      profiles: {
+        Row: {
+          avatar_url: string | null
+          created_at: string | null
+          display_name: string | null
+          email: string | null
+          id: string
+          updated_at: string | null
+        }
+        Insert: {
+          avatar_url?: string | null
+          created_at?: string | null
+          display_name?: string | null
+          email?: string | null
+          id: string
+          updated_at?: string | null
+        }
+        Update: {
+          avatar_url?: string | null
+          created_at?: string | null
+          display_name?: string | null
+          email?: string | null
+          id?: string
+          updated_at?: string | null
+        }
+        Relationships: []
+      }
       topics: {
         Row: {
           category: string
@@ -247,7 +274,7 @@ export type Database = {
           learning_point_id?: string | null
           selected_at?: string | null
           topic_id?: string | null
-          user_id?: string
+          user_id: string
         }
         Update: {
           id?: string
@@ -277,6 +304,7 @@ export type Database = {
         Row: {
           created_at: string | null
           id: string
+          is_completed: boolean | null
           korean_text: string
           sentence_order: number
           topic_id: string | null
@@ -287,16 +315,18 @@ export type Database = {
         Insert: {
           created_at?: string | null
           id?: string
+          is_completed?: boolean | null
           korean_text: string
           sentence_order: number
           topic_id?: string | null
           updated_at?: string | null
-          user_id?: string
+          user_id: string
           user_translation: string
         }
         Update: {
           created_at?: string | null
           id?: string
+          is_completed?: boolean | null
           korean_text?: string
           sentence_order?: number
           topic_id?: string | null
