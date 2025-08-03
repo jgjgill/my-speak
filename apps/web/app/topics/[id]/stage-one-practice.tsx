@@ -59,6 +59,14 @@ export default function StageOnePractice({
 		return points.find((point) => point.korean_phrase === highlightedText);
 	};
 
+	// 사용자가 선택한 학습 포인트인지 확인
+	const isSelectedLearningPoint = (sentenceOrder: number, text: string) => {
+		const pointInfo = getLearningPointInfo(sentenceOrder, text);
+		if (!pointInfo) return false;
+		const pointKey = `${sentenceOrder}-${pointInfo.id}`;
+		return selectedPoints.has(pointKey);
+	};
+
 	// 번역 입력 처리
 	const handleTranslationChange = (
 		sentenceOrder: number,
@@ -187,11 +195,16 @@ export default function StageOnePractice({
 				<h4 className="font-semibold mb-2">학습 포인트 안내</h4>
 				<div className="flex flex-wrap gap-4 text-sm">
 					<div className="flex items-center gap-2">
-						<span className="bg-yellow-200 px-2 py-1 rounded">강조 표현</span>
-						<span>
-							← 중요 학습 포인트 (클릭하면 영어 표현 확인 & 로그인 유저는 정보
-							저장)
+						<span className="bg-yellow-200 px-2 py-1 rounded">
+							기본 학습 포인트
 						</span>
+						<span>← 클릭하면 영어 표현 확인</span>
+					</div>
+					<div className="flex items-center gap-2">
+						<span className="bg-orange-200 px-2 py-1 rounded">
+							내가 선택한 포인트
+						</span>
+						<span>← 체크포인트로도 저장됨 (로그인 사용자만)</span>
 					</div>
 				</div>
 			</div>
@@ -200,6 +213,14 @@ export default function StageOnePractice({
 				const sentenceOrder = script.sentence_order;
 				const progress = userProgress[sentenceOrder];
 				const isCompleted = progress?.isCompleted || false;
+				const isSelectedHighlight = getLearningPointKeywords(
+					sentenceOrder,
+				).some((keyword) => isSelectedLearningPoint(sentenceOrder, keyword));
+
+				const highlightVariants = {
+					default: "bg-yellow-200",
+					selected: "bg-orange-200",
+				};
 
 				return (
 					<div
@@ -221,7 +242,7 @@ export default function StageOnePractice({
 								<Highlighter
 									searchWords={getLearningPointKeywords(sentenceOrder)}
 									textToHighlight={script.korean_text}
-									highlightClassName="bg-yellow-200 px-1 rounded cursor-pointer hover:bg-yellow-300 transition-colors"
+									highlightClassName={`${highlightVariants[isSelectedHighlight ? "selected" : "default"]} px-1 rounded cursor-pointer hover:bg-yellow-300 transition-colors`}
 									highlightTag="mark"
 									onClick={(e: React.MouseEvent<HTMLElement>) => {
 										const target = e.target as HTMLElement;
@@ -269,7 +290,7 @@ export default function StageOnePractice({
 								</button>
 								{!user && (
 									<span className="text-xs text-gray-500 self-center">
-										로그인하면 진행률이 저장됩니다
+										(로그인하면 번역 내용을 저장할 수 있습니다.)
 									</span>
 								)}
 							</div>
