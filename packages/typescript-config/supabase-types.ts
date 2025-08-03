@@ -131,7 +131,6 @@ export type Database = {
       learning_points: {
         Row: {
           created_at: string | null
-          difficulty_level: number | null
           english_phrase: string
           id: string
           korean_phrase: string
@@ -140,7 +139,6 @@ export type Database = {
         }
         Insert: {
           created_at?: string | null
-          difficulty_level?: number | null
           english_phrase: string
           id?: string
           korean_phrase: string
@@ -149,7 +147,6 @@ export type Database = {
         }
         Update: {
           created_at?: string | null
-          difficulty_level?: number | null
           english_phrase?: string
           id?: string
           korean_phrase?: string

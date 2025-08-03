@@ -190,7 +190,6 @@ CREATE TABLE learning_points (
   sentence_order INTEGER NOT NULL,
   korean_phrase TEXT NOT NULL,
   english_phrase TEXT NOT NULL,
-  difficulty_level INTEGER DEFAULT 3 CHECK (difficulty_level BETWEEN 1 AND 5),
   created_at TIMESTAMP WITH TIME ZONE DEFAULT now()
 );
 ```
@@ -199,7 +198,6 @@ CREATE TABLE learning_points (
 - `sentence_order`: 해당 학습 포인트가 포함된 문장 순서
 - `korean_phrase`: 한글 핵심 표현
 - `english_phrase`: 대응하는 영어 표현 (영어 스크립트와 정확히 일치)
-- `difficulty_level`: 난이도 (1=쉬움 ~ 5=어려움)
 
 ### 8. user_selected_points (사용자 선택 학습 포인트)
 
