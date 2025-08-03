@@ -91,9 +91,7 @@ function parseKoreanScripts(
 ) {
 	const sentences = lines
 		.slice(1) // 제목 제외
-		.filter(
-			(line) => line.trim() && !line.startsWith("#") && !line.startsWith("**"),
-		)
+		.filter((line) => line.trim() && !line.startsWith("#"))
 		.filter((line) => !line.includes("연습용") && !line.includes("미션"));
 
 	sentences.forEach((sentence, index) => {
@@ -119,7 +117,6 @@ function parseKoreanScripts(
 					sentence_order: sentenceOrder,
 					korean_phrase: koreanPhrase,
 					english_phrase: englishPhrase,
-					difficulty_level: 3,
 				});
 
 				// 마크업 제거하여 깔끔한 텍스트로 변환

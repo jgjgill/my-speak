@@ -5,7 +5,7 @@
     "category": "일상생활",
     "difficulty": "중급",
     "description": "해외여행 시 공항에서 필요한 실용적인 영어 표현들을 학습합니다.",
-    "total_sentences": 3
+    "total_sentences": 10
   },
   "korean_scripts": [
     {
@@ -14,11 +14,39 @@
     },
     {
       "sentence_order": 2,
-      "korean_text": "면세점에서 기념품을 좀 사고 싶습니다."
+      "korean_text": "수하물을 체크인 할 때 무게 제한이 걱정됩니다."
     },
     {
       "sentence_order": 3,
+      "korean_text": "보안 검색대를 통과하는 데 시간이 오래 걸릴 수 있어요."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "면세점에서 기념품을 좀 사고 싶습니다."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "탑승구가 어디인지 찾아야 해요."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "지연될 가능성도 있으니까 미리 공항에 도착하는 게 좋겠어요."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "여권과 비자를 다시 한번 확인해 보겠습니다."
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "환전을 좀 더 해야 할 것 같아요."
+    },
+    {
+      "sentence_order": 9,
       "korean_text": "도착하면 호텔 셔틀버스를 찾아야 합니다."
+    },
+    {
+      "sentence_order": 10,
+      "korean_text": "현지 심카드도 구매할 계획이에요."
     }
   ],
   "english_scripts": [
@@ -494,20 +522,52 @@
     {
       "sentence_order": 1,
       "korean_phrase": "비행기 표를 확인",
-      "english_phrase": "check my flight ticket",
-      "difficulty_level": 3
+      "english_phrase": "check my flight ticket"
     },
     {
       "sentence_order": 2,
-      "korean_phrase": "기념품을 좀 사고",
-      "english_phrase": "buy some souvenirs",
-      "difficulty_level": 3
+      "korean_phrase": "수하물을 체크인",
+      "english_phrase": "check in my luggage"
     },
     {
       "sentence_order": 3,
+      "korean_phrase": "보안 검색대",
+      "english_phrase": "security checkpoint"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "기념품을 좀 사고",
+      "english_phrase": "buy some souvenirs"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "탑승구가 어디인지",
+      "english_phrase": "where the boarding gate is"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "지연될 가능성",
+      "english_phrase": "possibility of delays"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "여권과 비자",
+      "english_phrase": "passport and visa"
+    },
+    {
+      "sentence_order": 8,
+      "korean_phrase": "환전을 좀 더",
+      "english_phrase": "exchange some more money"
+    },
+    {
+      "sentence_order": 9,
       "korean_phrase": "호텔 셔틀버스",
-      "english_phrase": "hotel shuttle bus",
-      "difficulty_level": 3
+      "english_phrase": "hotel shuttle bus"
+    },
+    {
+      "sentence_order": 10,
+      "korean_phrase": "현지 심카드",
+      "english_phrase": "local SIM card"
     }
   ]
 }
