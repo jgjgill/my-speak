@@ -1,0 +1,512 @@
+{
+  "topic": {
+    "title": "공항 및 여행 준비",
+    "category": "일상생활",
+    "difficulty": "중급",
+    "description": "해외여행 시 공항에서 필요한 실용적인 영어 표현들을 학습합니다.",
+    "total_sentences": 3
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "오늘 밤 11시 비행기 표를 확인해야 합니다."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "면세점에서 기념품을 좀 사고 싶습니다."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "도착하면 호텔 셔틀버스를 찾아야 합니다."
+    }
+  ],
+  "english_scripts": [
+    {
+      "sentence_order": 1,
+      "english_text": "I need to check my flight ticket at 11 PM tonight.",
+      "chunked_text": "I need to check | my flight ticket | at 11 PM tonight."
+    },
+    {
+      "sentence_order": 2,
+      "english_text": "I'm worried about the weight limit when I check in my luggage.",
+      "chunked_text": "I'm worried about | the weight limit | when I check in | my luggage."
+    },
+    {
+      "sentence_order": 3,
+      "english_text": "It might take a long time to pass through the security checkpoint.",
+      "chunked_text": "It might take | a long time | to pass through | the security checkpoint."
+    },
+    {
+      "sentence_order": 4,
+      "english_text": "I want to buy some souvenirs at the duty-free shop.",
+      "chunked_text": "I want to buy | some souvenirs | at the duty-free shop."
+    },
+    {
+      "sentence_order": 5,
+      "english_text": "I need to find where the boarding gate is.",
+      "chunked_text": "I need to find | where the boarding gate is."
+    },
+    {
+      "sentence_order": 6,
+      "english_text": "It would be good to arrive at the airport early since there's also a possibility of delays.",
+      "chunked_text": "It would be good to | arrive at the airport early | since there's also | a possibility of delays."
+    },
+    {
+      "sentence_order": 7,
+      "english_text": "I'll check my passport and visa once more.",
+      "chunked_text": "I'll check | my passport and visa | once more."
+    },
+    {
+      "sentence_order": 8,
+      "english_text": "I think I need to exchange some more money.",
+      "chunked_text": "I think I need to | exchange some more money."
+    },
+    {
+      "sentence_order": 9,
+      "english_text": "When I arrive, I need to find the hotel shuttle bus.",
+      "chunked_text": "When I arrive, | I need to find | the hotel shuttle bus."
+    },
+    {
+      "sentence_order": 10,
+      "english_text": "I'm also planning to buy a local SIM card.",
+      "chunked_text": "I'm also planning to | buy a local SIM card."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "오늘 밤 11시",
+        "비행기 표 확인"
+      ],
+      "target_sentence": "I need to check my flight ticket at 11 PM tonight.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "수하물 체크인",
+        "무게 제한 걱정"
+      ],
+      "target_sentence": "I'm worried about the weight limit when I check in my luggage.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "보안 검색대 통과",
+        "시간 오래 걸림"
+      ],
+      "target_sentence": "It might take a long time to pass through the security checkpoint.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "면세점에서 기념품 구매 희망"
+      ],
+      "target_sentence": "I want to buy some souvenirs at the duty-free shop.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "탑승구 위치 찾기 필요"
+      ],
+      "target_sentence": "I need to find where the boarding gate is.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "지연 가능성",
+        "미리 공항 도착"
+      ],
+      "target_sentence": "It would be good to arrive at the airport early since there's also a possibility of delays.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "여권과 비자 재확인"
+      ],
+      "target_sentence": "I'll check my passport and visa once more.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 8,
+      "keywords": [
+        "추가 환전 필요"
+      ],
+      "target_sentence": "I think I need to exchange some more money.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 9,
+      "keywords": [
+        "도착 후 호텔 셔틀버스 찾기"
+      ],
+      "target_sentence": "When I arrive, I need to find the hotel shuttle bus.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 10,
+      "keywords": [
+        "현지 심카드 구매 계획"
+      ],
+      "target_sentence": "I'm also planning to buy a local SIM card.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "밤 11시",
+        "표 확인"
+      ],
+      "target_sentence": "I need to check my flight ticket at 11 PM tonight.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "수하물",
+        "무게 제한"
+      ],
+      "target_sentence": "I'm worried about the weight limit when I check in my luggage.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "보안 검색",
+        "시간"
+      ],
+      "target_sentence": "It might take a long time to pass through the security checkpoint.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "면세점",
+        "기념품"
+      ],
+      "target_sentence": "I want to buy some souvenirs at the duty-free shop.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 15,
+      "keywords": [
+        "탑승구 찾기"
+      ],
+      "target_sentence": "I need to find where the boarding gate is.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 16,
+      "keywords": [
+        "지연",
+        "미리 도착"
+      ],
+      "target_sentence": "It would be good to arrive at the airport early since there's also a possibility of delays.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 17,
+      "keywords": [
+        "여권 비자 확인"
+      ],
+      "target_sentence": "I'll check my passport and visa once more.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 18,
+      "keywords": [
+        "환전 필요"
+      ],
+      "target_sentence": "I think I need to exchange some more money.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 19,
+      "keywords": [
+        "셔틀버스 찾기"
+      ],
+      "target_sentence": "When I arrive, I need to find the hotel shuttle bus.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 20,
+      "keywords": [
+        "심카드 구매"
+      ],
+      "target_sentence": "I'm also planning to buy a local SIM card.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "11시",
+        "표"
+      ],
+      "target_sentence": "I need to check my flight ticket at 11 PM tonight.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 22,
+      "keywords": [
+        "수하물",
+        "무게"
+      ],
+      "target_sentence": "I'm worried about the weight limit when I check in my luggage.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 23,
+      "keywords": [
+        "보안",
+        "시간"
+      ],
+      "target_sentence": "It might take a long time to pass through the security checkpoint.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 24,
+      "keywords": [
+        "면세점"
+      ],
+      "target_sentence": "I want to buy some souvenirs at the duty-free shop.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 25,
+      "keywords": [
+        "탑승구"
+      ],
+      "target_sentence": "I need to find where the boarding gate is.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 26,
+      "keywords": [
+        "지연"
+      ],
+      "target_sentence": "It would be good to arrive at the airport early since there's also a possibility of delays.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 27,
+      "keywords": [
+        "여권"
+      ],
+      "target_sentence": "I'll check my passport and visa once more.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 28,
+      "keywords": [
+        "환전"
+      ],
+      "target_sentence": "I think I need to exchange some more money.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 29,
+      "keywords": [
+        "셔틀"
+      ],
+      "target_sentence": "When I arrive, I need to find the hotel shuttle bus.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 30,
+      "keywords": [
+        "심카드"
+      ],
+      "target_sentence": "I'm also planning to buy a local SIM card.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 31,
+      "keywords": [
+        "flight",
+        "check"
+      ],
+      "target_sentence": "I need to check my flight ticket at 11 PM tonight.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 32,
+      "keywords": [
+        "luggage",
+        "weight"
+      ],
+      "target_sentence": "I'm worried about the weight limit when I check in my luggage.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 33,
+      "keywords": [
+        "security",
+        "time"
+      ],
+      "target_sentence": "It might take a long time to pass through the security checkpoint.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 34,
+      "keywords": [
+        "duty-free"
+      ],
+      "target_sentence": "I want to buy some souvenirs at the duty-free shop.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 35,
+      "keywords": [
+        "gate"
+      ],
+      "target_sentence": "I need to find where the boarding gate is.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 36,
+      "keywords": [
+        "delays"
+      ],
+      "target_sentence": "It would be good to arrive at the airport early since there's also a possibility of delays.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 37,
+      "keywords": [
+        "passport"
+      ],
+      "target_sentence": "I'll check my passport and visa once more.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 38,
+      "keywords": [
+        "exchange"
+      ],
+      "target_sentence": "I think I need to exchange some more money.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 39,
+      "keywords": [
+        "shuttle"
+      ],
+      "target_sentence": "When I arrive, I need to find the hotel shuttle bus.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 40,
+      "keywords": [
+        "SIM card"
+      ],
+      "target_sentence": "I'm also planning to buy a local SIM card.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 1,
+      "korean_phrase": "비행기 표를 확인",
+      "english_phrase": "check my flight ticket",
+      "difficulty_level": 3
+    },
+    {
+      "sentence_order": 2,
+      "korean_phrase": "기념품을 좀 사고",
+      "english_phrase": "buy some souvenirs",
+      "difficulty_level": 3
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "호텔 셔틀버스",
+      "english_phrase": "hotel shuttle bus",
+      "difficulty_level": 3
+    }
+  ]
+}
