@@ -69,6 +69,7 @@ export async function parseMarkdownContent(
 
 	return {
 		topic: {
+			id: frontmatter.topic_id || undefined,
 			title: frontmatter.title || "제목 없음",
 			category: frontmatter.category || "기타",
 			difficulty: frontmatter.difficulty || "초급",
@@ -187,19 +188,28 @@ function parseKeywordSpeeches(
 	// 각 라인을 순차적으로 처리
 	for (const line of lines.slice(1)) {
 		const trimmedLine = line.trim();
-		
+
 		// 레벨 헤더 감지 및 업데이트
 		if (trimmedLine.startsWith("## 레벨")) {
 			if (trimmedLine.includes("레벨 1") || trimmedLine.includes("70%")) {
 				currentLevel = 1;
 				currentDifficultyPercentage = 70;
-			} else if (trimmedLine.includes("레벨 2") || trimmedLine.includes("50%")) {
+			} else if (
+				trimmedLine.includes("레벨 2") ||
+				trimmedLine.includes("50%")
+			) {
 				currentLevel = 2;
 				currentDifficultyPercentage = 50;
-			} else if (trimmedLine.includes("레벨 3") || trimmedLine.includes("30%")) {
+			} else if (
+				trimmedLine.includes("레벨 3") ||
+				trimmedLine.includes("30%")
+			) {
 				currentLevel = 3;
 				currentDifficultyPercentage = 30;
-			} else if (trimmedLine.includes("레벨 4") || trimmedLine.includes("영어")) {
+			} else if (
+				trimmedLine.includes("레벨 4") ||
+				trimmedLine.includes("영어")
+			) {
 				currentLevel = 4;
 				currentDifficultyPercentage = 0; // 영어 키워드만 제공
 			}
@@ -238,16 +248,15 @@ export async function saveToJsonFile(data: ParsedContent, outputPath: string) {
 // Supabase 업로드 함수
 export async function uploadToSupabase(data: ParsedContent) {
 	try {
-		// 1. Topic 삽입
+		// 1. Topic 구성
 		const { data: topicData, error: topicError } = await supabase
 			.from("topics")
-			.insert([data.topic])
+			.upsert(data.topic)
 			.select()
 			.single();
 
 		if (topicError) throw topicError;
 
-		console.log("Topic inserted:", topicData);
 		const topicId = topicData.id;
 
 		// 2. Korean Scripts 삽입
@@ -259,7 +268,9 @@ export async function uploadToSupabase(data: ParsedContent) {
 
 			const { error: koreanError } = await supabase
 				.from("korean_scripts")
-				.insert(koreanScriptsWithTopicId);
+				.upsert(koreanScriptsWithTopicId, {
+					onConflict: "topic_id,sentence_order",
+				});
 
 			if (koreanError) throw koreanError;
 			console.log("Korean scripts inserted:", data.korean_scripts.length);
@@ -274,7 +285,9 @@ export async function uploadToSupabase(data: ParsedContent) {
 
 			const { error: englishError } = await supabase
 				.from("english_scripts")
-				.insert(englishScriptsWithTopicId);
+				.upsert(englishScriptsWithTopicId, {
+					onConflict: "topic_id,sentence_order",
+				});
 
 			if (englishError) throw englishError;
 			console.log("English scripts inserted:", data.english_scripts.length);
@@ -291,7 +304,9 @@ export async function uploadToSupabase(data: ParsedContent) {
 
 			const { error: keywordError } = await supabase
 				.from("keyword_speeches")
-				.insert(keywordSpeechesWithTopicId);
+				.upsert(keywordSpeechesWithTopicId, {
+					onConflict: "topic_id,stage,level,sequence_order",
+				});
 
 			if (keywordError) throw keywordError;
 			console.log("Keyword speeches inserted:", data.keyword_speeches.length);
@@ -306,7 +321,9 @@ export async function uploadToSupabase(data: ParsedContent) {
 
 			const { error: learningError } = await supabase
 				.from("learning_points")
-				.insert(learningPointsWithTopicId);
+				.upsert(learningPointsWithTopicId, {
+					onConflict: "topic_id,sentence_order,korean_phrase",
+				});
 
 			if (learningError) throw learningError;
 			console.log("Learning points inserted:", data.learning_points.length);
