@@ -1,8 +1,9 @@
 import type { PropsWithChildren } from "react";
 
 import "./global.css";
-import { AuthProvider } from "./contexts/auth-context";
+import Link from "next/link";
 import AuthButton from "./components/auth-button";
+import { AuthProvider } from "./contexts/auth-context";
 
 export default function Layout({ children }: PropsWithChildren) {
 	return (
@@ -12,9 +13,9 @@ export default function Layout({ children }: PropsWithChildren) {
 					<header className="border-b bg-white">
 						<div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
 							<h1 className="text-xl font-bold">
-								<a href="/" className="hover:text-blue-600">
+								<Link href="/" className="hover:text-blue-600">
 									My Speak
-								</a>
+								</Link>
 							</h1>
 							<AuthButton />
 						</div>

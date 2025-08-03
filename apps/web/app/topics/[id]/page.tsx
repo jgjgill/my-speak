@@ -241,7 +241,7 @@ export default async function TopicDetailPage({ params }: Props) {
 					{/* 전체 끊어읽기 스크립트 */}
 					<div className="mt-6 p-3 border">
 						<h4 className="font-bold mb-3">전체 끊어읽기 스크립트</h4>
-						<p className="text-sm mb-3">이제 전체를 한 번에 따라 읽어보세요:</p>
+						<p className="text-sm mb-3">이제 전체를 한 번에 따라 읽어보세요.</p>
 						<div>
 							{englishScripts.map((script, index) => (
 								<span key={script.id}>

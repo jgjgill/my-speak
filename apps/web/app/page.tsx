@@ -9,7 +9,7 @@ export default function Home() {
 				<div>
 					<h2 className="text-xl font-semibold mb-2">테스트 페이지</h2>
 					<Link href="/topics" className="text-blue-600 hover:underline">
-						→ Test Content (MD → JSON → Supabase → Web 플로우 테스트)
+						학습 주제 목록
 					</Link>
 				</div>
 			</div>
