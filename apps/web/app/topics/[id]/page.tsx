@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { createClient } from "../../utils/supabase/server";
+import StageOnePractice from "./stage-one-practice";
 
 type Props = {
 	params: Promise<{ id: string }>;
@@ -20,8 +21,18 @@ export default async function TopicDetailPage({ params }: Props) {
 		notFound();
 	}
 
-	// 관련 데이터 가져오기
-	const [koreanResult, englishResult, keywordResult] = await Promise.all([
+	const {
+		data: { user },
+	} = await supabase.auth.getUser();
+
+	const [
+		koreanResult,
+		englishResult,
+		keywordResult,
+		learningPointsResult,
+		userTranslationsResult,
+		userSelectedPointsResult,
+	] = await Promise.all([
 		supabase
 			.from("korean_scripts")
 			.select("*")
@@ -39,11 +50,79 @@ export default async function TopicDetailPage({ params }: Props) {
 			.select("*")
 			.eq("topic_id", id)
 			.order("sequence_order"),
+
+		supabase
+			.from("learning_points")
+			.select("*")
+			.eq("topic_id", id)
+			.order("sentence_order"),
+
+		user
+			? supabase
+					.from("user_translations")
+					.select("*")
+					.eq("user_id", user.id)
+					.eq("topic_id", id)
+			: Promise.resolve({ data: null, error: null }),
+
+		user
+			? supabase
+					.from("user_selected_points")
+					.select("learning_point_id")
+					.eq("user_id", user.id)
+					.eq("topic_id", id)
+			: Promise.resolve({ data: null, error: null }),
 	]);
 
 	const koreanScripts = koreanResult.data || [];
 	const englishScripts = englishResult.data || [];
 	const keywordSpeeches = keywordResult.data || [];
+	const learningPoints = learningPointsResult.data || [];
+	const userTranslations = userTranslationsResult.data || [];
+	const userSelectedPoints = userSelectedPointsResult.data || [];
+
+	const learningPointsByOrder = learningPoints.reduce(
+		(acc, point) => {
+			if (!acc[point.sentence_order]) {
+				acc[point.sentence_order] = [];
+			}
+
+			acc[point.sentence_order]?.push(point);
+			return acc;
+		},
+		{} as Record<number, typeof learningPoints>,
+	);
+
+	const initialUserProgress = userTranslations.reduce(
+		(acc, translation) => {
+			acc[translation.sentence_order] = {
+				translation: translation.user_translation,
+				isCompleted: translation.is_completed || false,
+				timestamp: translation.updated_at
+					? new Date(translation.updated_at)
+					: undefined,
+			};
+			return acc;
+		},
+		{} as Record<
+			number,
+			{ translation?: string; isCompleted?: boolean; timestamp?: Date }
+		>,
+	);
+
+	const initialSelectedPoints = new Set(
+		userSelectedPoints
+			.map((point) => {
+				// learning_point_id로 해당 학습 포인트의 sentence_order 찾기
+				const learningPoint = learningPoints.find(
+					(lp) => lp.id === point.learning_point_id,
+				);
+				return learningPoint
+					? `${learningPoint.sentence_order}-${point.learning_point_id}`
+					: "";
+			})
+			.filter(Boolean),
+	);
 
 	return (
 		<div className="p-4">
@@ -81,28 +160,14 @@ export default async function TopicDetailPage({ params }: Props) {
 					완벽하지 않아도 괜찮습니다!
 				</div>
 
-				{/* 문장별 번역 연습 */}
-				<div className="mb-4">
-					<h3 className="font-bold mb-3">문장별 번역 연습</h3>
-					{koreanScripts.map((script, index) => (
-						<div key={script.id} className="mb-4 p-3 border">
-							<div className="mb-3">
-								<span className="text-sm font-medium">한글 {index + 1}</span>
-								<p className="mt-1">{script.korean_text}</p>
-							</div>
-							<div>
-								<label className="text-sm font-medium mb-2 block">
-									영어 번역을 입력하세요:
-									<textarea
-										className="w-full p-2 border rounded resize-none"
-										rows={2}
-										placeholder="여기에 영어 번역을 입력하세요..."
-									/>
-								</label>
-							</div>
-						</div>
-					))}
-				</div>
+				{/* 문장별 번역 연습 - 클라이언트 컴포넌트 */}
+				<StageOnePractice
+					koreanScripts={koreanScripts}
+					learningPointsByOrder={learningPointsByOrder}
+					topicId={id}
+					initialUserProgress={initialUserProgress}
+					initialSelectedPoints={initialSelectedPoints}
+				/>
 			</div>
 
 			{/* 2단계: 영어 스크립트 */}
