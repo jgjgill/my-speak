@@ -52,6 +52,7 @@ I'm also planning to | buy a local SIM card.
 # 4단계: 키워드 스피치
 
 ## 레벨 1 (70% 정보)
+
 오늘 밤 11시, 비행기 표 확인 → I need to check my flight ticket at 11 PM tonight.
 수하물 체크인, 무게 제한 걱정 → I'm worried about the weight limit when I check in my luggage.
 보안 검색대 통과, 시간 오래 걸림 → It might take a long time to pass through the security checkpoint.
@@ -64,6 +65,7 @@ I'm also planning to | buy a local SIM card.
 현지 심카드 구매 계획 → I'm also planning to buy a local SIM card.
 
 ## 레벨 2 (50% 정보)
+
 밤 11시, 표 확인 → I need to check my flight ticket at 11 PM tonight.
 수하물, 무게 제한 → I'm worried about the weight limit when I check in my luggage.
 보안 검색, 시간 → It might take a long time to pass through the security checkpoint.
@@ -76,6 +78,7 @@ I'm also planning to | buy a local SIM card.
 심카드 구매 → I'm also planning to buy a local SIM card.
 
 ## 레벨 3 (30% 정보)
+
 11시, 표 → I need to check my flight ticket at 11 PM tonight.
 수하물, 무게 → I'm worried about the weight limit when I check in my luggage.
 보안, 시간 → It might take a long time to pass through the security checkpoint.
@@ -88,6 +91,7 @@ I'm also planning to | buy a local SIM card.
 심카드 → I'm also planning to buy a local SIM card.
 
 ## 레벨 4 (영어 키워드)
+
 flight, check → I need to check my flight ticket at 11 PM tonight.
 luggage, weight → I'm worried about the weight limit when I check in my luggage.
 security, time → It might take a long time to pass through the security checkpoint.
