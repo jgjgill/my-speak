@@ -180,24 +180,52 @@ function parseKeywordSpeeches(
 	lines: string[],
 	keyword_speeches: ParsedContent["keyword_speeches"],
 ) {
-	const keywordLines = lines.slice(1).filter((line) => line.includes("→"));
+	let currentLevel = 1;
+	let currentDifficultyPercentage = 70;
+	let sequenceOrder = 1;
 
-	keywordLines.forEach((line, index) => {
-		const [keywordPart = "", targetSentence = ""] = line
-			.split("→")
-			.map((s) => s.trim());
+	// 각 라인을 순차적으로 처리
+	for (const line of lines.slice(1)) {
+		const trimmedLine = line.trim();
+		
+		// 레벨 헤더 감지 및 업데이트
+		if (trimmedLine.startsWith("## 레벨")) {
+			if (trimmedLine.includes("레벨 1") || trimmedLine.includes("70%")) {
+				currentLevel = 1;
+				currentDifficultyPercentage = 70;
+			} else if (trimmedLine.includes("레벨 2") || trimmedLine.includes("50%")) {
+				currentLevel = 2;
+				currentDifficultyPercentage = 50;
+			} else if (trimmedLine.includes("레벨 3") || trimmedLine.includes("30%")) {
+				currentLevel = 3;
+				currentDifficultyPercentage = 30;
+			} else if (trimmedLine.includes("레벨 4") || trimmedLine.includes("영어")) {
+				currentLevel = 4;
+				currentDifficultyPercentage = 0; // 영어 키워드만 제공
+			}
+			continue;
+		}
 
-		const keywords = keywordPart.split(",").map((k) => k.trim());
+		// 키워드 스피치 라인 처리 (→ 포함하는 라인)
+		if (trimmedLine.includes("→")) {
+			const [keywordPart = "", targetSentence = ""] = trimmedLine
+				.split("→")
+				.map((s) => s.trim());
 
-		keyword_speeches.push({
-			stage: 4,
-			level: 1,
-			sequence_order: index + 1,
-			keywords,
-			target_sentence: targetSentence,
-			difficulty_percentage: 70,
-		});
-	});
+			const keywords = keywordPart.split(",").map((k) => k.trim());
+
+			keyword_speeches.push({
+				stage: 4,
+				level: currentLevel,
+				sequence_order: sequenceOrder,
+				keywords,
+				target_sentence: targetSentence,
+				difficulty_percentage: currentDifficultyPercentage,
+			});
+
+			sequenceOrder++;
+		}
+	}
 }
 
 // JSON 저장 함수
