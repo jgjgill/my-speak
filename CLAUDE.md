@@ -9,6 +9,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## 개발 환경
 
 ### 패키지 매니저
+
 - **pnpm** 사용
 - 워크스페이스 기반 모노레포 관리
 
@@ -28,6 +29,7 @@ pnpm add -D [package] --filter=web
 ## 개발 명령어
 
 ### 기본 개발 워크플로우
+
 ```bash
 # 전체 프로젝트 개발 서버 실행
 pnpm dev
@@ -47,6 +49,7 @@ turbo build --filter=web
 ```
 
 ### 코드 품질 관리
+
 - **Linting**: Biome 사용 (탭 인덴트, 더블 쿼트)
 - **타입 체크**: TypeScript strict 모드
 - **자동 수정**: `pnpm format-and-lint:fix`
@@ -66,6 +69,7 @@ packages/
 ```
 
 ### 웹 애플리케이션 (apps/web/)
+
 - **프레임워크**: Next.js 15 + React 19
 - **스타일링**: Tailwind CSS v4
 - **데이터베이스**: Supabase (SSR 패키지 사용)
@@ -85,13 +89,21 @@ packages/
 
 - 환경 변수: `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`
 
-### 데이터베이스 스키마
+### Google OAuth 인증 설정
+
+- Supabase 대시보드에서 Google OAuth 설정
+- Authentication > Providers > Google 활성화
+- Google Cloud Console에서 OAuth 2.0 클라이언트 ID 생성
+- 승인된 리디렉션 URI: `https://[PROJECT_ID].supabase.co/auth/v1/callback`
+
+### 데이터베이스 관리
 
 - [Supabase 아키텍처 설계](docs/development/supabase-architecture.md)
 
 ## 중요 파일 위치
 
 ### 설정 파일
+
 - `turbo.json` - Turborepo 태스크 설정
 - `biome.json` - 코드 포맷팅 및 린팅 규칙
 - `pnpm-workspace.yaml` - 워크스페이스 정의

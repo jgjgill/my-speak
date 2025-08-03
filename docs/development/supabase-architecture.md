@@ -7,13 +7,63 @@
 
 ## Auth 시스템
 
-### 구글 OAuth 연동
-- Supabase Auth를 통한 구글 OAuth 로그인
-- 자동 프로필 생성 및 RLS 보안 정책 적용
+### Google OAuth 연동
+
+#### 설정 과정
+
+1. **Google Cloud Console 설정**
+
+- OAuth 2.0 클라이언트 ID 생성
+- 승인된 리디렉션 URI: `https://[PROJECT_ID].supabase.co/auth/v1/callback`
+
+2. **Supabase 설정**
+
+- Authentication > Providers > Google 활성화
+- Google Client ID와 Client Secret 입력
+
+3. **Next.js 구현**
+
+
+```typescript
+// AuthProvider 컨텍스트 사용
+const { signInWithGoogle, signOut, user } = useAuth();
+
+// 로그인
+await signInWithGoogle();
+
+// 로그아웃  
+await signOut();
+  ```
+
+4. **Next.js 서버사이드 인증 (Middleware)**
+
+```typescript
+// middleware.ts - 서버사이드 세션 관리
+export async function middleware(request: NextRequest) {
+  const supabase = createServerClient(/* config */);
+  const { data: { user } } = await supabase.auth.getUser();
+  
+  // 인증 필요 라우트 보호
+  if (!user && request.nextUrl.pathname.startsWith('/protected')) {
+    return NextResponse.redirect('/login');
+  }
+  
+  return response;
+}
+```
+
+#### 인증 플로우
+
+1. 사용자가 "구글로 로그인" 클릭
+2. Google OAuth 페이지로 리디렉션
+3. 사용자 동의 후 Supabase callback URL로 복귀
+4. 자동 프로필 생성 (트리거 실행)
+5. RLS 정책 적용으로 개인 데이터 보호
 
 ## 핵심 테이블 구조
 
 ### 1. topics (학습 주제 관리)
+
 ```sql
 CREATE TABLE topics (
   id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
@@ -27,11 +77,13 @@ CREATE TABLE topics (
 ```
 
 **역할**: 각 학습 주제의 메타데이터를 관리합니다.
+
 - `category`: 콘텐츠 분류를 위한 카테고리
 - `difficulty`: 학습 난이도 (초급/중급/고급)
 - `total_sentences`: 해당 주제의 총 문장 수
 
 ### 2. korean_scripts (1단계: 한글 스크립트)
+
 ```sql
 CREATE TABLE korean_scripts (
   id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
@@ -48,6 +100,7 @@ CREATE TABLE korean_scripts (
 - `korean_text`: 번역할 한글 문장
 
 ### 3. english_scripts (2-3단계: 영어 번역 + 읽기 연습)
+
 ```sql
 CREATE TABLE english_scripts (
   id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
@@ -67,6 +120,7 @@ CREATE TABLE english_scripts (
 - `grammar_notes`: 문법 설명 및 학습 포인트
 
 ### 4. keyword_speeches (4-5단계: 키워드 스피치)
+
 ```sql
 CREATE TABLE keyword_speeches (
   id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
@@ -89,6 +143,7 @@ CREATE TABLE keyword_speeches (
 - `difficulty_percentage`: 정보 제공 비율 (70%, 50%, 30%, null)
 
 ### 5. profiles (사용자 프로필)
+
 ```sql
 CREATE TABLE profiles (
   id UUID REFERENCES auth.users PRIMARY KEY,
@@ -106,6 +161,7 @@ CREATE TABLE profiles (
 - `avatar_url`: 프로필 이미지 URL
 
 ### 6. user_progress (학습 진도 추적)
+
 ```sql
 CREATE TABLE user_progress (
   id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
@@ -126,6 +182,7 @@ CREATE TABLE user_progress (
 - `practice_count`: 연습 횟수
 
 ### 7. learning_points (학습 포인트 관리)
+
 ```sql
 CREATE TABLE learning_points (
   id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
@@ -145,6 +202,7 @@ CREATE TABLE learning_points (
 - `difficulty_level`: 난이도 (1=쉬움 ~ 5=어려움)
 
 ### 8. user_selected_points (사용자 선택 학습 포인트)
+
 ```sql
 CREATE TABLE user_selected_points (
   id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
@@ -162,7 +220,20 @@ CREATE TABLE user_selected_points (
 - `selected_at`: 선택한 시점
 - **중복 방지**: 같은 사용자가 같은 학습 포인트를 중복 선택하지 않도록 제약
 
+**upsert 사용 예시**:
+```typescript
+// 학습 포인트 선택/해제 토글
+const { error } = await supabase.from("user_selected_points").upsert({
+  user_id: user.id,
+  topic_id: topicId,
+  learning_point_id: pointId,
+}, {
+  onConflict: 'user_id,learning_point_id'
+});
+```
+
 ### 9. user_translations (사용자 번역 저장)
+
 ```sql
 CREATE TABLE user_translations (
   id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
@@ -186,6 +257,36 @@ CREATE TABLE user_translations (
 - `is_completed`: 번역 완료 여부 (1단계 토글 기능)
 - `updated_at`: 수정 시점 (트리거로 자동 업데이트)
 - **중복 방지**: 같은 사용자가 같은 문장을 중복 번역하지 않도록 제약
+
+**중요: 데이터 무결성을 위한 필수 제약조건**
+
+```sql
+-- 반드시 추가해야 하는 unique 제약조건
+ALTER TABLE user_translations 
+ADD CONSTRAINT unique_user_topic_sentence 
+UNIQUE (user_id, topic_id, sentence_order);
+```
+
+**upsert 사용 예시**:
+
+```typescript
+// 번역 저장/업데이트 (onConflict 필수)
+const { error } = await supabase.from("user_translations").upsert({
+  user_id: user.id,
+  topic_id: topicId,
+  sentence_order: sentenceOrder,
+  korean_text: koreanText,
+  user_translation: translation,
+  is_completed: isCompleted,
+}, {
+  onConflict: 'user_id,topic_id,sentence_order'
+});
+```
+
+**주의사항**:
+
+- `onConflict` 없이 upsert를 사용하면 Primary Key(`id`)만 체크하여 항상 새 레코드가 생성됨
+- unique 제약조건이 있어도 `onConflict`를 명시하지 않으면 중복 생성 시도 후 에러 발생
 
 ## 보안 정책 (RLS - Row Level Security)
 
@@ -224,6 +325,7 @@ CREATE POLICY "Users can delete own selected points" ON user_selected_points
 ```
 
 ### 자동 프로필 생성
+
 새 사용자가 OAuth로 가입하면 자동으로 프로필이 생성됩니다.
 
 ```sql
@@ -268,16 +370,19 @@ CREATE INDEX idx_profiles_email ON profiles(email);
 ## 데이터 플로우
 
 ### 1. 콘텐츠 생성 플로우
+
 ```
 MD 파일 작성 → content-parser → JSON 변환 → Supabase 테이블 삽입
 ```
 
 ### 2. 학습 플로우
+
 ```
 topics 조회 → 단계별 데이터 로드 → 사용자 인터랙션 → progress 업데이트
 ```
 
 ### 3. 단계별 데이터 사용
+
 - **1단계**: `topics` + `korean_scripts` + `learning_points` (사용자 선택 → `user_selected_points`)
 - **2단계**: `topics` + `korean_scripts` + `english_scripts` + `learning_points` (하이라이트 표시)
 - **3단계**: `topics` + `english_scripts` (chunked_text 활용) + `learning_points` (하이라이트)
@@ -285,6 +390,7 @@ topics 조회 → 단계별 데이터 로드 → 사용자 인터랙션 → prog
 - **5단계**: `topics` + `keyword_speeches`(stage=5)
 
 ### 4. 개인화 학습 플로우
+
 ```
 1단계: 사용자가 어려운 표현 선택 → user_selected_points 저장
 2-4단계: 선택된 학습 포인트를 하이라이트 표시
@@ -296,6 +402,7 @@ topics 조회 → 단계별 데이터 로드 → 사용자 인터랙션 → prog
 ### 타입 생성 및 관리
 
 #### 설정 파일
+
 `packages/typescript-config/.env.local`:
 ```bash
 # Supabase Configuration for TypeScript Types Generation
@@ -305,6 +412,7 @@ PROJECT_REF=your-project-ref
 ```
 
 #### 자동화된 타입 생성
+
 ```bash
 # typescript-config 패키지에서 실행
 cd packages/typescript-config
@@ -315,12 +423,14 @@ turbo run update-types --filter=@repo/typescript-config
 ```
 
 #### 수동 타입 생성 (backup)
+
 ```bash
 cd packages/typescript-config
 npx supabase gen types typescript --project-id "your-project-ref" --schema public > supabase-types.ts
 ```
 
 ### 패키지 구조
+
 ```
 packages/typescript-config/
 ├── .env.local                  # Supabase 연결 설정 (타입 생성용)
@@ -337,12 +447,14 @@ packages/typescript-config/
 ### 개발 워크플로우
 
 #### 스키마 변경 시
-2. **마이그레이션 적용**: Supabase 대시보드 또는 CLI로 적용
-3. **타입 업데이트**: `pnpm update-types` 실행
-4. **코드 수정**: 새로운 타입에 맞게 코드 업데이트
-5. **테스트**: 전체 프로젝트 빌드 및 타입 체크
+
+1. **마이그레이션 적용**: Supabase 대시보드 또는 CLI로 적용
+2. **타입 업데이트**: `pnpm update-types` 실행
+3. **코드 수정**: 새로운 타입에 맞게 코드 업데이트
+4. **테스트**: 전체 프로젝트 빌드 및 타입 체크
 
 #### 자동화 권장사항
+
 - Git hooks에 `update-types` 추가 고려
 - CI/CD에서 타입 일관성 검증
 - 스키마 변경 시 자동 PR 생성
@@ -350,6 +462,7 @@ packages/typescript-config/
 ### 사용 예시
 
 #### apps/web에서
+
 ```typescript
 import { Database, Tables } from "@repo/typescript-config/supabase-types";
 import { LearningStage, TopicWithProgress } from "@repo/typescript-config/learning-types";
@@ -358,12 +471,14 @@ type Topic = Tables<'topics'>;
 ```
 
 #### packages/content-parser에서
+
 ```typescript
 import { Database } from "@repo/typescript-config/supabase-types";
 import { ParsedLearningContent } from "@repo/typescript-config/learning-types";
 ```
 
 #### apps/native에서
+
 ```typescript
 import { Tables } from "@repo/typescript-config/supabase-types";
 import { UserProgressData } from "@repo/typescript-config/learning-types";
@@ -372,17 +487,20 @@ import { UserProgressData } from "@repo/typescript-config/learning-types";
 ## 확장 고려사항
 
 ### 향후 추가 가능한 테이블
+
 - `vocabulary_notes`: 막힌 단어 상세 해설
 - `audio_files`: 발음 가이드 오디오
 - `user_recordings`: 사용자 연습 녹음
 - `feedback_data`: AI 피드백 데이터
 
 ### 타입 안전성 보장
+
 - Supabase CLI로 자동 타입 생성
 - 모노레포 전체에서 일관된 타입 사용
 - 빌드 시점에 타입 검증
 
 ### 성능 최적화
+
 - 적절한 인덱스 설정으로 조회 성능 보장
 - CASCADE DELETE로 데이터 일관성 유지
 - UNIQUE 제약조건으로 중복 방지

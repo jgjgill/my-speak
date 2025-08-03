@@ -13,6 +13,7 @@
 ## 1️⃣ 마크다운 파일 작성
 
 ### 파일 위치
+
 ```
 content/source/
 ├── meeting-collaboration.md     # 회의 및 협업 (중급)
@@ -62,11 +63,13 @@ This is | the third sentence.
 ### 핵심 구문: **phrase**{translation}
 
 학습 포인트 표시를 위한 특별 구문:
+
 ```markdown
 **한글 핵심 표현**{corresponding english phrase}
 ```
 
 **예시:**
+
 ```markdown
 오늘 오후 3시에 **중요한 프로젝트 회의**{important project meeting}가 있습니다.
 지난주에 우리가 논의했던 **마케팅 전략**{marketing strategy}에 대해 다시 검토해야 합니다.
