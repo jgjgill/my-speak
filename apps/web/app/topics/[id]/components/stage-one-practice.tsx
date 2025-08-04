@@ -3,8 +3,8 @@
 import type { Tables } from "@repo/typescript-config/supabase-types";
 import { useState } from "react";
 import Highlighter from "react-highlight-words";
-import { useAuth } from "../../contexts/auth-context";
-import { createClient } from "../../utils/supabase/client";
+import { useAuth } from "../../../contexts/auth-context";
+import { createClient } from "../../../utils/supabase/client";
 
 type KoreanScript = Tables<"korean_scripts">;
 type LearningPoint = Tables<"learning_points">;
@@ -42,7 +42,6 @@ export default function StageOnePractice({
 	const { user } = useAuth();
 	const supabase = createClient();
 
-	// 문장별 학습 포인트 키워드 추출
 	const getLearningPointKeywords = (sentenceOrder: number) => {
 		const points = learningPointsByOrder[sentenceOrder] || [];
 		return points
@@ -50,7 +49,6 @@ export default function StageOnePractice({
 			.filter((phrase) => phrase !== null && phrase !== undefined) as string[];
 	};
 
-	// 학습 포인트 정보 가져오기
 	const getLearningPointInfo = (
 		sentenceOrder: number,
 		highlightedText: string,
@@ -59,7 +57,6 @@ export default function StageOnePractice({
 		return points.find((point) => point.korean_phrase === highlightedText);
 	};
 
-	// 사용자가 선택한 학습 포인트인지 확인
 	const isSelectedLearningPoint = (sentenceOrder: number, text: string) => {
 		const pointInfo = getLearningPointInfo(sentenceOrder, text);
 		if (!pointInfo) return false;
@@ -67,7 +64,6 @@ export default function StageOnePractice({
 		return selectedPoints.has(pointKey);
 	};
 
-	// 번역 입력 처리
 	const handleTranslationChange = (
 		sentenceOrder: number,
 		translation: string,
@@ -81,12 +77,10 @@ export default function StageOnePractice({
 		}));
 	};
 
-	// 번역 완료 토글
 	const handleTranslationToggle = async (sentenceOrder: number) => {
 		const progress = userProgress[sentenceOrder];
 		const newIsCompleted = !progress?.isCompleted;
 
-		// 상태 업데이트
 		setUserProgress((prev) => ({
 			...prev,
 			[sentenceOrder]: {
