@@ -206,20 +206,44 @@ export default async function TopicDetailPage({ params }: Props) {
 				{/* 문장별 한영 비교 */}
 				<div className="mb-6">
 					<h3 className="font-bold mb-3">문장별 한영 비교</h3>
-					{koreanScripts.map((script, index) => (
-						<div key={script.id} className="mb-4 p-2 border">
-							<div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-								<div>
-									<span className="text-sm">한글 {index + 1}</span>
-									<p>{script.korean_text}</p>
-								</div>
-								<div>
-									<span className="text-sm">영어 {index + 1}</span>
-									<p>{englishScripts[index]?.english_text}</p>
+					{koreanScripts.map((script, index) => {
+						const userTranslation = userTranslations.find(
+							(t) => t.sentence_order === script.sentence_order,
+						);
+
+						return (
+							<div key={script.id} className="mb-4 p-2 border">
+								<span className="font-semibold">문장 {index + 1}</span>
+								<div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+									<div>
+										<span className="text-sm font-medium">한글</span>
+										<p>{script.korean_text}</p>
+									</div>
+
+									<div>
+										<span className="text-sm font-medium">번역</span>
+										<p>{englishScripts[index]?.english_text}</p>
+									</div>
+
+									<details>
+										<summary className="cursor-pointer text-sm font-light">
+											내 번역
+										</summary>
+										{userTranslation && (
+											<p className="bg-blue-50 text-sm p-2 font-light rounded">
+												{userTranslation.user_translation}
+											</p>
+										)}
+										{!userTranslation && (
+											<p className="text-gray-500 text-sm italic font-light">
+												로그인시 번역한 내용도 같이 볼 수 있어요.
+											</p>
+										)}
+									</details>
 								</div>
 							</div>
-						</div>
-					))}
+						);
+					})}
 				</div>
 
 				{/* 끊어읽기 */}
