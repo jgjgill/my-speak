@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import Highlighter from "react-highlight-words";
 import { createClient } from "../../utils/supabase/server";
 import StageOnePractice from "./stage-one-practice";
 
@@ -124,6 +125,37 @@ export default async function TopicDetailPage({ params }: Props) {
 			.filter(Boolean),
 	);
 
+	// 선택된 학습 포인트 데이터를 문장별로 그룹화
+	const selectedLearningPointsByOrder = userSelectedPoints.reduce(
+		(acc, point) => {
+			const learningPoint = learningPoints.find(
+				(lp) => lp.id === point.learning_point_id,
+			);
+			if (learningPoint) {
+				if (!acc[learningPoint.sentence_order]) {
+					acc[learningPoint.sentence_order] = [];
+				}
+				acc[learningPoint.sentence_order]?.push(learningPoint);
+			}
+			return acc;
+		},
+		{} as Record<number, typeof learningPoints>,
+	);
+
+	// 문장별 선택된 한글 키워드 추출
+	const getSelectedKoreanKeywords = (sentenceOrder: number) => {
+		const points = selectedLearningPointsByOrder[sentenceOrder] || [];
+		return points.map((point) => point.korean_phrase);
+	};
+
+	// 문장별 선택된 영어 키워드 추출
+	const getSelectedEnglishKeywords = (sentenceOrder: number) => {
+		const points = selectedLearningPointsByOrder[sentenceOrder] || [];
+		return points.map((point) => point.english_phrase);
+	};
+
+	console.log(englishScripts);
+
 	return (
 		<div className="p-4">
 			{/* 헤더 */}
@@ -206,9 +238,24 @@ export default async function TopicDetailPage({ params }: Props) {
 				{/* 문장별 한영 비교 */}
 				<div className="mb-6">
 					<h3 className="font-bold mb-3">문장별 한영 비교</h3>
+
+					<div className="mb-4 p-3 bg-orange-50 border border-orange-200 rounded">
+						<h4 className="font-semibold mb-2">1단계에서 체크한 학습 포인트</h4>
+						<div className="flex items-center gap-2 text-sm">
+							<span className="bg-orange-200 px-2 py-1 rounded">강조 표현</span>
+							<span>← 로그인 사용자만 표시됩니다</span>
+						</div>
+					</div>
+
 					{koreanScripts.map((script, index) => {
 						const userTranslation = userTranslations.find(
 							(t) => t.sentence_order === script.sentence_order,
+						);
+						const selectedKoreanKeywords = getSelectedKoreanKeywords(
+							script.sentence_order,
+						);
+						const selectedEnglishKeywords = getSelectedEnglishKeywords(
+							script.sentence_order,
 						);
 
 						return (
@@ -217,12 +264,26 @@ export default async function TopicDetailPage({ params }: Props) {
 								<div className="grid grid-cols-1 md:grid-cols-3 gap-3">
 									<div>
 										<span className="text-sm font-medium">한글</span>
-										<p>{script.korean_text}</p>
+										<div className="leading-relaxed">
+											<Highlighter
+												searchWords={selectedKoreanKeywords}
+												textToHighlight={script.korean_text}
+												highlightClassName="bg-orange-200 px-1 rounded"
+											/>
+										</div>
 									</div>
 
 									<div>
 										<span className="text-sm font-medium">번역</span>
-										<p>{englishScripts[index]?.english_text}</p>
+										<div className="leading-relaxed">
+											<Highlighter
+												searchWords={selectedEnglishKeywords}
+												textToHighlight={
+													englishScripts[index]?.english_text || ""
+												}
+												highlightClassName="bg-orange-200 px-1 rounded"
+											/>
+										</div>
 									</div>
 
 									<details>
@@ -283,23 +344,45 @@ export default async function TopicDetailPage({ params }: Props) {
 				<h2 className="text-xl font-bold mb-4">3단계: 스피킹 연습</h2>
 				<p className="mb-4">한글을 보고 영어로 말해보세요.</p>
 
-				{koreanScripts.map((script, index) => (
-					<div key={script.id} className="mb-3 p-2 border">
-						<div className="mb-2">
-							<strong>
-								{index + 1}. {script.korean_text}
-							</strong>
+				{/* 안내 문구 */}
+				{user && userSelectedPoints.length > 0 && (
+					<div className="mb-4 p-3 bg-orange-50 border border-orange-200 rounded">
+						<h4 className="font-semibold mb-2">1단계에서 체크한 학습 포인트</h4>
+						<div className="flex items-center gap-2 text-sm">
+							<span className="bg-orange-200 px-2 py-1 rounded">강조 표현</span>
+							<span>← 로그인 사용자만 표시됩니다</span>
 						</div>
-						<details>
-							<summary className="cursor-pointer text-blue-600">
-								답안 보기
-							</summary>
-							<p className="mt-2 p-2 bg-gray-100">
-								{englishScripts[index]?.chunked_text}
-							</p>
-						</details>
 					</div>
-				))}
+				)}
+
+				{koreanScripts.map((script, index) => {
+					const selectedKoreanKeywords = getSelectedKoreanKeywords(
+						script.sentence_order,
+					);
+
+					return (
+						<div key={script.id} className="mb-3 p-2 border">
+							<div className="mb-2">
+								<strong className="mr-2">{index + 1}.</strong>
+								<span className="text-lg leading-relaxed">
+									<Highlighter
+										searchWords={selectedKoreanKeywords}
+										textToHighlight={script.korean_text}
+										highlightClassName="bg-orange-200 px-1 rounded"
+									/>
+								</span>
+							</div>
+							<details>
+								<summary className="cursor-pointer text-blue-600">
+									답안 보기
+								</summary>
+								<p className="mt-2 p-2 bg-gray-100">
+									{englishScripts[index]?.chunked_text}
+								</p>
+							</details>
+						</div>
+					);
+				})}
 			</div>
 
 			{/* 4단계: 키워드 스피치 */}
