@@ -160,8 +160,7 @@ content/json/
     {
       "sentence_order": 1,
       "korean_phrase": "중요한 프로젝트 회의",
-      "english_phrase": "important project meeting",
-      "difficulty_level": 3
+      "english_phrase": "important project meeting"
     }
   ]
 }
