@@ -87,6 +87,7 @@ export default async function StageFourContainer({
 												{metadata.description}
 											</p>
 										</div>
+
 										<div className="flex items-center gap-2">
 											<span className="text-sm bg-white px-2 py-1 rounded border">
 												{levelSpeeches.length}개 문항
@@ -109,6 +110,7 @@ export default async function StageFourContainer({
 													<span className="font-semibold text-sm bg-gray-100 px-2 py-1 rounded">
 														{index + 1}번
 													</span>
+
 													<span className="text-sm text-gray-500">
 														난이도:{" "}
 														{speech.difficulty_percentage
@@ -116,10 +118,12 @@ export default async function StageFourContainer({
 															: "영어키워드"}
 													</span>
 												</div>
+
 												<div className="flex flex-wrap gap-1">
 													<span className="text-sm font-medium mr-2">
 														키워드:
 													</span>
+
 													{speech.keywords.map((keyword) => (
 														<span
 															key={keyword}
@@ -130,10 +134,12 @@ export default async function StageFourContainer({
 													))}
 												</div>
 											</div>
+
 											<details>
 												<summary className="cursor-pointer text-blue-600 text-sm hover:text-blue-800">
 													💡 목표 문장 보기
 												</summary>
+
 												<div className="mt-3 p-3 bg-gray-50 rounded border-l-4 border-blue-400">
 													<p className="text-sm font-medium">
 														{speech.target_sentence}
