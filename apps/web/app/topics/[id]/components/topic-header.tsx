@@ -1,12 +1,23 @@
-import type { Tables } from "@repo/typescript-config/supabase-types";
-
-type Topic = Tables<"topics">;
+import { notFound } from "next/navigation";
+import { createClient } from "../../../utils/supabase/server";
 
 interface TopicHeaderProps {
-	topic: Topic;
+	topicId: string;
 }
 
-export default function TopicHeader({ topic }: TopicHeaderProps) {
+export default async function TopicHeader({ topicId }: TopicHeaderProps) {
+	const supabase = await createClient();
+
+	const { data: topic, error: topicError } = await supabase
+		.from("topics")
+		.select("*")
+		.eq("id", topicId)
+		.single();
+
+	if (topicError || !topic) {
+		notFound();
+	}
+
 	return (
 		<div className="mb-6">
 			<h1 className="text-2xl font-bold mb-2">{topic.title}</h1>

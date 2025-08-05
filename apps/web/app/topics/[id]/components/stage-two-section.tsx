@@ -1,25 +1,94 @@
-import Highlighter from "react-highlight-words";
 import type { Tables } from "@repo/typescript-config/supabase-types";
+import type { User } from "@supabase/supabase-js";
+import Highlighter from "react-highlight-words";
+import { createClient } from "../../../utils/supabase/server";
 
-type KoreanScript = Tables<"korean_scripts">;
-type EnglishScript = Tables<"english_scripts">;
-type UserTranslation = Tables<"user_translations">;
+type LearningPoint = Tables<"learning_points">;
 
 interface StageTwoSectionProps {
-	koreanScripts: KoreanScript[];
-	englishScripts: EnglishScript[];
-	userTranslations: UserTranslation[];
-	getSelectedKoreanKeywords: (sentenceOrder: number) => string[];
-	getSelectedEnglishKeywords: (sentenceOrder: number) => string[];
+	topicId: string;
+	user: User | null;
 }
 
-export default function StageTwoSection({
-	koreanScripts,
-	englishScripts,
-	userTranslations,
-	getSelectedKoreanKeywords,
-	getSelectedEnglishKeywords,
+export default async function StageTwoSection({
+	topicId,
+	user,
 }: StageTwoSectionProps) {
+	const supabase = await createClient();
+
+	const [
+		koreanResult,
+		englishResult,
+		learningPointsResult,
+		userTranslationsResult,
+		userSelectedPointsResult,
+	] = await Promise.all([
+		supabase
+			.from("korean_scripts")
+			.select("*")
+			.eq("topic_id", topicId)
+			.order("sentence_order"),
+
+		supabase
+			.from("english_scripts")
+			.select("*")
+			.eq("topic_id", topicId)
+			.order("sentence_order"),
+
+		supabase
+			.from("learning_points")
+			.select("*")
+			.eq("topic_id", topicId)
+			.order("sentence_order"),
+
+		user
+			? supabase
+					.from("user_translations")
+					.select("*")
+					.eq("user_id", user.id)
+					.eq("topic_id", topicId)
+			: Promise.resolve({ data: null, error: null }),
+
+		user
+			? supabase
+					.from("user_selected_points")
+					.select("learning_point_id")
+					.eq("user_id", user.id)
+					.eq("topic_id", topicId)
+			: Promise.resolve({ data: null, error: null }),
+	]);
+
+	const koreanScripts = koreanResult.data || [];
+	const englishScripts = englishResult.data || [];
+	const learningPoints = learningPointsResult.data || [];
+	const userTranslations = userTranslationsResult.data || [];
+	const userSelectedPoints = userSelectedPointsResult.data || [];
+
+	const selectedLearningPointsByOrder = userSelectedPoints.reduce(
+		(acc, point) => {
+			const learningPoint = learningPoints.find(
+				(lp) => lp.id === point.learning_point_id,
+			);
+			if (learningPoint) {
+				if (!acc[learningPoint.sentence_order]) {
+					acc[learningPoint.sentence_order] = [];
+				}
+				acc[learningPoint.sentence_order]?.push(learningPoint);
+			}
+			return acc;
+		},
+		{} as Record<number, LearningPoint[]>,
+	);
+
+	const getSelectedKoreanKeywords = (sentenceOrder: number) => {
+		const points = selectedLearningPointsByOrder[sentenceOrder] || [];
+		return points.map((point) => point.korean_phrase);
+	};
+
+	const getSelectedEnglishKeywords = (sentenceOrder: number) => {
+		const points = selectedLearningPointsByOrder[sentenceOrder] || [];
+		return points.map((point) => point.english_phrase);
+	};
 	return (
 		<div className="border p-4 mb-6">
 			<h2 className="text-xl font-bold mb-4">2단계: 영어 스크립트</h2>
@@ -126,8 +195,7 @@ export default function StageTwoSection({
 			<div className="mb-6">
 				<h3 className="font-bold mb-3">끊어읽기 발음 연습</h3>
 				<p className="text-sm mb-4">
-					| 표시된 곳에서 잠깐 멈춤, || 표시된 곳에서 긴 호흡을 하며
-					읽어보세요.
+					| 표시된 곳에서 잠깐 멈춤, || 표시된 곳에서 긴 호흡을 하며 읽어보세요.
 				</p>
 
 				{englishScripts.map((script, index) => (

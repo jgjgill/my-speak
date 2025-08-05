@@ -1,20 +1,80 @@
 import type { Tables } from "@repo/typescript-config/supabase-types";
+import type { User } from "@supabase/supabase-js";
 import Highlighter from "react-highlight-words";
+import { createClient } from "../../../utils/supabase/server";
 
-type KoreanScript = Tables<"korean_scripts">;
-type EnglishScript = Tables<"english_scripts">;
+type LearningPoint = Tables<"learning_points">;
 
 interface StageThreeSectionProps {
-	koreanScripts: KoreanScript[];
-	englishScripts: EnglishScript[];
-	getSelectedKoreanKeywords: (sentenceOrder: number) => string[];
+	topicId: string;
+	user: User | null;
 }
 
-export default function StageThreeSection({
-	koreanScripts,
-	englishScripts,
-	getSelectedKoreanKeywords,
+export default async function StageThreeSection({
+	topicId,
+	user,
 }: StageThreeSectionProps) {
+	const supabase = await createClient();
+
+	const [
+		koreanResult,
+		englishResult,
+		learningPointsResult,
+		userSelectedPointsResult,
+	] = await Promise.all([
+		supabase
+			.from("korean_scripts")
+			.select("*")
+			.eq("topic_id", topicId)
+			.order("sentence_order"),
+
+		supabase
+			.from("english_scripts")
+			.select("*")
+			.eq("topic_id", topicId)
+			.order("sentence_order"),
+
+		supabase
+			.from("learning_points")
+			.select("*")
+			.eq("topic_id", topicId)
+			.order("sentence_order"),
+
+		user
+			? supabase
+					.from("user_selected_points")
+					.select("learning_point_id")
+					.eq("user_id", user.id)
+					.eq("topic_id", topicId)
+			: Promise.resolve({ data: null, error: null }),
+	]);
+
+	const koreanScripts = koreanResult.data || [];
+	const englishScripts = englishResult.data || [];
+	const learningPoints = learningPointsResult.data || [];
+	const userSelectedPoints = userSelectedPointsResult.data || [];
+
+	const selectedLearningPointsByOrder = userSelectedPoints.reduce(
+		(acc, point) => {
+			const learningPoint = learningPoints.find(
+				(lp) => lp.id === point.learning_point_id,
+			);
+			if (learningPoint) {
+				if (!acc[learningPoint.sentence_order]) {
+					acc[learningPoint.sentence_order] = [];
+				}
+				acc[learningPoint.sentence_order]?.push(learningPoint);
+			}
+			return acc;
+		},
+		{} as Record<number, LearningPoint[]>,
+	);
+
+	const getSelectedKoreanKeywords = (sentenceOrder: number) => {
+		const points = selectedLearningPointsByOrder[sentenceOrder] || [];
+		return points.map((point) => point.korean_phrase);
+	};
+
 	return (
 		<div className="border p-4 mb-6">
 			<h2 className="text-xl font-bold mb-4">3단계: 스피킹 연습</h2>

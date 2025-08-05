@@ -1,9 +1,10 @@
 import type { Tables } from "@repo/typescript-config/supabase-types";
+import { createClient } from "../../../utils/supabase/server";
 
 type KeywordSpeech = Tables<"keyword_speeches">;
 
 interface StageFourSectionProps {
-	keywordSpeeches: KeywordSpeech[];
+	topicId: string;
 }
 
 const levelMetadata = {
@@ -29,7 +30,18 @@ const levelMetadata = {
 	},
 };
 
-export default function StageFourSection({ keywordSpeeches }: StageFourSectionProps) {
+export default async function StageFourSection({
+	topicId,
+}: StageFourSectionProps) {
+	const supabase = await createClient();
+
+	const keywordResult = await supabase
+		.from("keyword_speeches")
+		.select("*")
+		.eq("topic_id", topicId)
+		.order("sequence_order");
+	const keywordSpeeches = keywordResult.data || [];
+
 	const keywordSpeechesByLevel = keywordSpeeches.reduce(
 		(acc, speech) => {
 			const level = speech.level || 1;
@@ -65,10 +77,7 @@ export default function StageFourSection({ keywordSpeeches }: StageFourSectionPr
 					if (levelSpeeches.length === 0) return null;
 
 					return (
-						<div
-							key={level}
-							className={`border rounded-lg ${metadata.color}`}
-						>
+						<div key={level} className={`border rounded-lg ${metadata.color}`}>
 							<details className="group" open={level === 1}>
 								<summary className="cursor-pointer p-4 hover:bg-opacity-75 transition-colors">
 									<div className="flex items-center justify-between">
