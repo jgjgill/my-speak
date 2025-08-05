@@ -1,9 +1,9 @@
 import { Suspense } from "react";
 import { createClient } from "../../utils/supabase/server";
-import StageFourSection from "./components/stage-four-section";
+import StageFourContainer from "./components/stage-four-container";
 import StageOneContainer from "./components/stage-one-container";
-import StageThreeSection from "./components/stage-three-section";
-import StageTwoSection from "./components/stage-two-section";
+import StageThreeContainer from "./components/stage-three-container";
+import StageTwoContainer from "./components/stage-two-container";
 import TopicHeader from "./components/topic-header";
 
 type Props = {
@@ -27,25 +27,29 @@ export default async function TopicDetailPage({ params }: Props) {
 			>
 				<TopicHeader topicId={id} />
 			</Suspense>
+
 			<Suspense
 				fallback={<div className="border p-4 mb-6">1단계 로딩 중...</div>}
 			>
 				<StageOneContainer topicId={id} user={user} />
 			</Suspense>
+
 			<Suspense
 				fallback={<div className="border p-4 mb-6">2단계 로딩 중...</div>}
 			>
-				<StageTwoSection topicId={id} user={user} />
+				<StageTwoContainer topicId={id} user={user} />
 			</Suspense>
+
 			<Suspense
 				fallback={<div className="border p-4 mb-6">3단계 로딩 중...</div>}
 			>
-				<StageThreeSection topicId={id} user={user} />
+				<StageThreeContainer topicId={id} user={user} />
 			</Suspense>
+
 			<Suspense
 				fallback={<div className="border p-4 mb-6">4단계 로딩 중...</div>}
 			>
-				<StageFourSection topicId={id} />
+				<StageFourContainer topicId={id} />
 			</Suspense>
 		</div>
 	);

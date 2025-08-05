@@ -44,6 +44,7 @@ export default function StageOnePractice({
 
 	const getLearningPointKeywords = (sentenceOrder: number) => {
 		const points = learningPointsByOrder[sentenceOrder] || [];
+
 		return points
 			.map((point) => point.korean_phrase)
 			.filter((phrase) => phrase !== null && phrase !== undefined) as string[];
@@ -54,13 +55,17 @@ export default function StageOnePractice({
 		highlightedText: string,
 	) => {
 		const points = learningPointsByOrder[sentenceOrder] || [];
+
 		return points.find((point) => point.korean_phrase === highlightedText);
 	};
 
 	const isSelectedLearningPoint = (sentenceOrder: number, text: string) => {
 		const pointInfo = getLearningPointInfo(sentenceOrder, text);
+
 		if (!pointInfo) return false;
+
 		const pointKey = `${sentenceOrder}-${pointInfo.id}`;
+
 		return selectedPoints.has(pointKey);
 	};
 
@@ -115,7 +120,6 @@ export default function StageOnePractice({
 		}
 	};
 
-	// 학습 포인트 클릭 처리
 	const handleLearningPointClick = async (
 		sentenceOrder: number,
 		highlightedText: string,

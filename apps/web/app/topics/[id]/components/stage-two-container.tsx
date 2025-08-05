@@ -5,15 +5,15 @@ import { createClient } from "../../../utils/supabase/server";
 
 type LearningPoint = Tables<"learning_points">;
 
-interface StageTwoSectionProps {
+interface StageTwoContainerProps {
 	topicId: string;
 	user: User | null;
 }
 
-export default async function StageTwoSection({
+export default async function StageTwoContainer({
 	topicId,
 	user,
-}: StageTwoSectionProps) {
+}: StageTwoContainerProps) {
 	const supabase = await createClient();
 
 	const [

@@ -3,7 +3,7 @@ import { createClient } from "../../../utils/supabase/server";
 
 type KeywordSpeech = Tables<"keyword_speeches">;
 
-interface StageFourSectionProps {
+interface StageFourContainerProps {
 	topicId: string;
 }
 
@@ -30,9 +30,9 @@ const levelMetadata = {
 	},
 };
 
-export default async function StageFourSection({
+export default async function StageFourContainer({
 	topicId,
-}: StageFourSectionProps) {
+}: StageFourContainerProps) {
 	const supabase = await createClient();
 
 	const keywordResult = await supabase
