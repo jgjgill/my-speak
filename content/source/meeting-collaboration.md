@@ -36,12 +36,48 @@ However, | there's also a possibility | that unexpected problems | might occur, 
 After the meeting, | we plan to organize | the decided matters | into documents | and share them | with all stakeholders.
 By next week, | we'll clarify | each person's role | and responsibilities, | and conduct | the first interim review.
 
+# 3단계: 사용자 자유 연습
+
+1 ~ 2단계에서 구성한 콘텐츠 기반으로 한→영 스피킹 연습 진행
+
 # 4단계: 키워드 스피치
 
-오늘 오후, 중요한 회의, 프로젝트 → We have an important project meeting at 3 PM today.
-지난주 논의, 마케팅 전략, 재검토 → We need to review the marketing strategy that we discussed last week.
-각 팀원, 자료 발표, 예산 배분 → Each team member will present the materials they've prepared, and budget allocation and schedule management will likely be the key issues.
-모든 부서 협력, 프로젝트 성공 → If all departments cooperate, this project can be completed successfully.
+## 레벨 1: 상세한 키워드 (70% 정보)
+
+오늘 오후 3시에, 중요한 프로젝트 회의가 있습니다 → We have an important project meeting at 3 PM today.
+지난주 논의했던, 마케팅 전략을, 다시 검토해야 합니다 → We need to review the marketing strategy that we discussed last week.
+각 팀원들이 준비한 자료, 예산 배분과 일정 관리, 핵심 이슈 → Each team member will present the materials they've prepared, and budget allocation and schedule management will likely be the key issues.
+모든 부서가 협력한다면, 프로젝트를 성공적으로 완료 → If all departments cooperate, this project can be completed successfully.
+예상치 못한 문제 발생 가능성, 백업 계획을 미리 준비 → However, there's also a possibility that unexpected problems might occur, so it would be good to prepare backup plans in advance.
+회의 후 결정 사항들을, 문서로 정리하여, 관련자에게 공유 → After the meeting, we plan to organize the decided matters into documents and share them with all stakeholders.
+다음주까지 각자의 역할과 책임을, 명확히 하고, 첫 번째 중간 점검 → By next week, we'll clarify each person's role and responsibilities, and conduct the first interim review.
+
+## 레벨 2: 핵심 키워드 (50% 정보)
+
+오늘 오후, 중요한 회의 → We have an important project meeting at 3 PM today.
+지난주, 마케팅 전략 검토 → We need to review the marketing strategy that we discussed last week.
+팀원 발표, 예산과 일정 → Each team member will present the materials they've prepared, and budget allocation and schedule management will likely be the key issues.
+부서 협력, 프로젝트 성공 → If all departments cooperate, this project can be completed successfully.
 예상치 못한 문제, 백업 계획 → However, there's also a possibility that unexpected problems might occur, so it would be good to prepare backup plans in advance.
-회의 후, 문서 정리, 관련자 공유 → After the meeting, we plan to organize the decided matters into documents and share them with all stakeholders.
-다음주까지, 역할 명확화, 중간 점검 → By next week, we'll clarify each person's role and responsibilities, and conduct the first interim review.
+회의 후, 문서 정리 공유 → After the meeting, we plan to organize the decided matters into documents and share them with all stakeholders.
+다음주까지, 역할 명확화 → By next week, we'll clarify each person's role and responsibilities, and conduct the first interim review.
+
+## 레벨 3: 최소한의 키워드 (30% 정보)
+
+오늘, 회의 → We have an important project meeting at 3 PM today.
+마케팅 전략 → We need to review the marketing strategy that we discussed last week.
+발표, 예산 → Each team member will present the materials they've prepared, and budget allocation and schedule management will likely be the key issues.
+협력, 성공 → If all departments cooperate, this project can be completed successfully.
+문제, 계획 → However, there's also a possibility that unexpected problems might occur, so it would be good to prepare backup plans in advance.
+정리, 공유 → After the meeting, we plan to organize the decided matters into documents and share them with all stakeholders.
+역할 → By next week, we'll clarify each person's role and responsibilities, and conduct the first interim review.
+
+## 레벨 4: 영어 키워드
+
+meeting → We have an important project meeting at 3 PM today.
+strategy → We need to review the marketing strategy that we discussed last week.
+present, budget → Each team member will present the materials they've prepared, and budget allocation and schedule management will likely be the key issues.
+cooperate → If all departments cooperate, this project can be completed successfully.
+problems, plans → However, there's also a possibility that unexpected problems might occur, so it would be good to prepare backup plans in advance.
+organize, share → After the meeting, we plan to organize the decided matters into documents and share them with all stakeholders.
+responsibilities → By next week, we'll clarify each person's role and responsibilities, and conduct the first interim review.
