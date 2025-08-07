@@ -1,0 +1,701 @@
+{
+  "topic": {
+    "id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+    "title": "공항 교통편 및 호텔 체크인",
+    "category": "일상생활",
+    "difficulty": "중급",
+    "description": "공항 도착 후 교통편 이용과 호텔 체크인 과정에서 필요한 실용적인 영어 표현들을 학습합니다.",
+    "total_sentences": 12
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "공항에 막 도착했습니다."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "수화물을 찾은 후 시내로 가는 교통편을 알아봐야 합니다."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "정보 데스크에서 택시 요금과 대중교통 옵션에 대해 문의합니다."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "택시가 가장 편리하지만 예산을 고려해서 공항 버스를 선택했습니다."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "버스 정류장에서 정확한 노선을 확인하고 티켓을 구매합니다."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "호텔까지 약 45분 정도 걸린다고 합니다."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "호텔에 도착해서 프론트 데스크로 향합니다."
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "체크인을 위해 예약 확인서와 여권을 준비합니다."
+    },
+    {
+      "sentence_order": 9,
+      "korean_text": "직원이 숙박 기간과 특별 요청 사항이 있는지 묻습니다."
+    },
+    {
+      "sentence_order": 10,
+      "korean_text": "조식 포함 여부와 와이파이 비밀번호에 대해 질문합니다."
+    },
+    {
+      "sentence_order": 11,
+      "korean_text": "룸키를 받고 엘리베이터 위치와 체크아웃 시간을 안내받습니다."
+    },
+    {
+      "sentence_order": 12,
+      "korean_text": "마지막으로 짐 보관 서비스가 가능한지 확인합니다."
+    }
+  ],
+  "english_scripts": [
+    {
+      "sentence_order": 1,
+      "english_text": "I just arrived at the airport.",
+      "chunked_text": "I just arrived | at the airport."
+    },
+    {
+      "sentence_order": 2,
+      "english_text": "After collecting my luggage, I need to find out about transportation to downtown.",
+      "chunked_text": "After collecting my luggage, | I need to find out | about transportation to downtown."
+    },
+    {
+      "sentence_order": 3,
+      "english_text": "I inquire at the information desk about taxi fare and public transportation options.",
+      "chunked_text": "I inquire | at the information desk | about taxi fare | and public transportation options."
+    },
+    {
+      "sentence_order": 4,
+      "english_text": "A taxi is most convenient, but considering the budget, I chose the airport bus.",
+      "chunked_text": "A taxi is most convenient, | but considering the budget, | I chose the airport bus."
+    },
+    {
+      "sentence_order": 5,
+      "english_text": "At the bus stop, I check the correct route and purchase a ticket.",
+      "chunked_text": "At the bus stop, | I check the correct route | and purchase a ticket."
+    },
+    {
+      "sentence_order": 6,
+      "english_text": "They say it takes about 45 minutes to get to the hotel.",
+      "chunked_text": "They say | it takes about 45 minutes | to get to the hotel."
+    },
+    {
+      "sentence_order": 7,
+      "english_text": "I arrive at the hotel and head to the front desk.",
+      "chunked_text": "I arrive at the hotel | and head to | the front desk."
+    },
+    {
+      "sentence_order": 8,
+      "english_text": "For check-in, I prepare my reservation confirmation and passport.",
+      "chunked_text": "For check-in, | I prepare my reservation confirmation | and passport."
+    },
+    {
+      "sentence_order": 9,
+      "english_text": "The staff asks if I have any special requests and about my length of stay.",
+      "chunked_text": "The staff asks | if I have any special requests | and about my length of stay."
+    },
+    {
+      "sentence_order": 10,
+      "english_text": "I ask about whether breakfast is included and the Wi-Fi password.",
+      "chunked_text": "I ask about | whether breakfast is included | and the Wi-Fi password."
+    },
+    {
+      "sentence_order": 11,
+      "english_text": "I receive the room key and get directions to the elevator and information about check-out time.",
+      "chunked_text": "I receive the room key | and get directions to the elevator | and information about check-out time."
+    },
+    {
+      "sentence_order": 12,
+      "english_text": "Finally, I confirm whether luggage storage service is available.",
+      "chunked_text": "Finally, | I confirm whether | luggage storage service is available."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "공항",
+        "도착",
+        "막"
+      ],
+      "target_sentence": "I just arrived at the airport.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "수화물",
+        "찾은 후",
+        "시내 교통편"
+      ],
+      "target_sentence": "After collecting my luggage, I need to find out about transportation to downtown.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "정보 데스크",
+        "택시 요금",
+        "대중교통"
+      ],
+      "target_sentence": "I inquire at the information desk about taxi fare and public transportation options.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "택시",
+        "편리",
+        "예산 고려",
+        "공항버스"
+      ],
+      "target_sentence": "A taxi is most convenient, but considering the budget, I chose the airport bus.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "버스 정류장",
+        "정확한 노선",
+        "티켓 구매"
+      ],
+      "target_sentence": "At the bus stop, I check the correct route and purchase a ticket.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "45분",
+        "호텔까지"
+      ],
+      "target_sentence": "They say it takes about 45 minutes to get to the hotel.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "호텔 도착",
+        "프론트 데스크"
+      ],
+      "target_sentence": "I arrive at the hotel and head to the front desk.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 8,
+      "keywords": [
+        "체크인",
+        "예약 확인서",
+        "여권"
+      ],
+      "target_sentence": "For check-in, I prepare my reservation confirmation and passport.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 9,
+      "keywords": [
+        "직원",
+        "특별 요청",
+        "숙박 기간"
+      ],
+      "target_sentence": "The staff asks if I have any special requests and about my length of stay.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 10,
+      "keywords": [
+        "조식 포함",
+        "와이파이 비밀번호"
+      ],
+      "target_sentence": "I ask about whether breakfast is included and the Wi-Fi password.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 11,
+      "keywords": [
+        "룸키",
+        "엘리베이터",
+        "체크아웃 시간"
+      ],
+      "target_sentence": "I receive the room key and get directions to the elevator and information about check-out time.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 12,
+      "keywords": [
+        "짐 보관 서비스",
+        "가능한지"
+      ],
+      "target_sentence": "Finally, I confirm whether luggage storage service is available.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "공항 도착"
+      ],
+      "target_sentence": "I just arrived at the airport.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "교통편 문의"
+      ],
+      "target_sentence": "I need to find out about transportation to downtown.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 15,
+      "keywords": [
+        "택시",
+        "대중교통"
+      ],
+      "target_sentence": "I inquire about taxi fare and public transportation options.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 16,
+      "keywords": [
+        "예산",
+        "공항버스"
+      ],
+      "target_sentence": "Considering the budget, I chose the airport bus.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 17,
+      "keywords": [
+        "노선 확인"
+      ],
+      "target_sentence": "I check the correct route and purchase a ticket.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 18,
+      "keywords": [
+        "45분 소요"
+      ],
+      "target_sentence": "It takes about 45 minutes to get to the hotel.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 19,
+      "keywords": [
+        "프론트 데스크"
+      ],
+      "target_sentence": "I head to the front desk.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 20,
+      "keywords": [
+        "체크인 준비"
+      ],
+      "target_sentence": "I prepare my reservation confirmation and passport.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 21,
+      "keywords": [
+        "특별 요청"
+      ],
+      "target_sentence": "The staff asks about special requests and length of stay.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 22,
+      "keywords": [
+        "조식",
+        "와이파이"
+      ],
+      "target_sentence": "I ask about breakfast and Wi-Fi password.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 23,
+      "keywords": [
+        "룸키",
+        "안내"
+      ],
+      "target_sentence": "I receive the room key and directions.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 24,
+      "keywords": [
+        "짐 보관"
+      ],
+      "target_sentence": "I confirm about luggage storage service.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 25,
+      "keywords": [
+        "공항"
+      ],
+      "target_sentence": "I just arrived at the airport.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 26,
+      "keywords": [
+        "교통편"
+      ],
+      "target_sentence": "I need transportation to downtown.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 27,
+      "keywords": [
+        "문의"
+      ],
+      "target_sentence": "I inquire about options.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 28,
+      "keywords": [
+        "버스 선택"
+      ],
+      "target_sentence": "I chose the airport bus.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 29,
+      "keywords": [
+        "티켓"
+      ],
+      "target_sentence": "I purchase a ticket.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 30,
+      "keywords": [
+        "호텔"
+      ],
+      "target_sentence": "It takes time to get to the hotel.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 31,
+      "keywords": [
+        "체크인"
+      ],
+      "target_sentence": "I head to the front desk.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 32,
+      "keywords": [
+        "준비"
+      ],
+      "target_sentence": "I prepare my documents.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 33,
+      "keywords": [
+        "질문"
+      ],
+      "target_sentence": "Staff asks about requests.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 34,
+      "keywords": [
+        "조식"
+      ],
+      "target_sentence": "I ask about breakfast.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 35,
+      "keywords": [
+        "키"
+      ],
+      "target_sentence": "I receive the room key.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 36,
+      "keywords": [
+        "보관"
+      ],
+      "target_sentence": "I confirm about storage.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 37,
+      "keywords": [
+        "arrival"
+      ],
+      "target_sentence": "I just arrived at the airport.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 38,
+      "keywords": [
+        "transportation"
+      ],
+      "target_sentence": "I need to find transportation downtown.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 39,
+      "keywords": [
+        "options"
+      ],
+      "target_sentence": "I inquire about different options.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 40,
+      "keywords": [
+        "budget"
+      ],
+      "target_sentence": "I chose based on budget.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 41,
+      "keywords": [
+        "ticket"
+      ],
+      "target_sentence": "I purchase a bus ticket.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 42,
+      "keywords": [
+        "hotel"
+      ],
+      "target_sentence": "I arrive at the hotel.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 43,
+      "keywords": [
+        "check-in"
+      ],
+      "target_sentence": "I go to check in.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 44,
+      "keywords": [
+        "documents"
+      ],
+      "target_sentence": "I prepare necessary documents.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 45,
+      "keywords": [
+        "requests"
+      ],
+      "target_sentence": "Staff asks about special requests.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 46,
+      "keywords": [
+        "amenities"
+      ],
+      "target_sentence": "I ask about hotel amenities.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 47,
+      "keywords": [
+        "key"
+      ],
+      "target_sentence": "I receive my room key.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 48,
+      "keywords": [
+        "services"
+      ],
+      "target_sentence": "I ask about additional services.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "시내로 가는 교통편",
+      "english_phrase": "transportation to downtown"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "택시 요금",
+      "english_phrase": "taxi fare"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "대중교통 옵션",
+      "english_phrase": "public transportation options"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "예산을 고려해서",
+      "english_phrase": "considering the budget"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "정확한 노선",
+      "english_phrase": "the correct route"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "프론트 데스크",
+      "english_phrase": "front desk"
+    },
+    {
+      "sentence_order": 8,
+      "korean_phrase": "체크인을 위해",
+      "english_phrase": "for check-in"
+    },
+    {
+      "sentence_order": 9,
+      "korean_phrase": "숙박 기간",
+      "english_phrase": "length of stay"
+    },
+    {
+      "sentence_order": 9,
+      "korean_phrase": "특별 요청 사항",
+      "english_phrase": "special requests"
+    },
+    {
+      "sentence_order": 10,
+      "korean_phrase": "조식 포함 여부",
+      "english_phrase": "whether breakfast is included"
+    },
+    {
+      "sentence_order": 10,
+      "korean_phrase": "와이파이 비밀번호",
+      "english_phrase": "Wi-Fi password"
+    },
+    {
+      "sentence_order": 11,
+      "korean_phrase": "룸키",
+      "english_phrase": "room key"
+    },
+    {
+      "sentence_order": 11,
+      "korean_phrase": "체크아웃 시간",
+      "english_phrase": "check-out time"
+    },
+    {
+      "sentence_order": 12,
+      "korean_phrase": "짐 보관 서비스",
+      "english_phrase": "luggage storage service"
+    }
+  ]
+}
