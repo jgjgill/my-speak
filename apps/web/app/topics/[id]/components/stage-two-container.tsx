@@ -1,6 +1,8 @@
+"use client";
+
 import type { User } from "@supabase/supabase-js";
 import Highlighter from "react-highlight-words";
-import { createClient } from "../../../utils/supabase/server";
+import { useStageTwoData } from "../hooks/use-stage-two-data";
 import {
 	createSelectedLearningPointsByOrder,
 	getSelectedEnglishKeywords,
@@ -12,59 +14,17 @@ interface StageTwoContainerProps {
 	user: User | null;
 }
 
-export default async function StageTwoContainer({
+export default function StageTwoContainer({
 	topicId,
 	user,
 }: StageTwoContainerProps) {
-	const supabase = await createClient();
-
-	const [
-		koreanResult,
-		englishResult,
-		learningPointsResult,
-		userTranslationsResult,
-		userSelectedPointsResult,
-	] = await Promise.all([
-		supabase
-			.from("korean_scripts")
-			.select("*")
-			.eq("topic_id", topicId)
-			.order("sentence_order"),
-
-		supabase
-			.from("english_scripts")
-			.select("*")
-			.eq("topic_id", topicId)
-			.order("sentence_order"),
-
-		supabase
-			.from("learning_points")
-			.select("*")
-			.eq("topic_id", topicId)
-			.order("sentence_order"),
-
-		user
-			? supabase
-					.from("user_translations")
-					.select("*")
-					.eq("user_id", user.id)
-					.eq("topic_id", topicId)
-			: Promise.resolve({ data: null, error: null }),
-
-		user
-			? supabase
-					.from("user_selected_points")
-					.select("learning_point_id")
-					.eq("user_id", user.id)
-					.eq("topic_id", topicId)
-			: Promise.resolve({ data: null, error: null }),
-	]);
-
-	const koreanScripts = koreanResult.data || [];
-	const englishScripts = englishResult.data || [];
-	const learningPoints = learningPointsResult.data || [];
-	const userTranslations = userTranslationsResult.data || [];
-	const userSelectedPoints = userSelectedPointsResult.data || [];
+	const { data: {
+		koreanScripts,
+		englishScripts,
+		learningPoints,
+		userTranslations,
+		userSelectedPoints,
+	} } = useStageTwoData(topicId, user);
 
 	const selectedLearningPointsByOrder = createSelectedLearningPointsByOrder(
 		userSelectedPoints,

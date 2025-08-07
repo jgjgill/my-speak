@@ -1,7 +1,7 @@
-import type { Tables } from "@repo/typescript-config/supabase-types";
-import { createClient } from "../../../utils/supabase/server";
+"use client";
 
-type KeywordSpeech = Tables<"keyword_speeches">;
+import { useStageFourData } from "../hooks/use-stage-four-data";
+import type { KeywordSpeech } from "../queries/stage-four-queries";
 
 interface StageFourContainerProps {
 	topicId: string;
@@ -30,17 +30,10 @@ const levelMetadata = {
 	},
 };
 
-export default async function StageFourContainer({
+export default function StageFourContainer({
 	topicId,
 }: StageFourContainerProps) {
-	const supabase = await createClient();
-
-	const keywordResult = await supabase
-		.from("keyword_speeches")
-		.select("*")
-		.eq("topic_id", topicId)
-		.order("sequence_order");
-	const keywordSpeeches = keywordResult.data || [];
+	const { data: keywordSpeeches } = useStageFourData(topicId);
 
 	const keywordSpeechesByLevel = keywordSpeeches.reduce(
 		(acc, speech) => {
