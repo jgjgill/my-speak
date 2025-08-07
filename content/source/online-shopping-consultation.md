@@ -1,4 +1,5 @@
 ---
+topic_id: "349b779d-44d8-461f-9b6b-d2aafeea04ae"
 title: "온라인 쇼핑 상담"
 category: "일상생활"
 difficulty: "중급"
