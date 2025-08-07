@@ -1,22 +1,13 @@
-import { notFound } from "next/navigation";
-import { createClient } from "../../../utils/supabase/server";
+"use client";
+
+import { useTopic } from "../hooks/use-topic";
 
 interface TopicHeaderProps {
 	topicId: string;
 }
 
-export default async function TopicHeader({ topicId }: TopicHeaderProps) {
-	const supabase = await createClient();
-
-	const { data: topic, error: topicError } = await supabase
-		.from("topics")
-		.select("*")
-		.eq("id", topicId)
-		.single();
-
-	if (topicError || !topic) {
-		notFound();
-	}
+export default function TopicHeader({ topicId }: TopicHeaderProps) {
+	const { data: topic } = useTopic(topicId);
 
 	return (
 		<div className="mb-6">

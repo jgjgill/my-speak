@@ -1,7 +1,6 @@
 import { Suspense } from "react";
 import { createClient } from "../../utils/supabase/server";
-import StageNavigation from "./components/stage-navigation";
-import StageOneContainer from "./components/stage-one-container";
+import TopicClientWrapper from "./components/topic-client-wrapper";
 import TopicHeader from "./components/topic-header";
 
 type Props = {
@@ -16,7 +15,6 @@ export default async function TopicDetailPage({ params }: Props) {
 		data: { user },
 	} = await supabase.auth.getUser();
 
-	// 로그인 사용자의 초기 단계 조회
 	let initialStage = 1;
 	if (user) {
 		const { data: progressData } = await supabase
@@ -39,12 +37,10 @@ export default async function TopicDetailPage({ params }: Props) {
 				<TopicHeader topicId={id} />
 			</Suspense>
 
-			<StageNavigation currentStage={initialStage} />
-
 			<Suspense
-				fallback={<div className="border p-4 mb-6">1단계 로딩 중...</div>}
+				fallback={<div className="border p-4 mb-6">학습 단계 로딩 중...</div>}
 			>
-				<StageOneContainer topicId={id} user={user} />
+				<TopicClientWrapper topicId={id} initialStage={initialStage} />
 			</Suspense>
 		</div>
 	);

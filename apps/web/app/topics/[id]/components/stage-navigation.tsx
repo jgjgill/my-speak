@@ -2,7 +2,7 @@
 
 interface StageNavigationProps {
 	currentStage: number;
-	onStageChange?: (stage: number) => void;
+	onStageChange: (stage: number) => void;
 }
 
 const stages = [
