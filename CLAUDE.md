@@ -72,8 +72,13 @@ packages/
 
 - **프레임워크**: Next.js 15 + React 19
 - **스타일링**: Tailwind CSS v4
-- **데이터베이스**: Supabase (SSR 패키지 사용)
+- **데이터베이스**: Supabase
+- **데이터 관리**: TanStack Query
 - **환경 변수**: `.env.local`에 Supabase 연결 정보
+
+#### 데이터 아키텍처
+
+- [TanStack Query 아키텍처](apps/web/docs/development/tanstack-query-architecture.md)
 
 ### 콘텐츠 관리 시스템 (packages/content-parser/)
 
