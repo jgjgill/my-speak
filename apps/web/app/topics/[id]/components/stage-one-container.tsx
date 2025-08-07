@@ -1,5 +1,7 @@
+"use client";
+
 import type { User } from "@supabase/supabase-js";
-import { createClient } from "../../../utils/supabase/server";
+import { useStageOneData } from "../hooks/use-stage-one-data";
 import StageOnePractice from "./stage-one-practice";
 
 interface StageOneContainerProps {
@@ -7,51 +9,16 @@ interface StageOneContainerProps {
 	user: User | null;
 }
 
-export default async function StageOneContainer({
+export default function StageOneContainer({
 	topicId,
 	user,
 }: StageOneContainerProps) {
-	const supabase = await createClient();
-
 	const [
-		koreanResult,
-		learningPointsResult,
-		userTranslationsResult,
-		userSelectedPointsResult,
-	] = await Promise.all([
-		supabase
-			.from("korean_scripts")
-			.select("*")
-			.eq("topic_id", topicId)
-			.order("sentence_order"),
-
-		supabase
-			.from("learning_points")
-			.select("*")
-			.eq("topic_id", topicId)
-			.order("sentence_order"),
-
-		user
-			? supabase
-					.from("user_translations")
-					.select("*")
-					.eq("user_id", user.id)
-					.eq("topic_id", topicId)
-			: Promise.resolve({ data: null, error: null }),
-
-		user
-			? supabase
-					.from("user_selected_points")
-					.select("learning_point_id")
-					.eq("user_id", user.id)
-					.eq("topic_id", topicId)
-			: Promise.resolve({ data: null, error: null }),
-	]);
-
-	const koreanScripts = koreanResult.data || [];
-	const learningPoints = learningPointsResult.data || [];
-	const userTranslations = userTranslationsResult.data || [];
-	const userSelectedPoints = userSelectedPointsResult.data || [];
+		{ data: koreanScripts },
+		{ data: learningPoints },
+		{ data: userTranslations },
+		{ data: userSelectedPoints },
+	] = useStageOneData(topicId, user);
 
 	const learningPointsByOrder = learningPoints.reduce(
 		(acc, point) => {
