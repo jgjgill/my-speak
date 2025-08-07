@@ -22,17 +22,13 @@ export function useStageOneData(topicId: string, user: User | null) {
 				queryFn: () => getLearningPoints(topicId),
 			},
 			{
-				queryKey: user
-					? ["user-translations", topicId, user.id]
-					: ["user-translations", topicId, "guest"],
+				queryKey: ["user-translations", topicId, user ? user.id : "guest"],
 				queryFn: user
 					? () => getUserTranslations(topicId, user)
 					: getEmptyUserTranslations,
 			},
 			{
-				queryKey: user
-					? ["user-selected-points", topicId, user.id]
-					: ["user-selected-points", topicId, "guest"],
+				queryKey: ["user-selected-points", topicId, user ? user.id : "guest"],
 				queryFn: user
 					? () => getUserSelectedPoints(topicId, user)
 					: getEmptyUserSelectedPoints,

@@ -2,7 +2,6 @@ import type { Tables } from "@repo/typescript-config/supabase-types";
 import type { User } from "@supabase/supabase-js";
 import { createClient } from "../../../utils/supabase/client";
 
-// 타입 정의
 type KoreanScript = Tables<"korean_scripts">;
 type EnglishScript = Tables<"english_scripts">;
 type LearningPoint = Tables<"learning_points">;

@@ -1,6 +1,6 @@
 import type { Tables } from "@repo/typescript-config/supabase-types";
-import { createClient } from "../utils/supabase/server";
 import Link from "next/link";
+import { createClient } from "../utils/supabase/server";
 
 type Topic = Tables<"topics">;
 

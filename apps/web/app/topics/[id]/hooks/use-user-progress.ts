@@ -4,7 +4,7 @@ import { getUserProgress } from "../queries/user-progress-queries";
 
 export function useUserProgress(topicId: string, user: User | null) {
 	return useSuspenseQuery({
-		queryKey: ["user-progress", topicId, user?.id],
+		queryKey: ["user-progress", topicId, user ? user.id : "guest"],
 		queryFn: () => (user ? getUserProgress(topicId, user) : null),
 	});
 }

@@ -47,9 +47,7 @@ export default function TopicClientWrapper({
 			{currentStage === 3 && (
 				<StageThreeContainer topicId={topicId} user={user} />
 			)}
-			{currentStage === 4 && (
-				<StageFourContainer topicId={topicId} />
-			)}
+			{currentStage === 4 && <StageFourContainer topicId={topicId} />}
 		</>
 	);
 }

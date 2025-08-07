@@ -2,14 +2,14 @@ import type { Tables } from "@repo/typescript-config/supabase-types";
 import type { User } from "@supabase/supabase-js";
 import { createClient } from "../../../utils/supabase/client";
 
-// 타입 정의
 export type KoreanScript = Tables<"korean_scripts">;
 export type LearningPoint = Tables<"learning_points">;
 export type UserTranslation = Tables<"user_translations">;
 export type UserSelectedPoint = Tables<"user_selected_points">;
 
-// 개별 쿼리 함수들
-export async function getKoreanScripts(topicId: string): Promise<KoreanScript[]> {
+export async function getKoreanScripts(
+	topicId: string,
+): Promise<KoreanScript[]> {
 	const supabase = createClient();
 	const { data, error } = await supabase
 		.from("korean_scripts")
@@ -21,7 +21,9 @@ export async function getKoreanScripts(topicId: string): Promise<KoreanScript[]>
 	return data || [];
 }
 
-export async function getLearningPoints(topicId: string): Promise<LearningPoint[]> {
+export async function getLearningPoints(
+	topicId: string,
+): Promise<LearningPoint[]> {
 	const supabase = createClient();
 	const { data, error } = await supabase
 		.from("learning_points")
