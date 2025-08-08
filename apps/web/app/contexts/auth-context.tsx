@@ -1,6 +1,7 @@
 "use client";
 
 import type { User } from "@supabase/supabase-js";
+import { useRouter } from "next/navigation";
 import {
 	createContext,
 	type PropsWithChildren,
@@ -27,6 +28,7 @@ const AuthContext = createContext<AuthContextType | undefined>(undefined);
 export function AuthProvider({ children }: PropsWithChildren) {
 	const [user, setUser] = useState<User | null>(null);
 	const [loading, setLoading] = useState(true);
+	const router = useRouter();
 	const supabase = createClient();
 
 	useEffect(() => {
@@ -67,8 +69,11 @@ export function AuthProvider({ children }: PropsWithChildren) {
 
 	const signOut = async () => {
 		const { error } = await supabase.auth.signOut();
+
 		if (error) {
 			console.error("로그아웃 실패:", error.message);
+		} else {
+			router.push("/");
 		}
 	};
 
