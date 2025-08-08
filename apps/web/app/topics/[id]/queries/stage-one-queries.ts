@@ -1,5 +1,5 @@
 import type { Tables } from "@repo/typescript-config/supabase-types";
-import type { User } from "@supabase/supabase-js";
+import type { SupabaseClient, User } from "@supabase/supabase-js";
 import { createClient } from "../../../utils/supabase/client";
 
 export type KoreanScript = Tables<"korean_scripts">;
@@ -9,9 +9,10 @@ export type UserSelectedPoint = Tables<"user_selected_points">;
 
 export async function getKoreanScripts(
 	topicId: string,
+	supabase?: SupabaseClient,
 ): Promise<KoreanScript[]> {
-	const supabase = createClient();
-	const { data, error } = await supabase
+	const client = supabase || createClient();
+	const { data, error } = await client
 		.from("korean_scripts")
 		.select("*")
 		.eq("topic_id", topicId)
@@ -23,9 +24,10 @@ export async function getKoreanScripts(
 
 export async function getLearningPoints(
 	topicId: string,
+	supabase?: SupabaseClient,
 ): Promise<LearningPoint[]> {
-	const supabase = createClient();
-	const { data, error } = await supabase
+	const client = supabase || createClient();
+	const { data, error } = await client
 		.from("learning_points")
 		.select("*")
 		.eq("topic_id", topicId)
