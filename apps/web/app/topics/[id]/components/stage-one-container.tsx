@@ -79,8 +79,8 @@ export default function StageOneContainer({
 			</div>
 
 			<div className="mb-4 p-3 border">
-				<strong>미션:</strong> 아래 한글 문장들을 영어로 번역해보세요.
-				완벽하지 않아도 괜찮습니다!
+				<strong>미션:</strong> 아래 한글 문장들을 영어로 번역해보세요. 완벽하지
+				않아도 괜찮습니다!
 			</div>
 
 			<StageOnePractice
