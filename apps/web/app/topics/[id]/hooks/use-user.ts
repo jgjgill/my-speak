@@ -7,5 +7,6 @@ export function useUser() {
 		queryFn: getUser,
 		staleTime: 15 * 60 * 1000,
 		gcTime: Infinity,
+		initialData: null,
 	});
 }

@@ -21,7 +21,6 @@ export default function TopicClientWrapper({
 	const { data: user } = useUser();
 	const [currentStage, setCurrentStage] = useState(initialStage);
 
-	// 사용자 진행도는 로그인된 사용자만 조회
 	const userProgressQuery = useUserProgress(topicId, user);
 
 	const handleStageChange = async (stage: number) => {
@@ -39,7 +38,7 @@ export default function TopicClientWrapper({
 			/>
 
 			{currentStage === 1 && (
-				<StageOneContainer topicId={topicId} user={user} />
+				<StageOneContainer topicId={topicId} user={null} />
 			)}
 			{currentStage === 2 && (
 				<StageTwoContainer topicId={topicId} user={user} />
