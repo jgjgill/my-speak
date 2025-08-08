@@ -64,6 +64,7 @@ export function useUser() {
     queryFn: getUser,
     staleTime: 15 * 60 * 1000,
     gcTime: Infinity,
+    initialData: null, // Hydration 이슈 방지
   });
 }
 
@@ -76,6 +77,10 @@ export function useUser() {
   });
 }
 ```
+
+**Hydration 이슈 해결:**
+- `initialData: null`로 서버-클라이언트 초기 상태 통일
+- 비로그인 사용자에 대한 안전한 기본값 제공
 
 ### 2. 쿼리 키 전략
 
@@ -111,33 +116,73 @@ gcTime: Infinity,           // 메모리에 영구 보관
 // 전역 기본값 사용, mutation 시 selective invalidation
 ```
 
-### 4. 복합 데이터 쿼리
+### 4. 서버-클라이언트 호환 쿼리 함수
+
+서버와 클라이언트에서 모두 사용 가능한 쿼리 함수 패턴:
+
+```typescript
+// 서버/클라이언트 환경 모두 지원
+export async function getKoreanScripts(
+  topicId: string,
+  supabase?: SupabaseClient, // 옵셔널 서버 인스턴스
+): Promise<KoreanScript[]> {
+  const client = supabase || createClient(); // 기본값은 클라이언트
+  
+  const { data, error } = await client
+    .from("korean_scripts")
+    .select("*")
+    .eq("topic_id", topicId)
+    .order("sentence_order");
+
+  if (error) throw error;
+  return data || [];
+}
+```
+
+### 5. 안전한 에러 처리
+
+비로그인 사용자에 대한 안전한 에러 처리:
+
+```typescript
+// 사용자 인증 정보 조회
+export async function getUser(): Promise<User | null> {
+  const supabase = createClient();
+  const { data, error } = await supabase.auth.getUser();
+
+  // 비로그인 사용자는 에러가 아닌 null을 반환
+  if (error) {
+    console.log("User not authenticated:", error.message);
+    return null;
+  }
+  return data.user;
+}
+```
+
+### 6. 복합 데이터 쿼리
 
 여러 테이블의 데이터를 한 번에 가져오는 패턴:
 
 ```typescript
-// 2단계: 한글 스크립트 + 영어 스크립트 + 학습 포인트 + 사용자 번역 + 선택된 포인트
-export async function getStageTwoData(
-  topicId: string,
-  user: User | null,
-): Promise<StageTwoData> {
-  const [
-    koreanResult,
-    englishResult, 
-    learningPointsResult,
-    userTranslationsResult,
-    userSelectedPointsResult,
-  ] = await Promise.all([
-    // 5개의 병렬 쿼리
-  ]);
-
-  return {
-    koreanScripts: koreanResult.data || [],
-    englishScripts: englishResult.data || [],
-    learningPoints: learningPointsResult.data || [],
-    userTranslations: userTranslationsResult.data || [],
-    userSelectedPoints: userSelectedPointsResult.data || [],
-  };
+// useSuspenseQueries로 병렬 데이터 페칭
+export function useStageOneData(topicId: string, user: User | null) {
+  return useSuspenseQueries({
+    queries: [
+      {
+        queryKey: ["korean-scripts", topicId],
+        queryFn: () => getKoreanScripts(topicId),
+      },
+      {
+        queryKey: ["learning-points", topicId],
+        queryFn: () => getLearningPoints(topicId),
+      },
+      {
+        queryKey: ["user-translations", topicId, user ? user.id : "guest"],
+        queryFn: user 
+          ? () => getUserTranslations(topicId, user)
+          : () => Promise.resolve([]),
+      },
+    ],
+  });
 }
 ```
 
@@ -162,27 +207,61 @@ defaultOptions: {
 
 ## 컴포넌트 패턴
 
-### 서버 컴포넌트 (페이지 레벨)
+### 서버 컴포넌트 (페이지 레벨) - SSR Prefetching
 
 ```typescript
-// page.tsx - 초기 설정과 레이아웃만 담당
+// page.tsx - SSR prefetching과 초기 설정
 export default async function TopicDetailPage({ params }: Props) {
   const { id } = await params;
   const supabase = await createClient();
   
-  // 초기 단계만 서버에서 설정
-  const initialStage = await getUserInitialStage(id, supabase);
+  // 사용자 정보 확인 (에러 처리 포함)
+  const { data: { user }, error: authError } = await supabase.auth.getUser();
+  const currentUser = authError ? null : user;
+  
+  // 사용자별 초기 단계 설정
+  let initialStage = 1;
+  if (currentUser) {
+    const { data: progressData } = await supabase
+      .from("user_progress")
+      .select("current_stage")
+      .eq("user_id", currentUser.id)
+      .eq("topic_id", id)
+      .single();
+    
+    initialStage = progressData?.current_stage || 1;
+  }
+  
+  // 공개 데이터만 SSR에서 prefetch (SEO 최적화)
+  const queryClient = new QueryClient();
+  
+  await Promise.all([
+    queryClient.prefetchQuery({
+      queryKey: ["korean-scripts", id],
+      queryFn: () => getKoreanScripts(id, supabase),
+    }),
+    queryClient.prefetchQuery({
+      queryKey: ["learning-points", id],
+      queryFn: () => getLearningPoints(id, supabase),
+    }),
+    queryClient.prefetchQuery({
+      queryKey: ["topic", id],
+      queryFn: () => getTopic(id, supabase),
+    }),
+  ]);
 
   return (
-    <div className="p-4">
-      <Suspense fallback={<TopicHeaderSkeleton />}>
-        <TopicHeader topicId={id} />
-      </Suspense>
-      
-      <Suspense fallback={<StageLoadingSkeleton />}>
-        <TopicClientWrapper topicId={id} initialStage={initialStage} />
-      </Suspense>
-    </div>
+    <HydrationBoundary state={dehydrate(queryClient)}>
+      <div className="p-4">
+        <Suspense fallback={<TopicHeaderSkeleton />}>
+          <TopicHeader topicId={id} />
+        </Suspense>
+        
+        <Suspense fallback={<StageLoadingSkeleton />}>
+          <TopicClientWrapper topicId={id} initialStage={initialStage} />
+        </Suspense>
+      </div>
+    </HydrationBoundary>
   );
 }
 ```
@@ -241,9 +320,57 @@ export default function StageTwoContainer({ topicId, user }) {
 4. **개발자 경험**: 단순한 컴포넌트 코드, 재사용 가능한 훅
 5. **유지보수성**: 명확한 관심사 분리, 테스트 가능한 구조
 
+## SSR vs CSR 데이터 분리 전략
+
+### SSR에서 Prefetch할 데이터
+- **공개 데이터**: SEO에 필요한 콘텐츠
+  - `korean-scripts`: 한글 스크립트 (검색엔진 크롤링)
+  - `learning-points`: 학습 포인트 (콘텐츠 구조)
+  - `topic`: 주제 메타데이터 (페이지 제목, 설명)
+
+### 클라이언트에서만 처리할 데이터
+- **사용자별 데이터**: 보안 및 개인화 데이터
+  - `user`: 사용자 인증 정보
+  - `user-progress`: 개인 학습 진행도
+  - `user-translations`: 개인 번역 기록
+
+### 장점
+1. **SEO 최적화**: 검색엔진이 핵심 콘텐츠를 즉시 확인 가능
+2. **보안**: 사용자 데이터는 클라이언트에서만 처리
+3. **성능**: 공개 데이터는 서버에서 미리 로드, 개인 데이터는 필요시 로드
+4. **캐싱**: CDN에서 공개 데이터 캐싱 가능, 사용자별 데이터는 격리
+
+## 문제 해결 가이드
+
+### Hydration 깜빡임 방지
+```typescript
+// ✅ initialData로 서버-클라이언트 초기 상태 통일
+const { data: user } = useSuspenseQuery({
+  queryKey: ["user"],
+  queryFn: getUser,
+  initialData: null,
+});
+```
+
+### 에러 처리
+```typescript
+// ✅ 비로그인 사용자를 위한 안전한 에러 처리
+export async function getUser(): Promise<User | null> {
+  const supabase = createClient();
+  const { data, error } = await supabase.auth.getUser();
+
+  if (error) {
+    console.log("User not authenticated:", error.message);
+    return null; // 에러 대신 null 반환
+  }
+  return data.user;
+}
+```
+
 ## 참고사항
 
 - Suspense 경계는 페이지 레벨에서 설정
 - 에러는 Error Boundary에서 처리  
 - 사용자별 데이터는 쿼리 키로 격리
 - mutation 후에는 관련 쿼리 무효화로 데이터 동기화
+- SSR prefetch는 공개 데이터만, 사용자 데이터는 클라이언트에서 처리
