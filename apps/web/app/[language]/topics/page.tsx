@@ -4,7 +4,7 @@ import {
 	QueryClient,
 } from "@tanstack/react-query";
 import { Suspense } from "react";
-import { createClient } from "../utils/supabase/server";
+import { createClient } from "../../utils/supabase/server";
 import { TopicsList } from "./components/topics-list";
 import { TopicsLoading } from "./components/topics-loading";
 import { getTopics } from "./queries/topics-queries";
