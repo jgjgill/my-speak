@@ -4,6 +4,7 @@ import {
 	QueryClient,
 } from "@tanstack/react-query";
 import { Suspense } from "react";
+import { getCurrentUser } from "../../utils/auth/server";
 import { createClient } from "../../utils/supabase/server";
 import TopicClientWrapper from "./components/topic-client-wrapper";
 import TopicHeader from "./components/topic-header";
@@ -19,14 +20,8 @@ type Props = {
 
 export default async function TopicDetailPage({ params }: Props) {
 	const { id } = await params;
+	const currentUser = await getCurrentUser();
 	const supabase = await createClient();
-
-	const {
-		data: { user },
-		error: authError,
-	} = await supabase.auth.getUser();
-
-	const currentUser = authError ? null : user;
 
 	let initialStage = 1;
 	if (currentUser) {

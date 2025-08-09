@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useUser } from "../hooks/use-user";
+import { useAuth } from "../../../contexts/auth-context";
 import { useUserProgress } from "../hooks/use-user-progress";
 import StageFourContainer from "./stage-four-container";
 import StageNavigation from "./stage-navigation";
@@ -18,7 +18,7 @@ export default function TopicClientWrapper({
 	topicId,
 	initialStage,
 }: TopicClientWrapperProps) {
-	const { data: user } = useUser();
+	const { user } = useAuth();
 	const [currentStage, setCurrentStage] = useState(initialStage);
 
 	const userProgressQuery = useUserProgress(topicId, user);
@@ -38,7 +38,7 @@ export default function TopicClientWrapper({
 			/>
 
 			{currentStage === 1 && (
-				<StageOneContainer topicId={topicId} user={null} />
+				<StageOneContainer topicId={topicId} user={user} />
 			)}
 			{currentStage === 2 && (
 				<StageTwoContainer topicId={topicId} user={user} />

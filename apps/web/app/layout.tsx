@@ -5,14 +5,16 @@ import Link from "next/link";
 import AuthButton from "./components/auth-button";
 import { AuthProvider } from "./contexts/auth-context";
 import QueryProvider from "./providers/query-provider";
+import { getCurrentUser } from "./utils/auth/server";
 
-export default function Layout({ children }: PropsWithChildren) {
+export default async function Layout({ children }: PropsWithChildren) {
+	const initialUser = await getCurrentUser();
 	return (
 		<html lang="ko">
 			<body>
 				<QueryProvider>
-					<AuthProvider>
-						<header className="border-b bg-white">
+					<AuthProvider initialUser={initialUser}>
+						<header className="border-b bg-white h-16">
 							<div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
 								<h1 className="text-xl font-bold">
 									<Link href="/" className="hover:text-blue-600">

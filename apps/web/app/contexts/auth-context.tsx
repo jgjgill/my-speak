@@ -1,14 +1,15 @@
 "use client";
 
 import type { User } from "@supabase/supabase-js";
+import { useQueryClient } from "@tanstack/react-query";
 import { useRouter } from "next/navigation";
 import {
 	createContext,
 	type PropsWithChildren,
 	useContext,
 	useEffect,
-	useState,
 } from "react";
+import { useUser } from "../hooks/use-user";
 import { createClient } from "../utils/supabase/client";
 
 /**
@@ -18,41 +19,35 @@ import { createClient } from "../utils/supabase/client";
 
 interface AuthContextType {
 	user: User | null;
-	loading: boolean;
+	isLoading: boolean;
 	signInWithGoogle: () => Promise<void>;
 	signOut: () => Promise<void>;
 }
 
+interface AuthProviderProps extends PropsWithChildren {
+	initialUser?: User | null;
+}
+
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
-export function AuthProvider({ children }: PropsWithChildren) {
-	const [user, setUser] = useState<User | null>(null);
-	const [loading, setLoading] = useState(true);
+export function AuthProvider({
+	children,
+	initialUser = null,
+}: AuthProviderProps) {
+	const { data: user = null, isLoading } = useUser(initialUser);
+	const queryClient = useQueryClient();
 	const router = useRouter();
 	const supabase = createClient();
 
 	useEffect(() => {
-		// 초기 사용자 상태 확인
-		const getUser = async () => {
-			const {
-				data: { user },
-			} = await supabase.auth.getUser();
-			setUser(user);
-			setLoading(false);
-		};
-
-		getUser();
-
-		// Auth 상태 변경 리스너
 		const {
 			data: { subscription },
 		} = supabase.auth.onAuthStateChange(async (_event, session) => {
-			setUser(session?.user ?? null);
-			setLoading(false);
+			queryClient.setQueryData(["user"], session?.user ?? null);
 		});
 
 		return () => subscription.unsubscribe();
-	}, [supabase.auth]);
+	}, [supabase.auth, queryClient]);
 
 	const signInWithGoogle = async () => {
 		const { error } = await supabase.auth.signInWithOAuth({
@@ -79,7 +74,7 @@ export function AuthProvider({ children }: PropsWithChildren) {
 
 	const value = {
 		user,
-		loading,
+		isLoading,
 		signInWithGoogle,
 		signOut,
 	};

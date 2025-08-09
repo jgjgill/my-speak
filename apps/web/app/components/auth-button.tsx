@@ -4,15 +4,8 @@ import Image from "next/image";
 import { useAuth } from "../contexts/auth-context";
 
 export default function AuthButton() {
-	const { user, loading, signInWithGoogle, signOut } = useAuth();
+	const { user, signInWithGoogle, signOut } = useAuth();
 
-	if (loading) {
-		return (
-			<div className="px-4 py-2 bg-gray-100 rounded animate-pulse">
-				로딩 중...
-			</div>
-		);
-	}
 
 	if (user) {
 		return (
@@ -26,6 +19,9 @@ export default function AuthButton() {
 							height={32}
 							className="w-8 h-8 rounded-full"
 						/>
+					)}
+					{!user.user_metadata.avatar_url && (
+						<div className="w-8 h-8 bg-red-400" />
 					)}
 					<span className="text-sm font-medium">
 						{user.user_metadata?.full_name || user.email}
