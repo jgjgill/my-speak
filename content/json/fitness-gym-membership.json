@@ -1,0 +1,699 @@
+{
+  "topic": {
+    "id": "f8e2d4c6-9b1a-4e3f-8c7d-2a5b9e4f1c8a",
+    "title": "피트니스 센터 회원가입 상담",
+    "category": "일상생활",
+    "difficulty": "중급",
+    "description": "피트니스 센터에서 회원가입을 할 때 사용하는 실용적인 영어 표현들을 학습합니다.",
+    "total_sentences": 12
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 피트니스 센터 회원가입에 대해 문의하고 싶습니다."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "어떤 운동 프로그램이 있는지 알고 싶어요."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "개인 트레이닝 서비스도 제공하시나요?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "월 회비는 얼마인가요?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "운영 시간을 알려주세요."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "체험 수업을 먼저 받아볼 수 있나요?"
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "헬스장에 최신 운동기구가 있나요?"
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "샤워 시설과 라커룸도 이용할 수 있죠?"
+    },
+    {
+      "sentence_order": 9,
+      "korean_text": "요가 클래스나 그룹 운동도 있나요?"
+    },
+    {
+      "sentence_order": 10,
+      "korean_text": "장기 회원에 대한 할인이 있는지 궁금해요."
+    },
+    {
+      "sentence_order": 11,
+      "korean_text": "언제부터 운동을 시작할 수 있을까요?"
+    },
+    {
+      "sentence_order": 12,
+      "korean_text": "회원 등록 절차는 어떻게 되나요?"
+    }
+  ],
+  "english_scripts": [
+    {
+      "sentence_order": 1,
+      "english_text": "Hello, I'd like to inquire about fitness center membership.",
+      "chunked_text": "Hello, | I'd like to inquire | about fitness center membership."
+    },
+    {
+      "sentence_order": 2,
+      "english_text": "I want to know what kind of workout programs you have available.",
+      "chunked_text": "I want to know | what kind of workout programs | you have available."
+    },
+    {
+      "sentence_order": 3,
+      "english_text": "Do you also provide personal training services?",
+      "chunked_text": "Do you also provide | personal training services?"
+    },
+    {
+      "sentence_order": 4,
+      "english_text": "How much is the monthly membership fee?",
+      "chunked_text": "How much is | the monthly membership fee?"
+    },
+    {
+      "sentence_order": 5,
+      "english_text": "Could you tell me the operating hours?",
+      "chunked_text": "Could you tell me | the operating hours?"
+    },
+    {
+      "sentence_order": 6,
+      "english_text": "Can I take a trial class first?",
+      "chunked_text": "Can I take | a trial class first?"
+    },
+    {
+      "sentence_order": 7,
+      "english_text": "Do you have modern fitness equipment at the gym?",
+      "chunked_text": "Do you have | modern fitness equipment | at the gym?"
+    },
+    {
+      "sentence_order": 8,
+      "english_text": "I can use the shower facilities and locker room too, right?",
+      "chunked_text": "I can use | the shower facilities | and locker room too, right?"
+    },
+    {
+      "sentence_order": 9,
+      "english_text": "Do you also have yoga classes or group fitness classes?",
+      "chunked_text": "Do you also have | yoga classes | or group fitness classes?"
+    },
+    {
+      "sentence_order": 10,
+      "english_text": "I'm curious if there's a discount for long-term membership.",
+      "chunked_text": "I'm curious | if there's a discount | for long-term membership."
+    },
+    {
+      "sentence_order": 11,
+      "english_text": "When can I start working out?",
+      "chunked_text": "When can I | start working out?"
+    },
+    {
+      "sentence_order": 12,
+      "english_text": "What's the membership registration process?",
+      "chunked_text": "What's | the membership registration process?"
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "안녕하세요",
+        "피트니스 센터",
+        "회원가입 문의"
+      ],
+      "target_sentence": "Hello, I'd like to inquire about fitness center membership.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "운동 프로그램",
+        "어떤 종류",
+        "이용 가능"
+      ],
+      "target_sentence": "I want to know what kind of workout programs you have available.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "개인 트레이닝",
+        "서비스",
+        "제공"
+      ],
+      "target_sentence": "Do you also provide personal training services?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "월 회비",
+        "얼마"
+      ],
+      "target_sentence": "How much is the monthly membership fee?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "운영 시간",
+        "알려주세요"
+      ],
+      "target_sentence": "Could you tell me the operating hours?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "체험 수업",
+        "먼저 받아보기"
+      ],
+      "target_sentence": "Can I take a trial class first?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "최신 운동기구",
+        "헬스장",
+        "보유"
+      ],
+      "target_sentence": "Do you have modern fitness equipment at the gym?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 8,
+      "keywords": [
+        "샤워 시설",
+        "라커룸",
+        "이용 가능"
+      ],
+      "target_sentence": "I can use the shower facilities and locker room too, right?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 9,
+      "keywords": [
+        "요가 클래스",
+        "그룹 운동",
+        "있나요"
+      ],
+      "target_sentence": "Do you also have yoga classes or group fitness classes?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 10,
+      "keywords": [
+        "장기 회원",
+        "할인",
+        "궁금"
+      ],
+      "target_sentence": "I'm curious if there's a discount for long-term membership.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 11,
+      "keywords": [
+        "언제부터",
+        "운동 시작"
+      ],
+      "target_sentence": "When can I start working out?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 12,
+      "keywords": [
+        "회원 등록",
+        "절차"
+      ],
+      "target_sentence": "What's the membership registration process?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "회원가입",
+        "문의"
+      ],
+      "target_sentence": "Hello, I'd like to inquire about fitness center membership.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "운동 프로그램",
+        "종류"
+      ],
+      "target_sentence": "I want to know what kind of workout programs you have available.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 15,
+      "keywords": [
+        "개인 트레이닝"
+      ],
+      "target_sentence": "Do you also provide personal training services?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 16,
+      "keywords": [
+        "월 회비"
+      ],
+      "target_sentence": "How much is the monthly membership fee?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 17,
+      "keywords": [
+        "운영 시간"
+      ],
+      "target_sentence": "Could you tell me the operating hours?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 18,
+      "keywords": [
+        "체험 수업"
+      ],
+      "target_sentence": "Can I take a trial class first?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 19,
+      "keywords": [
+        "운동기구"
+      ],
+      "target_sentence": "Do you have modern fitness equipment at the gym?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 20,
+      "keywords": [
+        "샤워",
+        "라커룸"
+      ],
+      "target_sentence": "I can use the shower facilities and locker room too, right?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 21,
+      "keywords": [
+        "요가",
+        "그룹 운동"
+      ],
+      "target_sentence": "Do you also have yoga classes or group fitness classes?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 22,
+      "keywords": [
+        "장기 할인"
+      ],
+      "target_sentence": "I'm curious if there's a discount for long-term membership.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 23,
+      "keywords": [
+        "운동 시작"
+      ],
+      "target_sentence": "When can I start working out?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 24,
+      "keywords": [
+        "등록 절차"
+      ],
+      "target_sentence": "What's the membership registration process?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 25,
+      "keywords": [
+        "회원가입"
+      ],
+      "target_sentence": "Hello, I'd like to inquire about fitness center membership.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 26,
+      "keywords": [
+        "프로그램"
+      ],
+      "target_sentence": "I want to know what kind of workout programs you have available.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 27,
+      "keywords": [
+        "트레이닝"
+      ],
+      "target_sentence": "Do you also provide personal training services?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 28,
+      "keywords": [
+        "회비"
+      ],
+      "target_sentence": "How much is the monthly membership fee?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 29,
+      "keywords": [
+        "시간"
+      ],
+      "target_sentence": "Could you tell me the operating hours?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 30,
+      "keywords": [
+        "체험"
+      ],
+      "target_sentence": "Can I take a trial class first?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 31,
+      "keywords": [
+        "기구"
+      ],
+      "target_sentence": "Do you have modern fitness equipment at the gym?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 32,
+      "keywords": [
+        "시설"
+      ],
+      "target_sentence": "I can use the shower facilities and locker room too, right?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 33,
+      "keywords": [
+        "클래스"
+      ],
+      "target_sentence": "Do you also have yoga classes or group fitness classes?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 34,
+      "keywords": [
+        "할인"
+      ],
+      "target_sentence": "I'm curious if there's a discount for long-term membership.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 35,
+      "keywords": [
+        "시작"
+      ],
+      "target_sentence": "When can I start working out?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 36,
+      "keywords": [
+        "절차"
+      ],
+      "target_sentence": "What's the membership registration process?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 37,
+      "keywords": [
+        "membership"
+      ],
+      "target_sentence": "Hello, I'd like to inquire about fitness center membership.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 38,
+      "keywords": [
+        "programs"
+      ],
+      "target_sentence": "I want to know what kind of workout programs you have available.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 39,
+      "keywords": [
+        "training"
+      ],
+      "target_sentence": "Do you also provide personal training services?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 40,
+      "keywords": [
+        "fee"
+      ],
+      "target_sentence": "How much is the monthly membership fee?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 41,
+      "keywords": [
+        "hours"
+      ],
+      "target_sentence": "Could you tell me the operating hours?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 42,
+      "keywords": [
+        "trial"
+      ],
+      "target_sentence": "Can I take a trial class first?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 43,
+      "keywords": [
+        "equipment"
+      ],
+      "target_sentence": "Do you have modern fitness equipment at the gym?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 44,
+      "keywords": [
+        "facilities"
+      ],
+      "target_sentence": "I can use the shower facilities and locker room too, right?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 45,
+      "keywords": [
+        "classes"
+      ],
+      "target_sentence": "Do you also have yoga classes or group fitness classes?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 46,
+      "keywords": [
+        "discount"
+      ],
+      "target_sentence": "I'm curious if there's a discount for long-term membership.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 47,
+      "keywords": [
+        "start"
+      ],
+      "target_sentence": "When can I start working out?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 48,
+      "keywords": [
+        "process"
+      ],
+      "target_sentence": "What's the membership registration process?",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 1,
+      "korean_phrase": "피트니스 센터 회원가입",
+      "english_phrase": "fitness center membership"
+    },
+    {
+      "sentence_order": 2,
+      "korean_phrase": "운동 프로그램",
+      "english_phrase": "workout programs"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "개인 트레이닝",
+      "english_phrase": "personal training"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "월 회비",
+      "english_phrase": "monthly membership fee"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "운영 시간",
+      "english_phrase": "operating hours"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "체험 수업",
+      "english_phrase": "trial class"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "최신 운동기구",
+      "english_phrase": "modern fitness equipment"
+    },
+    {
+      "sentence_order": 8,
+      "korean_phrase": "샤워 시설",
+      "english_phrase": "shower facilities"
+    },
+    {
+      "sentence_order": 8,
+      "korean_phrase": "라커룸",
+      "english_phrase": "locker room"
+    },
+    {
+      "sentence_order": 9,
+      "korean_phrase": "요가 클래스",
+      "english_phrase": "yoga classes"
+    },
+    {
+      "sentence_order": 9,
+      "korean_phrase": "그룹 운동",
+      "english_phrase": "group fitness classes"
+    },
+    {
+      "sentence_order": 10,
+      "korean_phrase": "장기 회원",
+      "english_phrase": "long-term membership"
+    },
+    {
+      "sentence_order": 11,
+      "korean_phrase": "운동을 시작",
+      "english_phrase": "start working out"
+    },
+    {
+      "sentence_order": 12,
+      "korean_phrase": "회원 등록",
+      "english_phrase": "membership registration"
+    }
+  ]
+}
