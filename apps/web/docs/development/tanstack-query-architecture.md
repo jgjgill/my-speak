@@ -13,7 +13,7 @@ my-speak 웹 애플리케이션은 **서버-클라이언트 하이브리드 아�
 ## 폴더 구조
 
 ```
-app/topics/[id]/
+app/[language]/topics/[id]/
 ├── components/          # React 컴포넌트들
 ├── hooks/              # TanStack Query 훅들
 ├── queries/            # 데이터 쿼리 함수들
