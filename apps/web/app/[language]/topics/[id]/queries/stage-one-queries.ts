@@ -1,6 +1,6 @@
 import type { Tables } from "@repo/typescript-config/supabase-types";
 import type { SupabaseClient, User } from "@supabase/supabase-js";
-import { createClient } from "../../../utils/supabase/client";
+import { createClient } from "../../../../utils/supabase/client";
 
 export type KoreanScript = Tables<"korean_scripts">;
 export type LearningPoint = Tables<"learning_points">;

@@ -1,6 +1,6 @@
 import type { Tables } from "@repo/typescript-config/supabase-types";
 import type { User } from "@supabase/supabase-js";
-import { createClient } from "../../../utils/supabase/client";
+import { createClient } from "../../../../utils/supabase/client";
 
 type KoreanScript = Tables<"korean_scripts">;
 type EnglishScript = Tables<"english_scripts">;

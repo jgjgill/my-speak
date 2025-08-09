@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useAuth } from "../../../contexts/auth-context";
+import { useAuth } from "../../../../contexts/auth-context";
 import { useUserProgress } from "../hooks/use-user-progress";
 import StageFourContainer from "./stage-four-container";
 import StageNavigation from "./stage-navigation";

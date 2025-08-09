@@ -1,5 +1,5 @@
 import type { Tables } from "@repo/typescript-config/supabase-types";
-import { createClient } from "../../../utils/supabase/client";
+import { createClient } from "../../../../utils/supabase/client";
 
 type UserProgress = Tables<"user_progress">;
 

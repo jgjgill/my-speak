@@ -1,11 +1,9 @@
 import type { Tables } from "@repo/typescript-config/supabase-types";
 import type { SupabaseClient } from "@supabase/supabase-js";
-import { createClient } from "../../../utils/supabase/client";
+import { createClient } from "../../../../utils/supabase/client";
 
-// 타입 정의
 export type Topic = Tables<"topics">;
 
-// 주제 정보 조회
 export async function getTopic(
 	topicId: string,
 	supabase?: SupabaseClient,

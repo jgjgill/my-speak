@@ -3,8 +3,8 @@
 import type { Tables } from "@repo/typescript-config/supabase-types";
 import { useState } from "react";
 import Highlighter from "react-highlight-words";
-import { useAuth } from "../../../contexts/auth-context";
-import { createClient } from "../../../utils/supabase/client";
+import { useAuth } from "../../../../contexts/auth-context";
+import { createClient } from "../../../../utils/supabase/client";
 
 type KoreanScript = Tables<"korean_scripts">;
 type LearningPoint = Tables<"learning_points">;

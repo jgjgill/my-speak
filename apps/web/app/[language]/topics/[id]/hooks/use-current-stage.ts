@@ -2,7 +2,7 @@
 
 import type { User } from "@supabase/supabase-js";
 import { useState } from "react";
-import { createClient } from "../../../utils/supabase/client";
+import { createClient } from "../../../../utils/supabase/client";
 
 interface UseCurrentStageProps {
 	topicId: string;
@@ -30,27 +30,27 @@ export function useCurrentStage({
 		}
 
 		if (!user) {
-			return
+			return;
 		}
 
 		setCurrentStageState(stage);
 
-			try {
-				const { error } = await supabase.from("user_progress").upsert(
-					{
-						user_id: user.id,
-						topic_id: topicId,
-						current_stage: stage,
-					},
-					{ onConflict: "user_id,topic_id" },
-				);
+		try {
+			const { error } = await supabase.from("user_progress").upsert(
+				{
+					user_id: user.id,
+					topic_id: topicId,
+					current_stage: stage,
+				},
+				{ onConflict: "user_id,topic_id" },
+			);
 
-				if (error) {
-					throw error;
-				}
-			} catch (error) {
-				console.error("현재 단계 저장 중 오류:", error);
+			if (error) {
+				throw error;
 			}
+		} catch (error) {
+			console.error("현재 단계 저장 중 오류:", error);
+		}
 	};
 
 	return {

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useParams } from "next/navigation";
 import type { Topic } from "../queries/topics-queries";
 
 interface TopicCardProps {
@@ -6,8 +7,10 @@ interface TopicCardProps {
 }
 
 export function TopicCard({ topic }: TopicCardProps) {
+	const { language } = useParams();
+	
 	return (
-		<Link key={topic.id} href={`/topics/${topic.id}`}>
+		<Link key={topic.id} href={`/${language}/topics/${topic.id}`}>
 			<div className="border p-4 mb-4 rounded hover:bg-gray-50 cursor-pointer">
 				<h2 className="text-xl font-semibold">{topic.title}</h2>
 				<div className="text-sm text-gray-600 mt-2">

@@ -1,11 +1,13 @@
 import type { Tables } from "@repo/typescript-config/supabase-types";
-import { createClient } from "../../../utils/supabase/client";
+import { createClient } from "../../../../utils/supabase/client";
 
 export type KeywordSpeech = Tables<"keyword_speeches">;
 
-export async function getStageFourData(topicId: string): Promise<KeywordSpeech[]> {
+export async function getStageFourData(
+	topicId: string,
+): Promise<KeywordSpeech[]> {
 	const supabase = createClient();
-	
+
 	const { data, error } = await supabase
 		.from("keyword_speeches")
 		.select("*")
