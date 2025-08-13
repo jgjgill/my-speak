@@ -1,0 +1,632 @@
+{
+  "topic": {
+    "id": "8a9b5c4d-2e3f-4567-8901-123456789abc",
+    "title": "병원 예약과 건강 상담",
+    "category": "일상생활",
+    "difficulty": "중급",
+    "description": "병원 예약부터 증상 설명, 의료진과의 상담까지 의료 환경에서 필요한 영어 표현들을 학습합니다.",
+    "total_sentences": 11
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 병원 예약을 하고 싶습니다."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "다음 주 화요일 오후에 시간이 가능한지 확인해주세요."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "요즘 계속 두통이 있어서 걱정이 됩니다."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "특히 아침에 일어날 때 증상이 심해집니다."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "지난주부터 수면 패턴도 불규칙해졌어요."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "스트레스 때문인지 확실하지 않습니다."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "의사 선생님께 정확한 진단을 받고 싶습니다."
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "처방전이 필요한지도 알고 싶어요."
+    },
+    {
+      "sentence_order": 9,
+      "korean_text": "건강보험은 적용되나요?"
+    },
+    {
+      "sentence_order": 10,
+      "korean_text": "다음 진료 예약은 언제 잡을 수 있을까요?"
+    },
+    {
+      "sentence_order": 11,
+      "korean_text": "완전히 회복될 때까지 관리가 필요할 것 같습니다."
+    }
+  ],
+  "english_scripts": [
+    {
+      "sentence_order": 1,
+      "english_text": "Hello, I would like to make a hospital appointment.",
+      "chunked_text": "Hello, | I would like to make | a hospital appointment."
+    },
+    {
+      "sentence_order": 2,
+      "english_text": "Please check if there's time available next Tuesday afternoon.",
+      "chunked_text": "Please check | if there's time available | next Tuesday afternoon."
+    },
+    {
+      "sentence_order": 3,
+      "english_text": "I've been having persistent headache lately and I'm worried.",
+      "chunked_text": "I've been having | persistent headache lately | and I'm worried."
+    },
+    {
+      "sentence_order": 4,
+      "english_text": "The symptoms get worse especially when I wake up in the morning.",
+      "chunked_text": "The symptoms get worse | especially when I wake up | in the morning."
+    },
+    {
+      "sentence_order": 5,
+      "english_text": "My sleep pattern has also become irregular since last week.",
+      "chunked_text": "My sleep pattern | has also become irregular | since last week."
+    },
+    {
+      "sentence_order": 6,
+      "english_text": "I'm not sure if it's because of stress.",
+      "chunked_text": "I'm not sure | if it's because of stress."
+    },
+    {
+      "sentence_order": 7,
+      "english_text": "I want to get an accurate diagnosis from the doctor.",
+      "chunked_text": "I want to get | an accurate diagnosis | from the doctor."
+    },
+    {
+      "sentence_order": 8,
+      "english_text": "I'd also like to know if I need a prescription.",
+      "chunked_text": "I'd also like to know | if I need | a prescription."
+    },
+    {
+      "sentence_order": 9,
+      "english_text": "Does health insurance apply?",
+      "chunked_text": "Does health insurance apply?"
+    },
+    {
+      "sentence_order": 10,
+      "english_text": "When can I schedule the next medical appointment?",
+      "chunked_text": "When can I schedule | the next medical appointment?"
+    },
+    {
+      "sentence_order": 11,
+      "english_text": "I think I'll need care until fully recovered.",
+      "chunked_text": "I think I'll need care | until fully recovered."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "병원",
+        "예약",
+        "하고 싶다"
+      ],
+      "target_sentence": "Hello, I would like to make a hospital appointment.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "다음 주",
+        "화요일 오후",
+        "시간 확인"
+      ],
+      "target_sentence": "Please check if there's time available next Tuesday afternoon.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "계속",
+        "두통",
+        "걱정"
+      ],
+      "target_sentence": "I've been having persistent headache lately and I'm worried.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "증상",
+        "심해지다",
+        "아침"
+      ],
+      "target_sentence": "The symptoms get worse especially when I wake up in the morning.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "수면 패턴",
+        "불규칙",
+        "지난주"
+      ],
+      "target_sentence": "My sleep pattern has also become irregular since last week.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "스트레스",
+        "확실하지 않다"
+      ],
+      "target_sentence": "I'm not sure if it's because of stress.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "정확한 진단",
+        "받고 싶다"
+      ],
+      "target_sentence": "I want to get an accurate diagnosis from the doctor.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 8,
+      "keywords": [
+        "처방전",
+        "필요한지"
+      ],
+      "target_sentence": "I'd also like to know if I need a prescription.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 9,
+      "keywords": [
+        "건강보험",
+        "적용"
+      ],
+      "target_sentence": "Does health insurance apply?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 10,
+      "keywords": [
+        "다음 진료",
+        "언제"
+      ],
+      "target_sentence": "When can I schedule the next medical appointment?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 11,
+      "keywords": [
+        "완전히 회복",
+        "관리 필요"
+      ],
+      "target_sentence": "I think I'll need care until fully recovered.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "병원 예약"
+      ],
+      "target_sentence": "Hello, I would like to make a hospital appointment.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "화요일 오후"
+      ],
+      "target_sentence": "Please check if there's time available next Tuesday afternoon.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "두통",
+        "걱정"
+      ],
+      "target_sentence": "I've been having persistent headache lately and I'm worried.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 15,
+      "keywords": [
+        "증상",
+        "아침"
+      ],
+      "target_sentence": "The symptoms get worse especially when I wake up in the morning.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 16,
+      "keywords": [
+        "수면",
+        "불규칙"
+      ],
+      "target_sentence": "My sleep pattern has also become irregular since last week.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 17,
+      "keywords": [
+        "스트레스"
+      ],
+      "target_sentence": "I'm not sure if it's because of stress.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 18,
+      "keywords": [
+        "정확한 진단"
+      ],
+      "target_sentence": "I want to get an accurate diagnosis from the doctor.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 19,
+      "keywords": [
+        "처방전"
+      ],
+      "target_sentence": "I'd also like to know if I need a prescription.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 20,
+      "keywords": [
+        "건강보험"
+      ],
+      "target_sentence": "Does health insurance apply?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 21,
+      "keywords": [
+        "다음 진료"
+      ],
+      "target_sentence": "When can I schedule the next medical appointment?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 22,
+      "keywords": [
+        "회복",
+        "관리"
+      ],
+      "target_sentence": "I think I'll need care until fully recovered.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 23,
+      "keywords": [
+        "예약"
+      ],
+      "target_sentence": "Hello, I would like to make a hospital appointment.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 24,
+      "keywords": [
+        "화요일"
+      ],
+      "target_sentence": "Please check if there's time available next Tuesday afternoon.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 25,
+      "keywords": [
+        "두통"
+      ],
+      "target_sentence": "I've been having persistent headache lately and I'm worried.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 26,
+      "keywords": [
+        "아침"
+      ],
+      "target_sentence": "The symptoms get worse especially when I wake up in the morning.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 27,
+      "keywords": [
+        "수면"
+      ],
+      "target_sentence": "My sleep pattern has also become irregular since last week.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 28,
+      "keywords": [
+        "스트레스"
+      ],
+      "target_sentence": "I'm not sure if it's because of stress.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 29,
+      "keywords": [
+        "진단"
+      ],
+      "target_sentence": "I want to get an accurate diagnosis from the doctor.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 30,
+      "keywords": [
+        "처방전"
+      ],
+      "target_sentence": "I'd also like to know if I need a prescription.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 31,
+      "keywords": [
+        "보험"
+      ],
+      "target_sentence": "Does health insurance apply?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 32,
+      "keywords": [
+        "진료"
+      ],
+      "target_sentence": "When can I schedule the next medical appointment?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 33,
+      "keywords": [
+        "회복"
+      ],
+      "target_sentence": "I think I'll need care until fully recovered.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 34,
+      "keywords": [
+        "appointment"
+      ],
+      "target_sentence": "Hello, I would like to make a hospital appointment.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 35,
+      "keywords": [
+        "Tuesday"
+      ],
+      "target_sentence": "Please check if there's time available next Tuesday afternoon.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 36,
+      "keywords": [
+        "headache"
+      ],
+      "target_sentence": "I've been having persistent headache lately and I'm worried.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 37,
+      "keywords": [
+        "morning"
+      ],
+      "target_sentence": "The symptoms get worse especially when I wake up in the morning.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 38,
+      "keywords": [
+        "sleep"
+      ],
+      "target_sentence": "My sleep pattern has also become irregular since last week.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 39,
+      "keywords": [
+        "stress"
+      ],
+      "target_sentence": "I'm not sure if it's because of stress.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 40,
+      "keywords": [
+        "diagnosis"
+      ],
+      "target_sentence": "I want to get an accurate diagnosis from the doctor.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 41,
+      "keywords": [
+        "prescription"
+      ],
+      "target_sentence": "I'd also like to know if I need a prescription.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 42,
+      "keywords": [
+        "insurance"
+      ],
+      "target_sentence": "Does health insurance apply?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 43,
+      "keywords": [
+        "medical"
+      ],
+      "target_sentence": "When can I schedule the next medical appointment?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 44,
+      "keywords": [
+        "recovery"
+      ],
+      "target_sentence": "I think I'll need care until fully recovered.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 1,
+      "korean_phrase": "병원 예약",
+      "english_phrase": "hospital appointment"
+    },
+    {
+      "sentence_order": 2,
+      "korean_phrase": "시간이 가능한지",
+      "english_phrase": "time available"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "계속 두통",
+      "english_phrase": "persistent headache"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "증상이 심해집니다",
+      "english_phrase": "symptoms get worse"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "수면 패턴",
+      "english_phrase": "sleep pattern"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "스트레스 때문인지",
+      "english_phrase": "because of stress"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "정확한 진단",
+      "english_phrase": "accurate diagnosis"
+    },
+    {
+      "sentence_order": 8,
+      "korean_phrase": "처방전",
+      "english_phrase": "prescription"
+    },
+    {
+      "sentence_order": 9,
+      "korean_phrase": "건강보험",
+      "english_phrase": "health insurance"
+    },
+    {
+      "sentence_order": 10,
+      "korean_phrase": "진료 예약",
+      "english_phrase": "medical appointment"
+    },
+    {
+      "sentence_order": 11,
+      "korean_phrase": "완전히 회복될 때까지",
+      "english_phrase": "until fully recovered"
+    }
+  ]
+}
