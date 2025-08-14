@@ -1,24 +1,20 @@
 "use client";
 
-import type { User } from "@supabase/supabase-js";
-import { useStageOneData } from "../hooks/use-stage-one-data";
+import { useAuth } from "../../../../contexts/auth-context";
+import { useStageOnePublicData } from "../hooks/use-stage-one-public-data";
 import StageOnePractice from "./stage-one-practice";
 
 interface StageOneContainerProps {
 	topicId: string;
-	user: User | null;
 }
 
-export default function StageOneContainer({
-	topicId,
-	user,
-}: StageOneContainerProps) {
+export default function StageOneContainer({ topicId }: StageOneContainerProps) {
+	const { user } = useAuth();
 	const [
 		{ data: koreanScripts },
 		{ data: learningPoints },
-		{ data: userTranslations },
 		{ data: userSelectedPoints },
-	] = useStageOneData(topicId, user);
+	] = useStageOnePublicData(topicId, user);
 
 	const learningPointsByOrder = learningPoints.reduce(
 		(acc, point) => {
@@ -30,23 +26,6 @@ export default function StageOneContainer({
 			return acc;
 		},
 		{} as Record<number, typeof learningPoints>,
-	);
-
-	const initialUserProgress = userTranslations.reduce(
-		(acc, translation) => {
-			acc[translation.sentence_order] = {
-				translation: translation.user_translation,
-				isCompleted: translation.is_completed || false,
-				timestamp: translation.updated_at
-					? new Date(translation.updated_at)
-					: undefined,
-			};
-			return acc;
-		},
-		{} as Record<
-			number,
-			{ translation?: string; isCompleted?: boolean; timestamp?: Date }
-		>,
 	);
 
 	const initialSelectedPoints = new Set(
@@ -87,7 +66,6 @@ export default function StageOneContainer({
 				koreanScripts={koreanScripts}
 				learningPointsByOrder={learningPointsByOrder}
 				topicId={topicId}
-				initialUserProgress={initialUserProgress}
 				initialSelectedPoints={initialSelectedPoints}
 			/>
 		</div>
