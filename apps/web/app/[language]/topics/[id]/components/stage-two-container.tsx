@@ -1,7 +1,7 @@
 "use client";
 
-import type { User } from "@supabase/supabase-js";
 import Highlighter from "react-highlight-words";
+import { useAuth } from "../../../../contexts/auth-context";
 import { useStageTwoData } from "../hooks/use-stage-two-data";
 import {
 	createSelectedLearningPointsByOrder,
@@ -11,20 +11,20 @@ import {
 
 interface StageTwoContainerProps {
 	topicId: string;
-	user: User | null;
 }
 
-export default function StageTwoContainer({
-	topicId,
-	user,
-}: StageTwoContainerProps) {
-	const { data: {
-		koreanScripts,
-		englishScripts,
-		learningPoints,
-		userTranslations,
-		userSelectedPoints,
-	} } = useStageTwoData(topicId, user);
+export default function StageTwoContainer({ topicId }: StageTwoContainerProps) {
+	const { user } = useAuth();
+
+	const {
+		data: {
+			koreanScripts,
+			englishScripts,
+			learningPoints,
+			userTranslations,
+			userSelectedPoints,
+		},
+	} = useStageTwoData(topicId, user);
 
 	const selectedLearningPointsByOrder = createSelectedLearningPointsByOrder(
 		userSelectedPoints,
