@@ -8,9 +8,11 @@ import { getCurrentUser } from "../../../utils/auth/server";
 import { createClient } from "../../../utils/supabase/server";
 import TopicClientWrapper from "./components/topic-client-wrapper";
 import TopicHeader from "./components/topic-header";
+import { getEmptyUserSelectedPoints } from "./hooks/use-stage-one-public-data";
 import {
 	getKoreanScripts,
 	getLearningPoints,
+	getUserSelectedPoints,
 } from "./queries/stage-one-queries";
 import { getTopic } from "./queries/topic-info-queries";
 
@@ -22,6 +24,8 @@ export default async function TopicDetailPage({ params }: Props) {
 	const { id } = await params;
 	const currentUser = await getCurrentUser();
 	const supabase = await createClient();
+
+	const queryClient = new QueryClient();
 
 	let initialStage = 1;
 	if (currentUser) {
@@ -35,8 +39,6 @@ export default async function TopicDetailPage({ params }: Props) {
 		initialStage = progressData?.current_stage || 1;
 	}
 
-	const queryClient = new QueryClient();
-
 	await Promise.all([
 		queryClient.prefetchQuery({
 			queryKey: ["korean-scripts", id],
@@ -49,6 +51,16 @@ export default async function TopicDetailPage({ params }: Props) {
 		queryClient.prefetchQuery({
 			queryKey: ["topic", id],
 			queryFn: () => getTopic(id, supabase),
+		}),
+		queryClient.prefetchQuery({
+			queryKey: [
+				"user-selected-points",
+				id,
+				currentUser ? currentUser.id : "guest",
+			],
+			queryFn: currentUser
+				? () => getUserSelectedPoints(id, currentUser)
+				: getEmptyUserSelectedPoints,
 		}),
 	]);
 
