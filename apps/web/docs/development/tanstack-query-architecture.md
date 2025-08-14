@@ -15,23 +15,32 @@ my-speak 웹 애플리케이션은 **서버-클라이언트 하이브리드 아�
 ```
 app/[language]/topics/[id]/
 ├── components/          # React 컴포넌트들
+│   ├── stage-one-container.tsx           # 1단계 데이터 컨테이너
+│   ├── stage-one-practice.tsx            # 1단계 연습 메인 컴포넌트
+│   ├── korean-sentence-highlighter.tsx  # 학습 포인트 하이라이트 컴포넌트
+│   ├── practice-header.tsx               # 연습 헤더 및 안내
+│   ├── translation-input-form.tsx        # 번역 입력 폼 (CSR)
+│   └── ...
 ├── hooks/              # TanStack Query 훅들
 ├── queries/            # 데이터 쿼리 함수들
 ├── mutations/          # 데이터 변경 함수들
 └── utils/              # 유틸리티 함수들
+    └── stage-completion.ts               # 단계 완료 로직
 ```
 
 ### hooks/ - TanStack Query 훅들
 
 ```typescript
 hooks/
-├── use-user.ts              # 전역 사용자 인증 상태
-├── use-topic.ts             # 주제 정보
-├── use-user-progress.ts     # 사용자 학습 진행도
-├── use-stage-one-data.ts    # 1단계 데이터 (한글 스크립트, 학습 포인트)
-├── use-stage-two-data.ts    # 2단계 데이터 (영어 스크립트, 사용자 번역)
-├── use-stage-three-data.ts  # 3단계 데이터 (읽기 연습)
-└── use-stage-four-data.ts   # 4단계 데이터 (키워드 스피치)
+├── use-user.ts                    # 전역 사용자 인증 상태
+├── use-topic.ts                   # 주제 정보
+├── use-user-progress.ts           # 사용자 학습 진행도
+├── use-stage-one-public-data.ts   # 1단계 공개 데이터 + 사용자 선택 포인트
+├── use-stage-two-data.ts          # 2단계 데이터 (영어 스크립트, 사용자 번역)
+├── use-stage-three-data.ts        # 3단계 데이터 (읽기 연습)
+├── use-stage-four-data.ts         # 4단계 데이터 (키워드 스피치)
+├── use-guest-progress.ts          # 게스트 사용자 진행률 관리
+└── use-update-user-progress.ts    # 사용자 진행률 업데이트
 ```
 
 ### queries/ - 데이터 쿼리 함수들
@@ -164,7 +173,7 @@ export async function getUser(): Promise<User | null> {
 
 ```typescript
 // useSuspenseQueries로 병렬 데이터 페칭
-export function useStageOneData(topicId: string, user: User | null) {
+export function useStageOnePublicData(topicId: string, user?: User | null) {
   return useSuspenseQueries({
     queries: [
       {
@@ -176,10 +185,10 @@ export function useStageOneData(topicId: string, user: User | null) {
         queryFn: () => getLearningPoints(topicId),
       },
       {
-        queryKey: ["user-translations", topicId, user ? user.id : "guest"],
-        queryFn: user 
-          ? () => getUserTranslations(topicId, user)
-          : () => Promise.resolve([]),
+        queryKey: ["user-selected-points", topicId, user ? user.id : "guest"],
+        queryFn: user
+          ? () => getUserSelectedPoints(topicId, user)
+          : getEmptyUserSelectedPoints,
       },
     ],
   });
@@ -247,6 +256,12 @@ export default async function TopicDetailPage({ params }: Props) {
     queryClient.prefetchQuery({
       queryKey: ["topic", id],
       queryFn: () => getTopic(id, supabase),
+    }),
+    queryClient.prefetchQuery({
+      queryKey: ["user-selected-points", id, currentUser ? currentUser.id : "guest"],
+      queryFn: currentUser
+        ? () => getUserSelectedPoints(id, currentUser)
+        : getEmptyUserSelectedPoints,
     }),
   ]);
 
