@@ -4,7 +4,8 @@ import type { Tables } from "@repo/typescript-config/supabase-types";
 import dynamic from "next/dynamic";
 import { useState } from "react";
 import { useAuth } from "../../../../contexts/auth-context";
-import { createClient } from "../../../../utils/supabase/client";
+import { useLearningPointMutations } from "../hooks/use-learning-point-mutations";
+import { useTranslationMutation } from "../hooks/use-translation-mutations";
 import { useUserTranslations } from "../hooks/use-user-translations";
 import KoreanSentenceHighlighter from "./korean-sentence-highlighter";
 import PracticeHeader from "./practice-header";
@@ -22,7 +23,7 @@ interface StageOnePracticeProps {
 	learningPointsByOrder: Record<number, LearningPoint[]>;
 	topicId: string;
 	initialSelectedPoints: Set<string>;
-	onStageComplete: () => Promise<void>;
+	onStageComplete: () => void;
 }
 
 const getLearningPointInfo = (
@@ -43,38 +44,37 @@ export default function StageOnePractice({
 	onStageComplete,
 }: StageOnePracticeProps) {
 	const { user } = useAuth();
-	const supabase = createClient();
 
 	const [selectedPoints, setSelectedPoints] = useState(initialSelectedPoints);
 	const { data: userTranslations } = useUserTranslations(topicId, user);
+
+	const translationMutation = useTranslationMutation(topicId, user);
+	const { addLearningPoint, removeLearningPoint } = useLearningPointMutations(
+		topicId,
+		user,
+	);
 
 	const handleTranslationSubmit = async (
 		sentenceOrder: number,
 		translated: string,
 	) => {
 		if (user) {
+			const koreanText =
+				koreanScripts.find((s) => s.sentence_order === sentenceOrder)
+					?.korean_text || "";
+
 			try {
-				const { error } = await supabase.from("user_translations").upsert(
-					{
-						user_id: user.id,
-						topic_id: topicId,
-						sentence_order: sentenceOrder,
-						korean_text:
-							koreanScripts.find((s) => s.sentence_order === sentenceOrder)
-								?.korean_text || "",
-						user_translation: translated,
-						is_completed: true,
-					},
-					{ onConflict: "user_id,topic_id,sentence_order" },
-				);
+				await translationMutation.mutateAsync({
+					topicId,
+					sentenceOrder,
+					koreanText,
+					userTranslation: translated,
+					isCompleted: true,
+				});
 
 				alert("번역이 저장되었습니다!");
-
-				if (error) {
-					console.error("번역 저장 실패:", error.message);
-				}
-			} catch (error) {
-				console.error("번역 저장 중 오류:", error);
+			} catch (_error) {
+				alert("번역 저장에 실패했습니다. 다시 시도해주세요.");
 			}
 		}
 	};
@@ -96,43 +96,26 @@ export default function StageOnePractice({
 				const pointKey = `${sentenceOrder}-${pointInfo.id}`;
 				const isSelected = selectedPoints.has(pointKey);
 
-				setSelectedPoints((prev) => {
-					const newSet = new Set(prev);
-
-					isSelected ? newSet.delete(pointKey) : newSet.add(pointKey);
-
-					return newSet;
-				});
-
 				try {
 					if (isSelected) {
-						const { error } = await supabase
-							.from("user_selected_points")
-							.delete()
-							.eq("user_id", user.id)
-							.eq("learning_point_id", pointInfo.id);
-
-						if (error) {
-							throw error;
-						}
+						await removeLearningPoint.mutateAsync({
+							topicId,
+							learningPointId: pointInfo.id,
+						});
 					} else {
-						const { error } = await supabase
-							.from("user_selected_points")
-							.upsert(
-								{
-									user_id: user.id,
-									topic_id: topicId,
-									learning_point_id: pointInfo.id,
-								},
-								{ onConflict: "user_id,topic_id,learning_point_id" },
-							);
-
-						if (error) {
-							throw error;
-						}
+						await addLearningPoint.mutateAsync({
+							topicId,
+							learningPointId: pointInfo.id,
+						});
 					}
-				} catch (error) {
-					console.error("학습 포인트 처리 중 오류:", error);
+
+					setSelectedPoints((prev) => {
+						const newSet = new Set(prev);
+						isSelected ? newSet.delete(pointKey) : newSet.add(pointKey);
+						return newSet;
+					});
+				} catch (_error) {
+					alert("학습 포인트 업데이트에 실패했습니다. 다시 시도해주세요.");
 				}
 			}
 		}

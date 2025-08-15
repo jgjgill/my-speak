@@ -4,7 +4,7 @@ import { useAuth } from "../../../../contexts/auth-context";
 
 interface StageCompleteButtonProps {
 	isStageComplete: boolean;
-	onStageComplete: () => Promise<void>;
+	onStageComplete: () => void;
 }
 
 export default function StageCompleteButton({

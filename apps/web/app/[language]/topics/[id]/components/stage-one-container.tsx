@@ -6,12 +6,12 @@ import StageOnePractice from "./stage-one-practice";
 
 interface StageOneContainerProps {
 	topicId: string;
-	onStageComplete: () => Promise<void>;
+	onStageComplete: () => void;
 }
 
-export default function StageOneContainer({ 
-	topicId, 
-	onStageComplete 
+export default function StageOneContainer({
+	topicId,
+	onStageComplete,
 }: StageOneContainerProps) {
 	const { user } = useAuth();
 	const [
