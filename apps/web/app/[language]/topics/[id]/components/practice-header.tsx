@@ -1,5 +1,16 @@
 "use client";
 
+import dynamic from "next/dynamic";
+
+const ProgressIndicator = dynamic(() => import("./progress-indicator"), {
+	ssr: false,
+	loading: () => (
+		<div className="text-sm text-gray-600">
+			진행률: <span className="inline-block w-8 h-3 bg-gray-200 animate-pulse rounded"></span>
+		</div>
+	),
+});
+
 interface PracticeHeaderProps {
 	progressPercentage: number;
 }
@@ -9,7 +20,7 @@ export default function PracticeHeader({ progressPercentage }: PracticeHeaderPro
 		<>
 			<div className="flex justify-between items-center mb-4">
 				<h3 className="font-bold">문장별 번역 연습</h3>
-				<div className="text-sm text-gray-600">진행률: {progressPercentage}%</div>
+				<ProgressIndicator progressPercentage={progressPercentage} />
 			</div>
 
 			<div className="mb-4 p-3 bg-blue-50 border border-blue-200 rounded">
