@@ -27,17 +27,21 @@ export default async function TopicDetailPage({ params }: Props) {
 
 	const queryClient = new QueryClient();
 
-	let initialStage = 1;
-	if (currentUser) {
-		const { data: progressData } = await supabase
+	const getUserProgress = async () => {
+		if (!currentUser) return 1;
+
+		const { data, error } = await supabase
 			.from("user_progress")
 			.select("current_stage")
 			.eq("user_id", currentUser.id)
 			.eq("topic_id", id)
-			.single();
+			.maybeSingle();
 
-		initialStage = progressData?.current_stage || 1;
-	}
+		if (error) throw error;
+		return data?.current_stage || 1;
+	};
+
+	const getGuestProgress = async () => 1;
 
 	await Promise.all([
 		queryClient.prefetchQuery({
@@ -62,6 +66,10 @@ export default async function TopicDetailPage({ params }: Props) {
 				? () => getUserSelectedPoints(id, currentUser)
 				: getEmptyUserSelectedPoints,
 		}),
+		queryClient.prefetchQuery({
+			queryKey: ["user-progress", id, currentUser ? currentUser.id : "guest"],
+			queryFn: currentUser ? getUserProgress : getGuestProgress,
+		}),
 	]);
 
 	return (
@@ -78,7 +86,7 @@ export default async function TopicDetailPage({ params }: Props) {
 				<Suspense
 					fallback={<div className="border p-4 mb-6">학습 단계 로딩 중...</div>}
 				>
-					<TopicClientWrapper topicId={id} initialStage={initialStage} />
+					<TopicClientWrapper topicId={id} />
 				</Suspense>
 			</div>
 		</HydrationBoundary>

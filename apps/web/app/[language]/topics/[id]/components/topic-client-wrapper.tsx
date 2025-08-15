@@ -10,29 +10,35 @@ import StageTwoContainer from "./stage-two-container";
 
 interface TopicClientWrapperProps {
 	topicId: string;
-	initialStage: number;
 }
 
 export default function TopicClientWrapper({
 	topicId,
-	initialStage,
 }: TopicClientWrapperProps) {
 	const { user } = useAuth();
-	const { currentStage, setCurrentStage } = useProgress({
+	// const { data: maxAvailableStage } = useUserProgress(topicId, user);
+	const { currentStage, changeCurrentStage, completeStage } = useProgress({
 		topicId,
 		user,
-		initialStage,
+		maxAvailableStage: 2,
 	});
+
+	// console.log(maxAvailableStage, 123);
 
 	return (
 		<>
 			<StageNavigation
 				currentStage={currentStage}
-				maxAvailableStage={currentStage}
-				onStageChange={setCurrentStage}
+				maxAvailableStage={2}
+				onStageChange={changeCurrentStage}
 			/>
 
-			{currentStage === 1 && <StageOneContainer topicId={topicId} />}
+			{currentStage === 1 && (
+				<StageOneContainer
+					topicId={topicId}
+					onStageComplete={() => completeStage(1)}
+				/>
+			)}
 			{currentStage === 2 && <StageTwoContainer topicId={topicId} />}
 			{currentStage === 3 && <StageThreeContainer topicId={topicId} />}
 			{currentStage === 4 && <StageFourContainer topicId={topicId} />}
