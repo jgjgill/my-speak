@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import { type SubmitHandler, useForm } from "react-hook-form";
 import { useAuth } from "../../../../contexts/auth-context";
 import { useUserTranslations } from "../hooks/use-user-translations";
@@ -23,9 +22,7 @@ export default function TranslationInputForm({
 	const { user } = useAuth();
 	const { data: userTranslations } = useUserTranslations(topicId, user);
 
-	const [isCompleted, setIsCompleted] = useState(false);
-
-	const userTranslation = userTranslations?.find(
+	const userTranslation = userTranslations.find(
 		(t) => t.sentence_order === sentenceOrder,
 	);
 
@@ -36,13 +33,7 @@ export default function TranslationInputForm({
 	});
 
 	const onSubmit: SubmitHandler<Inputs> = ({ translated }) => {
-		if (isCompleted) {
-			setIsCompleted(false);
-			return;
-		}
-
 		onTranslationSubmit(sentenceOrder, translated);
-		setIsCompleted(true);
 	};
 
 	return (
@@ -61,7 +52,12 @@ export default function TranslationInputForm({
 				<input
 					type="submit"
 					value="등록"
-					className="px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600"
+					disabled={!user}
+					className={`px-3 py-1 rounded transition-colors ${
+						user
+							? "bg-blue-500 text-white hover:bg-blue-600"
+							: "bg-gray-300 text-gray-500 cursor-not-allowed"
+					}`}
 				/>
 
 				{!user && (
