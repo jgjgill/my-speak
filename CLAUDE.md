@@ -176,4 +176,21 @@ Claude는 논리적 작업 단위가 완료될 때마다 **자동으로 커밋�
 #### 커밋 제안 정책
 - **적극적 커밋 제안**: 논리적 작업 단위가 완료될 때마다 사용자에게 커밋 생성을 적극적으로 제안
 - **즉시 제안**: Todo 완료, 기능 구현, 버그 수정 등이 끝나면 바로 커밋 제안
-- **사용자 확인**: 커밋 메시지 제안과 함께 사용자 승인 대기₩
+- **사용자 확인**: 커밋 메시지 제안과 함께 사용자 승인 대기
+
+#### Git 파일 경로 처리 주의사항
+
+**중요**: Next.js 동적 라우트로 인한 대괄호 `[language]`, `[id]` 등이 포함된 파일 경로는 bash에서 글로브 패턴으로 해석되므로 **반드시 따옴표로 감싸야** 합니다.
+
+```bash
+# ❌ 잘못된 방법 - "no matches found" 에러 발생
+git add apps/web/app/[language]/topics/[id]/components/stage-one-practice.tsx
+
+# ✅ 올바른 방법 - 따옴표로 전체 경로 감싸기
+git add "apps/web/app/[language]/topics/[id]/components/stage-one-practice.tsx"
+```
+
+**적용 규칙**:
+- 대괄호 `[]`가 포함된 모든 파일 경로는 처음부터 따옴표 사용
+- `git add`, `git status`, 기타 bash 명령어에서 일관되게 적용
+- 반복 실수 방지를 위해 대괄호 경로는 항상 따옴표 우선 적용
