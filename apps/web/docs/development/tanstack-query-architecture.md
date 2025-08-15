@@ -60,49 +60,34 @@ queries/
 
 ## 주요 패턴
 
-### 1. useSuspenseQuery vs useQuery 사용 기준
+### 1. useSuspenseQuery 통일
 
-데이터 특성과 렌더링 요구사항에 따라 적절한 훅을 선택합니다.
-
-#### useSuspenseQuery 사용 조건
-
-✅ **서버에서 prefetch된 데이터**:
+모든 데이터 페칭에 `useSuspenseQuery`를 사용하여:
 - 컴포넌트 코드 단순화 (loading 상태 제거)
 - Suspense 경계에서 로딩 UI 처리
 - 에러 경계에서 에러 UI 처리
 
 ```typescript
-// ✅ 서버 prefetch + useSuspenseQuery
-export function useUserProgress(topicId: string, user: User | null) {
+// ✅ Good
+export function useUser() {
   return useSuspenseQuery({
-    queryKey: ["user-progress", topicId, user ? user.id : "guest"],
-    queryFn: user ? () => getUserProgress(topicId, user) : getGuestProgress,
+    queryKey: ["user"],
+    queryFn: getUser,
+    staleTime: 15 * 60 * 1000,
+    gcTime: Infinity,
+    initialData: null, // Hydration 이슈 방지
   });
 }
-```
 
-#### useQuery 사용 조건
-
-✅ **서버에서 prefetch되지 않은 데이터** (깜빡임 방지):
-- 개인화 데이터 중 서버 렌더링에 필요 없는 부가 정보
-- 조건부 로딩이 필요한 데이터
-
-```typescript
-// ✅ 서버 prefetch 없음 + useQuery
-export function useUserTranslations(topicId: string, user: User | null) {
+// ❌ Avoid
+export function useUser() {
   return useQuery({
-    queryKey: ["user-translations", topicId, user ? user.id : "guest"],
-    queryFn: user ? () => getUserTranslations(topicId, user) : getEmptyUserTranslations,
-    enabled: !!user,
-    initialData: [],
+    queryKey: ["user"],
+    queryFn: getUser,
+    enabled: someCondition, // useSuspenseQuery에는 enabled 없음
   });
 }
 ```
-
-#### 핵심 원칙
-
-- **useSuspenseQuery**: 서버 prefetch + 필수 렌더링 데이터
-- **useQuery**: 서버 prefetch 없음 + 선택적/부가적 데이터
 
 **Hydration 이슈 해결:**
 - `initialData: null`로 서버-클라이언트 초기 상태 통일
