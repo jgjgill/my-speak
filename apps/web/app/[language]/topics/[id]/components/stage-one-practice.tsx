@@ -17,6 +17,7 @@ interface StageOnePracticeProps {
 	learningPointsByOrder: Record<number, LearningPoint[]>;
 	topicId: string;
 	initialSelectedPoints: Set<string>;
+	onStageComplete: () => Promise<void>;
 }
 
 const getLearningPointInfo = (
@@ -34,6 +35,7 @@ export default function StageOnePractice({
 	learningPointsByOrder,
 	topicId,
 	initialSelectedPoints,
+	onStageComplete,
 }: StageOnePracticeProps) {
 	const { user } = useAuth();
 	const supabase = createClient();
@@ -56,6 +58,7 @@ export default function StageOnePractice({
 							koreanScripts.find((s) => s.sentence_order === sentenceOrder)
 								?.korean_text || "",
 						user_translation: translated,
+						is_completed: true,
 					},
 					{ onConflict: "user_id,topic_id,sentence_order" },
 				);
@@ -137,11 +140,51 @@ export default function StageOnePractice({
 			? Math.round((completedCount / totalSentenceCount) * 100)
 			: 0;
 
-	console.log(progressPercentage);
+	const isStageComplete = progressPercentage === 100;
+
+	const handleNextStage = async () => {
+		if (user && isStageComplete) {
+			try {
+				await onStageComplete();
+				alert("🎉 1단계를 완료했습니다! 2단계로 이동합니다.");
+			} catch (error) {
+				console.error("단계 완료 처리 중 오류:", error);
+				alert("단계 진행 중 오류가 발생했습니다. 다시 시도해주세요.");
+			}
+		}
+	};
 
 	return (
 		<div className="mb-4">
 			<PracticeHeader progressPercentage={progressPercentage} />
+
+			{/* 100% 완료 시 다음 단계 버튼 */}
+			{/* TODO: dynamic import 필요 현재 progressPercentage은 서버에서 0으로 구성, userTranslations은 prefetch로 진행하지 않은 상황*/}
+			{isStageComplete && (
+				<div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg">
+					<div className="flex items-center justify-between">
+						<div>
+							<h4 className="font-bold text-green-800 mb-1">🎉 1단계 완료!</h4>
+							<p className="text-sm text-green-700">
+								모든 번역을 완료했습니다. 2단계로 진행해보세요.
+							</p>
+						</div>
+						{user ? (
+							<button
+								type="button"
+								onClick={handleNextStage}
+								className="px-4 py-2 bg-green-600 text-white rounded-lg font-medium hover:bg-green-700 transition-colors"
+							>
+								2단계로 이동하기
+							</button>
+						) : (
+							<div className="text-sm text-gray-500">
+								로그인하면 다음 단계로 진행할 수 있습니다.
+							</div>
+						)}
+					</div>
+				</div>
+			)}
 
 			{koreanScripts.map((script, index) => {
 				const sentenceOrder = script.sentence_order;

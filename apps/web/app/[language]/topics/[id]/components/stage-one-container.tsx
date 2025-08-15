@@ -6,9 +6,13 @@ import StageOnePractice from "./stage-one-practice";
 
 interface StageOneContainerProps {
 	topicId: string;
+	onStageComplete: () => Promise<void>;
 }
 
-export default function StageOneContainer({ topicId }: StageOneContainerProps) {
+export default function StageOneContainer({ 
+	topicId, 
+	onStageComplete 
+}: StageOneContainerProps) {
 	const { user } = useAuth();
 	const [
 		{ data: koreanScripts },
@@ -67,6 +71,7 @@ export default function StageOneContainer({ topicId }: StageOneContainerProps) {
 				learningPointsByOrder={learningPointsByOrder}
 				topicId={topicId}
 				initialSelectedPoints={initialSelectedPoints}
+				onStageComplete={onStageComplete}
 			/>
 		</div>
 	);
