@@ -2,6 +2,7 @@
 
 import { useAuth } from "../../../../contexts/auth-context";
 import { useProgress } from "../hooks/use-progress";
+import { useUserProgress } from "../hooks/use-user-progress";
 import StageFourContainer from "./stage-four-container";
 import StageNavigation from "./stage-navigation";
 import StageOneContainer from "./stage-one-container";
@@ -16,20 +17,18 @@ export default function TopicClientWrapper({
 	topicId,
 }: TopicClientWrapperProps) {
 	const { user } = useAuth();
-	// const { data: maxAvailableStage } = useUserProgress(topicId, user);
+	const { data: maxAvailableStage } = useUserProgress(topicId, user);
 	const { currentStage, changeCurrentStage, completeStage } = useProgress({
 		topicId,
 		user,
-		maxAvailableStage: 2,
+		maxAvailableStage,
 	});
-
-	// console.log(maxAvailableStage, 123);
 
 	return (
 		<>
 			<StageNavigation
 				currentStage={currentStage}
-				maxAvailableStage={2}
+				maxAvailableStage={maxAvailableStage}
 				onStageChange={changeCurrentStage}
 			/>
 
