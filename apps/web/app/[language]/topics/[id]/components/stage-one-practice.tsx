@@ -4,6 +4,7 @@ import type { Tables } from "@repo/typescript-config/supabase-types";
 import { useState } from "react";
 import { useAuth } from "../../../../contexts/auth-context";
 import { createClient } from "../../../../utils/supabase/client";
+import { useUserTranslations } from "../hooks/use-user-translations";
 import KoreanSentenceHighlighter from "./korean-sentence-highlighter";
 import PracticeHeader from "./practice-header";
 import TranslationInputForm from "./translation-input-form";
@@ -38,6 +39,7 @@ export default function StageOnePractice({
 	const supabase = createClient();
 
 	const [selectedPoints, setSelectedPoints] = useState(initialSelectedPoints);
+	const { data: userTranslations } = useUserTranslations(topicId, user);
 
 	const handleTranslationSubmit = async (
 		sentenceOrder: number,
@@ -128,9 +130,18 @@ export default function StageOnePractice({
 		}
 	};
 
+	const totalSentenceCount = koreanScripts.length;
+	const completedCount = userTranslations.filter((t) => t.is_completed).length;
+	const progressPercentage =
+		totalSentenceCount > 0
+			? Math.round((completedCount / totalSentenceCount) * 100)
+			: 0;
+
+	console.log(progressPercentage);
+
 	return (
 		<div className="mb-4">
-			<PracticeHeader progressPercentage={0} />
+			<PracticeHeader progressPercentage={progressPercentage} />
 
 			{koreanScripts.map((script, index) => {
 				const sentenceOrder = script.sentence_order;

@@ -1,10 +1,9 @@
 "use client";
 
-import { useSuspenseQuery } from "@tanstack/react-query";
 import { useState } from "react";
 import { type SubmitHandler, useForm } from "react-hook-form";
 import { useAuth } from "../../../../contexts/auth-context";
-import { getUserTranslations } from "../queries/stage-one-queries";
+import { useUserTranslations } from "../hooks/use-user-translations";
 
 interface TranslationInputFormProps {
 	sentenceOrder: number;
@@ -22,16 +21,11 @@ export default function TranslationInputForm({
 	onTranslationSubmit,
 }: TranslationInputFormProps) {
 	const { user } = useAuth();
-	const { data: userTranslations } = useSuspenseQuery({
-		queryKey: ["user-translations", topicId, user ? user.id : "guest"],
-		queryFn: user
-			? () => getUserTranslations(topicId, user)
-			: () => Promise.resolve([]),
-	});
+	const { data: userTranslations } = useUserTranslations(topicId, user);
 
 	const [isCompleted, setIsCompleted] = useState(false);
 
-	const userTranslation = userTranslations.find(
+	const userTranslation = userTranslations?.find(
 		(t) => t.sentence_order === sentenceOrder,
 	);
 
