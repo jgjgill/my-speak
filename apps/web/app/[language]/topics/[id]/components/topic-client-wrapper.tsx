@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useAuth } from "../../../../contexts/auth-context";
+import { useProgress } from "../hooks/use-progress";
 import StageFourContainer from "./stage-four-container";
 import StageNavigation from "./stage-navigation";
 import StageOneContainer from "./stage-one-container";
@@ -16,20 +17,19 @@ export default function TopicClientWrapper({
 	topicId,
 	initialStage,
 }: TopicClientWrapperProps) {
-	const [currentStage, setCurrentStage] = useState(initialStage);
-
-	const handleStageChange = async (stage: number) => {
-		setCurrentStage(stage);
-
-		// TODO: 사용자 진행도 업데이트 로직 필요
-		// mutation 을 통해 user_progress 테이블 업데이트
-	};
+	const { user } = useAuth();
+	const { currentStage, setCurrentStage } = useProgress({
+		topicId,
+		user,
+		initialStage,
+	});
 
 	return (
 		<>
 			<StageNavigation
 				currentStage={currentStage}
-				onStageChange={handleStageChange}
+				maxAvailableStage={currentStage}
+				onStageChange={setCurrentStage}
 			/>
 
 			{currentStage === 1 && <StageOneContainer topicId={topicId} />}

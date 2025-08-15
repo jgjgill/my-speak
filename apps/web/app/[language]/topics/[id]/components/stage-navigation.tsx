@@ -2,6 +2,7 @@
 
 interface StageNavigationProps {
 	currentStage: number;
+	maxAvailableStage: number;
 	onStageChange: (stage: number) => void;
 }
 
@@ -14,6 +15,7 @@ const stages = [
 
 export default function StageNavigation({
 	currentStage,
+	maxAvailableStage,
 	onStageChange,
 }: StageNavigationProps) {
 	return (
@@ -21,16 +23,20 @@ export default function StageNavigation({
 			<div className="flex flex-wrap gap-2">
 				{stages.map((stage) => {
 					const isActive = currentStage === stage.number;
+					const isDisabled = stage.number > maxAvailableStage;
 
 					return (
 						<button
 							key={stage.number}
 							type="button"
-							onClick={() => onStageChange(stage.number)}
+							onClick={() => !isDisabled && onStageChange(stage.number)}
+							disabled={isDisabled}
 							className={`px-4 py-2 rounded-lg border text-sm font-medium transition-colors ${
 								isActive
 									? "bg-blue-600 text-white border-blue-600"
-									: "bg-white text-gray-700 border-gray-300 hover:bg-gray-50"
+									: isDisabled
+										? "bg-gray-100 text-gray-400 border-gray-200 cursor-not-allowed"
+										: "bg-white text-gray-700 border-gray-300 hover:bg-gray-50"
 							}`}
 						>
 							<div className="text-center">
