@@ -34,7 +34,9 @@ app/[language]/topics/[id]/
 hooks/
 ├── use-user.ts                    # 전역 사용자 인증 상태
 ├── use-topic.ts                   # 주제 정보
-├── use-user-progress.ts           # 사용자 학습 진행도
+├── use-user-progress.ts           # 사용자 최대 도달 단계 (DB 쿼리)
+├── use-progress.ts                # 현재 보고 있는 단계 (클라이언트 상태) + 단계 완료
+├── use-user-translations.ts       # 사용자 번역 데이터
 ├── use-stage-one-public-data.ts   # 1단계 공개 데이터 + 사용자 선택 포인트
 ├── use-stage-two-data.ts          # 2단계 데이터 (영어 스크립트, 사용자 번역)
 ├── use-stage-three-data.ts        # 3단계 데이터 (읽기 연습)
@@ -101,12 +103,16 @@ export function useUser() {
 ["topic", topicId]                 // 주제 정보
 
 // 사용자별 데이터  
-["user-progress", topicId, userId]          // 학습 진행도
-["stage-one-data", topicId, userId]         // 1단계 사용자 데이터
-["stage-two-data", topicId, userId]         // 2단계 사용자 데이터
+["user-progress", topicId, userId]              // 사용자 최대 도달 단계
+["user-translations", topicId, userId]          // 사용자 번역 데이터
+["user-selected-points", topicId, userId]       // 사용자 선택 학습 포인트
+["stage-one-data", topicId, userId]             // 1단계 사용자 데이터
+["stage-two-data", topicId, userId]             // 2단계 사용자 데이터
 
 // 게스트 사용자 처리
-["stage-one-data", topicId, "guest"]        // 비로그인 사용자
+["user-progress", topicId, "guest"]             // 게스트 기본 단계 (1)
+["user-translations", topicId, "guest"]         // 게스트 빈 번역 데이터
+["stage-one-data", topicId, "guest"]            // 비로그인 사용자
 ```
 
 ### 3. 캐싱 전략
@@ -228,18 +234,22 @@ export default async function TopicDetailPage({ params }: Props) {
   const { data: { user }, error: authError } = await supabase.auth.getUser();
   const currentUser = authError ? null : user;
   
-  // 사용자별 초기 단계 설정
-  let initialStage = 1;
-  if (currentUser) {
-    const { data: progressData } = await supabase
+  // user_progress prefetch용 함수
+  const getUserProgress = async () => {
+    if (!currentUser) return 1;
+    
+    const { data, error } = await supabase
       .from("user_progress")
       .select("current_stage")
       .eq("user_id", currentUser.id)
       .eq("topic_id", id)
-      .single();
-    
-    initialStage = progressData?.current_stage || 1;
-  }
+      .maybeSingle();
+
+    if (error) throw error;
+    return data?.current_stage || 1;
+  };
+
+  const getGuestProgress = async () => 1;
   
   // 공개 데이터만 SSR에서 prefetch (SEO 최적화)
   const queryClient = new QueryClient();
@@ -263,6 +273,10 @@ export default async function TopicDetailPage({ params }: Props) {
         ? () => getUserSelectedPoints(id, currentUser)
         : getEmptyUserSelectedPoints,
     }),
+    queryClient.prefetchQuery({
+      queryKey: ["user-progress", id, currentUser ? currentUser.id : "guest"],
+      queryFn: currentUser ? getUserProgress : getGuestProgress,
+    }),
   ]);
 
   return (
@@ -273,7 +287,7 @@ export default async function TopicDetailPage({ params }: Props) {
         </Suspense>
         
         <Suspense fallback={<StageLoadingSkeleton />}>
-          <TopicClientWrapper topicId={id} initialStage={initialStage} />
+          <TopicClientWrapper topicId={id} />
         </Suspense>
       </div>
     </HydrationBoundary>
@@ -284,23 +298,34 @@ export default async function TopicDetailPage({ params }: Props) {
 ### 클라이언트 래퍼 컴포넌트
 
 ```typescript
-// topic-client-wrapper.tsx - 상태 관리와 조건부 렌더링
+// topic-client-wrapper.tsx - 단계 관리와 조건부 렌더링
 "use client";
 
-export default function TopicClientWrapper({ topicId, initialStage }) {
-  const { data: user } = useUser();
-  const [currentStage, setCurrentStage] = useState(initialStage);
+export default function TopicClientWrapper({ topicId }) {
+  const { user } = useAuth();
+  const { data: maxAvailableStage } = useUserProgress(topicId, user);
+  const { currentStage, setCurrentStage, completeStage } = useProgress({
+    topicId,
+    user,
+    maxAvailableStage,
+  });
 
   return (
     <>
       <StageNavigation 
         currentStage={currentStage}
+        maxAvailableStage={maxAvailableStage}
         onStageChange={setCurrentStage}
       />
       
-      {currentStage === 1 && <StageOneContainer topicId={topicId} user={user} />}
-      {currentStage === 2 && <StageTwoContainer topicId={topicId} user={user} />}
-      {currentStage === 3 && <StageThreeContainer topicId={topicId} user={user} />}
+      {currentStage === 1 && (
+        <StageOneContainer 
+          topicId={topicId} 
+          onStageComplete={() => completeStage(1)} 
+        />
+      )}
+      {currentStage === 2 && <StageTwoContainer topicId={topicId} />}
+      {currentStage === 3 && <StageThreeContainer topicId={topicId} />}
       {currentStage === 4 && <StageFourContainer topicId={topicId} />}
     </>
   );
@@ -327,13 +352,46 @@ export default function StageTwoContainer({ topicId, user }) {
 }
 ```
 
+## 새로운 단계 진행 시스템
+
+### currentStage vs maxAvailableStage 분리
+
+```typescript
+// 사용자가 도달할 수 있는 최대 단계 (DB 저장)
+const { data: maxAvailableStage } = useUserProgress(topicId, user);
+
+// 현재 보고 있는 단계 (클라이언트 상태)
+const { currentStage, setCurrentStage, completeStage } = useProgress({
+  topicId,
+  user,
+  maxAvailableStage,
+});
+```
+
+### 단계 완료 시 자동 진행
+
+```typescript
+// 1단계 100% 완료 시 자동으로 2단계로 진행
+const handleStageComplete = async () => {
+  await completeStage(1); // DB에서 maxAvailableStage를 2로 업데이트
+  // 자동으로 currentStage도 2로 변경
+};
+```
+
+### 사용자 탐색 자유도
+
+- 사용자는 1 ~ `maxAvailableStage` 범위 내에서 자유롭게 이동 가능
+- 3단계 완료한 사용자가 1단계로 이동 후 다시 3단계로 복귀 가능
+- 4단계는 3단계 완료 후에만 접근 가능
+
 ## 장점
 
 1. **일관된 데이터 관리**: 모든 API 호출이 TanStack Query로 통일
 2. **성능 최적화**: 자동 캐싱, 백그라운드 업데이트, 중복 요청 방지
-3. **사용자 경험**: 즉시 응답하는 UI, 스켈레톤 로딩
+3. **사용자 경험**: 즉시 응답하는 UI, 스켈레톤 로딩, 자유로운 단계 탐색
 4. **개발자 경험**: 단순한 컴포넌트 코드, 재사용 가능한 훅
 5. **유지보수성**: 명확한 관심사 분리, 테스트 가능한 구조
+6. **학습 진행**: 단계별 자동 진행, 100% 완료 시 즉시 다음 단계 활성화
 
 ## SSR vs CSR 데이터 분리 전략
 
