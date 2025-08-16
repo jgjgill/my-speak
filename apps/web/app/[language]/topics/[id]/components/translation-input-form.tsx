@@ -26,7 +26,12 @@ export default function TranslationInputForm({
 		(t) => t.sentence_order === sentenceOrder,
 	);
 
-	const { register, handleSubmit } = useForm<Inputs>({
+	const {
+		register,
+		handleSubmit,
+		formState: { isValid },
+	} = useForm<Inputs>({
+		mode: "onChange",
 		defaultValues: {
 			translated: userTranslation?.user_translation ?? "",
 		},
@@ -41,7 +46,7 @@ export default function TranslationInputForm({
 			<label className="text-sm font-medium block">
 				영어 번역을 입력하세요:
 				<textarea
-					{...register("translated")}
+					{...register("translated", { required: true })}
 					rows={2}
 					placeholder="여기에 영어 번역을 입력하세요..."
 					className="w-full mt-1 p-2 border rounded resize-none"
@@ -52,9 +57,9 @@ export default function TranslationInputForm({
 				<input
 					type="submit"
 					value="등록"
-					disabled={!user}
+					disabled={!user || !isValid}
 					className={`px-3 py-1 rounded transition-colors ${
-						user
+						user && isValid
 							? "bg-blue-500 text-white hover:bg-blue-600"
 							: "bg-gray-300 text-gray-500 cursor-not-allowed"
 					}`}

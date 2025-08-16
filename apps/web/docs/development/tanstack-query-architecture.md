@@ -68,7 +68,7 @@ queries/
 - 에러 경계에서 에러 UI 처리
 
 ```typescript
-// ✅ Good
+// ✅ 모든 데이터 페칭에 useSuspenseQuery 사용
 export function useUser() {
   return useSuspenseQuery({
     queryKey: ["user"],
@@ -79,19 +79,20 @@ export function useUser() {
   });
 }
 
-// ❌ Avoid
-export function useUser() {
-  return useQuery({
-    queryKey: ["user"],
-    queryFn: getUser,
-    enabled: someCondition, // useSuspenseQuery에는 enabled 없음
+export function useUserTranslations(topicId: string, user: User | null) {
+  return useSuspenseQuery({
+    queryKey: ["user-translations", topicId, user ? user.id : "guest"],
+    queryFn: user
+      ? () => getUserTranslations(topicId, user)
+      : getEmptyUserTranslations,
   });
 }
 ```
 
-**Hydration 이슈 해결:**
+**핵심 원칙:**
+- 모든 데이터 페칭은 `useSuspenseQuery` 사용
 - `initialData: null`로 서버-클라이언트 초기 상태 통일
-- 비로그인 사용자에 대한 안전한 기본값 제공
+- 비로그인 사용자는 빈 데이터 함수 제공
 
 ### 2. 쿼리 키 전략
 
