@@ -1,0 +1,744 @@
+{
+  "topic": {
+    "id": "8b11ec9f-7850-4c9e-8c71-60daf361ef53",
+    "title": "부동산 임대 상담 및 계약",
+    "category": "일상생활",
+    "difficulty": "중급",
+    "description": "부동산 임대 과정에서 필요한 상담, 조건 확인, 계약 관련 실용적 영어 표현을 학습합니다.",
+    "total_sentences": 13
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 원룸 임대에 대해 문의드리려고 연락했습니다."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "온라인에서 본 매물이 아직 임대 가능한지 확인하고 싶어요."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "월세가 얼마인지와 보증금은 얼마나 되는지 알고 싶습니다."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "그리고 관리비는 별도인가요?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "대중교통 접근성은 어떤지 궁금합니다."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "가장 가까운 지하철역까지 걸어서 몇 분 정도 걸리나요?"
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "혹시 내부 견학이 가능한지요?"
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "계약 조건에 대해서도 자세히 설명해 주실 수 있나요?"
+    },
+    {
+      "sentence_order": 9,
+      "korean_text": "계약 기간은 최소 몇 년인가요?"
+    },
+    {
+      "sentence_order": 10,
+      "korean_text": "중도 해지가 가능한지도 알고 싶습니다."
+    },
+    {
+      "sentence_order": 11,
+      "korean_text": "입주 가능 날짜는 언제부터인가요?"
+    },
+    {
+      "sentence_order": 12,
+      "korean_text": "필요한 서류는 어떤 것들이 있는지 미리 준비하고 싶어요."
+    },
+    {
+      "sentence_order": 13,
+      "korean_text": "계약서 검토는 충분한 시간을 주시는지요?"
+    }
+  ],
+  "english_scripts": [
+    {
+      "sentence_order": 1,
+      "english_text": "Hello, I'm calling to inquire about a studio apartment rental.",
+      "chunked_text": "Hello, | I'm calling to inquire about | a studio apartment rental."
+    },
+    {
+      "sentence_order": 2,
+      "english_text": "I'd like to confirm if the property I saw online is still available for rent.",
+      "chunked_text": "I'd like to confirm | if the property I saw online | is still available for rent."
+    },
+    {
+      "sentence_order": 3,
+      "english_text": "I want to know how much the monthly rent is and what the security deposit amount is.",
+      "chunked_text": "I want to know | how much the monthly rent is | and what the security deposit amount is."
+    },
+    {
+      "sentence_order": 4,
+      "english_text": "And is the maintenance fee separate?",
+      "chunked_text": "And is | the maintenance fee separate?"
+    },
+    {
+      "sentence_order": 5,
+      "english_text": "I'm curious about the public transportation access.",
+      "chunked_text": "I'm curious about | the public transportation access."
+    },
+    {
+      "sentence_order": 6,
+      "english_text": "How many minutes does it take to walk to the nearest subway station?",
+      "chunked_text": "How many minutes | does it take to walk | to the nearest subway station?"
+    },
+    {
+      "sentence_order": 7,
+      "english_text": "Is it possible to have an interior viewing?",
+      "chunked_text": "Is it possible | to have an interior viewing?"
+    },
+    {
+      "sentence_order": 8,
+      "english_text": "Could you explain the lease terms in detail as well?",
+      "chunked_text": "Could you explain | the lease terms | in detail as well?"
+    },
+    {
+      "sentence_order": 9,
+      "english_text": "What's the minimum contract period in years?",
+      "chunked_text": "What's the minimum | contract period | in years?"
+    },
+    {
+      "sentence_order": 10,
+      "english_text": "I'd also like to know if early termination is possible.",
+      "chunked_text": "I'd also like to know | if early termination | is possible."
+    },
+    {
+      "sentence_order": 11,
+      "english_text": "When is the earliest move-in date?",
+      "chunked_text": "When is | the earliest move-in date?"
+    },
+    {
+      "sentence_order": 12,
+      "english_text": "I'd like to prepare the required documents in advance, so what documents are needed?",
+      "chunked_text": "I'd like to prepare | the required documents in advance, | so what documents are needed?"
+    },
+    {
+      "sentence_order": 13,
+      "english_text": "Do you give enough time for contract review?",
+      "chunked_text": "Do you give | enough time | for contract review?"
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "안녕하세요",
+        "원룸 임대",
+        "문의"
+      ],
+      "target_sentence": "Hello, I'm calling to inquire about a studio apartment rental.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "온라인 매물",
+        "임대 가능",
+        "확인"
+      ],
+      "target_sentence": "I'd like to confirm if the property I saw online is still available for rent.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "월세 얼마",
+        "보증금 얼마"
+      ],
+      "target_sentence": "I want to know how much the monthly rent is and what the security deposit amount is.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "관리비",
+        "별도인가요"
+      ],
+      "target_sentence": "And is the maintenance fee separate?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "대중교통 접근성",
+        "궁금"
+      ],
+      "target_sentence": "I'm curious about the public transportation access.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "가장 가까운 지하철역",
+        "걸어서 몇 분"
+      ],
+      "target_sentence": "How many minutes does it take to walk to the nearest subway station?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "내부 견학",
+        "가능한지"
+      ],
+      "target_sentence": "Is it possible to have an interior viewing?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 8,
+      "keywords": [
+        "계약 조건",
+        "자세히 설명"
+      ],
+      "target_sentence": "Could you explain the lease terms in detail as well?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 9,
+      "keywords": [
+        "계약 기간",
+        "최소 몇 년"
+      ],
+      "target_sentence": "What's the minimum contract period in years?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 10,
+      "keywords": [
+        "중도 해지",
+        "가능한지"
+      ],
+      "target_sentence": "I'd also like to know if early termination is possible.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 11,
+      "keywords": [
+        "입주 가능 날짜",
+        "언제부터"
+      ],
+      "target_sentence": "When is the earliest move-in date?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 12,
+      "keywords": [
+        "필요한 서류",
+        "미리 준비"
+      ],
+      "target_sentence": "I'd like to prepare the required documents in advance, so what documents are needed?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 13,
+      "keywords": [
+        "계약서 검토",
+        "충분한 시간"
+      ],
+      "target_sentence": "Do you give enough time for contract review?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "원룸",
+        "문의"
+      ],
+      "target_sentence": "Hello, I'm calling to inquire about a studio apartment rental.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 15,
+      "keywords": [
+        "매물",
+        "확인"
+      ],
+      "target_sentence": "I'd like to confirm if the property I saw online is still available for rent.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 16,
+      "keywords": [
+        "월세",
+        "보증금"
+      ],
+      "target_sentence": "I want to know how much the monthly rent is and what the security deposit amount is.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 17,
+      "keywords": [
+        "관리비"
+      ],
+      "target_sentence": "And is the maintenance fee separate?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 18,
+      "keywords": [
+        "대중교통"
+      ],
+      "target_sentence": "I'm curious about the public transportation access.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 19,
+      "keywords": [
+        "지하철역",
+        "시간"
+      ],
+      "target_sentence": "How many minutes does it take to walk to the nearest subway station?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 20,
+      "keywords": [
+        "견학"
+      ],
+      "target_sentence": "Is it possible to have an interior viewing?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 21,
+      "keywords": [
+        "계약 조건"
+      ],
+      "target_sentence": "Could you explain the lease terms in detail as well?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 22,
+      "keywords": [
+        "계약 기간"
+      ],
+      "target_sentence": "What's the minimum contract period in years?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 23,
+      "keywords": [
+        "해지"
+      ],
+      "target_sentence": "I'd also like to know if early termination is possible.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 24,
+      "keywords": [
+        "입주 날짜"
+      ],
+      "target_sentence": "When is the earliest move-in date?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 25,
+      "keywords": [
+        "서류"
+      ],
+      "target_sentence": "I'd like to prepare the required documents in advance, so what documents are needed?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 26,
+      "keywords": [
+        "검토"
+      ],
+      "target_sentence": "Do you give enough time for contract review?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 27,
+      "keywords": [
+        "문의"
+      ],
+      "target_sentence": "Hello, I'm calling to inquire about a studio apartment rental.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 28,
+      "keywords": [
+        "확인"
+      ],
+      "target_sentence": "I'd like to confirm if the property I saw online is still available for rent.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 29,
+      "keywords": [
+        "비용"
+      ],
+      "target_sentence": "I want to know how much the monthly rent is and what the security deposit amount is.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 30,
+      "keywords": [
+        "관리비"
+      ],
+      "target_sentence": "And is the maintenance fee separate?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 31,
+      "keywords": [
+        "교통"
+      ],
+      "target_sentence": "I'm curious about the public transportation access.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 32,
+      "keywords": [
+        "거리"
+      ],
+      "target_sentence": "How many minutes does it take to walk to the nearest subway station?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 33,
+      "keywords": [
+        "견학"
+      ],
+      "target_sentence": "Is it possible to have an interior viewing?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 34,
+      "keywords": [
+        "조건"
+      ],
+      "target_sentence": "Could you explain the lease terms in detail as well?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 35,
+      "keywords": [
+        "기간"
+      ],
+      "target_sentence": "What's the minimum contract period in years?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 36,
+      "keywords": [
+        "해지"
+      ],
+      "target_sentence": "I'd also like to know if early termination is possible.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 37,
+      "keywords": [
+        "입주"
+      ],
+      "target_sentence": "When is the earliest move-in date?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 38,
+      "keywords": [
+        "서류"
+      ],
+      "target_sentence": "I'd like to prepare the required documents in advance, so what documents are needed?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 39,
+      "keywords": [
+        "검토"
+      ],
+      "target_sentence": "Do you give enough time for contract review?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 40,
+      "keywords": [
+        "inquiry"
+      ],
+      "target_sentence": "Hello, I'm calling to inquire about a studio apartment rental.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 41,
+      "keywords": [
+        "confirm"
+      ],
+      "target_sentence": "I'd like to confirm if the property I saw online is still available for rent.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 42,
+      "keywords": [
+        "cost"
+      ],
+      "target_sentence": "I want to know how much the monthly rent is and what the security deposit amount is.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 43,
+      "keywords": [
+        "maintenance"
+      ],
+      "target_sentence": "And is the maintenance fee separate?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 44,
+      "keywords": [
+        "transportation"
+      ],
+      "target_sentence": "I'm curious about the public transportation access.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 45,
+      "keywords": [
+        "distance"
+      ],
+      "target_sentence": "How many minutes does it take to walk to the nearest subway station?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 46,
+      "keywords": [
+        "viewing"
+      ],
+      "target_sentence": "Is it possible to have an interior viewing?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 47,
+      "keywords": [
+        "terms"
+      ],
+      "target_sentence": "Could you explain the lease terms in detail as well?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 48,
+      "keywords": [
+        "period"
+      ],
+      "target_sentence": "What's the minimum contract period in years?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 49,
+      "keywords": [
+        "termination"
+      ],
+      "target_sentence": "I'd also like to know if early termination is possible.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 50,
+      "keywords": [
+        "move-in"
+      ],
+      "target_sentence": "When is the earliest move-in date?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 51,
+      "keywords": [
+        "documents"
+      ],
+      "target_sentence": "I'd like to prepare the required documents in advance, so what documents are needed?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 52,
+      "keywords": [
+        "review"
+      ],
+      "target_sentence": "Do you give enough time for contract review?",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 1,
+      "korean_phrase": "원룸 임대",
+      "english_phrase": "studio apartment rental"
+    },
+    {
+      "sentence_order": 2,
+      "korean_phrase": "임대 가능한지",
+      "english_phrase": "available for rent"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "월세가 얼마",
+      "english_phrase": "monthly rent"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "보증금",
+      "english_phrase": "security deposit"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "관리비는 별도",
+      "english_phrase": "maintenance fee is separate"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "대중교통 접근성",
+      "english_phrase": "public transportation access"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "가장 가까운 지하철역",
+      "english_phrase": "nearest subway station"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "내부 견학",
+      "english_phrase": "interior viewing"
+    },
+    {
+      "sentence_order": 8,
+      "korean_phrase": "계약 조건",
+      "english_phrase": "lease terms"
+    },
+    {
+      "sentence_order": 9,
+      "korean_phrase": "계약 기간",
+      "english_phrase": "contract period"
+    },
+    {
+      "sentence_order": 10,
+      "korean_phrase": "중도 해지",
+      "english_phrase": "early termination"
+    },
+    {
+      "sentence_order": 11,
+      "korean_phrase": "입주 가능 날짜",
+      "english_phrase": "move-in date"
+    },
+    {
+      "sentence_order": 12,
+      "korean_phrase": "필요한 서류",
+      "english_phrase": "required documents"
+    },
+    {
+      "sentence_order": 13,
+      "korean_phrase": "계약서 검토",
+      "english_phrase": "contract review"
+    }
+  ]
+}
