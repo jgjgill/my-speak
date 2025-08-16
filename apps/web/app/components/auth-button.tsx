@@ -6,7 +6,6 @@ import { useAuth } from "../contexts/auth-context";
 export default function AuthButton() {
 	const { user, signInWithGoogle, signOut } = useAuth();
 
-
 	if (user) {
 		return (
 			<div className="flex items-center gap-3">

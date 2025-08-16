@@ -4,7 +4,7 @@ import { getStageThreeData } from "../queries/stage-three-queries";
 
 export function useStageThreeData(topicId: string, user: User | null) {
 	return useSuspenseQuery({
-		queryKey: ["stage-three-data", topicId, user ? user.id : 'guest'],
+		queryKey: ["stage-three-data", topicId, user ? user.id : "guest"],
 		queryFn: () => getStageThreeData(topicId, user),
 	});
 }

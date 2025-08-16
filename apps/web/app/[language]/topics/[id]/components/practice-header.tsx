@@ -6,7 +6,8 @@ const ProgressIndicator = dynamic(() => import("./progress-indicator"), {
 	ssr: false,
 	loading: () => (
 		<div className="text-sm text-gray-600">
-			진행률: <span className="inline-block w-8 h-3 bg-gray-200 animate-pulse rounded"></span>
+			진행률:{" "}
+			<span className="inline-block w-8 h-3 bg-gray-200 animate-pulse rounded"></span>
 		</div>
 	),
 });
@@ -15,7 +16,9 @@ interface PracticeHeaderProps {
 	progressPercentage: number;
 }
 
-export default function PracticeHeader({ progressPercentage }: PracticeHeaderProps) {
+export default function PracticeHeader({
+	progressPercentage,
+}: PracticeHeaderProps) {
 	return (
 		<>
 			<div className="flex justify-between items-center mb-4">

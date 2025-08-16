@@ -8,7 +8,7 @@ interface TopicCardProps {
 
 export function TopicCard({ topic }: TopicCardProps) {
 	const { language } = useParams();
-	
+
 	return (
 		<Link key={topic.id} href={`/${language}/topics/${topic.id}`}>
 			<div className="border p-4 mb-4 rounded hover:bg-gray-50 cursor-pointer">
@@ -20,9 +20,7 @@ export function TopicCard({ topic }: TopicCardProps) {
 					<span className="bg-green-100 px-2 py-1 rounded mr-2">
 						{topic.difficulty}
 					</span>
-					<span className="text-gray-500">
-						총 {topic.total_sentences}문장
-					</span>
+					<span className="text-gray-500">총 {topic.total_sentences}문장</span>
 				</div>
 				{topic.description && (
 					<p className="mt-2 text-gray-700">{topic.description}</p>

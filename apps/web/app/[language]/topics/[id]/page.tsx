@@ -6,10 +6,10 @@ import {
 import { Suspense } from "react";
 import { getCurrentUser } from "../../../utils/auth/server";
 import { createClient } from "../../../utils/supabase/server";
+import TopicClientWrapperSkeleton from "./components/skeletons/topic-client-wrapper-skeleton";
+import TopicHeaderSkeleton from "./components/skeletons/topic-header-skeleton";
 import TopicClientWrapper from "./components/topic-client-wrapper";
 import TopicHeader from "./components/topic-header";
-import TopicHeaderSkeleton from "./components/skeletons/topic-header-skeleton";
-import TopicClientWrapperSkeleton from "./components/skeletons/topic-client-wrapper-skeleton";
 import { getEmptyUserSelectedPoints } from "./hooks/use-stage-one-public-data";
 import {
 	getKoreanScripts,

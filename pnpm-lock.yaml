@@ -190,9 +190,6 @@ importers:
       '@types/react-highlight-words':
         specifier: ^0.20.0
         version: 0.20.0
-      eslint:
-        specifier: ^9.31.0
-        version: 9.31.0(jiti@2.5.1)
       typescript:
         specifier: 5.8.2
         version: 5.8.2
