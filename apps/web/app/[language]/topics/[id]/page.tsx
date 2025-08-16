@@ -8,6 +8,8 @@ import { getCurrentUser } from "../../../utils/auth/server";
 import { createClient } from "../../../utils/supabase/server";
 import TopicClientWrapper from "./components/topic-client-wrapper";
 import TopicHeader from "./components/topic-header";
+import TopicHeaderSkeleton from "./components/skeletons/topic-header-skeleton";
+import TopicClientWrapperSkeleton from "./components/skeletons/topic-client-wrapper-skeleton";
 import { getEmptyUserSelectedPoints } from "./hooks/use-stage-one-public-data";
 import {
 	getKoreanScripts,
@@ -75,17 +77,11 @@ export default async function TopicDetailPage({ params }: Props) {
 	return (
 		<HydrationBoundary state={dehydrate(queryClient)}>
 			<div className="p-4">
-				<Suspense
-					fallback={
-						<div className="mb-6 h-20 animate-pulse bg-gray-200 rounded" />
-					}
-				>
+				<Suspense fallback={<TopicHeaderSkeleton />}>
 					<TopicHeader topicId={id} />
 				</Suspense>
 
-				<Suspense
-					fallback={<div className="border p-4 mb-6">학습 단계 로딩 중...</div>}
-				>
+				<Suspense fallback={<TopicClientWrapperSkeleton />}>
 					<TopicClientWrapper topicId={id} />
 				</Suspense>
 			</div>
