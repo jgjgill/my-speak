@@ -24,7 +24,8 @@ export const GOOGLE_REDIRECT_URI = `${process.env.EXPO_PUBLIC_BASE_URL}/api/auth
 export const GOOGLE_AUTH_URL = "https://accounts.google.com/o/oauth2/v2/auth";
 
 // Environment Constants
-export const BASE_URL = process.env.EXPO_PUBLIC_BASE_URL;
+export const BASE_URL = process.env.EXPO_PUBLIC_BASE_URL; // 네이티브 앱 API 서버
+export const WEB_APP_URL = process.env.EXPO_PUBLIC_WEB_APP_URL; // 웹뷰용 웹 앱 URL
 export const APP_SCHEME = process.env.EXPO_PUBLIC_SCHEME;
 export const JWT_SECRET = process.env.JWT_SECRET!;
 

@@ -1,9 +1,11 @@
-import { ActivityIndicator, Button, Text, View } from "react-native";
+import { ActivityIndicator, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 import LoginForm from "@/components/login-form";
+import SimpleWebView from "@/components/simple-webview";
 import { useAuth } from "@/context/auth";
 
 export default function Index() {
-	const { user, isLoading, signOut } = useAuth();
+	const { user, isLoading, signOut, signIn } = useAuth();
 
 	if (isLoading) {
 		return (
@@ -18,17 +20,8 @@ export default function Index() {
 	}
 
 	return (
-		<View
-			style={{
-				flex: 1,
-				justifyContent: "center",
-				alignItems: "center",
-			}}
-		>
-			<Text>{JSON.stringify(user.email)}</Text>
-
-			<Text>{user.user_metadata?.full_name}</Text>
-			<Button title="Sign Out" onPress={signOut} />
-		</View>
+		<SafeAreaView style={{ flex: 1, backgroundColor: "#FFFFFF" }}>
+			<SimpleWebView />
+		</SafeAreaView>
 	);
 }
