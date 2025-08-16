@@ -1,6 +1,6 @@
 export default function StageNavigationSkeleton() {
 	return (
-		<output className="mb-6" aria-label="단계 네비게이션 로딩 중">
+		<div className="mb-6" aria-live="polite" aria-busy="true">
 			<div className="flex flex-wrap gap-2">
 				{[1, 2, 3, 4].map((stage) => (
 					<div
@@ -14,6 +14,6 @@ export default function StageNavigationSkeleton() {
 					</div>
 				))}
 			</div>
-		</output>
+		</div>
 	);
 }

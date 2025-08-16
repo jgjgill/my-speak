@@ -2,7 +2,7 @@ import SentenceCardSkeleton from "./sentence-card-skeleton";
 
 export default function PracticeContentSkeleton() {
 	return (
-		<output className="space-y-4" aria-label="학습 콘텐츠 로딩 중">
+		<div className="space-y-4" aria-live="polite" aria-busy="true">
 			<div className="flex justify-between items-center mb-4">
 				<div className="h-6 bg-gray-200 rounded animate-pulse w-32" />
 				<div className="h-5 bg-gray-200 rounded animate-pulse w-24" />
@@ -25,6 +25,6 @@ export default function PracticeContentSkeleton() {
 			{[1, 2, 3].map((index) => (
 				<SentenceCardSkeleton key={index} />
 			))}
-		</output>
+		</div>
 	);
 }
