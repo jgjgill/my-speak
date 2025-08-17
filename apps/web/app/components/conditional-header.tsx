@@ -39,7 +39,7 @@ export default function ConditionalHeader() {
 							</div>
 							<div>
 								<h1 className="text-xl font-bold text-blue-800">My Speak</h1>
-								<p className="text-xs text-gray-500 -mt-1">영어 스피킹 학습</p>
+								<p className="text-xs text-gray-500 -mt-1">언어 스피킹 학습</p>
 							</div>
 						</Link>
 					</div>
