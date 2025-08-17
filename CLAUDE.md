@@ -97,6 +97,31 @@ packages/
 #### 데이터 아키텍처
 
 - [TanStack Query 아키텍처](apps/web/docs/development/tanstack-query-architecture.md)
+- [WebView 연동 아키텍처](docs/development/webview-integration-architecture.md)
+
+### 네이티브 애플리케이션 (apps/native/)
+
+- **프레임워크**: React Native + Expo
+- **인증**: Supabase OAuth (Google)
+- **웹뷰 연동**: React Native WebView
+- **Safe Area 처리**: react-native-safe-area-context
+
+#### 네이티브-웹뷰 연동 아키텍처
+
+- **인증 세션 동기화**: 네이티브 앱에서 웹뷰로 Supabase 세션 전달
+- **상태 관리**: WebView Context + sessionStorage 패턴
+- **깜빡임 방지**: Next.js 미들웨어 기반 서버 사이드 초기값 설정
+- **메시지 브릿지**: postMessage API를 통한 양방향 통신
+
+#### 환경 변수 설정
+
+**네이티브 앱 (.env)**:
+```bash
+EXPO_PUBLIC_SUPABASE_URL=your_supabase_url
+EXPO_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+EXPO_PUBLIC_BASE_URL=your_api_server_url
+EXPO_PUBLIC_WEB_APP_URL=your_web_app_url  # 웹뷰에서 로드할 웹 앱 URL
+```
 
 ### 콘텐츠 관리 시스템 (packages/content-parser/)
 
