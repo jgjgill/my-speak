@@ -1,4 +1,5 @@
 import { Ionicons } from "@expo/vector-icons";
+import { router } from "expo-router";
 import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { useAuth } from "@/context/auth";
 
@@ -11,14 +12,13 @@ export default function NativeHeader({
 	onBackPress,
 	showBackButton = false,
 }: NativeHeaderProps) {
-	const { user, signOut } = useAuth();
+	const { user } = useAuth();
 
 	const handleProfilePress = () => {
 		if (user) {
-			// 로그아웃 모달 또는 직접 로그아웃
-			signOut();
+			router.push("/profile");
 		} else {
-			// 로그인 페이지로 이동 (현재는 이미 로그인 페이지에 있음)
+			router.push("/login");
 		}
 	};
 
@@ -37,12 +37,10 @@ export default function NativeHeader({
 				)}
 			</View>
 
-			{/* 중앙: 로고 */}
 			<View style={styles.centerSection}>
 				<Text style={styles.logo}>My Speak</Text>
 			</View>
 
-			{/* 우측: 프로필 */}
 			<View style={styles.rightSection}>
 				<TouchableOpacity
 					onPress={handleProfilePress}
@@ -63,8 +61,12 @@ export default function NativeHeader({
 							)}
 						</View>
 					) : (
-						<View style={styles.loginButton}>
-							<Text style={styles.loginText}>로그인</Text>
+						<View style={styles.profileIconContainer}>
+							<Ionicons
+								name="person-circle-outline"
+								size={32}
+								color="#3B82F6"
+							/>
 						</View>
 					)}
 				</TouchableOpacity>
@@ -133,17 +135,10 @@ const styles = StyleSheet.create({
 		justifyContent: "center",
 		alignItems: "center",
 	},
-	loginButton: {
-		paddingHorizontal: 12,
-		paddingVertical: 8,
-		backgroundColor: "#3B82F6",
-		borderRadius: 6,
-		minWidth: 60,
+	profileIconContainer: {
+		width: 36,
+		height: 36,
+		justifyContent: "center",
 		alignItems: "center",
-	},
-	loginText: {
-		color: "#FFFFFF",
-		fontSize: 14,
-		fontWeight: "600",
 	},
 });

@@ -1,12 +1,11 @@
 import { ActivityIndicator, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import LoginForm from "@/components/login-form";
 import NativeHeader from "@/components/native-header";
 import SimpleWebView from "@/components/simple-webview";
 import { useAuth } from "@/context/auth";
 
 export default function Index() {
-	const { user, isLoading } = useAuth();
+	const { isLoading } = useAuth();
 
 	if (isLoading) {
 		return (
@@ -14,10 +13,6 @@ export default function Index() {
 				<ActivityIndicator />
 			</View>
 		);
-	}
-
-	if (!user) {
-		return <LoginForm />;
 	}
 
 	return (
