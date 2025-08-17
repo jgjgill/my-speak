@@ -2,180 +2,194 @@
 
 /* My Speak 디자인 시스템 - Tailwind v4 테마 정의 */
 @theme {
-  /* 5단계 학습별 색상 시스템 */
-  --color-stage-1: #3b82f6; /* 파랑 - 번역 */
-  --color-stage-2: #10b981; /* 초록 - 문장완성 */
-  --color-stage-3: #f59e0b; /* 주황 - 스피킹 */
-  --color-stage-4: #8b5cf6; /* 보라 - 자유발화 */
-  --color-completed: #f59e0b; /* 골드 - 완료 */
-  
-  /* 학습 상태별 색상 */
-  --color-focus: #1e40af; /* 집중 상태 */
-  --color-activity: #3b82f6; /* 활동 상태 */
-  --color-achievement: #10b981; /* 성취 상태 */
-  --color-attention: #f59e0b; /* 주의 상태 */
-  --color-error: #ef4444; /* 오류 상태 */
-  
-  /* 피드백 색상 */
-  --color-correct: #10b981;
-  --color-incorrect: #ef4444;
-  --color-partial: #f59e0b;
-  --color-neutral: #6b7280;
-  
-  /* 언어별 문화 색상 */
-  --color-korean: #1f2937; /* 한국어 영역 */
-  --color-target-language: #1e40af; /* 학습 언어 영역 */
-  --color-translation-process: #6b7280; /* 번역 과정 */
-  
-  /* 타이포그래피 시스템 */
-  --font-size-hero: 2.25rem; /* 36px */
-  --font-size-title: 1.875rem; /* 30px */
-  --font-size-heading: 1.25rem; /* 20px */
-  --font-size-body: 1rem; /* 16px */
-  --font-size-caption: 0.875rem; /* 14px */
-  --font-size-small: 0.75rem; /* 12px */
-  
-  /* 간격 시스템 (8px 기반) */
-  --spacing-1: 0.5rem; /* 8px */
-  --spacing-2: 1rem; /* 16px */
-  --spacing-3: 1.5rem; /* 24px */
-  --spacing-4: 2rem; /* 32px */
-  --spacing-6: 3rem; /* 48px */
-  --spacing-8: 4rem; /* 64px */
-  
-  /* 애니메이션 시스템 */
-  --duration-fast: 150ms;
-  --duration-normal: 200ms;
-  --duration-slow: 300ms;
-  
-  /* 반지름 시스템 */
-  --radius-topic-card: 0.75rem; /* 12px */
-  --radius-stage-btn: 0.5rem; /* 8px */
-  --radius-input: 0.375rem; /* 6px */
+	/* 5단계 학습별 색상 시스템 */
+	--color-stage-1: #3b82f6; /* 파랑 - 번역 */
+	--color-stage-2: #10b981; /* 초록 - 문장완성 */
+	--color-stage-3: #f59e0b; /* 주황 - 스피킹 */
+	--color-stage-4: #8b5cf6; /* 보라 - 자유발화 */
+	--color-completed: #f59e0b; /* 골드 - 완료 */
+
+	/* 학습 상태별 색상 */
+	--color-focus: #1e40af; /* 집중 상태 */
+	--color-activity: #3b82f6; /* 활동 상태 */
+	--color-achievement: #10b981; /* 성취 상태 */
+	--color-attention: #f59e0b; /* 주의 상태 */
+	--color-error: #ef4444; /* 오류 상태 */
+
+	/* 피드백 색상 */
+	--color-correct: #10b981;
+	--color-incorrect: #ef4444;
+	--color-partial: #f59e0b;
+	--color-neutral: #6b7280;
+
+	/* 언어별 문화 색상 */
+	--color-korean: #1f2937; /* 한국어 영역 */
+	--color-target-language: #1e40af; /* 학습 언어 영역 */
+	--color-translation-process: #6b7280; /* 번역 과정 */
+
+	/* 타이포그래피 시스템 */
+	--text-hero: 2.25rem; /* 36px */
+	--text-title: 1.875rem; /* 30px */
+	--text-heading: 1.25rem; /* 20px */
+	--text-body: 1rem; /* 16px */
+	--text-caption: 0.875rem; /* 14px */
+	--text-small: 0.75rem; /* 12px */
+
+	/* 간격 시스템 (8px 기반) */
+	--spacing-1: 0.5rem; /* 8px */
+	--spacing-2: 1rem; /* 16px */
+	--spacing-3: 1.5rem; /* 24px */
+	--spacing-4: 2rem; /* 32px */
+	--spacing-6: 3rem; /* 48px */
+	--spacing-8: 4rem; /* 64px */
+
+	/* 애니메이션 시스템 */
+	--duration-fast: 150ms;
+	--duration-normal: 200ms;
+	--duration-slow: 300ms;
+
+	/* 반지름 시스템 */
+	--radius-topic-card: 0.75rem; /* 12px */
+	--radius-stage-btn: 0.5rem; /* 8px */
+	--radius-input: 0.375rem; /* 6px */
 }
 
 /* 컴포넌트 스타일 - @layer components 활용 */
 @layer components {
-  /* 학습 카드 컴포넌트 */
-  .topic-card {
-    @apply bg-white border border-gray-100 p-6 cursor-pointer transition-all duration-200;
-    border-radius: var(--radius-topic-card);
-    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  }
-  
-  .topic-card:hover {
-    @apply -translate-y-1;
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  }
-  
-  .topic-card-completed {
-    @apply bg-gradient-to-br from-green-50 to-emerald-50 border-green-200;
-  }
-  
-  .topic-card-completed:hover {
-    @apply border-green-300;
-  }
-  
-  /* 단계별 버튼 시스템 */
-  .stage-btn {
-    @apply px-4 py-2 border text-sm font-medium transition-all duration-200;
-    border-radius: var(--radius-stage-btn);
-  }
-  
-  .stage-btn-1 {
-    @apply text-white border-0 shadow-lg hover:shadow-xl hover:scale-105;
-    background-color: var(--color-stage-1);
-  }
-  
-  .stage-btn-2 {
-    @apply text-white border-0 shadow-lg hover:shadow-xl hover:scale-105;
-    background-color: var(--color-stage-2);
-  }
-  
-  .stage-btn-3 {
-    @apply text-white border-0 shadow-lg hover:shadow-xl hover:scale-105;
-    background-color: var(--color-stage-3);
-  }
-  
-  .stage-btn-4 {
-    @apply text-white border-0 shadow-lg hover:shadow-xl hover:scale-105;
-    background-color: var(--color-stage-4);
-  }
-  
-  .stage-btn-completed {
-    @apply text-white ring-2 ring-green-200 hover:ring-green-300;
-    background-color: var(--color-achievement);
-  }
-  
-  .stage-btn-locked {
-    @apply bg-gray-100 text-gray-400 cursor-not-allowed;
-  }
-  
-  .stage-btn-inactive {
-    @apply bg-white text-gray-700 border-gray-300 hover:bg-gray-50;
-  }
-  
-  /* 피드백 시스템 */
-  .feedback-correct {
-    @apply bg-green-100 text-green-800 border border-green-200 px-3 py-2 rounded-md;
-  }
-  
-  .feedback-incorrect {
-    @apply bg-red-100 text-red-800 border border-red-200 px-3 py-2 rounded-md;
-  }
-  
-  .feedback-partial {
-    @apply bg-amber-100 text-amber-800 border border-amber-200 px-3 py-2 rounded-md;
-  }
-  
-  /* 텍스트 스타일 */
-  .text-korean {
-    color: var(--color-korean);
-    letter-spacing: -0.02em;
-    line-height: 1.6;
-  }
-  
-  .text-target-language {
-    color: var(--color-target-language);
-    letter-spacing: normal;
-    line-height: 1.5;
-  }
-  
-  /* 입력 폼 스타일 */
-  .input-translation {
-    @apply w-full p-3 border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-colors;
-    border-radius: var(--radius-input);
-  }
-  
-  /* 진행률 표시 */
-  .progress-bar {
-    @apply bg-gray-200 rounded-full h-2 overflow-hidden;
-  }
-  
-  .progress-fill {
-    @apply h-full rounded-full transition-all duration-500;
-    background-color: var(--color-achievement);
-  }
+	/* 학습 카드 컴포넌트 */
+	.topic-card {
+		@apply bg-white border border-gray-200 p-4 cursor-pointer transition-all duration-200;
+		border-radius: var(--radius-topic-card);
+		box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+	}
+
+	.topic-card:hover {
+		@apply -translate-y-1;
+		box-shadow:
+			0 4px 6px -1px rgb(0 0 0 / 0.1),
+			0 2px 4px -2px rgb(0 0 0 / 0.1);
+	}
+
+	.topic-card-completed {
+		@apply bg-gradient-to-br from-green-50 to-emerald-50 border-green-200;
+	}
+
+	.topic-card-completed:hover {
+		@apply border-green-300;
+	}
+
+	/* 단계별 버튼 시스템 */
+	.stage-btn {
+		@apply px-4 py-2 border text-sm font-medium transition-all duration-200;
+		border-radius: var(--radius-stage-btn);
+	}
+
+	.stage-btn-1 {
+		@apply text-white border-0 shadow-lg hover:shadow-xl hover:scale-105;
+		background-color: var(--color-stage-1);
+	}
+
+	.stage-btn-2 {
+		@apply text-white border-0 shadow-lg hover:shadow-xl hover:scale-105;
+		background-color: var(--color-stage-2);
+	}
+
+	.stage-btn-3 {
+		@apply text-white border-0 shadow-lg hover:shadow-xl hover:scale-105;
+		background-color: var(--color-stage-3);
+	}
+
+	.stage-btn-4 {
+		@apply text-white border-0 shadow-lg hover:shadow-xl hover:scale-105;
+		background-color: var(--color-stage-4);
+	}
+
+	.stage-btn-completed {
+		@apply text-white ring-2 ring-green-200 hover:ring-green-300;
+		background-color: var(--color-achievement);
+	}
+
+	.stage-btn-locked {
+		@apply bg-gray-100 text-gray-400 cursor-not-allowed;
+	}
+
+	.stage-btn-inactive {
+		@apply bg-white text-gray-700 border-gray-300 hover:bg-gray-50;
+	}
+
+	/* 피드백 시스템 */
+	.feedback-correct {
+		@apply bg-green-100 text-green-800 border border-green-200 px-3 py-2 rounded-md;
+	}
+
+	.feedback-incorrect {
+		@apply bg-red-100 text-red-800 border border-red-200 px-3 py-2 rounded-md;
+	}
+
+	.feedback-partial {
+		@apply bg-amber-100 text-amber-800 border border-amber-200 px-3 py-2 rounded-md;
+	}
+
+	/* 텍스트 스타일 */
+	.text-korean {
+		color: var(--color-korean);
+		letter-spacing: -0.02em;
+		line-height: 1.6;
+	}
+
+	.text-target-language {
+		color: var(--color-target-language);
+		letter-spacing: normal;
+		line-height: 1.5;
+	}
+
+	/* 입력 폼 스타일 */
+	.input-translation {
+		@apply w-full p-3 border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-colors;
+		border-radius: var(--radius-input);
+	}
+
+	/* 진행률 표시 */
+	.progress-bar {
+		@apply bg-gray-200 rounded-full h-2 overflow-hidden;
+	}
+
+	.progress-fill {
+		@apply h-full rounded-full transition-all duration-500;
+		background-color: var(--color-achievement);
+	}
 }
 
 /* 애니메이션 */
 @layer utilities {
-  .animate-success {
-    animation: success-pulse var(--duration-slow) ease-out;
-  }
-  
-  .animate-error {
-    animation: error-shake var(--duration-slow) ease-out;
-  }
+	.animate-success {
+		animation: success-pulse var(--duration-slow) ease-out;
+	}
+
+	.animate-error {
+		animation: error-shake var(--duration-slow) ease-out;
+	}
 }
 
 @keyframes success-pulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.05); }
+	0%,
+	100% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.05);
+	}
 }
 
 @keyframes error-shake {
-  0%, 100% { transform: translateX(0); }
-  25% { transform: translateX(-4px); }
-  75% { transform: translateX(4px); }
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+	25% {
+		transform: translateX(-4px);
+	}
+	75% {
+		transform: translateX(4px);
+	}
 }
