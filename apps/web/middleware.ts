@@ -1,7 +1,11 @@
-import type { NextRequest } from "next/server";
+import { type NextRequest, NextResponse } from "next/server";
 
 export async function middleware(request: NextRequest) {
-	// return await updateSession(request);
+	const response = NextResponse.next();
+	const searchParams = request.nextUrl.searchParams.toString();
+	response.headers.set("searchParams", searchParams);
+
+	return response;
 }
 
 export const config = {

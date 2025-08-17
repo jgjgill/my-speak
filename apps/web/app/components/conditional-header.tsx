@@ -1,17 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
-import { Suspense } from "react";
+import { useWebView } from "../contexts/webview-context";
 import AuthButton from "./auth-button";
 
-function HeaderContent() {
-	const searchParams = useSearchParams();
-	const isNative = searchParams.get("native") === "true";
-	const hideHeader = searchParams.get("hideHeader") === "true";
+export default function ConditionalHeader() {
+	const { isWebView, hideHeader } = useWebView();
 
-	// 네이티브 앱에서 헤더 숨김 요청이 있으면 헤더를 렌더링하지 않음
-	if (isNative && hideHeader) {
+	if (isWebView && hideHeader) {
 		return null;
 	}
 
@@ -26,13 +22,5 @@ function HeaderContent() {
 				<AuthButton />
 			</div>
 		</header>
-	);
-}
-
-export default function ConditionalHeader() {
-	return (
-		<Suspense fallback={null}>
-			<HeaderContent />
-		</Suspense>
 	);
 }

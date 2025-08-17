@@ -1,9 +1,9 @@
-import { useEffect, useRef, useCallback } from "react";
+import { useCallback, useEffect, useRef } from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { WebView, type WebViewMessageEvent } from "react-native-webview";
 import { useAuth } from "@/context/auth";
-import { supabase } from "@/utils/supabase/client";
 import { WEB_APP_URL } from "@/utils/constants";
+import { supabase } from "@/utils/supabase/client";
 
 export default function SimpleWebView() {
 	const webViewRef = useRef<WebView>(null);
@@ -11,15 +11,16 @@ export default function SimpleWebView() {
 	const webViewUrl =
 		`${WEB_APP_URL}?native=true&hideHeader=true` || "http://localhost:3000";
 
-	console.log("WebView URL:", webViewUrl);
 
 	// 웹뷰에 인증 정보와 세션 전송
 	const sendAuthToWebView = useCallback(async () => {
 		if (webViewRef.current && user) {
 			try {
-				// Supabase 세션 정보 가져오기
-				const { data: { session }, error } = await supabase.auth.getSession();
-				
+				const {
+					data: { session },
+					error,
+				} = await supabase.auth.getSession();
+
 				if (error) {
 					console.error("Failed to get session:", error);
 					return;
@@ -32,14 +33,15 @@ export default function SimpleWebView() {
 						email: user.email,
 						user_metadata: user.user_metadata,
 					},
-					session: session ? {
-						access_token: session.access_token,
-						refresh_token: session.refresh_token,
-						expires_at: session.expires_at
-					} : null
+					session: session
+						? {
+								access_token: session.access_token,
+								refresh_token: session.refresh_token,
+								expires_at: session.expires_at,
+							}
+						: null,
 				};
 
-				console.log("📤 Sending auth data with session to WebView:", authData);
 				webViewRef.current.postMessage(JSON.stringify(authData));
 			} catch (error) {
 				console.error("Error getting session:", error);
@@ -51,7 +53,6 @@ export default function SimpleWebView() {
 	const handleWebViewMessage = (event: WebViewMessageEvent) => {
 		try {
 			const message = JSON.parse(event.nativeEvent.data);
-			console.log("Message from WebView:", message);
 
 			if (message.type === "REQUEST_AUTH") {
 				sendAuthToWebView();
@@ -79,13 +80,10 @@ export default function SimpleWebView() {
 				source={{ uri: webViewUrl }}
 				style={styles.webView}
 				onLoad={() => {
-					console.log("WebView loaded successfully");
 					sendAuthToWebView();
 				}}
 				onMessage={handleWebViewMessage}
-				onError={(error) => console.error("WebView error:", error)}
-				onLoadStart={() => console.log("WebView loading started")}
-				onLoadEnd={() => console.log("WebView loading ended")}
+				onError={() => {}}
 				startInLoadingState={true}
 				renderLoading={() => (
 					<View style={styles.loadingContainer}>
