@@ -1,8 +1,8 @@
 import type { PropsWithChildren } from "react";
 
 import "./global.css";
-import Link from "next/link";
-import AuthButton from "./components/auth-button";
+import ConditionalHeader from "./components/conditional-header";
+import NativeBridge from "./components/native-bridge";
 import { AuthProvider } from "./contexts/auth-context";
 import QueryProvider from "./providers/query-provider";
 import { getCurrentUser } from "./utils/auth/server";
@@ -14,16 +14,8 @@ export default async function Layout({ children }: PropsWithChildren) {
 			<body>
 				<QueryProvider>
 					<AuthProvider initialUser={initialUser}>
-						<header className="border-b bg-white h-16">
-							<div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-								<h1 className="text-xl font-bold">
-									<Link href="/" className="hover:text-blue-600">
-										My Speak
-									</Link>
-								</h1>
-								<AuthButton />
-							</div>
-						</header>
+						<NativeBridge />
+						<ConditionalHeader />
 						<main>{children}</main>
 					</AuthProvider>
 				</QueryProvider>
