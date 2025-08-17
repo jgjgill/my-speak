@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import {
 	ActivityIndicator,
 	StyleSheet,
-	Text,
 	TouchableOpacity,
 	View,
 } from "react-native";
@@ -38,17 +37,14 @@ export default function LoginPage() {
 	}
 
 	return (
-		<View style={styles.container}>
-			<SafeAreaView style={styles.safeArea}>
-				{/* 뒤로가기 버튼 */}
-				<View style={styles.header}>
-					<TouchableOpacity onPress={handleBackPress} style={styles.backButton}>
-						<Ionicons name="chevron-back" size={24} color="#FFFFFF" />
-					</TouchableOpacity>
-				</View>
-			</SafeAreaView>
+		<SafeAreaView style={styles.container}>
+			<View style={styles.header}>
+				<TouchableOpacity onPress={handleBackPress} style={styles.backButton}>
+					<Ionicons name="chevron-back" size={24} color="#FFFFFF" />
+				</TouchableOpacity>
+			</View>
 			<LoginForm />
-		</View>
+		</SafeAreaView>
 	);
 }
 
@@ -56,14 +52,6 @@ const styles = StyleSheet.create({
 	container: {
 		flex: 1,
 		backgroundColor: "#1E40AF",
-	},
-	safeArea: {
-		position: "absolute",
-		top: 0,
-		left: 0,
-		right: 0,
-		zIndex: 10,
-		backgroundColor: "transparent",
 	},
 	header: {
 		paddingHorizontal: 16,

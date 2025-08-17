@@ -38,8 +38,9 @@ export default function ConditionalHeader() {
 								</svg>
 							</div>
 							<div>
-								<h1 className="text-xl font-bold text-blue-800">My Speak</h1>
-								<p className="text-xs text-gray-500 -mt-1">언어 스피킹 학습</p>
+								<strong className="text-xl font-bold text-blue-800">
+									My Speak
+								</strong>
 							</div>
 						</Link>
 					</div>
