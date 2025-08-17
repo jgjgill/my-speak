@@ -17,6 +17,12 @@ interface NativeAuthMessage {
 	} | null;
 }
 
+interface NativeLogoutMessage {
+	type: "LOGOUT";
+}
+
+type NativeMessage = NativeAuthMessage | NativeLogoutMessage;
+
 export default function NativeBridge() {
 	useEffect(() => {
 		// 네이티브 앱으로부터 메시지 수신 리스너
@@ -27,7 +33,7 @@ export default function NativeBridge() {
 					return;
 				}
 
-				const message = JSON.parse(event.data) as NativeAuthMessage;
+				const message = JSON.parse(event.data) as NativeMessage;
 				console.log("Received message from native app:", message);
 
 				if (message.type === "AUTH_DATA") {
@@ -59,6 +65,21 @@ export default function NativeBridge() {
 								}
 							});
 					}
+				} else if (message.type === "LOGOUT") {
+					console.log("🚪 Logout message received from native");
+
+					// Supabase 세션 정리
+					const supabase = createClient();
+					supabase.auth.signOut().then(({ error }) => {
+						if (error) {
+							console.error("❌ Failed to sign out in WebView:", error);
+						} else {
+							console.log("✅ WebView session cleared successfully");
+
+							// 로그아웃 상태 변경 이벤트 발생
+							window.dispatchEvent(new CustomEvent("supabaseSessionUpdated"));
+						}
+					});
 				}
 			} catch (error) {
 				console.error("Failed to parse native message:", error);

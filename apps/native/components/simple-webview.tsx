@@ -11,7 +11,6 @@ export default function SimpleWebView() {
 	const webViewUrl =
 		`${WEB_APP_URL}?native=true&hideHeader=true` || "http://localhost:3000";
 
-
 	// 웹뷰에 인증 정보와 세션 전송
 	const sendAuthToWebView = useCallback(async () => {
 		if (webViewRef.current && user) {
@@ -49,6 +48,16 @@ export default function SimpleWebView() {
 		}
 	}, [user]);
 
+	// 웹뷰에 로그아웃 메시지 전송
+	const sendLogoutToWebView = useCallback(() => {
+		if (webViewRef.current) {
+			const logoutData = {
+				type: "LOGOUT",
+			};
+			webViewRef.current.postMessage(JSON.stringify(logoutData));
+		}
+	}, []);
+
 	// 웹뷰로부터 메시지 수신
 	const handleWebViewMessage = (event: WebViewMessageEvent) => {
 		try {
@@ -72,6 +81,15 @@ export default function SimpleWebView() {
 			return () => clearTimeout(timer);
 		}
 	}, [user, isLoading, sendAuthToWebView]);
+
+	// 사용자 로그아웃 시 WebView에 로그아웃 메시지 전송
+	useEffect(() => {
+		if (user || isLoading) {
+			return;
+		}
+
+		sendLogoutToWebView();
+	}, [user, isLoading, sendLogoutToWebView]);
 
 	return (
 		<View style={styles.container}>
