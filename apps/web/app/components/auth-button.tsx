@@ -1,10 +1,11 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useAuth } from "../contexts/auth-context";
 
 export default function AuthButton() {
-	const { user, signInWithGoogle, signOut } = useAuth();
+	const { user, signOut } = useAuth();
 
 	if (user) {
 		return (
@@ -38,12 +39,11 @@ export default function AuthButton() {
 	}
 
 	return (
-		<button
-			type="button"
-			onClick={signInWithGoogle}
+		<Link
+			href="/login"
 			className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded transition-colors flex items-center gap-2"
 		>
 			로그인
-		</button>
+		</Link>
 	);
 }
