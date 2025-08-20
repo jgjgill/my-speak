@@ -14,8 +14,6 @@ export async function GET(request: Request) {
 	}
 
 	const url = new URL(request.url);
-	let idpClientId: string;
-
 	const internalClient = url.searchParams.get("client_id");
 	const redirectUri = url.searchParams.get("redirect_uri");
 
@@ -30,22 +28,20 @@ export async function GET(request: Request) {
 	}
 
 	// use state to drive redirect back to platform
-	const state = platform + "|" + url.searchParams.get("state");
+	const state = `${platform}|${url.searchParams.get("state")}`;
 
 	if (internalClient === "google") {
-		idpClientId = GOOGLE_CLIENT_ID;
+		const params = new URLSearchParams({
+			client_id: GOOGLE_CLIENT_ID,
+			redirect_uri: `${BASE_URL}/api/auth/callback`,
+			response_type: "code",
+			scope: url.searchParams.get("scope") || "identity",
+			state: state,
+			prompt: "select_account",
+		});
+
+		return Response.redirect(`${GOOGLE_AUTH_URL}?${params.toString()}`, 302);
 	} else {
 		return Response.json({ error: "Invalid client" }, { status: 400 });
 	}
-
-	const params = new URLSearchParams({
-		client_id: idpClientId,
-		redirect_uri: BASE_URL + "/api/auth/callback",
-		response_type: "code",
-		scope: url.searchParams.get("scope") || "identity",
-		state: state,
-		prompt: "select_account",
-	});
-
-	return Response.redirect(`${GOOGLE_AUTH_URL}?${params.toString()}`, 302);
 }

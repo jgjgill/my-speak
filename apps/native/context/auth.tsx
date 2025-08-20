@@ -1,11 +1,20 @@
 import type { Session, User } from "@supabase/supabase-js";
 import {
+	AppleAuthenticationScope,
+	signInAsync,
+} from "expo-apple-authentication";
+import {
 	type AuthError,
 	type AuthRequestConfig,
 	type DiscoveryDocument,
 	makeRedirectUri,
 	useAuthRequest,
 } from "expo-auth-session";
+import {
+	CryptoDigestAlgorithm,
+	digestStringAsync,
+	randomUUID,
+} from "expo-crypto";
 import * as WebBrowser from "expo-web-browser";
 import {
 	createContext,
@@ -34,6 +43,8 @@ interface AuthContextType {
 	user: AuthUser | null;
 	signIn: () => Promise<void>;
 	signOut: () => Promise<void>;
+	signInWithApple: () => Promise<void>;
+	signInWithAppleWebBrowser: () => Promise<void>;
 	isLoading: boolean;
 	error: AuthError | null;
 }
@@ -46,18 +57,31 @@ const config: AuthRequestConfig = {
 	redirectUri: makeRedirectUri(),
 };
 
+const appleConfig: AuthRequestConfig = {
+	clientId: "apple",
+	scopes: ["name", "email"],
+	redirectUri: makeRedirectUri(),
+};
+
 const discovery: DiscoveryDocument = {
 	authorizationEndpoint: `${BASE_URL}/api/auth/authorize`,
 	tokenEndpoint: `${BASE_URL}/api/auth/token`,
+};
+
+const appleDiscovery: DiscoveryDocument = {
+	authorizationEndpoint: `${BASE_URL}/api/auth/apple/authorize`,
+	tokenEndpoint: `${BASE_URL}/api/auth/apple/token`,
 };
 
 export const AuthProvider = ({ children }: PropsWithChildren) => {
 	const { data: user = null, isLoading } = useUser();
 	const [error, setError] = useState<AuthError | null>(null);
 
-	useAuthStateEffect();
-
 	const [request, response, promptAsync] = useAuthRequest(config, discovery);
+	const [appleRequest, appleResponse, promptAppleAsync] = useAuthRequest(
+		appleConfig,
+		appleDiscovery,
+	);
 
 	const signIn = async () => {
 		try {
@@ -71,6 +95,7 @@ export const AuthProvider = ({ children }: PropsWithChildren) => {
 			console.log(e);
 		}
 	};
+
 	const signOut = async () => {
 		try {
 			const { error } = await supabase.auth.signOut();
@@ -82,8 +107,70 @@ export const AuthProvider = ({ children }: PropsWithChildren) => {
 		}
 	};
 
+	const signInWithApple = async () => {
+		try {
+			const rawNonce = randomUUID();
+			const hashedNonce = await digestStringAsync(
+				CryptoDigestAlgorithm.SHA256,
+				rawNonce,
+			);
+
+			const credential = await signInAsync({
+				requestedScopes: [
+					AppleAuthenticationScope.FULL_NAME,
+					AppleAuthenticationScope.EMAIL,
+				],
+				nonce: hashedNonce,
+			});
+
+			if (!credential.identityToken) {
+				throw new Error("Apple 인증에 실패했습니다.");
+			}
+
+			const { data: supabaseData, error } =
+				await supabase.auth.signInWithIdToken({
+					provider: "apple",
+					token: credential.identityToken,
+					nonce: rawNonce,
+				});
+
+			if (error) {
+				throw error;
+			}
+
+			if (credential.fullName?.givenName && credential.email) {
+				console.log("🍎 첫 번째 로그인 - 사용자 정보:", {
+					email: credential.email,
+					name: `${credential.fullName.givenName} ${credential.fullName.familyName}`,
+				});
+			}
+
+			await supabase.auth.setSession({
+				access_token: supabaseData.session.access_token,
+				refresh_token: supabaseData.session.refresh_token,
+			});
+		} catch (error) {
+			console.error("Apple 로그인 실패:", error);
+			setError(error as AuthError);
+		}
+	};
+
+	const signInWithAppleWebBrowser = async () => {
+		try {
+			if (!appleRequest) {
+				console.log("No appleRequest");
+				return;
+			}
+			await promptAppleAsync();
+		} catch (e) {
+			console.log(e);
+		}
+	};
+
+	useAuthStateEffect();
+
 	useEffect(() => {
-		const handleReseponse = async () => {
+		const handleResponse = async () => {
 			if (response?.type === "success") {
 				const { code } = response.params;
 
@@ -116,8 +203,48 @@ export const AuthProvider = ({ children }: PropsWithChildren) => {
 			}
 		};
 
-		handleReseponse();
+		handleResponse();
 	}, [response]);
+
+	useEffect(() => {
+		const handleAppleResponse = async () => {
+			if (appleResponse?.type === "success") {
+				const { code } = appleResponse.params;
+
+				try {
+					const tokenResponse = await fetch(
+						`${BASE_URL}/api/auth/apple/token`,
+						{
+							method: "POST",
+							headers: {
+								"Content-Type": "application/json",
+							},
+							body: JSON.stringify({
+								code,
+							}),
+						},
+					);
+
+					const token = (await tokenResponse.json()) as TokenResponse;
+
+					if (!token.user || !token.session) {
+						return;
+					}
+
+					await supabase.auth.setSession({
+						access_token: token.session.access_token,
+						refresh_token: token.session.refresh_token,
+					});
+				} catch (err) {
+					console.error("Apple OAuth 토큰 처리 중 오류:", err);
+				}
+			} else if (appleResponse?.type === "error") {
+				setError(appleResponse.error as AuthError);
+			}
+		};
+
+		handleAppleResponse();
+	}, [appleResponse]);
 
 	return (
 		<AuthContext.Provider
@@ -125,6 +252,8 @@ export const AuthProvider = ({ children }: PropsWithChildren) => {
 				user,
 				signIn,
 				signOut,
+				signInWithApple,
+				signInWithAppleWebBrowser,
 				isLoading,
 				error,
 			}}

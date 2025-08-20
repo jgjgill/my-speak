@@ -21,6 +21,7 @@ interface AuthContextType {
 	user: User | null;
 	isLoading: boolean;
 	signInWithGoogle: () => Promise<void>;
+	signInWithApple: () => Promise<void>;
 	signOut: () => Promise<void>;
 }
 
@@ -62,6 +63,18 @@ export function AuthProvider({
 		}
 	};
 
+	const signInWithApple = async () => {
+		const { error } = await supabase.auth.signInWithOAuth({
+			provider: "apple",
+			options: {
+				redirectTo: `${location.origin}/auth/callback`,
+			},
+		});
+		if (error) {
+			console.error("Apple 로그인 실패:", error.message);
+		}
+	};
+
 	const signOut = async () => {
 		const { error } = await supabase.auth.signOut();
 
@@ -76,6 +89,7 @@ export function AuthProvider({
 		user,
 		isLoading,
 		signInWithGoogle,
+		signInWithApple,
 		signOut,
 	};
 

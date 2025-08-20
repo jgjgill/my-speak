@@ -23,6 +23,12 @@ export const GOOGLE_CLIENT_SECRET = process.env.GOOGLE_CLIENT_SECRET!;
 export const GOOGLE_REDIRECT_URI = `${process.env.EXPO_PUBLIC_BASE_URL}/api/auth/callback`;
 export const GOOGLE_AUTH_URL = "https://accounts.google.com/o/oauth2/v2/auth";
 
+// Apple OAuth Constants
+export const APPLE_CLIENT_ID_WEB = process.env.APPLE_CLIENT_ID_WEB!;
+export const APPLE_CLIENT_SECRET_WEB = process.env.APPLE_CLIENT_SECRET_WEB!;
+export const APPLE_REDIRECT_URI = `${process.env.EXPO_PUBLIC_BASE_URL}/api/auth/apple/callback`;
+export const APPLE_AUTH_URL = "https://appleid.apple.com/auth/authorize";
+
 // Environment Constants
 export const BASE_URL = process.env.EXPO_PUBLIC_BASE_URL; // 네이티브 앱 API 서버
 export const WEB_APP_URL = process.env.EXPO_PUBLIC_WEB_APP_URL; // 웹뷰용 웹 앱 URL

@@ -7,6 +7,7 @@ import {
 	View,
 } from "react-native";
 import { useAuth } from "@/context/auth";
+import { SignInWithAppleButton } from "./sign-in-with-apple-button";
 
 export default function LoginForm() {
 	const { signIn } = useAuth();
@@ -44,16 +45,11 @@ export default function LoginForm() {
 
 					<View style={styles.loginSection}>
 						<TouchableOpacity style={styles.googleButton} onPress={signIn}>
-							<Ionicons name="logo-google" size={20} color="#4285F4" />
-							<Text style={styles.googleButtonText}>Google로 시작하기</Text>
+							<Ionicons name="logo-google" size={16} />
+							<Text style={styles.googleButtonText}>Google로 로그인</Text>
 						</TouchableOpacity>
 
-						<TouchableOpacity style={styles.appleButton} disabled>
-							<Ionicons name="logo-apple" size={20} color="#FFFFFF" />
-							<Text style={styles.appleButtonText}>
-								Apple로 시작하기 (곧 출시)
-							</Text>
-						</TouchableOpacity>
+						<SignInWithAppleButton />
 
 						<Text style={styles.termsText}>
 							계속하면 서비스 약관 및 개인정보 처리방침에 동의하는 것으로
@@ -134,10 +130,9 @@ const styles = StyleSheet.create({
 		alignItems: "center",
 		justifyContent: "center",
 		backgroundColor: "#FFFFFF",
-		paddingVertical: 16,
-		paddingHorizontal: 24,
 		borderRadius: 12,
-		gap: 12,
+		height: 44,
+		gap: 4,
 		shadowColor: "#000",
 		shadowOffset: {
 			width: 0,
@@ -151,22 +146,7 @@ const styles = StyleSheet.create({
 		color: "#1F2937",
 		fontSize: 16,
 		fontWeight: "600",
-	},
-	appleButton: {
-		flexDirection: "row",
-		alignItems: "center",
-		justifyContent: "center",
-		backgroundColor: "rgba(255, 255, 255, 0.1)",
-		paddingVertical: 16,
-		paddingHorizontal: 24,
-		borderRadius: 12,
-		gap: 12,
-		opacity: 0.6,
-	},
-	appleButtonText: {
-		color: "#FFFFFF",
-		fontSize: 16,
-		fontWeight: "600",
+		lineHeight: 24,
 	},
 	termsText: {
 		fontSize: 12,
