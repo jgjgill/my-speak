@@ -35,13 +35,6 @@
 	--text-caption: 0.875rem; /* 14px */
 	--text-small: 0.75rem; /* 12px */
 
-	/* 간격 시스템 (8px 기반) */
-	--spacing-1: 0.5rem; /* 8px */
-	--spacing-2: 1rem; /* 16px */
-	--spacing-3: 1.5rem; /* 24px */
-	--spacing-4: 2rem; /* 32px */
-	--spacing-6: 3rem; /* 48px */
-	--spacing-8: 4rem; /* 64px */
 
 	/* 애니메이션 시스템 */
 	--duration-fast: 150ms;
