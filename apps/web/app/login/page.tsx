@@ -20,45 +20,15 @@ export default function LoginPage() {
 	}
 
 	return (
-		<div className="min-h-screen bg-gradient-to-br from-blue-800 to-blue-900">
-			{/* 웹 네이티브 브레드크럼 네비게이션 */}
-			<div className="bg-white/10 backdrop-blur-sm">
-				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-					<nav className="flex py-3 text-sm">
-						<ol className="flex items-center space-x-2 text-white/80">
-							<li>
-								<Link href="/" className="hover:text-white transition-colors">
-									홈
-								</Link>
-							</li>
-							<li className="flex items-center">
-								<svg
-									className="w-4 h-4 mx-2"
-									fill="currentColor"
-									viewBox="0 0 20 20"
-								>
-									<title>브레드크럼 화살표</title>
-									<path
-										fillRule="evenodd"
-										d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-										clipRule="evenodd"
-									/>
-								</svg>
-								<span className="text-white font-medium">로그인</span>
-							</li>
-						</ol>
-					</nav>
-				</div>
-			</div>
-
-			{/* 데스크톱 중심 좌우 분할 레이아웃 */}
-			<div className="flex-1 grid lg:grid-cols-2 gap-0 min-h-[calc(100vh-60px)]">
-				{/* 왼쪽: 브랜딩 섹션 */}
-				<div className="flex flex-col justify-center items-center px-8 py-16 lg:px-16">
-					<div className="max-w-md w-full text-center">
-						<div className="w-24 h-24 lg:w-32 lg:h-32 rounded-full bg-white/10 flex items-center justify-center mb-8 mx-auto">
+		<div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+			{/* 메인 컨테이너 - 메인 페이지와 동일한 레이아웃 */}
+			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-24">
+				<div className="max-w-md mx-auto">
+					{/* 로고 및 타이틀 - 메인 페이지와 일관된 스타일 */}
+					<div className="text-center mb-12">
+						<div className="w-20 h-20 mx-auto mb-6 rounded-full bg-blue-600 flex items-center justify-center">
 							<svg
-								className="w-12 h-12 lg:w-16 lg:h-16 text-white"
+								className="w-10 h-10 text-white"
 								fill="currentColor"
 								viewBox="0 0 24 24"
 							>
@@ -66,109 +36,23 @@ export default function LoginPage() {
 								<path d="M12 2a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3zM19 10v1a7 7 0 0 1-14 0v-1a1 1 0 0 1 2 0v1a5 5 0 0 0 10 0v-1a1 1 0 0 1 2 0zM12 18.1a1 1 0 0 1-1-1v-1.1a1 1 0 0 1 2 0v1.1a1 1 0 0 1-1 1z" />
 							</svg>
 						</div>
-
-						<h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-							My Speak
-						</h1>
-						<p className="text-lg lg:text-xl text-white/80 leading-relaxed mb-8">
-							5단계 시스템으로 영어 스피킹을
-							<br />
-							체계적으로 학습해보세요
+						
+						<h1 className="text-hero font-bold text-korean mb-4">My Speak</h1>
+						<p className="text-gray-600 mb-2">
+							4단계 체계적 학습으로 외국어 스피킹을 자연스럽게 마스터하세요
 						</p>
-
-						{/* 기능 하이라이트 */}
-						<div className="space-y-4 text-left">
-							<div className="flex items-start gap-4">
-								<div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-									<svg
-										className="w-4 h-4 text-white"
-										fill="currentColor"
-										viewBox="0 0 20 20"
-									>
-										<title>체계적 학습 단계 아이콘</title>
-										<path
-											fillRule="evenodd"
-											d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-											clipRule="evenodd"
-										/>
-									</svg>
-								</div>
-								<div>
-									<h3 className="text-white font-semibold mb-1">
-										체계적 학습 단계
-									</h3>
-									<p className="text-white/70 text-sm">
-										번역 → 문장완성 → 스피킹
-									</p>
-								</div>
-							</div>
-
-							<div className="flex items-start gap-4">
-								<div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-									<svg
-										className="w-4 h-4 text-white"
-										fill="currentColor"
-										viewBox="0 0 20 20"
-									>
-										<title>실시간 발음 피드백 아이콘</title>
-										<path
-											fillRule="evenodd"
-											d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM15.657 6.343a1 1 0 011.414 0A9.972 9.972 0 0119 12a9.972 9.972 0 01-1.929 5.657 1 1 0 11-1.414-1.414A7.971 7.971 0 0017 12c0-2.21-.895-4.21-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 12a5.984 5.984 0 01-.757 2.828 1 1 0 01-1.415-1.414A3.984 3.984 0 0013 12a3.983 3.983 0 00-.172-1.414 1 1 0 010-1.415z"
-											clipRule="evenodd"
-										/>
-									</svg>
-								</div>
-								<div>
-									<h3 className="text-white font-semibold mb-1">
-										실시간 발음 피드백
-									</h3>
-									<p className="text-white/70 text-sm">
-										즉석에서 발음을 교정하고 개선
-									</p>
-								</div>
-							</div>
-
-							<div className="flex items-start gap-4">
-								<div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-									<svg
-										className="w-4 h-4 text-white"
-										fill="currentColor"
-										viewBox="0 0 20 20"
-									>
-										<title>개인별 진행 관리 아이콘</title>
-										<path d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 16a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" />
-									</svg>
-								</div>
-								<div>
-									<h3 className="text-white font-semibold mb-1">
-										개인별 진행 관리
-									</h3>
-									<p className="text-white/70 text-sm">
-										학습 기록 및 성취도 저장
-									</p>
-								</div>
-							</div>
-						</div>
+						<p className="text-sm text-gray-500">
+							계정으로 로그인하여 학습을 시작하세요
+						</p>
 					</div>
-				</div>
 
-				{/* 오른쪽: 로그인 폼 섹션 */}
-				<div className="bg-white/5 backdrop-blur-sm flex flex-col justify-center px-8 py-16 lg:px-16">
-					<div className="max-w-sm w-full mx-auto">
-						<div className="text-center mb-8">
-							<h2 className="text-2xl lg:text-3xl font-bold text-white mb-2">
-								시작하기
-							</h2>
-							<p className="text-white/70">
-								계정으로 로그인하여 학습을 시작하세요
-							</p>
-						</div>
-
+					{/* 로그인 카드 - topic-card와 유사한 스타일 */}
+					<div className="bg-white border border-gray-200 p-6 rounded-xl shadow-sm">
 						<div className="space-y-4">
 							<button
 								type="button"
 								onClick={signInWithGoogle}
-								className="w-full bg-white hover:bg-gray-50 text-gray-900 font-semibold py-4 px-6 rounded-xl flex items-center justify-center gap-3 transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105"
+								className="w-full min-h-[44px] bg-white hover:bg-gray-50 text-gray-900 font-medium py-3 px-4 rounded-lg border border-gray-300 hover:border-gray-400 flex items-center justify-center gap-3 transition-all duration-200"
 							>
 								<svg className="w-5 h-5" viewBox="0 0 24 24">
 									<title>Google 로그인</title>
@@ -195,7 +79,7 @@ export default function LoginPage() {
 							<button
 								type="button"
 								onClick={signInWithApple}
-								className="w-full bg-white hover:bg-gray-50 text-gray-900 font-semibold py-4 px-6 rounded-xl flex items-center justify-center gap-3 transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105"
+								className="w-full min-h-[44px] bg-white hover:bg-gray-50 text-gray-900 font-medium py-3 px-4 rounded-lg border border-gray-300 hover:border-gray-400 flex items-center justify-center gap-3 transition-all duration-200"
 							>
 								<svg
 									className="w-5 h-5"
@@ -209,19 +93,30 @@ export default function LoginPage() {
 							</button>
 						</div>
 
-						<div className="mt-8 pt-6 border-t border-white/20">
-							<p className="text-xs text-white/60 text-center leading-relaxed">
+						{/* 개인정보 처리방침 */}
+						<div className="mt-6 pt-4 border-t border-gray-200">
+							<p className="text-xs text-gray-500 text-center leading-relaxed">
 								계속 진행하면{" "}
-								<Link href="/terms" className="underline hover:text-white/80">
+								<Link href="/terms" className="text-blue-600 hover:text-blue-700 underline">
 									서비스 약관
 								</Link>{" "}
 								및{" "}
-								<Link href="/privacy" className="underline hover:text-white/80">
+								<Link href="/privacy" className="text-blue-600 hover:text-blue-700 underline">
 									개인정보 처리방침
 								</Link>
 								에 동의하는 것으로 간주됩니다.
 							</p>
 						</div>
+					</div>
+
+					{/* 홈으로 돌아가기 링크 */}
+					<div className="text-center mt-6">
+						<Link 
+							href="/" 
+							className="text-sm text-gray-500 hover:text-gray-700 transition-colors"
+						>
+							← 홈으로 돌아가기
+						</Link>
 					</div>
 				</div>
 			</div>

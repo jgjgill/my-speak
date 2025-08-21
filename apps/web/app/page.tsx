@@ -11,7 +11,7 @@ export default function Home() {
 						<div className="w-20 h-20 mx-auto mb-6 rounded-full bg-blue-600 flex items-center justify-center">
 							<svg
 								className="w-10 h-10 text-white"
-								fill="currentColor"
+								fill="white"
 								viewBox="0 0 24 24"
 							>
 								<title>My Speak 로고</title>
@@ -41,9 +41,6 @@ export default function Home() {
 										</h3>
 									</div>
 								</div>
-								<p className="text-body text-gray-600 mb-3">
-									실무에서 바로 활용할 수 있는 영어 표현을 체계적으로 학습하세요
-								</p>
 								<div className="flex items-center text-blue-600 font-medium">
 									<span>학습 시작하기</span>
 									<svg
@@ -75,9 +72,7 @@ export default function Home() {
 										</h3>
 									</div>
 								</div>
-								<p className="text-body text-gray-600 mb-3">
-									일본 문화와 함께 배우는 실용적인 일본어 회화 과정
-								</p>
+
 								<div className="flex items-center text-gray-400 font-medium">
 									<span>곧 출시 예정</span>
 									<svg
