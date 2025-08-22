@@ -67,9 +67,27 @@ export async function parseMarkdownContent(
 		}
 	}
 
+	// UUID 검증 함수
+	function isValidUUID(uuid: string): boolean {
+		const uuidRegex =
+			/^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
+		return uuidRegex.test(uuid);
+	}
+
+	// topic_id 검증 및 처리
+	const topicId = frontmatter.topic_id;
+	const validTopicId =
+		topicId && typeof topicId === "string" && isValidUUID(topicId)
+			? topicId
+			: undefined;
+
+	if (topicId && !validTopicId) {
+		console.warn(`⚠️  Invalid UUID format: ${topicId}`);
+	}
+
 	return {
 		topic: {
-			id: frontmatter.topic_id || undefined,
+			id: validTopicId,
 			title: frontmatter.title || "제목 없음",
 			category: frontmatter.category || "기타",
 			difficulty: frontmatter.difficulty || "초급",
@@ -251,6 +269,7 @@ export async function uploadToSupabase(data: ParsedContent) {
 			.upsert(data.topic)
 			.select()
 			.single();
+		console.log(data.topic, topicError);
 
 		if (topicError) throw topicError;
 
