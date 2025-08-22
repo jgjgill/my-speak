@@ -1,12 +1,12 @@
 "use client";
 
-import Highlighter from "react-highlight-words";
 import { useAuth } from "../../../../contexts/auth-context";
 import { useStageThreeData } from "../hooks/use-stage-three-data";
 import {
 	createSelectedLearningPointsByOrder,
 	getSelectedKoreanKeywords,
 } from "../utils/learning-points";
+import TextHighlighter from "./text-highlighter/text-highlighter";
 
 interface StageThreeContainerProps {
 	topicId: string;
@@ -50,10 +50,9 @@ export default function StageThreeContainer({
 						<div className="mb-2">
 							<strong className="mr-2">{index + 1}.</strong>
 							<span className="text-lg leading-relaxed">
-								<Highlighter
-									searchWords={selectedKoreanKeywords}
-									textToHighlight={script.korean_text}
-									highlightClassName="bg-orange-200 px-1 rounded"
+								<TextHighlighter
+									text={script.korean_text}
+									keywords={selectedKoreanKeywords}
 								/>
 							</span>
 						</div>

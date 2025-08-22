@@ -1,6 +1,5 @@
 "use client";
 
-import Highlighter from "react-highlight-words";
 import { useAuth } from "../../../../contexts/auth-context";
 import { useStageTwoData } from "../hooks/use-stage-two-data";
 import {
@@ -8,6 +7,7 @@ import {
 	getSelectedEnglishKeywords,
 	getSelectedKoreanKeywords,
 } from "../utils/learning-points";
+import TextHighlighter from "./text-highlighter/text-highlighter";
 
 interface StageTwoContainerProps {
 	topicId: string;
@@ -74,7 +74,6 @@ export default function StageTwoContainer({ topicId }: StageTwoContainerProps) {
 
 					<div className="flex items-center gap-2 text-sm">
 						<span className="bg-orange-200 px-2 py-1 rounded">강조 표현</span>
-						<span>← 로그인 사용자만 표시됩니다</span>
 					</div>
 				</div>
 
@@ -99,10 +98,9 @@ export default function StageTwoContainer({ topicId }: StageTwoContainerProps) {
 								<div>
 									<span className="text-sm font-medium">한글</span>
 									<div className="leading-relaxed">
-										<Highlighter
-											searchWords={selectedKoreanKeywords}
-											textToHighlight={script.korean_text}
-											highlightClassName="bg-orange-200 px-1 rounded"
+										<TextHighlighter
+											text={script.korean_text}
+											keywords={selectedKoreanKeywords}
 										/>
 									</div>
 								</div>
@@ -110,12 +108,9 @@ export default function StageTwoContainer({ topicId }: StageTwoContainerProps) {
 								<div>
 									<span className="text-sm font-medium">번역</span>
 									<div className="leading-relaxed">
-										<Highlighter
-											searchWords={selectedEnglishKeywords}
-											textToHighlight={
-												englishScripts[index]?.english_text || ""
-											}
-											highlightClassName="bg-orange-200 px-1 rounded"
+										<TextHighlighter
+											text={englishScripts[index]?.english_text || ""}
+											keywords={selectedEnglishKeywords}
 										/>
 									</div>
 								</div>
