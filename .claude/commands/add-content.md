@@ -9,6 +9,8 @@
 3. **파일명 생성**: 주제에 맞는 영어 slug 형식 파일명 생성
 4. **콘텐츠 생성**: @docs/content/content-creation-flow.md와 @docs/content/english-speak-content-system.md 기반으로 완전한 학습 콘텐츠 작성
 5. **파일 저장**: @content/source/ 디렉토리에 마크다운 파일로 저장
+6. **파싱 실행**: content-parser로 마크다운을 JSON으로 변환 및 Supabase 업로드
+7. **커밋 생성**: 생성된 콘텐츠와 JSON 파일을 포함한 일관된 커밋 메시지 작성
 
 ## 주제 풀
 
@@ -94,4 +96,47 @@ description: "[주제에 맞는 설명]"
 - @docs/content/content-creation-flow.md 표준 형식 준수
 - @docs/content/english-speak-content-system.md의 5단계 학습 시스템 완전 구현
 
-생성된 파일은 @content/source/ 디렉토리에 저장됩니다.
+## 자동 파싱 및 업로드
+
+콘텐츠 생성 완료 후 자동으로 다음 단계가 진행됩니다:
+
+### Content Parser 실행
+```bash
+cd packages/content-parser
+pnpm run parse [생성된파일명].md
+```
+
+### 처리 결과
+- **JSON 생성**: `@content/json/[파일명].json` 파일 자동 생성
+- **Supabase 업로드**: 5개 테이블에 데이터 자동 삽입
+  - `topics`: 주제 메타데이터
+  - `korean_scripts`: 한글 스크립트
+  - `english_scripts`: 영어 스크립트 + 끊어읽기
+  - `keyword_speeches`: 4단계 키워드 스피치 (레벨 1-4)
+  - `learning_points`: 학습 포인트 매핑
+
+### 자동 커밋 메시지 형식
+```
+feat: [생성된 문서 제목] 학습 콘텐츠 추가
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>
+```
+
+## 품질 검증
+
+### 자동 검증 항목
+- ✅ UUID 형식 유효성 검사
+- ✅ 프론트매터 필수 필드 확인
+- ✅ 한글/영어 스크립트 문장 수 일치
+- ✅ 학습 포인트 영어 표현 매칭
+- ✅ 키워드 스피치 4레벨 완성도
+
+### 생성 완료 확인
+- [ ] 마크다운 파일 생성 (`@content/source/`)
+- [ ] JSON 파일 생성 (`@content/json/`)
+- [ ] Supabase 데이터 업로드 확인
+- [ ] Git 커밋 메시지 작성 완료
+
+생성된 파일은 @content/source/ 디렉토리에 저장되고, 자동으로 파싱 및 데이터베이스 업로드가 완료됩니다.
