@@ -7,7 +7,7 @@ import { useAuth } from "../../../../contexts/auth-context";
 import { useLearningPointMutations } from "../hooks/use-learning-point-mutations";
 import { useTranslationMutation } from "../hooks/use-translation-mutations";
 import { useUserTranslations } from "../hooks/use-user-translations";
-import KoreanSentenceHighlighter from "./korean-sentence-highlighter";
+import KoreanSentenceHighlighter from "./korean-sentence-highlighter/korean-sentence-highlighter";
 import PracticeHeader from "./practice-header";
 import TranslationInputForm from "./translation-input-form";
 
