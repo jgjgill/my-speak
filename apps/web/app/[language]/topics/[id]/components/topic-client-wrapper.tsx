@@ -38,7 +38,12 @@ export default function TopicClientWrapper({
 					onStageComplete={() => completeStage(1)}
 				/>
 			)}
-			{currentStage === 2 && <StageTwoContainer topicId={topicId} />}
+			{currentStage === 2 && (
+				<StageTwoContainer
+					topicId={topicId}
+					onStageComplete={() => completeStage(2)}
+				/>
+			)}
 			{currentStage === 3 && <StageThreeContainer topicId={topicId} />}
 			{currentStage === 4 && <StageFourContainer topicId={topicId} />}
 		</>

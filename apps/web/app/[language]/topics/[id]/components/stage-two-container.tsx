@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { useAuth } from "../../../../contexts/auth-context";
 import { useStageTwoData } from "../hooks/use-stage-two-data";
 import {
@@ -8,13 +9,19 @@ import {
 	getSelectedKoreanKeywords,
 } from "../utils/learning-points";
 import TextHighlighter from "./text-highlighter/text-highlighter";
+import VoiceRecorder from "./voice-recorder";
 
 interface StageTwoContainerProps {
 	topicId: string;
+	onStageComplete: () => void;
 }
 
-export default function StageTwoContainer({ topicId }: StageTwoContainerProps) {
+export default function StageTwoContainer({
+	topicId,
+	onStageComplete,
+}: StageTwoContainerProps) {
 	const { user } = useAuth();
+	const [hasRecorded, setHasRecorded] = useState(false);
 
 	const {
 		data: {
@@ -154,7 +161,7 @@ export default function StageTwoContainer({ topicId }: StageTwoContainerProps) {
 
 					<p className="text-sm mb-3">이제 전체를 한 번에 따라 읽어보세요.</p>
 
-					<div>
+					<div className="mb-4">
 						{englishScripts.map((script, index) => (
 							<span key={script.id}>
 								{script.chunked_text}
@@ -162,6 +169,40 @@ export default function StageTwoContainer({ topicId }: StageTwoContainerProps) {
 							</span>
 						))}
 					</div>
+
+					<VoiceRecorder
+						onRecordingComplete={(recorded) => {
+							if (recorded) {
+								setHasRecorded(true);
+							}
+						}}
+					/>
+
+					{hasRecorded && (
+						<div className="mt-4 p-4 bg-green-50 border border-green-200 rounded-lg">
+							<div className="flex items-center justify-between">
+								<div>
+									<h4 className="font-bold text-green-800 mb-1">🎉 2단계 완료!</h4>
+									<p className="text-sm text-green-700">
+										녹음을 완료했습니다. 3단계로 진행해보세요.
+									</p>
+								</div>
+								{user ? (
+									<button
+										type="button"
+										onClick={onStageComplete}
+										className="px-4 py-2 bg-green-600 text-white rounded-lg font-medium hover:bg-green-700 transition-colors"
+									>
+										3단계로 이동하기
+									</button>
+								) : (
+									<div className="text-sm text-gray-500">
+										로그인하면 다음 단계로 진행할 수 있습니다.
+									</div>
+								)}
+							</div>
+						</div>
+					)}
 				</div>
 			</div>
 		</div>

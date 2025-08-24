@@ -20,7 +20,7 @@ export default function StageCompleteButton({
 	const handleNextStage = async () => {
 		if (user && isStageComplete) {
 			try {
-				await onStageComplete();
+				onStageComplete();
 				alert("🎉 2단계로 이동합니다. 🎉");
 			} catch (error) {
 				console.error("단계 완료 처리 중 오류:", error);
