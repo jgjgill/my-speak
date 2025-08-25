@@ -1,5 +1,6 @@
 import { Ionicons } from "@expo/vector-icons";
 import {
+	ScrollView,
 	StatusBar,
 	StyleSheet,
 	Text,
@@ -13,7 +14,7 @@ export default function LoginForm() {
 	const { signIn } = useAuth();
 
 	return (
-		<View style={styles.container}>
+		<ScrollView style={styles.container}>
 			<StatusBar barStyle="light-content" backgroundColor="#1E40AF" />
 
 			<View style={styles.backgroundGradient}>
@@ -58,7 +59,7 @@ export default function LoginForm() {
 					</View>
 				</View>
 			</View>
-		</View>
+		</ScrollView>
 	);
 }
 
@@ -83,6 +84,7 @@ const styles = StyleSheet.create({
 		flex: 2,
 		justifyContent: "center",
 		alignItems: "center",
+		marginBottom: 32,
 	},
 	logoContainer: {
 		width: 120,
@@ -108,7 +110,8 @@ const styles = StyleSheet.create({
 	descriptionSection: {
 		flex: 1,
 		justifyContent: "center",
-		gap: 16,
+		gap: 20,
+		marginBottom: 40,
 	},
 	featureItem: {
 		flexDirection: "row",
@@ -123,7 +126,8 @@ const styles = StyleSheet.create({
 	loginSection: {
 		flex: 1,
 		justifyContent: "flex-end",
-		gap: 16,
+		gap: 20,
+		paddingTop: 20,
 	},
 	googleButton: {
 		flexDirection: "row",
@@ -131,7 +135,7 @@ const styles = StyleSheet.create({
 		justifyContent: "center",
 		backgroundColor: "#FFFFFF",
 		borderRadius: 12,
-		height: 44,
+		height: 48,
 		gap: 4,
 		shadowColor: "#000",
 		shadowOffset: {
