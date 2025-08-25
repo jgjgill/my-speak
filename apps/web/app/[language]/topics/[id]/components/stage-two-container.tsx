@@ -1,8 +1,10 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import { useState } from "react";
 import { useAuth } from "../../../../contexts/auth-context";
-import { useStageTwoData } from "../hooks/use-stage-two-data";
+import { useStageTwoPublicData } from "../hooks/use-stage-two-public-data";
+import { useUserTranslations } from "../hooks/use-user-translations";
 import {
 	createSelectedLearningPointsByOrder,
 	getSelectedEnglishKeywords,
@@ -10,6 +12,11 @@ import {
 } from "../utils/learning-points";
 import TextHighlighter from "./text-highlighter/text-highlighter";
 import VoiceRecorder from "./voice-recorder";
+
+const UserTranslationDisplay = dynamic(
+	() => import("./user-translation-display"),
+	{ ssr: false },
+);
 
 interface StageTwoContainerProps {
 	topicId: string;
@@ -23,20 +30,19 @@ export default function StageTwoContainer({
 	const { user } = useAuth();
 	const [hasRecorded, setHasRecorded] = useState(false);
 
-	const {
-		data: {
-			koreanScripts,
-			englishScripts,
-			learningPoints,
-			userTranslations,
-			userSelectedPoints,
-		},
-	} = useStageTwoData(topicId, user);
+	const [
+		{ data: koreanScripts },
+		{ data: englishScripts },
+		{ data: learningPoints },
+		{ data: userSelectedPoints },
+	] = useStageTwoPublicData(topicId, user);
+	const { data: userTranslations } = useUserTranslations(topicId, user);
 
 	const selectedLearningPointsByOrder = createSelectedLearningPointsByOrder(
 		userSelectedPoints,
 		learningPoints,
 	);
+
 	return (
 		<div className="border p-4 mb-6">
 			<h2 className="text-xl font-bold mb-4">2단계: 영어 스크립트</h2>
@@ -122,21 +128,9 @@ export default function StageTwoContainer({
 									</div>
 								</div>
 
-								<details>
-									<summary className="cursor-pointer text-sm font-light">
-										내 번역
-									</summary>
-									{userTranslation && (
-										<p className="bg-blue-50 text-sm p-2 font-light rounded">
-											{userTranslation.user_translation}
-										</p>
-									)}
-									{!userTranslation && (
-										<p className="text-gray-500 text-sm italic font-light">
-											로그인시 번역한 내용도 같이 볼 수 있어요.
-										</p>
-									)}
-								</details>
+								{userTranslation && (
+									<UserTranslationDisplay userTranslation={userTranslation} />
+								)}
 							</div>
 						</div>
 					);
@@ -182,7 +176,9 @@ export default function StageTwoContainer({
 						<div className="mt-4 p-4 bg-green-50 border border-green-200 rounded-lg">
 							<div className="flex items-center justify-between">
 								<div>
-									<h4 className="font-bold text-green-800 mb-1">🎉 2단계 완료!</h4>
+									<h4 className="font-bold text-green-800 mb-1">
+										🎉 2단계 완료!
+									</h4>
 									<p className="text-sm text-green-700">
 										녹음을 완료했습니다. 3단계로 진행해보세요.
 									</p>
