@@ -155,9 +155,7 @@ export default function StageFourContainer({
 			</div>
 
 			<div className="mt-6 p-4 bg-gradient-to-r from-green-50 to-blue-50 border border-green-200 rounded">
-				<h3 className="font-bold text-green-800 mb-2">
-					🏆 모든 레벨 완료 목표
-				</h3>
+				<h3 className="font-bold text-green-800 mb-2">🏆 모든 레벨 완료</h3>
 				<p className="text-sm text-green-700">Cool!</p>
 			</div>
 		</div>
