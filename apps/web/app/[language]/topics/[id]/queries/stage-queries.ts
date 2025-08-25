@@ -7,6 +7,7 @@ export type EnglishScript = Tables<"english_scripts">;
 export type LearningPoint = Tables<"learning_points">;
 export type UserTranslation = Tables<"user_translations">;
 export type UserSelectedPoint = Tables<"user_selected_points">;
+export type KeywordSpeech = Tables<"keyword_speeches">;
 
 export async function getKoreanScripts(
 	topicId: string,
@@ -57,9 +58,10 @@ export async function getLearningPoints(
 export async function getUserTranslations(
 	topicId: string,
 	user: User,
+	supabase?: SupabaseClient,
 ): Promise<UserTranslation[]> {
-	const supabase = createClient();
-	const { data, error } = await supabase
+	const client = supabase || createClient();
+	const { data, error } = await client
 		.from("user_translations")
 		.select("*")
 		.eq("user_id", user.id)
@@ -72,13 +74,30 @@ export async function getUserTranslations(
 export async function getUserSelectedPoints(
 	topicId: string,
 	user: User,
+	supabase?: SupabaseClient,
 ): Promise<UserSelectedPoint[]> {
-	const supabase = createClient();
-	const { data, error } = await supabase
+	const client = supabase || createClient();
+	const { data, error } = await client
 		.from("user_selected_points")
 		.select("*")
 		.eq("user_id", user.id)
 		.eq("topic_id", topicId);
+
+	if (error) throw error;
+	return data || [];
+}
+
+export async function getKeywordSpeeches(
+	topicId: string,
+	supabase?: SupabaseClient,
+): Promise<KeywordSpeech[]> {
+	const client = supabase || createClient();
+
+	const { data, error } = await client
+		.from("keyword_speeches")
+		.select("*")
+		.eq("topic_id", topicId)
+		.order("sequence_order");
 
 	if (error) throw error;
 	return data || [];
