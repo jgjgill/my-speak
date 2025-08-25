@@ -1,7 +1,7 @@
 "use client";
 
 import { useAuth } from "../../../../contexts/auth-context";
-import { useStageThreeData } from "../hooks/use-stage-three-data";
+import { useStageThreePublicData } from "../hooks/use-stage-three-public-data";
 import {
 	createSelectedLearningPointsByOrder,
 	getSelectedKoreanKeywords,
@@ -10,16 +10,21 @@ import TextHighlighter from "./text-highlighter/text-highlighter";
 
 interface StageThreeContainerProps {
 	topicId: string;
+	onStageComplete: () => void;
 }
 
 export default function StageThreeContainer({
 	topicId,
+	onStageComplete,
 }: StageThreeContainerProps) {
 	const { user } = useAuth();
 
-	const {
-		data: { koreanScripts, englishScripts, learningPoints, userSelectedPoints },
-	} = useStageThreeData(topicId, user);
+	const [
+		{ data: koreanScripts },
+		{ data: englishScripts },
+		{ data: learningPoints },
+		{ data: userSelectedPoints },
+	] = useStageThreePublicData(topicId, user);
 
 	const selectedLearningPointsByOrder = createSelectedLearningPointsByOrder(
 		userSelectedPoints,
@@ -68,6 +73,26 @@ export default function StageThreeContainer({
 					</div>
 				);
 			})}
+
+			<div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
+				<div className="flex items-center justify-between">
+					<div>
+						<h4 className="font-bold text-blue-800 mb-1">
+							🎯 3단계 스피킹 연습 완료!
+						</h4>
+						<p className="text-sm text-blue-700">
+							모든 문장을 연습해보셨나요? 이제 4단계로 진행해보세요.
+						</p>
+					</div>
+					<button
+						type="button"
+						onClick={onStageComplete}
+						className="px-4 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors"
+					>
+						4단계로 이동하기
+					</button>
+				</div>
+			</div>
 		</div>
 	);
 }
