@@ -13,6 +13,7 @@ import TopicHeader from "./components/topic-header";
 import { getEmptyUserSelectedPoints } from "./hooks/use-stage-one-public-data";
 import {
 	getEnglishScripts,
+	getKeywordSpeeches,
 	getKoreanScripts,
 	getLearningPoints,
 	getUserSelectedPoints,
@@ -46,6 +47,11 @@ export default async function TopicDetailPage({ params }: Props) {
 
 	const getGuestProgress = async () => 1;
 
+	await queryClient.prefetchQuery({
+		queryKey: ["topic", id],
+		queryFn: () => getTopic(id, supabase),
+	});
+
 	await Promise.all([
 		queryClient.prefetchQuery({
 			queryKey: ["korean-scripts", id],
@@ -61,10 +67,7 @@ export default async function TopicDetailPage({ params }: Props) {
 			queryKey: ["learning-points", id],
 			queryFn: () => getLearningPoints(id, supabase),
 		}),
-		queryClient.prefetchQuery({
-			queryKey: ["topic", id],
-			queryFn: () => getTopic(id, supabase),
-		}),
+
 		queryClient.prefetchQuery({
 			queryKey: [
 				"user-selected-points",
@@ -72,12 +75,16 @@ export default async function TopicDetailPage({ params }: Props) {
 				currentUser ? currentUser.id : "guest",
 			],
 			queryFn: currentUser
-				? () => getUserSelectedPoints(id, currentUser)
+				? () => getUserSelectedPoints(id, currentUser, supabase)
 				: getEmptyUserSelectedPoints,
 		}),
 		queryClient.prefetchQuery({
 			queryKey: ["user-progress", id, currentUser ? currentUser.id : "guest"],
 			queryFn: currentUser ? getUserProgress : getGuestProgress,
+		}),
+		queryClient.prefetchQuery({
+			queryKey: ["keyword-speeches", id],
+			queryFn: () => getKeywordSpeeches(id, supabase),
 		}),
 	]);
 
