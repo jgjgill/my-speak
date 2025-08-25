@@ -1,6 +1,6 @@
 import type { User } from "@supabase/supabase-js";
 import { useSuspenseQuery } from "@tanstack/react-query";
-import { getUserTranslations } from "../queries/stage-one-queries";
+import { getUserTranslations } from "../queries/stage-queries";
 
 export const getEmptyUserTranslations = async (): Promise<never[]> => [];
 

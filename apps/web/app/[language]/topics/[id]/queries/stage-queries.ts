@@ -3,6 +3,7 @@ import type { SupabaseClient, User } from "@supabase/supabase-js";
 import { createClient } from "../../../../utils/supabase/client";
 
 export type KoreanScript = Tables<"korean_scripts">;
+export type EnglishScript = Tables<"english_scripts">;
 export type LearningPoint = Tables<"learning_points">;
 export type UserTranslation = Tables<"user_translations">;
 export type UserSelectedPoint = Tables<"user_selected_points">;
@@ -14,6 +15,22 @@ export async function getKoreanScripts(
 	const client = supabase || createClient();
 	const { data, error } = await client
 		.from("korean_scripts")
+		.select("*")
+		.eq("topic_id", topicId)
+		.order("sentence_order");
+
+	if (error) throw error;
+	return data || [];
+}
+
+export async function getEnglishScripts(
+	topicId: string,
+	supabase?: SupabaseClient,
+): Promise<EnglishScript[]> {
+	const client = supabase || createClient();
+
+	const { data, error } = await client
+		.from("english_scripts")
 		.select("*")
 		.eq("topic_id", topicId)
 		.order("sentence_order");

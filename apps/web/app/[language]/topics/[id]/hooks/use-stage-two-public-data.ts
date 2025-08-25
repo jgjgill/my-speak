@@ -1,6 +1,7 @@
 import type { User } from "@supabase/supabase-js";
 import { useSuspenseQueries } from "@tanstack/react-query";
 import {
+	getEnglishScripts,
 	getKoreanScripts,
 	getLearningPoints,
 	getUserSelectedPoints,
@@ -8,12 +9,16 @@ import {
 
 export const getEmptyUserSelectedPoints = async (): Promise<never[]> => [];
 
-export function useStageOnePublicData(topicId: string, user?: User | null) {
+export function useStageTwoPublicData(topicId: string, user?: User | null) {
 	return useSuspenseQueries({
 		queries: [
 			{
 				queryKey: ["korean-scripts", topicId],
 				queryFn: () => getKoreanScripts(topicId),
+			},
+			{
+				queryKey: ["english-scripts", topicId],
+				queryFn: () => getEnglishScripts(topicId),
 			},
 			{
 				queryKey: ["learning-points", topicId],

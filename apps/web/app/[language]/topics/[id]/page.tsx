@@ -12,10 +12,11 @@ import TopicClientWrapper from "./components/topic-client-wrapper";
 import TopicHeader from "./components/topic-header";
 import { getEmptyUserSelectedPoints } from "./hooks/use-stage-one-public-data";
 import {
+	getEnglishScripts,
 	getKoreanScripts,
 	getLearningPoints,
 	getUserSelectedPoints,
-} from "./queries/stage-one-queries";
+} from "./queries/stage-queries";
 import { getTopic } from "./queries/topic-info-queries";
 
 type Props = {
@@ -50,6 +51,12 @@ export default async function TopicDetailPage({ params }: Props) {
 			queryKey: ["korean-scripts", id],
 			queryFn: () => getKoreanScripts(id, supabase),
 		}),
+
+		queryClient.prefetchQuery({
+			queryKey: ["english-scripts", id],
+			queryFn: () => getEnglishScripts(id, supabase),
+		}),
+
 		queryClient.prefetchQuery({
 			queryKey: ["learning-points", id],
 			queryFn: () => getLearningPoints(id, supabase),
