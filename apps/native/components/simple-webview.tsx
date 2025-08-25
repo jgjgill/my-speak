@@ -2,14 +2,13 @@ import { useCallback, useEffect, useRef } from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { WebView, type WebViewMessageEvent } from "react-native-webview";
 import { useAuth } from "@/context/auth";
-import { WEB_APP_URL } from "@/utils/constants";
 import { supabase } from "@/utils/supabase/client";
+import { getWebViewUrl } from "@/utils/webview-url";
 
 export default function SimpleWebView() {
 	const webViewRef = useRef<WebView>(null);
 	const { user, isLoading } = useAuth();
-	const webViewUrl =
-		`${WEB_APP_URL}?native=true&hideHeader=true` || "http://localhost:3000";
+	const webViewUrl = getWebViewUrl();
 
 	// 웹뷰에 인증 정보와 세션 전송
 	const sendAuthToWebView = useCallback(async () => {

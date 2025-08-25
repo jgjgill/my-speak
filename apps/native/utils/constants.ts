@@ -35,6 +35,10 @@ export const WEB_APP_URL = process.env.EXPO_PUBLIC_WEB_APP_URL; // 웹뷰용 웹
 export const APP_SCHEME = process.env.EXPO_PUBLIC_SCHEME;
 export const JWT_SECRET = process.env.JWT_SECRET!;
 
+// Development Environment Constants
+export const DEV_WEB_PORT = process.env.EXPO_PUBLIC_DEV_WEB_PORT || "3000";
+export const DEV_HOST_IP = process.env.EXPO_PUBLIC_DEV_HOST_IP;
+
 // Cookie Settings
 export const COOKIE_OPTIONS = {
 	httpOnly: true,
