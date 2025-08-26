@@ -32,7 +32,7 @@ export default function LoginForm() {
 					<View style={styles.descriptionSection}>
 						<View style={styles.featureItem}>
 							<Ionicons name="book" size={24} color="#FFFFFF" />
-							<Text style={styles.featureText}>5단계 학습 시스템</Text>
+							<Text style={styles.featureText}>4단계 학습 시스템</Text>
 						</View>
 						<View style={styles.featureItem}>
 							<Ionicons name="volume-high" size={24} color="#FFFFFF" />

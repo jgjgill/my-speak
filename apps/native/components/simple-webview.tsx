@@ -97,16 +97,29 @@ export default function SimpleWebView() {
 				source={{ uri: webViewUrl }}
 				style={styles.webView}
 				onLoad={() => {
+					console.log("WebView loaded:", webViewUrl);
 					sendAuthToWebView();
 				}}
 				onMessage={handleWebViewMessage}
-				onError={() => {}}
+				onError={(syntheticEvent) => {
+					const { nativeEvent } = syntheticEvent;
+					console.error("WebView error:", nativeEvent);
+				}}
+				onHttpError={(syntheticEvent) => {
+					const { nativeEvent } = syntheticEvent;
+					console.error("WebView HTTP error:", nativeEvent);
+				}}
 				startInLoadingState={true}
 				renderLoading={() => (
 					<View style={styles.loadingContainer}>
 						<Text>Loading...</Text>
 					</View>
 				)}
+				mixedContentMode="compatibility"
+				originWhitelist={["*"]}
+				cacheEnabled={true}
+				allowsBackForwardNavigationGestures={true}
+				thirdPartyCookiesEnabled={true}
 				javaScriptEnabled={true}
 			/>
 		</View>
