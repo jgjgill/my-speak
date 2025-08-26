@@ -25,16 +25,24 @@ type NativeMessage = NativeAuthMessage | NativeLogoutMessage;
 
 export default function NativeBridge() {
 	useEffect(() => {
-		// 네이티브 앱으로부터 메시지 수신 리스너
-		const handleNativeMessage = (event: MessageEvent) => {
+		// React Native WebView는 document에 message 이벤트를 발생시킵니다
+		const handleNativeMessage = (event: Event) => {
+			// MessageEvent로 캐스팅
+			const messageEvent = event as MessageEvent;
 			try {
+				console.log("📨 Message event received:", messageEvent);
+
 				// 네이티브 앱이 아닌 경우 무시
-				if (typeof event.data !== "string") {
+				if (typeof messageEvent.data !== "string") {
+					console.log(
+						"❌ Invalid message data type:",
+						typeof messageEvent.data,
+					);
 					return;
 				}
 
-				const message = JSON.parse(event.data) as NativeMessage;
-				console.log("Received message from native app:", message);
+				const message = JSON.parse(messageEvent.data) as NativeMessage;
+				console.log("✅ Received message from native app:", message);
 
 				if (message.type === "AUTH_DATA") {
 					console.log("📦 Auth data received from native:", message.user);
@@ -82,10 +90,16 @@ export default function NativeBridge() {
 					});
 				}
 			} catch (error) {
-				console.error("Failed to parse native message:", error);
+				console.error("❌ Failed to parse native message:", error);
 			}
 		};
 
+		// Android: React Native WebView는 postMessage를 document 객체로 전달
+		// - Android WebView 엔진이 DOM document를 메시지 타겟으로 사용
+		document.addEventListener("message", handleNativeMessage);
+
+		// iOS: WKWebView는 window 객체로 메시지를 전달하는 경우가 있음
+		// - iOS 버전과 React Native 버전에 따라 동작이 다를 수 있어 안전성을 위해 추가
 		window.addEventListener("message", handleNativeMessage);
 
 		// 네이티브 앱에게 인증 정보 요청
@@ -103,6 +117,7 @@ export default function NativeBridge() {
 		const timer = setTimeout(requestAuthFromNative, 1000);
 
 		return () => {
+			document.removeEventListener("message", handleNativeMessage);
 			window.removeEventListener("message", handleNativeMessage);
 			clearTimeout(timer);
 		};
