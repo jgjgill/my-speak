@@ -6,13 +6,21 @@ import { useAuth } from "@/context/auth";
 interface NativeHeaderProps {
 	onBackPress?: () => void;
 	showBackButton?: boolean;
+	onWebViewBack?: () => void;
+	currentUrl?: string;
 }
 
 export default function NativeHeader({
 	onBackPress,
 	showBackButton = false,
+	onWebViewBack,
+	currentUrl = "",
 }: NativeHeaderProps) {
 	const { user } = useAuth();
+
+	// URL에 따라 웹뷰 뒤로가기 버튼 표시 여부 결정
+	const shouldShowWebViewBackButton =
+		currentUrl.includes("/topics/") || currentUrl.includes("/topics");
 
 	const handleProfilePress = () => {
 		if (user) {
@@ -35,10 +43,24 @@ export default function NativeHeader({
 						<Ionicons name="chevron-back" size={24} color="#1E40AF" />
 					</TouchableOpacity>
 				)}
+				{shouldShowWebViewBackButton && onWebViewBack && (
+					<TouchableOpacity
+						onPress={onWebViewBack}
+						style={styles.backButton}
+						activeOpacity={0.7}
+					>
+						<Ionicons name="chevron-back" size={24} color="#1E40AF" />
+					</TouchableOpacity>
+				)}
 			</View>
 
 			<View style={styles.centerSection}>
-				<Text style={styles.logo}>My Speak</Text>
+				<TouchableOpacity
+					onPress={() => router.replace("/")}
+					activeOpacity={0.7}
+				>
+					<Text style={styles.logo}>My Speak</Text>
+				</TouchableOpacity>
 			</View>
 
 			<View style={styles.rightSection}>

@@ -29,7 +29,14 @@ interface NativeLogoutMessage {
 	type: "LOGOUT";
 }
 
-type NativeMessage = NativeAuthMessage | NativeLogoutMessage;
+interface NativeGoBackMessage {
+	type: "GO_BACK";
+}
+
+type NativeMessage =
+	| NativeAuthMessage
+	| NativeLogoutMessage
+	| NativeGoBackMessage;
 
 export default function NativeBridge() {
 	useEffect(() => {
@@ -83,6 +90,15 @@ export default function NativeBridge() {
 							window.dispatchEvent(new CustomEvent("supabaseSessionUpdated"));
 						}
 					});
+				} else if (message.type === "GO_BACK") {
+					console.log("⬅️ Go back message received from native");
+
+					// 브라우저 히스토리 뒤로가기
+					if (window.history.length > 1) {
+						window.history.back();
+					} else {
+						console.log("No history to go back to");
+					}
 				}
 			} catch (error) {
 				console.error("❌ Failed to parse native message:", error);
@@ -90,6 +106,7 @@ export default function NativeBridge() {
 		};
 
 		document.addEventListener("message", handleNativeMessage);
+		window.addEventListener("message", handleNativeMessage);
 
 		const requestAuthFromNative = () => {
 			if (!window.ReactNativeWebView) {
@@ -110,6 +127,7 @@ export default function NativeBridge() {
 
 		return () => {
 			document.removeEventListener("message", handleNativeMessage);
+			window.removeEventListener("message", handleNativeMessage);
 			clearTimeout(timer);
 		};
 	}, []);
