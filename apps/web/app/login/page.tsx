@@ -36,7 +36,7 @@ export default function LoginPage() {
 								<path d="M12 2a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3zM19 10v1a7 7 0 0 1-14 0v-1a1 1 0 0 1 2 0v1a5 5 0 0 0 10 0v-1a1 1 0 0 1 2 0zM12 18.1a1 1 0 0 1-1-1v-1.1a1 1 0 0 1 2 0v1.1a1 1 0 0 1-1 1z" />
 							</svg>
 						</div>
-						
+
 						<h1 className="text-hero font-bold text-korean mb-4">My Speak</h1>
 						<p className="text-gray-600 mb-2">
 							4단계 체계적 학습으로 외국어 스피킹을 자연스럽게 마스터하세요
@@ -97,11 +97,17 @@ export default function LoginPage() {
 						<div className="mt-6 pt-4 border-t border-gray-200">
 							<p className="text-xs text-gray-500 text-center leading-relaxed">
 								계속 진행하면{" "}
-								<Link href="/terms" className="text-blue-600 hover:text-blue-700 underline">
+								<Link
+									href="/terms"
+									className="text-blue-600 hover:text-blue-700 underline"
+								>
 									서비스 약관
 								</Link>{" "}
 								및{" "}
-								<Link href="/privacy" className="text-blue-600 hover:text-blue-700 underline">
+								<Link
+									href="/privacy"
+									className="text-blue-600 hover:text-blue-700 underline"
+								>
 									개인정보 처리방침
 								</Link>
 								에 동의하는 것으로 간주됩니다.
@@ -111,8 +117,8 @@ export default function LoginPage() {
 
 					{/* 홈으로 돌아가기 링크 */}
 					<div className="text-center mt-6">
-						<Link 
-							href="/" 
+						<Link
+							href="/"
 							className="text-sm text-gray-500 hover:text-gray-700 transition-colors"
 						>
 							← 홈으로 돌아가기
