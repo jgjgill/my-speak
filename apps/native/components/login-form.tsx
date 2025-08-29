@@ -1,4 +1,5 @@
 import { Ionicons } from "@expo/vector-icons";
+import { router } from "expo-router";
 import {
 	ScrollView,
 	StatusBar,
@@ -52,10 +53,17 @@ export default function LoginForm() {
 
 						<SignInWithAppleButton />
 
-						<Text style={styles.termsText}>
-							계속하면 서비스 약관 및 개인정보 처리방침에 동의하는 것으로
-							간주됩니다.
-						</Text>
+						<View style={styles.termsContainer}>
+							<Text style={styles.termsText}>로그인 시 </Text>
+							<TouchableOpacity onPress={() => router.push("/terms")}>
+								<Text style={styles.termsLink}>서비스 약관</Text>
+							</TouchableOpacity>
+							<Text style={styles.termsText}> 및 </Text>
+							<TouchableOpacity onPress={() => router.push("/privacy")}>
+								<Text style={styles.termsLink}>개인정보 처리방침</Text>
+							</TouchableOpacity>
+							<Text style={styles.termsText}>에 동의하게 됩니다.</Text>
+						</View>
 					</View>
 				</View>
 			</View>
@@ -152,11 +160,24 @@ const styles = StyleSheet.create({
 		fontWeight: "600",
 		lineHeight: 24,
 	},
+	termsContainer: {
+		flexDirection: "row",
+		flexWrap: "wrap",
+		justifyContent: "center",
+		alignItems: "center",
+		marginTop: 8,
+		paddingHorizontal: 8,
+	},
 	termsText: {
 		fontSize: 12,
 		color: "rgba(255, 255, 255, 0.7)",
-		textAlign: "center",
 		lineHeight: 16,
-		marginTop: 8,
+	},
+	termsLink: {
+		fontSize: 12,
+		color: "#FFFFFF",
+		lineHeight: 16,
+		textDecorationLine: "underline",
+		fontWeight: "500",
 	},
 });

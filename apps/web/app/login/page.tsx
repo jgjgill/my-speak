@@ -96,7 +96,7 @@ export default function LoginPage() {
 						{/* 개인정보 처리방침 */}
 						<div className="mt-6 pt-4 border-t border-gray-200">
 							<p className="text-xs text-gray-500 text-center leading-relaxed">
-								계속 진행하면{" "}
+								로그인 시{" "}
 								<Link
 									href="/terms"
 									className="text-blue-600 hover:text-blue-700 underline"
@@ -110,7 +110,7 @@ export default function LoginPage() {
 								>
 									개인정보 처리방침
 								</Link>
-								에 동의하는 것으로 간주됩니다.
+								에 동의하게 됩니다.
 							</p>
 						</div>
 					</div>
