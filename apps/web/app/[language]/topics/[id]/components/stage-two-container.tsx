@@ -128,9 +128,9 @@ export default function StageTwoContainer({
 									</div>
 								</div>
 
-								{userTranslation && (
-									<UserTranslationDisplay userTranslation={userTranslation} />
-								)}
+								<UserTranslationDisplay
+									user_translation={userTranslation?.user_translation}
+								/>
 							</div>
 						</div>
 					);
