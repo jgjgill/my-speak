@@ -1,5 +1,7 @@
 "use client";
 
+import StageButton from "./stage-button";
+
 interface StageNavigationProps {
 	currentStage: number;
 	maxAvailableStage: number;
@@ -7,10 +9,10 @@ interface StageNavigationProps {
 }
 
 const stages = [
-	{ number: 1, title: "1단계", description: "한글 번역" },
-	{ number: 2, title: "2단계", description: "영어 스크립트" },
-	{ number: 3, title: "3단계", description: "읽기 연습" },
-	{ number: 4, title: "4단계", description: "키워드 스피치" },
+	{ number: 1, title: "1단계", description: "한글 번역", icon: "📝" },
+	{ number: 2, title: "2단계", description: "영어 스크립트", icon: "📖" },
+	{ number: 3, title: "3단계", description: "읽기 연습", icon: "🗣️" },
+	{ number: 4, title: "4단계", description: "키워드 스피치", icon: "✨" },
 ];
 
 export default function StageNavigation({
@@ -19,31 +21,24 @@ export default function StageNavigation({
 	onStageChange,
 }: StageNavigationProps) {
 	return (
-		<div className="mb-6">
-			<div className="flex flex-wrap gap-2">
-				{stages.map((stage) => {
+		<div className="mb-8">
+			<div className="grid grid-cols-2 gap-4 place-items-center sm:flex sm:items-center sm:justify-center sm:gap-0">
+				{stages.map((stage, index) => {
 					const isActive = currentStage === stage.number;
+					const isCompleted = stage.number < currentStage;
 					const isDisabled = stage.number > maxAvailableStage;
+					const showConnector = index < stages.length - 1;
 
 					return (
-						<button
+						<StageButton
 							key={stage.number}
-							type="button"
-							onClick={() => !isDisabled && onStageChange(stage.number)}
-							disabled={isDisabled}
-							className={`px-4 py-2 rounded-lg border text-sm font-medium transition-colors ${
-								isActive
-									? "bg-blue-600 text-white border-blue-600"
-									: isDisabled
-										? "bg-gray-100 text-gray-400 border-gray-200 cursor-not-allowed"
-										: "bg-white text-gray-700 border-gray-300 hover:bg-gray-50"
-							}`}
-						>
-							<div className="text-center">
-								<div className="font-semibold">{stage.title}</div>
-								<div className="text-xs opacity-75">{stage.description}</div>
-							</div>
-						</button>
+							stage={stage}
+							isActive={isActive}
+							isCompleted={isCompleted}
+							isDisabled={isDisabled}
+							showConnector={showConnector}
+							onStageChange={onStageChange}
+						/>
 					);
 				})}
 			</div>

@@ -49,7 +49,7 @@ export default function TranslationInputForm({
 					{...register("translated", { required: true })}
 					rows={2}
 					placeholder="여기에 영어 번역을 입력하세요..."
-					className="w-full mt-1 p-2 border rounded resize-none"
+					className="w-full mt-1 p-2 border rounded resize-none text-base"
 				/>
 			</label>
 
