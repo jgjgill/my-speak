@@ -2,6 +2,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { router } from "expo-router";
 import {
 	ActivityIndicator,
+	Alert,
 	Image,
 	StyleSheet,
 	Text,
@@ -12,7 +13,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { useAuth } from "@/context/auth";
 
 export default function ProfilePage() {
-	const { user, signOut, isLoading } = useAuth();
+	const { user, signOut, deleteAccount, isLoading } = useAuth();
 
 	const handleBackPress = () => {
 		router.back();
@@ -21,6 +22,34 @@ export default function ProfilePage() {
 	const handleLogout = async () => {
 		await signOut();
 		router.replace("/");
+	};
+
+	const handleDeleteAccount = () => {
+		Alert.alert(
+			"회원탈퇴",
+			"정말로 계정을 삭제하시겠습니까?\n\n• 모든 학습 기록이 삭제됩니다\n• 이 작업은 되돌릴 수 없습니다",
+			[
+				{ text: "취소", style: "cancel" },
+				{
+					text: "탈퇴",
+					style: "destructive",
+					onPress: async () => {
+						try {
+							await deleteAccount();
+							router.replace("/login");
+							Alert.alert("완료", "회원탈퇴가 완료되었습니다.", [
+								{ text: "확인" },
+							]);
+						} catch (error) {
+							Alert.alert(
+								"오류",
+								"회원탈퇴에 실패했습니다. 다시 시도해주세요.",
+							);
+						}
+					},
+				},
+			],
+		);
 	};
 
 	if (isLoading) {
@@ -71,6 +100,14 @@ export default function ProfilePage() {
 					<TouchableOpacity style={styles.logoutButton} onPress={handleLogout}>
 						<Ionicons name="log-out-outline" size={20} color="#FFFFFF" />
 						<Text style={styles.logoutButtonText}>로그아웃</Text>
+					</TouchableOpacity>
+
+					<TouchableOpacity
+						style={styles.deleteButton}
+						onPress={handleDeleteAccount}
+					>
+						<Ionicons name="person-remove-outline" size={20} color="#FFFFFF" />
+						<Text style={styles.deleteButtonText}>회원탈퇴</Text>
 					</TouchableOpacity>
 				</View>
 			</View>
@@ -154,6 +191,22 @@ const styles = StyleSheet.create({
 		gap: 8,
 	},
 	logoutButtonText: {
+		color: "#FFFFFF",
+		fontSize: 16,
+		fontWeight: "600",
+	},
+	deleteButton: {
+		flexDirection: "row",
+		alignItems: "center",
+		justifyContent: "center",
+		backgroundColor: "#DC2626", // 더 진한 빨강
+		paddingVertical: 12,
+		paddingHorizontal: 24,
+		borderRadius: 8,
+		gap: 8,
+		marginTop: 12,
+	},
+	deleteButtonText: {
 		color: "#FFFFFF",
 		fontSize: 16,
 		fontWeight: "600",

@@ -45,6 +45,7 @@ interface AuthContextType {
 	signOut: () => Promise<void>;
 	signInWithApple: () => Promise<void>;
 	signInWithAppleWebBrowser: () => Promise<void>;
+	deleteAccount: () => Promise<void>;
 	isLoading: boolean;
 	error: AuthError | null;
 }
@@ -104,6 +105,33 @@ export const AuthProvider = ({ children }: PropsWithChildren) => {
 			}
 		} catch (err) {
 			console.error("로그아웃 중 오류:", err);
+		}
+	};
+
+	const deleteAccount = async () => {
+		try {
+			if (!user) {
+				throw new Error('로그인이 필요합니다.');
+			}
+
+			console.log('🗑️ Starting account deletion process...');
+
+			// Supabase Client 방식으로 Edge Function 호출
+			const { data, error } = await supabase.functions.invoke('delete-user');
+
+			if (error) {
+				console.error('❌ Edge Function error:', error);
+				throw new Error(error.message || '회원탈퇴에 실패했습니다.');
+			}
+
+			console.log('✅ Account deletion successful:', data.message);
+
+			// 로컬 세션 정리
+			await supabase.auth.signOut();
+			
+		} catch (error) {
+			console.error('❌ Account deletion failed:', error);
+			throw error;
 		}
 	};
 
@@ -254,6 +282,7 @@ export const AuthProvider = ({ children }: PropsWithChildren) => {
 				signOut,
 				signInWithApple,
 				signInWithAppleWebBrowser,
+				deleteAccount,
 				isLoading,
 				error,
 			}}
