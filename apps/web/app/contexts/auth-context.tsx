@@ -23,6 +23,7 @@ interface AuthContextType {
 	signInWithGoogle: () => Promise<void>;
 	signInWithApple: () => Promise<void>;
 	signOut: () => Promise<void>;
+	deleteAccount: () => Promise<void>;
 }
 
 interface AuthProviderProps extends PropsWithChildren {
@@ -85,12 +86,41 @@ export function AuthProvider({
 		}
 	};
 
+	const deleteAccount = async () => {
+		try {
+			if (!user) {
+				throw new Error('로그인이 필요합니다.');
+			}
+
+			console.log('🗑️ Starting account deletion process...');
+
+			// Supabase Client 방식으로 Edge Function 호출
+			const { data, error } = await supabase.functions.invoke('delete-user');
+
+			if (error) {
+				console.error('❌ Edge Function error:', error);
+				throw new Error(error.message || '회원탈퇴에 실패했습니다.');
+			}
+
+			console.log('✅ Account deletion successful:', data.message);
+
+			// 로컬 세션 정리 후 홈으로 이동
+			await supabase.auth.signOut();
+			router.push('/');
+			
+		} catch (error) {
+			console.error('❌ Account deletion failed:', error);
+			throw error;
+		}
+	};
+
 	const value = {
 		user,
 		isLoading,
 		signInWithGoogle,
 		signInWithApple,
 		signOut,
+		deleteAccount,
 	};
 
 	return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
