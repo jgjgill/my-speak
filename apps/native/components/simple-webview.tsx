@@ -70,17 +70,6 @@ export default function SimpleWebView() {
 		}
 	};
 
-	// 사용자 로그인 완료 후 인증 정보 전송
-	useEffect(() => {
-		if (user && !isLoading) {
-			const timer = setTimeout(() => {
-				sendAuthToWebView();
-			}, 1000); // 웹뷰 로딩 대기
-
-			return () => clearTimeout(timer);
-		}
-	}, [user, isLoading, sendAuthToWebView]);
-
 	// 사용자 로그아웃 시 WebView에 로그아웃 메시지 전송
 	useEffect(() => {
 		if (user || isLoading) {
@@ -98,7 +87,7 @@ export default function SimpleWebView() {
 				style={styles.webView}
 				onLoad={() => {
 					console.log("WebView loaded:", webViewUrl);
-					sendAuthToWebView();
+					// 초기 로드 시에만 한 번 전송, REQUEST_AUTH 요청 시 추가 전송
 				}}
 				onMessage={handleWebViewMessage}
 				onError={(syntheticEvent) => {
