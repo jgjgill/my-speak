@@ -3,6 +3,7 @@ import { router } from "expo-router";
 import { useEffect } from "react";
 import {
 	ActivityIndicator,
+	Platform,
 	StyleSheet,
 	TouchableOpacity,
 	View,
@@ -19,7 +20,7 @@ export default function LoginPage() {
 	};
 
 	useEffect(() => {
-		if (user && !isLoading) {
+		if (user && !isLoading && Platform.OS === "ios") {
 			router.replace("/");
 		}
 	}, [user, isLoading]);
