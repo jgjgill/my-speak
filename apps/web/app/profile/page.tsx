@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 import { useAuth } from "../contexts/auth-context";
 
 function getDisplayName(user: any): string {
@@ -48,8 +49,13 @@ export default function ProfilePage() {
 	const { user, signOut, deleteAccount } = useAuth();
 	const router = useRouter();
 
+	useEffect(() => {
+		if (!user) {
+			router.push("/login");
+		}
+	}, [user, router]);
+
 	if (!user) {
-		router.push("/login");
 		return null;
 	}
 
@@ -171,9 +177,6 @@ export default function ProfilePage() {
 
 						{/* 회원탈퇴 버튼 - 위험한 액션이므로 구분 */}
 						<div className="border-t border-gray-100 pt-4 mt-6">
-							<h4 className="text-sm font-medium text-gray-900 mb-3">
-								위험 영역
-							</h4>
 							<button
 								type="button"
 								onClick={handleDeleteAccount}
