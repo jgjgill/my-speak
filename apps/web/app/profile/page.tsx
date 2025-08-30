@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useAuth } from "../contexts/auth-context";
 
@@ -44,7 +45,7 @@ function getAvatarColor(name?: string): string {
 }
 
 export default function ProfilePage() {
-	const { user, signOut } = useAuth();
+	const { user, signOut, deleteAccount } = useAuth();
 	const router = useRouter();
 
 	if (!user) {
@@ -59,6 +60,21 @@ export default function ProfilePage() {
 	const handleSignOut = async () => {
 		await signOut();
 		router.push("/");
+	};
+
+	const handleDeleteAccount = async () => {
+		if (
+			window.confirm(
+				"정말로 계정을 삭제하시겠습니까? 이 작업은 되돌릴 수 없습니다.",
+			)
+		) {
+			try {
+				await deleteAccount();
+			} catch (error) {
+				alert("계정 삭제에 실패했습니다. 다시 시도해주세요.");
+				console.error("Account deletion error:", error);
+			}
+		}
 	};
 
 	return (
@@ -80,9 +96,11 @@ export default function ProfilePage() {
 						{/* 아바타 */}
 						<div className="flex-shrink-0">
 							{user.user_metadata?.avatar_url ? (
-								<img
+								<Image
 									src={user.user_metadata.avatar_url}
 									alt="프로필"
+									width={64}
+									height={64}
 									className="w-16 h-16 rounded-full border-2 border-gray-200"
 								/>
 							) : (
@@ -100,15 +118,15 @@ export default function ProfilePage() {
 						<div className="flex-1">
 							<div className="space-y-4">
 								<div>
-									<label className="block text-sm font-medium text-gray-700 mb-1">
+									<div className="text-sm font-medium text-gray-700 mb-1">
 										이름
-									</label>
+									</div>
 									<div className="text-gray-900 font-medium">{displayName}</div>
 								</div>
 								<div>
-									<label className="block text-sm font-medium text-gray-700 mb-1">
+									<div className="text-sm font-medium text-gray-700 mb-1">
 										이메일
-									</label>
+									</div>
 									<div className="text-gray-600">{user.email}</div>
 								</div>
 							</div>
@@ -135,6 +153,7 @@ export default function ProfilePage() {
 								stroke="currentColor"
 								viewBox="0 0 24 24"
 							>
+								<title id="profile-logout-icon-title">로그아웃 아이콘</title>
 								<path
 									strokeLinecap="round"
 									strokeLinejoin="round"
@@ -145,7 +164,7 @@ export default function ProfilePage() {
 							<div>
 								<div className="font-medium text-gray-900">로그아웃</div>
 								<div className="text-sm text-gray-500">
-									계정에서 로그아웃합니다
+									계정에서 로그아웃합니다.
 								</div>
 							</div>
 						</button>
@@ -157,8 +176,8 @@ export default function ProfilePage() {
 							</h4>
 							<button
 								type="button"
-								disabled
-								className="w-full text-left px-4 py-3 bg-red-50 text-gray-400 rounded-lg cursor-not-allowed flex items-center gap-3 opacity-60"
+								onClick={handleDeleteAccount}
+								className="w-full text-left px-4 py-3 bg-red-50 hover:bg-red-100 text-red-600 rounded-lg flex items-center gap-3 transition-colors"
 							>
 								<svg
 									className="w-5 h-5 text-red-400"
@@ -166,6 +185,7 @@ export default function ProfilePage() {
 									stroke="currentColor"
 									viewBox="0 0 24 24"
 								>
+									<title id="profile-delete-icon-title">계정 삭제 아이콘</title>
 									<path
 										strokeLinecap="round"
 										strokeLinejoin="round"
@@ -175,8 +195,8 @@ export default function ProfilePage() {
 								</svg>
 								<div>
 									<div className="font-medium">계정 삭제</div>
-									<div className="text-sm text-gray-400">
-										곧 지원 예정입니다
+									<div className="text-sm text-red-500">
+										모든 데이터가 영구적으로 삭제됩니다.
 									</div>
 								</div>
 							</button>
