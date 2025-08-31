@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## 프로젝트 개요
 
-영어 스피킹 학습 플랫폼 `my-speak`는 한→영 번역과 키워드 스피치를 통한 5단계 학습 시스템을 제공합니다. Turborepo 기반 모노레포 구조로 웹 앱과 네이티브 앱, 그리고 공유 패키지들을 관리합니다.
+언어 스피킹 학습 플랫폼 `my-speak`는 한→영 번역과 키워드 스피치를 통한 4단계 학습 시스템을 제공합니다. Turborepo 기반 모노레포 구조로 웹 앱과 네이티브 앱, 그리고 공유 패키지들을 관리합니다.
 
 ## 개발 환경
 
