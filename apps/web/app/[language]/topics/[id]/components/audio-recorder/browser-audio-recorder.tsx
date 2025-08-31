@@ -2,22 +2,17 @@
 
 import { useEffect, useRef, useState } from "react";
 
-interface VoiceRecorderProps {
+interface BrowserAudioRecorderProps {
 	onRecordingComplete: (hasRecorded: boolean) => void;
 }
 
-export default function VoiceRecorder({
+export default function BrowserAudioRecorder({
 	onRecordingComplete,
-}: VoiceRecorderProps) {
+}: BrowserAudioRecorderProps) {
 	const [isRecording, setIsRecording] = useState(false);
 	const [hasRecorded, setHasRecorded] = useState(false);
-	const [mediaRecorder, setMediaRecorder] = useState<MediaRecorder | null>(
-		null,
-	);
+	const [mediaRecorder, setMediaRecorder] = useState<MediaRecorder | null>(null);
 	const [audioUrl, setAudioUrl] = useState<string | null>(null);
-	const [audioChunks, setAudioChunks] = useState<Blob[]>([]);
-
-	// 오디오 플레이어 상태
 	const [isPlaying, setIsPlaying] = useState(false);
 	const [currentTime, setCurrentTime] = useState(0);
 	const [duration, setDuration] = useState(0);
@@ -32,24 +27,7 @@ export default function VoiceRecorder({
 		const updateTime = () => setCurrentTime(audio.currentTime);
 		const updateDuration = () => {
 			const dur = audio.duration;
-			console.log("흐음;;", audio.readyState);
-
-			// 재생 가능한 상태에서만 duration 설정
 			setDuration(dur);
-			// 	if (
-			// 	audio.readyState >= 2 &&
-			// 	!Number.isNaN(dur) &&
-			// 	Number.isFinite(dur) &&
-			// 	dur > 0
-			// ) {
-			console.log("✅ Duration set:", dur);
-			// 	setDuration(dur);
-			// } else {
-			// 	console.log("⏳ Not ready:", {
-			// 		readyState: audio.readyState,
-			// 		duration: dur,
-			// 	});
-			// }
 		};
 		const handleEnded = () => setIsPlaying(false);
 
@@ -68,10 +46,15 @@ export default function VoiceRecorder({
 		};
 	}, [audioUrl]);
 
+	const formatTime = (time: number) => {
+		if (Number.isNaN(time) || !Number.isFinite(time) || time <= 0) return "0:00";
+		const minutes = Math.floor(time / 60);
+		const seconds = Math.floor(time % 60);
+		return `${minutes}:${seconds.toString().padStart(2, "0")}`;
+	};
+
 	const startRecording = async () => {
 		try {
-			// 이전 녹음 데이터 초기화
-			setAudioChunks([]);
 			if (audioUrl) {
 				URL.revokeObjectURL(audioUrl);
 				setAudioUrl(null);
@@ -93,7 +76,6 @@ export default function VoiceRecorder({
 			};
 
 			const mimeType = getSupportedMimeType();
-			console.log("Recording with MIME type:", mimeType);
 
 			const recorder = new MediaRecorder(stream, { mimeType });
 			const chunks: Blob[] = [];
@@ -105,12 +87,10 @@ export default function VoiceRecorder({
 			};
 
 			recorder.onstop = () => {
-				console.log("녹음 완료");
 
 				const audioBlob = new Blob(chunks, { type: mimeType });
 				const url = URL.createObjectURL(audioBlob);
 				setAudioUrl(url);
-				setAudioChunks(chunks);
 				setIsRecording(false);
 				setHasRecorded(true);
 				onRecordingComplete(true);
@@ -141,7 +121,6 @@ export default function VoiceRecorder({
 			URL.revokeObjectURL(audioUrl);
 			setAudioUrl(null);
 		}
-		setAudioChunks([]);
 		onRecordingComplete(false);
 	};
 
@@ -165,13 +144,6 @@ export default function VoiceRecorder({
 		const newTime = Number(e.target.value);
 		audio.currentTime = newTime;
 		setCurrentTime(newTime);
-	};
-
-	const formatTime = (time: number) => {
-		if (Number.isNaN(time) || time === 0) return "0:00";
-		const minutes = Math.floor(time / 60);
-		const seconds = Math.floor(time % 60);
-		return `${minutes}:${seconds.toString().padStart(2, "0")}`;
 	};
 
 	return (
@@ -209,7 +181,6 @@ export default function VoiceRecorder({
 								onClick={resetRecording}
 								className="flex items-center gap-2 px-3 py-1.5 text-sm bg-gray-500 hover:bg-gray-600 text-white rounded-md transition-colors"
 							>
-								{/* 새로고침 아이콘 */}
 								<div className="relative w-3 h-3">
 									<div className="w-3 h-3 border-2 border-white border-t-transparent rounded-full" />
 									<div
@@ -221,12 +192,10 @@ export default function VoiceRecorder({
 							</button>
 						</div>
 
-						{/* 숨겨진 audio 요소 */}
 						<audio ref={audioRef} src={audioUrl}>
 							<track kind="captions" label="Korean captions" />
 						</audio>
 
-						{/* 커스텀 오디오 플레이어 */}
 						<div className="bg-white p-3 rounded border">
 							<div className="flex items-center gap-3 mb-2">
 								<button
@@ -235,13 +204,11 @@ export default function VoiceRecorder({
 									className="flex items-center justify-center w-10 h-10 bg-green-600 hover:bg-green-700 rounded-full transition-colors"
 								>
 									{isPlaying ? (
-										// 일시정지 아이콘 (두 개의 세로 막대)
 										<div className="flex gap-1">
 											<div className="w-1 h-4 bg-white rounded-sm" />
 											<div className="w-1 h-4 bg-white rounded-sm" />
 										</div>
 									) : (
-										// 재생 아이콘 (삼각형)
 										<div className="w-0 h-0 border-l-12 border-l-white border-y-8 border-y-transparent ml-0.5" />
 									)}
 								</button>

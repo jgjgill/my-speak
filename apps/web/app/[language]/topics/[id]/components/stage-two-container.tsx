@@ -11,7 +11,7 @@ import {
 	getSelectedKoreanKeywords,
 } from "../utils/learning-points";
 import TextHighlighter from "./text-highlighter/text-highlighter";
-import VoiceRecorder from "./voice-recorder";
+import AudioRecorderManager from "./audio-recorder/audio-recorder-manager";
 
 const UserTranslationDisplay = dynamic(
 	() => import("./user-translation-display"),
@@ -164,7 +164,7 @@ export default function StageTwoContainer({
 						))}
 					</div>
 
-					<VoiceRecorder
+					<AudioRecorderManager
 						onRecordingComplete={(recorded) => {
 							if (recorded) {
 								setHasRecorded(true);
