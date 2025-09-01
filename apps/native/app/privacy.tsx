@@ -27,7 +27,9 @@ export default function PrivacyPage() {
 			<ScrollView style={styles.content} showsVerticalScrollIndicator={false}>
 				<View style={styles.section}>
 					<Text style={styles.sectionTitle}>어떤 정보를 수집하나요?</Text>
-					<Text style={styles.sectionText}>Google이나 Apple로 로그인할 때:</Text>
+					<Text style={styles.sectionText}>
+						Google이나 Apple로 로그인할 때:
+					</Text>
 					<Text style={styles.bulletPoint}>• 이메일 주소</Text>
 					<Text style={styles.bulletPoint}>• 프로필 사진</Text>
 					<Text style={styles.bulletPoint}>• 이름</Text>
@@ -38,9 +40,15 @@ export default function PrivacyPage() {
 
 				<View style={styles.section}>
 					<Text style={styles.sectionTitle}>왜 수집하나요?</Text>
-					<Text style={styles.bulletPoint}>• 로그인해서 내 학습 기록을 볼 수 있도록</Text>
-					<Text style={styles.bulletPoint}>• 어디까지 공부했는지 기억할 수 있도록</Text>
-					<Text style={styles.bulletPoint}>• 더 나은 학습 경험을 제공하기 위해</Text>
+					<Text style={styles.bulletPoint}>
+						• 로그인해서 내 학습 기록을 볼 수 있도록
+					</Text>
+					<Text style={styles.bulletPoint}>
+						• 어디까지 공부했는지 기억할 수 있도록
+					</Text>
+					<Text style={styles.bulletPoint}>
+						• 더 나은 학습 경험을 제공하기 위해
+					</Text>
 				</View>
 
 				<View style={styles.section}>
@@ -54,8 +62,8 @@ export default function PrivacyPage() {
 				<View style={styles.section}>
 					<Text style={styles.sectionTitle}>언제까지 보관하나요?</Text>
 					<Text style={styles.sectionText}>
-						계속 서비스를 이용하는 동안만 보관하고, 탈퇴하거나 삭제를
-						요청하면 바로 지워집니다.
+						계속 서비스를 이용하는 동안만 보관하고, 탈퇴하거나 삭제를 요청하면
+						바로 지워집니다.
 					</Text>
 				</View>
 
@@ -63,8 +71,7 @@ export default function PrivacyPage() {
 					<Text style={styles.sectionTitle}>내 정보를 삭제하고 싶다면?</Text>
 					<Text style={styles.sectionText}>
 						언제든지 계정을 삭제할 수 있고, 그러면 모든 정보가 완전히
-						사라집니다. 특별한 요청이나 문의사항이 있으면 언제든
-						연락해주세요.
+						사라집니다. 특별한 요청이나 문의사항이 있으면 언제든 연락해주세요.
 					</Text>
 				</View>
 

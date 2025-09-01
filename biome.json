@@ -6,7 +6,13 @@
 		"useIgnoreFile": true
 	},
 	"files": {
-		"ignoreUnknown": false
+		"ignoreUnknown": false,
+		"includes": [
+			"**/*",
+			"!supabase/**",
+			"!packages/typescript-config/supabase-types.ts",
+			"!content/**"
+		]
 	},
 	"formatter": {
 		"enabled": true,

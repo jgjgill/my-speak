@@ -28,25 +28,31 @@ export default function TermsPage() {
 				<View style={styles.section}>
 					<Text style={styles.sectionTitle}>서비스 소개</Text>
 					<Text style={styles.sectionText}>
-						My Speak은 영어 스피킹 학습을 위한 개인 프로젝트입니다. 4단계
-						체계적 학습을 통해 외국어 스피킹 실력 향상을 목표로 합니다.
+						My Speak은 영어 스피킹 학습을 위한 개인 프로젝트입니다. 4단계 체계적
+						학습을 통해 외국어 스피킹 실력 향상을 목표로 합니다.
 					</Text>
 				</View>
 
 				<View style={styles.section}>
 					<Text style={styles.sectionTitle}>이용 조건</Text>
-					<Text style={styles.bulletPoint}>• 본 서비스는 학습 목적으로만 이용해주세요</Text>
-					<Text style={styles.bulletPoint}>• Google 또는 Apple 계정을 통해 로그인할 수 있습니다</Text>
+					<Text style={styles.bulletPoint}>
+						• 본 서비스는 학습 목적으로만 이용해주세요
+					</Text>
+					<Text style={styles.bulletPoint}>
+						• Google 또는 Apple 계정을 통해 로그인할 수 있습니다
+					</Text>
 					<Text style={styles.bulletPoint}>• 서비스는 무료로 제공됩니다</Text>
-					<Text style={styles.bulletPoint}>• 부적절한 사용은 제한될 수 있습니다</Text>
+					<Text style={styles.bulletPoint}>
+						• 부적절한 사용은 제한될 수 있습니다
+					</Text>
 				</View>
 
 				<View style={styles.section}>
 					<Text style={styles.sectionTitle}>개인정보 보호</Text>
 					<Text style={styles.sectionText}>
-						로그인 시 필요한 최소한의 정보(이메일, 프로필 사진)만 수집하며,
-						학습 진도 관리를 위해 사용됩니다. 자세한 내용은 개인정보
-						처리방침을 참고해주세요.
+						로그인 시 필요한 최소한의 정보(이메일, 프로필 사진)만 수집하며, 학습
+						진도 관리를 위해 사용됩니다. 자세한 내용은 개인정보 처리방침을
+						참고해주세요.
 					</Text>
 				</View>
 

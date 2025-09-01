@@ -11,8 +11,8 @@ import matter from "gray-matter";
 config({ path: ".env.local" });
 
 // Supabase 클라이언트 생성
-const supabaseUrl = process.env.PUBLIC_SUPABASE_URL!;
-const supabaseKey = process.env.PUBLIC_SUPABASE_ANON_KEY!;
+const supabaseUrl = process.env.PUBLIC_SUPABASE_URL || "";
+const supabaseKey = process.env.PUBLIC_SUPABASE_ANON_KEY || "";
 const supabase = createClient<Database>(supabaseUrl, supabaseKey);
 
 // 범용 파싱 인터페이스

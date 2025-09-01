@@ -11,6 +11,7 @@ import { getWebViewUrl } from "@/utils/webview-url";
 
 interface SimpleWebViewProps {
 	onUrlChange?: (url: string) => void;
+	// biome-ignore lint/suspicious/noExplicitAny: <bridge>
 	onWebViewMessage?: (message: any) => void;
 }
 

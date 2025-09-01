@@ -31,6 +31,7 @@ function getAvatarColor(name?: string): string {
 	return colors[index] ?? "bg-blue-500";
 }
 
+// biome-ignore lint/suspicious/noExplicitAny: <user>
 function getDisplayName(user: any): string {
 	// 1순위: full_name (닉네임이나 실명)
 	if (user.user_metadata?.full_name) {

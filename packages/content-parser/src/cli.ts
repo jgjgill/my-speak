@@ -9,7 +9,7 @@ const CONTENT_JSON_DIR = "../../content/json";
 
 async function parseFile(filename: string) {
 	const inputPath = join(CONTENT_SOURCE_DIR, filename);
-	const outputFilename = basename(filename, ".md") + ".json";
+	const outputFilename = `${basename(filename, ".md")}.json`;
 	const outputPath = join(CONTENT_JSON_DIR, outputFilename);
 
 	console.log(`📖 Processing: ${filename}`);

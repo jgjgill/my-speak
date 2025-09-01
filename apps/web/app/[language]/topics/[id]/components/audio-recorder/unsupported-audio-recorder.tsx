@@ -8,8 +8,8 @@ export default function UnsupportedAudioRecorder() {
 
 			<div className="p-3 bg-yellow-100 border border-yellow-300 rounded">
 				<p className="text-yellow-800 text-sm">
-					현재 환경에서는 녹음 기능이 지원되지 않습니다. Chrome, Firefox,
-					Safari 등 최신 브라우저에서 사용해주세요.
+					현재 환경에서는 녹음 기능이 지원되지 않습니다. Chrome, Firefox, Safari
+					등 최신 브라우저에서 사용해주세요.
 				</p>
 			</div>
 		</div>

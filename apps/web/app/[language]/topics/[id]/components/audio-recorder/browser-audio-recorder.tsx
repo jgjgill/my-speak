@@ -11,7 +11,9 @@ export default function BrowserAudioRecorder({
 }: BrowserAudioRecorderProps) {
 	const [isRecording, setIsRecording] = useState(false);
 	const [hasRecorded, setHasRecorded] = useState(false);
-	const [mediaRecorder, setMediaRecorder] = useState<MediaRecorder | null>(null);
+	const [mediaRecorder, setMediaRecorder] = useState<MediaRecorder | null>(
+		null,
+	);
 	const [audioUrl, setAudioUrl] = useState<string | null>(null);
 	const [isPlaying, setIsPlaying] = useState(false);
 	const [currentTime, setCurrentTime] = useState(0);
@@ -47,7 +49,8 @@ export default function BrowserAudioRecorder({
 	}, [audioUrl]);
 
 	const formatTime = (time: number) => {
-		if (Number.isNaN(time) || !Number.isFinite(time) || time <= 0) return "0:00";
+		if (Number.isNaN(time) || !Number.isFinite(time) || time <= 0)
+			return "0:00";
 		const minutes = Math.floor(time / 60);
 		const seconds = Math.floor(time % 60);
 		return `${minutes}:${seconds.toString().padStart(2, "0")}`;
@@ -87,7 +90,6 @@ export default function BrowserAudioRecorder({
 			};
 
 			recorder.onstop = () => {
-
 				const audioBlob = new Blob(chunks, { type: mimeType });
 				const url = URL.createObjectURL(audioBlob);
 				setAudioUrl(url);

@@ -7,7 +7,7 @@ export default function StageNavigationSkeleton() {
 						<div className="flex flex-col items-center animate-pulse">
 							{/* 원형 버튼 스켈레톤 */}
 							<div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-gray-200 border-4 border-gray-100" />
-							
+
 							{/* 텍스트 스켈레톤 */}
 							<div className="mt-2 sm:mt-3 text-center">
 								<div className="h-3 sm:h-4 bg-gray-200 rounded mb-1 w-12" />

@@ -3,7 +3,8 @@ import { useEffect, useState } from "react";
 export type RecordingMode = "browser" | "webview" | "unsupported";
 
 export function useRecordingMode() {
-	const [recordingMode, setRecordingMode] = useState<RecordingMode>("unsupported");
+	const [recordingMode, setRecordingMode] =
+		useState<RecordingMode>("unsupported");
 
 	useEffect(() => {
 		const isWebView =

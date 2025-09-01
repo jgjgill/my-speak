@@ -41,6 +41,7 @@ export default function ProfilePage() {
 								{ text: "확인" },
 							]);
 						} catch (error) {
+							console.error(error);
 							Alert.alert(
 								"오류",
 								"회원탈퇴에 실패했습니다. 다시 시도해주세요.",

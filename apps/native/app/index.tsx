@@ -5,8 +5,8 @@ import type { WebView } from "react-native-webview";
 import NativeHeader from "@/components/native-header";
 import SimpleWebView from "@/components/simple-webview";
 import { useAuth } from "@/context/auth";
-import { getWebViewUrl } from "@/utils/webview-url";
 import { useWebViewAudioRecorder } from "@/hooks/use-audio-recorder";
+import { getWebViewUrl } from "@/utils/webview-url";
 
 export default function Index() {
 	const { isLoading } = useAuth();
@@ -15,7 +15,13 @@ export default function Index() {
 	const [currentUrl, setCurrentUrl] = useState(webViewUrl);
 
 	// 오디오 녹음 훅 사용
-	const { startRecording, stopRecording, playRecording, pauseRecording, seekToPosition } = useWebViewAudioRecorder(webViewRef);
+	const {
+		startRecording,
+		stopRecording,
+		playRecording,
+		pauseRecording,
+		seekToPosition,
+	} = useWebViewAudioRecorder(webViewRef);
 
 	const handleWebViewBack = () => {
 		if (webViewRef.current) {
@@ -31,6 +37,7 @@ export default function Index() {
 	};
 
 	// WebView에서 온 메시지 처리
+	// biome-ignore lint/suspicious/noExplicitAny: <bridge>
 	const handleWebViewMessage = (message: { type: string; payload?: any }) => {
 		console.log("📨 WebView 메시지 수신:", message);
 
@@ -79,8 +86,8 @@ export default function Index() {
 	return (
 		<SafeAreaView style={{ flex: 1, backgroundColor: "#FFFFFF" }}>
 			<NativeHeader currentUrl={currentUrl} onWebViewBack={handleWebViewBack} />
-			<SimpleWebView 
-				ref={webViewRef} 
+			<SimpleWebView
+				ref={webViewRef}
 				onUrlChange={handleUrlChange}
 				onWebViewMessage={handleWebViewMessage}
 			/>

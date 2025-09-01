@@ -16,7 +16,8 @@ export default function WebViewAudioRecorder({
 	const [webViewCurrentTime, setWebViewCurrentTime] = useState(0);
 
 	const formatTime = (time: number) => {
-		if (Number.isNaN(time) || !Number.isFinite(time) || time <= 0) return "0:00";
+		if (Number.isNaN(time) || !Number.isFinite(time) || time <= 0)
+			return "0:00";
 		const minutes = Math.floor(time / 60);
 		const seconds = Math.floor(time % 60);
 		return `${minutes}:${seconds.toString().padStart(2, "0")}`;
@@ -78,7 +79,7 @@ export default function WebViewAudioRecorder({
 					case "AUDIO_RECORDING_COMPLETE":
 						setIsRecording(false);
 						setHasRecorded(true);
-						
+
 						if (message.payload) {
 							setWebViewDuration(message.payload.duration || 0);
 							setWebViewCurrentTime(0);
@@ -147,8 +148,12 @@ export default function WebViewAudioRecorder({
 	return (
 		<div className="p-6 bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-100 rounded-2xl shadow-sm">
 			<div className="text-center mb-6">
-				<h4 className="text-lg font-bold text-gray-800 mb-2">🎤 음성 녹음하기</h4>
-				<p className="text-sm text-gray-600">위 스크립트를 소리내어 읽어보세요</p>
+				<h4 className="text-lg font-bold text-gray-800 mb-2">
+					🎤 음성 녹음하기
+				</h4>
+				<p className="text-sm text-gray-600">
+					위 스크립트를 소리내어 읽어보세요
+				</p>
 			</div>
 
 			<div className="flex flex-col gap-4">
@@ -174,7 +179,9 @@ export default function WebViewAudioRecorder({
 							⏹️ 녹음 중지
 						</button>
 						<div className="mt-3 p-2 bg-red-50 border border-red-200 rounded">
-							<p className="text-red-700 py-2 text-sm animate-pulse">🔴 녹음 중...</p>
+							<p className="text-red-700 py-2 text-sm animate-pulse">
+								🔴 녹음 중...
+							</p>
 						</div>
 					</div>
 				)}
@@ -182,7 +189,6 @@ export default function WebViewAudioRecorder({
 				{hasRecorded && (
 					<div className="space-y-4">
 						<div className="space-y-3">
-							
 							<div className="text-center">
 								<button
 									type="button"
@@ -195,7 +201,6 @@ export default function WebViewAudioRecorder({
 									}}
 									className="flex items-center justify-center gap-3 px-8 py-4 text-sm bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-full transition-colors active:scale-95 mx-auto"
 								>
-
 									<div className="relative w-3 h-3 flex-shrink-0">
 										<div className="w-3 h-3 border-2 border-white border-t-transparent rounded-full" />
 										<div
@@ -212,9 +217,11 @@ export default function WebViewAudioRecorder({
 							<div className="flex items-center gap-4">
 								<button
 									type="button"
-									onClick={isPlaying ? pauseWebViewRecording : playWebViewRecording}
+									onClick={
+										isPlaying ? pauseWebViewRecording : playWebViewRecording
+									}
 									className="flex items-center justify-center min-w-[44px] min-h-[44px] w-10 h-10 bg-green-600 hover:bg-green-700 rounded-full transition-colors active:scale-95"
-									style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}
+									style={{ boxShadow: "0 2px 8px rgba(0,0,0,0.1)" }}
 								>
 									{isPlaying ? (
 										<div className="flex gap-1">
@@ -222,12 +229,14 @@ export default function WebViewAudioRecorder({
 											<div className="w-1 h-2 bg-white"></div>
 										</div>
 									) : (
-										<div style={{
-											borderLeft: '8px solid white',
-											borderTop: '6px solid transparent',
-											borderBottom: '6px solid transparent',
-											marginLeft: '2px'
-										}} />
+										<div
+											style={{
+												borderLeft: "8px solid white",
+												borderTop: "6px solid transparent",
+												borderBottom: "6px solid transparent",
+												marginLeft: "2px",
+											}}
+										/>
 									)}
 								</button>
 
@@ -249,7 +258,8 @@ export default function WebViewAudioRecorder({
 										}}
 									/>
 									<div className="text-sm text-gray-500 text-center font-medium">
-										{formatTime(webViewCurrentTime)} / {formatTime(webViewDuration)}
+										{formatTime(webViewCurrentTime)} /{" "}
+										{formatTime(webViewDuration)}
 									</div>
 								</div>
 							</div>

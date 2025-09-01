@@ -10,8 +10,8 @@ import {
 	getSelectedEnglishKeywords,
 	getSelectedKoreanKeywords,
 } from "../utils/learning-points";
-import TextHighlighter from "./text-highlighter/text-highlighter";
 import AudioRecorderManager from "./audio-recorder/audio-recorder-manager";
+import TextHighlighter from "./text-highlighter/text-highlighter";
 
 const UserTranslationDisplay = dynamic(
 	() => import("./user-translation-display"),

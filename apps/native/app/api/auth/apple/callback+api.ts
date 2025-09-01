@@ -5,7 +5,6 @@ export async function POST(request: Request) {
 	const formData = await request.formData();
 
 	const code = formData.get("code")?.toString();
-	const idToken = formData.get("id_token")?.toString();
 	const combinedPlatformAndState = formData.get("state")?.toString();
 	const userDataStr = formData.get("user")?.toString();
 
@@ -18,10 +17,9 @@ export async function POST(request: Request) {
 	const state = combinedPlatformAndState.split("|")[1];
 
 	// Parse user data if available
-	let userData = null;
 	if (userDataStr) {
 		try {
-			userData = JSON.parse(userDataStr);
+			JSON.parse(userDataStr);
 		} catch (e) {
 			console.error("Failed to parse user data:", e);
 		}

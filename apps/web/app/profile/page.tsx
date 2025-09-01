@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import { useAuth } from "../contexts/auth-context";
 
+// biome-ignore lint/suspicious/noExplicitAny: <user>
 function getDisplayName(user: any): string {
 	if (user.user_metadata?.full_name) {
 		return user.user_metadata.full_name;

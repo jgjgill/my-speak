@@ -7,9 +7,9 @@ import {
 	useAudioRecorder,
 	useAudioRecorderState,
 } from "expo-audio";
+import * as Linking from "expo-linking";
 import { useEffect, useState } from "react";
 import { Alert } from "react-native";
-import * as Linking from "expo-linking";
 
 interface WebViewRef {
 	current?: {
@@ -18,7 +18,9 @@ interface WebViewRef {
 }
 
 export function useWebViewAudioRecorder(webViewRef: WebViewRef) {
-	const [permissionGranted, setPermissionGranted] = useState<boolean | null>(null); // null: 미확인, false: 거부, true: 허용
+	const [permissionGranted, setPermissionGranted] = useState<boolean | null>(
+		null,
+	); // null: 미확인, false: 거부, true: 허용
 	const [recordedUri, setRecordedUri] = useState<string | null>(null);
 
 	const audioRecorder = useAudioRecorder(RecordingPresets.HIGH_QUALITY);
@@ -36,12 +38,12 @@ export function useWebViewAudioRecorder(webViewRef: WebViewRef) {
 					"마이크 권한 필요",
 					"녹음 기능을 사용하려면 마이크 권한이 필요합니다.\n설정에서 마이크 권한을 허용해주세요.",
 					[
-						{text: "취소",style: "cancel"},
+						{ text: "취소", style: "cancel" },
 						{
 							text: "설정 열기",
 							onPress: () => Linking.openSettings(),
 						},
-					]
+					],
 				);
 				setPermissionGranted(false);
 				return false;
@@ -66,7 +68,7 @@ export function useWebViewAudioRecorder(webViewRef: WebViewRef) {
 			const hasPermission = await requestPermissionAndSetup();
 
 			if (!hasPermission) {
-				return
+				return;
 			}
 		}
 

@@ -7,6 +7,7 @@ import { WEB_APP_URL } from "./constants";
  */
 export function getWebViewUrl(): string {
 	// 프로덕션 URL (https://)이 있으면 그대로 사용
+	// biome-ignore lint/complexity/useOptionalChain: <temp>
 	if (WEB_APP_URL && WEB_APP_URL.startsWith("https://")) {
 		return `${WEB_APP_URL}?native=true&hideHeader=true`;
 	}
