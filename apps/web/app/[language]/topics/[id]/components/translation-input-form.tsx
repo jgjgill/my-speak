@@ -48,7 +48,7 @@ export default function TranslationInputForm({
 				<textarea
 					{...register("translated", { required: true })}
 					rows={2}
-					placeholder="여기에 영어 번역을 입력하세요..."
+					placeholder="영어 번역을 입력하세요."
 					className="w-full mt-1 p-2 border rounded resize-none text-base"
 				/>
 			</label>
@@ -60,7 +60,7 @@ export default function TranslationInputForm({
 					disabled={!user || !isValid}
 					className={`px-3 py-1 rounded transition-colors ${
 						user && isValid
-							? "bg-blue-500 text-white hover:bg-blue-600"
+							? "bg-primary text-white hover:bg-primary-dark"
 							: "bg-gray-300 text-gray-500 cursor-not-allowed"
 					}`}
 				/>

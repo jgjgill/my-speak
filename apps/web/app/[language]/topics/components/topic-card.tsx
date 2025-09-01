@@ -44,7 +44,7 @@ export function TopicCard({
 
 				{/* 메타데이터 영역 */}
 				<div className="flex flex-wrap gap-2 mb-3">
-					<span className="px-3 py-1 text-xs font-medium rounded-full bg-blue-50 text-blue-700 border border-blue-200">
+					<span className="px-3 py-1 text-xs font-medium rounded-full bg-primary-light text-primary border border-primary-light">
 						{topic.category}
 					</span>
 					<span

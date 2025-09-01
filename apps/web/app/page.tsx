@@ -9,7 +9,7 @@ export default function Home() {
 				<div className="text-center">
 					{/* 로고 및 메인 타이틀 */}
 					<div className="mb-8">
-						<div className="w-20 h-20 mx-auto mb-6 rounded-full bg-blue-600 flex items-center justify-center overflow-hidden">
+						<div className="w-20 h-20 mx-auto mb-6 rounded-full bg-primary flex items-center justify-center overflow-hidden">
 							<Image
 								src="/app-icon.png"
 								alt="My Speak 로고"
@@ -18,7 +18,7 @@ export default function Home() {
 								className="w-full h-full object-cover"
 							/>
 						</div>
-						<h1 className="text-hero font-bold text-korean mb-4">My Speak</h1>
+						<h1 className="text-hero font-bold text-korean text-primary mb-4">My Speak</h1>
 						<p className="text-title text-gray-600 max-w-2xl mx-auto leading-relaxed">
 							4단계 체계적 학습으로 외국어 스피킹을
 							<br />
@@ -32,7 +32,7 @@ export default function Home() {
 							{/* 영어 학습 */}
 							<Link href="/en/topics" className="topic-card group">
 								<div className="flex items-center mb-4">
-									<div className="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold text-lg mr-4">
+									<div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold text-lg mr-4">
 										EN
 									</div>
 									<div>
@@ -41,7 +41,7 @@ export default function Home() {
 										</h3>
 									</div>
 								</div>
-								<div className="flex items-center text-blue-600 font-medium">
+								<div className="flex items-center text-primary font-medium">
 									<span>학습 시작하기</span>
 									<svg
 										className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"
@@ -110,7 +110,7 @@ export default function Home() {
 					<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
 						{/* 1단계 */}
 						<div className="text-center p-6 rounded-xl border border-blue-100 bg-blue-50">
-							<div className="w-12 h-12 mx-auto mb-4 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold">
+							<div className="w-12 h-12 mx-auto mb-4 rounded-full bg-stage-1 flex items-center justify-center text-white font-bold">
 								1
 							</div>
 							<h3 className="text-heading font-semibold text-korean mb-2">
@@ -123,7 +123,7 @@ export default function Home() {
 
 						{/* 2단계 */}
 						<div className="text-center p-6 rounded-xl border border-green-100 bg-green-50">
-							<div className="w-12 h-12 mx-auto mb-4 rounded-full bg-green-600 flex items-center justify-center text-white font-bold">
+							<div className="w-12 h-12 mx-auto mb-4 rounded-full bg-stage-2 flex items-center justify-center text-white font-bold">
 								2
 							</div>
 							<h3 className="text-heading font-semibold text-korean mb-2">
@@ -135,8 +135,8 @@ export default function Home() {
 						</div>
 
 						{/* 3단계 */}
-						<div className="text-center p-6 rounded-xl border border-orange-100 bg-orange-50">
-							<div className="w-12 h-12 mx-auto mb-4 rounded-full bg-orange-600 flex items-center justify-center text-white font-bold">
+						<div className="text-center p-6 rounded-xl border border-pink-200 bg-pink-50">
+							<div className="w-12 h-12 mx-auto mb-4 rounded-full bg-stage-3 flex items-center justify-center text-white font-bold">
 								3
 							</div>
 							<h3 className="text-heading font-semibold text-korean mb-2">
@@ -149,7 +149,7 @@ export default function Home() {
 
 						{/* 4단계 */}
 						<div className="text-center p-6 rounded-xl border border-purple-100 bg-purple-50">
-							<div className="w-12 h-12 mx-auto mb-4 rounded-full bg-purple-600 flex items-center justify-center text-white font-bold">
+							<div className="w-12 h-12 mx-auto mb-4 rounded-full bg-stage-4 flex items-center justify-center text-white font-bold">
 								4
 							</div>
 							<h3 className="text-heading font-semibold text-korean mb-2">

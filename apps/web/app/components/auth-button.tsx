@@ -180,7 +180,7 @@ export default function AuthButton() {
 	return (
 		<Link
 			href="/login"
-			className="min-h-[44px] px-4 py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-all duration-200 flex items-center justify-center gap-2 shadow-sm hover:shadow-md"
+			className="min-h-[44px] px-4 py-2.5 bg-primary hover:bg-primary-dark text-white font-medium rounded-lg transition-all duration-200 flex items-center justify-center gap-2 shadow-sm hover:shadow-md"
 		>
 			로그인
 		</Link>

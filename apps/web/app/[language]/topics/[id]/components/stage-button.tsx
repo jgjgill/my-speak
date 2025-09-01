@@ -22,6 +22,53 @@ export default function StageButton({
 	showConnector = false,
 	onStageChange,
 }: StageButtonProps) {
+	const getStageColor = (stageNumber: number) => {
+		switch (stageNumber) {
+			case 1:
+				return {
+					bg: "bg-stage-1",
+					border: "border-stage-1",
+					shadow: "shadow-blue-200",
+					text: "text-blue-700",
+					textSecondary: "text-blue-600",
+				};
+			case 2:
+				return {
+					bg: "bg-stage-2",
+					border: "border-stage-2",
+					shadow: "shadow-green-200",
+					text: "text-green-700",
+					textSecondary: "text-green-600",
+				};
+			case 3:
+				return {
+					bg: "bg-stage-3",
+					border: "border-stage-3",
+					shadow: "shadow-orange-200",
+					text: "text-orange-700",
+					textSecondary: "text-orange-600",
+				};
+			case 4:
+				return {
+					bg: "bg-stage-4",
+					border: "border-stage-4",
+					shadow: "shadow-purple-200",
+					text: "text-purple-700",
+					textSecondary: "text-purple-600",
+				};
+			default:
+				return {
+					bg: "bg-primary",
+					border: "border-primary",
+					shadow: "shadow-blue-200",
+					text: "text-primary",
+					textSecondary: "text-primary-dark",
+				};
+		}
+	};
+
+	const stageColors = getStageColor(stage.number);
+
 	return (
 		<div className="flex items-center">
 			<button
@@ -37,9 +84,9 @@ export default function StageButton({
 						sm:w-16 sm:h-16 sm:text-lg
 						${
 							isActive
-								? "bg-blue-500 border-blue-500 shadow-lg shadow-blue-200 scale-110 animate-pulse"
+								? `${stageColors.bg} ${stageColors.border} shadow-lg ${stageColors.shadow} scale-110 animate-pulse`
 								: isCompleted
-									? "bg-green-500 border-green-500 shadow-lg shadow-green-200"
+									? "bg-stage-completed border-stage-completed shadow-lg shadow-yellow-200"
 									: isDisabled
 										? "bg-gray-100 border-gray-200 cursor-not-allowed opacity-60"
 										: "bg-white border-gray-300 hover:border-gray-400 hover:shadow-md group-hover:scale-105"
@@ -63,7 +110,7 @@ export default function StageButton({
 					)}
 
 					{isActive && (
-						<div className="absolute inset-0 rounded-full bg-blue-400 opacity-20 animate-ping" />
+						<div className={`absolute inset-0 rounded-full opacity-20 animate-ping ${stageColors.bg.replace('bg-', 'bg-')}`} />
 					)}
 				</div>
 
@@ -71,9 +118,9 @@ export default function StageButton({
 					<div
 						className={`font-semibold text-xs sm:text-sm mb-1 ${
 							isActive
-								? "text-blue-700"
+								? stageColors.text
 								: isCompleted
-									? "text-green-700"
+									? "text-yellow-700"
 									: isDisabled
 										? "text-gray-400"
 										: "text-gray-700"
@@ -84,9 +131,9 @@ export default function StageButton({
 					<div
 						className={`text-xs leading-tight ${
 							isActive
-								? "text-blue-600"
+								? stageColors.textSecondary
 								: isCompleted
-									? "text-green-600"
+									? "text-yellow-600"
 									: isDisabled
 										? "text-gray-400"
 										: "text-gray-500"
@@ -102,7 +149,7 @@ export default function StageButton({
 					className={`
 						hidden sm:block transition-all duration-300 rounded-full
 						w-16 h-1 mx-4
-						${isCompleted ? "bg-green-300 shadow-sm" : "bg-gray-200"}
+						${isCompleted ? "bg-stage-completed shadow-sm" : "bg-gray-200"}
 					`}
 				/>
 			)}

@@ -27,7 +27,7 @@ export default function LoginPage() {
 				<div className="max-w-md mx-auto">
 					{/* 로고 및 타이틀 - 메인 페이지와 일관된 스타일 */}
 					<div className="text-center mb-12">
-						<div className="w-20 h-20 mx-auto mb-6 rounded-full bg-blue-600 flex items-center justify-center overflow-hidden">
+						<div className="w-20 h-20 mx-auto mb-6 rounded-full bg-primary flex items-center justify-center overflow-hidden">
 							<Image
 								src="/app-icon.png"
 								alt="My Speak 로고"
@@ -37,7 +37,7 @@ export default function LoginPage() {
 							/>
 						</div>
 
-						<h1 className="text-hero font-bold text-korean mb-4">My Speak</h1>
+						<h1 className="text-hero font-bold text-korean text-primary mb-4">My Speak</h1>
 						<p className="text-gray-600 mb-2">
 							4단계 체계적 학습으로 외국어 스피킹을 자연스럽게 마스터하세요
 						</p>
@@ -99,14 +99,14 @@ export default function LoginPage() {
 								로그인 시{" "}
 								<Link
 									href="/terms"
-									className="text-blue-600 hover:text-blue-700 underline"
+									className="text-primary hover:text-primary-dark underline"
 								>
 									서비스 약관
 								</Link>{" "}
 								및{" "}
 								<Link
 									href="/privacy"
-									className="text-blue-600 hover:text-blue-700 underline"
+									className="text-primary hover:text-primary-dark underline"
 								>
 									개인정보 처리방침
 								</Link>
