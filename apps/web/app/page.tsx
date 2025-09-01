@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -8,15 +9,14 @@ export default function Home() {
 				<div className="text-center">
 					{/* 로고 및 메인 타이틀 */}
 					<div className="mb-8">
-						<div className="w-20 h-20 mx-auto mb-6 rounded-full bg-blue-600 flex items-center justify-center">
-							<svg
-								className="w-10 h-10 text-white"
-								fill="white"
-								viewBox="0 0 24 24"
-							>
-								<title>My Speak 로고</title>
-								<path d="M12 2a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3zM19 10v1a7 7 0 0 1-14 0v-1a1 1 0 0 1 2 0v1a5 5 0 0 0 10 0v-1a1 1 0 0 1 2 0zM12 18.1a1 1 0 0 1-1-1v-1.1a1 1 0 0 1 2 0v1.1a1 1 0 0 1-1 1z" />
-							</svg>
+						<div className="w-20 h-20 mx-auto mb-6 rounded-full bg-blue-600 flex items-center justify-center overflow-hidden">
+							<Image
+								src="/app-icon.png"
+								alt="My Speak 로고"
+								width={80}
+								height={80}
+								className="w-full h-full object-cover"
+							/>
 						</div>
 						<h1 className="text-hero font-bold text-korean mb-4">My Speak</h1>
 						<p className="text-title text-gray-600 max-w-2xl mx-auto leading-relaxed">
