@@ -1,5 +1,5 @@
 import { forwardRef, useCallback, useEffect } from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { ActivityIndicator, StyleSheet, Text, View } from "react-native";
 import {
 	WebView,
 	type WebViewMessageEvent,
@@ -121,8 +121,20 @@ const SimpleWebView = forwardRef<WebView, SimpleWebViewProps>(
 					}}
 					startInLoadingState={true}
 					renderLoading={() => (
-						<View style={styles.loadingContainer}>
-							<Text>Loading...</Text>
+						<View style={styles.brandedLoadingContainer}>
+							<View style={styles.logoContainer}>
+								<Text style={styles.logoText}>My Speak</Text>
+							</View>
+							<ActivityIndicator
+								size="large"
+								color="#1E40AF"
+								style={styles.spinner}
+							/>
+							<View style={styles.messageContainer}>
+								<Text style={styles.secondaryMessage}>
+									Preparing your lesson
+								</Text>
+							</View>
 						</View>
 					)}
 					mixedContentMode="compatibility"
@@ -150,6 +162,46 @@ const styles = StyleSheet.create({
 		flex: 1,
 		justifyContent: "center",
 		alignItems: "center",
+	},
+	brandedLoadingContainer: {
+		position: "absolute",
+		top: 0,
+		left: 0,
+		right: 0,
+		bottom: 0,
+		backgroundColor: "#FFFFFF",
+		justifyContent: "center",
+		alignItems: "center",
+		paddingHorizontal: 24,
+	},
+	logoContainer: {
+		marginBottom: 32,
+	},
+	logoText: {
+		fontSize: 28,
+		fontWeight: "bold",
+		color: "#1E40AF",
+		textAlign: "center",
+	},
+	spinner: {
+		marginVertical: 24,
+	},
+	messageContainer: {
+		alignItems: "center",
+		marginTop: 16,
+	},
+	primaryMessage: {
+		fontSize: 18,
+		fontWeight: "600",
+		color: "#1E40AF",
+		textAlign: "center",
+		marginBottom: 8,
+	},
+	secondaryMessage: {
+		fontSize: 14,
+		color: "#3B82F6",
+		textAlign: "center",
+		opacity: 0.8,
 	},
 });
 
