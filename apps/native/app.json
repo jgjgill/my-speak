@@ -1,62 +1,72 @@
 {
-  "expo": {
-    "name": "myspeak-native",
-    "slug": "myspeak-native",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "myspeaknative",
-    "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
-    "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.myspeaknative",
-      "usesAppleSignIn": true,
-      "infoPlist": {
-        "ITSAppUsesNonExemptEncryption": false
-      }
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "edgeToEdgeEnabled": true,
-      "package": "com.myspeaknative"
-    },
-    "web": {
-      "bundler": "metro",
-      "output": "server",
-      "favicon": "./assets/images/favicon.png"
-    },
-    "plugins": [
-      "expo-router",
-      [
-        "expo-splash-screen",
-        {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
-        }
-      ],
-      "expo-secure-store",
-      "expo-apple-authentication",
-      [
-        "expo-audio",
-        {
-          "microphonePermission": "마이크 접근 권한이 필요합니다. 음성 녹음 기능을 사용하기 위해 마이크를 허용해주세요."
-        }
-      ]
-    ],
-    "experiments": {
-      "typedRoutes": true
-    },
-    "extra": {
-      "router": {},
-      "eas": {
-        "projectId": "8142a909-6df1-4f05-a15f-bdb9d154905f"
-      }
-    }
-  }
+	"expo": {
+		"name": "myspeak-native",
+		"slug": "myspeak-native",
+		"version": "1.0.0",
+		"orientation": "portrait",
+		"icon": "./assets/images/icon.png",
+		"scheme": "myspeaknative",
+		"userInterfaceStyle": "automatic",
+		"newArchEnabled": true,
+		"ios": {
+			"supportsTablet": true,
+			"bundleIdentifier": "com.myspeaknative",
+			"usesAppleSignIn": true,
+			"infoPlist": {
+				"ITSAppUsesNonExemptEncryption": false
+			},
+			"icon": {
+				"dark": "./assets/icons/app-icon.png",
+				"light": "./assets/icons/app-icon.png",
+				"tinted": "./assets/icons/app-icon.png"
+			}
+		},
+		"android": {
+			"adaptiveIcon": {
+				"foregroundImage": "./assets/icons/app-icon.png",
+				"monochromeImage": "./assets/icons/app-icon.png",
+				"backgroundColor": "#ffffff"
+			},
+			"edgeToEdgeEnabled": true,
+			"package": "com.myspeaknative"
+		},
+		"web": {
+			"bundler": "metro",
+			"output": "server",
+			"favicon": "./assets/images/favicon.png"
+		},
+		"plugins": [
+			"expo-router",
+			[
+				"expo-splash-screen",
+				{
+					"image": "./assets/icons/splash-icon-dark.png",
+					"imageWidth": 200,
+					"resizeMode": "contain",
+					"backgroundColor": "#ffffff",
+					"dark": {
+						"image": "./assets/icons/splash-icon-light.png",
+						"backgroundColor": "#000000"
+					}
+				}
+			],
+			"expo-secure-store",
+			"expo-apple-authentication",
+			[
+				"expo-audio",
+				{
+					"microphonePermission": "마이크 접근 권한이 필요합니다. 음성 녹음 기능을 사용하기 위해 마이크를 허용해주세요."
+				}
+			]
+		],
+		"experiments": {
+			"typedRoutes": true
+		},
+		"extra": {
+			"router": {},
+			"eas": {
+				"projectId": "8142a909-6df1-4f05-a15f-bdb9d154905f"
+			}
+		}
+	}
 }

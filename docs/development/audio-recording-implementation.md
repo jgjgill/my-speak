@@ -66,43 +66,43 @@ window.ReactNativeWebView?.postMessage(JSON.stringify({
 
 ### React Native 구현 (expo-audio 사용)
 
+#### 마이크 권한 UX 개선
+- **권한 요청 시점**: 앱 시작 시 → 첫 녹음 시도 시점으로 변경
+- **권한 거부 처리**: `expo-linking`을 활용한 시스템 설정 앱 연동
+- **사용자 경험**: 초기 진입 부담 감소 및 권한 관리 편의성 향상
+
 ```javascript
-// apps/native/hooks/useAudioRecorder.js
-import { useAudioRecorder } from 'expo-audio';
+// apps/native/hooks/use-audio-recorder.ts
+import { AudioModule, useAudioRecorder } from 'expo-audio';
+import * as Linking from 'expo-linking';
 
 export function useWebViewAudioRecorder(webViewRef) {
-  const recorder = useAudioRecorder({
-    android: { extension: '.m4a', outputFormat: 'MPEG_4', audioEncoder: 'AAC' },
-    ios: { extension: '.m4a', outputFormat: 'MPEG4AAC' }
-  });
-
-  const handleWebViewMessage = async (event) => {
-    const message = JSON.parse(event.nativeEvent.data);
-    
-    switch (message.type) {
-      case 'AUDIO_RECORDING_START':
-        try {
-          await recorder.record();
-          // 녹음 상태를 웹뷰로 전달
-        } catch (error) {
-          webViewRef.current?.postMessage(JSON.stringify({
-            type: 'AUDIO_RECORDING_ERROR',
-            payload: { error: 'RECORDING_FAILED' }
-          }));
-        }
-        break;
-        
-      case 'AUDIO_RECORDING_STOP':
-        const uri = await recorder.stop();
-        webViewRef.current?.postMessage(JSON.stringify({
-          type: 'AUDIO_RECORDING_COMPLETE',
-          payload: { audioUri: uri, duration: recorder.duration }
-        }));
-        break;
+  const [permissionGranted, setPermissionGranted] = useState(null);
+  
+  // 첫 녹음 시도 시점에 권한 요청
+  const requestPermissionAndSetup = async () => {
+    const status = await AudioModule.requestRecordingPermissionsAsync();
+    if (!status.granted) {
+      Alert.alert(
+        "마이크 권한 필요",
+        "녹음 기능을 사용하려면 마이크 권한이 필요합니다.\n설정에서 마이크 권한을 허용해주세요.",
+        [
+          { text: "취소", style: "cancel" },
+          { text: "설정 열기", onPress: () => Linking.openSettings() }
+        ]
+      );
+      return false;
     }
+    return true;
   };
 
-  return { handleWebViewMessage };
+  const startRecording = async () => {
+    if (!permissionGranted) {
+      const hasPermission = await requestPermissionAndSetup();
+      if (!hasPermission) return;
+    }
+    // 녹음 시작 로직...
+  };
 }
 ```
 
