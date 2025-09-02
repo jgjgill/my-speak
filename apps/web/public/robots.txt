@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://my-speak.com/sitemap.xml
+
+# Block sensitive areas
+Disallow: /private/
+Disallow: /auth/
+Disallow: /api/
+
+# Allow important static files
+Allow: /app-icon.png
+Allow: /favicon.ico
