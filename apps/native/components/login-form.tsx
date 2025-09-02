@@ -3,7 +3,6 @@ import { router } from "expo-router";
 import {
 	ScrollView,
 	StatusBar,
-	StyleSheet,
 	Text,
 	TouchableOpacity,
 	View,
@@ -15,54 +14,73 @@ export default function LoginForm() {
 	const { signIn } = useAuth();
 
 	return (
-		<ScrollView style={styles.container}>
-			<StatusBar barStyle="light-content" backgroundColor="#1E40AF" />
+		<ScrollView className="flex-1 bg-primary">
+			<StatusBar barStyle="light-content" backgroundColor="#1e9aff" />
 
-			<View style={styles.backgroundGradient}>
-				<View style={styles.content}>
-					<View style={styles.headerSection}>
-						<View style={styles.logoContainer}>
+			<View className="flex-1 bg-primary">
+				<View className="flex-1 px-8 pt-15 pb-10">
+					<View className="flex-2 justify-center items-center mb-8">
+						<View className="w-30 h-30 rounded-full bg-white/10 justify-center items-center mb-6">
 							<Ionicons name="mic" size={60} color="#FFFFFF" />
 						</View>
-						<Text style={styles.title}>My Speak</Text>
-						<Text style={styles.subtitle}>
+						<Text className="text-4xl font-bold text-white mb-2">My Speak</Text>
+						<Text className="text-base text-white/80 text-center leading-6">
 							영어 스피킹을 쉽고 재미있게 배워보세요
 						</Text>
 					</View>
 
-					<View style={styles.descriptionSection}>
-						<View style={styles.featureItem}>
+					<View className="flex-1 justify-center gap-5 mb-10">
+						<View className="flex-row items-center gap-3">
 							<Ionicons name="book" size={24} color="#FFFFFF" />
-							<Text style={styles.featureText}>4단계 학습 시스템</Text>
+							<Text className="text-base text-white font-medium">
+								4단계 학습 시스템
+							</Text>
 						</View>
-						<View style={styles.featureItem}>
+						<View className="flex-row items-center gap-3">
 							<Ionicons name="volume-high" size={24} color="#FFFFFF" />
-							<Text style={styles.featureText}>말하기 연습</Text>
+							<Text className="text-base text-white font-medium">
+								말하기 연습
+							</Text>
 						</View>
-						<View style={styles.featureItem}>
+						<View className="flex-row items-center gap-3">
 							<Ionicons name="trophy" size={24} color="#FFFFFF" />
-							<Text style={styles.featureText}>개인 학습 데이터 보관</Text>
+							<Text className="text-base text-white font-medium">
+								개인 학습 데이터 보관
+							</Text>
 						</View>
 					</View>
 
-					<View style={styles.loginSection}>
-						<TouchableOpacity style={styles.googleButton} onPress={signIn}>
+					<View className="flex-1 justify-end gap-5 pt-5">
+						<TouchableOpacity
+							className="flex-row items-center justify-center bg-white rounded-xl h-12 gap-1 shadow-lg"
+							onPress={signIn}
+						>
 							<Ionicons name="logo-google" size={16} />
-							<Text style={styles.googleButtonText}>Google로 로그인</Text>
+							<Text className="text-text-primary text-base font-semibold leading-6">
+								Google로 로그인
+							</Text>
 						</TouchableOpacity>
 
 						<SignInWithAppleButton />
 
-						<View style={styles.termsContainer}>
-							<Text style={styles.termsText}>로그인 시 </Text>
+						<View className="flex-row flex-wrap justify-center items-center mt-2 px-2">
+							<Text className="text-xs text-white/70 leading-4">
+								로그인 시{" "}
+							</Text>
 							<TouchableOpacity onPress={() => router.push("/terms")}>
-								<Text style={styles.termsLink}>서비스 약관</Text>
+								<Text className="text-xs text-white leading-4 underline font-medium">
+									서비스 약관
+								</Text>
 							</TouchableOpacity>
-							<Text style={styles.termsText}> 및 </Text>
+							<Text className="text-xs text-white/70 leading-4"> 및 </Text>
 							<TouchableOpacity onPress={() => router.push("/privacy")}>
-								<Text style={styles.termsLink}>개인정보 처리방침</Text>
+								<Text className="text-xs text-white leading-4 underline font-medium">
+									개인정보 처리방침
+								</Text>
 							</TouchableOpacity>
-							<Text style={styles.termsText}>에 동의하게 됩니다.</Text>
+							<Text className="text-xs text-white/70 leading-4">
+								에 동의하게 됩니다.
+							</Text>
 						</View>
 					</View>
 				</View>
@@ -70,114 +88,3 @@ export default function LoginForm() {
 		</ScrollView>
 	);
 }
-
-const styles = StyleSheet.create({
-	container: {
-		flex: 1,
-		backgroundColor: "#1E40AF",
-	},
-	backgroundGradient: {
-		flex: 1,
-		backgroundColor: "#1E40AF",
-		// 실제 그라데이션은 expo-linear-gradient 패키지가 필요하지만,
-		// 단순화를 위해 단색으로 처리
-	},
-	content: {
-		flex: 1,
-		paddingHorizontal: 32,
-		paddingTop: 60,
-		paddingBottom: 40,
-	},
-	headerSection: {
-		flex: 2,
-		justifyContent: "center",
-		alignItems: "center",
-		marginBottom: 32,
-	},
-	logoContainer: {
-		width: 120,
-		height: 120,
-		borderRadius: 60,
-		backgroundColor: "rgba(255, 255, 255, 0.1)",
-		justifyContent: "center",
-		alignItems: "center",
-		marginBottom: 24,
-	},
-	title: {
-		fontSize: 36,
-		fontWeight: "bold",
-		color: "#FFFFFF",
-		marginBottom: 8,
-	},
-	subtitle: {
-		fontSize: 16,
-		color: "rgba(255, 255, 255, 0.8)",
-		textAlign: "center",
-		lineHeight: 24,
-	},
-	descriptionSection: {
-		flex: 1,
-		justifyContent: "center",
-		gap: 20,
-		marginBottom: 40,
-	},
-	featureItem: {
-		flexDirection: "row",
-		alignItems: "center",
-		gap: 12,
-	},
-	featureText: {
-		fontSize: 16,
-		color: "#FFFFFF",
-		fontWeight: "500",
-	},
-	loginSection: {
-		flex: 1,
-		justifyContent: "flex-end",
-		gap: 20,
-		paddingTop: 20,
-	},
-	googleButton: {
-		flexDirection: "row",
-		alignItems: "center",
-		justifyContent: "center",
-		backgroundColor: "#FFFFFF",
-		borderRadius: 12,
-		height: 48,
-		gap: 4,
-		shadowColor: "#000",
-		shadowOffset: {
-			width: 0,
-			height: 2,
-		},
-		shadowOpacity: 0.25,
-		shadowRadius: 3.84,
-		elevation: 5,
-	},
-	googleButtonText: {
-		color: "#1F2937",
-		fontSize: 16,
-		fontWeight: "600",
-		lineHeight: 24,
-	},
-	termsContainer: {
-		flexDirection: "row",
-		flexWrap: "wrap",
-		justifyContent: "center",
-		alignItems: "center",
-		marginTop: 8,
-		paddingHorizontal: 8,
-	},
-	termsText: {
-		fontSize: 12,
-		color: "rgba(255, 255, 255, 0.7)",
-		lineHeight: 16,
-	},
-	termsLink: {
-		fontSize: 12,
-		color: "#FFFFFF",
-		lineHeight: 16,
-		textDecorationLine: "underline",
-		fontWeight: "500",
-	},
-});

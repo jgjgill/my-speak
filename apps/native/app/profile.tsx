@@ -4,7 +4,6 @@ import {
 	ActivityIndicator,
 	Alert,
 	Image,
-	StyleSheet,
 	Text,
 	TouchableOpacity,
 	View,
@@ -55,7 +54,7 @@ export default function ProfilePage() {
 
 	if (isLoading) {
 		return (
-			<View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+			<View className="flex-1 justify-center items-center">
 				<ActivityIndicator />
 			</View>
 		);
@@ -67,149 +66,57 @@ export default function ProfilePage() {
 	}
 
 	return (
-		<SafeAreaView style={styles.container}>
+		<SafeAreaView className="flex-1 bg-white">
 			{/* 헤더 */}
-			<View style={styles.header}>
-				<TouchableOpacity onPress={handleBackPress} style={styles.backButton}>
-					<Ionicons name="chevron-back" size={24} color="#1E40AF" />
+			<View className="flex-row items-center justify-between px-4 py-3 border-b border-gray-200 h-14">
+				<TouchableOpacity
+					onPress={handleBackPress}
+					className="w-11 h-11 justify-center items-center"
+				>
+					<Ionicons name="chevron-back" size={24} color="#1e9aff" />
 				</TouchableOpacity>
-				<Text style={styles.headerTitle}>프로필</Text>
-				<View style={styles.headerSpacer} />
+				<Text className="text-xl font-bold text-primary">프로필</Text>
+				<View className="w-11" />
 			</View>
 
 			{/* 프로필 내용 */}
-			<View style={styles.content}>
-				<View style={styles.profileSection}>
+			<View className="flex-1 p-6">
+				<View className="items-center mb-12">
 					{user.user_metadata?.avatar_url ? (
 						<Image
 							source={{ uri: user.user_metadata.avatar_url }}
-							style={styles.profileImage}
+							className="w-20 h-20 rounded-full mb-4"
 						/>
 					) : (
-						<View style={styles.profileImagePlaceholder}>
+						<View className="w-20 h-20 rounded-full bg-stage-1 justify-center items-center mb-4">
 							<Ionicons name="person" size={40} color="#FFFFFF" />
 						</View>
 					)}
 
-					<Text style={styles.userName}>
+					<Text className="text-2xl font-bold text-text-primary mb-1">
 						{user.user_metadata?.full_name || user.email}
 					</Text>
-					<Text style={styles.userEmail}>{user.email}</Text>
+					<Text className="text-base text-text-secondary">{user.email}</Text>
 				</View>
 
-				<View style={styles.actionsSection}>
-					<TouchableOpacity style={styles.logoutButton} onPress={handleLogout}>
+				<View className="flex-1">
+					<TouchableOpacity
+						className="flex-row items-center justify-center bg-red-500 py-3 px-6 rounded-lg gap-2"
+						onPress={handleLogout}
+					>
 						<Ionicons name="log-out-outline" size={20} color="#FFFFFF" />
-						<Text style={styles.logoutButtonText}>로그아웃</Text>
+						<Text className="text-white text-base font-semibold">로그아웃</Text>
 					</TouchableOpacity>
 
 					<TouchableOpacity
-						style={styles.deleteButton}
+						className="flex-row items-center justify-center bg-red-600 py-3 px-6 rounded-lg gap-2 mt-3"
 						onPress={handleDeleteAccount}
 					>
 						<Ionicons name="person-remove-outline" size={20} color="#FFFFFF" />
-						<Text style={styles.deleteButtonText}>회원탈퇴</Text>
+						<Text className="text-white text-base font-semibold">회원탈퇴</Text>
 					</TouchableOpacity>
 				</View>
 			</View>
 		</SafeAreaView>
 	);
 }
-
-const styles = StyleSheet.create({
-	container: {
-		flex: 1,
-		backgroundColor: "#FFFFFF",
-	},
-	header: {
-		flexDirection: "row",
-		alignItems: "center",
-		justifyContent: "space-between",
-		paddingHorizontal: 16,
-		paddingVertical: 12,
-		borderBottomWidth: 1,
-		borderBottomColor: "#E5E7EB",
-		height: 56,
-	},
-	backButton: {
-		width: 44,
-		height: 44,
-		justifyContent: "center",
-		alignItems: "center",
-	},
-	headerTitle: {
-		fontSize: 20,
-		fontWeight: "bold",
-		color: "#1E40AF",
-	},
-	headerSpacer: {
-		width: 44,
-	},
-	content: {
-		flex: 1,
-		padding: 24,
-	},
-	profileSection: {
-		alignItems: "center",
-		marginBottom: 48,
-	},
-	profileImage: {
-		width: 80,
-		height: 80,
-		borderRadius: 40,
-		marginBottom: 16,
-	},
-	profileImagePlaceholder: {
-		width: 80,
-		height: 80,
-		borderRadius: 40,
-		backgroundColor: "#3B82F6",
-		justifyContent: "center",
-		alignItems: "center",
-		marginBottom: 16,
-	},
-	userName: {
-		fontSize: 24,
-		fontWeight: "bold",
-		color: "#1F2937",
-		marginBottom: 4,
-	},
-	userEmail: {
-		fontSize: 16,
-		color: "#6B7280",
-	},
-	actionsSection: {
-		flex: 1,
-	},
-	logoutButton: {
-		flexDirection: "row",
-		alignItems: "center",
-		justifyContent: "center",
-		backgroundColor: "#EF4444",
-		paddingVertical: 12,
-		paddingHorizontal: 24,
-		borderRadius: 8,
-		gap: 8,
-	},
-	logoutButtonText: {
-		color: "#FFFFFF",
-		fontSize: 16,
-		fontWeight: "600",
-	},
-	deleteButton: {
-		flexDirection: "row",
-		alignItems: "center",
-		justifyContent: "center",
-		backgroundColor: "#DC2626", // 더 진한 빨강
-		paddingVertical: 12,
-		paddingHorizontal: 24,
-		borderRadius: 8,
-		gap: 8,
-		marginTop: 12,
-	},
-	deleteButtonText: {
-		color: "#FFFFFF",
-		fontSize: 16,
-		fontWeight: "600",
-	},
-});

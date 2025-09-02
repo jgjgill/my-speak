@@ -1,5 +1,5 @@
 import { forwardRef, useCallback, useEffect } from "react";
-import { ActivityIndicator, StyleSheet, Text, View } from "react-native";
+import { ActivityIndicator, Text, View } from "react-native";
 import {
 	WebView,
 	type WebViewMessageEvent,
@@ -102,11 +102,11 @@ const SimpleWebView = forwardRef<WebView, SimpleWebViewProps>(
 		}, [user, isLoading, sendLogoutToWebView]);
 
 		return (
-			<View style={styles.container}>
+			<View className="flex-1">
 				<WebView
 					ref={ref}
 					source={{ uri: webViewUrl }}
-					style={styles.webView}
+					className="flex-1"
 					onLoad={() => {
 						console.log("WebView loaded:", webViewUrl);
 					}}
@@ -122,17 +122,19 @@ const SimpleWebView = forwardRef<WebView, SimpleWebViewProps>(
 					}}
 					startInLoadingState={true}
 					renderLoading={() => (
-						<View style={styles.brandedLoadingContainer}>
-							<View style={styles.logoContainer}>
-								<Text style={styles.logoText}>My Speak</Text>
+						<View className="absolute inset-0 bg-white justify-center items-center px-6">
+							<View className="mb-8">
+								<Text className="text-3xl font-bold text-primary text-center">
+									My Speak
+								</Text>
 							</View>
 							<ActivityIndicator
 								size="large"
-								color="#1E40AF"
-								style={styles.spinner}
+								color="#1e9aff"
+								className="my-6"
 							/>
-							<View style={styles.messageContainer}>
-								<Text style={styles.secondaryMessage}>
+							<View className="items-center mt-4">
+								<Text className="text-sm text-stage-1 text-center opacity-80">
 									Preparing your lesson
 								</Text>
 							</View>
@@ -151,59 +153,5 @@ const SimpleWebView = forwardRef<WebView, SimpleWebViewProps>(
 );
 
 SimpleWebView.displayName = "SimpleWebView";
-
-const styles = StyleSheet.create({
-	container: {
-		flex: 1,
-	},
-	webView: {
-		flex: 1,
-	},
-	loadingContainer: {
-		flex: 1,
-		justifyContent: "center",
-		alignItems: "center",
-	},
-	brandedLoadingContainer: {
-		position: "absolute",
-		top: 0,
-		left: 0,
-		right: 0,
-		bottom: 0,
-		backgroundColor: "#FFFFFF",
-		justifyContent: "center",
-		alignItems: "center",
-		paddingHorizontal: 24,
-	},
-	logoContainer: {
-		marginBottom: 32,
-	},
-	logoText: {
-		fontSize: 28,
-		fontWeight: "bold",
-		color: "#1E40AF",
-		textAlign: "center",
-	},
-	spinner: {
-		marginVertical: 24,
-	},
-	messageContainer: {
-		alignItems: "center",
-		marginTop: 16,
-	},
-	primaryMessage: {
-		fontSize: 18,
-		fontWeight: "600",
-		color: "#1E40AF",
-		textAlign: "center",
-		marginBottom: 8,
-	},
-	secondaryMessage: {
-		fontSize: 14,
-		color: "#3B82F6",
-		textAlign: "center",
-		opacity: 0.8,
-	},
-});
 
 export default SimpleWebView;

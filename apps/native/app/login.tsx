@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import {
 	ActivityIndicator,
 	Platform,
-	StyleSheet,
 	TouchableOpacity,
 	View,
 } from "react-native";
@@ -27,7 +26,7 @@ export default function LoginPage() {
 
 	if (isLoading) {
 		return (
-			<View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+			<View className="flex-1 justify-center items-center">
 				<ActivityIndicator />
 			</View>
 		);
@@ -38,9 +37,12 @@ export default function LoginPage() {
 	}
 
 	return (
-		<SafeAreaView style={styles.container}>
-			<View style={styles.header}>
-				<TouchableOpacity onPress={handleBackPress} style={styles.backButton}>
+		<SafeAreaView className="flex-1 bg-primary">
+			<View className="px-4 py-2 justify-center">
+				<TouchableOpacity
+					onPress={handleBackPress}
+					className="w-11 h-11 justify-center items-center"
+				>
 					<Ionicons name="chevron-back" size={24} color="#FFFFFF" />
 				</TouchableOpacity>
 			</View>
@@ -48,21 +50,3 @@ export default function LoginPage() {
 		</SafeAreaView>
 	);
 }
-
-const styles = StyleSheet.create({
-	container: {
-		flex: 1,
-		backgroundColor: "#1E40AF",
-	},
-	header: {
-		paddingHorizontal: 16,
-		paddingVertical: 8,
-		justifyContent: "center",
-	},
-	backButton: {
-		width: 44,
-		height: 44,
-		justifyContent: "center",
-		alignItems: "center",
-	},
-});

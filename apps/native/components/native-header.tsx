@@ -1,6 +1,6 @@
 import { Ionicons } from "@expo/vector-icons";
 import { router } from "expo-router";
-import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { Image, Text, TouchableOpacity, View } from "react-native";
 import { useAuth } from "@/context/auth";
 
 interface NativeHeaderProps {
@@ -31,63 +31,63 @@ export default function NativeHeader({
 	};
 
 	return (
-		<View style={styles.header}>
+		<View className="flex-row items-center justify-between px-4 py-3 bg-white border-b border-gray-200 h-14">
 			{/* 좌측: 뒤로가기 버튼 */}
-			<View style={styles.leftSection}>
+			<View className="flex-1 items-start">
 				{showBackButton && onBackPress && (
 					<TouchableOpacity
 						onPress={onBackPress}
-						style={styles.backButton}
+						className="w-11 h-11 justify-center items-center"
 						activeOpacity={0.7}
 					>
-						<Ionicons name="chevron-back" size={24} color="#1E40AF" />
+						<Ionicons name="chevron-back" size={24} color="#1e9aff" />
 					</TouchableOpacity>
 				)}
 				{shouldShowWebViewBackButton && onWebViewBack && (
 					<TouchableOpacity
 						onPress={onWebViewBack}
-						style={styles.backButton}
+						className="w-11 h-11 justify-center items-center"
 						activeOpacity={0.7}
 					>
-						<Ionicons name="chevron-back" size={24} color="#1E40AF" />
+						<Ionicons name="chevron-back" size={24} color="#1e9aff" />
 					</TouchableOpacity>
 				)}
 			</View>
 
-			<View style={styles.centerSection}>
+			<View className="flex-2 items-center">
 				<TouchableOpacity
 					onPress={() => router.replace("/")}
 					activeOpacity={0.7}
 				>
-					<Text style={styles.logo}>My Speak</Text>
+					<Text className="text-xl font-bold text-primary">My Speak</Text>
 				</TouchableOpacity>
 			</View>
 
-			<View style={styles.rightSection}>
+			<View className="flex-1 items-end">
 				<TouchableOpacity
 					onPress={handleProfilePress}
-					style={styles.profileButton}
+					className="w-11 h-11 justify-center items-center"
 					activeOpacity={0.7}
 				>
 					{user ? (
-						<View style={styles.profileContainer}>
+						<View className="w-9 h-9 rounded-full overflow-hidden">
 							{user.user_metadata?.avatar_url ? (
 								<Image
 									source={{ uri: user.user_metadata.avatar_url }}
-									style={styles.avatar}
+									className="w-9 h-9 rounded-full"
 								/>
 							) : (
-								<View style={styles.avatarPlaceholder}>
+								<View className="w-9 h-9 rounded-full bg-stage-1 justify-center items-center">
 									<Ionicons name="person" size={20} color="#FFFFFF" />
 								</View>
 							)}
 						</View>
 					) : (
-						<View style={styles.profileIconContainer}>
+						<View className="w-9 h-9 justify-center items-center">
 							<Ionicons
 								name="person-circle-outline"
 								size={32}
-								color="#3B82F6"
+								color="#1e9aff"
 							/>
 						</View>
 					)}
@@ -96,71 +96,3 @@ export default function NativeHeader({
 		</View>
 	);
 }
-
-const styles = StyleSheet.create({
-	header: {
-		flexDirection: "row",
-		alignItems: "center",
-		justifyContent: "space-between",
-		paddingHorizontal: 16,
-		paddingVertical: 12,
-		backgroundColor: "#FFFFFF",
-		borderBottomWidth: 1,
-		borderBottomColor: "#E5E7EB",
-		height: 56,
-	},
-	leftSection: {
-		flex: 1,
-		alignItems: "flex-start",
-	},
-	centerSection: {
-		flex: 2,
-		alignItems: "center",
-	},
-	rightSection: {
-		flex: 1,
-		alignItems: "flex-end",
-	},
-	backButton: {
-		width: 44,
-		height: 44,
-		justifyContent: "center",
-		alignItems: "center",
-	},
-	logo: {
-		fontSize: 20,
-		fontWeight: "bold",
-		color: "#1E40AF",
-	},
-	profileButton: {
-		width: 44,
-		height: 44,
-		justifyContent: "center",
-		alignItems: "center",
-	},
-	profileContainer: {
-		width: 36,
-		height: 36,
-		borderRadius: 18,
-		overflow: "hidden",
-	},
-	avatar: {
-		width: 36,
-		height: 36,
-		borderRadius: 18,
-	},
-	avatarPlaceholder: {
-		width: 36,
-		height: 36,
-		borderRadius: 18,
-		backgroundColor: "#3B82F6",
-		justifyContent: "center",
-		alignItems: "center",
-	},
-	profileIconContainer: {
-		width: 36,
-		height: 36,
-		justifyContent: "center",
-		alignItems: "center",
-	},
-});
