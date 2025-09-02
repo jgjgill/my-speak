@@ -3,6 +3,7 @@ import {
 	HydrationBoundary,
 	QueryClient,
 } from "@tanstack/react-query";
+import type { Metadata } from "next";
 import { Suspense } from "react";
 import { createClient } from "../../utils/supabase/server";
 import { TopicsList } from "./components/topics-list";
@@ -22,6 +23,42 @@ const languageInfo = {
 		flag: "🇯🇵",
 	},
 } as const;
+
+export async function generateMetadata({
+	params,
+}: TopicsPageProps): Promise<Metadata> {
+	const { language } = await params;
+	const currentLanguage = languageInfo[language as keyof typeof languageInfo];
+
+	const title = `${currentLanguage?.nativeName || language.toUpperCase()} ${currentLanguage?.topicsText || "Topics"}`;
+	const description = `${currentLanguage?.name || language} 학습을 위한 다양한 주제들을 탐색하고 4단계 체계적 학습으로 스피킹 실력을 향상시키세요.`;
+
+	return {
+		title,
+		description,
+		keywords: [
+			`${currentLanguage?.name || language} 학습`,
+			"스피킹 연습",
+			"언어 학습 주제",
+			"4단계 학습",
+			`${currentLanguage?.nativeName || language} 회화`,
+			"언어 교육",
+		],
+		openGraph: {
+			title: `${title} | My Speak`,
+			description,
+			url: `https://my-speak.com/${language}/topics`,
+			type: "website",
+		},
+		twitter: {
+			title: `${title} | My Speak`,
+			description,
+		},
+		alternates: {
+			canonical: `/${language}/topics`,
+		},
+	};
+}
 
 export default async function TopicsPage({ params }: TopicsPageProps) {
 	const { language } = await params;

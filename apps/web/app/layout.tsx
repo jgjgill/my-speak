@@ -28,6 +28,8 @@ export const metadata: Metadata = {
 		"언어 교육",
 		"영어 회화",
 		"영어 학습",
+		"일본어 회화",
+		"일본어 학습",
 	],
 	authors: [{ name: "My Speak" }],
 	creator: "My Speak",
