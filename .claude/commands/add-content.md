@@ -94,7 +94,7 @@ description: "[주제에 맞는 설명]"
 - 자연스러운 대화 흐름 유지
 - 난이도에 맞는 어휘 선택
 - @docs/content/content-creation-flow.md 표준 형식 준수
-- @docs/content/english-speak-content-system.md의 5단계 학습 시스템 완전 구현
+- @docs/content/english-speak-content-system.md의 4단계 학습 시스템 완전 구현
 
 ## 자동 파싱 및 업로드
 

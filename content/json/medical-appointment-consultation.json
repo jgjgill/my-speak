@@ -1,0 +1,629 @@
+{
+  "topic": {
+    "id": "f7e8d9c2-4b3a-4e6f-9c9d-1a2b3c4d5e6f",
+    "title": "병원 예약 및 진료 상담",
+    "category": "일상생활",
+    "difficulty": "중급",
+    "description": "병원 예약부터 진료 상담까지의 의료진과의 대화 상황을 학습합니다.",
+    "total_sentences": 11
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 내과 진료 예약을 하고 싶습니다."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "다음 주 화요일 오후에 가능한 시간이 있나요?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "최근에 속이 자주 아프고 소화가 잘 안 되는 것 같아요."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "처음 방문하는 환자라서 어떤 서류를 준비해야 하는지 궁금합니다."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "보험카드와 신분증을 지참하면 될까요?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "진료비는 대략 얼마 정도 예상하면 될까요?"
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "그리고 진료 전에 금식을 해야 하는지도 알고 싶습니다."
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "네, 예약이 확정되었다면 시간에 맞춰 방문하겠습니다."
+    },
+    {
+      "sentence_order": 9,
+      "korean_text": "혹시 진료 당일에 응급상황이 생기면 어떻게 해야 하나요?"
+    },
+    {
+      "sentence_order": 10,
+      "korean_text": "병원 위치와 주차 시설 정보도 알려주실 수 있나요?"
+    },
+    {
+      "sentence_order": 11,
+      "korean_text": "감사합니다. 그럼 예약 확인서를 문자로 보내주세요."
+    }
+  ],
+  "english_scripts": [
+    {
+      "sentence_order": 1,
+      "english_text": "Hello, I would like to make an appointment for internal medicine.",
+      "chunked_text": "Hello, | I would like to make an appointment | for internal medicine."
+    },
+    {
+      "sentence_order": 2,
+      "english_text": "Are there any available times next Tuesday afternoon?",
+      "chunked_text": "Are there any available times | next Tuesday afternoon?"
+    },
+    {
+      "sentence_order": 3,
+      "english_text": "Recently, my stomach hurts frequently and I don't seem to digest well.",
+      "chunked_text": "Recently, | my stomach hurts frequently | and I don't seem to digest well."
+    },
+    {
+      "sentence_order": 4,
+      "english_text": "Since I'm a first-time patient, I'm wondering what documents I need to prepare.",
+      "chunked_text": "Since I'm a first-time patient, | I'm wondering | what documents I need to prepare."
+    },
+    {
+      "sentence_order": 5,
+      "english_text": "Would it be okay if I bring my insurance card and ID?",
+      "chunked_text": "Would it be okay | if I bring my insurance card and ID?"
+    },
+    {
+      "sentence_order": 6,
+      "english_text": "How much should I expect to pay for the consultation?",
+      "chunked_text": "How much should I expect to pay | for the consultation?"
+    },
+    {
+      "sentence_order": 7,
+      "english_text": "And I'd also like to know if I need to fast before the examination.",
+      "chunked_text": "And I'd also like to know | if I need to fast | before the examination."
+    },
+    {
+      "sentence_order": 8,
+      "english_text": "Yes, if the appointment is confirmed, I'll visit on time.",
+      "chunked_text": "Yes, | if the appointment is confirmed, | I'll visit on time."
+    },
+    {
+      "sentence_order": 9,
+      "english_text": "What should I do if an emergency situation occurs on the day of the appointment?",
+      "chunked_text": "What should I do | if an emergency situation occurs | on the day of the appointment?"
+    },
+    {
+      "sentence_order": 10,
+      "english_text": "Could you also give me information about the hospital location and parking facilities?",
+      "chunked_text": "Could you also give me information | about the hospital location | and parking facilities?"
+    },
+    {
+      "sentence_order": 11,
+      "english_text": "Thank you. Then please send me the appointment confirmation via text message.",
+      "chunked_text": "Thank you. | Then please send me | the appointment confirmation | via text message."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "내과 진료",
+        "예약 하고 싶다",
+        "다음 주 화요일 오후"
+      ],
+      "target_sentence": "Hello, I would like to make an appointment for internal medicine.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "가능한 시간",
+        "있나요",
+        "다음 주 화요일 오후"
+      ],
+      "target_sentence": "Are there any available times next Tuesday afternoon?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "최근에",
+        "속 자주 아프고",
+        "소화 안 됨"
+      ],
+      "target_sentence": "Recently, my stomach hurts frequently and I don't seem to digest well.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "처음 방문",
+        "환자",
+        "어떤 서류 준비"
+      ],
+      "target_sentence": "Since I'm a first-time patient, I'm wondering what documents I need to prepare.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "보험카드",
+        "신분증 지참",
+        "괜찮을까요"
+      ],
+      "target_sentence": "Would it be okay if I bring my insurance card and ID?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "진료비",
+        "대략 얼마",
+        "예상"
+      ],
+      "target_sentence": "How much should I expect to pay for the consultation?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "진료 전",
+        "금식 필요한지",
+        "알고 싶다"
+      ],
+      "target_sentence": "And I'd also like to know if I need to fast before the examination.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 8,
+      "keywords": [
+        "예약 확정되면",
+        "시간에 맞춰 방문"
+      ],
+      "target_sentence": "Yes, if the appointment is confirmed, I'll visit on time.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 9,
+      "keywords": [
+        "응급상황 생기면",
+        "당일에",
+        "어떻게 해야"
+      ],
+      "target_sentence": "What should I do if an emergency situation occurs on the day of the appointment?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 10,
+      "keywords": [
+        "병원 위치",
+        "주차 시설 정보",
+        "알려주세요"
+      ],
+      "target_sentence": "Could you also give me information about the hospital location and parking facilities?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 11,
+      "keywords": [
+        "감사합니다",
+        "예약 확인서",
+        "문자로"
+      ],
+      "target_sentence": "Thank you. Then please send me the appointment confirmation via text message.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "내과 예약",
+        "하고 싶다"
+      ],
+      "target_sentence": "I would like to make an appointment for internal medicine.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "다음 주 화요일",
+        "가능한 시간"
+      ],
+      "target_sentence": "Are there any available times next Tuesday afternoon?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "속 아프고",
+        "소화 안 됨"
+      ],
+      "target_sentence": "My stomach hurts frequently and I don't seem to digest well.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 15,
+      "keywords": [
+        "처음 방문",
+        "서류 준비"
+      ],
+      "target_sentence": "What documents I need to prepare as a first-time patient?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 16,
+      "keywords": [
+        "보험카드",
+        "신분증"
+      ],
+      "target_sentence": "Would it be okay if I bring my insurance card and ID?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 17,
+      "keywords": [
+        "진료비",
+        "얼마"
+      ],
+      "target_sentence": "How much should I expect to pay for the consultation?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 18,
+      "keywords": [
+        "금식 필요한지"
+      ],
+      "target_sentence": "If I need to fast before the examination?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 19,
+      "keywords": [
+        "예약 확정",
+        "시간 맞춰"
+      ],
+      "target_sentence": "If the appointment is confirmed, I'll visit on time.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 20,
+      "keywords": [
+        "응급상황",
+        "어떻게"
+      ],
+      "target_sentence": "What should I do if an emergency situation occurs?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 21,
+      "keywords": [
+        "병원 위치",
+        "주차 정보"
+      ],
+      "target_sentence": "Information about the hospital location and parking facilities?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 22,
+      "keywords": [
+        "확인서",
+        "문자로"
+      ],
+      "target_sentence": "Please send me the appointment confirmation via text message.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 23,
+      "keywords": [
+        "내과 예약"
+      ],
+      "target_sentence": "I would like to make an appointment for internal medicine.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 24,
+      "keywords": [
+        "화요일 오후"
+      ],
+      "target_sentence": "Are there any available times next Tuesday afternoon?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 25,
+      "keywords": [
+        "속 아픔"
+      ],
+      "target_sentence": "My stomach hurts frequently.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 26,
+      "keywords": [
+        "서류 준비"
+      ],
+      "target_sentence": "What documents I need to prepare?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 27,
+      "keywords": [
+        "보험카드"
+      ],
+      "target_sentence": "Would it be okay if I bring my insurance card?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 28,
+      "keywords": [
+        "진료비"
+      ],
+      "target_sentence": "How much should I expect to pay?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 29,
+      "keywords": [
+        "금식"
+      ],
+      "target_sentence": "If I need to fast before the examination?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 30,
+      "keywords": [
+        "시간 맞춰"
+      ],
+      "target_sentence": "I'll visit on time.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 31,
+      "keywords": [
+        "응급상황"
+      ],
+      "target_sentence": "What should I do if an emergency occurs?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 32,
+      "keywords": [
+        "주차 정보"
+      ],
+      "target_sentence": "Information about parking facilities?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 33,
+      "keywords": [
+        "문자 확인"
+      ],
+      "target_sentence": "Please send me confirmation via text message.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 34,
+      "keywords": [
+        "appointment",
+        "internal medicine"
+      ],
+      "target_sentence": "I would like to make an appointment for internal medicine.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 35,
+      "keywords": [
+        "Tuesday afternoon"
+      ],
+      "target_sentence": "Are there any available times next Tuesday afternoon?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 36,
+      "keywords": [
+        "stomach pain"
+      ],
+      "target_sentence": "My stomach hurts frequently and I don't digest well.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 37,
+      "keywords": [
+        "first-time patient"
+      ],
+      "target_sentence": "What documents I need to prepare as a first-time patient?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 38,
+      "keywords": [
+        "insurance card"
+      ],
+      "target_sentence": "Would it be okay if I bring my insurance card and ID?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 39,
+      "keywords": [
+        "consultation fee"
+      ],
+      "target_sentence": "How much should I expect to pay for the consultation?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 40,
+      "keywords": [
+        "fasting"
+      ],
+      "target_sentence": "If I need to fast before the examination?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 41,
+      "keywords": [
+        "confirmed"
+      ],
+      "target_sentence": "If the appointment is confirmed, I'll visit on time.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 42,
+      "keywords": [
+        "emergency"
+      ],
+      "target_sentence": "What should I do if an emergency situation occurs?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 43,
+      "keywords": [
+        "parking"
+      ],
+      "target_sentence": "Information about the hospital location and parking facilities?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 44,
+      "keywords": [
+        "text message"
+      ],
+      "target_sentence": "Please send me the appointment confirmation via text message.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 1,
+      "korean_phrase": "예약을 하고 싶습니다",
+      "english_phrase": "I would like to make an appointment"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "속이 자주 아프고",
+      "english_phrase": "my stomach hurts frequently"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "어떤 서류를 준비",
+      "english_phrase": "what documents I need to prepare"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "신분증을 지참하면",
+      "english_phrase": "if I bring my insurance card and ID"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "진료 전에 금식",
+      "english_phrase": "fasting before the examination"
+    },
+    {
+      "sentence_order": 8,
+      "korean_phrase": "예약이 확정되었다면",
+      "english_phrase": "if the appointment is confirmed"
+    },
+    {
+      "sentence_order": 9,
+      "korean_phrase": "응급상황이 생기면",
+      "english_phrase": "if an emergency situation occurs"
+    },
+    {
+      "sentence_order": 10,
+      "korean_phrase": "주차 시설 정보",
+      "english_phrase": "parking facility information"
+    }
+  ]
+}

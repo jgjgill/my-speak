@@ -2,63 +2,9 @@
 
 ## 개요
 
-영어 학습 5단계 시스템을 위한 Supabase 데이터베이스 설계 문서입니다.
+영어 학습 4단계 시스템을 위한 Supabase 데이터베이스 설계 문서입니다.
 이 문서는 모노레포의 `@repo/typescript-config` 패키지에서 관리되며, 모든 앱에서 일관된 타입 정의를 사용할 수 있도록 합니다.
 
-## Auth 시스템
-
-### Google OAuth 연동
-
-#### 설정 과정
-
-1. **Google Cloud Console 설정**
-
-- OAuth 2.0 클라이언트 ID 생성
-- 승인된 리디렉션 URI: `https://[PROJECT_ID].supabase.co/auth/v1/callback`
-
-2. **Supabase 설정**
-
-- Authentication > Providers > Google 활성화
-- Google Client ID와 Client Secret 입력
-
-3. **Next.js 구현**
-
-
-```typescript
-// AuthProvider 컨텍스트 사용
-const { signInWithGoogle, signOut, user } = useAuth();
-
-// 로그인
-await signInWithGoogle();
-
-// 로그아웃  
-await signOut();
-  ```
-
-4. **Next.js 서버사이드 인증 (Middleware)**
-
-```typescript
-// middleware.ts - 서버사이드 세션 관리
-export async function middleware(request: NextRequest) {
-  const supabase = createServerClient(/* config */);
-  const { data: { user } } = await supabase.auth.getUser();
-  
-  // 인증 필요 라우트 보호
-  if (!user && request.nextUrl.pathname.startsWith('/protected')) {
-    return NextResponse.redirect('/login');
-  }
-  
-  return response;
-}
-```
-
-#### 인증 플로우
-
-1. 사용자가 "구글로 로그인" 클릭
-2. Google OAuth 페이지로 리디렉션
-3. 사용자 동의 후 Supabase callback URL로 복귀
-4. 자동 프로필 생성 (트리거 실행)
-5. RLS 정책 적용으로 개인 데이터 보호
 
 ## 핵심 테이블 구조
 
@@ -119,13 +65,13 @@ CREATE TABLE english_scripts (
 - `chunked_text`: 끊어읽기 기호가 포함된 버전 (`|` = 짧은 pause, `||` = 긴 pause)
 - `grammar_notes`: 문법 설명 및 학습 포인트
 
-### 4. keyword_speeches (4-5단계: 키워드 스피치)
+### 4. keyword_speeches (4단계: 키워드 스피치)
 
 ```sql
 CREATE TABLE keyword_speeches (
   id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
   topic_id UUID REFERENCES topics(id) ON DELETE CASCADE,
-  stage INTEGER NOT NULL CHECK (stage IN (4, 5)), -- 4단계 또는 5단계
+  stage INTEGER NOT NULL CHECK (stage = 4), -- 4단계
   level INTEGER NOT NULL CHECK (level >= 1 AND level <= 4), -- 1(70%) ~ 4(영어키워드)
   sequence_order INTEGER NOT NULL,
   keywords TEXT[] NOT NULL, -- 키워드 배열
@@ -136,8 +82,8 @@ CREATE TABLE keyword_speeches (
 );
 ```
 
-**역할**: 4-5단계 키워드 스피치 연습 데이터를 저장합니다.
-- `stage`: 4단계(한→영 스피킹) 또는 5단계(키워드 스피치)
+**역할**: 4단계 키워드 스피치 연습 데이터를 저장합니다.
+- `stage`: 4단계 고정값
 - `level`: 난이도 레벨 (1=70% 정보 → 4=영어 키워드)
 - `keywords`: 키워드 배열
 - `difficulty_percentage`: 정보 제공 비율 (70%, 50%, 30%, null)
@@ -167,7 +113,7 @@ CREATE TABLE user_progress (
   id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
   user_id UUID REFERENCES auth.users(id) ON DELETE CASCADE,
   topic_id UUID REFERENCES topics(id) ON DELETE CASCADE,
-  current_stage INTEGER DEFAULT 1 CHECK (current_stage >= 1 AND current_stage <= 5),
+  current_stage INTEGER DEFAULT 1 CHECK (current_stage >= 1 AND current_stage <= 4),
   completed_sentences INTEGER[] DEFAULT '{}', -- 완료한 문장 번호들
   practice_count INTEGER DEFAULT 0,
   last_updated TIMESTAMP WITH TIME ZONE DEFAULT timezone('utc'::text, now()) NOT NULL,
@@ -288,65 +234,41 @@ const { error } = await supabase.from("user_translations").upsert({
 
 ## 보안 정책 (RLS - Row Level Security)
 
+### 콘텐츠 테이블 (공개 접근)
+
+콘텐츠 관련 테이블들은 모든 사용자에게 읽기/쓰기 권한을 부여합니다.
+
+```sql
+-- 콘텐츠 테이블들에 대한 전체 접근 권한
+CREATE POLICY "content_parser_full_access" ON public.topics FOR ALL TO public USING (true) WITH CHECK (true);
+CREATE POLICY "content_parser_full_access" ON public.korean_scripts FOR ALL TO public USING (true) WITH CHECK (true);
+CREATE POLICY "content_parser_full_access" ON public.english_scripts FOR ALL TO public USING (true) WITH CHECK (true);
+CREATE POLICY "content_parser_full_access" ON public.keyword_speeches FOR ALL TO public USING (true) WITH CHECK (true);
+CREATE POLICY "content_parser_full_access" ON public.learning_points FOR ALL TO public USING (true) WITH CHECK (true);
+```
+
 ### 사용자 데이터 보호
 
-모든 사용자 관련 테이블에 RLS가 활성화되어 있어 각 사용자는 자신의 데이터만 접근할 수 있습니다.
+사용자 관련 테이블에 RLS가 활성화되어 각 사용자는 자신의 데이터만 접근할 수 있습니다.
 
 ```sql
 -- profiles 테이블 보안 정책
 ALTER TABLE profiles ENABLE ROW LEVEL SECURITY;
+CREATE POLICY "Users can manage own profile" ON profiles FOR ALL USING (auth.uid() = id) WITH CHECK (auth.uid() = id);
 
-CREATE POLICY "Users can view own profile" ON profiles
-  FOR SELECT USING (auth.uid() = id);
-CREATE POLICY "Users can update own profile" ON profiles
-  FOR UPDATE USING (auth.uid() = id);
-
--- user_translations 테이블 보안 정책
+-- user_translations 테이블 보안 정책  
 ALTER TABLE user_translations ENABLE ROW LEVEL SECURITY;
-
-CREATE POLICY "Users can view own translations" ON user_translations
-  FOR SELECT USING (auth.uid() = user_id);
-CREATE POLICY "Users can insert own translations" ON user_translations
-  FOR INSERT WITH CHECK (auth.uid() = user_id);
-CREATE POLICY "Users can update own translations" ON user_translations
-  FOR UPDATE USING (auth.uid() = user_id);
+CREATE POLICY "Users can manage own translations" ON user_translations FOR ALL USING (auth.uid() = user_id) WITH CHECK (auth.uid() = user_id);
 
 -- user_selected_points 테이블 보안 정책
 ALTER TABLE user_selected_points ENABLE ROW LEVEL SECURITY;
+CREATE POLICY "Users can manage own selected points" ON user_selected_points FOR ALL USING (auth.uid() = user_id) WITH CHECK (auth.uid() = user_id);
 
-CREATE POLICY "Users can view own selected points" ON user_selected_points
-  FOR SELECT USING (auth.uid() = user_id);
-CREATE POLICY "Users can insert own selected points" ON user_selected_points
-  FOR INSERT WITH CHECK (auth.uid() = user_id);
-CREATE POLICY "Users can delete own selected points" ON user_selected_points
-  FOR DELETE USING (auth.uid() = user_id);
+-- user_progress 테이블 보안 정책
+ALTER TABLE user_progress ENABLE ROW LEVEL SECURITY;
+CREATE POLICY "Users can manage own progress" ON user_progress FOR ALL USING (auth.uid() = user_id) WITH CHECK (auth.uid() = user_id);
 ```
 
-### 자동 프로필 생성
-
-새 사용자가 OAuth로 가입하면 자동으로 프로필이 생성됩니다.
-
-```sql
--- 새 사용자 프로필 자동 생성 함수
-CREATE OR REPLACE FUNCTION public.handle_new_user()
-RETURNS trigger AS $$
-BEGIN
-  INSERT INTO public.profiles (id, email, display_name, avatar_url)
-  VALUES (
-    new.id,
-    new.email,
-    new.raw_user_meta_data->>'full_name',
-    new.raw_user_meta_data->>'avatar_url'
-  );
-  return new;
-END;
-$$ LANGUAGE plpgsql SECURITY DEFINER;
-
--- 트리거 설정
-CREATE TRIGGER on_auth_user_created
-  AFTER INSERT ON auth.users
-  FOR EACH ROW EXECUTE PROCEDURE public.handle_new_user();
-```
 
 ## 인덱스 설계
 
@@ -384,8 +306,7 @@ topics 조회 → 단계별 데이터 로드 → 사용자 인터랙션 → prog
 - **1단계**: `topics` + `korean_scripts` + `learning_points` (사용자 선택 → `user_selected_points`)
 - **2단계**: `topics` + `korean_scripts` + `english_scripts` + `learning_points` (하이라이트 표시)
 - **3단계**: `topics` + `english_scripts` (chunked_text 활용) + `learning_points` (하이라이트)
-- **4단계**: `topics` + `korean_scripts` + `english_scripts` + `keyword_speeches`(stage=4) + `learning_points`
-- **5단계**: `topics` + `keyword_speeches`(stage=5)
+- **4단계**: `topics` + `korean_scripts` + `english_scripts` + `keyword_speeches` + `learning_points`
 
 ### 4. 개인화 학습 플로우
 
@@ -395,110 +316,14 @@ topics 조회 → 단계별 데이터 로드 → 사용자 인터랙션 → prog
 번역 입력: user_translations에 저장 (수정 가능)
 ```
 
-## 모노레포 타입 관리
+## Content Parser 연동
 
-### 타입 생성 및 관리
+### RLS 정책 설정 완료
 
-#### 설정 파일
+모든 콘텐츠 테이블에 `content_parser_full_access` 정책이 적용되어 content-parser CLI에서 데이터를 성공적으로 업로드할 수 있습니다.
 
-`packages/typescript-config/.env.local`:
-```bash
-# Supabase Configuration for TypeScript Types Generation
-NEXT_PUBLIC_SUPABASE_URL=https://your-project-ref.supabase.co
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
-PROJECT_REF=your-project-ref
-```
-
-#### 자동화된 타입 생성
-
-```bash
-# typescript-config 패키지에서 실행
-cd packages/typescript-config
-pnpm update-types
-
-# 또는 루트에서 실행
-turbo run update-types --filter=@repo/typescript-config
-```
-
-#### 수동 타입 생성 (backup)
-
-```bash
-cd packages/typescript-config
-npx supabase gen types typescript --project-id "your-project-ref" --schema public > supabase-types.ts
-```
-
-### 패키지 구조
+### 콘텐츠 생성 플로우
 
 ```
-packages/typescript-config/
-├── .env.local                  # Supabase 연결 설정 (타입 생성용)
-├── base.json                   # 기본 TS 설정
-├── nextjs.json                 # Next.js 설정
-├── react-library.json          # React 라이브러리 설정
-├── supabase-types.ts           # Supabase 자동 생성 타입
-├── docs/
-│   └── supabase-architecture.md
-├── package.json                # update-types 스크립트 포함
-└── README.md
+MD 파일 작성 → content-parser CLI → JSON 생성 → Supabase 업로드 → 웹앱에서 사용
 ```
-
-### 개발 워크플로우
-
-#### 스키마 변경 시
-
-1. **마이그레이션 적용**: Supabase 대시보드 또는 CLI로 적용
-2. **타입 업데이트**: `pnpm update-types` 실행
-3. **코드 수정**: 새로운 타입에 맞게 코드 업데이트
-4. **테스트**: 전체 프로젝트 빌드 및 타입 체크
-
-#### 자동화 권장사항
-
-- Git hooks에 `update-types` 추가 고려
-- CI/CD에서 타입 일관성 검증
-- 스키마 변경 시 자동 PR 생성
-
-### 사용 예시
-
-#### apps/web에서
-
-```typescript
-import { Database, Tables } from "@repo/typescript-config/supabase-types";
-import { LearningStage, TopicWithProgress } from "@repo/typescript-config/learning-types";
-
-type Topic = Tables<'topics'>;
-```
-
-#### packages/content-parser에서
-
-```typescript
-import { Database } from "@repo/typescript-config/supabase-types";
-import { ParsedLearningContent } from "@repo/typescript-config/learning-types";
-```
-
-#### apps/native에서
-
-```typescript
-import { Tables } from "@repo/typescript-config/supabase-types";
-import { UserProgressData } from "@repo/typescript-config/learning-types";
-```
-
-## 확장 고려사항
-
-### 향후 추가 가능한 테이블
-
-- `vocabulary_notes`: 막힌 단어 상세 해설
-- `audio_files`: 발음 가이드 오디오
-- `user_recordings`: 사용자 연습 녹음
-- `feedback_data`: AI 피드백 데이터
-
-### 타입 안전성 보장
-
-- Supabase CLI로 자동 타입 생성
-- 모노레포 전체에서 일관된 타입 사용
-- 빌드 시점에 타입 검증
-
-### 성능 최적화
-
-- 적절한 인덱스 설정으로 조회 성능 보장
-- CASCADE DELETE로 데이터 일관성 유지
-- UNIQUE 제약조건으로 중복 방지
