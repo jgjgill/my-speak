@@ -37,7 +37,9 @@ export default function LoginPage() {
 							/>
 						</div>
 
-						<h1 className="text-hero font-bold text-korean text-primary mb-4">My Speak</h1>
+						<h1 className="text-hero font-bold text-korean text-primary mb-4">
+							My Speak
+						</h1>
 						<p className="text-gray-600 mb-2">
 							4단계 체계적 학습으로 외국어 스피킹을 자연스럽게 마스터하세요
 						</p>

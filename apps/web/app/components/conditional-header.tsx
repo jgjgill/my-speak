@@ -37,9 +37,7 @@ export default function ConditionalHeader() {
 								/>
 							</div>
 							<div>
-								<span className="text-xl font-bold text-primary">
-									My Speak
-								</span>
+								<span className="text-xl font-bold text-primary">My Speak</span>
 							</div>
 						</Link>
 					</div>

@@ -110,7 +110,9 @@ export default function StageButton({
 					)}
 
 					{isActive && (
-						<div className={`absolute inset-0 rounded-full opacity-20 animate-ping ${stageColors.bg.replace('bg-', 'bg-')}`} />
+						<div
+							className={`absolute inset-0 rounded-full opacity-20 animate-ping ${stageColors.bg.replace("bg-", "bg-")}`}
+						/>
 					)}
 				</div>
 

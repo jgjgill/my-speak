@@ -18,7 +18,9 @@ export default function Home() {
 								className="w-full h-full object-cover"
 							/>
 						</div>
-						<h1 className="text-hero font-bold text-korean text-primary mb-4">My Speak</h1>
+						<h1 className="text-hero font-bold text-korean text-primary mb-4">
+							My Speak
+						</h1>
 						<p className="text-title text-gray-600 max-w-2xl mx-auto leading-relaxed">
 							4단계 체계적 학습으로 외국어 스피킹을
 							<br />

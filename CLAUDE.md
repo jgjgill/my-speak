@@ -70,6 +70,10 @@ pnpm format-and-lint:fix
 cd apps/web
 pnpm lint        # 현재 앱만 검사
 pnpm lint:fix    # 현재 앱만 자동 수정
+
+cd apps/native
+pnpm lint        # 네이티브 앱 검사
+pnpm lint:fix    # 네이티브 앱 자동 수정
 ```
 
 ## 아키텍처 구조
@@ -102,7 +106,8 @@ packages/
 ### 네이티브 애플리케이션 (apps/native/)
 
 - **프레임워크**: React Native + Expo
-- **인증**: Supabase OAuth (Google)
+- **스타일링**: NativeWind (Tailwind CSS for React Native)
+- **인증**: Supabase OAuth (Google, Apple)
 - **웹뷰 연동**: React Native WebView
 - **Safe Area 처리**: react-native-safe-area-context
 
