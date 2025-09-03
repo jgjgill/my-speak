@@ -54,27 +54,6 @@ turbo build --filter=web
 - **타입 체크**: TypeScript strict 모드
 - **자동 수정**: `pnpm format-and-lint:fix`
 
-#### 린트 명령어 사용법
-
-**전체 프로젝트 (모노레포 루트에서)**:
-```bash
-# 전체 코드 베이스 검사
-pnpm format-and-lint
-
-# 전체 코드 베이스 자동 수정
-pnpm format-and-lint:fix
-```
-
-**개별 앱 디렉토리에서**:
-```bash
-cd apps/web
-pnpm lint        # 현재 앱만 검사
-pnpm lint:fix    # 현재 앱만 자동 수정
-
-cd apps/native
-pnpm lint        # 네이티브 앱 검사
-pnpm lint:fix    # 네이티브 앱 자동 수정
-```
 
 ## 아키텍처 구조
 
