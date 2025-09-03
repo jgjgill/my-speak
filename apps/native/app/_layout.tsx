@@ -9,7 +9,15 @@ export default function RootLayout() {
 		<SafeAreaProvider>
 			<QueryProvider>
 				<AuthProvider>
-					<Stack screenOptions={{ headerShown: false }} />
+					<Stack
+						screenOptions={{
+							headerShown: false,
+							animation: "fade",
+							animationDuration: 300,
+						}}
+					>
+						<Stack.Screen name="index" options={{ animation: "none" }} />
+					</Stack>
 				</AuthProvider>
 			</QueryProvider>
 		</SafeAreaProvider>

@@ -1,12 +1,6 @@
 import { Ionicons } from "@expo/vector-icons";
 import { router } from "expo-router";
-import { useEffect } from "react";
-import {
-	ActivityIndicator,
-	Platform,
-	TouchableOpacity,
-	View,
-} from "react-native";
+import { ActivityIndicator, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import LoginForm from "@/components/login-form";
 import { useAuth } from "@/context/auth";
@@ -17,12 +11,6 @@ export default function LoginPage() {
 	const handleBackPress = () => {
 		router.back();
 	};
-
-	useEffect(() => {
-		if (user && !isLoading && Platform.OS === "ios") {
-			router.replace("/");
-		}
-	}, [user, isLoading]);
 
 	if (isLoading) {
 		return (
