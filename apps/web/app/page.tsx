@@ -63,7 +63,7 @@ export default function Home() {
 							</Link>
 
 							{/* 일본어 학습 (준비중) */}
-							<div className="topic-card opacity-60 cursor-not-allowed">
+							{/* <div className="topic-card opacity-60 cursor-not-allowed">
 								<div className="flex items-center mb-4">
 									<div className="w-12 h-12 rounded-full bg-gray-400 flex items-center justify-center text-white font-bold text-lg mr-4">
 										JP
@@ -90,7 +90,7 @@ export default function Home() {
 										/>
 									</svg>
 								</div>
-							</div>
+							</div> */}
 						</div>
 					</div>
 				</div>
