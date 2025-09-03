@@ -1,6 +1,7 @@
 import { Ionicons } from "@expo/vector-icons";
 import { router } from "expo-router";
 import {
+	Image,
 	ScrollView,
 	StatusBar,
 	Text,
@@ -20,12 +21,16 @@ export default function LoginForm() {
 			<View className="flex-1 bg-primary">
 				<View className="flex-1 px-8 pt-15 pb-10">
 					<View className="flex-2 justify-center items-center mb-8">
-						<View className="w-30 h-30 rounded-full bg-white/10 justify-center items-center mb-6">
-							<Ionicons name="mic" size={60} color="#FFFFFF" />
+						<View className="w-30 h-30 rounded-full justify-center items-center">
+							<Image
+								source={require("@/assets/icons/transparent-icon.png")}
+								className="w-20 h-20"
+								resizeMode="contain"
+							/>
 						</View>
 						<Text className="text-4xl font-bold text-white mb-2">My Speak</Text>
 						<Text className="text-base text-white/80 text-center leading-6">
-							영어 스피킹을 쉽고 재미있게 배워보세요
+							언어 스피킹을 쉽고 재미있게 배워보세요
 						</Text>
 					</View>
 
