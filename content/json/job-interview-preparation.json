@@ -1,0 +1,688 @@
+{
+  "topic": {
+    "id": "a8c3b2f1-9d4e-4f3a-b7e6-2c8a5f9b1d3e",
+    "title": "취업 면접 준비",
+    "category": "업무/학업",
+    "difficulty": "중급",
+    "description": "취업 면접에서 자주 묻는 질문들과 효과적인 답변 방법을 학습합니다. 자기소개, 장단점, 지원 동기 등 핵심 면접 표현을 익힙니다.",
+    "total_sentences": 12
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "오늘은 중요한 취업 면접이 있습니다."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "면접관에게 좋은 첫인상을 남기기위해 정장을 입고 일찍 도착했습니다."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "면접관이 들어오자 정중하게 인사를 드리고 악수를 나눴습니다."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "\"안녕하세요, 저는 김민수라고 합니다. 오늘 면접 기회를 주셔서 감사합니다.\""
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "면접관이 제 경력사항과 경험에 대해 질문을 시작했습니다."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "저는 차분하게 제 전문 분야와 성취에 대해 설명했습니다."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "\"지난 3년간 마케팅 분야에서 일하면서 고객 만족도를 20% 향상시켰습니다.\""
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "면접관이 제가 이 회사에 지원한 이유에 대해 물어봤습니다."
+    },
+    {
+      "sentence_order": 9,
+      "korean_text": "저는 회사의 비전과 가치관이 제 목표와 일치한다고 말했습니다."
+    },
+    {
+      "sentence_order": 10,
+      "korean_text": "\"귀사의 혁신적인 접근 방식과 팀워크를 중시하는 문화에 깊이 공감했습니다.\""
+    },
+    {
+      "sentence_order": 11,
+      "korean_text": "마지막으로 면접관이 제 장단점에 대해 질문했습니다."
+    },
+    {
+      "sentence_order": 12,
+      "korean_text": "저는 솔직하면서도 긍정적으로 답변했고, 개선하려는 노력을 강조했습니다."
+    }
+  ],
+  "english_scripts": [
+    {
+      "sentence_order": 1,
+      "english_text": "Today I have an important job interview.",
+      "chunked_text": "Today | I have an important job interview."
+    },
+    {
+      "sentence_order": 2,
+      "english_text": "I wore a suit and arrived early to make a good first impression on the interviewer.",
+      "chunked_text": "I wore a suit | and arrived early | to make a good first impression | on the interviewer."
+    },
+    {
+      "sentence_order": 3,
+      "english_text": "When the interviewer came in, I greeted them politely and shook hands.",
+      "chunked_text": "When the interviewer came in, | I greeted them politely | and shook hands."
+    },
+    {
+      "sentence_order": 4,
+      "english_text": "\"Hello, my name is Kim Minsu. Thank you for giving me this interview opportunity today.\"",
+      "chunked_text": "\"Hello, | my name is Kim Minsu. | Thank you | for giving me this interview opportunity | today.\""
+    },
+    {
+      "sentence_order": 5,
+      "english_text": "The interviewer started asking questions about my work experience and background.",
+      "chunked_text": "The interviewer | started asking questions | about my work experience | and background."
+    },
+    {
+      "sentence_order": 6,
+      "english_text": "I calmly explained about my expertise and achievements.",
+      "chunked_text": "I calmly explained | about my expertise | and achievements."
+    },
+    {
+      "sentence_order": 7,
+      "english_text": "\"Over the past three years working in marketing, I improved customer satisfaction by 20%.\"",
+      "chunked_text": "\"Over the past three years | working in marketing, | I improved customer satisfaction | by 20%.\""
+    },
+    {
+      "sentence_order": 8,
+      "english_text": "The interviewer asked about my reason for applying to this company.",
+      "chunked_text": "The interviewer asked | about my reason for applying | to this company."
+    },
+    {
+      "sentence_order": 9,
+      "english_text": "I said that the company's vision and values align with my goals.",
+      "chunked_text": "I said | that the company's vision and values | align with my goals."
+    },
+    {
+      "sentence_order": 10,
+      "english_text": "\"I deeply resonated with your company's innovative approach and teamwork-oriented culture.\"",
+      "chunked_text": "\"I deeply resonated | with your company's innovative approach | and teamwork-oriented culture.\""
+    },
+    {
+      "sentence_order": 11,
+      "english_text": "Finally, the interviewer asked about my strengths and weaknesses.",
+      "chunked_text": "Finally, | the interviewer asked | about my strengths and weaknesses."
+    },
+    {
+      "sentence_order": 12,
+      "english_text": "I answered honestly yet positively, emphasizing my efforts to improve.",
+      "chunked_text": "I answered honestly | yet positively, | emphasizing my efforts to improve."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "오늘",
+        "중요한",
+        "취업면접"
+      ],
+      "target_sentence": "Today I have an important job interview.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "정장 입고",
+        "일찍 도착",
+        "첫인상"
+      ],
+      "target_sentence": "I wore a suit and arrived early to make a good first impression on the interviewer.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "면접관 들어오자",
+        "정중하게 인사",
+        "악수"
+      ],
+      "target_sentence": "When the interviewer came in, I greeted them politely and shook hands.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "안녕하세요",
+        "김민수",
+        "면접 기회 감사"
+      ],
+      "target_sentence": "\"Hello, my name is Kim Minsu. Thank you for giving me this interview opportunity today.\"",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "면접관 질문 시작",
+        "경력사항",
+        "경험"
+      ],
+      "target_sentence": "The interviewer started asking questions about my work experience and background.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "차분하게 설명",
+        "전문분야",
+        "성취"
+      ],
+      "target_sentence": "I calmly explained about my expertise and achievements.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "3년간 마케팅",
+        "고객 만족도 20% 향상"
+      ],
+      "target_sentence": "\"Over the past three years working in marketing, I improved customer satisfaction by 20%.\"",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 8,
+      "keywords": [
+        "지원한 이유 질문"
+      ],
+      "target_sentence": "The interviewer asked about my reason for applying to this company.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 9,
+      "keywords": [
+        "회사 비전",
+        "가치관",
+        "목표 일치"
+      ],
+      "target_sentence": "I said that the company's vision and values align with my goals.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 10,
+      "keywords": [
+        "혁신적 접근",
+        "팀워크 중시 문화"
+      ],
+      "target_sentence": "\"I deeply resonated with your company's innovative approach and teamwork-oriented culture.\"",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 11,
+      "keywords": [
+        "마지막 질문",
+        "장단점"
+      ],
+      "target_sentence": "Finally, the interviewer asked about my strengths and weaknesses.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 12,
+      "keywords": [
+        "솔직하고 긍정적",
+        "개선 노력 강조"
+      ],
+      "target_sentence": "I answered honestly yet positively, emphasizing my efforts to improve.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "오늘",
+        "면접"
+      ],
+      "target_sentence": "Today I have an important job interview.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "정장",
+        "일찍",
+        "첫인상"
+      ],
+      "target_sentence": "I wore a suit and arrived early to make a good first impression on the interviewer.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 15,
+      "keywords": [
+        "면접관",
+        "인사",
+        "악수"
+      ],
+      "target_sentence": "When the interviewer came in, I greeted them politely and shook hands.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 16,
+      "keywords": [
+        "김민수",
+        "기회 감사"
+      ],
+      "target_sentence": "\"Hello, my name is Kim Minsu. Thank you for giving me this interview opportunity today.\"",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 17,
+      "keywords": [
+        "질문",
+        "경력",
+        "경험"
+      ],
+      "target_sentence": "The interviewer started asking questions about my work experience and background.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 18,
+      "keywords": [
+        "설명",
+        "전문분야",
+        "성취"
+      ],
+      "target_sentence": "I calmly explained about my expertise and achievements.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 19,
+      "keywords": [
+        "마케팅",
+        "만족도 20%"
+      ],
+      "target_sentence": "\"Over the past three years working in marketing, I improved customer satisfaction by 20%.\"",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 20,
+      "keywords": [
+        "지원 이유"
+      ],
+      "target_sentence": "The interviewer asked about my reason for applying to this company.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 21,
+      "keywords": [
+        "비전",
+        "목표 일치"
+      ],
+      "target_sentence": "I said that the company's vision and values align with my goals.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 22,
+      "keywords": [
+        "혁신",
+        "팀워크 문화"
+      ],
+      "target_sentence": "\"I deeply resonated with your company's innovative approach and teamwork-oriented culture.\"",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 23,
+      "keywords": [
+        "장단점 질문"
+      ],
+      "target_sentence": "Finally, the interviewer asked about my strengths and weaknesses.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 24,
+      "keywords": [
+        "긍정적",
+        "개선"
+      ],
+      "target_sentence": "I answered honestly yet positively, emphasizing my efforts to improve.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 25,
+      "keywords": [
+        "면접"
+      ],
+      "target_sentence": "Today I have an important job interview.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 26,
+      "keywords": [
+        "첫인상"
+      ],
+      "target_sentence": "I wore a suit and arrived early to make a good first impression on the interviewer.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 27,
+      "keywords": [
+        "인사"
+      ],
+      "target_sentence": "When the interviewer came in, I greeted them politely and shook hands.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 28,
+      "keywords": [
+        "감사"
+      ],
+      "target_sentence": "\"Hello, my name is Kim Minsu. Thank you for giving me this interview opportunity today.\"",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 29,
+      "keywords": [
+        "경력"
+      ],
+      "target_sentence": "The interviewer started asking questions about my work experience and background.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 30,
+      "keywords": [
+        "성취"
+      ],
+      "target_sentence": "I calmly explained about my expertise and achievements.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 31,
+      "keywords": [
+        "20%"
+      ],
+      "target_sentence": "\"Over the past three years working in marketing, I improved customer satisfaction by 20%.\"",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 32,
+      "keywords": [
+        "이유"
+      ],
+      "target_sentence": "The interviewer asked about my reason for applying to this company.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 33,
+      "keywords": [
+        "일치"
+      ],
+      "target_sentence": "I said that the company's vision and values align with my goals.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 34,
+      "keywords": [
+        "문화"
+      ],
+      "target_sentence": "\"I deeply resonated with your company's innovative approach and teamwork-oriented culture.\"",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 35,
+      "keywords": [
+        "장단점"
+      ],
+      "target_sentence": "Finally, the interviewer asked about my strengths and weaknesses.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 36,
+      "keywords": [
+        "개선"
+      ],
+      "target_sentence": "I answered honestly yet positively, emphasizing my efforts to improve.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 37,
+      "keywords": [
+        "interview"
+      ],
+      "target_sentence": "Today I have an important job interview.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 38,
+      "keywords": [
+        "impression"
+      ],
+      "target_sentence": "I wore a suit and arrived early to make a good first impression on the interviewer.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 39,
+      "keywords": [
+        "greeting"
+      ],
+      "target_sentence": "When the interviewer came in, I greeted them politely and shook hands.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 40,
+      "keywords": [
+        "opportunity"
+      ],
+      "target_sentence": "\"Hello, my name is Kim Minsu. Thank you for giving me this interview opportunity today.\"",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 41,
+      "keywords": [
+        "experience"
+      ],
+      "target_sentence": "The interviewer started asking questions about my work experience and background.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 42,
+      "keywords": [
+        "achievements"
+      ],
+      "target_sentence": "I calmly explained about my expertise and achievements.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 43,
+      "keywords": [
+        "improved"
+      ],
+      "target_sentence": "\"Over the past three years working in marketing, I improved customer satisfaction by 20%.\"",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 44,
+      "keywords": [
+        "applying"
+      ],
+      "target_sentence": "The interviewer asked about my reason for applying to this company.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 45,
+      "keywords": [
+        "values"
+      ],
+      "target_sentence": "I said that the company's vision and values align with my goals.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 46,
+      "keywords": [
+        "culture"
+      ],
+      "target_sentence": "\"I deeply resonated with your company's innovative approach and teamwork-oriented culture.\"",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 47,
+      "keywords": [
+        "weaknesses"
+      ],
+      "target_sentence": "Finally, the interviewer asked about my strengths and weaknesses.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 48,
+      "keywords": [
+        "efforts"
+      ],
+      "target_sentence": "I answered honestly yet positively, emphasizing my efforts to improve.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "첫인상을 남기기",
+      "english_phrase": "make a good first impression"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "면접 기회를 주셔서",
+      "english_phrase": "for giving me this interview opportunity"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "경력사항과 경험",
+      "english_phrase": "work experience and background"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "전문 분야와 성취",
+      "english_phrase": "expertise and achievements"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "고객 만족도를 20% 향상",
+      "english_phrase": "improved customer satisfaction by 20%"
+    },
+    {
+      "sentence_order": 8,
+      "korean_phrase": "지원한 이유",
+      "english_phrase": "reason for applying"
+    },
+    {
+      "sentence_order": 9,
+      "korean_phrase": "비전과 가치관",
+      "english_phrase": "vision and values"
+    },
+    {
+      "sentence_order": 10,
+      "korean_phrase": "팀워크를 중시하는",
+      "english_phrase": "teamwork-oriented"
+    },
+    {
+      "sentence_order": 11,
+      "korean_phrase": "장단점에 대해",
+      "english_phrase": "strengths and weaknesses"
+    },
+    {
+      "sentence_order": 12,
+      "korean_phrase": "개선하려는 노력",
+      "english_phrase": "efforts to improve"
+    }
+  ]
+}
