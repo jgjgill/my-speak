@@ -17,8 +17,8 @@ export default function StructuredData() {
 			itemListElement: [
 				{
 					"@type": "Course",
-					name: "영어 스피킹 학습",
-					description: "4단계 학습 시스템을 통한 영어 스피킹 향상",
+					name: "언어 스피킹 학습",
+					description: "4단계 학습 시스템을 통한 언어 스피킹 향상",
 					provider: {
 						"@type": "EducationalOrganization",
 						name: "My Speak",

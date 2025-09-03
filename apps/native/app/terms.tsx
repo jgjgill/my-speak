@@ -29,8 +29,8 @@ export default function TermsPage() {
 						서비스 소개
 					</Text>
 					<Text className="text-base leading-6 text-text-secondary">
-						My Speak은 영어 스피킹 학습을 위한 개인 프로젝트입니다. 4단계 체계적
-						학습을 통해 외국어 스피킹 실력 향상을 목표로 합니다.
+						My Speak은 외국어 스피킹 학습을 위한 개인 프로젝트입니다. 4단계
+						체계적 학습을 통해 외국어 스피킹 실력 향상을 목표로 합니다.
 					</Text>
 				</View>
 
