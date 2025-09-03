@@ -1,0 +1,577 @@
+{
+  "topic": {
+    "id": "f2e8b9c4-7a1d-4e6f-9b2a-5c8d3e7f0a1b",
+    "title": "마트에서 장보기",
+    "category": "일상생활",
+    "difficulty": "초급",
+    "description": "마트에서 장을 볼 때 사용하는 기본적인 영어 표현들을 학습합니다. 물건 찾기, 가격 묻기, 계산하기 등 실용적인 쇼핑 영어를 익힙니다.",
+    "total_sentences": 10
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "오늘은 마트에 장을 보러 갑니다."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "쇼핑 리스트를 만들어서 가져갑니다."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "마트에 들어가서 쇼핑 카트를 가져옵니다."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "먼저 과일 코너에 가서 신선한 사과를 고릅니다."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "야채 코너에서 당근과 양파를 담습니다."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "우유가 필요해서 냉장 코너로 갑니다."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "빵을 사기 위해 베이커리에 들릅니다."
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "계산대에서 현금으로 결제합니다."
+    },
+    {
+      "sentence_order": 9,
+      "korean_text": "직원이 영수증을 주며 감사 인사를 합니다."
+    },
+    {
+      "sentence_order": 10,
+      "korean_text": "장보기를 마치고 집으로 돌아갑니다."
+    }
+  ],
+  "english_scripts": [
+    {
+      "sentence_order": 1,
+      "english_text": "Today I go to the grocery store to shop.",
+      "chunked_text": "Today | I go to the grocery store | to shop."
+    },
+    {
+      "sentence_order": 2,
+      "english_text": "I make a shopping list and take it with me.",
+      "chunked_text": "I make a shopping list | and take it with me."
+    },
+    {
+      "sentence_order": 3,
+      "english_text": "I enter the store and get a shopping cart.",
+      "chunked_text": "I enter the store | and get a shopping cart."
+    },
+    {
+      "sentence_order": 4,
+      "english_text": "First, I go to the fruit section and pick fresh apples.",
+      "chunked_text": "First, | I go to the fruit section | and pick fresh apples."
+    },
+    {
+      "sentence_order": 5,
+      "english_text": "I put carrots and onions in the cart at the vegetable section.",
+      "chunked_text": "I put carrots and onions | in the cart | at the vegetable section."
+    },
+    {
+      "sentence_order": 6,
+      "english_text": "I need milk, so I go to the dairy section.",
+      "chunked_text": "I need milk, | so I go | to the dairy section."
+    },
+    {
+      "sentence_order": 7,
+      "english_text": "I stop by the bakery section to buy bread.",
+      "chunked_text": "I stop by the bakery section | to buy bread."
+    },
+    {
+      "sentence_order": 8,
+      "english_text": "I pay with cash at the checkout counter.",
+      "chunked_text": "I pay with cash | at the checkout counter."
+    },
+    {
+      "sentence_order": 9,
+      "english_text": "The clerk gives me the receipt and says thank you.",
+      "chunked_text": "The clerk | gives me the receipt | and says thank you."
+    },
+    {
+      "sentence_order": 10,
+      "english_text": "I finish grocery shopping and go home.",
+      "chunked_text": "I finish grocery shopping | and go home."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "오늘",
+        "마트",
+        "장보기"
+      ],
+      "target_sentence": "Today I go to the grocery store to shop.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "쇼핑 리스트",
+        "만들어서",
+        "가져가기"
+      ],
+      "target_sentence": "I make a shopping list and take it with me.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "마트 들어가서",
+        "쇼핑 카트",
+        "가져오기"
+      ],
+      "target_sentence": "I enter the store and get a shopping cart.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "먼저",
+        "과일 코너",
+        "신선한 사과"
+      ],
+      "target_sentence": "First, I go to the fruit section and pick fresh apples.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "야채 코너",
+        "당근과 양파",
+        "담기"
+      ],
+      "target_sentence": "I put carrots and onions in the cart at the vegetable section.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "우유 필요",
+        "냉장 코너"
+      ],
+      "target_sentence": "I need milk, so I go to the dairy section.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "빵 사기",
+        "베이커리"
+      ],
+      "target_sentence": "I stop by the bakery section to buy bread.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 8,
+      "keywords": [
+        "계산대",
+        "현금 결제"
+      ],
+      "target_sentence": "I pay with cash at the checkout counter.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 9,
+      "keywords": [
+        "직원",
+        "영수증",
+        "감사 인사"
+      ],
+      "target_sentence": "The clerk gives me the receipt and says thank you.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 10,
+      "keywords": [
+        "장보기 마치고",
+        "집으로"
+      ],
+      "target_sentence": "I finish grocery shopping and go home.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "마트",
+        "장보기"
+      ],
+      "target_sentence": "Today I go to the grocery store to shop.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "리스트",
+        "가져가기"
+      ],
+      "target_sentence": "I make a shopping list and take it with me.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "카트 가져오기"
+      ],
+      "target_sentence": "I enter the store and get a shopping cart.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "과일",
+        "사과"
+      ],
+      "target_sentence": "First, I go to the fruit section and pick fresh apples.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 15,
+      "keywords": [
+        "야채",
+        "당근",
+        "양파"
+      ],
+      "target_sentence": "I put carrots and onions in the cart at the vegetable section.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 16,
+      "keywords": [
+        "우유",
+        "냉장 코너"
+      ],
+      "target_sentence": "I need milk, so I go to the dairy section.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 17,
+      "keywords": [
+        "빵",
+        "베이커리"
+      ],
+      "target_sentence": "I stop by the bakery section to buy bread.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 18,
+      "keywords": [
+        "현금 결제"
+      ],
+      "target_sentence": "I pay with cash at the checkout counter.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 19,
+      "keywords": [
+        "영수증",
+        "감사"
+      ],
+      "target_sentence": "The clerk gives me the receipt and says thank you.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 20,
+      "keywords": [
+        "집으로"
+      ],
+      "target_sentence": "I finish grocery shopping and go home.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "마트"
+      ],
+      "target_sentence": "Today I go to the grocery store to shop.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 22,
+      "keywords": [
+        "리스트"
+      ],
+      "target_sentence": "I make a shopping list and take it with me.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 23,
+      "keywords": [
+        "카트"
+      ],
+      "target_sentence": "I enter the store and get a shopping cart.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 24,
+      "keywords": [
+        "사과"
+      ],
+      "target_sentence": "First, I go to the fruit section and pick fresh apples.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 25,
+      "keywords": [
+        "야채"
+      ],
+      "target_sentence": "I put carrots and onions in the cart at the vegetable section.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 26,
+      "keywords": [
+        "우유"
+      ],
+      "target_sentence": "I need milk, so I go to the dairy section.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 27,
+      "keywords": [
+        "빵"
+      ],
+      "target_sentence": "I stop by the bakery section to buy bread.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 28,
+      "keywords": [
+        "결제"
+      ],
+      "target_sentence": "I pay with cash at the checkout counter.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 29,
+      "keywords": [
+        "영수증"
+      ],
+      "target_sentence": "The clerk gives me the receipt and says thank you.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 30,
+      "keywords": [
+        "집"
+      ],
+      "target_sentence": "I finish grocery shopping and go home.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 31,
+      "keywords": [
+        "store"
+      ],
+      "target_sentence": "Today I go to the grocery store to shop.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 32,
+      "keywords": [
+        "list"
+      ],
+      "target_sentence": "I make a shopping list and take it with me.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 33,
+      "keywords": [
+        "cart"
+      ],
+      "target_sentence": "I enter the store and get a shopping cart.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 34,
+      "keywords": [
+        "apples"
+      ],
+      "target_sentence": "First, I go to the fruit section and pick fresh apples.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 35,
+      "keywords": [
+        "vegetables"
+      ],
+      "target_sentence": "I put carrots and onions in the cart at the vegetable section.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 36,
+      "keywords": [
+        "milk"
+      ],
+      "target_sentence": "I need milk, so I go to the dairy section.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 37,
+      "keywords": [
+        "bread"
+      ],
+      "target_sentence": "I stop by the bakery section to buy bread.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 38,
+      "keywords": [
+        "pay"
+      ],
+      "target_sentence": "I pay with cash at the checkout counter.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 39,
+      "keywords": [
+        "receipt"
+      ],
+      "target_sentence": "The clerk gives me the receipt and says thank you.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 40,
+      "keywords": [
+        "home"
+      ],
+      "target_sentence": "I finish grocery shopping and go home.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "쇼핑 리스트",
+      "english_phrase": "shopping list"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "쇼핑 카트",
+      "english_phrase": "shopping cart"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "신선한 사과",
+      "english_phrase": "fresh apples"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "당근과 양파",
+      "english_phrase": "carrots and onions"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "냉장 코너",
+      "english_phrase": "dairy section"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "베이커리",
+      "english_phrase": "bakery section"
+    },
+    {
+      "sentence_order": 8,
+      "korean_phrase": "현금으로 결제",
+      "english_phrase": "pay with cash"
+    },
+    {
+      "sentence_order": 9,
+      "korean_phrase": "영수증을 주며",
+      "english_phrase": "gives me the receipt"
+    },
+    {
+      "sentence_order": 10,
+      "korean_phrase": "장보기를 마치고",
+      "english_phrase": "finish grocery shopping"
+    }
+  ]
+}
