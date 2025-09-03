@@ -81,9 +81,12 @@ export function AuthProvider({
 
 		if (error) {
 			console.error("로그아웃 실패:", error.message);
-		} else {
-			router.push("/");
+			// Auth session missing 등의 경우 query client만 초기화
+			queryClient.setQueryData(["user"], null);
+			queryClient.clear();
 		}
+		
+		router.push("/");
 	};
 
 	const deleteAccount = async () => {

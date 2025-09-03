@@ -1,4 +1,5 @@
 import type { Session, User } from "@supabase/supabase-js";
+import { useQueryClient } from "@tanstack/react-query";
 import {
 	AppleAuthenticationScope,
 	signInAsync,
@@ -78,6 +79,8 @@ export const AuthProvider = ({ children }: PropsWithChildren) => {
 	const { data: user = null, isLoading } = useUser();
 	const [error, setError] = useState<AuthError | null>(null);
 
+	const queryClient = useQueryClient();
+
 	const [request, response, promptAsync] = useAuthRequest(config, discovery);
 	const [appleRequest, appleResponse, promptAppleAsync] = useAuthRequest(
 		appleConfig,
@@ -102,9 +105,15 @@ export const AuthProvider = ({ children }: PropsWithChildren) => {
 			const { error } = await supabase.auth.signOut();
 			if (error) {
 				console.error("로그아웃 실패:", error.message);
+				// Auth session missing 등의 경우 query client만 초기화
+				queryClient.setQueryData(["user"], null);
+				queryClient.clear();
 			}
 		} catch (err) {
 			console.error("로그아웃 중 오류:", err);
+			// 예외 발생 시에도 query client 초기화
+			queryClient.setQueryData(["user"], null);
+			queryClient.clear();
 		}
 	};
 
