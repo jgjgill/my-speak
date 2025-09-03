@@ -73,7 +73,7 @@ export function TopicCard({
 				{/* 하단 정보 영역 */}
 				<div className="flex items-center justify-between pt-3 border-t border-gray-100">
 					<div className="text-caption text-gray-500">
-						생성일: {new Date(topic.created_at).toLocaleDateString("ko-KR")}
+						{new Date(topic.created_at).toLocaleDateString("ko-KR")}
 					</div>
 
 					{/* 학습 진행 상태 */}
