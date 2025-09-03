@@ -107,6 +107,7 @@ const SimpleWebView = forwardRef<WebView, SimpleWebViewProps>(
 				<WebView
 					ref={ref}
 					source={{ uri: webViewUrl }}
+					userAgent="Mozilla/5.0 (Mobile; rv:1.0) MySpeak/1.0.0 ReactNative"
 					className="flex-1"
 					onLoad={() => {
 						console.log("WebView loaded:", webViewUrl);

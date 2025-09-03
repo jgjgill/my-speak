@@ -1,7 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
+import { isNativeWebView } from "./utils/platform";
 
-export default function Home() {
+export default async function Home() {
+	const isNativeApp = await isNativeWebView();
+
 	return (
 		<div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
 			{/* 히어로 섹션 */}
@@ -30,7 +33,9 @@ export default function Home() {
 
 					{/* 언어별 학습 카드 */}
 					<div className="mb-12">
-						<div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+						<div
+							className={`grid ${isNativeApp ? "grid-cols-1 max-w-2xl" : "md:grid-cols-2 max-w-4xl"} gap-6 mx-auto`}
+						>
 							{/* 영어 학습 */}
 							<Link href="/en/topics" className="topic-card group">
 								<div className="flex items-center mb-4">
@@ -62,35 +67,37 @@ export default function Home() {
 								</div>
 							</Link>
 
-							{/* 일본어 학습 (준비중) */}
-							{/* <div className="topic-card opacity-60 cursor-not-allowed">
-								<div className="flex items-center mb-4">
-									<div className="w-12 h-12 rounded-full bg-gray-400 flex items-center justify-center text-white font-bold text-lg mr-4">
-										JP
+							{/* 일본어 학습 (준비중) - 웹에서만 표시 */}
+							{!isNativeApp && (
+								<div className="topic-card opacity-60 cursor-not-allowed">
+									<div className="flex items-center mb-4">
+										<div className="w-12 h-12 rounded-full bg-gray-400 flex items-center justify-center text-white font-bold text-lg mr-4">
+											JP
+										</div>
+										<div>
+											<h3 className="text-heading font-semibold text-korean">
+												일본어 (Japanese)
+											</h3>
+										</div>
 									</div>
-									<div>
-										<h3 className="text-heading font-semibold text-korean">
-											일본어 (Japanese)
-										</h3>
-									</div>
-								</div>
 
-								<div className="flex items-center text-gray-400 font-medium">
-									<span>곧 출시 예정</span>
-									<svg
-										className="w-4 h-4 ml-2"
-										fill="currentColor"
-										viewBox="0 0 20 20"
-									>
-										<title>준비중 아이콘</title>
-										<path
-											fillRule="evenodd"
-											d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
-											clipRule="evenodd"
-										/>
-									</svg>
+									<div className="flex items-center text-gray-400 font-medium">
+										<span>곧 출시 예정</span>
+										<svg
+											className="w-4 h-4 ml-2"
+											fill="currentColor"
+											viewBox="0 0 20 20"
+										>
+											<title>준비중 아이콘</title>
+											<path
+												fillRule="evenodd"
+												d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+												clipRule="evenodd"
+											/>
+										</svg>
+									</div>
 								</div>
-							</div> */}
+							)}
 						</div>
 					</div>
 				</div>
