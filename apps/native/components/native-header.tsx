@@ -30,6 +30,14 @@ export default function NativeHeader({
 		}
 	};
 
+	const handleLogoPress = () => {
+		if (new URL(currentUrl).pathname === "/") {
+			return;
+		}
+
+		router.replace("/");
+	};
+
 	return (
 		<View className="flex-row items-center justify-between px-4 py-3 bg-white border-b border-gray-200 h-14">
 			{/* 좌측: 뒤로가기 버튼 */}
@@ -55,10 +63,7 @@ export default function NativeHeader({
 			</View>
 
 			<View className="flex-2 items-center">
-				<TouchableOpacity
-					onPress={() => router.replace("/")}
-					activeOpacity={0.7}
-				>
+				<TouchableOpacity onPress={handleLogoPress} activeOpacity={0.7}>
 					<Text className="text-xl font-bold text-primary">My Speak</Text>
 				</TouchableOpacity>
 			</View>

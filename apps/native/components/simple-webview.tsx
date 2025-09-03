@@ -70,6 +70,7 @@ const SimpleWebView = forwardRef<WebView, SimpleWebViewProps>(
 		// 웹뷰 네비게이션 상태 변경 감지
 		const handleNavigationStateChange = (navState: WebViewNavigation) => {
 			const newUrl = navState.url;
+
 			if (onUrlChange) {
 				onUrlChange(newUrl);
 			}
