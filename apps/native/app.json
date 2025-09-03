@@ -1,11 +1,11 @@
 {
 	"expo": {
-		"name": "myspeak-native",
+		"name": "MySpeak",
 		"slug": "myspeak-native",
 		"version": "1.0.0",
 		"orientation": "portrait",
 		"icon": "./assets/images/icon.png",
-		"scheme": "myspeaknative",
+		"scheme": "myspeak",
 		"userInterfaceStyle": "automatic",
 		"newArchEnabled": true,
 		"ios": {
