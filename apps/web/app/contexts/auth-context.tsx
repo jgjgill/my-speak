@@ -85,7 +85,7 @@ export function AuthProvider({
 			queryClient.setQueryData(["user"], null);
 			queryClient.clear();
 		}
-		
+
 		router.push("/");
 	};
 

@@ -11,7 +11,9 @@ export default function TopicHeader({ topicId }: TopicHeaderProps) {
 
 	return (
 		<div className="mb-6">
-			<h1 className="text-heading font-semibold text-korean mb-3">{topic.title}</h1>
+			<h1 className="text-heading font-semibold text-korean mb-3">
+				{topic.title}
+			</h1>
 
 			<div className="flex flex-wrap gap-2 mb-3">
 				<span className="px-3 py-1 text-xs font-medium rounded-full bg-primary-light text-primary border border-primary-light">
@@ -33,7 +35,11 @@ export default function TopicHeader({ topicId }: TopicHeaderProps) {
 				</span>
 			</div>
 
-			{topic.description && <p className="text-body text-gray-700 mb-4 leading-relaxed">{topic.description}</p>}
+			{topic.description && (
+				<p className="text-body text-gray-700 mb-4 leading-relaxed">
+					{topic.description}
+				</p>
+			)}
 		</div>
 	);
 }

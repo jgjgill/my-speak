@@ -1,16 +1,16 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { ActivityIndicator, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import type { WebView } from "react-native-webview";
 import NativeHeader from "@/components/native-header";
 import SimpleWebView from "@/components/simple-webview";
 import { useAuth } from "@/context/auth";
+import { useWebViewRef } from "@/context/webview-context";
 import { useWebViewAudioRecorder } from "@/hooks/use-audio-recorder";
 import { getWebViewUrl } from "@/utils/webview-url";
 
 export default function Index() {
 	const { isLoading } = useAuth();
-	const webViewRef = useRef<WebView>(null);
+	const webViewRef = useWebViewRef();
 	const webViewUrl = getWebViewUrl();
 	const [currentUrl, setCurrentUrl] = useState(webViewUrl);
 
@@ -25,9 +25,8 @@ export default function Index() {
 
 	const handleWebViewBack = () => {
 		if (webViewRef.current) {
-			const goBackMessage = {
-				type: "GO_BACK",
-			};
+			const goBackMessage = { type: "GO_BACK" };
+			console.log(goBackMessage);
 			webViewRef.current.postMessage(JSON.stringify(goBackMessage));
 		}
 	};
@@ -86,8 +85,8 @@ export default function Index() {
 	return (
 		<SafeAreaView style={{ flex: 1, backgroundColor: "#FFFFFF" }}>
 			<NativeHeader currentUrl={currentUrl} onWebViewBack={handleWebViewBack} />
+
 			<SimpleWebView
-				ref={webViewRef}
 				onUrlChange={handleUrlChange}
 				onWebViewMessage={handleWebViewMessage}
 			/>

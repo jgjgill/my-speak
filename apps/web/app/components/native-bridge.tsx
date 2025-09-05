@@ -1,5 +1,6 @@
 "use client";
 
+import { useQueryClient } from "@tanstack/react-query";
 import { useEffect } from "react";
 import { createClient } from "../utils/supabase/client";
 
@@ -39,6 +40,8 @@ type NativeMessage =
 	| NativeGoBackMessage;
 
 export default function NativeBridge() {
+	const queryClient = useQueryClient();
+
 	useEffect(() => {
 		const handleNativeMessage = (event: Event) => {
 			const messageEvent = event as MessageEvent;
@@ -48,60 +51,47 @@ export default function NativeBridge() {
 				}
 
 				const message = JSON.parse(messageEvent.data) as NativeMessage;
-				console.log("✅ Received message from native app:", message);
 
 				if (message.type === "AUTH_DATA") {
-					console.log("📦 Auth data received from native:", message.user);
-					console.log("🔐 Session data received:", message.session);
-
 					if (message.session) {
 						const supabase = createClient();
+						alert("애플 로그인이 잘 되었을까..");
 
-						supabase.auth
-							.setSession({
+						const updateAuthSession = async () => {
+							if (!message.session) {
+								return null;
+							}
+
+							const { data } = await supabase.auth.setSession({
 								access_token: message.session.access_token,
 								refresh_token: message.session.refresh_token,
-							})
-							.then(({ data, error }) => {
-								if (error) {
-									console.error("❌ Failed to set Supabase session:", error);
-								} else {
-									console.log(
-										"✅ Supabase session set successfully in WebView",
-									);
-									console.log("👤 Authenticated user:", data.user?.email);
-
-									window.dispatchEvent(
-										new CustomEvent("supabaseSessionUpdated"),
-									);
-								}
 							});
+
+							return data;
+						};
+
+						updateAuthSession();
 					}
 				} else if (message.type === "LOGOUT") {
-					console.log("🚪 Logout message received from native");
+					queryClient.setQueryData(["user"], null);
+					queryClient.clear();
 
 					const supabase = createClient();
-					supabase.auth.signOut().then(({ error }) => {
-						if (error) {
-							console.error("❌ Failed to sign out in WebView:", error);
-						} else {
-							console.log("✅ WebView session cleared successfully");
 
-							window.dispatchEvent(new CustomEvent("supabaseSessionUpdated"));
-						}
+					supabase.auth.signOut().catch(() => {
+						console.log(
+							"Supabase signOut error ignored (session may already be cleared)",
+						);
 					});
 				} else if (message.type === "GO_BACK") {
-					console.log("⬅️ Go back message received from native");
-
-					// 브라우저 히스토리 뒤로가기
 					if (window.history.length > 1) {
 						window.history.back();
 					} else {
-						console.log("No history to go back to");
+						window.location.replace("/");
 					}
 				}
 			} catch (error) {
-				console.error("❌ Failed to parse native message:", error);
+				console.error("Failed to parse native message:", error);
 			}
 		};
 
@@ -110,11 +100,8 @@ export default function NativeBridge() {
 
 		const requestAuthFromNative = () => {
 			if (!window.ReactNativeWebView) {
-				console.log("📱 Not in WebView environment, skipping auth request");
 				return;
 			}
-
-			console.log("📱 Requesting auth from native app");
 
 			window.ReactNativeWebView.postMessage(
 				JSON.stringify({
@@ -123,14 +110,14 @@ export default function NativeBridge() {
 			);
 		};
 
-		const timer = setTimeout(requestAuthFromNative, 500);
+		const timer = setTimeout(requestAuthFromNative, 1000);
 
 		return () => {
 			document.removeEventListener("message", handleNativeMessage);
 			window.removeEventListener("message", handleNativeMessage);
 			clearTimeout(timer);
 		};
-	}, []);
+	}, [queryClient]);
 
 	return null;
 }
