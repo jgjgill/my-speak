@@ -2,360 +2,237 @@
 
 ## 개요
 
-웹앱과 네이티브앱 모두 Supabase + TanStack Query 기반의 통합 인증 시스템을 사용합니다. 웹앱은 서버 사이드 초기 인증 상태 판별을, 네이티브앱은 SecureStore 기반 세션 지속성을 제공합니다.
+웹앱과 네이티브앱 모두 Supabase + TanStack Query 기반의 통합 인증 시스템을 사용합니다.
 
-## 웹앱 아키텍처 구성도
+- **웹앱**: 서버 사이드 초기 인증 상태 판별 + WebView 브릿지 통신
+- **네이티브앱**: OAuth 인증 + WebView 세션 동기화 + 전역 WebView Context 관리
 
-```mermaid
-graph TD
-    A[사용자 요청] --> B[Layout 서버 컴포넌트]
-    B --> C[getCurrentUser 함수]
-    C --> D[Supabase Server Client]
-    D --> E{인증 상태}
-    
-    E -->|인증됨| F[User 객체 반환]
-    E -->|미인증| G[null 반환]
-    
-    F --> H[AuthProvider에 initialUser 전달]
-    G --> H
-    
-    H --> I[useUser 훅 - TanStack Query]
-    I --> J{AuthApiError?}
-    J -->|Refresh Token 에러| K[자동 세션 정리]
-    J -->|정상| L[AuthContext 상태 제공]
-    K --> L
-    
-    L --> M[AuthButton]
-    L --> N[기타 인증 의존 컴포넌트]
-    
-    subgraph "서버 사이드"
-        B
-        C
-        D
-        style B fill:#e1f5fe
-        style C fill:#e1f5fe
-        style D fill:#e1f5fe
-    end
-    
-    subgraph "클라이언트 사이드"
-        H
-        I
-        J
-        K
-        L
-        M
-        N
-        style H fill:#f3e5f5
-        style I fill:#f3e5f5
-        style J fill:#ffeb3b
-        style K fill:#ff9800
-        style L fill:#f3e5f5
-        style M fill:#f3e5f5
-        style N fill:#f3e5f5
-    end
-```
-
-## 네이티브앱 아키텍처 구성도
+## 네이티브-웹뷰 통합 아키텍처
 
 ```mermaid
-graph TD
-    A[사용자] --> B[AuthProvider]
-    B --> C{플랫폼}
-    C -->|iOS/Android| D[expo-auth-session]
-    C -->|Web| E[Supabase OAuth]
-    
-    D --> F[커스텀 OAuth 서버]
-    F --> G[Google 인증]
-    G --> H[토큰 교환 API]
-    H --> I[Supabase 세션 생성]
-    
-    E --> I
-    I --> J[SecureStore 저장]
-    J --> K{토큰 크기}
-    K -->|< 1900 bytes| L[단일 저장]
-    K -->|> 1900 bytes| M[청크 분할 저장]
-    
-    L --> N[useUser 훅]
-    M --> N
-    N --> O{AuthApiError?}
-    O -->|Refresh Token 에러| P[자동 세션 정리]
-    O -->|정상| Q[AuthContext 상태 제공]
-    P --> Q
-    
-    subgraph "OAuth 처리"
-        D
-        E
-        F
-        G
-        H
-        style D fill:#e8f5e8
-        style E fill:#e8f5e8
-        style F fill:#e8f5e8
-        style G fill:#e8f5e8
-        style H fill:#e8f5e8
+graph TB
+    subgraph "Native App"
+        A[AuthProvider] --> B[useAuthStateEffect]
+        B --> C[WebView Context]
+        C --> D[SimpleWebView]
+        D --> E[WebView Bridge]
     end
     
-    subgraph "저장소 관리"
-        J
-        K
-        L
-        M
-        style J fill:#fff3e0
-        style K fill:#fff3e0
-        style L fill:#fff3e0
-        style M fill:#fff3e0
+    subgraph "Web App (in WebView)"
+        F[NativeBridge] --> G[AuthProvider]
+        G --> H[TanStack Query]
+        H --> I[User State]
     end
     
-    subgraph "상태 관리"
-        N
-        O
-        P
-        Q
-        style N fill:#f3e5f5
-        style O fill:#ffeb3b
-        style P fill:#ff9800
-        style Q fill:#f3e5f5
-    end
+    E -->|AUTH_DATA, LOGOUT| F
+    F -->|REQUEST_AUTH| E
+    
+    style A fill:#e8f5e8
+    style B fill:#e8f5e8
+    style C fill:#fff3e0
+    style F fill:#f3e5f5
+    style G fill:#f3e5f5
 ```
 
 ## 핵심 구현 요소
 
-### 서버 사이드 인증 (`apps/web/app/utils/auth/server.ts`)
+### 1. 네이티브 앱 전역 WebView Context
+
+**파일**: `apps/native/context/webview-context.tsx`
 ```typescript
-export async function getCurrentUser(): Promise<User | null> {
-    const supabase = await createClient();
-    const { data: { user }, error } = await supabase.auth.getUser();
-    return error ? null : user;
+export function WebViewProvider({ children }: PropsWithChildren) {
+  const webViewRef = useRef<WebView>(null);
+  
+  return (
+    <WebViewContext.Provider value={{ webViewRef }}>
+      {children}
+    </WebViewContext.Provider>
+  );
 }
 ```
 
-### 2. TanStack Query 기반 사용자 상태 관리 (AuthApiError 처리 포함)
-
-**파일**: `apps/web/app/hooks/use-user.ts`
-
+**Provider 계층구조**: `apps/native/app/_layout.tsx`
 ```typescript
-import type { User } from "@supabase/supabase-js";
-import { useQuery } from "@tanstack/react-query";
-import { createClient } from "../utils/supabase/client";
-
-async function getUser(): Promise<User | null> {
-	try {
-		const supabase = createClient();
-		const { data, error } = await supabase.auth.getUser();
-
-		if (error) {
-			console.log("🚫 User authentication failed:", {
-				message: error.message,
-				status: error.status,
-				name: error.name
-			});
-			
-			// AuthApiError이고 refresh token 관련 에러인 경우 세션 정리
-			if (error.name === 'AuthApiError' && error.message.includes('refresh')) {
-				console.log("🔄 Refresh token error detected, clearing session...");
-				await supabase.auth.signOut();
-			}
-			
-			return null;
-		}
-		return data.user;
-	} catch (error) {
-		console.error("💥 Unexpected error in getUser:", {
-			error: error instanceof Error ? error.message : error,
-			stack: error instanceof Error ? error.stack : undefined
-		});
-		return null;
-	}
-}
-
-export function useUser(initialUser?: User | null) {
-	return useQuery({
-		queryKey: ["user"],
-		queryFn: getUser,
-		staleTime: 15 * 60 * 1000,     // 15분 캐시
-		gcTime: Infinity,              // 세션 동안 유지
-		initialData: initialUser,      // 서버 초기 데이터
-		retry: false,                  // 인증 실패시 재시도 안함
-	});
-}
+<WebViewProvider>
+  <AuthProvider>
+    {/* WebView Context가 Auth보다 상위에 위치 */}
+  </AuthProvider>
+</WebViewProvider>
 ```
 
-### 3. AuthProvider 컨텍스트
+### 2. 인증 상태 변경 시 자동 브릿지 통신
 
-**파일**: `apps/web/app/contexts/auth-context.tsx`
-
+**파일**: `apps/native/hooks/use-auth-state-effect.ts`
 ```typescript
-interface AuthContextType {
-	user: User | null;
-	isLoading: boolean;
-	signInWithGoogle: () => Promise<void>;
-	signOut: () => Promise<void>;
-}
+useEffect(() => {
+  const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event, session) => {
+    queryClient.setQueryData(["user"], session?.user ?? null);
 
-export function AuthProvider({
-	children,
-	initialUser = null,
-}: AuthProviderProps) {
-	const { data: user = null, isLoading } = useUser(initialUser);
-	const queryClient = useQueryClient();
-	const router = useRouter();
-	const supabase = createClient();
+    // 🔥 WebView 브릿지 통신 (네비게이션 전에 처리)
+    if (webViewRef.current) {
+      if (event === "SIGNED_IN" && session) {
+        const authData = {
+          type: "AUTH_DATA",
+          user: { id: session.user.id, email: session.user.email },
+          session: { access_token: session.access_token, refresh_token: session.refresh_token }
+        };
+        webViewRef.current.postMessage(JSON.stringify(authData));
+      } else if (event === "SIGNED_OUT") {
+        webViewRef.current.postMessage(JSON.stringify({ type: "LOGOUT" }));
+      }
+    }
 
-	useEffect(() => {
-		const {
-			data: { subscription },
-		} = supabase.auth.onAuthStateChange(async (_event, session) => {
-			queryClient.setQueryData(["user"], session?.user ?? null);
-		});
+    // 네비게이션 처리
+    if (event === "SIGNED_IN") {
+      if (Platform.OS === "ios") router.replace("/");
+    } else if (event === "SIGNED_OUT") {
+      queryClient.clear();
+      router.dismissAll();
+    }
+  });
 
-		return () => subscription.unsubscribe();
-	}, [supabase.auth, queryClient]);
-
-	const signInWithGoogle = async () => {
-		const { error } = await supabase.auth.signInWithOAuth({
-			provider: "google",
-			options: {
-				redirectTo: `${location.origin}/auth/callback`,
-			},
-		});
-
-		if (error) {
-			console.error("Google 로그인 실패:", error.message);
-		}
-	};
-
-	const signOut = async () => {
-		const { error } = await supabase.auth.signOut();
-
-		if (error) {
-			console.error("로그아웃 실패:", error.message);
-		} else {
-			router.push("/");
-		}
-	};
-
-	return (
-		<AuthContext.Provider value={{ user, isLoading, signInWithGoogle, signOut }}>
-			{children}
-		</AuthContext.Provider>
-	);
-}
+  return () => subscription.unsubscribe();
+}, [queryClient, webViewRef]);
 ```
 
-### Layout 컴포넌트 (`apps/web/app/layout.tsx`)
+### 3. 웹뷰에서 초기 인증 요청
+
+**파일**: `apps/native/components/simple-webview.tsx`
 ```typescript
-export default async function Layout({ children }: PropsWithChildren) {
-    const initialUser = await getCurrentUser();
+const sendAuthToWebView = useCallback(async () => {
+  if (ref && typeof ref === "object" && ref.current) {
+    if (user) {
+      // 로그인 상태: 세션 데이터 전송
+      const { data: { session } } = await supabase.auth.getSession();
+      const authData = {
+        type: "AUTH_DATA",
+        user: { id: user.id, email: user.email },
+        session: session ? { access_token: session.access_token, refresh_token: session.refresh_token } : null
+      };
+      ref.current.postMessage(JSON.stringify(authData));
+    } else {
+      // 비로그인 상태: LOGOUT 메시지 전송
+      ref.current.postMessage(JSON.stringify({ type: "LOGOUT" }));
+    }
+  }
+}, [user, ref]);
+
+// REQUEST_AUTH 메시지 처리
+const handleWebViewMessage = (event: WebViewMessageEvent) => {
+  const message = JSON.parse(event.nativeEvent.data);
+  if (message.type === "REQUEST_AUTH") {
+    sendAuthToWebView();
+  }
+};
+```
+
+### 4. 웹 앱 브릿지 메시지 처리
+
+**파일**: `apps/web/app/components/native-bridge.tsx`
+```typescript
+const handleNativeMessage = (event: Event) => {
+  const messageEvent = event as MessageEvent;
+  const message = JSON.parse(messageEvent.data);
+  
+  if (message.type === "AUTH_DATA") {
+    if (message.session) {
+      const supabase = createClient();
+      supabase.auth.setSession({
+        access_token: message.session.access_token,
+        refresh_token: message.session.refresh_token,
+      });
+    }
+  } else if (message.type === "LOGOUT") {
+    queryClient.setQueryData(["user"], null);
+    queryClient.clear();
     
-    return (
-        ...
-        <AuthProvider initialUser={initialUser}>
-            {children}
-        </AuthProvider>
-        ...
-    );
-}
+    const supabase = createClient();
+    supabase.auth.signOut().catch(() => {
+      console.log("Supabase signOut error ignored (session may already be cleared)");
+    });
+  }
+};
+
+// 웹뷰 로드 후 초기 인증 요청
+const requestAuthFromNative = () => {
+  if (window.ReactNativeWebView) {
+    window.ReactNativeWebView.postMessage(JSON.stringify({ type: "REQUEST_AUTH" }));
+  }
+};
 ```
 
 ## 인증 플로우
 
-### 초기 로딩
-
-```mermaid
-sequenceDiagram
-    participant Browser as 브라우저
-    participant Layout as Layout (서버)
-    participant Auth as AuthProvider
-    participant Query as TanStack Query
-
-    Browser->>Layout: 페이지 요청
-    Layout->>Layout: getCurrentUser()
-    Layout->>Auth: initialUser 전달
-    Auth->>Query: useUser(initialUser)
-    Query-->>Browser: 즉시 렌더링
-```
-
-### 로그인
+### 로그인 플로우
 
 ```mermaid
 sequenceDiagram
     participant User as 사용자
-    participant AuthButton as AuthButton
+    participant Native as 네이티브 앱
+    participant WebView as 웹뷰
     participant Supabase as Supabase
-    participant Google as Google OAuth
-
-    User->>AuthButton: "로그인" 클릭
-    AuthButton->>Supabase: signInWithOAuth()
-    Supabase->>Google: OAuth 리디렉션
-    Google->>User: 인증 페이지
-    User->>Google: 동의
-    Google->>Supabase: 콜백 처리
-    Supabase-->>AuthButton: onAuthStateChange
-    AuthButton-->>User: 로그인 완료
+    
+    User->>Native: 로그인 버튼 클릭
+    Native->>Supabase: OAuth 인증
+    Supabase-->>Native: 세션 생성
+    Native->>Native: useAuthStateEffect 트리거
+    Native->>WebView: AUTH_DATA 브릿지 메시지
+    WebView->>WebView: setSession() 호출
+    WebView-->>User: 로그인 상태 UI 업데이트
 ```
 
-### 로그아웃
+### 로그아웃 플로우
 
 ```mermaid
 sequenceDiagram
     participant User as 사용자
-    participant AuthButton as AuthButton
-    participant Supabase as Supabase
-    participant Query as TanStack Query
-    participant Router as Next.js Router
-
-    User->>AuthButton: "로그아웃" 클릭
-    AuthButton->>Supabase: signOut()
-    Supabase-->>Query: onAuthStateChange(null)
-    Query->>Query: setQueryData(["user"], null)
-    AuthButton->>Router: router.push("/")
-    Router-->>User: 메인 페이지로 이동
+    participant Native as 네이티브 앱
+    participant WebView as 웹뷰
+    
+    User->>Native: 로그아웃 버튼 클릭
+    Native->>Native: signOut() 호출
+    Native->>Native: useAuthStateEffect 트리거
+    Native->>WebView: LOGOUT 브릿지 메시지
+    WebView->>WebView: 캐시 정리 + signOut()
+    WebView-->>User: 비로그인 상태 UI 업데이트
+    Native-->>User: 로그인 페이지로 네비게이션
 ```
 
+## 에러 처리
 
-## 플랫폼별 이슈 및 해결책
+### AuthSessionMissingError 처리
 
-### 네이티브 앱 네비게이션 문제
+네이티브 앱과 웹뷰 모두에서 동일한 패턴으로 처리:
 
-#### 문제 상황
-- **iOS Apple 로그인**: 네이티브 모달 방식으로 진행되어 `router.dismissAll()` 시 "go_back was not handled" 에러 발생
-- **Android**: `router.replace("/")` 사용 시 화면 재렌더링으로 인한 깜빡임 발생
+```typescript
+// 즉시 캐시 정리 (UI 빠른 반응)
+queryClient.setQueryData(["user"], null);
+queryClient.clear();
 
-#### 해결책
-**파일**: `apps/native/hooks/use-auth-state-effect.ts`
+// 서버 로그아웃 시도 (실패해도 무시)
+supabase.auth.signOut().catch(() => {
+  console.log("Supabase signOut error ignored (session may already be cleared)");
+});
+```
+
+### 플랫폼별 네비게이션 처리
 
 ```typescript
 if (event === "SIGNED_IN") {
-    if (Platform.OS === "android") {
-        // 안드로이드: dismissAll로 깔끔한 스택 정리 (replace 시 깜빡임 발생)
-        router.dismissAll();
-    } else {
-        // iOS: Apple 로그인 모달 때문에 replace 사용 (dismissAll 시 네비게이션 에러)
-        router.replace("/");
-    }
+  if (Platform.OS === "ios") {
+    // iOS: Apple 로그인 모달 때문에 replace 사용
+    router.replace("/");
+  }
+} else if (event === "SIGNED_OUT") {
+  queryClient.clear();
+  router.dismissAll();
 }
 ```
 
-### 인증 세션 에러 처리
+## 주요 개선 사항
 
-#### 문제 상황
-- **AuthSessionMissingError**: 서버 로그아웃 실패 시 로컬 사용자 상태가 남아있음
-- **토큰 만료**: 네트워크 문제로 세션 갱신 실패 시 불일치 상태 발생
-
-#### 해결책
-**웹/네이티브 공통 처리**:
-
-```typescript
-const signOut = async () => {
-    const { error } = await supabase.auth.signOut();
-    
-    if (error) {
-        console.error("로그아웃 실패:", error.message);
-        // Auth session missing 등의 경우 query client만 초기화
-        queryClient.setQueryData(["user"], null);
-        queryClient.clear();
-    }
-    
-    // 로그아웃 완료 후 네비게이션 처리
-};
-```
+1. **중앙화된 브릿지 통신**: `useAuthStateEffect`에서 인증 상태 변경 시 자동으로 WebView와 동기화
+2. **전역 WebView Context**: 컴포넌트 간 WebView ref 공유로 일관된 통신
+3. **양방향 통신**: 네이티브↔웹뷰 간 REQUEST_AUTH, AUTH_DATA, LOGOUT 메시지 처리
+4. **에러 처리 강화**: AuthSessionMissingError 시 안전한 세션 정리
+5. **타이밍 이슈 해결**: 웹뷰 로드 후 초기 인증 상태 요청으로 동기화 보장
