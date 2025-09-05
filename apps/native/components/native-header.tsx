@@ -18,16 +18,11 @@ export default function NativeHeader({
 }: NativeHeaderProps) {
 	const { user } = useAuth();
 
-	// URL에 따라 웹뷰 뒤로가기 버튼 표시 여부 결정
 	const shouldShowWebViewBackButton =
 		currentUrl.includes("/topics/") || currentUrl.includes("/topics");
 
 	const handleProfilePress = () => {
-		if (user) {
-			router.push("/profile");
-		} else {
-			router.push("/login");
-		}
+		router.push(user ? "/profile" : "/login");
 	};
 
 	const handleLogoPress = () => {

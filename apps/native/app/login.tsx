@@ -9,7 +9,11 @@ export default function LoginPage() {
 	const { user, isLoading } = useAuth();
 
 	const handleBackPress = () => {
-		router.back();
+		if (router.canGoBack()) {
+			router.back();
+		} else {
+			router.navigate("/");
+		}
 	};
 
 	if (isLoading) {
@@ -21,7 +25,7 @@ export default function LoginPage() {
 	}
 
 	if (user) {
-		return null; // 이미 useEffect에서 리다이렉트 처리
+		return null;
 	}
 
 	return (
