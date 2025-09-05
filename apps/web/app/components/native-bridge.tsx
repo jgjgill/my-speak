@@ -110,7 +110,7 @@ export default function NativeBridge() {
 			);
 		};
 
-		const timer = setTimeout(requestAuthFromNative, 1000);
+		const timer = setTimeout(requestAuthFromNative, 500);
 
 		return () => {
 			document.removeEventListener("message", handleNativeMessage);
