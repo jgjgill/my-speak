@@ -34,132 +34,36 @@ graph TB
     style G fill:#f3e5f5
 ```
 
-## 핵심 구현 요소
+## 핵심 구현 패턴
 
-### 1. 네이티브 앱 전역 WebView Context
+### 중앙화된 브릿지 통신
 
-**파일**: `apps/native/context/webview-context.tsx`
+**`useAuthStateEffect`에서 인증 상태 변경 시 자동 처리**:
+
 ```typescript
-export function WebViewProvider({ children }: PropsWithChildren) {
-  const webViewRef = useRef<WebView>(null);
-  
-  return (
-    <WebViewContext.Provider value={{ webViewRef }}>
-      {children}
-    </WebViewContext.Provider>
-  );
+// 1. TanStack Query 업데이트
+queryClient.setQueryData(["user"], session?.user ?? null);
+
+// 2. WebView 브릿지 통신 (네비게이션 전)
+if (webViewRef.current) {
+  if (event === "SIGNED_IN" && session) {
+    webViewRef.current.postMessage(JSON.stringify({
+      type: "AUTH_DATA",
+      user: { id: session.user.id, email: session.user.email },
+      session: { access_token, refresh_token }
+    }));
+  } else if (event === "SIGNED_OUT") {
+    webViewRef.current.postMessage(JSON.stringify({ type: "LOGOUT" }));
+  }
 }
+
+// 3. 네비게이션 처리
 ```
 
-**Provider 계층구조**: `apps/native/app/_layout.tsx`
-```typescript
-<WebViewProvider>
-  <AuthProvider>
-    {/* WebView Context가 Auth보다 상위에 위치 */}
-  </AuthProvider>
-</WebViewProvider>
-```
+### 양방향 세션 동기화
 
-### 2. 인증 상태 변경 시 자동 브릿지 통신
-
-**파일**: `apps/native/hooks/use-auth-state-effect.ts`
-```typescript
-useEffect(() => {
-  const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event, session) => {
-    queryClient.setQueryData(["user"], session?.user ?? null);
-
-    // 🔥 WebView 브릿지 통신 (네비게이션 전에 처리)
-    if (webViewRef.current) {
-      if (event === "SIGNED_IN" && session) {
-        const authData = {
-          type: "AUTH_DATA",
-          user: { id: session.user.id, email: session.user.email },
-          session: { access_token: session.access_token, refresh_token: session.refresh_token }
-        };
-        webViewRef.current.postMessage(JSON.stringify(authData));
-      } else if (event === "SIGNED_OUT") {
-        webViewRef.current.postMessage(JSON.stringify({ type: "LOGOUT" }));
-      }
-    }
-
-    // 네비게이션 처리
-    if (event === "SIGNED_IN") {
-      if (Platform.OS === "ios") router.replace("/");
-    } else if (event === "SIGNED_OUT") {
-      queryClient.clear();
-      router.dismissAll();
-    }
-  });
-
-  return () => subscription.unsubscribe();
-}, [queryClient, webViewRef]);
-```
-
-### 3. 웹뷰에서 초기 인증 요청
-
-**파일**: `apps/native/components/simple-webview.tsx`
-```typescript
-const sendAuthToWebView = useCallback(async () => {
-  if (ref && typeof ref === "object" && ref.current) {
-    if (user) {
-      // 로그인 상태: 세션 데이터 전송
-      const { data: { session } } = await supabase.auth.getSession();
-      const authData = {
-        type: "AUTH_DATA",
-        user: { id: user.id, email: user.email },
-        session: session ? { access_token: session.access_token, refresh_token: session.refresh_token } : null
-      };
-      ref.current.postMessage(JSON.stringify(authData));
-    } else {
-      // 비로그인 상태: LOGOUT 메시지 전송
-      ref.current.postMessage(JSON.stringify({ type: "LOGOUT" }));
-    }
-  }
-}, [user, ref]);
-
-// REQUEST_AUTH 메시지 처리
-const handleWebViewMessage = (event: WebViewMessageEvent) => {
-  const message = JSON.parse(event.nativeEvent.data);
-  if (message.type === "REQUEST_AUTH") {
-    sendAuthToWebView();
-  }
-};
-```
-
-### 4. 웹 앱 브릿지 메시지 처리
-
-**파일**: `apps/web/app/components/native-bridge.tsx`
-```typescript
-const handleNativeMessage = (event: Event) => {
-  const messageEvent = event as MessageEvent;
-  const message = JSON.parse(messageEvent.data);
-  
-  if (message.type === "AUTH_DATA") {
-    if (message.session) {
-      const supabase = createClient();
-      supabase.auth.setSession({
-        access_token: message.session.access_token,
-        refresh_token: message.session.refresh_token,
-      });
-    }
-  } else if (message.type === "LOGOUT") {
-    queryClient.setQueryData(["user"], null);
-    queryClient.clear();
-    
-    const supabase = createClient();
-    supabase.auth.signOut().catch(() => {
-      console.log("Supabase signOut error ignored (session may already be cleared)");
-    });
-  }
-};
-
-// 웹뷰 로드 후 초기 인증 요청
-const requestAuthFromNative = () => {
-  if (window.ReactNativeWebView) {
-    window.ReactNativeWebView.postMessage(JSON.stringify({ type: "REQUEST_AUTH" }));
-  }
-};
-```
+**네이티브 → 웹**: 인증 상태 변경 시 자동 전송  
+**웹 → 네이티브**: 초기 로드 시 `REQUEST_AUTH` 요청
 
 ## 인증 플로우
 
@@ -198,24 +102,27 @@ sequenceDiagram
     Native-->>User: 로그인 페이지로 네비게이션
 ```
 
-## 에러 처리
+## 에러 처리 패턴
 
-### AuthSessionMissingError 처리
+### AuthSessionMissingError
 
-네이티브 앱과 웹뷰 모두에서 동일한 패턴으로 처리:
+서버에서 이미 세션이 만료되었거나 존재하지 않을 때 발생하는 에러입니다.
 
+**공통 처리 패턴**:
 ```typescript
-// 즉시 캐시 정리 (UI 빠른 반응)
+// 1. 즉시 캐시 정리 (UI 빠른 반응)
 queryClient.setQueryData(["user"], null);
 queryClient.clear();
 
-// 서버 로그아웃 시도 (실패해도 무시)
+// 2. 서버 로그아웃 시도 (실패해도 무시)
 supabase.auth.signOut().catch(() => {
   console.log("Supabase signOut error ignored (session may already be cleared)");
 });
 ```
 
-### 플랫폼별 네비게이션 처리
+### 플랫폼별 네비게이션
+
+iOS Apple 로그인과 Android에서 서로 다른 네비게이션 패턴을 사용합니다:
 
 ```typescript
 if (event === "SIGNED_IN") {
@@ -223,6 +130,7 @@ if (event === "SIGNED_IN") {
     // iOS: Apple 로그인 모달 때문에 replace 사용
     router.replace("/");
   }
+  // Android: dismissAll() 사용 (replace 시 깜빡임 발생)
 } else if (event === "SIGNED_OUT") {
   queryClient.clear();
   router.dismissAll();
@@ -231,8 +139,12 @@ if (event === "SIGNED_IN") {
 
 ## 주요 개선 사항
 
-1. **중앙화된 브릿지 통신**: `useAuthStateEffect`에서 인증 상태 변경 시 자동으로 WebView와 동기화
-2. **전역 WebView Context**: 컴포넌트 간 WebView ref 공유로 일관된 통신
-3. **양방향 통신**: 네이티브↔웹뷰 간 REQUEST_AUTH, AUTH_DATA, LOGOUT 메시지 처리
-4. **에러 처리 강화**: AuthSessionMissingError 시 안전한 세션 정리
-5. **타이밍 이슈 해결**: 웹뷰 로드 후 초기 인증 상태 요청으로 동기화 보장
+1. **🎯 중앙화된 브릿지 통신**: `useAuthStateEffect`에서 인증 상태 변경 시 자동으로 WebView와 동기화
+2. **🌐 전역 WebView Context**: 컴포넌트 간 WebView ref 공유로 일관된 통신
+3. **🔄 양방향 통신**: 네이티브↔웹뷰 간 REQUEST_AUTH, AUTH_DATA, LOGOUT 메시지 처리
+4. **🛡️ 에러 처리 강화**: AuthSessionMissingError 시 안전한 세션 정리
+5. **⏰ 타이밍 이슈 해결**: 웹뷰 로드 후 초기 인증 상태 요청으로 동기화 보장
+
+## 관련 문서
+
+- [WebView 연동 아키텍처](webview-integration-architecture.md) - 브릿지 통신과 WebView 구성 상세 정보
