@@ -50,9 +50,7 @@ export const metadata: Metadata = {
 			"한국어→외국어 번역과 키워드 스피치를 통한 4단계 학습 시스템으로 외국어 스피킹을 효과적으로 학습하세요.",
 		images: [
 			{
-				url: "/app-icon.png",
-				width: 512,
-				height: 512,
+				url: "/og-image.png",
 				alt: "My Speak 로고",
 			},
 		],
@@ -62,7 +60,7 @@ export const metadata: Metadata = {
 		title: "My Speak - 언어 학습 플랫폼",
 		description:
 			"한국어→외국어 번역과 키워드 스피치를 통한 4단계 학습 시스템으로 외국어 스피킹을 효과적으로 학습하세요.",
-		images: ["/app-icon.png"],
+		images: ["/og-image.png"],
 	},
 	robots: {
 		index: true,

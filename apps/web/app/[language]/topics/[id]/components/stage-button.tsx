@@ -44,9 +44,9 @@ export default function StageButton({
 				return {
 					bg: "bg-stage-3",
 					border: "border-stage-3",
-					shadow: "shadow-orange-200",
-					text: "text-orange-700",
-					textSecondary: "text-orange-600",
+					shadow: "shadow-pink-200",
+					text: "text-pink-700",
+					textSecondary: "text-pink-600",
 				};
 			case 4:
 				return {
