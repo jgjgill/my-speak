@@ -55,7 +55,8 @@ export default function NativeBridge() {
 				if (message.type === "AUTH_DATA") {
 					if (message.session) {
 						const supabase = createClient();
-						alert("애플 로그인이 잘 되었을까..");
+						// @test 임시 주석
+						// alert(`나는 세션: ${message.session.access_token}`);
 
 						const updateAuthSession = async () => {
 							if (!message.session) {

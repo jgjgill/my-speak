@@ -29,6 +29,11 @@ export default function TopicClientWrapper({
 		maxAvailableStage,
 	});
 
+	// @test 임시 주석
+	// useEffect(() => {
+	// 	alert(user?.email);
+	// }, [user]);
+
 	return (
 		<>
 			<StageNavigation
