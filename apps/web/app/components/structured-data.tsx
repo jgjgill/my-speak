@@ -25,6 +25,14 @@ export default function StructuredData() {
 					},
 					educationalLevel: "Beginner to Advanced",
 					teaches: "English Speaking",
+					hasCourseInstance: {
+						"@type": "CourseInstance",
+						courseMode: "온라인",
+						instructor: {
+							"@type": "EducationalOrganization",
+							name: "My Speak",
+						},
+					},
 				},
 			],
 		},
@@ -58,8 +66,11 @@ export default function StructuredData() {
 		operatingSystem: "Web Browser",
 		offers: {
 			"@type": "Offer",
+			name: "언어 스피킹 학습 서비스",
 			category: "Educational Service",
 			availability: "https://schema.org/InStock",
+			price: "0",
+			priceCurrency: "KRW",
 		},
 		featureList: [
 			"4단계 학습 시스템",
