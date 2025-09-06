@@ -1,0 +1,665 @@
+{
+  "topic": {
+    "title": "카페에서 음료 주문하기",
+    "category": "일상생활",
+    "difficulty": "초급",
+    "description": "카페에서 음료를 주문할 때 사용하는 기본적인 영어 표현과 대화를 학습합니다.",
+    "total_sentences": 12
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 무엇을 드릴까요?"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "저는 아이스 아메리카노 한 잔을 원합니다."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "사이즈는 어떻게 해드릴까요?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "미디엄 사이즈로 주세요."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "여기서 드실 건가요, 아니면 가져가실 건가요?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "가져갈게요."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "알겠습니다. 총 4,500원입니다."
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "카드로 결제 할게요."
+    },
+    {
+      "sentence_order": 9,
+      "korean_text": "네, 여기 카드 단말기 있습니다."
+    },
+    {
+      "sentence_order": 10,
+      "korean_text": "결제 완료됐습니다. 잠시만 기다려 주세요."
+    },
+    {
+      "sentence_order": 11,
+      "korean_text": "음료가 준비되면 불러드릴게요."
+    },
+    {
+      "sentence_order": 12,
+      "korean_text": "감사합니다."
+    }
+  ],
+  "english_scripts": [
+    {
+      "sentence_order": 1,
+      "english_text": "Hello, what can I get for you?",
+      "chunked_text": "Hello, | what can I get for you?"
+    },
+    {
+      "sentence_order": 2,
+      "english_text": "I would like one iced americano.",
+      "chunked_text": "I would like | one iced americano."
+    },
+    {
+      "sentence_order": 3,
+      "english_text": "What size would you like?",
+      "chunked_text": "What size | would you like?"
+    },
+    {
+      "sentence_order": 4,
+      "english_text": "Medium size, please.",
+      "chunked_text": "Medium size, | please."
+    },
+    {
+      "sentence_order": 5,
+      "english_text": "For here or to go?",
+      "chunked_text": "For here | or to go?"
+    },
+    {
+      "sentence_order": 6,
+      "english_text": "To go, please.",
+      "chunked_text": "To go, | please."
+    },
+    {
+      "sentence_order": 7,
+      "english_text": "Alright. That's 4,500 won total.",
+      "chunked_text": "Alright. | That's 4,500 won total."
+    },
+    {
+      "sentence_order": 8,
+      "english_text": "I'll pay by card.",
+      "chunked_text": "I'll pay | by card."
+    },
+    {
+      "sentence_order": 9,
+      "english_text": "Sure, here's the card reader.",
+      "chunked_text": "Sure, | here's the card reader."
+    },
+    {
+      "sentence_order": 10,
+      "english_text": "Payment is complete. Please wait a moment.",
+      "chunked_text": "Payment is complete. | Please wait a moment."
+    },
+    {
+      "sentence_order": 11,
+      "english_text": "I'll call you when your drink is ready.",
+      "chunked_text": "I'll call you | when your drink is ready."
+    },
+    {
+      "sentence_order": 12,
+      "english_text": "Thank you.",
+      "chunked_text": "Thank you."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "무엇을",
+        "드릴까요"
+      ],
+      "target_sentence": "Hello, what can I get for you?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "아이스 아메리카노",
+        "한 잔",
+        "원합니다"
+      ],
+      "target_sentence": "I would like one iced americano.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "사이즈는",
+        "어떻게"
+      ],
+      "target_sentence": "What size would you like?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "미디엄 사이즈",
+        "주세요"
+      ],
+      "target_sentence": "Medium size, please.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "여기서",
+        "아니면",
+        "가져가실"
+      ],
+      "target_sentence": "For here or to go?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "가져갈게요"
+      ],
+      "target_sentence": "To go, please.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "총",
+        "4",
+        "500원"
+      ],
+      "target_sentence": "That's 4,500 won total.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 8,
+      "keywords": [
+        "카드로",
+        "결제"
+      ],
+      "target_sentence": "I'll pay by card.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 9,
+      "keywords": [
+        "카드 단말기",
+        "있습니다"
+      ],
+      "target_sentence": "Here's the card reader.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 10,
+      "keywords": [
+        "결제 완료",
+        "잠시만 기다려"
+      ],
+      "target_sentence": "Payment is complete. Please wait a moment.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 11,
+      "keywords": [
+        "음료가 준비되면",
+        "불러드릴게요"
+      ],
+      "target_sentence": "I'll call you when your drink is ready.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 12,
+      "keywords": [
+        "감사합니다"
+      ],
+      "target_sentence": "Thank you.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "무엇을",
+        "드릴까요"
+      ],
+      "target_sentence": "What can I get for you?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "아이스 아메리카노",
+        "원합니다"
+      ],
+      "target_sentence": "I would like one iced americano.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 15,
+      "keywords": [
+        "사이즈는"
+      ],
+      "target_sentence": "What size would you like?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 16,
+      "keywords": [
+        "미디엄",
+        "주세요"
+      ],
+      "target_sentence": "Medium size, please.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 17,
+      "keywords": [
+        "가져가실"
+      ],
+      "target_sentence": "For here or to go?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 18,
+      "keywords": [
+        "가져갈게요"
+      ],
+      "target_sentence": "To go, please.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 19,
+      "keywords": [
+        "총 4",
+        "500원"
+      ],
+      "target_sentence": "That's 4,500 won total.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 20,
+      "keywords": [
+        "카드로"
+      ],
+      "target_sentence": "I'll pay by card.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 21,
+      "keywords": [
+        "카드 단말기"
+      ],
+      "target_sentence": "Here's the card reader.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 22,
+      "keywords": [
+        "완료",
+        "기다려"
+      ],
+      "target_sentence": "Payment is complete. Please wait a moment.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 23,
+      "keywords": [
+        "준비되면",
+        "불러드릴게요"
+      ],
+      "target_sentence": "I'll call you when your drink is ready.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 24,
+      "keywords": [
+        "감사합니다"
+      ],
+      "target_sentence": "Thank you.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 25,
+      "keywords": [
+        "무엇을"
+      ],
+      "target_sentence": "What can I get for you?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 26,
+      "keywords": [
+        "아메리카노"
+      ],
+      "target_sentence": "I would like one iced americano.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 27,
+      "keywords": [
+        "사이즈"
+      ],
+      "target_sentence": "What size would you like?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 28,
+      "keywords": [
+        "미디엄"
+      ],
+      "target_sentence": "Medium size, please.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 29,
+      "keywords": [
+        "가져가실"
+      ],
+      "target_sentence": "For here or to go?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 30,
+      "keywords": [
+        "가져갈게요"
+      ],
+      "target_sentence": "To go, please.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 31,
+      "keywords": [
+        "4",
+        "500원"
+      ],
+      "target_sentence": "That's 4,500 won total.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 32,
+      "keywords": [
+        "카드"
+      ],
+      "target_sentence": "I'll pay by card.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 33,
+      "keywords": [
+        "단말기"
+      ],
+      "target_sentence": "Here's the card reader.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 34,
+      "keywords": [
+        "완료"
+      ],
+      "target_sentence": "Payment is complete. Please wait a moment.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 35,
+      "keywords": [
+        "준비되면"
+      ],
+      "target_sentence": "I'll call you when your drink is ready.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 36,
+      "keywords": [
+        "감사합니다"
+      ],
+      "target_sentence": "Thank you.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 37,
+      "keywords": [
+        "get"
+      ],
+      "target_sentence": "What can I get for you?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 38,
+      "keywords": [
+        "americano"
+      ],
+      "target_sentence": "I would like one iced americano.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 39,
+      "keywords": [
+        "size"
+      ],
+      "target_sentence": "What size would you like?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 40,
+      "keywords": [
+        "medium"
+      ],
+      "target_sentence": "Medium size, please.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 41,
+      "keywords": [
+        "to go"
+      ],
+      "target_sentence": "For here or to go?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 42,
+      "keywords": [
+        "go"
+      ],
+      "target_sentence": "To go, please.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 43,
+      "keywords": [
+        "total"
+      ],
+      "target_sentence": "That's 4,500 won total.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 44,
+      "keywords": [
+        "card"
+      ],
+      "target_sentence": "I'll pay by card.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 45,
+      "keywords": [
+        "reader"
+      ],
+      "target_sentence": "Here's the card reader.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 46,
+      "keywords": [
+        "complete"
+      ],
+      "target_sentence": "Payment is complete. Please wait a moment.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 47,
+      "keywords": [
+        "ready"
+      ],
+      "target_sentence": "I'll call you when your drink is ready.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 48,
+      "keywords": [
+        "thank"
+      ],
+      "target_sentence": "Thank you.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "아이스 아메리카노 한 잔",
+      "english_phrase": "one iced americano"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "사이즈는 어떻게",
+      "english_phrase": "what size"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "미디엄 사이즈",
+      "english_phrase": "medium size"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "여기서 드실 건가요, 아니면 가져가실 건가요",
+      "english_phrase": "for here or to go"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "총 4,500원",
+      "english_phrase": "that's 4,500 won total"
+    },
+    {
+      "sentence_order": 8,
+      "korean_phrase": "카드로 결제",
+      "english_phrase": "pay by card"
+    },
+    {
+      "sentence_order": 10,
+      "korean_phrase": "잠시만 기다려 주세요",
+      "english_phrase": "please wait a moment"
+    },
+    {
+      "sentence_order": 11,
+      "korean_phrase": "음료가 준비되면",
+      "english_phrase": "when your drink is ready"
+    }
+  ]
+}
