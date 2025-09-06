@@ -79,7 +79,7 @@ export default function NativeBridge() {
 
 					const supabase = createClient();
 
-					supabase.auth.signOut().catch(() => {
+					supabase.auth.signOut({ scope: "local" }).catch(() => {
 						console.log(
 							"Supabase signOut error ignored (session may already be cleared)",
 						);

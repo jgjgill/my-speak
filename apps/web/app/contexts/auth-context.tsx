@@ -81,7 +81,7 @@ export function AuthProvider({
 		queryClient.setQueryData(["user"], null);
 		queryClient.clear();
 
-		supabase.auth.signOut().catch(() => {
+		supabase.auth.signOut({ scope: "local" }).catch(() => {
 			console.log(
 				"Supabase signOut error ignored (session may already be cleared)",
 			);
@@ -109,7 +109,7 @@ export function AuthProvider({
 			console.log("✅ Account deletion successful:", data.message);
 
 			// 로컬 세션 정리 후 홈으로 이동
-			await supabase.auth.signOut();
+			await supabase.auth.signOut({ scope: "local" });
 			router.push("/");
 		} catch (error) {
 			console.error("❌ Account deletion failed:", error);

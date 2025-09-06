@@ -115,7 +115,7 @@ queryClient.setQueryData(["user"], null);
 queryClient.clear();
 
 // 2. 서버 로그아웃 시도 (실패해도 무시)
-supabase.auth.signOut().catch(() => {
+supabase.auth.signOut({ scope: "local" }).catch(() => {
   console.log("Supabase signOut error ignored (session may already be cleared)");
 });
 ```
