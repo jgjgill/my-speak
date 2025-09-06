@@ -77,14 +77,15 @@ export function AuthProvider({
 	};
 
 	const signOut = async () => {
-		const { error } = await supabase.auth.signOut();
+		// 로그아웃 요청 시 즉시 캐시 정리 (UI 빠른 반응)
+		queryClient.setQueryData(["user"], null);
+		queryClient.clear();
 
-		if (error) {
-			console.error("로그아웃 실패:", error.message);
-			// Auth session missing 등의 경우 query client만 초기화
-			queryClient.setQueryData(["user"], null);
-			queryClient.clear();
-		}
+		supabase.auth.signOut().catch(() => {
+			console.log(
+				"Supabase signOut error ignored (session may already be cleared)",
+			);
+		});
 
 		router.push("/");
 	};
