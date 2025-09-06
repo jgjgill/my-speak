@@ -57,6 +57,16 @@
 				{
 					"microphonePermission": "마이크 접근 권한이 필요합니다. 음성 녹음 기능을 사용하기 위해 마이크를 허용해주세요."
 				}
+			],
+			[
+				"expo-build-properties",
+				{
+					"android": {
+						"enableProguardInReleaseBuilds": true,
+						"enableShrinkResourcesInReleaseBuilds": true,
+						"extraProguardRules": "-keep public class com.horcrux.svg.** {*;}"
+					}
+				}
 			]
 		],
 		"experiments": {
