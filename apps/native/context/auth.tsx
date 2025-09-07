@@ -105,7 +105,7 @@ export const AuthProvider = ({ children }: PropsWithChildren) => {
 		queryClient.setQueryData(["user"], null);
 		queryClient.clear();
 
-		supabase.auth.signOut({ scope: "local" }).catch(() => {
+		supabase.auth.signOut().catch(() => {
 			console.log(
 				"Supabase signOut error ignored (session may already be cleared)",
 			);
@@ -131,7 +131,7 @@ export const AuthProvider = ({ children }: PropsWithChildren) => {
 			console.log("✅ Account deletion successful:", data.message);
 
 			// 로컬 세션 정리
-			await supabase.auth.signOut({ scope: "local" });
+			await supabase.auth.signOut();
 		} catch (error) {
 			console.error("❌ Account deletion failed:", error);
 			throw error;

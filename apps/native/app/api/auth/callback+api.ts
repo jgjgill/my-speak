@@ -18,8 +18,10 @@ export async function GET(request: Request) {
 	});
 
 	return Response.redirect(
+		// OAuth 로딩 페이지로 리다이렉트하여 사용자에게 로딩 상태 표시
+		// oauth-loading 페이지에서 토큰 교환 및 인증 처리 수행
 		(platform === "web" ? BASE_URL : APP_SCHEME) +
-			"?" +
+			"/oauth-loading?" +
 			outgoingParams.toString(),
 		302,
 	);

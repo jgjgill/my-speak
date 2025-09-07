@@ -1,13 +1,13 @@
 import { useQueryClient } from "@tanstack/react-query";
-import { router } from "expo-router";
+import { router, usePathname } from "expo-router";
 import { useEffect } from "react";
-import { Platform } from "react-native";
 import { useWebViewRef } from "@/context/webview-context";
 import { supabase } from "@/utils/supabase/client";
 
 export function useAuthStateEffect() {
 	const queryClient = useQueryClient();
 	const webViewRef = useWebViewRef();
+	const pathname = usePathname();
 
 	useEffect(() => {
 		const {
@@ -42,8 +42,9 @@ export function useAuthStateEffect() {
 
 			// 인증 상태 변경 시 네비게이션 처리
 			if (event === "SIGNED_IN") {
-				if (Platform.OS === "ios") {
-					// iOS: Apple 로그인 모달 때문에 replace 사용
+				// oauth-loading 페이지에서는 직접 네비게이션 처리
+				// 다른 경우에만 자동 홈 이동
+				if (!pathname.includes("oauth-loading")) {
 					router.replace("/");
 				}
 			} else if (event === "SIGNED_OUT") {
@@ -53,5 +54,5 @@ export function useAuthStateEffect() {
 		});
 
 		return () => subscription.unsubscribe();
-	}, [queryClient, webViewRef]);
+	}, [queryClient, webViewRef, pathname]);
 }
