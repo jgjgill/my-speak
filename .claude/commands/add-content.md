@@ -117,11 +117,7 @@ pnpm run parse [생성된파일명].md
 
 ### 자동 커밋 메시지 형식
 ```
-feat: [생성된 문서 제목] 학습 콘텐츠 추가
-
-🤖 Generated with [Claude Code](https://claude.ai/code)
-
-Co-Authored-By: Claude <noreply@anthropic.com>
+content: [생성된 문서 제목]
 ```
 
 ## 품질 검증
