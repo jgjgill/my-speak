@@ -65,6 +65,12 @@ if (webViewRef.current) {
 **네이티브 → 웹**: 인증 상태 변경 시 자동 전송  
 **웹 → 네이티브**: 초기 로드 시 `REQUEST_AUTH` 요청
 
+### 브릿지 통신 안정성
+
+**재시도 메커니즘**: AUTH 요청 실패 시 1초 간격 3회 재시도
+
+**이중 캐시 정리**: NativeBridge와 AuthContext 양쪽에서 로그아웃 시 캐시 정리로 확실한 세션 종료
+
 ## 인증 플로우
 
 ### 로그인 플로우
@@ -115,27 +121,15 @@ queryClient.setQueryData(["user"], null);
 queryClient.clear();
 
 // 2. 서버 로그아웃 시도 (실패해도 무시)
-supabase.auth.signOut({ scope: "local" }).catch(() => {
+supabase.auth.signOut().catch(() => {
   console.log("Supabase signOut error ignored (session may already be cleared)");
 });
 ```
 
-### 플랫폼별 네비게이션
+### 네비게이션 패턴
 
-iOS Apple 로그인과 Android에서 서로 다른 네비게이션 패턴을 사용합니다:
-
-```typescript
-if (event === "SIGNED_IN") {
-  if (Platform.OS === "ios") {
-    // iOS: Apple 로그인 모달 때문에 replace 사용
-    router.replace("/");
-  }
-  // Android: dismissAll() 사용 (replace 시 깜빡임 발생)
-} else if (event === "SIGNED_OUT") {
-  queryClient.clear();
-  router.dismissAll();
-}
-```
+**로그인 후**: `router.replace("/")` - 루트 화면으로 이동  
+**로그아웃 후**: `router.dismissAll()` - 모든 스택 정리 후 깔끔한 초기화
 
 ## 주요 개선 사항
 
@@ -144,6 +138,9 @@ if (event === "SIGNED_IN") {
 3. **🔄 양방향 통신**: 네이티브↔웹뷰 간 REQUEST_AUTH, AUTH_DATA, LOGOUT 메시지 처리
 4. **🛡️ 에러 처리 강화**: AuthSessionMissingError 시 안전한 세션 정리
 5. **⏰ 타이밍 이슈 해결**: 웹뷰 로드 후 초기 인증 상태 요청으로 동기화 보장
+6. **🔄 재시도 메커니즘**: AUTH 요청 실패 시 3회 재시도로 안정성 향상 
+7. **🗑️ 완전한 세션 정리**: 로그아웃 시 네이티브와 웹뷰에서 이중 캐시 정리
+8. **📍 네비게이션 최적화**: 로그인 후 `router.replace("/")`, 로그아웃 후 `router.dismissAll()` 적용
 
 ## 관련 문서
 
