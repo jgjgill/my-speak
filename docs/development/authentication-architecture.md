@@ -73,22 +73,27 @@ if (webViewRef.current) {
 
 ## 인증 플로우
 
-### 로그인 플로우
+### OAuth 로그인 플로우 (로딩 화면 포함)
 
 ```mermaid
 sequenceDiagram
     participant User as 사용자
     participant Native as 네이티브 앱
+    participant OAuth as OAuth Provider
+    participant Callback as 콜백 API
+    participant Loading as OAuth 로딩 페이지
     participant WebView as 웹뷰
-    participant Supabase as Supabase
     
     User->>Native: 로그인 버튼 클릭
-    Native->>Supabase: OAuth 인증
-    Supabase-->>Native: 세션 생성
+    Native->>OAuth: OAuth 인증 요청
+    OAuth-->>Callback: 인증 완료 (code, state)
+    Callback->>Loading: 리다이렉트 (/oauth-loading)
+    Loading->>User: 로딩 UI 표시
+    Loading->>Native: 토큰 교환 처리
     Native->>Native: useAuthStateEffect 트리거
     Native->>WebView: AUTH_DATA 브릿지 메시지
-    WebView->>WebView: setSession() 호출
-    WebView-->>User: 로그인 상태 UI 업데이트
+    Loading->>User: "로그인 성공!" 표시
+    Loading->>Loading: 1.5초 후 홈 이동
 ```
 
 ### 로그아웃 플로우
@@ -131,6 +136,37 @@ supabase.auth.signOut().catch(() => {
 **로그인 후**: `router.replace("/")` - 루트 화면으로 이동  
 **로그아웃 후**: `router.dismissAll()` - 모든 스택 정리 후 깔끔한 초기화
 
+## OAuth 로딩 시스템
+
+### 구현 배경
+OAuth 인증 과정에서 사용자에게 명확한 진행 상태를 표시하여 사용자 경험 개선
+
+### 핵심 구성 요소
+
+```typescript
+// 1. 콜백 API 리다이렉트
+return Response.redirect(
+  (platform === "web" ? BASE_URL : APP_SCHEME) + 
+  "/oauth-loading?" + outgoingParams.toString(),
+  302
+);
+
+// 2. 조건부 네비게이션 (use-auth-state-effect.ts)
+if (event === "SIGNED_IN") {
+  if (!pathname.includes("oauth-loading")) {
+    router.replace("/");
+  }
+}
+
+// 3. 로딩 페이지에서 성공 후 네비게이션
+useEffect(() => {
+  if (user) {
+    setStatus("success");
+    setTimeout(() => router.replace("/"), 1500);
+  }
+}, [user, router]);
+```
+
 ## 주요 개선 사항
 
 1. **🎯 중앙화된 브릿지 통신**: `useAuthStateEffect`에서 인증 상태 변경 시 자동으로 WebView와 동기화
@@ -141,6 +177,7 @@ supabase.auth.signOut().catch(() => {
 6. **🔄 재시도 메커니즘**: AUTH 요청 실패 시 3회 재시도로 안정성 향상 
 7. **🗑️ 완전한 세션 정리**: 로그아웃 시 네이티브와 웹뷰에서 이중 캐시 정리
 8. **📍 네비게이션 최적화**: 로그인 후 `router.replace("/")`, 로그아웃 후 `router.dismissAll()` 적용
+9. **✨ OAuth 로딩 화면**: Google/Apple OAuth 모두 일관된 로딩 경험 제공
 
 ## 관련 문서
 
