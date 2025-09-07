@@ -41,16 +41,6 @@ export function AuthProvider({
 	const router = useRouter();
 	const supabase = createClient();
 
-	useEffect(() => {
-		const {
-			data: { subscription },
-		} = supabase.auth.onAuthStateChange(async (_event, session) => {
-			queryClient.setQueryData(["user"], session?.user ?? null);
-		});
-
-		return () => subscription.unsubscribe();
-	}, [supabase.auth, queryClient]);
-
 	const signInWithGoogle = async () => {
 		const { error } = await supabase.auth.signInWithOAuth({
 			provider: "google",
@@ -81,7 +71,7 @@ export function AuthProvider({
 		queryClient.setQueryData(["user"], null);
 		queryClient.clear();
 
-		supabase.auth.signOut({ scope: "local" }).catch(() => {
+		supabase.auth.signOut().catch(() => {
 			console.log(
 				"Supabase signOut error ignored (session may already be cleared)",
 			);
@@ -109,13 +99,29 @@ export function AuthProvider({
 			console.log("✅ Account deletion successful:", data.message);
 
 			// 로컬 세션 정리 후 홈으로 이동
-			await supabase.auth.signOut({ scope: "local" });
+			await supabase.auth.signOut();
 			router.push("/");
 		} catch (error) {
 			console.error("❌ Account deletion failed:", error);
 			throw error;
 		}
 	};
+
+	useEffect(() => {
+		const {
+			data: { subscription },
+		} = supabase.auth.onAuthStateChange(async (event, session) => {
+			if (event === "SIGNED_IN" && session) {
+				queryClient.setQueryData(["user"], session.user);
+			} else if (event === "SIGNED_OUT") {
+				// 쿼리 정리 (로그아웃 시)
+				queryClient.setQueryData(["user"], null); // 즉시 UI에 반영
+				queryClient.clear(); // 모든 캐시 정리
+			}
+		});
+
+		return () => subscription.unsubscribe();
+	}, [supabase.auth, queryClient]);
 
 	const value = {
 		user,

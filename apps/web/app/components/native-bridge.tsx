@@ -2,6 +2,7 @@
 
 import { useQueryClient } from "@tanstack/react-query";
 import { useEffect } from "react";
+import { isNativeWebViewClient } from "../utils/platform-client";
 import { createClient } from "../utils/supabase/client";
 
 declare global {
@@ -43,7 +44,7 @@ export default function NativeBridge() {
 	const queryClient = useQueryClient();
 
 	useEffect(() => {
-		const handleNativeMessage = (event: Event) => {
+		const handleNativeMessage = async (event: Event) => {
 			const messageEvent = event as MessageEvent;
 			try {
 				if (typeof messageEvent.data !== "string") {
@@ -71,15 +72,17 @@ export default function NativeBridge() {
 							return data;
 						};
 
-						updateAuthSession();
+						await updateAuthSession();
 					}
 				} else if (message.type === "LOGOUT") {
+					const supabase = createClient();
+
+					// 즉시 쿼리 정리 (UI 빠른 반응)
 					queryClient.setQueryData(["user"], null);
 					queryClient.clear();
 
-					const supabase = createClient();
-
-					supabase.auth.signOut({ scope: "local" }).catch(() => {
+					// Supabase 세션 정리
+					supabase.auth.signOut().catch(() => {
 						console.log(
 							"Supabase signOut error ignored (session may already be cleared)",
 						);
@@ -101,7 +104,7 @@ export default function NativeBridge() {
 
 		const requestAuthFromNative = () => {
 			if (!window.ReactNativeWebView) {
-				return;
+				return false; // 웹뷰 준비되지 않음
 			}
 
 			window.ReactNativeWebView.postMessage(
@@ -109,14 +112,32 @@ export default function NativeBridge() {
 					type: "REQUEST_AUTH",
 				}),
 			);
+			return true; // 요청 성공
 		};
 
-		const timer = setTimeout(requestAuthFromNative, 500);
+		// 3번까지 재시도하는 인터벌 방식
+		const maxRetries = 3;
+		let retryCount = 0;
+
+		const authRequestInterval = setInterval(() => {
+			const success = requestAuthFromNative();
+			retryCount++;
+
+			if (success) {
+				clearInterval(authRequestInterval);
+			} else if (retryCount >= maxRetries) {
+				clearInterval(authRequestInterval);
+
+				if (isNativeWebViewClient()) {
+					console.warn("서비스 연결에 문제가 있습니다. 앱을 재시작해 주세요.");
+				}
+			}
+		}, 1000);
 
 		return () => {
 			document.removeEventListener("message", handleNativeMessage);
 			window.removeEventListener("message", handleNativeMessage);
-			clearTimeout(timer);
+			clearInterval(authRequestInterval);
 		};
 	}, [queryClient]);
 

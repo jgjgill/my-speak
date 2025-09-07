@@ -17,7 +17,7 @@ async function getUser(): Promise<User | null> {
 			// AuthApiError이고 refresh token 관련 에러인 경우 세션 정리
 			if (error.name === "AuthApiError" && error.message.includes("refresh")) {
 				console.log("🔄 Refresh token error detected, clearing session...");
-				await supabase.auth.signOut({ scope: "local" });
+				await supabase.auth.signOut();
 			}
 
 			return null;
