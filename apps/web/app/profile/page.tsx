@@ -1,50 +1,10 @@
 "use client";
 
-import type { User } from "@supabase/supabase-js";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import { useAuth } from "../contexts/auth-context";
-
-export function getDisplayName(user: User): string {
-	if (user?.user_metadata?.full_name) {
-		return user.user_metadata.full_name;
-	}
-	if (user?.user_metadata?.name) {
-		return user.user_metadata.name;
-	}
-	if (user?.email) {
-		const emailPrefix = user.email.split("@")[0] ?? "";
-		return emailPrefix;
-	}
-	return "사용자";
-}
-
-function getInitials(name?: string): string {
-	if (!name) return "U";
-	return name
-		.split(" ")
-		.map((word) => word.charAt(0))
-		.join("")
-		.toUpperCase()
-		.slice(0, 2);
-}
-
-function getAvatarColor(name?: string): string {
-	if (!name) return "bg-blue-500";
-
-	const colors = [
-		"bg-blue-500",
-		"bg-green-500",
-		"bg-purple-500",
-		"bg-orange-500",
-		"bg-pink-500",
-		"bg-indigo-500",
-	];
-
-	const index = name.charCodeAt(0) % colors.length;
-	return colors[index] ?? "bg-blue-500";
-}
+import { getAvatarColor, getDisplayName, getInitials } from "./avatar.utils";
 
 export default function ProfilePage() {
 	const { user, signOut, deleteAccount } = useAuth();
@@ -89,7 +49,6 @@ export default function ProfilePage() {
 	return (
 		<div className="min-h-screen bg-gray-50">
 			<div className="max-w-2xl mx-auto px-4 py-8">
-				{/* 페이지 제목 */}
 				<div className="mb-8 text-center">
 					<h1 className="text-2xl font-bold text-gray-900 mb-2">프로필 설정</h1>
 					<p className="text-sm text-gray-600">
@@ -97,14 +56,12 @@ export default function ProfilePage() {
 					</p>
 				</div>
 
-				{/* 프로필 정보 섹션 */}
 				<div className="bg-white rounded-xl border border-gray-100 p-6 mb-6">
 					<h2 className="text-lg font-semibold text-gray-900 mb-6">
 						계정 정보
 					</h2>
 
 					<div className="flex items-start gap-6">
-						{/* 아바타 */}
 						<div className="flex-shrink-0">
 							{user.user_metadata?.avatar_url ? (
 								<Image
@@ -125,7 +82,6 @@ export default function ProfilePage() {
 							)}
 						</div>
 
-						{/* 사용자 정보 */}
 						<div className="flex-1">
 							<div className="space-y-3">
 								<div>
@@ -147,14 +103,12 @@ export default function ProfilePage() {
 					</div>
 				</div>
 
-				{/* 계정 관리 섹션 */}
 				<div className="bg-white rounded-xl border border-gray-100 p-6 mb-6">
 					<h3 className="text-lg font-semibold text-gray-900 mb-4">
 						계정 관리
 					</h3>
 
 					<div className="space-y-3">
-						{/* 로그아웃 버튼 */}
 						<button
 							type="button"
 							onClick={handleSignOut}
@@ -196,10 +150,8 @@ export default function ProfilePage() {
 							</svg>
 						</button>
 
-						{/* 구분선 */}
 						<div className="border-t border-gray-100 my-4" />
 
-						{/* 회원탈퇴 버튼 */}
 						<button
 							type="button"
 							onClick={handleDeleteAccount}
@@ -243,7 +195,6 @@ export default function ProfilePage() {
 					</div>
 				</div>
 
-				{/* 고객지원 섹션 */}
 				<div className="bg-white rounded-xl border border-gray-100 p-6">
 					<h3 className="text-lg font-semibold text-gray-900 mb-4">도움말</h3>
 
