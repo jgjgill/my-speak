@@ -1,5 +1,6 @@
 import { Ionicons } from "@expo/vector-icons";
-import { router } from "expo-router";
+import { router, useFocusEffect } from "expo-router";
+import { useCallback } from "react";
 import { ActivityIndicator, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import LoginForm from "@/components/login-form";
@@ -15,6 +16,16 @@ export default function LoginPage() {
 			router.navigate("/");
 		}
 	};
+
+	useFocusEffect(
+		useCallback(() => {
+			if (!user) {
+				return;
+			}
+
+			router.replace("/");
+		}, [user]),
+	);
 
 	if (isLoading) {
 		return (

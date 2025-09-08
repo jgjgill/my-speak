@@ -29,8 +29,9 @@ export default function OAuthLoading() {
 			console.log("✅ OAuth 인증 성공 감지");
 			setStatus("success");
 
-			// 성공 메시지 표시 후 홈으로 이동
+			// 성공 메시지 표시 후 홈으로 이동 (전체 스택 초기화)
 			setTimeout(() => {
+				router.dismissAll();
 				router.replace("/");
 			}, 1500);
 		}
