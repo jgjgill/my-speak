@@ -76,8 +76,6 @@ export function AuthProvider({
 				"Supabase signOut error ignored (session may already be cleared)",
 			);
 		});
-
-		router.push("/");
 	};
 
 	const deleteAccount = async () => {
@@ -114,9 +112,7 @@ export function AuthProvider({
 			if (event === "SIGNED_IN" && session) {
 				queryClient.setQueryData(["user"], session.user);
 			} else if (event === "SIGNED_OUT") {
-				// 쿼리 정리 (로그아웃 시)
 				queryClient.setQueryData(["user"], null); // 즉시 UI에 반영
-				queryClient.clear(); // 모든 캐시 정리
 			}
 		});
 

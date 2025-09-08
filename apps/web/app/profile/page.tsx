@@ -66,8 +66,8 @@ export default function ProfilePage() {
 
 	const handleSignOut = async () => {
 		if (window.confirm("로그아웃하시겠습니까?")) {
-			await signOut();
 			router.push("/");
+			await signOut();
 		}
 	};
 
