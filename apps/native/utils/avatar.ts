@@ -7,8 +7,9 @@ export function getDisplayName(user: User): string {
 	if (user?.user_metadata?.name) {
 		return user.user_metadata.name;
 	}
+
 	if (user?.email) {
-		const emailPrefix = user.email.split("@")[0];
+		const emailPrefix = user.email.split("@")[0] ?? "";
 		return emailPrefix;
 	}
 	return "사용자";
