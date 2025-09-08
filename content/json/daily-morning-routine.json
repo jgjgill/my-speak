@@ -1,0 +1,405 @@
+{
+  "topic": {
+    "id": "b9f4c3d6-5e7f-4b8c-9d0e-2f3e4d5c6b7a",
+    "title": "아침 일상 루틴",
+    "category": "일상생활",
+    "difficulty": "초급",
+    "description": "아침에 일어나서 하는 기본적인 일상 루틴을 영어로 표현하는 방법을 학습합니다.",
+    "total_sentences": 7
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "아침 6시에 일어났어요."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "먼저 양치를 했어요."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "그다음에 샤워를 했어요."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "간단한 아침식사를 준비했어요."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "토스트와 커피를 마셨어요."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "집을 나서기 전에 가방을 챙겼어요."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "오늘 좋은 하루 보내세요!"
+    }
+  ],
+  "english_scripts": [
+    {
+      "sentence_order": 1,
+      "english_text": "I woke up at 6 AM.",
+      "chunked_text": "I woke up | at 6 AM."
+    },
+    {
+      "sentence_order": 2,
+      "english_text": "I brushed my teeth first.",
+      "chunked_text": "I brushed | my teeth | first."
+    },
+    {
+      "sentence_order": 3,
+      "english_text": "Then I took a shower.",
+      "chunked_text": "Then | I took | a shower."
+    },
+    {
+      "sentence_order": 4,
+      "english_text": "I prepared a light breakfast.",
+      "chunked_text": "I prepared | a light breakfast."
+    },
+    {
+      "sentence_order": 5,
+      "english_text": "I had toast and coffee.",
+      "chunked_text": "I had | toast and coffee."
+    },
+    {
+      "sentence_order": 6,
+      "english_text": "Before leaving home, I packed my bag.",
+      "chunked_text": "Before leaving home, | I packed | my bag."
+    },
+    {
+      "sentence_order": 7,
+      "english_text": "Have a great day today!",
+      "chunked_text": "Have a great day | today!"
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "아침 6시",
+        "일어났다"
+      ],
+      "target_sentence": "I woke up at 6 AM.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "먼저",
+        "양치를 했다"
+      ],
+      "target_sentence": "I brushed my teeth first.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "그다음",
+        "샤워를 했다"
+      ],
+      "target_sentence": "Then I took a shower.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "간단한 아침식사",
+        "준비했다"
+      ],
+      "target_sentence": "I prepared a light breakfast.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "토스트와 커피",
+        "먹었다"
+      ],
+      "target_sentence": "I had toast and coffee.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "집 나서기 전에",
+        "가방 챙겼다"
+      ],
+      "target_sentence": "Before leaving home, I packed my bag.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "오늘",
+        "좋은 하루"
+      ],
+      "target_sentence": "Have a great day today!",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "6시",
+        "일어나기"
+      ],
+      "target_sentence": "I woke up at 6 AM.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "양치하기"
+      ],
+      "target_sentence": "I brushed my teeth first.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "샤워하기"
+      ],
+      "target_sentence": "Then I took a shower.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "아침식사 준비"
+      ],
+      "target_sentence": "I prepared a light breakfast.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "토스트",
+        "커피"
+      ],
+      "target_sentence": "I had toast and coffee.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "가방 챙기기"
+      ],
+      "target_sentence": "Before leaving home, I packed my bag.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "좋은 하루"
+      ],
+      "target_sentence": "Have a great day today!",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "일어나기"
+      ],
+      "target_sentence": "I woke up at 6 AM.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "양치"
+      ],
+      "target_sentence": "I brushed my teeth first.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "샤워"
+      ],
+      "target_sentence": "Then I took a shower.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "아침식사"
+      ],
+      "target_sentence": "I prepared a light breakfast.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "토스트"
+      ],
+      "target_sentence": "I had toast and coffee.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "가방"
+      ],
+      "target_sentence": "Before leaving home, I packed my bag.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "좋은 하루"
+      ],
+      "target_sentence": "Have a great day today!",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "wake up"
+      ],
+      "target_sentence": "I woke up at 6 AM.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "brush"
+      ],
+      "target_sentence": "I brushed my teeth first.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "shower"
+      ],
+      "target_sentence": "Then I took a shower.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "breakfast"
+      ],
+      "target_sentence": "I prepared a light breakfast.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "toast"
+      ],
+      "target_sentence": "I had toast and coffee.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "bag"
+      ],
+      "target_sentence": "Before leaving home, I packed my bag.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "great day"
+      ],
+      "target_sentence": "Have a great day today!",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 1,
+      "korean_phrase": "아침 6시에 일어났어요",
+      "english_phrase": "I woke up at 6 AM"
+    },
+    {
+      "sentence_order": 2,
+      "korean_phrase": "양치를 했어요",
+      "english_phrase": "I brushed my teeth first"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "샤워를 했어요",
+      "english_phrase": "then I took a shower"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "간단한 아침식사",
+      "english_phrase": "a light breakfast"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "토스트와 커피",
+      "english_phrase": "toast and coffee"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "집을 나서기 전에",
+      "english_phrase": "before leaving home"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "오늘 좋은 하루",
+      "english_phrase": "have a great day today"
+    }
+  ]
+}
