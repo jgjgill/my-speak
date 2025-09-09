@@ -573,5 +573,13 @@
       "korean_phrase": "장보기를 마치고",
       "english_phrase": "finish grocery shopping"
     }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 8,
+      "korean_text": "계산대에서 현금으로 결제합니다",
+      "english_text": "I pay with cash at the checkout counter",
+      "reason": "한국어로는 단순히 '현금으로 결제'라고 하지만 영어로는 checkout counter, pay with cash 등 구체적인 표현이 필요한 문장"
+    }
   ]
 }

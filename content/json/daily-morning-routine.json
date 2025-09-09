@@ -34,7 +34,7 @@
     },
     {
       "sentence_order": 7,
-      "korean_text": "오늘 좋은 하루 보내세요!"
+      "korean_text": "좋은 하루 보내세요!"
     }
   ],
   "english_scripts": [
@@ -70,8 +70,8 @@
     },
     {
       "sentence_order": 7,
-      "english_text": "Have a great day today!",
-      "chunked_text": "Have a great day | today!"
+      "english_text": "Have a great day!",
+      "chunked_text": "Have a great day!"
     }
   ],
   "keyword_speeches": [
@@ -149,7 +149,7 @@
         "오늘",
         "좋은 하루"
       ],
-      "target_sentence": "Have a great day today!",
+      "target_sentence": "Have a great day!",
       "difficulty_percentage": 70
     },
     {
@@ -221,7 +221,7 @@
       "keywords": [
         "좋은 하루"
       ],
-      "target_sentence": "Have a great day today!",
+      "target_sentence": "Have a great day!",
       "difficulty_percentage": 50
     },
     {
@@ -291,7 +291,7 @@
       "keywords": [
         "좋은 하루"
       ],
-      "target_sentence": "Have a great day today!",
+      "target_sentence": "Have a great day!",
       "difficulty_percentage": 30
     },
     {
@@ -361,45 +361,33 @@
       "keywords": [
         "great day"
       ],
-      "target_sentence": "Have a great day today!",
+      "target_sentence": "Have a great day!",
       "difficulty_percentage": 0
     }
   ],
   "learning_points": [
     {
-      "sentence_order": 1,
-      "korean_phrase": "아침 6시에 일어났어요",
-      "english_phrase": "I woke up at 6 AM"
-    },
-    {
-      "sentence_order": 2,
-      "korean_phrase": "양치를 했어요",
-      "english_phrase": "I brushed my teeth first"
-    },
-    {
-      "sentence_order": 3,
-      "korean_phrase": "샤워를 했어요",
-      "english_phrase": "then I took a shower"
-    },
-    {
       "sentence_order": 4,
-      "korean_phrase": "간단한 아침식사",
-      "english_phrase": "a light breakfast"
-    },
-    {
-      "sentence_order": 5,
-      "korean_phrase": "토스트와 커피",
-      "english_phrase": "toast and coffee"
+      "korean_phrase": "간단한 아침식사를 준비했어요",
+      "english_phrase": "I prepared a light breakfast"
     },
     {
       "sentence_order": 6,
       "korean_phrase": "집을 나서기 전에",
-      "english_phrase": "before leaving home"
+      "english_phrase": "Before leaving home"
     },
     {
       "sentence_order": 7,
-      "korean_phrase": "오늘 좋은 하루",
-      "english_phrase": "have a great day today"
+      "korean_phrase": "좋은 하루 보내세요",
+      "english_phrase": "Have a great day"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 6,
+      "korean_text": "집을 나서기 전에 가방을 챙겼어요",
+      "english_text": "Before leaving home, I packed my bag",
+      "reason": "한글로는 자연스럽지만 영어로는 Before -ing 구문을 정확히 알아야 하는 시간 관계 표현"
     }
   ]
 }
