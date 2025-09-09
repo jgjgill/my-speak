@@ -10,9 +10,13 @@
 	},
 	"scripts": {
 		"parse": "tsx src/cli.ts",
-		"parse:all": "tsx src/cli.ts all"
+		"parse:all": "tsx src/cli.ts all",
+		"test": "vitest",
+		"test:run": "vitest run",
+		"test:coverage": "vitest run --coverage"
 	},
 	"dependencies": {
+		"@fxts/core": "^1.15.0",
 		"@supabase/supabase-js": "^2.52.1",
 		"gray-matter": "^4.0.3",
 		"mdast-util-to-string": "^4.0.0",

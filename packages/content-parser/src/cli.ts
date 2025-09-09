@@ -2,7 +2,7 @@
 
 import { readdir } from "node:fs/promises";
 import { basename, extname, join } from "node:path";
-import { processMarkdownFile } from "./universal-parser.js";
+import { processMarkdownFile } from "./content-processor.js";
 
 const CONTENT_SOURCE_DIR = "../../content/source";
 const CONTENT_JSON_DIR = "../../content/json";
