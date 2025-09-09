@@ -176,7 +176,34 @@ const { error } = await supabase.from("user_selected_points").upsert({
 });
 ```
 
-### 9. user_translations (사용자 번역 저장)
+### 9. highlight_sentences (토픽별 핵심 문장)
+
+```sql
+CREATE TABLE highlight_sentences (
+  id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+  topic_id UUID REFERENCES topics(id) ON DELETE CASCADE,
+  sentence_order INTEGER NOT NULL,
+  korean_text TEXT NOT NULL,
+  english_text TEXT NOT NULL,
+  reason TEXT NOT NULL, -- 왜 이 문장이 핵심인지 설명
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT now(),
+  UNIQUE(topic_id) -- 토픽당 하나의 핵심 문장만
+);
+```
+
+**역할**: 각 토픽의 대표적인 핵심 문장을 관리합니다.
+- `sentence_order`: 해당 토픽에서 몇 번째 문장인지
+- `korean_text`: 핵심 한글 문장 
+- `english_text`: 대응하는 영어 문장
+- `reason`: 왜 이 문장이 핵심인지에 대한 설명 (학습자의 호기심 유발)
+
+**핵심 문장 선별 기준**:
+- 한글로는 매우 자연스럽고 쉬운 표현
+- 영어로는 특정 구문이나 패턴을 알아야 자연스럽게 표현 가능
+- 일상 회화에서 빈도가 높은 표현
+- "아, 이렇게 표현하는구나!" 하는 깨달음을 주는 문장
+
+### 10. user_translations (사용자 번역 저장)
 
 ```sql
 CREATE TABLE user_translations (
@@ -245,6 +272,7 @@ CREATE POLICY "content_parser_full_access" ON public.korean_scripts FOR ALL TO p
 CREATE POLICY "content_parser_full_access" ON public.english_scripts FOR ALL TO public USING (true) WITH CHECK (true);
 CREATE POLICY "content_parser_full_access" ON public.keyword_speeches FOR ALL TO public USING (true) WITH CHECK (true);
 CREATE POLICY "content_parser_full_access" ON public.learning_points FOR ALL TO public USING (true) WITH CHECK (true);
+CREATE POLICY "highlight_sentences_full_access" ON public.highlight_sentences FOR ALL TO public USING (true) WITH CHECK (true);
 ```
 
 ### 사용자 데이터 보호

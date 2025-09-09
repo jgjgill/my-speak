@@ -22,6 +22,7 @@ interface ParsedContent {
 	english_scripts: Omit<TablesInsert<"english_scripts">, "topic_id">[];
 	keyword_speeches: Omit<TablesInsert<"keyword_speeches">, "topic_id">[];
 	learning_points: Omit<TablesInsert<"learning_points">, "topic_id">[];
+	highlight_sentences: Omit<TablesInsert<"highlight_sentences">, "topic_id">[];
 }
 
 export async function parseMarkdownContent(
@@ -37,6 +38,7 @@ export async function parseMarkdownContent(
 	const english_scripts: ParsedContent["english_scripts"] = [];
 	const keyword_speeches: ParsedContent["keyword_speeches"] = [];
 	const learning_points: ParsedContent["learning_points"] = [];
+	const highlight_sentences: ParsedContent["highlight_sentences"] = [];
 
 	// 각 섹션을 분석하여 내용 추출
 	for (const section of sections) {
@@ -48,7 +50,11 @@ export async function parseMarkdownContent(
 			sectionTitle.includes("1단계") ||
 			sectionTitle.toLowerCase().includes("korean")
 		) {
-			parseKoreanScripts(lines, korean_scripts, learning_points);
+			parseKoreanScripts(
+				lines,
+				korean_scripts,
+				learning_points,
+			);
 		}
 
 		// 2단계: 영어 스크립트 파싱 (일반 버전)
@@ -65,6 +71,17 @@ export async function parseMarkdownContent(
 		if (sectionTitle.includes("4단계") || sectionTitle.includes("키워드")) {
 			parseKeywordSpeeches(lines, keyword_speeches);
 		}
+	}
+
+	// frontmatter에서 highlight_sentence 읽기
+	if (frontmatter.highlight_sentence) {
+		const highlight = frontmatter.highlight_sentence;
+		highlight_sentences.push({
+			sentence_order: highlight.sentence_order || 1,
+			korean_text: highlight.korean_text || "",
+			english_text: highlight.english_text || "",
+			reason: highlight.reason || "",
+		});
 	}
 
 	// UUID 검증 함수
@@ -98,6 +115,7 @@ export async function parseMarkdownContent(
 		english_scripts,
 		keyword_speeches,
 		learning_points,
+		highlight_sentences,
 	};
 }
 
@@ -343,6 +361,23 @@ export async function uploadToSupabase(data: ParsedContent) {
 
 			if (learningError) throw learningError;
 			console.log("Learning points inserted:", data.learning_points.length);
+		}
+
+		// 6. Highlight Sentences 삽입
+		if (data.highlight_sentences.length > 0) {
+			const highlightSentencesWithTopicId = data.highlight_sentences.map((highlight) => ({
+				...highlight,
+				topic_id: topicId,
+			}));
+
+			const { error: highlightError } = await supabase
+				.from("highlight_sentences")
+				.upsert(highlightSentencesWithTopicId, {
+					onConflict: "topic_id",
+				});
+
+			if (highlightError) throw highlightError;
+			console.log("Highlight sentences inserted:", data.highlight_sentences.length);
 		}
 
 		console.log("✅ All data uploaded successfully!");

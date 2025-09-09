@@ -7,7 +7,7 @@ export type Json =
   | Json[]
 
 export type Database = {
-  // Allows to automatically instanciate createClient with right options
+  // Allows to automatically instantiate createClient with right options
   // instead of createClient<Database, { PostgrestVersion: 'XX' }>(URL, KEY)
   __InternalSupabase: {
     PostgrestVersion: "12.2.12 (cd3cf9e)"
@@ -47,6 +47,44 @@ export type Database = {
             foreignKeyName: "english_scripts_topic_id_fkey"
             columns: ["topic_id"]
             isOneToOne: false
+            referencedRelation: "topics"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      highlight_sentences: {
+        Row: {
+          created_at: string | null
+          english_text: string
+          id: string
+          korean_text: string
+          reason: string
+          sentence_order: number
+          topic_id: string | null
+        }
+        Insert: {
+          created_at?: string | null
+          english_text: string
+          id?: string
+          korean_text: string
+          reason: string
+          sentence_order: number
+          topic_id?: string | null
+        }
+        Update: {
+          created_at?: string | null
+          english_text?: string
+          id?: string
+          korean_text?: string
+          reason?: string
+          sentence_order?: number
+          topic_id?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "highlight_sentences_topic_id_fkey"
+            columns: ["topic_id"]
+            isOneToOne: true
             referencedRelation: "topics"
             referencedColumns: ["id"]
           },

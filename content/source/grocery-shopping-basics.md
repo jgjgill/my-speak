@@ -4,6 +4,11 @@ title: "마트에서 장보기"
 category: "일상생활"
 difficulty: "초급"
 description: "마트에서 장을 볼 때 사용하는 기본적인 영어 표현들을 학습합니다. 물건 찾기, 가격 묻기, 계산하기 등 실용적인 쇼핑 영어를 익힙니다."
+highlight_sentence:
+  sentence_order: 8
+  korean_text: "계산대에서 현금으로 결제합니다"
+  english_text: "I pay with cash at the checkout counter"
+  reason: "한국어로는 단순히 '현금으로 결제'라고 하지만 영어로는 checkout counter, pay with cash 등 구체적인 표현이 필요한 문장"
 ---
 
 # 1단계: 한글 스크립트

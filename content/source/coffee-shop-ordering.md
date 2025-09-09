@@ -1,8 +1,14 @@
 ---
+topic_id: "1db759f7-f0ca-43f4-9a82-bd97a6b736d5"
 title: "카페에서 음료 주문하기"
 category: "일상생활"
 difficulty: "초급"
 description: "카페에서 음료를 주문할 때 사용하는 기본적인 영어 표현과 대화를 학습합니다."
+highlight_sentence:
+  sentence_order: 5
+  korean_text: "여기서 드실 건가요, 아니면 가져가실 건가요"
+  english_text: "For here or to go"
+  reason: "카페에서 반드시 듣는 질문이지만 영어로는 For here or to go라는 고정 표현을 모르면 막히는 문장"
 ---
 
 # 1단계: 한글 스크립트
