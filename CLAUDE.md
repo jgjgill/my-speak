@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## 프로젝트 개요
 
-언어 스피킹 학습 플랫폼 `my-speak`는 한→영 번역과 키워드 스피치를 통한 4단계 학습 시스템을 제공합니다. Turborepo 기반 모노레포 구조로 웹 앱과 네이티브 앱, 그리고 공유 패키지들을 관리합니다.
+언어 스피킹 학습 플랫폼 `my-speak`는 한→외국어 번역과 키워드 스피치를 통한 4단계 학습 시스템을 제공합니다. Turborepo 기반 모노레포 구조로 웹 앱과 네이티브 앱, 그리고 공유 패키지들을 관리합니다.
 
 ## 개발 환경
 
@@ -109,11 +109,32 @@ EXPO_PUBLIC_WEB_APP_URL=your_web_app_url  # 웹뷰에서 로드할 웹 앱 URL
 
 ### 콘텐츠 관리 시스템 (packages/content-parser/)
 
-[콘텐츠 제작 워크플로우](packages/content-parser/docs/content-creation-flow.md)
+콘텐츠 생성, 수정, 파싱 작업 시 **반드시** 다음 문서들을 참조해야 합니다:
 
-### 영어 스피킹 콘텐츠
+#### 필수 참조 문서
+- **[콘텐츠 제작 워크플로우](docs/content/content-creation-flow.md)**
+  - 마크다운 작성 규칙과 템플릿
+  - frontmatter 구조 (topic_id, highlight_sentence 등)
+  - 4단계 학습 시스템 구성 (1단계: 한글, 2단계: 영어/끊어읽기, 3단계: 자유연습, 4단계: 키워드 스피치)
+  - 파싱 및 DB 업로드 프로세스
 
-- [영어 스피킹 학습 시스템](docs/product/english-speak-content-system.md)
+- **[콘텐츠 자동 생성 명령어](.claude/commands/add-content.md)**
+  - `/add-content` 명령어 동작 방식
+  - 학습 포인트 선별 기준 (`**phrase**{translation}`)
+  - 키워드 스피치 4레벨 생성 규칙
+  - 자동 파싱 및 커밋 프로세스
+
+#### 콘텐츠 작업 프로세스
+1. 위 문서들을 숙지하고 현재 프로젝트 구성 파악
+2. 마크다운 작성 시 템플릿 구조 준수
+3. content-parser로 파싱 후 Supabase 업로드
+4. 변경사항 커밋 (커밋 규율 준수)
+
+### 외국어 학습 콘텐츠
+
+- [외국어 학습 콘텐츠 시스템](docs/content/foreign-language-content-system.md)
+
+---
 
 ## Supabase 연동
 

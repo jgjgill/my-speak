@@ -1,13 +1,13 @@
 영어 학습 콘텐츠를 자동으로 생성합니다.
 
-이 명령어를 실행하면 랜덤한 주제로 완전한 5단계 영어 학습 콘텐츠가 자동 생성됩니다.
+이 명령어를 실행하면 랜덤한 주제로 완전한 4단계 영어 학습 콘텐츠가 자동 생성됩니다.
 
 ## 작업 프로세스
 
 1. **랜덤 주제 선택**: 회화에 핵심적인 영어 표현이 포함된 실용적 상황 중 자동 선택
 2. **메타데이터 설정**: 카테고리, 난이도를 랜덤으로 설정  
 3. **파일명 생성**: 주제에 맞는 영어 slug 형식 파일명 생성
-4. **콘텐츠 생성**: @docs/content/content-creation-flow.md와 @docs/content/english-speak-content-system.md 기반으로 완전한 학습 콘텐츠 작성
+4. **콘텐츠 생성**: @docs/content/content-creation-flow.md 기반으로 완전한 4단계 학습 콘텐츠 작성
 5. **파일 저장**: @content/source/ 디렉토리에 마크다운 파일로 저장
 6. **파싱 실행**: content-parser로 마크다운을 JSON으로 변환 및 Supabase 업로드
 7. **커밋 생성**: 생성된 콘텐츠와 JSON 파일을 포함한 일관된 커밋 메시지 작성
@@ -94,7 +94,7 @@ description: "[주제에 맞는 설명]"
 - 자연스러운 대화 흐름 유지
 - 난이도에 맞는 어휘 선택
 - @docs/content/content-creation-flow.md 표준 형식 준수
-- @docs/content/english-speak-content-system.md의 4단계 학습 시스템 완전 구현
+- 4단계 학습 시스템 완전 구현 (한글→영어→끊어읽기→자유연습→키워드스피치)
 
 ## 자동 파싱 및 업로드
 
@@ -108,12 +108,13 @@ pnpm run parse [생성된파일명].md
 
 ### 처리 결과
 - **JSON 생성**: `@content/json/[파일명].json` 파일 자동 생성
-- **Supabase 업로드**: 5개 테이블에 데이터 자동 삽입
+- **Supabase 업로드**: 6개 테이블에 데이터 자동 삽입
   - `topics`: 주제 메타데이터
   - `korean_scripts`: 한글 스크립트
   - `english_scripts`: 영어 스크립트 + 끊어읽기
   - `keyword_speeches`: 4단계 키워드 스피치 (레벨 1-4)
   - `learning_points`: 학습 포인트 매핑
+  - `highlight_sentences`: 핵심 문장 (frontmatter에서 추출)
 
 ### 자동 커밋 메시지 형식
 ```
@@ -128,6 +129,7 @@ content: [생성된 문서 제목]
 - ✅ 한글/영어 스크립트 문장 수 일치
 - ✅ 학습 포인트 영어 표현 매칭
 - ✅ 키워드 스피치 4레벨 완성도
+- ✅ highlight_sentence frontmatter 구조 검증
 
 ### 생성 완료 확인
 - [ ] 마크다운 파일 생성 (`@content/source/`)
