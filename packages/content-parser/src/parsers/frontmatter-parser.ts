@@ -18,17 +18,24 @@ export function parseFrontmatter(fileContent: string): {
     return uuidRegex.test(uuid);
   }
 
-  // topic_id 검증 및 처리
+  // topic_id 필수 검증
   const topicId = frontmatter.topic_id;
-  const validTopicId = topicId && typeof topicId === "string" && isValidUUID(topicId) ? topicId : undefined;
-
-  if (topicId && !validTopicId) {
-    console.warn(`⚠️  Invalid UUID format: ${topicId}`);
+  
+  if (!topicId) {
+    throw new Error("topic_id is required in frontmatter");
+  }
+  
+  if (typeof topicId !== "string") {
+    throw new Error("topic_id must be a string");
+  }
+  
+  if (!isValidUUID(topicId)) {
+    throw new Error(`Invalid UUID format: ${topicId}`);
   }
 
   // topic 생성
   const topic: ParsedContent["topic"] = {
-    id: validTopicId,
+    id: topicId,
     title: frontmatter.title || "제목 없음",
     category: frontmatter.category || "기타",
     difficulty: frontmatter.difficulty || "초급",
