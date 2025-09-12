@@ -2,7 +2,7 @@ import { pipe } from "@fxts/core";
 import type {
 	KeywordSpeechLevel,
 	ParsedContent,
-} from "../types/content-types.js";
+} from "src/types/content-types";
 
 /**
  * 레벨 정보를 매핑하는 함수

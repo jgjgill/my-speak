@@ -1,8 +1,5 @@
 import { filter, pipe } from "@fxts/core";
-import type {
-	LearningPointMatch,
-	ParsedContent,
-} from "../types/content-types.js";
+import type { LearningPointMatch, ParsedContent } from "../types/content-types";
 
 /**
  * 학습 포인트를 추출합니다 (**phrase**{translation} 형태)
@@ -15,12 +12,12 @@ function extractLearningPoints(sentence: string): LearningPointMatch[] {
 
 	for (const match of allMatches) {
 		const koreanPhrase = match[1];
-		const englishPhrase = match[2];
+		const foreignPhrase = match[2];
 
-		if (koreanPhrase && englishPhrase) {
+		if (koreanPhrase && foreignPhrase) {
 			matches.push({
 				koreanPhrase,
-				englishPhrase,
+				foreignPhrase,
 				fullMatch: match[0],
 			});
 		}
@@ -76,7 +73,7 @@ export function parseKoreanScripts(lines: string[]): {
 				learning_points.push({
 					sentence_order: sentenceOrder,
 					korean_phrase: match.koreanPhrase,
-					english_phrase: match.englishPhrase,
+					foreign_phrase: match.foreignPhrase,
 				});
 			});
 

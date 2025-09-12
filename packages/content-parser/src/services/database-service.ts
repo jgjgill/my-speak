@@ -23,7 +23,7 @@ export async function uploadToSupabase(data: ParsedContent) {
 		// 2. 각 테이블에 데이터 업로드
 		await Promise.all([
 			uploadKoreanScripts(data.korean_scripts, topicId),
-			uploadEnglishScripts(data.english_scripts, topicId),
+			uploadForeignScripts(data.foreign_scripts, topicId),
 			uploadKeywordSpeeches(data.keyword_speeches, topicId),
 			uploadLearningPoints(data.learning_points, topicId),
 			uploadHighlightSentences(data.highlight_sentences, topicId),
@@ -76,10 +76,10 @@ async function uploadKoreanScripts(
 }
 
 /**
- * English Scripts를 업로드합니다.
+ * Foreign Scripts를 업로드합니다.
  */
-async function uploadEnglishScripts(
-	scripts: ParsedContent["english_scripts"],
+async function uploadForeignScripts(
+	scripts: ParsedContent["foreign_scripts"],
 	topicId: string,
 ) {
 	if (scripts.length === 0) return;
@@ -90,13 +90,13 @@ async function uploadEnglishScripts(
 	}));
 
 	const { error } = await supabase
-		.from("english_scripts")
+		.from("foreign_scripts")
 		.upsert(scriptsWithTopicId, {
 			onConflict: "topic_id,sentence_order",
 		});
 
 	if (error) throw error;
-	console.log("English scripts inserted:", scripts.length);
+	console.log("Foreign scripts inserted:", scripts.length);
 }
 
 /**

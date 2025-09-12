@@ -1,12 +1,12 @@
 import { filter, pipe } from "@fxts/core";
-import type { ParsedContent } from "../types/content-types.js";
+import type { ParsedContent } from "../types/content-types";
 
 /**
  * 영어 스크립트를 파싱합니다.
  */
-export function parseEnglishScripts(
+export function parseForeignScripts(
 	lines: string[],
-): ParsedContent["english_scripts"] {
+): ParsedContent["foreign_scripts"] {
 	const sentences = pipe(
 		lines,
 		(lines) => lines.slice(1), // 제목 제외
@@ -22,7 +22,7 @@ export function parseEnglishScripts(
 		.filter((sentence) => sentence.trim())
 		.map((sentence, index) => ({
 			sentence_order: index + 1,
-			english_text: sentence.trim(),
+			foreign_text: sentence.trim(),
 			chunked_text: sentence.trim(), // 기본값으로 동일하게 설정
 		}));
 }
@@ -32,7 +32,7 @@ export function parseEnglishScripts(
  */
 export function updateChunkedText(
 	lines: string[],
-	english_scripts: ParsedContent["english_scripts"],
+	foreign_scripts: ParsedContent["foreign_scripts"],
 ): void {
 	const sentences = pipe(
 		lines,
@@ -48,8 +48,8 @@ export function updateChunkedText(
 	sentencesArray
 		.filter((sentence) => sentence.trim())
 		.forEach((sentence, index) => {
-			if (english_scripts[index]) {
-				english_scripts[index].chunked_text = sentence.trim();
+			if (foreign_scripts[index]) {
+				foreign_scripts[index].chunked_text = sentence.trim();
 			}
 		});
 }

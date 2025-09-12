@@ -4,7 +4,7 @@ import type { TablesInsert } from "@repo/typescript-config/supabase-types";
 export interface ParsedContent {
   topic: TablesInsert<"topics">;
   korean_scripts: Omit<TablesInsert<"korean_scripts">, "topic_id">[];
-  english_scripts: Omit<TablesInsert<"english_scripts">, "topic_id">[];
+  foreign_scripts: Omit<TablesInsert<"foreign_scripts">, "topic_id">[];
   keyword_speeches: Omit<TablesInsert<"keyword_speeches">, "topic_id">[];
   learning_points: Omit<TablesInsert<"learning_points">, "topic_id">[];
   highlight_sentences: Omit<TablesInsert<"highlight_sentences">, "topic_id">[];
@@ -20,7 +20,7 @@ export interface ContentFrontmatter {
   highlight_sentence?: {
     sentence_order?: number;
     korean_text?: string;
-    english_text?: string;
+    foreign_text?: string;
     reason?: string;
   };
 }
@@ -35,7 +35,7 @@ export interface ContentSection {
 // 학습 포인트 매칭 결과
 export interface LearningPointMatch {
   koreanPhrase: string;
-  englishPhrase: string;
+  foreignPhrase: string;
   fullMatch: string;
 }
 

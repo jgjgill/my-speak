@@ -1,8 +1,8 @@
 import { pipe } from "@fxts/core";
 import {
-	parseEnglishScripts,
+	parseForeignScripts,
 	updateChunkedText,
-} from "./parsers/english-script-parser.js";
+} from "./parsers/foreign-script-parser.js";
 import { parseFrontmatter } from "./parsers/frontmatter-parser.js";
 import { parseKeywordSpeeches } from "./parsers/keyword-speech-parser.js";
 import { parseKoreanScripts } from "./parsers/korean-script-parser.js";
@@ -49,15 +49,15 @@ export function parseMarkdownContent(filePath: string): ParsedContent {
 		}
 
 		// 5. 영어 스크립트 파싱
-		let english_scripts: ParsedContent["english_scripts"] = [];
+		let foreign_scripts: ParsedContent["foreign_scripts"] = [];
 
 		if (englishSection) {
-			english_scripts = parseEnglishScripts(englishSection.lines);
+			foreign_scripts = parseForeignScripts(englishSection.lines);
 		}
 
 		// 6. 끊어읽기 텍스트 업데이트
-		if (chunkedSection && english_scripts.length > 0) {
-			updateChunkedText(chunkedSection.lines, english_scripts);
+		if (chunkedSection && foreign_scripts.length > 0) {
+			updateChunkedText(chunkedSection.lines, foreign_scripts);
 		}
 
 		// 7. 키워드 스피치 파싱
@@ -76,7 +76,7 @@ export function parseMarkdownContent(filePath: string): ParsedContent {
 		return {
 			topic: updatedTopic,
 			korean_scripts,
-			english_scripts,
+			foreign_scripts,
 			keyword_speeches,
 			learning_points,
 			highlight_sentences,

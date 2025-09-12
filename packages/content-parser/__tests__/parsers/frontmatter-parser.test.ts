@@ -29,7 +29,7 @@ describe("frontmatter-parser", () => {
 			expect(result.highlight_sentences[0]).toEqual({
 				sentence_order: 2,
 				korean_text: "이것은 테스트 문장입니다",
-				english_text: "This is a test sentence",
+				foreign_text: "This is a test sentence",
 				reason: "테스트용 핵심 문장입니다",
 			});
 		});

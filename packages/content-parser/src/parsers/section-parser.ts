@@ -1,5 +1,5 @@
 import { filter, find, pipe, some } from "@fxts/core";
-import type { ContentSection } from "../types/content-types.js";
+import type { ContentSection } from "../types/content-types";
 
 /**
  * 마크다운 콘텐츠를 섹션별로 분리합니다.
