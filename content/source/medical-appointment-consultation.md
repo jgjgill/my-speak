@@ -4,6 +4,7 @@ title: "병원 예약 및 진료 상담"
 category: "일상생활"
 difficulty: "중급"
 description: "병원 예약부터 진료 상담까지의 의료진과의 대화 상황을 학습합니다."
+language_code: "en"
 ---
 
 # 1단계: 한글 스크립트

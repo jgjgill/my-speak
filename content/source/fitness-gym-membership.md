@@ -4,6 +4,7 @@ title: "피트니스 센터 회원가입 상담"
 category: "일상생활"
 difficulty: "중급"
 description: "피트니스 센터에서 회원가입을 할 때 사용하는 실용적인 영어 표현들을 학습합니다."
+language_code: "en"
 ---
 
 # 1단계: 한글 스크립트

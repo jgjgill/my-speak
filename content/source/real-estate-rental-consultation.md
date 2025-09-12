@@ -4,6 +4,7 @@ title: "부동산 임대 상담 및 계약"
 category: "일상생활"
 difficulty: "중급"
 description: "부동산 임대 과정에서 필요한 상담, 조건 확인, 계약 관련 실용적 영어 표현을 학습합니다."
+language_code: "en"
 ---
 
 # 1단계: 한글 스크립트

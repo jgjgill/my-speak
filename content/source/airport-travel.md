@@ -4,6 +4,7 @@ title: "공항 및 여행 준비"
 category: "일상생활"
 difficulty: "중급"
 description: "해외여행 시 공항에서 필요한 실용적인 영어 표현들을 학습합니다."
+language_code: "en"
 ---
 
 # 1단계: 한글 스크립트

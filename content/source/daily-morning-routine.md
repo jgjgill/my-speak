@@ -4,6 +4,7 @@ title: "아침 일상 루틴"
 category: "일상생활"
 difficulty: "초급"
 description: "아침에 일어나서 하는 기본적인 일상 루틴을 영어로 표현하는 방법을 학습합니다."
+language_code: "en"
 highlight_sentence:
   sentence_order: 6
   korean_text: "집을 나서기 전에 가방을 챙겼어요"

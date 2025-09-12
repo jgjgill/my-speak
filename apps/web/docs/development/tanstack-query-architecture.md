@@ -38,7 +38,7 @@ hooks/
 ├── use-progress.ts                # 현재 보고 있는 단계 (클라이언트 상태) + 단계 완료
 ├── use-user-translations.ts       # 사용자 번역 데이터
 ├── use-stage-one-public-data.ts   # 1단계 공개 데이터 + 사용자 선택 포인트
-├── use-stage-two-data.ts          # 2단계 데이터 (영어 스크립트, 사용자 번역)
+├── use-stage-two-data.ts          # 2단계 데이터 (외국어 스크립트, 사용자 번역)
 ├── use-stage-three-data.ts        # 3단계 데이터 (읽기 연습)
 ├── use-stage-four-data.ts         # 4단계 데이터 (키워드 스피치)
 ├── use-guest-progress.ts          # 게스트 사용자 진행률 관리
@@ -342,7 +342,7 @@ export default function TopicClientWrapper({ topicId }) {
 export default function StageTwoContainer({ topicId, user }) {
   const { data: {
     koreanScripts,
-    englishScripts, 
+    foreignScripts, 
     learningPoints,
     userTranslations,
     userSelectedPoints,
@@ -399,6 +399,7 @@ const handleStageComplete = async () => {
 ### SSR에서 Prefetch할 데이터
 - **공개 데이터**: SEO에 필요한 콘텐츠
   - `korean-scripts`: 한글 스크립트 (검색엔진 크롤링)
+  - `foreign-scripts`: 외국어 스크립트 (콘텐츠 구조)
   - `learning-points`: 학습 포인트 (콘텐츠 구조)
   - `topic`: 주제 메타데이터 (페이지 제목, 설명)
 

@@ -2,7 +2,7 @@
 
 ## 개요
 
-영어 학습 4단계 시스템을 위한 Supabase 데이터베이스 설계 문서입니다.
+외국어 학습 4단계 시스템을 위한 Supabase 데이터베이스 설계 문서입니다.
 이 문서는 모노레포의 `@repo/typescript-config` 패키지에서 관리되며, 모든 앱에서 일관된 타입 정의를 사용할 수 있도록 합니다.
 
 
@@ -45,14 +45,14 @@ CREATE TABLE korean_scripts (
 - `sentence_order`: 문장 순서 (1부터 시작)
 - `korean_text`: 번역할 한글 문장
 
-### 3. english_scripts (2-3단계: 영어 번역 + 읽기 연습)
+### 3. foreign_scripts (2-3단계: 외국어 번역 + 읽기 연습)
 
 ```sql
-CREATE TABLE english_scripts (
+CREATE TABLE foreign_scripts (
   id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
   topic_id UUID REFERENCES topics(id) ON DELETE CASCADE,
   sentence_order INTEGER NOT NULL,
-  english_text TEXT NOT NULL,
+  foreign_text TEXT NOT NULL,
   chunked_text TEXT NOT NULL, -- 끊어읽기 버전 (| || 포함)
   grammar_notes TEXT, -- 문법 설명
   created_at TIMESTAMP WITH TIME ZONE DEFAULT timezone('utc'::text, now()) NOT NULL,
@@ -60,8 +60,8 @@ CREATE TABLE english_scripts (
 );
 ```
 
-**역할**: 2-3단계에서 사용할 영어 스크립트와 학습 자료를 저장합니다.
-- `english_text`: 완성된 영어 문장
+**역할**: 2-3단계에서 사용할 외국어 스크립트와 학습 자료를 저장합니다.
+- `foreign_text`: 완성된 외국어 문장
 - `chunked_text`: 끊어읽기 기호가 포함된 버전 (`|` = 짧은 pause, `||` = 긴 pause)
 - `grammar_notes`: 문법 설명 및 학습 포인트
 
@@ -135,7 +135,7 @@ CREATE TABLE learning_points (
   topic_id UUID REFERENCES topics(id) ON DELETE CASCADE,
   sentence_order INTEGER NOT NULL,
   korean_phrase TEXT NOT NULL,
-  english_phrase TEXT NOT NULL,
+  foreign_phrase TEXT NOT NULL,
   created_at TIMESTAMP WITH TIME ZONE DEFAULT now()
 );
 ```
@@ -143,7 +143,7 @@ CREATE TABLE learning_points (
 **역할**: 콘텐츠 제작자가 미리 선별한 학습 포인트를 저장합니다.
 - `sentence_order`: 해당 학습 포인트가 포함된 문장 순서
 - `korean_phrase`: 한글 핵심 표현
-- `english_phrase`: 대응하는 영어 표현 (영어 스크립트와 정확히 일치)
+- `foreign_phrase`: 대응하는 외국어 표현 (외국어 스크립트와 정확히 일치)
 
 ### 8. user_selected_points (사용자 선택 학습 포인트)
 
@@ -184,7 +184,7 @@ CREATE TABLE highlight_sentences (
   topic_id UUID REFERENCES topics(id) ON DELETE CASCADE,
   sentence_order INTEGER NOT NULL,
   korean_text TEXT NOT NULL,
-  english_text TEXT NOT NULL,
+  foreign_text TEXT NOT NULL,
   reason TEXT NOT NULL, -- 왜 이 문장이 핵심인지 설명
   created_at TIMESTAMP WITH TIME ZONE DEFAULT now(),
   UNIQUE(topic_id) -- 토픽당 하나의 핵심 문장만
@@ -194,12 +194,12 @@ CREATE TABLE highlight_sentences (
 **역할**: 각 토픽의 대표적인 핵심 문장을 관리합니다.
 - `sentence_order`: 해당 토픽에서 몇 번째 문장인지
 - `korean_text`: 핵심 한글 문장 
-- `english_text`: 대응하는 영어 문장
+- `foreign_text`: 대응하는 외국어 문장
 - `reason`: 왜 이 문장이 핵심인지에 대한 설명 (학습자의 호기심 유발)
 
 **핵심 문장 선별 기준**:
 - 한글로는 매우 자연스럽고 쉬운 표현
-- 영어로는 특정 구문이나 패턴을 알아야 자연스럽게 표현 가능
+- 외국어로는 특정 구문이나 패턴을 알아야 자연스럽게 표현 가능
 - 일상 회화에서 빈도가 높은 표현
 - "아, 이렇게 표현하는구나!" 하는 깨달음을 주는 문장
 
@@ -224,7 +224,7 @@ CREATE TABLE user_translations (
 - `user_id`: Supabase Auth 사용자 참조
 - `sentence_order`: 번역한 문장의 순서
 - `korean_text`: 원본 한글 문장
-- `user_translation`: 사용자가 입력한 영어 번역
+- `user_translation`: 사용자가 입력한 외국어 번역
 - `is_completed`: 번역 완료 여부 (1단계 토글 기능)
 - `updated_at`: 수정 시점 (트리거로 자동 업데이트)
 - **중복 방지**: 같은 사용자가 같은 문장을 중복 번역하지 않도록 제약
@@ -269,7 +269,7 @@ const { error } = await supabase.from("user_translations").upsert({
 -- 콘텐츠 테이블들에 대한 전체 접근 권한
 CREATE POLICY "content_parser_full_access" ON public.topics FOR ALL TO public USING (true) WITH CHECK (true);
 CREATE POLICY "content_parser_full_access" ON public.korean_scripts FOR ALL TO public USING (true) WITH CHECK (true);
-CREATE POLICY "content_parser_full_access" ON public.english_scripts FOR ALL TO public USING (true) WITH CHECK (true);
+CREATE POLICY "content_parser_full_access" ON public.foreign_scripts FOR ALL TO public USING (true) WITH CHECK (true);
 CREATE POLICY "content_parser_full_access" ON public.keyword_speeches FOR ALL TO public USING (true) WITH CHECK (true);
 CREATE POLICY "content_parser_full_access" ON public.learning_points FOR ALL TO public USING (true) WITH CHECK (true);
 CREATE POLICY "highlight_sentences_full_access" ON public.highlight_sentences FOR ALL TO public USING (true) WITH CHECK (true);
@@ -303,7 +303,7 @@ CREATE POLICY "Users can manage own progress" ON user_progress FOR ALL USING (au
 ```sql
 -- 성능 최적화를 위한 인덱스
 CREATE INDEX idx_korean_scripts_topic_order ON korean_scripts(topic_id, sentence_order);
-CREATE INDEX idx_english_scripts_topic_order ON english_scripts(topic_id, sentence_order);
+CREATE INDEX idx_foreign_scripts_topic_order ON foreign_scripts(topic_id, sentence_order);
 CREATE INDEX idx_keyword_speeches_topic_stage_level ON keyword_speeches(topic_id, stage, level, sequence_order);
 CREATE INDEX idx_user_progress_user_topic ON user_progress(user_id, topic_id);
 
@@ -332,9 +332,9 @@ topics 조회 → 단계별 데이터 로드 → 사용자 인터랙션 → prog
 ### 3. 단계별 데이터 사용
 
 - **1단계**: `topics` + `korean_scripts` + `learning_points` (사용자 선택 → `user_selected_points`)
-- **2단계**: `topics` + `korean_scripts` + `english_scripts` + `learning_points` (하이라이트 표시)
-- **3단계**: `topics` + `english_scripts` (chunked_text 활용) + `learning_points` (하이라이트)
-- **4단계**: `topics` + `korean_scripts` + `english_scripts` + `keyword_speeches` + `learning_points`
+- **2단계**: `topics` + `korean_scripts` + `foreign_scripts` + `learning_points` (하이라이트 표시)
+- **3단계**: `topics` + `foreign_scripts` (chunked_text 활용) + `learning_points` (하이라이트)
+- **4단계**: `topics` + `korean_scripts` + `foreign_scripts` + `keyword_speeches` + `learning_points`
 
 ### 4. 개인화 학습 플로우
 

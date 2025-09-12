@@ -4,6 +4,7 @@ title: "레스토랑 메뉴 상담 및 주문"
 category: "일상생활"
 difficulty: "중급"
 description: "레스토랑에서 메뉴 상담을 받고 주문하는 과정에서 사용하는 실용적인 표현들을 학습합니다."
+language_code: "en"
 ---
 
 # 1단계: 한글 스크립트

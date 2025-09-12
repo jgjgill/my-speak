@@ -4,6 +4,7 @@ title: "온라인 쇼핑 상담"
 category: "일상생활"
 difficulty: "중급"
 description: "온라인 쇼핑몰에서 상품 문의와 주문 과정에서 사용되는 실용적인 영어 표현들을 학습합니다."
+language_code: "en"
 ---
 
 # 1단계: 한글 스크립트

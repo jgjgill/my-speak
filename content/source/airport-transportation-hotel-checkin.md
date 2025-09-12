@@ -4,6 +4,7 @@ title: "공항 교통편 및 호텔 체크인"
 category: "일상생활"
 difficulty: "중급"
 description: "공항 도착 후 교통편 이용과 호텔 체크인 과정에서 필요한 실용적인 영어 표현들을 학습합니다."
+language_code: "en"
 ---
 
 # 1단계: 한글 스크립트

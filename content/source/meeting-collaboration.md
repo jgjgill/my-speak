@@ -4,6 +4,7 @@ title: "회의 및 협업"
 category: "업무/학업"
 difficulty: "중급"
 description: "업무 환경에서 자주 사용되는 회의 진행과 팀 협업 표현들을 학습합니다."
+language_code: "en"
 ---
 
 # 1단계: 한글 스크립트

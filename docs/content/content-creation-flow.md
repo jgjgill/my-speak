@@ -1,6 +1,6 @@
 # 콘텐츠 제작 워크플로우
 
-마크다운에서 Supabase 데이터베이스까지 영어 학습 콘텐츠 자동 변환 시스템
+마크다운에서 Supabase 데이터베이스까지 외국어 학습 콘텐츠 자동 변환 시스템
 
 ## 전체 플로우
 
@@ -32,7 +32,7 @@ description: "간단한 설명"
 highlight_sentence:
   sentence_order: 2
   korean_text: "핵심이 되는 한글 문장"
-  english_text: "Core English sentence"
+  foreign_text: "Core foreign sentence"
   reason: "이 문장이 핵심인 이유"
 ---
 
@@ -42,7 +42,7 @@ highlight_sentence:
 **중요한 표현**{important expression}을 포함한 두 번째 문장입니다.
 세 번째 문장입니다.
 
-# 2단계: 영어 스크립트
+# 2단계: 외국어 스크립트
 
 This is the first sentence.
 This is the second sentence with important expression.
@@ -78,7 +78,7 @@ This is | the third sentence.
 표현 → This is the second sentence with important expression.
 문장 → This is the third sentence.
 
-## 레벨 4: 영어 키워드
+## 레벨 4: 외국어 키워드
 
 first → This is the first sentence.
 expression → This is the second sentence with important expression.
@@ -87,7 +87,7 @@ sentence → This is the third sentence.
 
 ### 학습 포인트 표시법
 ```markdown
-**한글 핵심 표현**{corresponding english phrase}
+**한글 핵심 표현**{corresponding foreign phrase}
 ```
 
 ---
@@ -126,7 +126,7 @@ PUBLIC_SUPABASE_ANON_KEY=your-anon-key
     "total_sentences": 12
   },
   "korean_scripts": [...],
-  "english_scripts": [...],
+  "foreign_scripts": [...],
   "keyword_speeches": [...],
   "learning_points": [...],
   "highlight_sentences": [...]
@@ -136,7 +136,7 @@ PUBLIC_SUPABASE_ANON_KEY=your-anon-key
 ### 데이터베이스 테이블
 - `topics`: 주제 메타데이터
 - `korean_scripts`: 1단계 한글 스크립트
-- `english_scripts`: 2단계 영어 스크립트 + 끊어읽기
+- `foreign_scripts`: 2단계 외국어 스크립트 + 끊어읽기
 - `keyword_speeches`: 4단계 키워드 스피치 (레벨 1-4)
 - `learning_points`: 학습 포인트 (`**phrase**{translation}`)
 - `highlight_sentences`: 핵심 문장 (토픽별 1개)
@@ -150,12 +150,12 @@ PUBLIC_SUPABASE_ANON_KEY=your-anon-key
 - ✅ frontmatter 필수 필드 (title, category, difficulty)
 - ✅ highlight_sentence 구조
 - ✅ 4단계 섹션 존재 여부
-- ✅ 한글/영어 스크립트 문장 수 일치
+- ✅ 한글/외국어 스크립트 문장 수 일치
 - ✅ 키워드 스피치 레벨 1-4 완성도
 - ✅ 학습 포인트 `**phrase**{translation}` 형식
 
 ### 수동 검토
 - [ ] 한글 스크립트 자연스러움
-- [ ] 영어 번역 정확성
+- [ ] 외국어 번역 정확성
 - [ ] 끊어읽기 위치 적절성
 - [ ] 키워드 선택의 적절성

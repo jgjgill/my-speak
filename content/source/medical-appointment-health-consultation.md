@@ -4,6 +4,7 @@ title: "병원 예약과 건강 상담"
 category: "일상생활"
 difficulty: "중급"
 description: "병원 예약부터 증상 설명, 의료진과의 상담까지 의료 환경에서 필요한 영어 표현들을 학습합니다."
+language_code: "en"
 ---
 
 # 1단계: 한글 스크립트

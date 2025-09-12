@@ -4,6 +4,7 @@ title: "카페에서 음료 주문하기"
 category: "일상생활"
 difficulty: "초급"
 description: "카페에서 음료를 주문할 때 사용하는 기본적인 영어 표현과 대화를 학습합니다."
+language_code: "en"
 highlight_sentence:
   sentence_order: 5
   korean_text: "여기서 드실 건가요, 아니면 가져가실 건가요"

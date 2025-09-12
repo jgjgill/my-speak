@@ -4,6 +4,7 @@ title: "호텔 체크인 및 서비스 요청"
 category: "일상생활"
 difficulty: "중급"
 description: "호텔 체크인부터 다양한 서비스 요청까지 여행 중 필요한 실용적 표현들을 학습합니다."
+language_code: "en"
 ---
 
 # 1단계: 한글 스크립트

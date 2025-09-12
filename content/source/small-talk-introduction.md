@@ -4,6 +4,7 @@ title: "처음 만난 사람과 스몰 토크하기"
 category: "스몰 토크"
 difficulty: "초급"
 description: "처음 만난 사람과 인사, 자기소개, 간단한 질문으로 대화를 이어가는 스몰 토크 학습 콘텐츠"
+language_code: "en"
 highlight_sentence:
   sentence_order: 2
   korean_text: "이름이 어떻게 되세요?"
