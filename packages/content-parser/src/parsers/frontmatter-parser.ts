@@ -41,6 +41,7 @@ export function parseFrontmatter(fileContent: string): {
 		category: frontmatter.category || "기타",
 		difficulty: frontmatter.difficulty || "초급",
 		description: frontmatter.description,
+		language_code: frontmatter.language_code || "en", // 기본값은 영어
 		total_sentences: 0, // 나중에 업데이트됨
 	};
 

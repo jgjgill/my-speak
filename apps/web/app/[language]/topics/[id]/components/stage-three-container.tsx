@@ -21,7 +21,7 @@ export default function StageThreeContainer({
 
 	const [
 		{ data: koreanScripts },
-		{ data: englishScripts },
+		{ data: foreignScripts },
 		{ data: learningPoints },
 		{ data: userSelectedPoints },
 	] = useStageThreePublicData(topicId, user);
@@ -67,7 +67,7 @@ export default function StageThreeContainer({
 								답안 보기
 							</summary>
 							<p className="mt-2 p-2 bg-gray-100">
-								{englishScripts[index]?.chunked_text}
+								{foreignScripts[index]?.chunked_text}
 							</p>
 						</details>
 					</div>

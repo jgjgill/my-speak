@@ -30,7 +30,7 @@ export function parseMarkdownContent(filePath: string): ParsedContent {
 
 		// 3. 각 섹션 파싱
 		const koreanSection = findSection(["1단계", "korean"])(sections);
-		const englishSection = findSection(["2단계"])(sections)?.lines.some(
+		const foreignSection = findSection(["2단계"])(sections)?.lines.some(
 			(line) => !line.includes("끊어읽기"),
 		)
 			? findSection(["2단계"])(sections)
@@ -51,8 +51,8 @@ export function parseMarkdownContent(filePath: string): ParsedContent {
 		// 5. 영어 스크립트 파싱
 		let foreign_scripts: ParsedContent["foreign_scripts"] = [];
 
-		if (englishSection) {
-			foreign_scripts = parseForeignScripts(englishSection.lines);
+		if (foreignSection) {
+			foreign_scripts = parseForeignScripts(foreignSection.lines);
 		}
 
 		// 6. 끊어읽기 텍스트 업데이트

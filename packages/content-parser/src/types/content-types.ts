@@ -17,6 +17,7 @@ export interface ContentFrontmatter {
   category?: string;
   difficulty?: string;
   description?: string;
+  language_code?: string;
   highlight_sentence?: {
     sentence_order?: number;
     korean_text?: string;

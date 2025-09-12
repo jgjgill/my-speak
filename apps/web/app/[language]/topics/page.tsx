@@ -67,8 +67,9 @@ export default async function TopicsPage({ params }: TopicsPageProps) {
 	const queryClient = new QueryClient();
 
 	await queryClient.prefetchInfiniteQuery({
-		queryKey: ["topics", "infinite", {}],
-		queryFn: ({ pageParam = 0 }) => getTopics({ page: pageParam }, supabase),
+		queryKey: ["topics", "infinite", { language }],
+		queryFn: ({ pageParam = 0 }) =>
+			getTopics({ page: pageParam, languageCode: language }, supabase),
 		initialPageParam: 0,
 	});
 

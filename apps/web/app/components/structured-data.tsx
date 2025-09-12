@@ -13,18 +13,18 @@ export default function StructuredData() {
 		educationalCredentialAwarded: "Language Learning Certificate",
 		hasOfferCatalog: {
 			"@type": "OfferCatalog",
-			name: "Language Learning Programs",
+			name: "Foreign Speaking Programs",
 			itemListElement: [
 				{
 					"@type": "Course",
-					name: "언어 스피킹 학습",
-					description: "4단계 학습 시스템을 통한 언어 스피킹 향상",
+					name: "외국어 스피킹 학습",
+					description: "4단계 학습 시스템을 통한 외국어 스피킹 향상",
 					provider: {
 						"@type": "EducationalOrganization",
 						name: "My Speak",
 					},
 					educationalLevel: "Beginner to Advanced",
-					teaches: "English Speaking",
+					teaches: ["English Speaking", "Japanese Speaking"],
 					hasCourseInstance: {
 						"@type": "CourseInstance",
 						courseMode: "온라인",
@@ -39,7 +39,7 @@ export default function StructuredData() {
 		contactPoint: {
 			"@type": "ContactPoint",
 			contactType: "Customer Service",
-			availableLanguage: ["Korean", "English"],
+			availableLanguage: ["Korean", "English", "Japanese"],
 		},
 	};
 
@@ -66,7 +66,7 @@ export default function StructuredData() {
 		operatingSystem: "Web Browser",
 		offers: {
 			"@type": "Offer",
-			name: "언어 스피킹 학습 서비스",
+			name: "외국어 스피킹 학습 서비스",
 			category: "Educational Service",
 			availability: "https://schema.org/InStock",
 			price: "0",
@@ -74,7 +74,9 @@ export default function StructuredData() {
 		},
 		featureList: [
 			"4단계 학습 시스템",
+			"외국어 스피킹 지원",
 			"음성 인식 기반 스피킹 연습",
+			"키워드 기반 자유 표현 학습",
 			"개인별 맞춤 학습",
 			"진도 추적",
 		],

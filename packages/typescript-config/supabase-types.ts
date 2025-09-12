@@ -14,44 +14,6 @@ export type Database = {
   }
   public: {
     Tables: {
-      english_scripts: {
-        Row: {
-          chunked_text: string
-          created_at: string
-          english_text: string
-          grammar_notes: string | null
-          id: string
-          sentence_order: number
-          topic_id: string | null
-        }
-        Insert: {
-          chunked_text: string
-          created_at?: string
-          english_text: string
-          grammar_notes?: string | null
-          id?: string
-          sentence_order: number
-          topic_id?: string | null
-        }
-        Update: {
-          chunked_text?: string
-          created_at?: string
-          english_text?: string
-          grammar_notes?: string | null
-          id?: string
-          sentence_order?: number
-          topic_id?: string | null
-        }
-        Relationships: [
-          {
-            foreignKeyName: "english_scripts_topic_id_fkey"
-            columns: ["topic_id"]
-            isOneToOne: false
-            referencedRelation: "topics"
-            referencedColumns: ["id"]
-          },
-        ]
-      }
       foreign_scripts: {
         Row: {
           chunked_text: string

@@ -7,6 +7,7 @@ export type Topic = Tables<"topics">;
 export interface TopicsQueryParams {
 	limit?: number;
 	page?: number;
+	languageCode?: string;
 }
 
 export interface TopicsResponse {
@@ -23,7 +24,7 @@ export async function getTopics(
 ): Promise<TopicsResponse> {
 	const client = supabase || createClient();
 
-	const { limit = 5, page = 0 } = params;
+	const { limit = 5, page = 0, languageCode = "en" } = params;
 
 	const offset = page * limit;
 
@@ -34,6 +35,7 @@ export async function getTopics(
 	} = await client
 		.from("topics")
 		.select("*", { count: "exact" })
+		.eq("language_code", languageCode)
 		.order("created_at", { ascending: false })
 		.range(offset, offset + limit - 1);
 
