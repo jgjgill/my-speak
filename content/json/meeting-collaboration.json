@@ -37,40 +37,40 @@
       "korean_text": "다음주까지 각자의 역할과 책임을 명확히 하고, 첫 번째 중간 점검을 실시하겠습니다."
     }
   ],
-  "english_scripts": [
+  "foreign_scripts": [
     {
       "sentence_order": 1,
-      "english_text": "We have an important project meeting at 3 PM today.",
+      "foreign_text": "We have an important project meeting at 3 PM today.",
       "chunked_text": "We have | an important project meeting | at 3 PM today."
     },
     {
       "sentence_order": 2,
-      "english_text": "We need to review the marketing strategy that we discussed last week.",
+      "foreign_text": "We need to review the marketing strategy that we discussed last week.",
       "chunked_text": "We need to review | the marketing strategy | that we discussed last week."
     },
     {
       "sentence_order": 3,
-      "english_text": "Each team member will present the materials they've prepared, and budget allocation and schedule management will likely be the key issues.",
+      "foreign_text": "Each team member will present the materials they've prepared, and budget allocation and schedule management will likely be the key issues.",
       "chunked_text": "Each team member | will present the materials | they've prepared, | and budget allocation | and schedule management | will likely be | the key issues."
     },
     {
       "sentence_order": 4,
-      "english_text": "If all departments cooperate, this project can be completed successfully.",
+      "foreign_text": "If all departments cooperate, this project can be completed successfully.",
       "chunked_text": "If all departments | cooperate, | this project can be | completed successfully."
     },
     {
       "sentence_order": 5,
-      "english_text": "However, there's also a possibility that unexpected problems might occur, so it would be good to prepare backup plans in advance.",
+      "foreign_text": "However, there's also a possibility that unexpected problems might occur, so it would be good to prepare backup plans in advance.",
       "chunked_text": "However, | there's also a possibility | that unexpected problems | might occur, | so it would be good to | prepare backup plans | in advance."
     },
     {
       "sentence_order": 6,
-      "english_text": "After the meeting, we plan to organize the decided matters into documents and share them with all stakeholders.",
+      "foreign_text": "After the meeting, we plan to organize the decided matters into documents and share them with all stakeholders.",
       "chunked_text": "After the meeting, | we plan to organize | the decided matters | into documents | and share them | with all stakeholders."
     },
     {
       "sentence_order": 7,
-      "english_text": "By next week, we'll clarify each person's role and responsibilities, and conduct the first interim review.",
+      "foreign_text": "By next week, we'll clarify each person's role and responsibilities, and conduct the first interim review.",
       "chunked_text": "By next week, | we'll clarify | each person's role | and responsibilities, | and conduct | the first interim review."
     }
   ],
@@ -386,57 +386,57 @@
     {
       "sentence_order": 1,
       "korean_phrase": "중요한 프로젝트 회의",
-      "english_phrase": "important project meeting"
+      "foreign_phrase": "important project meeting"
     },
     {
       "sentence_order": 2,
       "korean_phrase": "마케팅 전략",
-      "english_phrase": "marketing strategy"
+      "foreign_phrase": "marketing strategy"
     },
     {
       "sentence_order": 3,
       "korean_phrase": "예산 배분",
-      "english_phrase": "budget allocation"
+      "foreign_phrase": "budget allocation"
     },
     {
       "sentence_order": 3,
       "korean_phrase": "일정 관리",
-      "english_phrase": "schedule management"
+      "foreign_phrase": "schedule management"
     },
     {
       "sentence_order": 4,
       "korean_phrase": "모든 부서가 협력한다면",
-      "english_phrase": "all departments cooperate"
+      "foreign_phrase": "all departments cooperate"
     },
     {
       "sentence_order": 5,
       "korean_phrase": "예상치 못한 문제",
-      "english_phrase": "unexpected problems"
+      "foreign_phrase": "unexpected problems"
     },
     {
       "sentence_order": 5,
       "korean_phrase": "백업 계획",
-      "english_phrase": "backup plans"
+      "foreign_phrase": "backup plans"
     },
     {
       "sentence_order": 6,
       "korean_phrase": "문서로 정리하여",
-      "english_phrase": "organize into documents"
+      "foreign_phrase": "organize into documents"
     },
     {
       "sentence_order": 6,
       "korean_phrase": "관련자에게 공유",
-      "english_phrase": "share with all stakeholders"
+      "foreign_phrase": "share with all stakeholders"
     },
     {
       "sentence_order": 7,
       "korean_phrase": "역할과 책임을 명확히",
-      "english_phrase": "clarify each person's role and responsibilities"
+      "foreign_phrase": "clarify each person's role and responsibilities"
     },
     {
       "sentence_order": 7,
       "korean_phrase": "중간 점검",
-      "english_phrase": "interim review"
+      "foreign_phrase": "interim review"
     }
   ],
   "highlight_sentences": []

@@ -108,7 +108,7 @@ Do you give | enough time | for contract review?
 서류 → I'd like to prepare the required documents in advance, so what documents are needed?
 검토 → Do you give enough time for contract review?
 
-## 레벨 4: 영어 키워드
+## 레벨 4: 외국어 키워드
 
 inquiry → Hello, I'm calling to inquire about a studio apartment rental.
 confirm → I'd like to confirm if the property I saw online is still available for rent.

@@ -7,7 +7,7 @@ description: "아침에 일어나서 하는 기본적인 일상 루틴을 영어
 highlight_sentence:
   sentence_order: 6
   korean_text: "집을 나서기 전에 가방을 챙겼어요"
-  english_text: "Before leaving home, I packed my bag"
+  foreign_text: "Before leaving home, I packed my bag"
   reason: "한글로는 자연스럽지만 영어로는 Before -ing 구문을 정확히 알아야 하는 시간 관계 표현"
 ---
 
@@ -77,7 +77,7 @@ Have a great day!
 가방 → Before leaving home, I packed my bag.
 좋은 하루 → Have a great day!
 
-## 레벨 4: 영어 키워드
+## 레벨 4: 외국어 키워드
 
 wake up → I woke up at 6 AM.
 brush → I brushed my teeth first.

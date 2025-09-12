@@ -52,10 +52,51 @@ export type Database = {
           },
         ]
       }
+      foreign_scripts: {
+        Row: {
+          chunked_text: string
+          created_at: string
+          foreign_text: string
+          grammar_notes: string | null
+          id: string
+          language_code: string
+          sentence_order: number
+          topic_id: string | null
+        }
+        Insert: {
+          chunked_text: string
+          created_at?: string
+          foreign_text: string
+          grammar_notes?: string | null
+          id?: string
+          language_code?: string
+          sentence_order: number
+          topic_id?: string | null
+        }
+        Update: {
+          chunked_text?: string
+          created_at?: string
+          foreign_text?: string
+          grammar_notes?: string | null
+          id?: string
+          language_code?: string
+          sentence_order?: number
+          topic_id?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "foreign_scripts_topic_id_fkey"
+            columns: ["topic_id"]
+            isOneToOne: false
+            referencedRelation: "topics"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       highlight_sentences: {
         Row: {
           created_at: string | null
-          english_text: string
+          foreign_text: string
           id: string
           korean_text: string
           reason: string
@@ -64,7 +105,7 @@ export type Database = {
         }
         Insert: {
           created_at?: string | null
-          english_text: string
+          foreign_text: string
           id?: string
           korean_text: string
           reason: string
@@ -73,7 +114,7 @@ export type Database = {
         }
         Update: {
           created_at?: string | null
-          english_text?: string
+          foreign_text?: string
           id?: string
           korean_text?: string
           reason?: string
@@ -169,7 +210,7 @@ export type Database = {
       learning_points: {
         Row: {
           created_at: string | null
-          english_phrase: string
+          foreign_phrase: string
           id: string
           korean_phrase: string
           sentence_order: number
@@ -177,7 +218,7 @@ export type Database = {
         }
         Insert: {
           created_at?: string | null
-          english_phrase: string
+          foreign_phrase: string
           id?: string
           korean_phrase: string
           sentence_order: number
@@ -185,7 +226,7 @@ export type Database = {
         }
         Update: {
           created_at?: string | null
-          english_phrase?: string
+          foreign_phrase?: string
           id?: string
           korean_phrase?: string
           sentence_order?: number
@@ -235,6 +276,7 @@ export type Database = {
           description: string | null
           difficulty: string
           id: string
+          language_code: string
           title: string
           total_sentences: number | null
         }
@@ -244,6 +286,7 @@ export type Database = {
           description?: string | null
           difficulty: string
           id?: string
+          language_code?: string
           title: string
           total_sentences?: number | null
         }
@@ -253,6 +296,7 @@ export type Database = {
           description?: string | null
           difficulty?: string
           id?: string
+          language_code?: string
           title?: string
           total_sentences?: number | null
         }

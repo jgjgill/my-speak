@@ -135,7 +135,7 @@ I answered honestly | yet positively, | emphasizing my efforts to improve.
 
 개선 → I answered honestly yet positively, emphasizing my efforts to improve.
 
-## 레벨 4: 영어 키워드
+## 레벨 4: 외국어 키워드
 
 interview → Today I have an important job interview.
 

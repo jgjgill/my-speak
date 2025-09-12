@@ -7,7 +7,7 @@ description: "마트에서 장을 볼 때 사용하는 기본적인 영어 표�
 highlight_sentence:
   sentence_order: 8
   korean_text: "계산대에서 현금으로 결제합니다"
-  english_text: "I pay with cash at the checkout counter"
+  foreign_text: "I pay with cash at the checkout counter"
   reason: "한국어로는 단순히 '현금으로 결제'라고 하지만 영어로는 checkout counter, pay with cash 등 구체적인 표현이 필요한 문장"
 ---
 
@@ -122,7 +122,7 @@ I finish grocery shopping | and go home.
 
 집 → I finish grocery shopping and go home.
 
-## 레벨 4: 영어 키워드
+## 레벨 4: 외국어 키워드
 
 store → Today I go to the grocery store to shop.
 

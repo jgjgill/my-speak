@@ -1,7 +1,7 @@
 import type { User } from "@supabase/supabase-js";
 import { useSuspenseQueries } from "@tanstack/react-query";
 import {
-	getEnglishScripts,
+	getForeignScripts,
 	getKoreanScripts,
 	getLearningPoints,
 	getUserSelectedPoints,
@@ -17,8 +17,8 @@ export function useStageThreePublicData(topicId: string, user?: User | null) {
 				queryFn: () => getKoreanScripts(topicId),
 			},
 			{
-				queryKey: ["english-scripts", topicId],
-				queryFn: () => getEnglishScripts(topicId),
+				queryKey: ["foreign-scripts", topicId],
+				queryFn: () => getForeignScripts(topicId),
 			},
 			{
 				queryKey: ["learning-points", topicId],

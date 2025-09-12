@@ -13,7 +13,7 @@ import TopicClientWrapper from "./components/topic-client-wrapper";
 import TopicHeader from "./components/topic-header";
 import { getEmptyUserSelectedPoints } from "./hooks/use-stage-one-public-data";
 import {
-	getEnglishScripts,
+	getForeignScripts,
 	getKeywordSpeeches,
 	getKoreanScripts,
 	getLearningPoints,
@@ -114,8 +114,8 @@ export default async function TopicDetailPage({ params }: Props) {
 		}),
 
 		queryClient.prefetchQuery({
-			queryKey: ["english-scripts", id],
-			queryFn: () => getEnglishScripts(id, supabase),
+			queryKey: ["foreign-scripts", id],
+			queryFn: () => getForeignScripts(id, supabase),
 		}),
 
 		queryClient.prefetchQuery({

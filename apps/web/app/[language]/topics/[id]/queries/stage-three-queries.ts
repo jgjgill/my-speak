@@ -3,13 +3,13 @@ import type { User } from "@supabase/supabase-js";
 import { createClient } from "../../../../utils/supabase/client";
 
 type KoreanScript = Tables<"korean_scripts">;
-type EnglishScript = Tables<"english_scripts">;
+type ForeignScript = Tables<"foreign_scripts">;
 type LearningPoint = Tables<"learning_points">;
 type UserSelectedPoint = Tables<"user_selected_points">;
 
 export interface StageThreeData {
 	koreanScripts: KoreanScript[];
-	englishScripts: EnglishScript[];
+	foreignScripts: ForeignScript[];
 	learningPoints: LearningPoint[];
 	userSelectedPoints: UserSelectedPoint[];
 }
@@ -22,7 +22,7 @@ export async function getStageThreeData(
 
 	const [
 		koreanResult,
-		englishResult,
+		foreignResult,
 		learningPointsResult,
 		userSelectedPointsResult,
 	] = await Promise.all([
@@ -33,7 +33,7 @@ export async function getStageThreeData(
 			.order("sentence_order"),
 
 		supabase
-			.from("english_scripts")
+			.from("foreign_scripts")
 			.select("*")
 			.eq("topic_id", topicId)
 			.order("sentence_order"),
@@ -54,13 +54,13 @@ export async function getStageThreeData(
 	]);
 
 	if (koreanResult.error) throw koreanResult.error;
-	if (englishResult.error) throw englishResult.error;
+	if (foreignResult.error) throw foreignResult.error;
 	if (learningPointsResult.error) throw learningPointsResult.error;
 	if (userSelectedPointsResult.error) throw userSelectedPointsResult.error;
 
 	return {
 		koreanScripts: koreanResult.data || [],
-		englishScripts: englishResult.data || [],
+		foreignScripts: foreignResult.data || [],
 		learningPoints: learningPointsResult.data || [],
 		userSelectedPoints: userSelectedPointsResult.data || [],
 	};

@@ -49,55 +49,55 @@
       "korean_text": "현지 심카드도 구매할 계획이에요."
     }
   ],
-  "english_scripts": [
+  "foreign_scripts": [
     {
       "sentence_order": 1,
-      "english_text": "I need to check my flight ticket at 11 PM tonight.",
+      "foreign_text": "I need to check my flight ticket at 11 PM tonight.",
       "chunked_text": "I need to check | my flight ticket | at 11 PM tonight."
     },
     {
       "sentence_order": 2,
-      "english_text": "I'm worried about the weight limit when I check in my luggage.",
+      "foreign_text": "I'm worried about the weight limit when I check in my luggage.",
       "chunked_text": "I'm worried about | the weight limit | when I check in | my luggage."
     },
     {
       "sentence_order": 3,
-      "english_text": "It might take a long time to pass through the security checkpoint.",
+      "foreign_text": "It might take a long time to pass through the security checkpoint.",
       "chunked_text": "It might take | a long time | to pass through | the security checkpoint."
     },
     {
       "sentence_order": 4,
-      "english_text": "I want to buy some souvenirs at the duty-free shop.",
+      "foreign_text": "I want to buy some souvenirs at the duty-free shop.",
       "chunked_text": "I want to buy | some souvenirs | at the duty-free shop."
     },
     {
       "sentence_order": 5,
-      "english_text": "I need to find where the boarding gate is.",
+      "foreign_text": "I need to find where the boarding gate is.",
       "chunked_text": "I need to find | where the boarding gate is."
     },
     {
       "sentence_order": 6,
-      "english_text": "It would be good to arrive at the airport early since there's also a possibility of delays.",
+      "foreign_text": "It would be good to arrive at the airport early since there's also a possibility of delays.",
       "chunked_text": "It would be good to | arrive at the airport early | since there's also | a possibility of delays."
     },
     {
       "sentence_order": 7,
-      "english_text": "I'll check my passport and visa once more.",
+      "foreign_text": "I'll check my passport and visa once more.",
       "chunked_text": "I'll check | my passport and visa | once more."
     },
     {
       "sentence_order": 8,
-      "english_text": "I think I need to exchange some more money.",
+      "foreign_text": "I think I need to exchange some more money.",
       "chunked_text": "I think I need to | exchange some more money."
     },
     {
       "sentence_order": 9,
-      "english_text": "When I arrive, I need to find the hotel shuttle bus.",
+      "foreign_text": "When I arrive, I need to find the hotel shuttle bus.",
       "chunked_text": "When I arrive, | I need to find | the hotel shuttle bus."
     },
     {
       "sentence_order": 10,
-      "english_text": "I'm also planning to buy a local SIM card.",
+      "foreign_text": "I'm also planning to buy a local SIM card.",
       "chunked_text": "I'm also planning to | buy a local SIM card."
     }
   ],
@@ -522,52 +522,52 @@
     {
       "sentence_order": 1,
       "korean_phrase": "비행기 표를 확인",
-      "english_phrase": "check my flight ticket"
+      "foreign_phrase": "check my flight ticket"
     },
     {
       "sentence_order": 2,
       "korean_phrase": "수하물을 체크인",
-      "english_phrase": "check in my luggage"
+      "foreign_phrase": "check in my luggage"
     },
     {
       "sentence_order": 3,
       "korean_phrase": "보안 검색대",
-      "english_phrase": "security checkpoint"
+      "foreign_phrase": "security checkpoint"
     },
     {
       "sentence_order": 4,
       "korean_phrase": "기념품을 좀 사고",
-      "english_phrase": "buy some souvenirs"
+      "foreign_phrase": "buy some souvenirs"
     },
     {
       "sentence_order": 5,
       "korean_phrase": "탑승구가 어디인지",
-      "english_phrase": "where the boarding gate is"
+      "foreign_phrase": "where the boarding gate is"
     },
     {
       "sentence_order": 6,
       "korean_phrase": "지연될 가능성",
-      "english_phrase": "possibility of delays"
+      "foreign_phrase": "possibility of delays"
     },
     {
       "sentence_order": 7,
       "korean_phrase": "여권과 비자",
-      "english_phrase": "passport and visa"
+      "foreign_phrase": "passport and visa"
     },
     {
       "sentence_order": 8,
       "korean_phrase": "환전을 좀 더",
-      "english_phrase": "exchange some more money"
+      "foreign_phrase": "exchange some more money"
     },
     {
       "sentence_order": 9,
       "korean_phrase": "호텔 셔틀버스",
-      "english_phrase": "hotel shuttle bus"
+      "foreign_phrase": "hotel shuttle bus"
     },
     {
       "sentence_order": 10,
       "korean_phrase": "현지 심카드",
-      "english_phrase": "local SIM card"
+      "foreign_phrase": "local SIM card"
     }
   ],
   "highlight_sentences": []

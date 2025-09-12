@@ -72,7 +72,7 @@ By next week, | we'll clarify | each person's role | and responsibilities, | and
 정리, 공유 → After the meeting, we plan to organize the decided matters into documents and share them with all stakeholders.
 역할 → By next week, we'll clarify each person's role and responsibilities, and conduct the first interim review.
 
-## 레벨 4: 영어 키워드
+## 레벨 4: 외국어 키워드
 
 meeting → We have an important project meeting at 3 PM today.
 strategy → We need to review the marketing strategy that we discussed last week.

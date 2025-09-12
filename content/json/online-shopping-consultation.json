@@ -61,70 +61,70 @@
       "korean_text": "감사합니다, 많은 도움이 되었어요."
     }
   ],
-  "english_scripts": [
+  "foreign_scripts": [
     {
       "sentence_order": 1,
-      "english_text": "Hello, I would like to contact customer service.",
+      "foreign_text": "Hello, I would like to contact customer service.",
       "chunked_text": "Hello, | I would like to contact | customer service."
     },
     {
       "sentence_order": 2,
-      "english_text": "I have a question about the laptop I ordered yesterday.",
+      "foreign_text": "I have a question about the laptop I ordered yesterday.",
       "chunked_text": "I have a question | about the laptop | I ordered yesterday."
     },
     {
       "sentence_order": 3,
-      "english_text": "Could you check the shipping status for me?",
+      "foreign_text": "Could you check the shipping status for me?",
       "chunked_text": "Could you check | the shipping status | for me?"
     },
     {
       "sentence_order": 4,
-      "english_text": "My order number is ABC123456.",
+      "foreign_text": "My order number is ABC123456.",
       "chunked_text": "My order number | is ABC123456."
     },
     {
       "sentence_order": 5,
-      "english_text": "Yes, it shows that it's being processed.",
+      "foreign_text": "Yes, it shows that it's being processed.",
       "chunked_text": "Yes, | it shows that | it's being processed."
     },
     {
       "sentence_order": 6,
-      "english_text": "How many days will it take approximately?",
+      "foreign_text": "How many days will it take approximately?",
       "chunked_text": "How many days | will it take | approximately?"
     },
     {
       "sentence_order": 7,
-      "english_text": "Is the shipping fee free?",
+      "foreign_text": "Is the shipping fee free?",
       "chunked_text": "Is the shipping fee | free?"
     },
     {
       "sentence_order": 8,
-      "english_text": "Is it possible to change the color?",
+      "foreign_text": "Is it possible to change the color?",
       "chunked_text": "Is it possible | to change | the color?"
     },
     {
       "sentence_order": 9,
-      "english_text": "I'd like to change it from black to silver.",
+      "foreign_text": "I'd like to change it from black to silver.",
       "chunked_text": "I'd like to change it | from black | to silver."
     },
     {
       "sentence_order": 10,
-      "english_text": "I'd also like to know about the refund policy.",
+      "foreign_text": "I'd also like to know about the refund policy.",
       "chunked_text": "I'd also like to know | about the refund policy."
     },
     {
       "sentence_order": 11,
-      "english_text": "Is a full refund possible if not satisfied?",
+      "foreign_text": "Is a full refund possible if not satisfied?",
       "chunked_text": "Is a full refund possible | if not satisfied?"
     },
     {
       "sentence_order": 12,
-      "english_text": "How long is the return period?",
+      "foreign_text": "How long is the return period?",
       "chunked_text": "How long | is the return period?"
     },
     {
       "sentence_order": 13,
-      "english_text": "Thank you, you've been a great help.",
+      "foreign_text": "Thank you, you've been a great help.",
       "chunked_text": "Thank you, | you've been | a great help."
     }
   ],
@@ -445,52 +445,52 @@
     {
       "sentence_order": 1,
       "korean_phrase": "고객 서비스",
-      "english_phrase": "customer service"
+      "foreign_phrase": "customer service"
     },
     {
       "sentence_order": 1,
       "korean_phrase": "문의드리려고",
-      "english_phrase": "would like to contact"
+      "foreign_phrase": "would like to contact"
     },
     {
       "sentence_order": 3,
       "korean_phrase": "배송 상태",
-      "english_phrase": "shipping status"
+      "foreign_phrase": "shipping status"
     },
     {
       "sentence_order": 5,
       "korean_phrase": "처리 중",
-      "english_phrase": "being processed"
+      "foreign_phrase": "being processed"
     },
     {
       "sentence_order": 7,
       "korean_phrase": "배송비",
-      "english_phrase": "shipping fee"
+      "foreign_phrase": "shipping fee"
     },
     {
       "sentence_order": 8,
       "korean_phrase": "색상 변경",
-      "english_phrase": "color change"
+      "foreign_phrase": "color change"
     },
     {
       "sentence_order": 10,
       "korean_phrase": "환불 정책",
-      "english_phrase": "refund policy"
+      "foreign_phrase": "refund policy"
     },
     {
       "sentence_order": 11,
       "korean_phrase": "불만족할 경우",
-      "english_phrase": "if not satisfied"
+      "foreign_phrase": "if not satisfied"
     },
     {
       "sentence_order": 11,
       "korean_phrase": "전액 환불",
-      "english_phrase": "full refund"
+      "foreign_phrase": "full refund"
     },
     {
       "sentence_order": 12,
       "korean_phrase": "반품 기간",
-      "english_phrase": "return period"
+      "foreign_phrase": "return period"
     }
   ],
   "highlight_sentences": []

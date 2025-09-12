@@ -57,65 +57,65 @@
       "korean_text": "마지막으로 짐 보관 서비스가 가능한지 확인합니다."
     }
   ],
-  "english_scripts": [
+  "foreign_scripts": [
     {
       "sentence_order": 1,
-      "english_text": "I just arrived at the airport.",
+      "foreign_text": "I just arrived at the airport.",
       "chunked_text": "I just arrived | at the airport."
     },
     {
       "sentence_order": 2,
-      "english_text": "After collecting my luggage, I need to find out about transportation to downtown.",
+      "foreign_text": "After collecting my luggage, I need to find out about transportation to downtown.",
       "chunked_text": "After collecting my luggage, | I need to find out | about transportation to downtown."
     },
     {
       "sentence_order": 3,
-      "english_text": "I inquire at the information desk about taxi fare and public transportation options.",
+      "foreign_text": "I inquire at the information desk about taxi fare and public transportation options.",
       "chunked_text": "I inquire | at the information desk | about taxi fare | and public transportation options."
     },
     {
       "sentence_order": 4,
-      "english_text": "A taxi is most convenient, but considering the budget, I chose the airport bus.",
+      "foreign_text": "A taxi is most convenient, but considering the budget, I chose the airport bus.",
       "chunked_text": "A taxi is most convenient, | but considering the budget, | I chose the airport bus."
     },
     {
       "sentence_order": 5,
-      "english_text": "At the bus stop, I check the correct route and purchase a ticket.",
+      "foreign_text": "At the bus stop, I check the correct route and purchase a ticket.",
       "chunked_text": "At the bus stop, | I check the correct route | and purchase a ticket."
     },
     {
       "sentence_order": 6,
-      "english_text": "They say it takes about 45 minutes to get to the hotel.",
+      "foreign_text": "They say it takes about 45 minutes to get to the hotel.",
       "chunked_text": "They say | it takes about 45 minutes | to get to the hotel."
     },
     {
       "sentence_order": 7,
-      "english_text": "I arrive at the hotel and head to the front desk.",
+      "foreign_text": "I arrive at the hotel and head to the front desk.",
       "chunked_text": "I arrive at the hotel | and head to | the front desk."
     },
     {
       "sentence_order": 8,
-      "english_text": "For check-in, I prepare my reservation confirmation and passport.",
+      "foreign_text": "For check-in, I prepare my reservation confirmation and passport.",
       "chunked_text": "For check-in, | I prepare my reservation confirmation | and passport."
     },
     {
       "sentence_order": 9,
-      "english_text": "The staff asks if I have any special requests and about my length of stay.",
+      "foreign_text": "The staff asks if I have any special requests and about my length of stay.",
       "chunked_text": "The staff asks | if I have any special requests | and about my length of stay."
     },
     {
       "sentence_order": 10,
-      "english_text": "I ask about whether breakfast is included and the Wi-Fi password.",
+      "foreign_text": "I ask about whether breakfast is included and the Wi-Fi password.",
       "chunked_text": "I ask about | whether breakfast is included | and the Wi-Fi password."
     },
     {
       "sentence_order": 11,
-      "english_text": "I receive the room key and get directions to the elevator and information about check-out time.",
+      "foreign_text": "I receive the room key and get directions to the elevator and information about check-out time.",
       "chunked_text": "I receive the room key | and get directions to the elevator | and information about check-out time."
     },
     {
       "sentence_order": 12,
-      "english_text": "Finally, I confirm whether luggage storage service is available.",
+      "foreign_text": "Finally, I confirm whether luggage storage service is available.",
       "chunked_text": "Finally, | I confirm whether | luggage storage service is available."
     }
   ],
@@ -630,72 +630,72 @@
     {
       "sentence_order": 2,
       "korean_phrase": "시내로 가는 교통편",
-      "english_phrase": "transportation to downtown"
+      "foreign_phrase": "transportation to downtown"
     },
     {
       "sentence_order": 3,
       "korean_phrase": "택시 요금",
-      "english_phrase": "taxi fare"
+      "foreign_phrase": "taxi fare"
     },
     {
       "sentence_order": 3,
       "korean_phrase": "대중교통 옵션",
-      "english_phrase": "public transportation options"
+      "foreign_phrase": "public transportation options"
     },
     {
       "sentence_order": 4,
       "korean_phrase": "예산을 고려해서",
-      "english_phrase": "considering the budget"
+      "foreign_phrase": "considering the budget"
     },
     {
       "sentence_order": 5,
       "korean_phrase": "정확한 노선",
-      "english_phrase": "the correct route"
+      "foreign_phrase": "the correct route"
     },
     {
       "sentence_order": 7,
       "korean_phrase": "프론트 데스크",
-      "english_phrase": "front desk"
+      "foreign_phrase": "front desk"
     },
     {
       "sentence_order": 8,
       "korean_phrase": "체크인을 위해",
-      "english_phrase": "for check-in"
+      "foreign_phrase": "for check-in"
     },
     {
       "sentence_order": 9,
       "korean_phrase": "숙박 기간",
-      "english_phrase": "length of stay"
+      "foreign_phrase": "length of stay"
     },
     {
       "sentence_order": 9,
       "korean_phrase": "특별 요청 사항",
-      "english_phrase": "special requests"
+      "foreign_phrase": "special requests"
     },
     {
       "sentence_order": 10,
       "korean_phrase": "조식 포함 여부",
-      "english_phrase": "whether breakfast is included"
+      "foreign_phrase": "whether breakfast is included"
     },
     {
       "sentence_order": 10,
       "korean_phrase": "와이파이 비밀번호",
-      "english_phrase": "Wi-Fi password"
+      "foreign_phrase": "Wi-Fi password"
     },
     {
       "sentence_order": 11,
       "korean_phrase": "룸키",
-      "english_phrase": "room key"
+      "foreign_phrase": "room key"
     },
     {
       "sentence_order": 11,
       "korean_phrase": "체크아웃 시간",
-      "english_phrase": "check-out time"
+      "foreign_phrase": "check-out time"
     },
     {
       "sentence_order": 12,
       "korean_phrase": "짐 보관 서비스",
-      "english_phrase": "luggage storage service"
+      "foreign_phrase": "luggage storage service"
     }
   ],
   "highlight_sentences": []

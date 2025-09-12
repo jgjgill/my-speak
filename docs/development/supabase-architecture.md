@@ -84,7 +84,7 @@ CREATE TABLE keyword_speeches (
 
 **역할**: 4단계 키워드 스피치 연습 데이터를 저장합니다.
 - `stage`: 4단계 고정값
-- `level`: 난이도 레벨 (1=70% 정보 → 4=영어 키워드)
+- `level`: 난이도 레벨 (1=70% 정보 → 4=외국어 키워드)
 - `keywords`: 키워드 배열
 - `difficulty_percentage`: 정보 제공 비율 (70%, 50%, 30%, null)
 

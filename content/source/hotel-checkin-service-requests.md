@@ -120,7 +120,7 @@ Thank you so much | for your kind help.
 요금 → How much is the additional fee?
 감사 → Thank you so much for your kind help.
 
-## 레벨 4: 영어 키워드
+## 레벨 4: 외국어 키워드
 
 check-in → Hello. I'm here to check in.
 reservation → I made a reservation under the name Johnson.

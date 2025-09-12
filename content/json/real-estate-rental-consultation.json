@@ -61,70 +61,70 @@
       "korean_text": "계약서 검토는 충분한 시간을 주시는지요?"
     }
   ],
-  "english_scripts": [
+  "foreign_scripts": [
     {
       "sentence_order": 1,
-      "english_text": "Hello, I'm calling to inquire about a studio apartment rental.",
+      "foreign_text": "Hello, I'm calling to inquire about a studio apartment rental.",
       "chunked_text": "Hello, | I'm calling to inquire about | a studio apartment rental."
     },
     {
       "sentence_order": 2,
-      "english_text": "I'd like to confirm if the property I saw online is still available for rent.",
+      "foreign_text": "I'd like to confirm if the property I saw online is still available for rent.",
       "chunked_text": "I'd like to confirm | if the property I saw online | is still available for rent."
     },
     {
       "sentence_order": 3,
-      "english_text": "I want to know how much the monthly rent is and what the security deposit amount is.",
+      "foreign_text": "I want to know how much the monthly rent is and what the security deposit amount is.",
       "chunked_text": "I want to know | how much the monthly rent is | and what the security deposit amount is."
     },
     {
       "sentence_order": 4,
-      "english_text": "And is the maintenance fee separate?",
+      "foreign_text": "And is the maintenance fee separate?",
       "chunked_text": "And is | the maintenance fee separate?"
     },
     {
       "sentence_order": 5,
-      "english_text": "I'm curious about the public transportation access.",
+      "foreign_text": "I'm curious about the public transportation access.",
       "chunked_text": "I'm curious about | the public transportation access."
     },
     {
       "sentence_order": 6,
-      "english_text": "How many minutes does it take to walk to the nearest subway station?",
+      "foreign_text": "How many minutes does it take to walk to the nearest subway station?",
       "chunked_text": "How many minutes | does it take to walk | to the nearest subway station?"
     },
     {
       "sentence_order": 7,
-      "english_text": "Is it possible to have an interior viewing?",
+      "foreign_text": "Is it possible to have an interior viewing?",
       "chunked_text": "Is it possible | to have an interior viewing?"
     },
     {
       "sentence_order": 8,
-      "english_text": "Could you explain the lease terms in detail as well?",
+      "foreign_text": "Could you explain the lease terms in detail as well?",
       "chunked_text": "Could you explain | the lease terms | in detail as well?"
     },
     {
       "sentence_order": 9,
-      "english_text": "What's the minimum contract period in years?",
+      "foreign_text": "What's the minimum contract period in years?",
       "chunked_text": "What's the minimum | contract period | in years?"
     },
     {
       "sentence_order": 10,
-      "english_text": "I'd also like to know if early termination is possible.",
+      "foreign_text": "I'd also like to know if early termination is possible.",
       "chunked_text": "I'd also like to know | if early termination | is possible."
     },
     {
       "sentence_order": 11,
-      "english_text": "When is the earliest move-in date?",
+      "foreign_text": "When is the earliest move-in date?",
       "chunked_text": "When is | the earliest move-in date?"
     },
     {
       "sentence_order": 12,
-      "english_text": "I'd like to prepare the required documents in advance, so what documents are needed?",
+      "foreign_text": "I'd like to prepare the required documents in advance, so what documents are needed?",
       "chunked_text": "I'd like to prepare | the required documents in advance, | so what documents are needed?"
     },
     {
       "sentence_order": 13,
-      "english_text": "Do you give enough time for contract review?",
+      "foreign_text": "Do you give enough time for contract review?",
       "chunked_text": "Do you give | enough time | for contract review?"
     }
   ],
@@ -673,72 +673,72 @@
     {
       "sentence_order": 1,
       "korean_phrase": "원룸 임대",
-      "english_phrase": "studio apartment rental"
+      "foreign_phrase": "studio apartment rental"
     },
     {
       "sentence_order": 2,
       "korean_phrase": "임대 가능한지",
-      "english_phrase": "available for rent"
+      "foreign_phrase": "available for rent"
     },
     {
       "sentence_order": 3,
       "korean_phrase": "월세가 얼마",
-      "english_phrase": "monthly rent"
+      "foreign_phrase": "monthly rent"
     },
     {
       "sentence_order": 3,
       "korean_phrase": "보증금",
-      "english_phrase": "security deposit"
+      "foreign_phrase": "security deposit"
     },
     {
       "sentence_order": 4,
       "korean_phrase": "관리비는 별도",
-      "english_phrase": "maintenance fee is separate"
+      "foreign_phrase": "maintenance fee is separate"
     },
     {
       "sentence_order": 5,
       "korean_phrase": "대중교통 접근성",
-      "english_phrase": "public transportation access"
+      "foreign_phrase": "public transportation access"
     },
     {
       "sentence_order": 6,
       "korean_phrase": "가장 가까운 지하철역",
-      "english_phrase": "nearest subway station"
+      "foreign_phrase": "nearest subway station"
     },
     {
       "sentence_order": 7,
       "korean_phrase": "내부 견학",
-      "english_phrase": "interior viewing"
+      "foreign_phrase": "interior viewing"
     },
     {
       "sentence_order": 8,
       "korean_phrase": "계약 조건",
-      "english_phrase": "lease terms"
+      "foreign_phrase": "lease terms"
     },
     {
       "sentence_order": 9,
       "korean_phrase": "계약 기간",
-      "english_phrase": "contract period"
+      "foreign_phrase": "contract period"
     },
     {
       "sentence_order": 10,
       "korean_phrase": "중도 해지",
-      "english_phrase": "early termination"
+      "foreign_phrase": "early termination"
     },
     {
       "sentence_order": 11,
       "korean_phrase": "입주 가능 날짜",
-      "english_phrase": "move-in date"
+      "foreign_phrase": "move-in date"
     },
     {
       "sentence_order": 12,
       "korean_phrase": "필요한 서류",
-      "english_phrase": "required documents"
+      "foreign_phrase": "required documents"
     },
     {
       "sentence_order": 13,
       "korean_phrase": "계약서 검토",
-      "english_phrase": "contract review"
+      "foreign_phrase": "contract review"
     }
   ],
   "highlight_sentences": []

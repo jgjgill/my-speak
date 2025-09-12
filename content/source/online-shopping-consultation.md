@@ -89,7 +89,7 @@ Thank you, | you've been | a great help.
 색상 변경 → Is it possible to change the color?
 환불 정책 → I'd also like to know about the refund policy.
 
-## 레벨 4: 영어 키워드
+## 레벨 4: 외국어 키워드
 
 customer service → Hello, I would like to contact customer service.
 laptop question → I have a question about the laptop I ordered yesterday.

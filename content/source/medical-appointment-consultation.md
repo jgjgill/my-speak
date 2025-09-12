@@ -96,7 +96,7 @@ Thank you. | Then please send me | the appointment confirmation | via text messa
 주차 정보 → Information about parking facilities?
 문자 확인 → Please send me confirmation via text message.
 
-## 레벨 4: 영어 키워드
+## 레벨 4: 외국어 키워드
 
 appointment, internal medicine → I would like to make an appointment for internal medicine.
 Tuesday afternoon → Are there any available times next Tuesday afternoon?

@@ -3,14 +3,14 @@ import type { User } from "@supabase/supabase-js";
 import { createClient } from "../../../../utils/supabase/client";
 
 type KoreanScript = Tables<"korean_scripts">;
-type EnglishScript = Tables<"english_scripts">;
+type ForeignScript = Tables<"foreign_scripts">;
 type LearningPoint = Tables<"learning_points">;
 type UserTranslation = Tables<"user_translations">;
 type UserSelectedPoint = Tables<"user_selected_points">;
 
 export interface StageTwoData {
 	koreanScripts: KoreanScript[];
-	englishScripts: EnglishScript[];
+	foreignScripts: ForeignScript[];
 	learningPoints: LearningPoint[];
 	userTranslations: UserTranslation[];
 	userSelectedPoints: UserSelectedPoint[];
@@ -24,7 +24,7 @@ export async function getStageTwoData(
 
 	const [
 		koreanResult,
-		englishResult,
+		foreignResult,
 		learningPointsResult,
 		userTranslationsResult,
 		userSelectedPointsResult,
@@ -36,7 +36,7 @@ export async function getStageTwoData(
 			.order("sentence_order"),
 
 		supabase
-			.from("english_scripts")
+			.from("foreign_scripts")
 			.select("*")
 			.eq("topic_id", topicId)
 			.order("sentence_order"),
@@ -65,14 +65,14 @@ export async function getStageTwoData(
 	]);
 
 	if (koreanResult.error) throw koreanResult.error;
-	if (englishResult.error) throw englishResult.error;
+	if (foreignResult.error) throw foreignResult.error;
 	if (learningPointsResult.error) throw learningPointsResult.error;
 	if (userTranslationsResult.error) throw userTranslationsResult.error;
 	if (userSelectedPointsResult.error) throw userSelectedPointsResult.error;
 
 	return {
 		koreanScripts: koreanResult.data || [],
-		englishScripts: englishResult.data || [],
+		foreignScripts: foreignResult.data || [],
 		learningPoints: learningPointsResult.data || [],
 		userTranslations: userTranslationsResult.data || [],
 		userSelectedPoints: userSelectedPointsResult.data || [],

@@ -102,7 +102,7 @@ Finally, | I confirm whether | luggage storage service is available.
 키 → I receive the room key.
 보관 → I confirm about storage.
 
-## 레벨 4: 영어 키워드
+## 레벨 4: 외국어 키워드
 
 arrival → I just arrived at the airport.
 transportation → I need to find transportation downtown.

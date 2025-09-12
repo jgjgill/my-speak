@@ -7,7 +7,7 @@ import { useStageTwoPublicData } from "../hooks/use-stage-two-public-data";
 import { useUserTranslations } from "../hooks/use-user-translations";
 import {
 	createSelectedLearningPointsByOrder,
-	getSelectedEnglishKeywords,
+	getSelectedForeignKeywords,
 	getSelectedKoreanKeywords,
 } from "../utils/learning-points";
 import AudioRecorderManager from "./audio-recorder/audio-recorder-manager";
@@ -32,7 +32,7 @@ export default function StageTwoContainer({
 
 	const [
 		{ data: koreanScripts },
-		{ data: englishScripts },
+		{ data: foreignScripts },
 		{ data: learningPoints },
 		{ data: userSelectedPoints },
 	] = useStageTwoPublicData(topicId, user);
@@ -68,10 +68,10 @@ export default function StageTwoContainer({
 						<h4 className="font-semibold mb-2">영어</h4>
 
 						<div>
-							{englishScripts.map((script, index) => (
+							{foreignScripts.map((script, index) => (
 								<span key={script.id}>
-									{script.english_text}
-									{index < englishScripts.length - 1 && " "}
+									{script.foreign_text}
+									{index < foreignScripts.length - 1 && " "}
 								</span>
 							))}
 						</div>
@@ -98,7 +98,7 @@ export default function StageTwoContainer({
 						selectedLearningPointsByOrder,
 						script.sentence_order,
 					);
-					const selectedEnglishKeywords = getSelectedEnglishKeywords(
+					const selectedForeignKeywords = getSelectedForeignKeywords(
 						selectedLearningPointsByOrder,
 						script.sentence_order,
 					);
@@ -122,8 +122,8 @@ export default function StageTwoContainer({
 									<span className="text-sm font-medium">번역</span>
 									<div className="leading-relaxed">
 										<TextHighlighter
-											text={englishScripts[index]?.english_text || ""}
-											keywords={selectedEnglishKeywords}
+											text={foreignScripts[index]?.foreign_text || ""}
+											keywords={selectedForeignKeywords}
 										/>
 									</div>
 								</div>
@@ -143,7 +143,7 @@ export default function StageTwoContainer({
 					| 표시된 곳에서 잠깐 멈춤, || 표시된 곳에서 긴 호흡을 하며 읽어보세요.
 				</p>
 
-				{englishScripts.map((script, index) => (
+				{foreignScripts.map((script, index) => (
 					<div key={script.id} className="mb-3 p-2 border">
 						<span className="text-sm">발음 연습 {index + 1}</span>
 						<p>{script.chunked_text}</p>
@@ -156,10 +156,10 @@ export default function StageTwoContainer({
 					<p className="text-sm mb-3">이제 전체를 한 번에 따라 읽어보세요.</p>
 
 					<div className="mb-4">
-						{englishScripts.map((script, index) => (
+						{foreignScripts.map((script, index) => (
 							<span key={script.id}>
 								{script.chunked_text}
-								{index < englishScripts.length - 1 && " || "}
+								{index < foreignScripts.length - 1 && " || "}
 							</span>
 						))}
 					</div>

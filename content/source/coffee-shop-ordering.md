@@ -7,7 +7,7 @@ description: "카페에서 음료를 주문할 때 사용하는 기본적인 영
 highlight_sentence:
   sentence_order: 5
   korean_text: "여기서 드실 건가요, 아니면 가져가실 건가요"
-  english_text: "For here or to go"
+  foreign_text: "For here or to go"
   reason: "카페에서 반드시 듣는 질문이지만 영어로는 For here or to go라는 고정 표현을 모르면 막히는 문장"
 ---
 
@@ -107,7 +107,7 @@ Thank you.
 준비되면 → I'll call you when your drink is ready.
 감사합니다 → Thank you.
 
-## 레벨 4: 영어 키워드
+## 레벨 4: 외국어 키워드
 
 get → What can I get for you?
 americano → I would like one iced americano.

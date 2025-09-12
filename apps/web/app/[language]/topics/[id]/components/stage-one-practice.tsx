@@ -90,7 +90,7 @@ export default function StageOnePractice({
 		);
 
 		if (pointInfo) {
-			alert(`💡 ${pointInfo.english_phrase}`);
+			alert(`💡 ${pointInfo.foreign_phrase}`);
 
 			if (user) {
 				const pointKey = `${sentenceOrder}-${pointInfo.id}`;

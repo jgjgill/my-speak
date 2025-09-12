@@ -32,10 +32,10 @@ export function getSelectedKoreanKeywords(
 	return points.map((point) => point.korean_phrase);
 }
 
-export function getSelectedEnglishKeywords(
+export function getSelectedForeignKeywords(
 	selectedLearningPointsByOrder: Record<number, LearningPoint[]>,
 	sentenceOrder: number,
 ): string[] {
 	const points = selectedLearningPointsByOrder[sentenceOrder] || [];
-	return points.map((point) => point.english_phrase);
+	return points.map((point) => point.foreign_phrase);
 }

@@ -102,7 +102,7 @@ What's | the membership registration process?
 시작 → When can I start working out?
 절차 → What's the membership registration process?
 
-## 레벨 4: 영어 키워드
+## 레벨 4: 외국어 키워드
 
 membership → Hello, I'd like to inquire about fitness center membership.
 programs → I want to know what kind of workout programs you have available.

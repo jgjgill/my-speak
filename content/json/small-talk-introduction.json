@@ -1,0 +1,553 @@
+{
+  "topic": {
+    "id": "4b15a21d-3b71-4d0a-9c2d-3f5417b1f6c2",
+    "title": "처음 만난 사람과 스몰 토크하기",
+    "category": "스몰 토크",
+    "difficulty": "초급",
+    "description": "처음 만난 사람과 인사, 자기소개, 간단한 질문으로 대화를 이어가는 스몰 토크 학습 콘텐츠",
+    "total_sentences": 10
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 처음 뵙겠습니다."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "이름이 어떻게 되세요?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "저는 민수라고 합니다."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "어디에서 오셨어요?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "저는 서울에서 왔어요."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "이 근처에 사세요?"
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "오늘 날씨가 참 좋네요."
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "무슨 일 하세요?"
+    },
+    {
+      "sentence_order": 9,
+      "korean_text": "저는 학생이에요."
+    },
+    {
+      "sentence_order": 10,
+      "korean_text": "만나서 반가웠습니다."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, nice to meet you.",
+      "chunked_text": "Hello, | nice to meet you."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "What’s your name?",
+      "chunked_text": "What’s | your name?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "My name is Minsu.",
+      "chunked_text": "My name | is Minsu."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Where are you from?",
+      "chunked_text": "Where | are you from?"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "I’m from Seoul.",
+      "chunked_text": "I’m from | Seoul."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Do you live around here?",
+      "chunked_text": "Do you live | around here?"
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "The weather is nice today.",
+      "chunked_text": "The weather | is nice || today."
+    },
+    {
+      "sentence_order": 8,
+      "foreign_text": "What do you do?",
+      "chunked_text": "What do | you do?"
+    },
+    {
+      "sentence_order": 9,
+      "foreign_text": "I’m a student.",
+      "chunked_text": "I’m | a student."
+    },
+    {
+      "sentence_order": 10,
+      "foreign_text": "It was nice meeting you.",
+      "chunked_text": "It was nice | meeting you."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "처음 뵙겠습니다"
+      ],
+      "target_sentence": "Hello, nice to meet you.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "이름",
+        "물어보다"
+      ],
+      "target_sentence": "What’s your name?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "저는 민수"
+      ],
+      "target_sentence": "My name is Minsu.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "어디서 오셨어요"
+      ],
+      "target_sentence": "Where are you from?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "저는 서울에서"
+      ],
+      "target_sentence": "I’m from Seoul.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "근처에 사세요"
+      ],
+      "target_sentence": "Do you live around here?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "오늘",
+        "날씨 좋네요"
+      ],
+      "target_sentence": "The weather is nice today.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 8,
+      "keywords": [
+        "무슨 일 하세요"
+      ],
+      "target_sentence": "What do you do?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 9,
+      "keywords": [
+        "저는 학생"
+      ],
+      "target_sentence": "I’m a student.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 10,
+      "keywords": [
+        "만나서 반가웠습니다"
+      ],
+      "target_sentence": "It was nice meeting you.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "처음 뵙겠습니다"
+      ],
+      "target_sentence": "Hello, nice to meet you.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "이름"
+      ],
+      "target_sentence": "What’s your name?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "민수"
+      ],
+      "target_sentence": "My name is Minsu.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "어디서"
+      ],
+      "target_sentence": "Where are you from?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 15,
+      "keywords": [
+        "서울"
+      ],
+      "target_sentence": "I’m from Seoul.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 16,
+      "keywords": [
+        "근처"
+      ],
+      "target_sentence": "Do you live around here?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 17,
+      "keywords": [
+        "날씨"
+      ],
+      "target_sentence": "The weather is nice today.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 18,
+      "keywords": [
+        "직업"
+      ],
+      "target_sentence": "What do you do?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 19,
+      "keywords": [
+        "학생"
+      ],
+      "target_sentence": "I’m a student.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 20,
+      "keywords": [
+        "반가웠습니다"
+      ],
+      "target_sentence": "It was nice meeting you.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "만나서"
+      ],
+      "target_sentence": "Hello, nice to meet you.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 22,
+      "keywords": [
+        "이름"
+      ],
+      "target_sentence": "What’s your name?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 23,
+      "keywords": [
+        "민수"
+      ],
+      "target_sentence": "My name is Minsu.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 24,
+      "keywords": [
+        "출신"
+      ],
+      "target_sentence": "Where are you from?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 25,
+      "keywords": [
+        "서울"
+      ],
+      "target_sentence": "I’m from Seoul.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 26,
+      "keywords": [
+        "근처"
+      ],
+      "target_sentence": "Do you live around here?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 27,
+      "keywords": [
+        "날씨"
+      ],
+      "target_sentence": "The weather is nice today.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 28,
+      "keywords": [
+        "직업"
+      ],
+      "target_sentence": "What do you do?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 29,
+      "keywords": [
+        "학생"
+      ],
+      "target_sentence": "I’m a student.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 30,
+      "keywords": [
+        "인사"
+      ],
+      "target_sentence": "It was nice meeting you.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 31,
+      "keywords": [
+        "meet"
+      ],
+      "target_sentence": "Hello, nice to meet you.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 32,
+      "keywords": [
+        "name"
+      ],
+      "target_sentence": "What’s your name?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 33,
+      "keywords": [
+        "Minsu"
+      ],
+      "target_sentence": "My name is Minsu.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 34,
+      "keywords": [
+        "from"
+      ],
+      "target_sentence": "Where are you from?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 35,
+      "keywords": [
+        "Seoul"
+      ],
+      "target_sentence": "I’m from Seoul.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 36,
+      "keywords": [
+        "around"
+      ],
+      "target_sentence": "Do you live around here?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 37,
+      "keywords": [
+        "weather"
+      ],
+      "target_sentence": "The weather is nice today.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 38,
+      "keywords": [
+        "job"
+      ],
+      "target_sentence": "What do you do?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 39,
+      "keywords": [
+        "student"
+      ],
+      "target_sentence": "I’m a student.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 40,
+      "keywords": [
+        "nice meeting"
+      ],
+      "target_sentence": "It was nice meeting you.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 1,
+      "korean_phrase": "처음 뵙겠습니다",
+      "foreign_phrase": "Nice to meet you"
+    },
+    {
+      "sentence_order": 2,
+      "korean_phrase": "이름이 어떻게 되세요",
+      "foreign_phrase": "What’s your name"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "어디에서 오셨어요",
+      "foreign_phrase": "Where are you from"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "이 근처에 사세요",
+      "foreign_phrase": "Do you live around here"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "오늘 날씨가 참 좋네요",
+      "foreign_phrase": "The weather is nice today"
+    },
+    {
+      "sentence_order": 8,
+      "korean_phrase": "무슨 일 하세요",
+      "foreign_phrase": "What do you do"
+    },
+    {
+      "sentence_order": 10,
+      "korean_phrase": "만나서 반가웠습니다",
+      "foreign_phrase": "It was nice meeting you"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 2,
+      "korean_text": "이름이 어떻게 되세요?",
+      "foreign_text": "What's your name?",
+      "reason": "자기소개와 대화를 시작할 때 가장 중요한 기본 질문이기 때문"
+    }
+  ]
+}

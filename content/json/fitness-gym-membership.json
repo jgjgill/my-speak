@@ -57,65 +57,65 @@
       "korean_text": "회원 등록 절차는 어떻게 되나요?"
     }
   ],
-  "english_scripts": [
+  "foreign_scripts": [
     {
       "sentence_order": 1,
-      "english_text": "Hello, I'd like to inquire about fitness center membership.",
+      "foreign_text": "Hello, I'd like to inquire about fitness center membership.",
       "chunked_text": "Hello, | I'd like to inquire | about fitness center membership."
     },
     {
       "sentence_order": 2,
-      "english_text": "I want to know what kind of workout programs you have available.",
+      "foreign_text": "I want to know what kind of workout programs you have available.",
       "chunked_text": "I want to know | what kind of workout programs | you have available."
     },
     {
       "sentence_order": 3,
-      "english_text": "Do you also provide personal training services?",
+      "foreign_text": "Do you also provide personal training services?",
       "chunked_text": "Do you also provide | personal training services?"
     },
     {
       "sentence_order": 4,
-      "english_text": "How much is the monthly membership fee?",
+      "foreign_text": "How much is the monthly membership fee?",
       "chunked_text": "How much is | the monthly membership fee?"
     },
     {
       "sentence_order": 5,
-      "english_text": "Could you tell me the operating hours?",
+      "foreign_text": "Could you tell me the operating hours?",
       "chunked_text": "Could you tell me | the operating hours?"
     },
     {
       "sentence_order": 6,
-      "english_text": "Can I take a trial class first?",
+      "foreign_text": "Can I take a trial class first?",
       "chunked_text": "Can I take | a trial class first?"
     },
     {
       "sentence_order": 7,
-      "english_text": "Do you have modern fitness equipment at the gym?",
+      "foreign_text": "Do you have modern fitness equipment at the gym?",
       "chunked_text": "Do you have | modern fitness equipment | at the gym?"
     },
     {
       "sentence_order": 8,
-      "english_text": "I can use the shower facilities and locker room too, right?",
+      "foreign_text": "I can use the shower facilities and locker room too, right?",
       "chunked_text": "I can use | the shower facilities | and locker room too, right?"
     },
     {
       "sentence_order": 9,
-      "english_text": "Do you also have yoga classes or group fitness classes?",
+      "foreign_text": "Do you also have yoga classes or group fitness classes?",
       "chunked_text": "Do you also have | yoga classes | or group fitness classes?"
     },
     {
       "sentence_order": 10,
-      "english_text": "I'm curious if there's a discount for long-term membership.",
+      "foreign_text": "I'm curious if there's a discount for long-term membership.",
       "chunked_text": "I'm curious | if there's a discount | for long-term membership."
     },
     {
       "sentence_order": 11,
-      "english_text": "When can I start working out?",
+      "foreign_text": "When can I start working out?",
       "chunked_text": "When can I | start working out?"
     },
     {
       "sentence_order": 12,
-      "english_text": "What's the membership registration process?",
+      "foreign_text": "What's the membership registration process?",
       "chunked_text": "What's | the membership registration process?"
     }
   ],
@@ -628,72 +628,72 @@
     {
       "sentence_order": 1,
       "korean_phrase": "피트니스 센터 회원가입",
-      "english_phrase": "fitness center membership"
+      "foreign_phrase": "fitness center membership"
     },
     {
       "sentence_order": 2,
       "korean_phrase": "운동 프로그램",
-      "english_phrase": "workout programs"
+      "foreign_phrase": "workout programs"
     },
     {
       "sentence_order": 3,
       "korean_phrase": "개인 트레이닝",
-      "english_phrase": "personal training"
+      "foreign_phrase": "personal training"
     },
     {
       "sentence_order": 4,
       "korean_phrase": "월 회비",
-      "english_phrase": "monthly membership fee"
+      "foreign_phrase": "monthly membership fee"
     },
     {
       "sentence_order": 5,
       "korean_phrase": "운영 시간",
-      "english_phrase": "operating hours"
+      "foreign_phrase": "operating hours"
     },
     {
       "sentence_order": 6,
       "korean_phrase": "체험 수업",
-      "english_phrase": "trial class"
+      "foreign_phrase": "trial class"
     },
     {
       "sentence_order": 7,
       "korean_phrase": "최신 운동기구",
-      "english_phrase": "modern fitness equipment"
+      "foreign_phrase": "modern fitness equipment"
     },
     {
       "sentence_order": 8,
       "korean_phrase": "샤워 시설",
-      "english_phrase": "shower facilities"
+      "foreign_phrase": "shower facilities"
     },
     {
       "sentence_order": 8,
       "korean_phrase": "라커룸",
-      "english_phrase": "locker room"
+      "foreign_phrase": "locker room"
     },
     {
       "sentence_order": 9,
       "korean_phrase": "요가 클래스",
-      "english_phrase": "yoga classes"
+      "foreign_phrase": "yoga classes"
     },
     {
       "sentence_order": 9,
       "korean_phrase": "그룹 운동",
-      "english_phrase": "group fitness classes"
+      "foreign_phrase": "group fitness classes"
     },
     {
       "sentence_order": 10,
       "korean_phrase": "장기 회원",
-      "english_phrase": "long-term membership"
+      "foreign_phrase": "long-term membership"
     },
     {
       "sentence_order": 11,
       "korean_phrase": "운동을 시작",
-      "english_phrase": "start working out"
+      "foreign_phrase": "start working out"
     },
     {
       "sentence_order": 12,
       "korean_phrase": "회원 등록",
-      "english_phrase": "membership registration"
+      "foreign_phrase": "membership registration"
     }
   ],
   "highlight_sentences": []

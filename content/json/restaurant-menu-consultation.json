@@ -53,60 +53,60 @@
       "korean_text": "이 요리와 잘 어울리는 와인이 있으니, 한 병 주문하실까요?"
     }
   ],
-  "english_scripts": [
+  "foreign_scripts": [
     {
       "sentence_order": 1,
-      "english_text": "Hello, welcome to our restaurant. Let me introduce today's recommended menu to you.",
+      "foreign_text": "Hello, welcome to our restaurant. Let me introduce today's recommended menu to you.",
       "chunked_text": "Hello, | welcome to our restaurant. | Let me introduce | today's recommended menu | to you."
     },
     {
       "sentence_order": 2,
-      "english_text": "Excuse me, but may I ask what type of food you prefer first?",
+      "foreign_text": "Excuse me, but may I ask what type of food you prefer first?",
       "chunked_text": "Excuse me, | but may I ask | what type of food | you prefer first?"
     },
     {
       "sentence_order": 3,
-      "english_text": "I like spicy food, but my companion wants mild dishes, so I'm having trouble deciding.",
+      "foreign_text": "I like spicy food, but my companion wants mild dishes, so I'm having trouble deciding.",
       "chunked_text": "I like spicy food, | but my companion | wants mild dishes, | so I'm having trouble | deciding."
     },
     {
       "sentence_order": 4,
-      "english_text": "Then how about ordering half and half? You can enjoy both spicy and mild dishes together.",
+      "foreign_text": "Then how about ordering half and half? You can enjoy both spicy and mild dishes together.",
       "chunked_text": "Then how about | ordering half and half? | You can enjoy | both spicy and mild dishes | together."
     },
     {
       "sentence_order": 5,
-      "english_text": "That's a great idea! But could you tell me what the main ingredients of this dish are?",
+      "foreign_text": "That's a great idea! But could you tell me what the main ingredients of this dish are?",
       "chunked_text": "That's a great idea! | But could you tell me | what the main ingredients | of this dish are?"
     },
     {
       "sentence_order": 6,
-      "english_text": "This menu is made with fresh seafood and vegetables, and includes a special sauce.",
+      "foreign_text": "This menu is made with fresh seafood and vegetables, and includes a special sauce.",
       "chunked_text": "This menu is made | with fresh seafood | and vegetables, | and includes | a special sauce."
     },
     {
       "sentence_order": 7,
-      "english_text": "Do you have any allergies? If you let me know in advance, I'll inform the kitchen.",
+      "foreign_text": "Do you have any allergies? If you let me know in advance, I'll inform the kitchen.",
       "chunked_text": "Do you have | any allergies? | If you let me know | in advance, | I'll inform the kitchen."
     },
     {
       "sentence_order": 8,
-      "english_text": "I have a shrimp allergy, so I'd like to order dishes without shrimp.",
+      "foreign_text": "I have a shrimp allergy, so I'd like to order dishes without shrimp.",
       "chunked_text": "I have a shrimp allergy, | so I'd like to order | dishes without shrimp."
     },
     {
       "sentence_order": 9,
-      "english_text": "Of course. We can prepare it without shrimp, so don't worry.",
+      "foreign_text": "Of course. We can prepare it without shrimp, so don't worry.",
       "chunked_text": "Of course. | We can prepare it | without shrimp, | so don't worry."
     },
     {
       "sentence_order": 10,
-      "english_text": "Thank you. Then before we finalize the order, what drinks do you recommend?",
+      "foreign_text": "Thank you. Then before we finalize the order, what drinks do you recommend?",
       "chunked_text": "Thank you. | Then before we | finalize the order, | what drinks | do you recommend?"
     },
     {
       "sentence_order": 11,
-      "english_text": "There's a wine that pairs well with this dish, so would you like to order a bottle?",
+      "foreign_text": "There's a wine that pairs well with this dish, so would you like to order a bottle?",
       "chunked_text": "There's a wine | that pairs well | with this dish, | so would you like to | order a bottle?"
     }
   ],
@@ -333,77 +333,77 @@
     {
       "sentence_order": 1,
       "korean_phrase": "오늘의 추천 메뉴",
-      "english_phrase": "today's recommended menu"
+      "foreign_phrase": "today's recommended menu"
     },
     {
       "sentence_order": 2,
       "korean_phrase": "어떤 음식을 선호하시는지",
-      "english_phrase": "what type of food you prefer"
+      "foreign_phrase": "what type of food you prefer"
     },
     {
       "sentence_order": 3,
       "korean_phrase": "매운 음식을 좋아하지만",
-      "english_phrase": "I like spicy food, but"
+      "foreign_phrase": "I like spicy food, but"
     },
     {
       "sentence_order": 3,
       "korean_phrase": "맵지 않은 요리",
-      "english_phrase": "mild dishes"
+      "foreign_phrase": "mild dishes"
     },
     {
       "sentence_order": 4,
       "korean_phrase": "반반으로 주문하시는 건",
-      "english_phrase": "ordering half and half"
+      "foreign_phrase": "ordering half and half"
     },
     {
       "sentence_order": 5,
       "korean_phrase": "이 요리의 주재료",
-      "english_phrase": "the main ingredients of this dish"
+      "foreign_phrase": "the main ingredients of this dish"
     },
     {
       "sentence_order": 6,
       "korean_phrase": "신선한 해산물과 야채",
-      "english_phrase": "fresh seafood and vegetables"
+      "foreign_phrase": "fresh seafood and vegetables"
     },
     {
       "sentence_order": 6,
       "korean_phrase": "특별한 소스",
-      "english_phrase": "special sauce"
+      "foreign_phrase": "special sauce"
     },
     {
       "sentence_order": 7,
       "korean_phrase": "알레르기가 있으신가요",
-      "english_phrase": "Do you have any allergies"
+      "foreign_phrase": "Do you have any allergies"
     },
     {
       "sentence_order": 8,
       "korean_phrase": "새우가 들어가지 않은 요리",
-      "english_phrase": "dishes without shrimp"
+      "foreign_phrase": "dishes without shrimp"
     },
     {
       "sentence_order": 9,
       "korean_phrase": "새우를 빼고 조리",
-      "english_phrase": "prepared without shrimp"
+      "foreign_phrase": "prepared without shrimp"
     },
     {
       "sentence_order": 10,
       "korean_phrase": "주문을 확정",
-      "english_phrase": "finalize the order"
+      "foreign_phrase": "finalize the order"
     },
     {
       "sentence_order": 10,
       "korean_phrase": "음료는 어떤 걸 추천",
-      "english_phrase": "what drinks do you recommend"
+      "foreign_phrase": "what drinks do you recommend"
     },
     {
       "sentence_order": 11,
       "korean_phrase": "잘 어울리는 와인",
-      "english_phrase": "wine that pairs well"
+      "foreign_phrase": "wine that pairs well"
     },
     {
       "sentence_order": 11,
       "korean_phrase": "한 병 주문하실까요",
-      "english_phrase": "would you like to order a bottle"
+      "foreign_phrase": "would you like to order a bottle"
     }
   ],
   "highlight_sentences": []

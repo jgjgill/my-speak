@@ -37,40 +37,40 @@
       "korean_text": "좋은 하루 보내세요!"
     }
   ],
-  "english_scripts": [
+  "foreign_scripts": [
     {
       "sentence_order": 1,
-      "english_text": "I woke up at 6 AM.",
+      "foreign_text": "I woke up at 6 AM.",
       "chunked_text": "I woke up | at 6 AM."
     },
     {
       "sentence_order": 2,
-      "english_text": "I brushed my teeth first.",
+      "foreign_text": "I brushed my teeth first.",
       "chunked_text": "I brushed | my teeth | first."
     },
     {
       "sentence_order": 3,
-      "english_text": "Then I took a shower.",
+      "foreign_text": "Then I took a shower.",
       "chunked_text": "Then | I took | a shower."
     },
     {
       "sentence_order": 4,
-      "english_text": "I prepared a light breakfast.",
+      "foreign_text": "I prepared a light breakfast.",
       "chunked_text": "I prepared | a light breakfast."
     },
     {
       "sentence_order": 5,
-      "english_text": "I had toast and coffee.",
+      "foreign_text": "I had toast and coffee.",
       "chunked_text": "I had | toast and coffee."
     },
     {
       "sentence_order": 6,
-      "english_text": "Before leaving home, I packed my bag.",
+      "foreign_text": "Before leaving home, I packed my bag.",
       "chunked_text": "Before leaving home, | I packed | my bag."
     },
     {
       "sentence_order": 7,
-      "english_text": "Have a great day!",
+      "foreign_text": "Have a great day!",
       "chunked_text": "Have a great day!"
     }
   ],
@@ -369,24 +369,24 @@
     {
       "sentence_order": 4,
       "korean_phrase": "간단한 아침식사를 준비했어요",
-      "english_phrase": "I prepared a light breakfast"
+      "foreign_phrase": "I prepared a light breakfast"
     },
     {
       "sentence_order": 6,
       "korean_phrase": "집을 나서기 전에",
-      "english_phrase": "Before leaving home"
+      "foreign_phrase": "Before leaving home"
     },
     {
       "sentence_order": 7,
       "korean_phrase": "좋은 하루 보내세요",
-      "english_phrase": "Have a great day"
+      "foreign_phrase": "Have a great day"
     }
   ],
   "highlight_sentences": [
     {
       "sentence_order": 6,
       "korean_text": "집을 나서기 전에 가방을 챙겼어요",
-      "english_text": "Before leaving home, I packed my bag",
+      "foreign_text": "Before leaving home, I packed my bag",
       "reason": "한글로는 자연스럽지만 영어로는 Before -ing 구문을 정확히 알아야 하는 시간 관계 표현"
     }
   ]

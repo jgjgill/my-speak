@@ -96,7 +96,7 @@ I think I'll need care | until fully recovered.
 진료 → When can I schedule the next medical appointment?
 회복 → I think I'll need care until fully recovered.
 
-## 레벨 4: 영어 키워드
+## 레벨 4: 외국어 키워드
 
 appointment → Hello, I would like to make a hospital appointment.
 Tuesday → Please check if there's time available next Tuesday afternoon.

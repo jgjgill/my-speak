@@ -53,60 +53,60 @@
       "korean_text": "완전히 회복될 때까지 관리가 필요할 것 같습니다."
     }
   ],
-  "english_scripts": [
+  "foreign_scripts": [
     {
       "sentence_order": 1,
-      "english_text": "Hello, I would like to make a hospital appointment.",
+      "foreign_text": "Hello, I would like to make a hospital appointment.",
       "chunked_text": "Hello, | I would like to make | a hospital appointment."
     },
     {
       "sentence_order": 2,
-      "english_text": "Please check if there's time available next Tuesday afternoon.",
+      "foreign_text": "Please check if there's time available next Tuesday afternoon.",
       "chunked_text": "Please check | if there's time available | next Tuesday afternoon."
     },
     {
       "sentence_order": 3,
-      "english_text": "I've been having persistent headache lately and I'm worried.",
+      "foreign_text": "I've been having persistent headache lately and I'm worried.",
       "chunked_text": "I've been having | persistent headache lately | and I'm worried."
     },
     {
       "sentence_order": 4,
-      "english_text": "The symptoms get worse especially when I wake up in the morning.",
+      "foreign_text": "The symptoms get worse especially when I wake up in the morning.",
       "chunked_text": "The symptoms get worse | especially when I wake up | in the morning."
     },
     {
       "sentence_order": 5,
-      "english_text": "My sleep pattern has also become irregular since last week.",
+      "foreign_text": "My sleep pattern has also become irregular since last week.",
       "chunked_text": "My sleep pattern | has also become irregular | since last week."
     },
     {
       "sentence_order": 6,
-      "english_text": "I'm not sure if it's because of stress.",
+      "foreign_text": "I'm not sure if it's because of stress.",
       "chunked_text": "I'm not sure | if it's because of stress."
     },
     {
       "sentence_order": 7,
-      "english_text": "I want to get an accurate diagnosis from the doctor.",
+      "foreign_text": "I want to get an accurate diagnosis from the doctor.",
       "chunked_text": "I want to get | an accurate diagnosis | from the doctor."
     },
     {
       "sentence_order": 8,
-      "english_text": "I'd also like to know if I need a prescription.",
+      "foreign_text": "I'd also like to know if I need a prescription.",
       "chunked_text": "I'd also like to know | if I need | a prescription."
     },
     {
       "sentence_order": 9,
-      "english_text": "Does health insurance apply?",
+      "foreign_text": "Does health insurance apply?",
       "chunked_text": "Does health insurance apply?"
     },
     {
       "sentence_order": 10,
-      "english_text": "When can I schedule the next medical appointment?",
+      "foreign_text": "When can I schedule the next medical appointment?",
       "chunked_text": "When can I schedule | the next medical appointment?"
     },
     {
       "sentence_order": 11,
-      "english_text": "I think I'll need care until fully recovered.",
+      "foreign_text": "I think I'll need care until fully recovered.",
       "chunked_text": "I think I'll need care | until fully recovered."
     }
   ],
@@ -576,57 +576,57 @@
     {
       "sentence_order": 1,
       "korean_phrase": "병원 예약",
-      "english_phrase": "hospital appointment"
+      "foreign_phrase": "hospital appointment"
     },
     {
       "sentence_order": 2,
       "korean_phrase": "시간이 가능한지",
-      "english_phrase": "time available"
+      "foreign_phrase": "time available"
     },
     {
       "sentence_order": 3,
       "korean_phrase": "계속 두통",
-      "english_phrase": "persistent headache"
+      "foreign_phrase": "persistent headache"
     },
     {
       "sentence_order": 4,
       "korean_phrase": "증상이 심해집니다",
-      "english_phrase": "symptoms get worse"
+      "foreign_phrase": "symptoms get worse"
     },
     {
       "sentence_order": 5,
       "korean_phrase": "수면 패턴",
-      "english_phrase": "sleep pattern"
+      "foreign_phrase": "sleep pattern"
     },
     {
       "sentence_order": 6,
       "korean_phrase": "스트레스 때문인지",
-      "english_phrase": "because of stress"
+      "foreign_phrase": "because of stress"
     },
     {
       "sentence_order": 7,
       "korean_phrase": "정확한 진단",
-      "english_phrase": "accurate diagnosis"
+      "foreign_phrase": "accurate diagnosis"
     },
     {
       "sentence_order": 8,
       "korean_phrase": "처방전",
-      "english_phrase": "prescription"
+      "foreign_phrase": "prescription"
     },
     {
       "sentence_order": 9,
       "korean_phrase": "건강보험",
-      "english_phrase": "health insurance"
+      "foreign_phrase": "health insurance"
     },
     {
       "sentence_order": 10,
       "korean_phrase": "진료 예약",
-      "english_phrase": "medical appointment"
+      "foreign_phrase": "medical appointment"
     },
     {
       "sentence_order": 11,
       "korean_phrase": "완전히 회복될 때까지",
-      "english_phrase": "until fully recovered"
+      "foreign_phrase": "until fully recovered"
     }
   ],
   "highlight_sentences": []

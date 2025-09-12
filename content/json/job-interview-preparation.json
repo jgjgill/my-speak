@@ -57,65 +57,65 @@
       "korean_text": "저는 솔직하면서도 긍정적으로 답변했고, 개선하려는 노력을 강조했습니다."
     }
   ],
-  "english_scripts": [
+  "foreign_scripts": [
     {
       "sentence_order": 1,
-      "english_text": "Today I have an important job interview.",
+      "foreign_text": "Today I have an important job interview.",
       "chunked_text": "Today | I have an important job interview."
     },
     {
       "sentence_order": 2,
-      "english_text": "I wore a suit and arrived early to make a good first impression on the interviewer.",
+      "foreign_text": "I wore a suit and arrived early to make a good first impression on the interviewer.",
       "chunked_text": "I wore a suit | and arrived early | to make a good first impression | on the interviewer."
     },
     {
       "sentence_order": 3,
-      "english_text": "When the interviewer came in, I greeted them politely and shook hands.",
+      "foreign_text": "When the interviewer came in, I greeted them politely and shook hands.",
       "chunked_text": "When the interviewer came in, | I greeted them politely | and shook hands."
     },
     {
       "sentence_order": 4,
-      "english_text": "\"Hello, my name is Kim Minsu. Thank you for giving me this interview opportunity today.\"",
+      "foreign_text": "\"Hello, my name is Kim Minsu. Thank you for giving me this interview opportunity today.\"",
       "chunked_text": "\"Hello, | my name is Kim Minsu. | Thank you | for giving me this interview opportunity | today.\""
     },
     {
       "sentence_order": 5,
-      "english_text": "The interviewer started asking questions about my work experience and background.",
+      "foreign_text": "The interviewer started asking questions about my work experience and background.",
       "chunked_text": "The interviewer | started asking questions | about my work experience | and background."
     },
     {
       "sentence_order": 6,
-      "english_text": "I calmly explained about my expertise and achievements.",
+      "foreign_text": "I calmly explained about my expertise and achievements.",
       "chunked_text": "I calmly explained | about my expertise | and achievements."
     },
     {
       "sentence_order": 7,
-      "english_text": "\"Over the past three years working in marketing, I improved customer satisfaction by 20%.\"",
+      "foreign_text": "\"Over the past three years working in marketing, I improved customer satisfaction by 20%.\"",
       "chunked_text": "\"Over the past three years | working in marketing, | I improved customer satisfaction | by 20%.\""
     },
     {
       "sentence_order": 8,
-      "english_text": "The interviewer asked about my reason for applying to this company.",
+      "foreign_text": "The interviewer asked about my reason for applying to this company.",
       "chunked_text": "The interviewer asked | about my reason for applying | to this company."
     },
     {
       "sentence_order": 9,
-      "english_text": "I said that the company's vision and values align with my goals.",
+      "foreign_text": "I said that the company's vision and values align with my goals.",
       "chunked_text": "I said | that the company's vision and values | align with my goals."
     },
     {
       "sentence_order": 10,
-      "english_text": "\"I deeply resonated with your company's innovative approach and teamwork-oriented culture.\"",
+      "foreign_text": "\"I deeply resonated with your company's innovative approach and teamwork-oriented culture.\"",
       "chunked_text": "\"I deeply resonated | with your company's innovative approach | and teamwork-oriented culture.\""
     },
     {
       "sentence_order": 11,
-      "english_text": "Finally, the interviewer asked about my strengths and weaknesses.",
+      "foreign_text": "Finally, the interviewer asked about my strengths and weaknesses.",
       "chunked_text": "Finally, | the interviewer asked | about my strengths and weaknesses."
     },
     {
       "sentence_order": 12,
-      "english_text": "I answered honestly yet positively, emphasizing my efforts to improve.",
+      "foreign_text": "I answered honestly yet positively, emphasizing my efforts to improve.",
       "chunked_text": "I answered honestly | yet positively, | emphasizing my efforts to improve."
     }
   ],
@@ -637,52 +637,52 @@
     {
       "sentence_order": 2,
       "korean_phrase": "첫인상을 남기기",
-      "english_phrase": "make a good first impression"
+      "foreign_phrase": "make a good first impression"
     },
     {
       "sentence_order": 4,
       "korean_phrase": "면접 기회를 주셔서",
-      "english_phrase": "for giving me this interview opportunity"
+      "foreign_phrase": "for giving me this interview opportunity"
     },
     {
       "sentence_order": 5,
       "korean_phrase": "경력사항과 경험",
-      "english_phrase": "work experience and background"
+      "foreign_phrase": "work experience and background"
     },
     {
       "sentence_order": 6,
       "korean_phrase": "전문 분야와 성취",
-      "english_phrase": "expertise and achievements"
+      "foreign_phrase": "expertise and achievements"
     },
     {
       "sentence_order": 7,
       "korean_phrase": "고객 만족도를 20% 향상",
-      "english_phrase": "improved customer satisfaction by 20%"
+      "foreign_phrase": "improved customer satisfaction by 20%"
     },
     {
       "sentence_order": 8,
       "korean_phrase": "지원한 이유",
-      "english_phrase": "reason for applying"
+      "foreign_phrase": "reason for applying"
     },
     {
       "sentence_order": 9,
       "korean_phrase": "비전과 가치관",
-      "english_phrase": "vision and values"
+      "foreign_phrase": "vision and values"
     },
     {
       "sentence_order": 10,
       "korean_phrase": "팀워크를 중시하는",
-      "english_phrase": "teamwork-oriented"
+      "foreign_phrase": "teamwork-oriented"
     },
     {
       "sentence_order": 11,
       "korean_phrase": "장단점에 대해",
-      "english_phrase": "strengths and weaknesses"
+      "foreign_phrase": "strengths and weaknesses"
     },
     {
       "sentence_order": 12,
       "korean_phrase": "개선하려는 노력",
-      "english_phrase": "efforts to improve"
+      "foreign_phrase": "efforts to improve"
     }
   ],
   "highlight_sentences": []

@@ -69,80 +69,80 @@
       "korean_text": "정말 친절하게 도와주셔서 감사합니다."
     }
   ],
-  "english_scripts": [
+  "foreign_scripts": [
     {
       "sentence_order": 1,
-      "english_text": "Hello. I'm here to check in.",
+      "foreign_text": "Hello. I'm here to check in.",
       "chunked_text": "Hello. | I'm here to check in."
     },
     {
       "sentence_order": 2,
-      "english_text": "I made a reservation under the name Johnson.",
+      "foreign_text": "I made a reservation under the name Johnson.",
       "chunked_text": "I made a reservation | under the name Johnson."
     },
     {
       "sentence_order": 3,
-      "english_text": "I'll be staying for 3 nights and 4 days.",
+      "foreign_text": "I'll be staying for 3 nights and 4 days.",
       "chunked_text": "I'll be staying | for 3 nights and 4 days."
     },
     {
       "sentence_order": 4,
-      "english_text": "Is the Wi-Fi working well in the room?",
+      "foreign_text": "Is the Wi-Fi working well in the room?",
       "chunked_text": "Is the Wi-Fi | working well in the room?"
     },
     {
       "sentence_order": 5,
-      "english_text": "What time does breakfast start?",
+      "foreign_text": "What time does breakfast start?",
       "chunked_text": "What time | does breakfast start?"
     },
     {
       "sentence_order": 6,
-      "english_text": "What time is check-out?",
+      "foreign_text": "What time is check-out?",
       "chunked_text": "What time | is check-out?"
     },
     {
       "sentence_order": 7,
-      "english_text": "The air conditioner doesn't seem to be working in the room.",
+      "foreign_text": "The air conditioner doesn't seem to be working in the room.",
       "chunked_text": "The air conditioner | doesn't seem to be working | in the room."
     },
     {
       "sentence_order": 8,
-      "english_text": "Could you bring some extra towels?",
+      "foreign_text": "Could you bring some extra towels?",
       "chunked_text": "Could you bring | some extra towels?"
     },
     {
       "sentence_order": 9,
-      "english_text": "Is there a convenience store nearby?",
+      "foreign_text": "Is there a convenience store nearby?",
       "chunked_text": "Is there | a convenience store nearby?"
     },
     {
       "sentence_order": 10,
-      "english_text": "Could you call a taxi for me?",
+      "foreign_text": "Could you call a taxi for me?",
       "chunked_text": "Could you call | a taxi for me?"
     },
     {
       "sentence_order": 11,
-      "english_text": "How long does it take to get to the airport?",
+      "foreign_text": "How long does it take to get to the airport?",
       "chunked_text": "How long | does it take to get | to the airport?"
     },
     {
       "sentence_order": 12,
-      "english_text": "Can I leave my luggage at the front desk?",
+      "foreign_text": "Can I leave my luggage at the front desk?",
       "chunked_text": "Can I leave | my luggage | at the front desk?"
     },
     {
       "sentence_order": 13,
-      "english_text": "Is late check-out available?",
+      "foreign_text": "Is late check-out available?",
       "chunked_text": "Is late check-out | available?"
     },
     {
       "sentence_order": 14,
-      "english_text": "How much is the additional fee?",
+      "foreign_text": "How much is the additional fee?",
       "chunked_text": "How much | is the additional fee?"
     },
     {
       "sentence_order": 15,
-      "english_text": "Thank you so much for your kind help.",
+      "foreign_text": "Thank you so much for your kind help.",
       "chunked_text": "Thank you so much | for your kind help."
     }
   ],
@@ -783,77 +783,77 @@
     {
       "sentence_order": 1,
       "korean_phrase": "체크인을 하러 왔습니다",
-      "english_phrase": "I'm here to check in"
+      "foreign_phrase": "I'm here to check in"
     },
     {
       "sentence_order": 2,
       "korean_phrase": "예약을 했습니다",
-      "english_phrase": "I made a reservation"
+      "foreign_phrase": "I made a reservation"
     },
     {
       "sentence_order": 3,
       "korean_phrase": "3박 4일 동안 머물 예정입니다",
-      "english_phrase": "I'll be staying for 3 nights and 4 days"
+      "foreign_phrase": "I'll be staying for 3 nights and 4 days"
     },
     {
       "sentence_order": 4,
       "korean_phrase": "와이파이가 잘 연결되나요",
-      "english_phrase": "Is the Wi-Fi working well in the room"
+      "foreign_phrase": "Is the Wi-Fi working well in the room"
     },
     {
       "sentence_order": 5,
       "korean_phrase": "아침 식사는 몇 시부터 제공되나요",
-      "english_phrase": "What time does breakfast start"
+      "foreign_phrase": "What time does breakfast start"
     },
     {
       "sentence_order": 6,
       "korean_phrase": "체크아웃 시간은 언제인가요",
-      "english_phrase": "What time is check-out"
+      "foreign_phrase": "What time is check-out"
     },
     {
       "sentence_order": 7,
       "korean_phrase": "에어컨이 작동하지 않는 것 같습니다",
-      "english_phrase": "The air conditioner doesn't seem to be working"
+      "foreign_phrase": "The air conditioner doesn't seem to be working"
     },
     {
       "sentence_order": 8,
       "korean_phrase": "추가 수건을 좀 가져다 주실 수 있나요",
-      "english_phrase": "Could you bring some extra towels"
+      "foreign_phrase": "Could you bring some extra towels"
     },
     {
       "sentence_order": 9,
       "korean_phrase": "근처에 편의점이 있나요",
-      "english_phrase": "Is there a convenience store nearby"
+      "foreign_phrase": "Is there a convenience store nearby"
     },
     {
       "sentence_order": 10,
       "korean_phrase": "택시를 불러 주실 수 있나요",
-      "english_phrase": "Could you call a taxi for me"
+      "foreign_phrase": "Could you call a taxi for me"
     },
     {
       "sentence_order": 11,
       "korean_phrase": "대략 얼마나 걸리나요",
-      "english_phrase": "How long does it take to get to the airport"
+      "foreign_phrase": "How long does it take to get to the airport"
     },
     {
       "sentence_order": 12,
       "korean_phrase": "프런트 데스크에 맡겨도 될까요",
-      "english_phrase": "Can I leave my luggage at the front desk"
+      "foreign_phrase": "Can I leave my luggage at the front desk"
     },
     {
       "sentence_order": 13,
       "korean_phrase": "늦은 체크아웃이 가능한가요",
-      "english_phrase": "Is late check-out available"
+      "foreign_phrase": "Is late check-out available"
     },
     {
       "sentence_order": 14,
       "korean_phrase": "추가 요금이 얼마나 드나요",
-      "english_phrase": "How much is the additional fee"
+      "foreign_phrase": "How much is the additional fee"
     },
     {
       "sentence_order": 15,
       "korean_phrase": "친절하게 도와주셔서 감사합니다",
-      "english_phrase": "Thank you so much for your kind help"
+      "foreign_phrase": "Thank you so much for your kind help"
     }
   ],
   "highlight_sentences": []

@@ -78,7 +78,7 @@ There's a wine | that pairs well | with this dish, | so would you like to | orde
 반반 주문 → Then how about ordering half and half? You can enjoy both spicy and mild dishes together.
 주재료 → That's a great idea! But could you tell me what the main ingredients of this dish are?
 
-## 레벨 4: 영어 키워드
+## 레벨 4: 외국어 키워드
 
 welcome, recommend → Hello, welcome to our restaurant. Let me introduce today's recommended menu to you.
 prefer, food → Excuse me, but may I ask what type of food you prefer first?

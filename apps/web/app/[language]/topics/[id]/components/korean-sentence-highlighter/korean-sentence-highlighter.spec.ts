@@ -14,7 +14,7 @@ type LearningPoint = Tables<"learning_points">;
 const mockLearningPoint1: LearningPoint = {
 	id: "test-1",
 	korean_phrase: "월세가 얼마",
-	english_phrase: "how much is the rent",
+	foreign_phrase: "how much is the rent",
 	sentence_order: 1,
 	topic_id: "topic-1",
 	created_at: "2024-01-01",
@@ -23,7 +23,7 @@ const mockLearningPoint1: LearningPoint = {
 const mockLearningPoint2: LearningPoint = {
 	id: "test-2",
 	korean_phrase: "보증금",
-	english_phrase: "security deposit",
+	foreign_phrase: "security deposit",
 	sentence_order: 1,
 	topic_id: "topic-1",
 	created_at: "2024-01-01",

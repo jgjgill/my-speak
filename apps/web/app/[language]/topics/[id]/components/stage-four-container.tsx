@@ -24,9 +24,9 @@ const levelMetadata = {
 		description: "최소 키워드로 완전한 문장 구성",
 	},
 	4: {
-		title: "Level 4: 영어 키워드",
+		title: "Level 4: 외국어 키워드",
 		color: "border-green-600 bg-green-300",
-		description: "영어 키워드만으로 자유로운 표현",
+		description: "외국어 키워드만으로 자유로운 표현",
 	},
 };
 
@@ -108,7 +108,7 @@ export default function StageFourContainer({
 														난이도:{" "}
 														{speech.difficulty_percentage
 															? `${speech.difficulty_percentage}%`
-															: "영어키워드"}
+															: "외국어 키워드"}
 													</span>
 												</div>
 
