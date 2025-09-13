@@ -21,7 +21,7 @@ export function useProgress({
 	user,
 	maxAvailableStage,
 }: UseProgressProps): UseProgressResult {
-	const [currentStage, setCurrentStageState] = useState(maxAvailableStage);
+	const [currentStage, setCurrentStage] = useState(maxAvailableStage);
 
 	const updateProgressMutation = useUpdateUserProgress(topicId, user);
 
@@ -30,7 +30,7 @@ export function useProgress({
 			console.error("접근할 수 없는 단계:", stage);
 			return;
 		}
-		setCurrentStageState(stage);
+		setCurrentStage(stage);
 	};
 
 	const completeStage = (stage: number): void => {
@@ -38,7 +38,7 @@ export function useProgress({
 		if (nextStage <= 4 && user) {
 			updateProgressMutation.mutate(nextStage, {
 				onSuccess: () => {
-					setCurrentStageState(nextStage);
+					setCurrentStage(nextStage);
 				},
 			});
 		}

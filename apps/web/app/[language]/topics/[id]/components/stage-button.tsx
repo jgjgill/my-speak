@@ -75,7 +75,7 @@ export default function StageButton({
 				type="button"
 				onClick={() => !isDisabled && onStageChange(stage.number)}
 				disabled={isDisabled}
-				className="flex flex-col items-center group transition-all duration-300"
+				className="flex flex-col items-center cursor-pointer group transition-all duration-300"
 			>
 				<div
 					className={`
@@ -86,7 +86,7 @@ export default function StageButton({
 							isActive
 								? `${stageColors.bg} ${stageColors.border} shadow-lg ${stageColors.shadow} scale-110 animate-pulse`
 								: isCompleted
-									? "bg-stage-completed border-stage-completed shadow-lg shadow-yellow-200"
+									? `${stageColors.bg} ${stageColors.border} shadow-lg ${stageColors.shadow}`
 									: isDisabled
 										? "bg-gray-100 border-gray-200 cursor-not-allowed opacity-60"
 										: "bg-white border-gray-300 hover:border-gray-400 hover:shadow-md group-hover:scale-105"
@@ -122,7 +122,7 @@ export default function StageButton({
 							isActive
 								? stageColors.text
 								: isCompleted
-									? "text-yellow-700"
+									? stageColors.text
 									: isDisabled
 										? "text-gray-400"
 										: "text-gray-700"
@@ -135,7 +135,7 @@ export default function StageButton({
 							isActive
 								? stageColors.textSecondary
 								: isCompleted
-									? "text-yellow-600"
+									? stageColors.textSecondary
 									: isDisabled
 										? "text-gray-400"
 										: "text-gray-500"
@@ -151,7 +151,7 @@ export default function StageButton({
 					className={`
 						hidden sm:block transition-all duration-300 rounded-full
 						w-16 h-1 mx-4
-						${isCompleted ? "bg-stage-completed shadow-sm" : "bg-gray-200"}
+						${isCompleted ? `${stageColors.bg.replace("bg-", "bg-")} shadow-sm` : "bg-gray-200"}
 					`}
 				/>
 			)}

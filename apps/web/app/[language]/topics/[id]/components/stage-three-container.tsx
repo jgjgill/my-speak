@@ -32,15 +32,48 @@ export default function StageThreeContainer({
 	);
 
 	return (
-		<div className="border p-4 mb-6">
-			<h2 className="text-xl font-bold mb-4">3단계: 스피킹 연습</h2>
-			<p className="mb-4">한글을 보고 영어로 말해보세요.</p>
+		<div className="topic-card mb-6">
+			{/* 3단계 헤더 - 딥 핑크색 계열 */}
+			<div className="flex items-center gap-3 mb-6">
+				<div className="w-8 h-8 bg-stage-3 text-white rounded-full flex items-center justify-center text-sm font-bold">
+					3
+				</div>
+				<h2 className="text-title font-bold text-text-primary">스피킹 연습</h2>
+			</div>
 
-			<div className="mb-4 p-3 bg-orange-50 border border-orange-200 rounded">
-				<h4 className="font-semibold mb-2">1단계에서 체크한 학습 포인트</h4>
-				<div className="flex items-center gap-2 text-sm">
-					<span className="bg-orange-200 px-2 py-1 rounded">강조 표현</span>
-					<span>← 로그인 사용자만 표시됩니다</span>
+			{/* 미션 안내 */}
+			<div className="bg-gray-50 border border-gray-200 rounded-lg p-4 mb-6">
+				<div className="flex items-start gap-3">
+					<div className="w-6 h-6 bg-gray-500 text-white rounded-full flex items-center justify-center text-xs font-bold mt-0.5">
+						🎤
+					</div>
+					<div>
+						<h4 className="font-semibold text-text-primary mb-1">
+							스피킹 미션
+						</h4>
+						<p className="text-text-secondary text-sm">
+							한글을 보고 영어로 말해보세요.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			{/* 학습 포인트 */}
+			<div className="mb-6 bg-pink-50 border border-stage-3 rounded-lg p-4">
+				<div className="flex items-start gap-3">
+					<div className="w-6 h-6 bg-stage-3 text-white rounded-full flex items-center justify-center text-xs font-bold mt-0.5">
+						💡
+					</div>
+					<div>
+						<h4 className="font-semibold text-text-primary mb-1">
+							1단계에서 체크한 학습 포인트
+						</h4>
+						<div className="flex items-center gap-2 text-sm">
+							<span className="bg-pink-200 px-3 py-1 rounded-full text-pink-800 font-medium">
+								강조 표현
+							</span>
+						</div>
+					</div>
 				</div>
 			</div>
 
@@ -51,43 +84,49 @@ export default function StageThreeContainer({
 				);
 
 				return (
-					<div key={script.id} className="mb-3 p-2 border">
-						<div className="mb-2">
-							<strong className="mr-2">{index + 1}.</strong>
-							<span className="text-lg leading-relaxed">
-								<TextHighlighter
-									text={script.korean_text}
-									keywords={selectedKoreanKeywords}
-								/>
-							</span>
+					<div key={script.id} className="topic-card mb-4">
+						<div className="flex items-start gap-3 mb-3">
+							<div className="w-6 h-6 bg-stage-3 text-white rounded-full flex items-center justify-center text-xs font-bold mt-1">
+								{index + 1}
+							</div>
+							<div className="flex-1">
+								<span className="text-lg leading-relaxed text-korean">
+									<TextHighlighter
+										text={script.korean_text}
+										keywords={selectedKoreanKeywords}
+									/>
+								</span>
+							</div>
 						</div>
 
-						<details>
-							<summary className="cursor-pointer text-blue-600">
+						<details className="ml-9">
+							<summary className="cursor-pointer text-gray-600 font-medium hover:text-gray-800 hover:underline">
 								답안 보기
 							</summary>
-							<p className="mt-2 p-2 bg-gray-100">
-								{foreignScripts[index]?.chunked_text}
-							</p>
+							<div className="mt-3 p-3 bg-gray-50 border border-gray-200 rounded-lg">
+								<p className="text-text-secondary leading-relaxed">
+									{foreignScripts[index]?.chunked_text}
+								</p>
+							</div>
 						</details>
 					</div>
 				);
 			})}
 
-			<div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
+			<div className="mt-6 p-4 bg-pink-50 border border-stage-3 rounded-lg">
 				<div className="flex items-center justify-between">
 					<div>
-						<h4 className="font-bold text-blue-800 mb-1">
+						<h4 className="font-bold text-pink-800 mb-1">
 							🎯 3단계 스피킹 연습 완료!
 						</h4>
-						<p className="text-sm text-blue-700">
+						<p className="text-sm text-pink-700">
 							모든 문장을 연습해보셨나요? 이제 4단계로 진행해보세요.
 						</p>
 					</div>
 					<button
 						type="button"
 						onClick={onStageComplete}
-						className="px-4 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors"
+						className="px-4 py-2 cursor-pointer bg-stage-3 text-white rounded-lg font-medium hover:bg-pink-700 transition-colors"
 					>
 						4단계로 이동하기
 					</button>

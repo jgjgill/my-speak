@@ -21,7 +21,6 @@ export default function StageCompleteButton({
 		if (user && isStageComplete) {
 			try {
 				onStageComplete();
-				alert("🎉 2단계로 이동합니다. 🎉");
 			} catch (error) {
 				console.error("단계 완료 처리 중 오류:", error);
 				alert("단계 진행 중 오류가 발생했습니다. 다시 시도해주세요.");
@@ -30,11 +29,11 @@ export default function StageCompleteButton({
 	};
 
 	return (
-		<div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg">
+		<div className="mb-6 p-4 bg-blue-50 border border-stage-1 rounded-lg">
 			<div className="flex items-center justify-between">
 				<div>
-					<h4 className="font-bold text-green-800 mb-1">🎉 1단계 완료!</h4>
-					<p className="text-sm text-green-700">
+					<h4 className="font-bold text-blue-800 mb-1">🎉 1단계 완료!</h4>
+					<p className="text-sm text-blue-700">
 						모든 번역을 완료했습니다. 2단계로 진행해보세요.
 					</p>
 				</div>
@@ -42,7 +41,7 @@ export default function StageCompleteButton({
 					<button
 						type="button"
 						onClick={handleNextStage}
-						className="px-4 py-2 bg-green-600 text-white rounded-lg font-medium hover:bg-green-700 transition-colors"
+						className="px-4 py-2 cursor-pointer bg-stage-1 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors"
 					>
 						2단계로 이동하기
 					</button>

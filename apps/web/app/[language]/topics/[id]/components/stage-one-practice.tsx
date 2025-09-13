@@ -139,10 +139,13 @@ export default function StageOnePractice({
 				const learningPoints = learningPointsByOrder[sentenceOrder] || [];
 
 				return (
-					<div key={script.id} className="mb-6 p-4 border rounded">
-						<div className="mb-3">
-							<div className="flex justify-between items-start mb-2">
-								<span className="text-sm font-medium text-gray-600">
+					<div key={script.id} className="topic-card mb-6">
+						<div className="mb-4">
+							<div className="flex items-center gap-2 mb-3">
+								<div className="w-6 h-6 bg-stage-1 text-white rounded-full flex items-center justify-center text-xs font-bold">
+									{index + 1}
+								</div>
+								<span className="text-sm font-medium text-text-secondary">
 									문장 {index + 1}
 								</span>
 							</div>

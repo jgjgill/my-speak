@@ -46,7 +46,11 @@ export default function TopicClientWrapper({
 				<StageOneContainer
 					topicId={topicId}
 					onStageComplete={() => {
-						completeStage(1);
+						if (maxAvailableStage > 1) {
+							changeCurrentStage(2);
+						} else {
+							completeStage(1);
+						}
 						window.scrollTo({ top: 0, behavior: "instant" });
 					}}
 				/>
@@ -55,7 +59,11 @@ export default function TopicClientWrapper({
 				<StageTwoContainer
 					topicId={topicId}
 					onStageComplete={() => {
-						completeStage(2);
+						if (maxAvailableStage > 2) {
+							changeCurrentStage(3);
+						} else {
+							completeStage(2);
+						}
 						window.scrollTo({ top: 0, behavior: "instant" });
 					}}
 				/>
@@ -64,7 +72,11 @@ export default function TopicClientWrapper({
 				<StageThreeContainer
 					topicId={topicId}
 					onStageComplete={() => {
-						completeStage(3);
+						if (maxAvailableStage > 3) {
+							changeCurrentStage(4);
+						} else {
+							completeStage(3);
+						}
 						window.scrollTo({ top: 0, behavior: "instant" });
 					}}
 				/>
