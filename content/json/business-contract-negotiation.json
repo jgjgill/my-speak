@@ -1,0 +1,741 @@
+{
+  "topic": {
+    "id": "a8b9c1d2-e3f4-5678-9abc-def012345678",
+    "title": "비즈니스 계약 협상하기",
+    "category": "업무/학업",
+    "difficulty": "중급",
+    "description": "비즈니스 계약 협상 과정에서 필요한 전문 용어와 협상 기법, 조건 제시 등의 고급 영어 표현 학습",
+    "language_code": "en",
+    "total_sentences": 13
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 오늘 계약 조건에 대해 논의하러 왔습니다."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "먼저 전체적인 프로젝트 범위를 명확히 하고 싶습니다."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "저희가 제안하는 조건들을 검토해보시겠습니까?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "단가 협상부터 시작하는 것이 좋겠네요."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "현재 제시하신 가격은 저희 예산을 초과합니다."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "할인 혜택을 고려해주실 수 있을까요?"
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "납기는 협상 가능하지만, 품질 보증 조건은 양보할 수 없습니다."
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "지불 조건은 어떻게 설정하실 건가요?"
+    },
+    {
+      "sentence_order": 9,
+      "korean_text": "저희는 분할 지불 방식을 선호합니다."
+    },
+    {
+      "sentence_order": 10,
+      "korean_text": "위약금 조항에 대해서도 논의해야겠습니다."
+    },
+    {
+      "sentence_order": 11,
+      "korean_text": "계약서 초안을 검토한 후 최종 결정하겠습니다."
+    },
+    {
+      "sentence_order": 12,
+      "korean_text": "양측 모두에게 윈-윈 상황이 되도록 합의점을 찾아보겠습니다."
+    },
+    {
+      "sentence_order": 13,
+      "korean_text": "법무팀 검토 후에 정식 계약을 체결하겠습니다."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, I'm here today to discuss the contract terms.",
+      "chunked_text": "Hello, | I'm here today | to discuss the contract terms."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "First, I'd like to clarify the overall project scope.",
+      "chunked_text": "First, | I'd like to clarify | the overall project scope."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Would you mind reviewing the conditions we're proposing?",
+      "chunked_text": "Would you mind | reviewing the conditions | we're proposing?"
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Let's start with the unit price negotiation.",
+      "chunked_text": "Let's start | with the unit price negotiation."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "The current price you've quoted exceeds our budget.",
+      "chunked_text": "The current price | you've quoted | exceeds our budget."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Could you consider offering some discount benefits?",
+      "chunked_text": "Could you consider | offering some | discount benefits?"
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "The delivery timeline is negotiable, but we cannot compromise on the quality assurance terms.",
+      "chunked_text": "The delivery timeline | is negotiable, | but we cannot compromise | on the quality assurance terms."
+    },
+    {
+      "sentence_order": 8,
+      "foreign_text": "How would you like to structure the payment terms?",
+      "chunked_text": "How would you like | to structure | the payment terms?"
+    },
+    {
+      "sentence_order": 9,
+      "foreign_text": "We prefer the installment payment method.",
+      "chunked_text": "We prefer | the installment payment method."
+    },
+    {
+      "sentence_order": 10,
+      "foreign_text": "We also need to discuss the penalty clause.",
+      "chunked_text": "We also need to discuss | the penalty clause."
+    },
+    {
+      "sentence_order": 11,
+      "foreign_text": "We'll make our final decision after reviewing the contract draft.",
+      "chunked_text": "We'll make our final decision | after reviewing | the contract draft."
+    },
+    {
+      "sentence_order": 12,
+      "foreign_text": "Let's find a compromise that creates a win-win situation for both parties.",
+      "chunked_text": "Let's find a compromise | that creates a win-win situation | for both parties."
+    },
+    {
+      "sentence_order": 13,
+      "foreign_text": "We'll proceed with the formal contract signing after our legal team review.",
+      "chunked_text": "We'll proceed | with the formal contract signing | after our legal team review."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "오늘",
+        "계약 조건",
+        "논의"
+      ],
+      "target_sentence": "Hello, I'm here today to discuss the contract terms.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "먼저",
+        "전체적인",
+        "프로젝트 범위"
+      ],
+      "target_sentence": "First, I'd like to clarify the overall project scope.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "검토",
+        "조건들",
+        "제안"
+      ],
+      "target_sentence": "Would you mind reviewing the conditions we're proposing?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "시작",
+        "단가",
+        "협상"
+      ],
+      "target_sentence": "Let's start with the unit price negotiation.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "현재 가격",
+        "예산",
+        "초과"
+      ],
+      "target_sentence": "The current price you've quoted exceeds our budget.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "고려",
+        "할인",
+        "혜택"
+      ],
+      "target_sentence": "Could you consider offering some discount benefits?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "납기",
+        "협상 가능",
+        "품질 보증"
+      ],
+      "target_sentence": "The delivery timeline is negotiable, but we cannot compromise on the quality assurance terms.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 8,
+      "keywords": [
+        "어떻게",
+        "설정",
+        "지불 조건"
+      ],
+      "target_sentence": "How would you like to structure the payment terms?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 9,
+      "keywords": [
+        "선호",
+        "분할",
+        "지불"
+      ],
+      "target_sentence": "We prefer the installment payment method.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 10,
+      "keywords": [
+        "논의",
+        "위약금",
+        "조항"
+      ],
+      "target_sentence": "We also need to discuss the penalty clause.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 11,
+      "keywords": [
+        "최종 결정",
+        "검토",
+        "계약서"
+      ],
+      "target_sentence": "We'll make our final decision after reviewing the contract draft.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 12,
+      "keywords": [
+        "합의점",
+        "윈-윈",
+        "양측"
+      ],
+      "target_sentence": "Let's find a compromise that creates a win-win situation for both parties.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 13,
+      "keywords": [
+        "진행",
+        "정식 계약",
+        "법무팀"
+      ],
+      "target_sentence": "We'll proceed with the formal contract signing after our legal team review.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "계약 조건 논의"
+      ],
+      "target_sentence": "Hello, I'm here today to discuss the contract terms.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 15,
+      "keywords": [
+        "프로젝트 범위 명확히"
+      ],
+      "target_sentence": "First, I'd like to clarify the overall project scope.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 16,
+      "keywords": [
+        "조건 검토"
+      ],
+      "target_sentence": "Would you mind reviewing the conditions we're proposing?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 17,
+      "keywords": [
+        "단가 협상"
+      ],
+      "target_sentence": "Let's start with the unit price negotiation.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 18,
+      "keywords": [
+        "가격 예산 초과"
+      ],
+      "target_sentence": "The current price you've quoted exceeds our budget.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 19,
+      "keywords": [
+        "할인 혜택"
+      ],
+      "target_sentence": "Could you consider offering some discount benefits?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 20,
+      "keywords": [
+        "납기 협상",
+        "품질 보증"
+      ],
+      "target_sentence": "The delivery timeline is negotiable, but we cannot compromise on the quality assurance terms.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 21,
+      "keywords": [
+        "지불 조건 설정"
+      ],
+      "target_sentence": "How would you like to structure the payment terms?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 22,
+      "keywords": [
+        "분할 지불 선호"
+      ],
+      "target_sentence": "We prefer the installment payment method.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 23,
+      "keywords": [
+        "위약금 조항"
+      ],
+      "target_sentence": "We also need to discuss the penalty clause.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 24,
+      "keywords": [
+        "계약서 검토"
+      ],
+      "target_sentence": "We'll make our final decision after reviewing the contract draft.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 25,
+      "keywords": [
+        "윈-윈 합의"
+      ],
+      "target_sentence": "Let's find a compromise that creates a win-win situation for both parties.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 26,
+      "keywords": [
+        "법무팀 검토"
+      ],
+      "target_sentence": "We'll proceed with the formal contract signing after our legal team review.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 27,
+      "keywords": [
+        "계약"
+      ],
+      "target_sentence": "Hello, I'm here today to discuss the contract terms.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 28,
+      "keywords": [
+        "범위"
+      ],
+      "target_sentence": "First, I'd like to clarify the overall project scope.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 29,
+      "keywords": [
+        "검토"
+      ],
+      "target_sentence": "Would you mind reviewing the conditions we're proposing?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 30,
+      "keywords": [
+        "협상"
+      ],
+      "target_sentence": "Let's start with the unit price negotiation.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 31,
+      "keywords": [
+        "초과"
+      ],
+      "target_sentence": "The current price you've quoted exceeds our budget.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 32,
+      "keywords": [
+        "할인"
+      ],
+      "target_sentence": "Could you consider offering some discount benefits?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 33,
+      "keywords": [
+        "품질"
+      ],
+      "target_sentence": "The delivery timeline is negotiable, but we cannot compromise on the quality assurance terms.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 34,
+      "keywords": [
+        "지불"
+      ],
+      "target_sentence": "How would you like to structure the payment terms?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 35,
+      "keywords": [
+        "분할"
+      ],
+      "target_sentence": "We prefer the installment payment method.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 36,
+      "keywords": [
+        "위약금"
+      ],
+      "target_sentence": "We also need to discuss the penalty clause.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 37,
+      "keywords": [
+        "초안"
+      ],
+      "target_sentence": "We'll make our final decision after reviewing the contract draft.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 38,
+      "keywords": [
+        "윈-윈"
+      ],
+      "target_sentence": "Let's find a compromise that creates a win-win situation for both parties.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 39,
+      "keywords": [
+        "법무팀"
+      ],
+      "target_sentence": "We'll proceed with the formal contract signing after our legal team review.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 40,
+      "keywords": [
+        "contract"
+      ],
+      "target_sentence": "Hello, I'm here today to discuss the contract terms.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 41,
+      "keywords": [
+        "scope"
+      ],
+      "target_sentence": "First, I'd like to clarify the overall project scope.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 42,
+      "keywords": [
+        "review"
+      ],
+      "target_sentence": "Would you mind reviewing the conditions we're proposing?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 43,
+      "keywords": [
+        "negotiation"
+      ],
+      "target_sentence": "Let's start with the unit price negotiation.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 44,
+      "keywords": [
+        "exceeds"
+      ],
+      "target_sentence": "The current price you've quoted exceeds our budget.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 45,
+      "keywords": [
+        "discount"
+      ],
+      "target_sentence": "Could you consider offering some discount benefits?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 46,
+      "keywords": [
+        "quality"
+      ],
+      "target_sentence": "The delivery timeline is negotiable, but we cannot compromise on the quality assurance terms.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 47,
+      "keywords": [
+        "payment"
+      ],
+      "target_sentence": "How would you like to structure the payment terms?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 48,
+      "keywords": [
+        "installment"
+      ],
+      "target_sentence": "We prefer the installment payment method.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 49,
+      "keywords": [
+        "penalty"
+      ],
+      "target_sentence": "We also need to discuss the penalty clause.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 50,
+      "keywords": [
+        "draft"
+      ],
+      "target_sentence": "We'll make our final decision after reviewing the contract draft.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 51,
+      "keywords": [
+        "win-win"
+      ],
+      "target_sentence": "Let's find a compromise that creates a win-win situation for both parties.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 52,
+      "keywords": [
+        "legal"
+      ],
+      "target_sentence": "We'll proceed with the formal contract signing after our legal team review.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "전체적인 프로젝트 범위",
+      "foreign_phrase": "overall project scope"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "단가 협상",
+      "foreign_phrase": "unit price negotiation"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "할인 혜택",
+      "foreign_phrase": "discount benefits"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "품질 보증 조건",
+      "foreign_phrase": "quality assurance terms"
+    },
+    {
+      "sentence_order": 8,
+      "korean_phrase": "지불 조건",
+      "foreign_phrase": "payment terms"
+    },
+    {
+      "sentence_order": 9,
+      "korean_phrase": "분할 지불",
+      "foreign_phrase": "installment payment"
+    },
+    {
+      "sentence_order": 10,
+      "korean_phrase": "위약금 조항",
+      "foreign_phrase": "penalty clause"
+    },
+    {
+      "sentence_order": 11,
+      "korean_phrase": "계약서 초안",
+      "foreign_phrase": "contract draft"
+    },
+    {
+      "sentence_order": 12,
+      "korean_phrase": "윈-윈",
+      "foreign_phrase": "win-win"
+    },
+    {
+      "sentence_order": 13,
+      "korean_phrase": "법무팀 검토",
+      "foreign_phrase": "legal team review"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 7,
+      "korean_text": "납기는 협상 가능하지만, 품질 보증 조건은 양보할 수 없습니다.",
+      "foreign_text": "The delivery timeline is negotiable, but we cannot compromise on the quality assurance terms.",
+      "reason": "협상에서 핵심적인 타협점과 비타협점을 명확히 구분하여 제시하는 전문적인 협상 기법을 보여주는 문장"
+    }
+  ]
+}
