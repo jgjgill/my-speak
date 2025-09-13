@@ -26,20 +26,20 @@ export default function PracticeHeader({
 				<ProgressIndicator progressPercentage={progressPercentage} />
 			</div>
 
-			<div className="mb-4 p-3 bg-blue-50 border border-blue-200 rounded">
-				<h4 className="font-semibold mb-2">학습 포인트 안내</h4>
+			<div className="mb-4 p-3 bg-gray-50 border border-gray-200 rounded">
+				<h4 className="font-semibold mb-2 text-text-primary">학습 포인트 안내</h4>
 				<div className="flex flex-wrap gap-4 text-sm">
 					<div className="flex items-center gap-2">
-						<span className="bg-yellow-200 px-2 py-1 rounded">
+						<span className="bg-gray-100 text-gray-700 px-2 py-1 rounded border">
 							기본 학습 포인트
 						</span>
-						<span>← 클릭하면 영어 표현 확인</span>
+						<span className="text-text-secondary">← 클릭하면 영어 표현 확인</span>
 					</div>
 					<div className="flex items-center gap-2">
-						<span className="bg-orange-200 px-2 py-1 rounded">
+						<span className="bg-amber-100 text-amber-800 px-2 py-1 rounded border border-amber-300">
 							내가 선택한 포인트
 						</span>
-						<span>← 체크포인트로도 저장됨 (로그인 사용자만)</span>
+						<span className="text-text-secondary">← 체크포인트로도 저장됨 (로그인 사용자만)</span>
 					</div>
 				</div>
 			</div>

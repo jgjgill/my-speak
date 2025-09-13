@@ -9,7 +9,7 @@ import {
 export default function TextHighlighter({
 	text,
 	keywords,
-	highlightClassName = "bg-orange-200 px-1 rounded",
+	highlightClassName = "bg-amber-100 text-amber-800 px-1 rounded border border-amber-300",
 }: TextHighlighterProps) {
 	const segments = parseTextWithKeywords(text, keywords);
 

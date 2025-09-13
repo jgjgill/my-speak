@@ -37,8 +37,8 @@ export default function KoreanSentenceHighlighter({
 	};
 
 	const highlightVariants = {
-		default: "bg-yellow-200",
-		selected: "bg-orange-200",
+		default: "bg-gray-100 text-gray-700 border border-gray-200",
+		selected: "bg-amber-100 text-amber-800 border border-amber-300",
 	};
 
 	return (
@@ -57,7 +57,7 @@ export default function KoreanSentenceHighlighter({
 						<button
 							key={keywordKey}
 							type="button"
-							className={`${highlightClass} px-1 rounded cursor-pointer hover:bg-yellow-300 transition-colors inline font-inherit text-inherit border-none`}
+							className={`${highlightClass} px-1 rounded cursor-pointer hover:bg-gray-200 transition-colors inline font-inherit`}
 							onClick={() => handleKeywordClick(segment)}
 						>
 							{segment.text}
