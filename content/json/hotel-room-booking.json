@@ -1,0 +1,718 @@
+{
+  "topic": {
+    "id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+    "title": "호텔 객실 예약하기",
+    "category": "일상생활",
+    "difficulty": "초급",
+    "description": "호텔에서 객실 예약 및 체크인 과정에서 필요한 기본 영어 표현 학습",
+    "language_code": "en",
+    "total_sentences": 13
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 객실 예약을 하고 싶습니다."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "더블룸으로 예약 가능한지 확인해주세요."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "언제부터 언제까지 머물 예정이신가요?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "다음 주 화요일부터 목요일까지 머물 예정입니다."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "2박 3일 묵을 예정이고, 체크인은 내일 오후 3시 이후에 하겠습니다."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "1박당 요금이 얼마인지 알 수 있을까요?"
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "시즌에 따라 다르지만, 평일 기준으로는 1박에 15만원입니다."
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "조식이 포함되어 있나요?"
+    },
+    {
+      "sentence_order": 9,
+      "korean_text": "네, 조식 뷔페가 포함되어 있습니다."
+    },
+    {
+      "sentence_order": 10,
+      "korean_text": "결제는 어떻게 하면 되나요?"
+    },
+    {
+      "sentence_order": 11,
+      "korean_text": "신용카드나 현금으로 결제 가능하며, 체크인할 때 결제하셔도 됩니다."
+    },
+    {
+      "sentence_order": 12,
+      "korean_text": "좋습니다, 그럼 예약하겠습니다."
+    },
+    {
+      "sentence_order": 13,
+      "korean_text": "확인 이메일을 보내드릴게요."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, I'd like to make a room reservation.",
+      "chunked_text": "Hello, | I'd like to make | a room reservation."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Could you check if a double room is available?",
+      "chunked_text": "Could you check | if a double room | is available?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "When are you planning to stay?",
+      "chunked_text": "When are you | planning to stay?"
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "I'm planning to stay from next Tuesday to Thursday.",
+      "chunked_text": "I'm planning to stay | from next Tuesday | to Thursday."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "I'm planning to stay for 3 days and 2 nights, and I'll check in after 3 PM tomorrow.",
+      "chunked_text": "I'm planning to stay | for 3 days and 2 nights, | and I'll check in | after 3 PM tomorrow."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Could you tell me the rate per night?",
+      "chunked_text": "Could you tell me | the rate per night?"
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "It depends on the season, but on weekdays it's 150,000 won per night.",
+      "chunked_text": "It depends on the season, | but on weekdays | it's 150,000 won per night."
+    },
+    {
+      "sentence_order": 8,
+      "foreign_text": "Is breakfast included?",
+      "chunked_text": "Is breakfast | included?"
+    },
+    {
+      "sentence_order": 9,
+      "foreign_text": "Yes, breakfast buffet is included.",
+      "chunked_text": "Yes, | breakfast buffet | is included."
+    },
+    {
+      "sentence_order": 10,
+      "foreign_text": "How can I make the payment?",
+      "chunked_text": "How can I | make the payment?"
+    },
+    {
+      "sentence_order": 11,
+      "foreign_text": "You can pay by credit card or cash, and you can also pay at check-in.",
+      "chunked_text": "You can pay | by credit card or cash, | and you can also pay | at check-in."
+    },
+    {
+      "sentence_order": 12,
+      "foreign_text": "Great, then I'll make the reservation.",
+      "chunked_text": "Great, | then I'll make | the reservation."
+    },
+    {
+      "sentence_order": 13,
+      "foreign_text": "I'll send you a confirmation email.",
+      "chunked_text": "I'll send you | a confirmation email."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "안녕하세요",
+        "객실",
+        "예약"
+      ],
+      "target_sentence": "Hello, I'd like to make a room reservation.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "더블룸",
+        "예약",
+        "가능한지"
+      ],
+      "target_sentence": "Could you check if a double room is available?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "언제부터",
+        "언제까지",
+        "머물 예정"
+      ],
+      "target_sentence": "When are you planning to stay?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "다음 주",
+        "화요일부터",
+        "목요일까지"
+      ],
+      "target_sentence": "I'm planning to stay from next Tuesday to Thursday.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "2박 3일",
+        "체크인",
+        "내일 오후 3시"
+      ],
+      "target_sentence": "I'm planning to stay for 3 days and 2 nights, and I'll check in after 3 PM tomorrow.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "1박당",
+        "요금",
+        "얼마"
+      ],
+      "target_sentence": "Could you tell me the rate per night?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "시즌",
+        "평일",
+        "15만원"
+      ],
+      "target_sentence": "It depends on the season, but on weekdays it's 150,000 won per night.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 8,
+      "keywords": [
+        "조식",
+        "포함"
+      ],
+      "target_sentence": "Is breakfast included?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 9,
+      "keywords": [
+        "조식 뷔페",
+        "포함"
+      ],
+      "target_sentence": "Yes, breakfast buffet is included.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 10,
+      "keywords": [
+        "결제",
+        "어떻게"
+      ],
+      "target_sentence": "How can I make the payment?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 11,
+      "keywords": [
+        "신용카드",
+        "현금",
+        "체크인할 때"
+      ],
+      "target_sentence": "You can pay by credit card or cash, and you can also pay at check-in.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 12,
+      "keywords": [
+        "좋습니다",
+        "예약"
+      ],
+      "target_sentence": "Great, then I'll make the reservation.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 13,
+      "keywords": [
+        "확인 이메일"
+      ],
+      "target_sentence": "I'll send you a confirmation email.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "객실 예약"
+      ],
+      "target_sentence": "Hello, I'd like to make a room reservation.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 15,
+      "keywords": [
+        "더블룸 가능"
+      ],
+      "target_sentence": "Could you check if a double room is available?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 16,
+      "keywords": [
+        "언제까지 머물"
+      ],
+      "target_sentence": "When are you planning to stay?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 17,
+      "keywords": [
+        "화요일부터 목요일"
+      ],
+      "target_sentence": "I'm planning to stay from next Tuesday to Thursday.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 18,
+      "keywords": [
+        "2박 3일",
+        "체크인"
+      ],
+      "target_sentence": "I'm planning to stay for 3 days and 2 nights, and I'll check in after 3 PM tomorrow.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 19,
+      "keywords": [
+        "1박당 요금"
+      ],
+      "target_sentence": "Could you tell me the rate per night?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 20,
+      "keywords": [
+        "평일 15만원"
+      ],
+      "target_sentence": "It depends on the season, but on weekdays it's 150,000 won per night.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 21,
+      "keywords": [
+        "조식 포함"
+      ],
+      "target_sentence": "Is breakfast included?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 22,
+      "keywords": [
+        "뷔페 포함"
+      ],
+      "target_sentence": "Yes, breakfast buffet is included.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 23,
+      "keywords": [
+        "결제 방법"
+      ],
+      "target_sentence": "How can I make the payment?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 24,
+      "keywords": [
+        "카드",
+        "체크인"
+      ],
+      "target_sentence": "You can pay by credit card or cash, and you can also pay at check-in.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 25,
+      "keywords": [
+        "예약하겠습니다"
+      ],
+      "target_sentence": "Great, then I'll make the reservation.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 26,
+      "keywords": [
+        "확인 이메일"
+      ],
+      "target_sentence": "I'll send you a confirmation email.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 27,
+      "keywords": [
+        "예약"
+      ],
+      "target_sentence": "Hello, I'd like to make a room reservation.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 28,
+      "keywords": [
+        "더블룸"
+      ],
+      "target_sentence": "Could you check if a double room is available?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 29,
+      "keywords": [
+        "언제"
+      ],
+      "target_sentence": "When are you planning to stay?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 30,
+      "keywords": [
+        "화요일-목요일"
+      ],
+      "target_sentence": "I'm planning to stay from next Tuesday to Thursday.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 31,
+      "keywords": [
+        "2박",
+        "체크인"
+      ],
+      "target_sentence": "I'm planning to stay for 3 days and 2 nights, and I'll check in after 3 PM tomorrow.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 32,
+      "keywords": [
+        "요금"
+      ],
+      "target_sentence": "Could you tell me the rate per night?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 33,
+      "keywords": [
+        "15만원"
+      ],
+      "target_sentence": "It depends on the season, but on weekdays it's 150,000 won per night.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 34,
+      "keywords": [
+        "조식"
+      ],
+      "target_sentence": "Is breakfast included?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 35,
+      "keywords": [
+        "포함"
+      ],
+      "target_sentence": "Yes, breakfast buffet is included.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 36,
+      "keywords": [
+        "결제"
+      ],
+      "target_sentence": "How can I make the payment?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 37,
+      "keywords": [
+        "카드"
+      ],
+      "target_sentence": "You can pay by credit card or cash, and you can also pay at check-in.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 38,
+      "keywords": [
+        "예약"
+      ],
+      "target_sentence": "Great, then I'll make the reservation.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 39,
+      "keywords": [
+        "이메일"
+      ],
+      "target_sentence": "I'll send you a confirmation email.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 40,
+      "keywords": [
+        "reservation"
+      ],
+      "target_sentence": "Hello, I'd like to make a room reservation.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 41,
+      "keywords": [
+        "double room"
+      ],
+      "target_sentence": "Could you check if a double room is available?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 42,
+      "keywords": [
+        "when"
+      ],
+      "target_sentence": "When are you planning to stay?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 43,
+      "keywords": [
+        "Tuesday-Thursday"
+      ],
+      "target_sentence": "I'm planning to stay from next Tuesday to Thursday.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 44,
+      "keywords": [
+        "check in"
+      ],
+      "target_sentence": "I'm planning to stay for 3 days and 2 nights, and I'll check in after 3 PM tomorrow.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 45,
+      "keywords": [
+        "rate"
+      ],
+      "target_sentence": "Could you tell me the rate per night?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 46,
+      "keywords": [
+        "150",
+        "000 won"
+      ],
+      "target_sentence": "It depends on the season, but on weekdays it's 150,000 won per night.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 47,
+      "keywords": [
+        "breakfast"
+      ],
+      "target_sentence": "Is breakfast included?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 48,
+      "keywords": [
+        "included"
+      ],
+      "target_sentence": "Yes, breakfast buffet is included.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 49,
+      "keywords": [
+        "payment"
+      ],
+      "target_sentence": "How can I make the payment?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 50,
+      "keywords": [
+        "credit card"
+      ],
+      "target_sentence": "You can pay by credit card or cash, and you can also pay at check-in.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 51,
+      "keywords": [
+        "make"
+      ],
+      "target_sentence": "Great, then I'll make the reservation.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 52,
+      "keywords": [
+        "confirmation"
+      ],
+      "target_sentence": "I'll send you a confirmation email.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "더블룸",
+      "foreign_phrase": "double room"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "체크인은",
+      "foreign_phrase": "check in"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "1박당 요금",
+      "foreign_phrase": "rate per night"
+    },
+    {
+      "sentence_order": 8,
+      "korean_phrase": "조식이 포함",
+      "foreign_phrase": "breakfast included"
+    },
+    {
+      "sentence_order": 10,
+      "korean_phrase": "결제는",
+      "foreign_phrase": "payment"
+    },
+    {
+      "sentence_order": 11,
+      "korean_phrase": "체크인할 때",
+      "foreign_phrase": "at check-in"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 5,
+      "korean_text": "2박 3일 묵을 예정이고, 체크인은 내일 오후 3시 이후에 하겠습니다.",
+      "foreign_text": "I'm planning to stay for 3 days and 2 nights, and I'll check in after 3 PM tomorrow.",
+      "reason": "호텔 예약 시 가장 핵심적인 정보인 숙박 기간과 체크인 시간을 포함한 완전한 문장"
+    }
+  ]
+}
