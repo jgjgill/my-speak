@@ -1,52 +1,37 @@
 # My Speak 디자인 시스템
 
-## 색상 (앱 아이콘 기반)
+## 핵심 디자인 철학
+**자연스러운 콘텐츠 중심 학습 경험**: 투박하지 않고 콘텐츠와 조화로운 디자인으로 학습 몰입도 극대화
 
-### 브랜드 색상
-- **Primary**: `#1E9AFF` (앱 아이콘 메인 블루)
-- **Primary Dark**: `#0070F0` (호버, 액티브 상태)
-- **Primary Light**: `#E6F2FF` (배경, 하이라이트)
+## 4단계 학습 색상 시스템
 
-### 상태 색상
-- **성공**: `#10B981` 
-- **경고**: `#F59E0B`
-- **오류**: `#EF4444`
+### 단계별 브랜드 색상
+- **1단계 (번역)**: `#3b82f6` (파란색) - 차분한 사고와 입력
+- **2단계 (문장완성)**: `#10b981` (초록색) - 성장과 발전  
+- **3단계 (스피킹)**: `#ec4899` (핑크색) - 활동적 표현
+- **4단계 (키워드스피치)**: `#8b5cf6` (보라색) - 창의적 자유발화
 
-### 텍스트
-- **Primary**: `#1F2937`
-- **Secondary**: `#6B7280`
-- **Muted**: `#9CA3AF`
-
-## 타이포그래피
-- **글꼴**: `system-ui, -apple-system, 'Noto Sans KR', sans-serif`
-- **크기**: `16px` (기본), `20px` (제목), `14px` (보조)
-
-## 스페이싱
-- **기본**: `16px` (1rem)
-- **작음**: `8px` (0.5rem)  
-- **큼**: `24px` (1.5rem)
-- **매우 큼**: `48px` (3rem)
+### 강조 색상 체계
+- **기본 학습 포인트**: `bg-gray-100 text-gray-700 border border-gray-200`
+- **사용자 선택 포인트**: `bg-amber-100 text-amber-800 border border-amber-300`
+- **완료 상태**: 각 단계별 고유 색상 유지 (통일된 완료 색상 없음)
 
 ## 핵심 컴포넌트
 
-### 버튼
+### 학습 카드 (.topic-card)
 ```css
-/* Primary */
-background: #1E9AFF;
-color: white;
-padding: 12px 24px;
-border-radius: 8px;
-
-/* Secondary */
-background: white;
-color: #1E9AFF;
-border: 1px solid #1E9AFF;
+.topic-card {
+  @apply bg-white rounded-xl border border-gray-200 p-6 
+         shadow-sm hover:shadow-md transition-all duration-200;
+}
 ```
 
-### 카드
-```css
-background: white;
-border: 1px solid #E5E7EB;
-border-radius: 12px;
-box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-```
+### 단계별 버튼 시스템
+- **활성 상태**: 단계별 색상 + 펄스 애니메이션 + 스케일 효과
+- **완료 상태**: 단계별 색상 + 흰색 체크마크 + 그림자
+- **비활성 상태**: 회색 + 투명도 60%
+
+### 강조 표현 패턴
+- **미묘하고 자연스러운 색상**: 강한 노란색/주황색 배제
+- **경계선 활용**: 색상만으로는 부족한 구분을 border로 보완
+- **단계별 연동**: 각 단계의 브랜드 색상과 조화로운 강조 색상
