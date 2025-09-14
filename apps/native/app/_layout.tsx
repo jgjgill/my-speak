@@ -1,4 +1,5 @@
 import { Stack } from "expo-router";
+import { StatusBar } from "expo-status-bar";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { TrackingTransparency } from "@/components/tracking-transparency";
 import { AuthProvider } from "@/context/auth";
@@ -9,6 +10,7 @@ import "../global.css";
 export default function RootLayout() {
 	return (
 		<SafeAreaProvider>
+			<StatusBar />
 			<QueryProvider>
 				<WebViewProvider>
 					<AuthProvider>
