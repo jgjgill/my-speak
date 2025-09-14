@@ -1,24 +1,13 @@
+import {
+	languageInfo,
+	type LanguageCode as SupportedLanguage,
+} from "../../constants/languages";
 import { createClient } from "../supabase/server";
 
 export interface TopicSitemapData {
 	id: string;
 	created_at: string;
 }
-
-/**
- * 지원하는 언어 정보 (topics page의 languageInfo와 동일)
- */
-export const languageInfo = {
-	en: { name: "영어", nativeName: "English", topicsText: "Topics", flag: "🇺🇸" },
-	jp: {
-		name: "일본어",
-		nativeName: "日本語",
-		topicsText: "トピック",
-		flag: "🇯🇵",
-	},
-} as const;
-
-export type SupportedLanguage = keyof typeof languageInfo;
 
 /**
  * 사이트맵 생성을 위한 토픽 데이터 조회

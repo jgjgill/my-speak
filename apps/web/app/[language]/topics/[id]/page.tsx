@@ -5,6 +5,7 @@ import {
 } from "@tanstack/react-query";
 import type { Metadata } from "next";
 import { Suspense } from "react";
+import { type LanguageCode, languageInfo } from "../../../constants/languages";
 import { getCurrentUser } from "../../../utils/auth/server";
 import { createClient } from "../../../utils/supabase/server";
 import TopicClientWrapperSkeleton from "./components/skeletons/topic-client-wrapper-skeleton";
@@ -25,18 +26,13 @@ type Props = {
 	params: Promise<{ id: string; language: string }>;
 };
 
-const languageInfo = {
-	en: { name: "영어", nativeName: "English" },
-	jp: { name: "일본어", nativeName: "日本語" },
-} as const;
-
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
 	const { id, language } = await params;
 	const supabase = await createClient();
 
 	try {
 		const topic = await getTopic(id, supabase);
-		const currentLanguage = languageInfo[language as keyof typeof languageInfo];
+		const currentLanguage = languageInfo[language as LanguageCode];
 
 		const title = `${topic.title} - ${currentLanguage?.nativeName || language.toUpperCase()} 학습`;
 		const description = `${topic.title} 주제로 ${currentLanguage?.name || language} 스피킹을 학습하세요. 4단계 체계적 학습 시스템으로 번역부터 키워드 스피치까지 완성하세요.`;
@@ -71,7 +67,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 		};
 	} catch {
 		// Fallback metadata if topic fetch fails
-		const currentLanguage = languageInfo[language as keyof typeof languageInfo];
+		const currentLanguage = languageInfo[language as LanguageCode];
 		return {
 			title: `${currentLanguage?.nativeName || language.toUpperCase()} 학습 주제`,
 			description: `${currentLanguage?.name || language} 스피킹 학습을 위한 주제입니다.`,

@@ -3,6 +3,11 @@ import type { SupabaseClient } from "@supabase/supabase-js";
 import { createClient } from "../../../utils/supabase/client";
 
 export type Topic = Tables<"topics">;
+export type HighlightSentence = Tables<"highlight_sentences">;
+
+export interface TopicWithHighlight extends Topic {
+	highlight_sentences: HighlightSentence | null;
+}
 
 export interface TopicsQueryParams {
 	limit?: number;
@@ -11,7 +16,7 @@ export interface TopicsQueryParams {
 }
 
 export interface TopicsResponse {
-	topics: Topic[];
+	topics: TopicWithHighlight[];
 	totalCount: number;
 	hasMore: boolean;
 	currentPage: number;
@@ -34,7 +39,7 @@ export async function getTopics(
 		count,
 	} = await client
 		.from("topics")
-		.select("*", { count: "exact" })
+		.select("*, highlight_sentences(*)", { count: "exact" })
 		.eq("language_code", languageCode)
 		.order("created_at", { ascending: false })
 		.range(offset, offset + limit - 1);

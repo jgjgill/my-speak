@@ -5,6 +5,7 @@ import {
 } from "@tanstack/react-query";
 import type { Metadata } from "next";
 import { Suspense } from "react";
+import { type LanguageCode, languageInfo } from "../../constants/languages";
 import { createClient } from "../../utils/supabase/server";
 import { TopicsList } from "./components/topics-list";
 import { TopicsLoading } from "./components/topics-loading";
@@ -14,21 +15,11 @@ interface TopicsPageProps {
 	params: Promise<{ language: string }>;
 }
 
-const languageInfo = {
-	en: { name: "영어", nativeName: "English", topicsText: "Topics", flag: "🇺🇸" },
-	jp: {
-		name: "일본어",
-		nativeName: "日本語",
-		topicsText: "トピック",
-		flag: "🇯🇵",
-	},
-} as const;
-
 export async function generateMetadata({
 	params,
 }: TopicsPageProps): Promise<Metadata> {
 	const { language } = await params;
-	const currentLanguage = languageInfo[language as keyof typeof languageInfo];
+	const currentLanguage = languageInfo[language as LanguageCode];
 
 	const title = `${currentLanguage?.nativeName || language.toUpperCase()} ${currentLanguage?.topicsText || "Topics"}`;
 	const description = `${currentLanguage?.name || language} 학습을 위한 다양한 주제들을 탐색하고 4단계 체계적 학습으로 스피킹 실력을 향상시키세요.`;
@@ -73,7 +64,7 @@ export default async function TopicsPage({ params }: TopicsPageProps) {
 		initialPageParam: 0,
 	});
 
-	const currentLanguage = languageInfo[language as keyof typeof languageInfo];
+	const currentLanguage = languageInfo[language as LanguageCode];
 
 	return (
 		<div className="min-h-screen">
