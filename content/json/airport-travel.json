@@ -571,5 +571,12 @@
       "foreign_phrase": "local SIM card"
     }
   ],
-  "highlight_sentences": []
+  "highlight_sentences": [
+    {
+      "sentence_order": 6,
+      "korean_text": "지연될 가능성도 있으니까 미리 공항에 도착하는 게 좋겠어요.",
+      "foreign_text": "It would be good to arrive at the airport early since there's also a possibility of delays.",
+      "reason": "since와 possibility of의 조합으로 이유와 가능성을 자연스럽게 표현하는 복합 구문"
+    }
+  ]
 }

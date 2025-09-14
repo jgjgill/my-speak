@@ -5,6 +5,11 @@ category: "일상생활"
 difficulty: "중급"
 description: "병원 예약부터 진료 상담까지의 의료진과의 대화 상황을 학습합니다."
 language_code: "en"
+highlight_sentence:
+  sentence_order: 4
+  korean_text: "처음 방문하는 환자라서 어떤 서류를 준비해야 하는지 궁금합니다."
+  foreign_text: "Since I'm a first-time patient, I'm wondering what documents I need to prepare."
+  reason: "이유를 나타내는 'since' 절과 간접의문문 구조를 포함하여 의료 상황에서 정보를 요청하는 정중한 표현 방식을 학습할 수 있습니다."
 ---
 
 # 1단계: 한글 스크립트

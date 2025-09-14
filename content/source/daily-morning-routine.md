@@ -7,8 +7,8 @@ description: "아침에 일어나서 하는 기본적인 일상 루틴을 영어
 language_code: "en"
 highlight_sentence:
   sentence_order: 6
-  korean_text: "집을 나서기 전에 가방을 챙겼어요"
-  foreign_text: "Before leaving home, I packed my bag"
+  korean_text: "집을 나서기 전에 가방을 챙겼어요."
+  foreign_text: "Before leaving home, I packed my bag."
   reason: "한글로는 자연스럽지만 영어로는 Before -ing 구문을 정확히 알아야 하는 시간 관계 표현"
 ---
 

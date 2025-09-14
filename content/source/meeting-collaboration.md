@@ -5,6 +5,11 @@ category: "업무/학업"
 difficulty: "중급"
 description: "업무 환경에서 자주 사용되는 회의 진행과 팀 협업 표현들을 학습합니다."
 language_code: "en"
+highlight_sentence:
+  sentence_order: 4
+  korean_text: "만약 모든 부서가 협력한다면, 이번 프로젝트는 성공적으로 완료될 수 있을 것입니다."
+  foreign_text: "If all departments cooperate, this project can be completed successfully."
+  reason: "가정법을 사용한 조건문 구조로 업무에서 협력의 중요성을 표현하며, 수동태와 부사 'successfully'의 자연스러운 결합을 학습할 수 있습니다."
 ---
 
 # 1단계: 한글 스크립트

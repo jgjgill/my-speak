@@ -5,6 +5,11 @@ category: "일상생활"
 difficulty: "중급"
 description: "온라인 쇼핑몰에서 상품 문의와 주문 과정에서 사용되는 실용적인 영어 표현들을 학습합니다."
 language_code: "en"
+highlight_sentence:
+  sentence_order: 12
+  korean_text: "불만족할 경우 전액 환불이 가능한가요?"
+  foreign_text: "Is a full refund possible if not satisfied?"
+  reason: "조건을 나타내는 'if not satisfied' 구문과 'full refund' 표현을 통해 온라인 쇼핑에서 중요한 환불 정책 문의 방법을 학습할 수 있습니다."
 ---
 
 # 1단계: 한글 스크립트

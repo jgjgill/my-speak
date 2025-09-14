@@ -407,5 +407,12 @@
       "foreign_phrase": "would you like to order a bottle"
     }
   ],
-  "highlight_sentences": []
+  "highlight_sentences": [
+    {
+      "sentence_order": 9,
+      "korean_text": "새우 알레르기가 있어서 새우가 들어가지 않은 요리로 주문하고 싶습니다.",
+      "foreign_text": "I have a shrimp allergy, so I'd like to order dishes without shrimp.",
+      "reason": "인과관계를 나타내는 'so' 접속사와 전치사 'without'을 사용하여 알레르기 정보를 전달하고 요청하는 실용적인 표현을 학습할 수 있습니다."
+    }
+  ]
 }

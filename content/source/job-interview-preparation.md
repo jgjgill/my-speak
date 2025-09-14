@@ -5,6 +5,11 @@ category: "업무/학업"
 difficulty: "중급"
 description: "취업 면접에서 자주 묻는 질문들과 효과적인 답변 방법을 학습합니다. 자기소개, 장단점, 지원 동기 등 핵심 면접 표현을 익힙니다."
 language_code: "en"
+highlight_sentence:
+  sentence_order: 8
+  korean_text: "지난 3년간 마케팅 분야에서 일하면서 고객 만족도를 20% 향상시켰습니다."
+  foreign_text: "Over the past three years working in marketing, I improved customer satisfaction by 20%."
+  reason: "현재완료형과 구체적 수치를 포함한 성과 서술 구조를 학습할 수 있으며, 면접에서 경력을 효과적으로 어필하는 방식을 익힐 수 있습니다."
 ---
 
 # 1단계: 한글 스크립트

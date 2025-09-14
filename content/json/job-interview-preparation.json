@@ -686,5 +686,12 @@
       "foreign_phrase": "efforts to improve"
     }
   ],
-  "highlight_sentences": []
+  "highlight_sentences": [
+    {
+      "sentence_order": 8,
+      "korean_text": "지난 3년간 마케팅 분야에서 일하면서 고객 만족도를 20% 향상시켰습니다.",
+      "foreign_text": "Over the past three years working in marketing, I improved customer satisfaction by 20%.",
+      "reason": "현재완료형과 구체적 수치를 포함한 성과 서술 구조를 학습할 수 있으며, 면접에서 경력을 효과적으로 어필하는 방식을 익힐 수 있습니다."
+    }
+  ]
 }

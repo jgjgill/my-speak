@@ -5,6 +5,11 @@ category: "일상생활"
 difficulty: "중급"
 description: "피트니스 센터에서 회원가입을 할 때 사용하는 실용적인 영어 표현들을 학습합니다."
 language_code: "en"
+highlight_sentence:
+  sentence_order: 10
+  korean_text: "장기 회원에 대한 할인이 있는지 궁금해요."
+  foreign_text: "I'm curious if there's a discount for long-term membership."
+  reason: "'궁금해요'를 I'm curious if로 표현하고, 간접의문문 구조를 자연스럽게 사용하는 예시"
 ---
 
 # 1단계: 한글 스크립트

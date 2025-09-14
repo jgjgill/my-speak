@@ -697,5 +697,12 @@
       "foreign_phrase": "membership registration"
     }
   ],
-  "highlight_sentences": []
+  "highlight_sentences": [
+    {
+      "sentence_order": 10,
+      "korean_text": "장기 회원에 대한 할인이 있는지 궁금해요.",
+      "foreign_text": "I'm curious if there's a discount for long-term membership.",
+      "reason": "'궁금해요'를 I'm curious if로 표현하고, 간접의문문 구조를 자연스럽게 사용하는 예시"
+    }
+  ]
 }

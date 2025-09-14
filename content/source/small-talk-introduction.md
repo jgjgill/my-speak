@@ -9,7 +9,7 @@ highlight_sentence:
   sentence_order: 2
   korean_text: "이름이 어떻게 되세요?"
   foreign_text: "What's your name?"
-  reason: "자기소개와 대화를 시작할 때 가장 중요한 기본 질문이기 때문"
+  reason: "자기소개와 대화를 시작할 때 가장 중요한 기본 질문"
 ---
 
 # 1단계: 한글 스크립트

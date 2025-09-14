@@ -857,5 +857,12 @@
       "foreign_phrase": "Thank you so much for your kind help"
     }
   ],
-  "highlight_sentences": []
+  "highlight_sentences": [
+    {
+      "sentence_order": 7,
+      "korean_text": "방에서 에어컨이 작동하지 않는 것 같습니다.",
+      "foreign_text": "The air conditioner doesn't seem to be working in the room.",
+      "reason": "'~것 같습니다'를 seem to로 표현하고, 장소를 나타내는 전치사구를 자연스럽게 배치하는 예시"
+    }
+  ]
 }

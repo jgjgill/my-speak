@@ -1,10 +1,15 @@
 ---
-topic_id: "f47ac10b-58cc-4372-a567-0e02b2c3d479"
+topic_id: "a8b2c5e1-9f3d-4e7a-b6c8-1a2d3e4f5a6b"
 title: "공항 교통편 및 호텔 체크인"
 category: "일상생활"
 difficulty: "중급"
 description: "공항 도착 후 교통편 이용과 호텔 체크인 과정에서 필요한 실용적인 영어 표현들을 학습합니다."
 language_code: "en"
+highlight_sentence:
+  sentence_order: 4
+  korean_text: "택시가 가장 편리하지만 예산을 고려해서 공항 버스를 선택했습니다."
+  foreign_text: "A taxi is most convenient, but considering the budget, I chose the airport bus."
+  reason: "'가장 편리하지만'의 대조 표현과 'considering the budget'의 분사구문이 결합된 복합 문장"
 ---
 
 # 1단계: 한글 스크립트

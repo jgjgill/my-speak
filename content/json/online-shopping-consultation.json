@@ -494,5 +494,12 @@
       "foreign_phrase": "return period"
     }
   ],
-  "highlight_sentences": []
+  "highlight_sentences": [
+    {
+      "sentence_order": 12,
+      "korean_text": "불만족할 경우 전액 환불이 가능한가요?",
+      "foreign_text": "Is a full refund possible if not satisfied?",
+      "reason": "조건을 나타내는 'if not satisfied' 구문과 'full refund' 표현을 통해 온라인 쇼핑에서 중요한 환불 정책 문의 방법을 학습할 수 있습니다."
+    }
+  ]
 }

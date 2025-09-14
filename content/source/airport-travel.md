@@ -5,6 +5,11 @@ category: "일상생활"
 difficulty: "중급"
 description: "해외여행 시 공항에서 필요한 실용적인 영어 표현들을 학습합니다."
 language_code: "en"
+highlight_sentence:
+  sentence_order: 6
+  korean_text: "지연될 가능성도 있으니까 미리 공항에 도착하는 게 좋겠어요."
+  foreign_text: "It would be good to arrive at the airport early since there's also a possibility of delays."
+  reason: "since와 possibility of의 조합으로 이유와 가능성을 자연스럽게 표현하는 복합 구문"
 ---
 
 # 1단계: 한글 스크립트

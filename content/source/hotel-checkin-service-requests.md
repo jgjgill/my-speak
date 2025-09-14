@@ -5,6 +5,11 @@ category: "일상생활"
 difficulty: "중급"
 description: "호텔 체크인부터 다양한 서비스 요청까지 여행 중 필요한 실용적 표현들을 학습합니다."
 language_code: "en"
+highlight_sentence:
+  sentence_order: 7
+  korean_text: "방에서 에어컨이 작동하지 않는 것 같습니다."
+  foreign_text: "The air conditioner doesn't seem to be working in the room."
+  reason: "'~것 같습니다'를 seem to로 표현하고, 장소를 나타내는 전치사구를 자연스럽게 배치하는 예시"
 ---
 
 # 1단계: 한글 스크립트

@@ -5,6 +5,11 @@ category: "일상생활"
 difficulty: "중급"
 description: "부동산 임대 과정에서 필요한 상담, 조건 확인, 계약 관련 실용적 영어 표현을 학습합니다."
 language_code: "en"
+highlight_sentence:
+  sentence_order: 13
+  korean_text: "필요한 서류는 어떤 것들이 있는지 미리 준비하고 싶어요."
+  foreign_text: "I'd like to prepare the required documents in advance, so what documents are needed?"
+  reason: "목적을 나타내는 'so' 접속사와 간접의문문 구조를 포함하여 부동산 계약 시 서류 준비에 대한 적극적인 문의 방법을 학습할 수 있습니다."
 ---
 
 # 1단계: 한글 스크립트

@@ -5,6 +5,11 @@ category: "일상생활"
 difficulty: "중급"
 description: "병원 예약부터 증상 설명, 의료진과의 상담까지 의료 환경에서 필요한 영어 표현들을 학습합니다."
 language_code: "en"
+highlight_sentence:
+  sentence_order: 4
+  korean_text: "특히 아침에 일어날 때 증상이 심해집니다."
+  foreign_text: "The symptoms get worse especially when I wake up in the morning."
+  reason: "의료 상담에서 증상의 특정 패턴을 설명하는 표현으로, 'get worse'와 시간 표현 'when I wake up'의 자연스러운 결합을 학습할 수 있습니다."
 ---
 
 # 1단계: 한글 스크립트
