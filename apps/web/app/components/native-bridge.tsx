@@ -35,10 +35,15 @@ interface NativeGoBackMessage {
 	type: "GO_BACK";
 }
 
+interface NativeGoHomeMessage {
+	type: "GO_HOME";
+}
+
 type NativeMessage =
 	| NativeAuthMessage
 	| NativeLogoutMessage
-	| NativeGoBackMessage;
+	| NativeGoBackMessage
+	| NativeGoHomeMessage;
 
 export default function NativeBridge() {
 	const queryClient = useQueryClient();
@@ -93,6 +98,8 @@ export default function NativeBridge() {
 					} else {
 						window.location.replace("/");
 					}
+				} else if (message.type === "GO_HOME") {
+					window.location.replace("/");
 				}
 			} catch (error) {
 				console.error("Failed to parse native message:", error);

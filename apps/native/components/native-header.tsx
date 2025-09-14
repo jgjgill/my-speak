@@ -8,6 +8,7 @@ interface NativeHeaderProps {
 	showBackButton?: boolean;
 	onWebViewBack?: () => void;
 	currentUrl?: string;
+	canGoBack?: boolean;
 }
 
 export default function NativeHeader({
@@ -15,18 +16,19 @@ export default function NativeHeader({
 	showBackButton = false,
 	onWebViewBack,
 	currentUrl = "",
+	canGoBack = false,
 }: NativeHeaderProps) {
 	const { user } = useAuth();
-
-	const shouldShowWebViewBackButton =
-		currentUrl.includes("/topics/") || currentUrl.includes("/topics");
 
 	const handleProfilePress = () => {
 		router.push(user ? "/profile" : "/login");
 	};
 
 	const handleLogoPress = () => {
-		if (new URL(currentUrl).pathname === "/") {
+		const url = new URL(currentUrl);
+		const isRoot = url.pathname === "/";
+
+		if (isRoot) {
 			return;
 		}
 
@@ -46,7 +48,7 @@ export default function NativeHeader({
 						<Ionicons name="chevron-back" size={24} color="#1e9aff" />
 					</TouchableOpacity>
 				)}
-				{shouldShowWebViewBackButton && onWebViewBack && (
+				{canGoBack && onWebViewBack && (
 					<TouchableOpacity
 						onPress={onWebViewBack}
 						className="w-11 h-11 justify-center items-center"

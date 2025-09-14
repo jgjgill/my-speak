@@ -12,12 +12,14 @@ import { getWebViewUrl } from "@/utils/webview-url";
 
 interface SimpleWebViewProps {
 	onUrlChange?: (url: string) => void;
+	onNavigationStateChange?: (canGoBack: boolean) => void;
 	// biome-ignore lint/suspicious/noExplicitAny: <bridge>
 	onWebViewMessage?: (message: any) => void;
 }
 
 export default function SimpleWebView({
 	onUrlChange,
+	onNavigationStateChange,
 	onWebViewMessage,
 }: SimpleWebViewProps) {
 	const { user } = useAuth();
@@ -74,6 +76,10 @@ export default function SimpleWebView({
 
 		if (onUrlChange) {
 			onUrlChange(newUrl);
+		}
+
+		if (onNavigationStateChange) {
+			onNavigationStateChange(navState.canGoBack);
 		}
 	};
 

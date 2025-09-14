@@ -1,5 +1,11 @@
-import { useState } from "react";
-import { ActivityIndicator, View } from "react-native";
+import { router } from "expo-router";
+import { useCallback, useEffect, useRef, useState } from "react";
+import {
+	ActivityIndicator,
+	BackHandler,
+	ToastAndroid,
+	View,
+} from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import NativeHeader from "@/components/native-header";
 import SimpleWebView from "@/components/simple-webview";
@@ -13,6 +19,8 @@ export default function Index() {
 	const webViewRef = useWebViewRef();
 	const webViewUrl = getWebViewUrl();
 	const [currentUrl, setCurrentUrl] = useState(webViewUrl);
+	const [canGoBack, setCanGoBack] = useState(false);
+	const backPressCountRef = useRef(0);
 
 	// 오디오 녹음 훅 사용
 	const {
@@ -25,15 +33,71 @@ export default function Index() {
 
 	const handleWebViewBack = () => {
 		if (webViewRef.current) {
-			const goBackMessage = { type: "GO_BACK" };
-			console.log(goBackMessage);
-			webViewRef.current.postMessage(JSON.stringify(goBackMessage));
+			webViewRef.current.postMessage(JSON.stringify({ type: "GO_BACK" }));
 		}
 	};
+
+	const handleHardwareBackPress = useCallback(() => {
+		try {
+			const url = new URL(currentUrl);
+			const isRoot = url.pathname === "/";
+
+			if (router.canGoBack()) {
+				router.back();
+				return true;
+			}
+
+			if (canGoBack) {
+				if (webViewRef.current) {
+					webViewRef.current.postMessage(JSON.stringify({ type: "GO_BACK" }));
+				}
+				return true;
+			}
+
+			if (!isRoot) {
+				if (webViewRef.current) {
+					webViewRef.current.postMessage(JSON.stringify({ type: "GO_HOME" }));
+				}
+				return true;
+			}
+
+			// 루트에서 두 번 눌러서 앱 종료
+			if (backPressCountRef.current === 0) {
+				backPressCountRef.current = Date.now();
+				ToastAndroid.show(
+					"앱을 끄려면 한 번 더 눌러주세요.",
+					ToastAndroid.SHORT,
+				);
+
+				setTimeout(() => {
+					backPressCountRef.current = 0;
+				}, 2000);
+				return true;
+			}
+
+			return Date.now() - backPressCountRef.current >= 2000;
+		} catch {
+			return false;
+		}
+	}, [canGoBack, currentUrl, webViewRef]);
 
 	const handleUrlChange = (url: string) => {
 		setCurrentUrl(url);
 	};
+
+	const handleNavigationStateChange = (canGoBack: boolean) => {
+		setCanGoBack(canGoBack);
+	};
+
+	// BackHandler 설정
+	useEffect(() => {
+		const backHandler = BackHandler.addEventListener(
+			"hardwareBackPress",
+			handleHardwareBackPress,
+		);
+
+		return () => backHandler.remove();
+	}, [handleHardwareBackPress]);
 
 	// WebView에서 온 메시지 처리
 	// biome-ignore lint/suspicious/noExplicitAny: <bridge>
@@ -84,10 +148,15 @@ export default function Index() {
 
 	return (
 		<SafeAreaView style={{ flex: 1, backgroundColor: "#FFFFFF" }}>
-			<NativeHeader currentUrl={currentUrl} onWebViewBack={handleWebViewBack} />
+			<NativeHeader
+				currentUrl={currentUrl}
+				onWebViewBack={handleWebViewBack}
+				canGoBack={canGoBack}
+			/>
 
 			<SimpleWebView
 				onUrlChange={handleUrlChange}
+				onNavigationStateChange={handleNavigationStateChange}
 				onWebViewMessage={handleWebViewMessage}
 			/>
 		</SafeAreaView>
