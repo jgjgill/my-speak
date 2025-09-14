@@ -51,10 +51,7 @@ export default function StageOnePractice({
 	const { data: userTranslations } = useUserTranslations(topicId, user);
 
 	const translationMutation = useTranslationMutation(topicId, user);
-	const { addLearningPoint, removeLearningPoint } = useLearningPointMutations(
-		topicId,
-		user,
-	);
+	const { addLearningPoint } = useLearningPointMutations(topicId, user);
 
 	const handleTranslationSubmit = async (
 		sentenceOrder: number,
@@ -108,27 +105,24 @@ export default function StageOnePractice({
 				const pointKey = `${sentenceOrder}-${pointInfo.id}`;
 				const isSelected = selectedPoints.has(pointKey);
 
+				if (isSelected) {
+					return;
+				}
+
 				try {
-					if (isSelected) {
-						await removeLearningPoint.mutateAsync({
-							topicId,
-							learningPointId: pointInfo.id,
-						});
-					} else {
-						await addLearningPoint.mutateAsync({
-							topicId,
-							learningPointId: pointInfo.id,
-						});
-					}
+					await addLearningPoint.mutateAsync({
+						topicId,
+						learningPointId: pointInfo.id,
+					});
 
 					setSelectedPoints((prev) => {
 						const newSet = new Set(prev);
-						isSelected ? newSet.delete(pointKey) : newSet.add(pointKey);
+						newSet.add(pointKey);
 						return newSet;
 					});
 				} catch (_error) {
 					addToast({
-						message: "학습 포인트 업데이트에 실패했습니다. 다시 시도해주세요.",
+						message: "학습 포인트 추가에 실패했습니다. 다시 시도해주세요.",
 						type: "error",
 					});
 				}
