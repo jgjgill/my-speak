@@ -37,8 +37,10 @@ export default function KoreanSentenceHighlighter({
 	};
 
 	const highlightVariants = {
-		default: "bg-gray-100 text-gray-700 border border-gray-200",
-		selected: "bg-amber-100 text-amber-800 border border-amber-300",
+		default:
+			"bg-gray-100 text-gray-700 border border-gray-200 hover:bg-gray-200 active:bg-gray-300",
+		selected:
+			"bg-amber-100 text-amber-800 border border-amber-300 hover:bg-amber-200 active:bg-amber-300",
 	};
 
 	return (
@@ -57,7 +59,7 @@ export default function KoreanSentenceHighlighter({
 						<button
 							key={keywordKey}
 							type="button"
-							className={`${highlightClass} px-1 rounded cursor-pointer hover:bg-gray-200 transition-colors inline font-inherit`}
+							className={`${highlightClass} px-1 rounded cursor-pointer transition-all duration-200 ease-out active:scale-95 active:opacity-70 inline font-inherit`}
 							onClick={() => handleKeywordClick(segment)}
 						>
 							{segment.text}
