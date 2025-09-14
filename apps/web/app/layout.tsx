@@ -8,7 +8,9 @@ import ConditionalHeader from "./components/conditional-header";
 import GoogleAnalytics from "./components/google-analytics";
 import NativeBridge from "./components/native-bridge";
 import StructuredData from "./components/structured-data";
+import ToastContainer from "./components/toast-container";
 import { AuthProvider } from "./contexts/auth-context";
+import { ToastProvider } from "./contexts/toast-context";
 import { WebViewProvider } from "./contexts/webview-context";
 import QueryProvider from "./providers/query-provider";
 import { getCurrentUser } from "./utils/auth/server";
@@ -100,16 +102,19 @@ export default async function Layout({ children }: RootLayoutProps) {
 				<StructuredData />
 				<QueryProvider>
 					<AuthProvider initialUser={initialUser}>
-						<Suspense fallback={null}>
-							<WebViewProvider
-								initialIsWebView={initialIsWebView}
-								initialHideHeader={initialHideHeader}
-							>
-								<NativeBridge />
-								<ConditionalHeader />
-								<main>{children}</main>
-							</WebViewProvider>
-						</Suspense>
+						<ToastProvider>
+							<Suspense fallback={null}>
+								<WebViewProvider
+									initialIsWebView={initialIsWebView}
+									initialHideHeader={initialHideHeader}
+								>
+									<NativeBridge />
+									<ConditionalHeader />
+									<main>{children}</main>
+									<ToastContainer />
+								</WebViewProvider>
+							</Suspense>
+						</ToastProvider>
 					</AuthProvider>
 				</QueryProvider>
 			</body>

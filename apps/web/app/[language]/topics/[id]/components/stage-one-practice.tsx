@@ -4,6 +4,7 @@ import type { Tables } from "@repo/typescript-config/supabase-types";
 import dynamic from "next/dynamic";
 import { useState } from "react";
 import { useAuth } from "../../../../contexts/auth-context";
+import { useToast } from "../../../../contexts/toast-context";
 import { useLearningPointMutations } from "../hooks/use-learning-point-mutations";
 import { useTranslationMutation } from "../hooks/use-translation-mutations";
 import { useUserTranslations } from "../hooks/use-user-translations";
@@ -44,6 +45,7 @@ export default function StageOnePractice({
 	onStageComplete,
 }: StageOnePracticeProps) {
 	const { user } = useAuth();
+	const { addToast } = useToast();
 
 	const [selectedPoints, setSelectedPoints] = useState(initialSelectedPoints);
 	const { data: userTranslations } = useUserTranslations(topicId, user);
@@ -72,9 +74,15 @@ export default function StageOnePractice({
 					isCompleted: true,
 				});
 
-				alert("번역이 저장되었습니다!");
+				addToast({
+					message: "번역이 저장되었습니다!",
+					type: "success",
+				});
 			} catch (_error) {
-				alert("번역 저장에 실패했습니다. 다시 시도해주세요.");
+				addToast({
+					message: "번역 저장에 실패했습니다. 다시 시도해주세요.",
+					type: "error",
+				});
 			}
 		}
 	};
@@ -90,7 +98,11 @@ export default function StageOnePractice({
 		);
 
 		if (pointInfo) {
-			alert(`💡 ${pointInfo.foreign_phrase}`);
+			addToast({
+				message: pointInfo.foreign_phrase,
+				type: "info",
+				duration: 2000,
+			});
 
 			if (user) {
 				const pointKey = `${sentenceOrder}-${pointInfo.id}`;
@@ -115,7 +127,10 @@ export default function StageOnePractice({
 						return newSet;
 					});
 				} catch (_error) {
-					alert("학습 포인트 업데이트에 실패했습니다. 다시 시도해주세요.");
+					addToast({
+						message: "학습 포인트 업데이트에 실패했습니다. 다시 시도해주세요.",
+						type: "error",
+					});
 				}
 			}
 		}

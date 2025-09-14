@@ -128,4 +128,39 @@
 	.border-stage-completed {
 		border-color: var(--color-stage-completed);
 	}
+
+	/* Toast Animation - Sonner style */
+	@keyframes toast-slide-down {
+		0% {
+			transform: translateY(-100%);
+			opacity: 0;
+			scale: 0.95;
+		}
+		100% {
+			transform: translateY(0);
+			opacity: 1;
+			scale: 1;
+		}
+	}
+
+	@keyframes toast-slide-up {
+		0% {
+			transform: translateY(0);
+			opacity: 1;
+			scale: 1;
+		}
+		100% {
+			transform: translateY(-100%);
+			opacity: 0;
+			scale: 0.95;
+		}
+	}
+
+	.toast {
+		animation: toast-slide-down 0.35s cubic-bezier(0.32, 0.72, 0, 1);
+	}
+
+	.toast-exit {
+		animation: toast-slide-up 0.3s cubic-bezier(0.4, 0, 1, 1) forwards !important;
+	}
 }
