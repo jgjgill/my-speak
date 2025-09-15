@@ -40,3 +40,5 @@ yarn-error.log*
 # Android
 *.jks
 *.keystore
+
+.mcp.json
