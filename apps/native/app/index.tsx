@@ -147,7 +147,7 @@ export default function Index() {
 	}
 
 	return (
-		<SafeAreaView style={{ flex: 1, backgroundColor: "#FFFFFF" }}>
+		<SafeAreaView className="flex-1 bg-white">
 			<NativeHeader
 				currentUrl={currentUrl}
 				onWebViewBack={handleWebViewBack}

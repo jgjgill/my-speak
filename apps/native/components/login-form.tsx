@@ -1,6 +1,5 @@
 import { Ionicons } from "@expo/vector-icons";
 import { router } from "expo-router";
-import { StatusBar } from "expo-status-bar";
 import { Image, ScrollView, Text, TouchableOpacity, View } from "react-native";
 import { useAuth } from "@/context/auth";
 import { SignInWithAppleButton } from "./sign-in-with-apple-button";
@@ -10,8 +9,6 @@ export default function LoginForm() {
 
 	return (
 		<ScrollView className="flex-1 bg-primary">
-			<StatusBar style="light" />
-
 			<View className="flex-1 bg-primary">
 				<View className="flex-1 px-8 pt-15 pb-10">
 					<View className="flex-2 justify-center items-center mb-8">

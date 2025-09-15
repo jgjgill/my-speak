@@ -1,5 +1,4 @@
 import { Stack } from "expo-router";
-import { StatusBar } from "expo-status-bar";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { TrackingTransparency } from "@/components/tracking-transparency";
 import { AuthProvider } from "@/context/auth";
@@ -10,7 +9,6 @@ import "../global.css";
 export default function RootLayout() {
 	return (
 		<SafeAreaProvider>
-			<StatusBar />
 			<QueryProvider>
 				<WebViewProvider>
 					<AuthProvider>
@@ -22,7 +20,14 @@ export default function RootLayout() {
 								animationDuration: 300,
 							}}
 						>
-							<Stack.Screen name="index" options={{ animation: "none" }} />
+							<Stack.Screen
+								name="index"
+								options={{ animation: "none", statusBarStyle: "dark" }}
+							/>
+							<Stack.Screen
+								name="login"
+								options={{ statusBarStyle: "light" }}
+							/>
 						</Stack>
 					</AuthProvider>
 				</WebViewProvider>
