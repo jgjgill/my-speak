@@ -5,6 +5,8 @@ import { defineConfig, devices } from "@playwright/test";
  */
 export default defineConfig({
 	testDir: "./tests",
+	/* Output directory for test artifacts */
+	outputDir: "test-results",
 	/* Run tests in files in parallel */
 	fullyParallel: true,
 	/* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -22,6 +24,12 @@ export default defineConfig({
 
 		/* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
 		trace: "on-first-retry",
+
+		/* Record video for failed tests */
+		video: "retain-on-failure",
+
+		/* Take screenshot on failure */
+		screenshot: "only-on-failure",
 	},
 
 	/* Configure projects for major browsers */
@@ -30,15 +38,14 @@ export default defineConfig({
 			name: "chromium",
 			use: { ...devices["Desktop Chrome"] },
 		},
-		// 일단 Chromium만 사용하여 간단하게 시작
-		// {
-		//   name: 'firefox',
-		//   use: { ...devices['Desktop Firefox'] },
-		// },
-		// {
-		//   name: 'webkit',
-		//   use: { ...devices['Desktop Safari'] },
-		// },
+		{
+			name: "firefox",
+			use: { ...devices["Desktop Firefox"] },
+		},
+		{
+			name: "webkit",
+			use: { ...devices["Desktop Safari"] },
+		},
 	],
 
 	/* Run your local dev server before starting the tests */

@@ -4,8 +4,11 @@ test.describe("네비게이션 테스트", () => {
 	test("메인 페이지에서 영어 토픽 페이지로 이동", async ({ page }) => {
 		await page.goto("/");
 
-		// 영어 학습 카드 클릭
-		await page.click('a[href="/en/topics"]');
+		// 영어 학습 카드 클릭 후 네비게이션 대기
+		await Promise.all([
+			page.waitForURL("/en/topics"),
+			page.click('a[href="/en/topics"]'),
+		]);
 
 		// URL이 올바르게 변경되었는지 확인
 		await expect(page).toHaveURL("/en/topics");
@@ -50,6 +53,9 @@ test.describe("네비게이션 테스트", () => {
 		// 토픽 카드 클릭
 		await firstTopicLink.click();
 
+		// 네비게이션 완료 대기
+		await page.waitForURL(new RegExp(`${href?.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}`));
+
 		// URL이 개별 토픽 페이지로 변경되었는지 확인
 		await expect(page).toHaveURL(new RegExp(`${href}`));
 
@@ -76,10 +82,12 @@ test.describe("네비게이션 테스트", () => {
 
 		// 영어 토픽 페이지로 이동
 		await page.click('a[href="/en/topics"]');
+		await page.waitForURL("/en/topics");
 		await expect(page).toHaveURL("/en/topics");
 
 		// 뒤로가기
 		await page.goBack();
+		await page.waitForURL("/");
 		await expect(page).toHaveURL("/");
 
 		// 메인 페이지 요소가 다시 보이는지 확인 (고유한 헤딩 요소 사용)
