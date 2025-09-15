@@ -41,6 +41,7 @@ highlight_sentence:
 첫 번째 문장입니다.
 **중요한 표현**{important expression}을 포함한 두 번째 문장입니다.
 세 번째 문장입니다.
+[5-10문장으로 구성하여 학습 부담 최소화]
 
 # 2단계: 외국어 스크립트
 
@@ -63,26 +64,22 @@ This is | the third sentence.
 ## 레벨 1: 상세한 키워드 (70% 정보)
 
 첫 번째, 문장 → This is the first sentence.
-두 번째, 중요한 표현 → This is the second sentence with important expression.
-세 번째, 문장 → This is the third sentence.
+중요한 표현 → This is the second sentence with important expression.
+[품질 우선: 의미 있는 키워드만 선별, 1-3개 항목]
 
 ## 레벨 2: 핵심 키워드 (50% 정보)
 
 첫 번째 → This is the first sentence.
-중요한 표현 → This is the second sentence with important expression.
-세 번째 → This is the third sentence.
+표현 → This is the second sentence with important expression.
 
 ## 레벨 3: 최소한의 키워드 (30% 정보)
 
-첫 번째 → This is the first sentence.
+문장 → This is the first sentence.
 표현 → This is the second sentence with important expression.
-문장 → This is the third sentence.
 
 ## 레벨 4: 외국어 키워드
 
-first → This is the first sentence.
 expression → This is the second sentence with important expression.
-sentence → This is the third sentence.
 ```
 
 ### 학습 포인트 표시법
@@ -150,8 +147,8 @@ PUBLIC_SUPABASE_ANON_KEY=your-anon-key
 - ✅ frontmatter 필수 필드 (title, category, difficulty)
 - ✅ highlight_sentence 구조
 - ✅ 4단계 섹션 존재 여부
-- ✅ 한글/외국어 스크립트 문장 수 일치
-- ✅ 키워드 스피치 레벨 1-4 완성도
+- ✅ 한글/외국어 스크립트 문장 수 일치 (5-10문장)
+- ✅ 키워드 스피치 품질 우선 검증 (분량보다 학습 효과)
 - ✅ 학습 포인트 `**phrase**{translation}` 형식
 
 ### 수동 검토
