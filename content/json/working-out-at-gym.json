@@ -1,0 +1,231 @@
+{
+  "topic": {
+    "id": "b8c7e4f1-9d3a-4b5e-8f2c-1a6d9e7b3c0f",
+    "title": "헬스장에서 운동하기",
+    "category": "일상생활",
+    "difficulty": "초급",
+    "description": "헬스장에서 운동 계획 상담부터 운동 실행까지의 기본적인 회화",
+    "language_code": "en",
+    "total_sentences": 8
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 헬스장 회원권이 있으신가요?"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "네, 있습니다. 처음 오신 건가요?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "아니요, 한 달 전에 등록했어요."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "오늘 어떤 운동을 하고 싶으세요?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "근력 운동을 하고 싶어요."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "좋습니다. 먼저 준비 운동부터 시작하세요."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "러닝머신을 사용해도 될까요?"
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "물론입니다. 20분 정도 가벼운 운동부터 시작하세요."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, do you have a gym membership?",
+      "chunked_text": "Hello, | do you have | a gym membership?"
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Yes, I do. Is this your first time here?",
+      "chunked_text": "Yes, I do. | Is this your first time | here?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "No, I registered a month ago.",
+      "chunked_text": "No, | I registered | a month ago."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "What kind of workout would you like to do today?",
+      "chunked_text": "What kind of workout | would you like to do | today?"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "I'd like to do strength training.",
+      "chunked_text": "I'd like to do | strength training."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Great. Start with a warm-up first.",
+      "chunked_text": "Great. | Start with | a warm-up first."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "Can I use the treadmill?",
+      "chunked_text": "Can I use | the treadmill?"
+    },
+    {
+      "sentence_order": 8,
+      "foreign_text": "Of course. Start with light exercise for about 20 minutes.",
+      "chunked_text": "Of course. | Start with light exercise | for about 20 minutes."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "헬스장",
+        "회원권"
+      ],
+      "target_sentence": "Do you have a gym membership?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "어떤 운동",
+        "오늘"
+      ],
+      "target_sentence": "What kind of workout would you like to do today?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "근력 운동"
+      ],
+      "target_sentence": "I'd like to do strength training.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 4,
+      "keywords": [
+        "회원권"
+      ],
+      "target_sentence": "Do you have a gym membership?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 5,
+      "keywords": [
+        "운동"
+      ],
+      "target_sentence": "What kind of workout would you like to do today?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 6,
+      "keywords": [
+        "근력"
+      ],
+      "target_sentence": "I'd like to do strength training.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 7,
+      "keywords": [
+        "회원권"
+      ],
+      "target_sentence": "Do you have a gym membership?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 8,
+      "keywords": [
+        "운동"
+      ],
+      "target_sentence": "What kind of workout would you like to do today?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 9,
+      "keywords": [
+        "membership"
+      ],
+      "target_sentence": "Do you have a gym membership?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 10,
+      "keywords": [
+        "workout"
+      ],
+      "target_sentence": "What kind of workout would you like to do today?",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 1,
+      "korean_phrase": "헬스장 회원권이 있으신가요?",
+      "foreign_phrase": "Do you have a gym membership?"
+    },
+    {
+      "sentence_order": 2,
+      "korean_phrase": "처음 오신 건가요?",
+      "foreign_phrase": "Is this your first time here?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "오늘 어떤 운동을 하고 싶으세요?",
+      "foreign_phrase": "What kind of workout would you like to do today?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "근력 운동을 하고 싶어요.",
+      "foreign_phrase": "I'd like to do strength training."
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "먼저 준비 운동부터 시작하세요.",
+      "foreign_phrase": "Start with a warm-up first."
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "러닝머신을 사용해도 될까요?",
+      "foreign_phrase": "Can I use the treadmill?"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 4,
+      "korean_text": "오늘 어떤 운동을 하고 싶으세요?",
+      "foreign_text": "What kind of workout would you like to do today?",
+      "reason": "헬스장에서 가장 자주 사용되는 운동 계획 문의 표현으로, 'What kind of' 패턴은 다양한 상황에서 활용 가능"
+    }
+  ]
+}
