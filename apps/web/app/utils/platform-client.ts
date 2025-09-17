@@ -4,7 +4,7 @@
  */
 export function isNativeWebViewClient(): boolean {
 	if (typeof window === "undefined") return false;
-	
+
 	const userAgent = navigator.userAgent;
 	return (
 		(userAgent.includes("MySpeak") && userAgent.includes("ReactNative")) ||

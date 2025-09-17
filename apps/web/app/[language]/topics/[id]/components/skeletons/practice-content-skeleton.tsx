@@ -58,7 +58,10 @@ export default function PracticeContentSkeleton() {
 					{/* 문장 카드 스켈레톤 */}
 					<div className="space-y-6">
 						{[1, 2, 3].map((index) => (
-							<div key={index} className="bg-white rounded-lg border border-gray-200 p-4">
+							<div
+								key={index}
+								className="bg-white rounded-lg border border-gray-200 p-4"
+							>
 								{/* 문장 번호 */}
 								<div className="flex items-center gap-2 mb-4">
 									<div className="w-6 h-6 bg-gray-200 rounded-full" />
