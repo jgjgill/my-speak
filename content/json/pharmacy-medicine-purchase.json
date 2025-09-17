@@ -1,0 +1,253 @@
+{
+  "topic": {
+    "id": "f4a8b2c6-d1e9-4f7a-8b5c-3d2e1f0a9b8c",
+    "title": "약국에서 약 구매하기",
+    "category": "일상생활",
+    "difficulty": "초급",
+    "description": "약국에서 두통약이나 감기약을 구매할 때 사용하는 기본적인 회화",
+    "language_code": "en",
+    "total_sentences": 10
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 무엇을 도와드릴까요?"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "안녕하세요."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "머리가 아파서 약을 사러 왔어요."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "두통약 있나요?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "네, 여기 있습니다."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "하루에 몇 번 먹어야 하나요?"
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "하루 세 번, 식후에 드세요."
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "가격이 얼마인가요?"
+    },
+    {
+      "sentence_order": 9,
+      "korean_text": "12,000원입니다."
+    },
+    {
+      "sentence_order": 10,
+      "korean_text": "영수증 주세요?"
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, how can I help you?",
+      "chunked_text": "Hello, | how can I help you?"
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Hi there.",
+      "chunked_text": "Hi there."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "I have a headache, so I came to buy some medicine.",
+      "chunked_text": "I have a headache, | so I came to buy | some medicine."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Do you have any medicine for headaches?",
+      "chunked_text": "Do you have | any medicine | for headaches?"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Yes, here it is.",
+      "chunked_text": "Yes, | here it is."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "How many times a day should I take it?",
+      "chunked_text": "How many times a day | should I take it?"
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "Three times a day, after meals.",
+      "chunked_text": "Three times a day, | after meals."
+    },
+    {
+      "sentence_order": 8,
+      "foreign_text": "How much does it cost?",
+      "chunked_text": "How much | does it cost?"
+    },
+    {
+      "sentence_order": 9,
+      "foreign_text": "It's 12,000 won.",
+      "chunked_text": "It's | 12,000 won."
+    },
+    {
+      "sentence_order": 10,
+      "foreign_text": "Can I have a receipt, please?",
+      "chunked_text": "Can I have | a receipt, | please?"
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "머리",
+        "아파서",
+        "약"
+      ],
+      "target_sentence": "I have a headache, so I came to buy some medicine.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "두통약",
+        "있나요"
+      ],
+      "target_sentence": "Do you have any medicine for headaches?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "하루",
+        "몇 번",
+        "먹어야"
+      ],
+      "target_sentence": "How many times a day should I take it?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 4,
+      "keywords": [
+        "머리",
+        "아파서"
+      ],
+      "target_sentence": "I have a headache, so I came to buy some medicine.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 5,
+      "keywords": [
+        "두통약"
+      ],
+      "target_sentence": "Do you have any medicine for headaches?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 6,
+      "keywords": [
+        "몇 번"
+      ],
+      "target_sentence": "How many times a day should I take it?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 7,
+      "keywords": [
+        "두통"
+      ],
+      "target_sentence": "I have a headache, so I came to buy some medicine.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 8,
+      "keywords": [
+        "약"
+      ],
+      "target_sentence": "Do you have any medicine for headaches?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 9,
+      "keywords": [
+        "headache"
+      ],
+      "target_sentence": "I have a headache, so I came to buy some medicine.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 10,
+      "keywords": [
+        "medicine"
+      ],
+      "target_sentence": "Do you have any medicine for headaches?",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 3,
+      "korean_phrase": "머리가 아파서",
+      "foreign_phrase": "I have a headache"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "두통약 있나요",
+      "foreign_phrase": "Do you have any medicine for headaches"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "하루에 몇 번 먹어야 하나요",
+      "foreign_phrase": "How many times a day should I take it"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "하루 세 번, 식후에 드세요",
+      "foreign_phrase": "Three times a day, after meals"
+    },
+    {
+      "sentence_order": 8,
+      "korean_phrase": "가격이 얼마인가요",
+      "foreign_phrase": "How much does it cost"
+    },
+    {
+      "sentence_order": 10,
+      "korean_phrase": "영수증 주세요",
+      "foreign_phrase": "Can I have a receipt, please"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 4,
+      "korean_text": "두통약 있나요?",
+      "foreign_text": "Do you have any medicine for headaches?",
+      "reason": "약국에서 가장 기본적이고 자주 사용하는 약 문의 표현"
+    }
+  ]
+}
