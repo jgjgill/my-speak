@@ -18,12 +18,10 @@ export default function RootLayout() {
 								headerShown: false,
 								animation: "fade",
 								animationDuration: 300,
+								statusBarStyle: "dark",
 							}}
 						>
-							<Stack.Screen
-								name="index"
-								options={{ animation: "none", statusBarStyle: "dark" }}
-							/>
+							<Stack.Screen name="index" options={{ animation: "none" }} />
 							<Stack.Screen
 								name="login"
 								options={{ statusBarStyle: "light" }}
