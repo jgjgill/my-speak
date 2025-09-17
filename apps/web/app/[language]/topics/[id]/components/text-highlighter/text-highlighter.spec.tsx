@@ -88,7 +88,7 @@ describe("TextHighlighter", () => {
 		);
 
 		expect(container.textContent).toBe("안녕하세요 반가워요");
-		expect(container.querySelector(".bg-orange-200")).toBeNull();
+		expect(container.querySelector(".bg-amber-100")).toBeNull();
 	});
 
 	it("단일 키워드를 강조하여 렌더링한다", () => {
@@ -98,7 +98,7 @@ describe("TextHighlighter", () => {
 
 		expect(container.textContent).toBe("안녕하세요 반가워요");
 
-		const highlightedElement = container.querySelector(".bg-orange-200");
+		const highlightedElement = container.querySelector(".bg-amber-100");
 		expect(highlightedElement).not.toBeNull();
 		expect(highlightedElement?.textContent).toBe("반가워요");
 	});

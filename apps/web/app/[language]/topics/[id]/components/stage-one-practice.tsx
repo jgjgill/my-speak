@@ -105,7 +105,7 @@ export default function StageOnePractice({
 				const pointKey = `${sentenceOrder}-${pointInfo.id}`;
 				const isSelected = selectedPoints.has(pointKey);
 
-				if (isSelected) {
+				if (isSelected || addLearningPoint.isPending) {
 					return;
 				}
 
@@ -164,6 +164,7 @@ export default function StageOnePractice({
 								learningPoints={learningPoints}
 								selectedPoints={selectedPoints}
 								onLearningPointClick={handleLearningPointClick}
+								isLoading={addLearningPoint.isPending}
 							/>
 						</div>
 

@@ -54,7 +54,9 @@ test.describe("네비게이션 테스트", () => {
 		await firstTopicLink.click();
 
 		// 네비게이션 완료 대기
-		await page.waitForURL(new RegExp(`${href?.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}`));
+		await page.waitForURL(
+			new RegExp(`${href?.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}`),
+		);
 
 		// URL이 개별 토픽 페이지로 변경되었는지 확인
 		await expect(page).toHaveURL(new RegExp(`${href}`));

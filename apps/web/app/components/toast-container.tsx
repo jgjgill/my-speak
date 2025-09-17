@@ -41,7 +41,7 @@ export default function ToastContainer() {
 	const visibleToasts = toasts.slice(-MAX_VISIBLE_TOASTS).reverse();
 
 	return (
-		<div className="fixed top-6 left-1/2 -translate-x-1/2 z-50 mx-4 w-full max-w-sm">
+		<div className="fixed top-20 left-1/2 -translate-x-1/2 z-50 px-4 w-full max-w-[min(90vw,28rem)]">
 			<div className="relative">
 				{visibleToasts.map((toast, index) => {
 					const isTop = index === 0;
@@ -73,12 +73,12 @@ export default function ToastContainer() {
 							className={`toast ${getToastStyles(toast.type)} px-4 py-3 rounded-lg border shadow-lg absolute inset-x-0 ${opacityClass} ${scaleClass} transition-all duration-200 ${toast.isExiting ? "toast-exit" : ""}`}
 							style={{ ...transformStyle, ...zIndexStyle }}
 						>
-							<div className="flex items-start justify-between">
-								<div className="flex items-start gap-2">
-									<span className="text-lg leading-none">
+							<div className="flex items-start justify-between gap-2">
+								<div className="flex items-start gap-2 min-w-0 flex-1">
+									<span className="text-lg leading-none flex-shrink-0">
 										{getToastIcon(toast.type)}
 									</span>
-									<span className="text-sm leading-relaxed">
+									<span className="text-sm leading-relaxed break-words">
 										{toast.message}
 									</span>
 								</div>
@@ -86,7 +86,7 @@ export default function ToastContainer() {
 									<button
 										type="button"
 										onClick={() => removeToast(toast.id)}
-										className="ml-3 cursor-pointer text-gray-400 hover:text-gray-600 transition-colors"
+										className="flex-shrink-0 cursor-pointer text-gray-400 hover:text-gray-600 transition-colors"
 										aria-label="Close notification"
 									>
 										<svg
