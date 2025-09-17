@@ -1,11 +1,13 @@
 "use client";
 
 import { useToast } from "../contexts/toast-context";
+import { useWebView } from "../contexts/webview-context";
 
 const MAX_VISIBLE_TOASTS = 3;
 
 export default function ToastContainer() {
 	const { toasts, removeToast } = useToast();
+	const { isWebView } = useWebView();
 
 	if (toasts.length === 0) {
 		return null;
@@ -41,7 +43,9 @@ export default function ToastContainer() {
 	const visibleToasts = toasts.slice(-MAX_VISIBLE_TOASTS).reverse();
 
 	return (
-		<div className="fixed top-20 left-1/2 -translate-x-1/2 z-50 px-4 w-full max-w-[min(90vw,28rem)]">
+		<div
+			className={`fixed ${isWebView ? "top-4" : "top-20"} left-1/2 -translate-x-1/2 z-50 px-4 w-full max-w-[min(90vw,28rem)]`}
+		>
 			<div className="relative">
 				{visibleToasts.map((toast, index) => {
 					const isTop = index === 0;
