@@ -1,0 +1,244 @@
+{
+  "topic": {
+    "id": "09b14649-7eb0-42a0-b145-0e48ea962cfb",
+    "title": "은행에서 계좌 개설하기",
+    "category": "일상생활",
+    "difficulty": "초급",
+    "description": "은행에서 새로운 계좌를 개설할 때 필요한 기본적인 회화",
+    "language_code": "en",
+    "total_sentences": 10
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 무엇을 도와드릴까요?"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "안녕하세요."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "새로운 계좌를 개설하고 싶어요."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "어떤 종류의 계좌를 원하시나요?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "일반 예금 계좌로 부탁해요."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "신분증을 가져오셨나요?"
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "네, 여기 있어요."
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "이 서류에 서명해 주세요."
+    },
+    {
+      "sentence_order": 9,
+      "korean_text": "체크카드도 만들 수 있나요?"
+    },
+    {
+      "sentence_order": 10,
+      "korean_text": "네, 3일 후에 받으실 수 있어요."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, how can I help you?",
+      "chunked_text": "Hello, | how can I help you?"
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Hi there.",
+      "chunked_text": "Hi there."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "I would like to open a new account.",
+      "chunked_text": "I would like to | open a new account."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "What type of account would you like?",
+      "chunked_text": "What type of account | would you like?"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "A regular savings account, please.",
+      "chunked_text": "A regular savings account, | please."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Did you bring your ID?",
+      "chunked_text": "Did you bring | your ID?"
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "Yes, here it is.",
+      "chunked_text": "Yes, | here it is."
+    },
+    {
+      "sentence_order": 8,
+      "foreign_text": "Please sign this document.",
+      "chunked_text": "Please sign | this document."
+    },
+    {
+      "sentence_order": 9,
+      "foreign_text": "Can I also get a debit card?",
+      "chunked_text": "Can I also get | a debit card?"
+    },
+    {
+      "sentence_order": 10,
+      "foreign_text": "Yes, you can receive it in three days.",
+      "chunked_text": "Yes, | you can receive it | in three days."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "새로운 계좌",
+        "개설하고 싶어요"
+      ],
+      "target_sentence": "I would like to open a new account.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "일반 예금 계좌"
+      ],
+      "target_sentence": "A regular savings account, please.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "신분증",
+        "가져오셨나요"
+      ],
+      "target_sentence": "Did you bring your ID?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 4,
+      "keywords": [
+        "계좌 개설"
+      ],
+      "target_sentence": "I would like to open a new account.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 5,
+      "keywords": [
+        "예금 계좌"
+      ],
+      "target_sentence": "A regular savings account, please.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 6,
+      "keywords": [
+        "체크카드"
+      ],
+      "target_sentence": "Can I also get a debit card?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 7,
+      "keywords": [
+        "계좌"
+      ],
+      "target_sentence": "I would like to open a new account.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 8,
+      "keywords": [
+        "서명"
+      ],
+      "target_sentence": "Please sign this document.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 9,
+      "keywords": [
+        "account"
+      ],
+      "target_sentence": "I would like to open a new account.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 10,
+      "keywords": [
+        "debit card"
+      ],
+      "target_sentence": "Can I also get a debit card?",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 3,
+      "korean_phrase": "새로운 계좌를 개설하고 싶어요",
+      "foreign_phrase": "I would like to open a new account"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "일반 예금 계좌",
+      "foreign_phrase": "regular savings account"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "신분증을 가져오셨나요",
+      "foreign_phrase": "Did you bring your ID"
+    },
+    {
+      "sentence_order": 8,
+      "korean_phrase": "이 서류에 서명해 주세요",
+      "foreign_phrase": "Please sign this document"
+    },
+    {
+      "sentence_order": 9,
+      "korean_phrase": "체크카드도 만들 수 있나요",
+      "foreign_phrase": "Can I also get a debit card"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 3,
+      "korean_text": "새로운 계좌를 개설하고 싶어요.",
+      "foreign_text": "I would like to open a new account.",
+      "reason": "은행에서 계좌 개설을 요청할 때 가장 직접적이고 핵심적인 표현"
+    }
+  ]
+}
