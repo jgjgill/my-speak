@@ -3,7 +3,7 @@
 	"compilerOptions": {
 		"strict": true,
 		"noUncheckedIndexedAccess": true,
-		"lib": ["ES2020"], // DOM 제거, ES2020만 유지
+		"lib": ["ES2020", "DOM"],
 		"paths": {
 			"@/*": ["./*"]
 		}
