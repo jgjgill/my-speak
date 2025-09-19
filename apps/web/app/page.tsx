@@ -103,6 +103,43 @@ export default async function Home() {
 				</div>
 			</div>
 
+			{/* 앱 다운로드 QR 코드 - 데스크톱에서만 표시 */}
+			{!isNativeApp && (
+				<div className="bg-gray-50 py-12">
+					<div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+						<h2 className="text-title font-bold text-korean mb-8">
+							모바일 앱으로 더 편리하게
+						</h2>
+
+						<div className="grid md:grid-cols-2 gap-8 max-w-md mx-auto">
+							{/* iOS QR 코드 */}
+							<div className="text-center">
+								<div className="inline-block p-4 bg-white rounded-xl shadow-sm">
+									<Image
+										src="/app-store-qr-code.png"
+										alt="iOS 앱 다운로드 QR 코드"
+										width={120}
+										height={120}
+										className="mx-auto"
+									/>
+								</div>
+								<p className="text-sm text-gray-600 mt-3">iOS App Store</p>
+							</div>
+
+							{/* Android - 출시 예정 */}
+							<div className="text-center">
+								<div className="inline-block p-4 bg-white rounded-xl shadow-sm opacity-50">
+									<div className="w-[120px] h-[120px] mx-auto bg-gray-200 rounded-lg flex items-center justify-center">
+										<span className="text-gray-500 text-sm">출시 예정</span>
+									</div>
+								</div>
+								<p className="text-sm text-gray-600 mt-3">Google Play Store</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			)}
+
 			{/* 학습 방법 소개 */}
 			<div className="bg-white py-16">
 				<div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
