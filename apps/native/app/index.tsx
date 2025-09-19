@@ -3,6 +3,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import {
 	ActivityIndicator,
 	BackHandler,
+	Platform,
 	ToastAndroid,
 	View,
 } from "react-native";
@@ -18,8 +19,12 @@ export default function Index() {
 	const { isLoading } = useAuth();
 	const webViewRef = useWebViewRef();
 	const webViewUrl = getWebViewUrl();
+
+	const isWeb = Platform.OS === "web";
+
 	const [currentUrl, setCurrentUrl] = useState(webViewUrl);
 	const [canGoBack, setCanGoBack] = useState(false);
+
 	const backPressCountRef = useRef(0);
 
 	// 오디오 녹음 훅 사용
@@ -138,6 +143,29 @@ export default function Index() {
 		}
 	};
 
+	// 웹에서 접속한 경우 스토어로 리다이렉트
+	useEffect(() => {
+		if (!isWeb) return;
+
+		const userAgent = navigator.userAgent;
+
+		if (/iPhone|iPad|iPod/.test(userAgent)) {
+			window.location.href =
+				"https://apps.apple.com/kr/app/myspeak/id6752112155";
+		} else if (/Android/.test(userAgent)) {
+			// Android는 임시로 alert 처리
+			alert(
+				"Android Play Store 링크가 준비 중입니다. iOS App Store로 이동합니다.",
+			);
+			window.location.href =
+				"https://apps.apple.com/kr/app/myspeak/id6752112155";
+		} else {
+			// 데스크톱 접속 시 iOS App Store로 이동
+			window.location.href =
+				"https://apps.apple.com/kr/app/myspeak/id6752112155";
+		}
+	}, [isWeb]);
+
 	if (isLoading) {
 		return (
 			<View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
@@ -148,17 +176,26 @@ export default function Index() {
 
 	return (
 		<SafeAreaView className="flex-1 bg-white">
-			<NativeHeader
-				currentUrl={currentUrl}
-				onWebViewBack={handleWebViewBack}
-				canGoBack={canGoBack}
-			/>
+			{isWeb && (
+				<View className="flex-1 justify-center items-center">
+					<View>앱 다운로드 페이지로 이동 중...</View>
+				</View>
+			)}
 
-			<SimpleWebView
-				onUrlChange={handleUrlChange}
-				onNavigationStateChange={handleNavigationStateChange}
-				onWebViewMessage={handleWebViewMessage}
-			/>
+			{!isWeb && (
+				<>
+					<NativeHeader
+						currentUrl={currentUrl}
+						onWebViewBack={handleWebViewBack}
+						canGoBack={canGoBack}
+					/>
+					<SimpleWebView
+						onUrlChange={handleUrlChange}
+						onNavigationStateChange={handleNavigationStateChange}
+						onWebViewMessage={handleWebViewMessage}
+					/>
+				</>
+			)}
 		</SafeAreaView>
 	);
 }
