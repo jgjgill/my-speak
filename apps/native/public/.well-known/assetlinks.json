@@ -1,0 +1,13 @@
+[
+	{
+		"relation": ["delegate_permission/common.handle_all_urls"],
+		"target": {
+			"namespace": "android_app",
+			"package_name": "com.myspeaknative",
+			"sha256_cert_fingerprints": [
+				"27:B3:72:7E:3A:B0:F0:5D:F5:A6:A9:E9:5A:74:8F:41:7C:D8:65:CA:8F:AF:0D:D8:4E:CC:96:64:5D:B4:CB:28",
+				"4B:B9:3D:DA:B3:30:28:E6:29:26:90:99:C7:6D:4B:FC:EF:EB:35:1B:4D:88:34:59:D7:C9:4E:42:9C:49:CC:73"
+			]
+		}
+	}
+]

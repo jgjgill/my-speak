@@ -11,6 +11,7 @@
 		"ios": {
 			"supportsTablet": true,
 			"bundleIdentifier": "com.myspeaknative",
+			"associatedDomains": ["applinks:myspeak-native.expo.app"],
 			"usesAppleSignIn": true,
 			"infoPlist": {
 				"ITSAppUsesNonExemptEncryption": false,
@@ -29,7 +30,21 @@
 				"backgroundColor": "#ffffff"
 			},
 			"edgeToEdgeEnabled": true,
-			"package": "com.myspeaknative"
+			"package": "com.myspeaknative",
+			"intentFilters": [
+				{
+					"action": "VIEW",
+					"autoVerify": true,
+					"data": [
+						{
+							"scheme": "https",
+							"host": "myspeak-native.expo.app",
+							"pathPrefix": "/"
+						}
+					],
+					"category": ["BROWSABLE", "DEFAULT"]
+				}
+			]
 		},
 		"web": {
 			"bundler": "metro",
