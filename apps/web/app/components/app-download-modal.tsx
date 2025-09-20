@@ -38,7 +38,9 @@ export default function AppDownloadModal() {
 	}, []);
 
 	const handleOpenInApp = () => {
-		const deepLinkUrl = "https://myspeak-native.expo.app";
+		// 현재 페이지 경로를 딥링크에 포함
+		const currentPath = window.location.pathname;
+		const deepLinkUrl = `https://myspeak-native.expo.app?path=${encodeURIComponent(currentPath)}`;
 		window.location.href = deepLinkUrl;
 	};
 

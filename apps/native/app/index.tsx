@@ -1,3 +1,4 @@
+import * as Linking from "expo-linking";
 import { router } from "expo-router";
 import { useCallback, useEffect, useRef, useState } from "react";
 import {
@@ -18,7 +19,9 @@ import { getWebViewUrl } from "@/utils/webview-url";
 export default function Index() {
 	const { isLoading } = useAuth();
 	const webViewRef = useWebViewRef();
-	const webViewUrl = getWebViewUrl();
+
+	const [initialPath, setInitialPath] = useState<string | undefined>();
+	const webViewUrl = getWebViewUrl(initialPath);
 
 	const isWeb = Platform.OS === "web";
 
@@ -93,6 +96,29 @@ export default function Index() {
 	const handleNavigationStateChange = (canGoBack: boolean) => {
 		setCanGoBack(canGoBack);
 	};
+
+	// 딥링크에서 초기 경로 추출
+	useEffect(() => {
+		const getInitialPath = async () => {
+			try {
+				const initialUrl = await Linking.getInitialURL();
+				if (initialUrl) {
+					console.log("📱 딥링크로 앱 시작:", initialUrl);
+					const parsed = Linking.parse(initialUrl);
+					const pathParam = parsed.queryParams?.path;
+
+					if (pathParam && typeof pathParam === "string") {
+						console.log("📱 추출된 초기 경로:", pathParam);
+						setInitialPath(pathParam);
+					}
+				}
+			} catch (error) {
+				console.error("딥링크 처리 중 오류:", error);
+			}
+		};
+
+		getInitialPath();
+	}, []);
 
 	// BackHandler 설정
 	useEffect(() => {
@@ -188,6 +214,7 @@ export default function Index() {
 						canGoBack={canGoBack}
 					/>
 					<SimpleWebView
+						webViewUrl={webViewUrl}
 						onUrlChange={handleUrlChange}
 						onNavigationStateChange={handleNavigationStateChange}
 						onWebViewMessage={handleWebViewMessage}

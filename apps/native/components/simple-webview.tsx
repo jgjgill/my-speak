@@ -8,9 +8,9 @@ import {
 import { useAuth } from "@/context/auth";
 import { useWebViewRef } from "@/context/webview-context";
 import { supabase } from "@/utils/supabase/client";
-import { getWebViewUrl } from "@/utils/webview-url";
 
 interface SimpleWebViewProps {
+	webViewUrl: string;
 	onUrlChange?: (url: string) => void;
 	onNavigationStateChange?: (canGoBack: boolean) => void;
 	// biome-ignore lint/suspicious/noExplicitAny: <bridge>
@@ -18,12 +18,12 @@ interface SimpleWebViewProps {
 }
 
 export default function SimpleWebView({
+	webViewUrl,
 	onUrlChange,
 	onNavigationStateChange,
 	onWebViewMessage,
 }: SimpleWebViewProps) {
 	const { user } = useAuth();
-	const webViewUrl = getWebViewUrl();
 	const ref = useWebViewRef();
 
 	// 웹뷰에 현재 인증 상태 전송 (초기 동기화용)
