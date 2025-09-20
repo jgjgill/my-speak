@@ -160,9 +160,7 @@ export default function Index() {
 			window.location.href =
 				"https://apps.apple.com/kr/app/myspeak/id6752112155";
 		} else {
-			// 데스크톱 접속 시 iOS App Store로 이동
-			window.location.href =
-				"https://apps.apple.com/kr/app/myspeak/id6752112155";
+			window.location.href = "https://my-speak.com";
 		}
 	}, [isWeb]);
 

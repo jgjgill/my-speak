@@ -37,7 +37,7 @@ export default function AppDownloadModal() {
 	}, []);
 
 	const handleOpenInApp = () => {
-		const deepLinkUrl = "https://myspeak-native.expo.app";
+		const deepLinkUrl = "https://myspeak-native.expo.app/en/topics";
 		window.location.href = deepLinkUrl;
 	};
 
