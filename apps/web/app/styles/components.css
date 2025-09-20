@@ -1,0 +1,22 @@
+@layer components {
+	/* Enhanced Topic Card with Brand Colors */
+	.topic-card {
+		@apply bg-white border border-gray-200 p-4 transition-all duration-200 rounded-xl shadow-sm hover:shadow-md hover:-translate-y-1;
+	}
+
+	.topic-card-completed {
+		@apply bg-gradient-to-br from-green-50 to-emerald-50 border-green-200 hover:border-green-300;
+	}
+
+	/* Form Components */
+	.form-textarea {
+		@apply w-full px-3 py-2 border border-gray-300 rounded-lg text-base;
+		@apply focus:outline-none focus:ring-2 focus:ring-stage-1/20 focus:border-stage-1;
+		@apply transition-all duration-200 resize-none min-h-20 leading-relaxed;
+		@apply placeholder:text-gray-400;
+	}
+
+	.form-textarea:disabled {
+		@apply bg-gray-50 text-gray-500 cursor-not-allowed;
+	}
+}

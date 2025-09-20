@@ -13,6 +13,7 @@ type DeviceType = "ios" | "android" | "desktop" | "unknown";
 
 export default function AppDownloadModal() {
 	const [isVisible, setIsVisible] = useState(false);
+	const [isClosing, setIsClosing] = useState(false);
 	const [deviceType, setDeviceType] = useState<DeviceType>("unknown");
 
 	useEffect(() => {
@@ -37,20 +38,45 @@ export default function AppDownloadModal() {
 	}, []);
 
 	const handleOpenInApp = () => {
-		const deepLinkUrl = "https://myspeak-native.expo.app/en/topics";
+		const deepLinkUrl = "https://myspeak-native.expo.app";
 		window.location.href = deepLinkUrl;
 	};
 
 	const handleClose = () => {
+		setIsClosing(true);
 		sessionStorage.setItem("hideAppDownloadModal", "true");
-		setIsVisible(false);
+
+		// 애니메이션 완료 후 모달 숨기기
+		setTimeout(() => {
+			setIsVisible(false);
+			setIsClosing(false);
+		}, 300); // 애니메이션 시간과 동일
+	};
+
+	const handleBackgroundClick = (e: React.MouseEvent) => {
+		if (e.target === e.currentTarget) {
+			handleClose();
+		}
 	};
 
 	if (!isVisible) return null;
 
 	return (
-		<div className="fixed inset-0 z-50 flex items-end justify-center bg-black bg-opacity-50">
-			<div className="w-full max-w-md bg-white rounded-t-2xl p-6 mx-4 mb-0 animate-slide-up">
+		<div
+			role="dialog"
+			className="fixed inset-0 z-50 flex items-end justify-center bg-black/50"
+			onClick={handleBackgroundClick}
+			onKeyDown={(e) => {
+				if (e.key === "Escape") {
+					handleClose();
+				}
+			}}
+		>
+			<div
+				className={`w-full max-w-md bg-white rounded-t-2xl p-6 mx-4 mb-0 ${
+					isClosing ? "animate-slide-down" : "animate-slide-up"
+				}`}
+			>
 				{/* 헤더 */}
 				<div className="flex justify-between items-center mb-4">
 					<h3 className="text-lg font-semibold text-korean">
