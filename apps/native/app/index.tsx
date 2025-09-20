@@ -1,4 +1,3 @@
-import * as Linking from "expo-linking";
 import { router } from "expo-router";
 import { useCallback, useEffect, useRef, useState } from "react";
 import {
@@ -12,16 +11,14 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import NativeHeader from "@/components/native-header";
 import SimpleWebView from "@/components/simple-webview";
 import { useAuth } from "@/context/auth";
-import { useWebViewRef } from "@/context/webview-context";
+import { useDeepLink } from "@/context/deep-link-context";
+import { useWebView } from "@/context/webview-context";
 import { useWebViewAudioRecorder } from "@/hooks/use-audio-recorder";
-import { getWebViewUrl } from "@/utils/webview-url";
 
 export default function Index() {
 	const { isLoading } = useAuth();
-	const webViewRef = useWebViewRef();
-
-	const [initialPath, setInitialPath] = useState<string | undefined>();
-	const webViewUrl = getWebViewUrl(initialPath);
+	const { webViewRef, webViewUrl } = useWebView();
+	const { processDeepLink } = useDeepLink();
 
 	const isWeb = Platform.OS === "web";
 
@@ -97,28 +94,10 @@ export default function Index() {
 		setCanGoBack(canGoBack);
 	};
 
-	// 딥링크에서 초기 경로 추출
+	// 딥링크 처리
 	useEffect(() => {
-		const getInitialPath = async () => {
-			try {
-				const initialUrl = await Linking.getInitialURL();
-				if (initialUrl) {
-					console.log("📱 딥링크로 앱 시작:", initialUrl);
-					const parsed = Linking.parse(initialUrl);
-					const pathParam = parsed.queryParams?.path;
-
-					if (pathParam && typeof pathParam === "string") {
-						console.log("📱 추출된 초기 경로:", pathParam);
-						setInitialPath(pathParam);
-					}
-				}
-			} catch (error) {
-				console.error("딥링크 처리 중 오류:", error);
-			}
-		};
-
-		getInitialPath();
-	}, []);
+		processDeepLink();
+	}, [processDeepLink]);
 
 	// BackHandler 설정
 	useEffect(() => {

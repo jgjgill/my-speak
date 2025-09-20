@@ -10,6 +10,7 @@ import {
 } from "../utils/platform-client";
 
 type DeviceType = "ios" | "android" | "desktop" | "unknown";
+const NATIVE_DEEP_LINK_LIST = ["/profile", "/login", "/terms", "/privacy"];
 
 export default function AppDownloadModal() {
 	const [isVisible, setIsVisible] = useState(false);
@@ -37,10 +38,21 @@ export default function AppDownloadModal() {
 		setIsVisible(true);
 	}, []);
 
+	const createDeepLinkUrl = (currentPath: string): string => {
+		const isNativeRoute = NATIVE_DEEP_LINK_LIST.some((route) =>
+			currentPath.startsWith(route),
+		);
+
+		if (isNativeRoute) {
+			return `https://myspeak-native.expo.app${currentPath}`;
+		} else {
+			return `https://myspeak-native.expo.app?path=${encodeURIComponent(currentPath)}`;
+		}
+	};
+
 	const handleOpenInApp = () => {
-		// 현재 페이지 경로를 딥링크에 포함
 		const currentPath = window.location.pathname;
-		const deepLinkUrl = `https://myspeak-native.expo.app?path=${encodeURIComponent(currentPath)}`;
+		const deepLinkUrl = createDeepLinkUrl(currentPath);
 		window.location.href = deepLinkUrl;
 	};
 

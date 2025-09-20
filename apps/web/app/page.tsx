@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import AppDownloadModal from "./components/app-download-modal";
 import { isNativeWebView } from "./utils/platform";
 
 export default async function Home() {
@@ -208,6 +209,7 @@ export default async function Home() {
 					</div>
 				</div>
 			</div>
+			<AppDownloadModal />
 		</div>
 	);
 }

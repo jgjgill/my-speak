@@ -4,7 +4,6 @@ import { Suspense } from "react";
 
 import "./global.css";
 import { headers } from "next/headers";
-import AppDownloadModal from "./components/app-download-modal";
 import ConditionalHeader from "./components/conditional-header";
 import GoogleAnalytics from "./components/google-analytics";
 import NativeBridge from "./components/native-bridge";
@@ -112,7 +111,6 @@ export default async function Layout({ children }: RootLayoutProps) {
 									<NativeBridge />
 									<ConditionalHeader />
 									<main>{children}</main>
-									<AppDownloadModal />
 									<ToastContainer />
 								</WebViewProvider>
 							</Suspense>
