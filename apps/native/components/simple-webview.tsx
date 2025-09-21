@@ -6,7 +6,7 @@ import {
 	type WebViewNavigation,
 } from "react-native-webview";
 import { useAuth } from "@/context/auth";
-import { useWebViewRef } from "@/context/webview-context";
+import { useWebView } from "@/context/webview-context";
 import { supabase } from "@/utils/supabase/client";
 
 interface SimpleWebViewProps {
@@ -24,7 +24,7 @@ export default function SimpleWebView({
 	onWebViewMessage,
 }: SimpleWebViewProps) {
 	const { user } = useAuth();
-	const ref = useWebViewRef();
+	const { webViewRef: ref } = useWebView();
 
 	// 웹뷰에 현재 인증 상태 전송 (초기 동기화용)
 	const sendAuthToWebView = useCallback(async () => {

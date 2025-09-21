@@ -3,14 +3,11 @@ import {
 	createContext,
 	type PropsWithChildren,
 	useContext,
-	useRef,
 	useState,
 } from "react";
 
 interface DeepLinkContextType {
-	hasProcessedDeepLink: boolean;
 	initialPath: string | undefined;
-	isDeepLinkEntry: boolean;
 	processDeepLink: () => Promise<void>;
 }
 
@@ -19,15 +16,9 @@ const DeepLinkContext = createContext<DeepLinkContextType | undefined>(
 );
 
 export function DeepLinkProvider({ children }: PropsWithChildren) {
-	const hasProcessedRef = useRef(false);
 	const [initialPath, setInitialPath] = useState<string | undefined>();
 
 	const processDeepLink = async () => {
-		if (hasProcessedRef.current) {
-			console.log("📱 딥링크 이미 처리됨");
-			return;
-		}
-
 		try {
 			const initialUrl = await Linking.getInitialURL();
 
@@ -40,8 +31,6 @@ export function DeepLinkProvider({ children }: PropsWithChildren) {
 					console.log("📱 추출된 초기 경로:", pathParam);
 					setInitialPath(pathParam);
 				}
-
-				hasProcessedRef.current = true;
 			}
 		} catch (error) {
 			console.error("딥링크 처리 중 오류:", error);
@@ -49,9 +38,7 @@ export function DeepLinkProvider({ children }: PropsWithChildren) {
 	};
 
 	const value: DeepLinkContextType = {
-		hasProcessedDeepLink: hasProcessedRef.current,
 		initialPath,
-		isDeepLinkEntry: !!initialPath && !hasProcessedRef.current,
 		processDeepLink,
 	};
 

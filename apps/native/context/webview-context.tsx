@@ -21,15 +21,20 @@ const WebViewContext = createContext<WebViewContextType | undefined>(undefined);
 
 export function WebViewProvider({ children }: PropsWithChildren) {
 	const webViewRef = useRef<WebView>(null);
-	const { hasProcessedDeepLink, initialPath } = useDeepLink();
+	const { initialPath } = useDeepLink();
 	const [webViewUrl, setWebViewUrl] = useState<string>("");
+	const hasUsedDeepLinkRef = useRef(false);
 
 	// 웹뷰 URL 초기화 및 업데이트
 	useEffect(() => {
-		const shouldUseInitialPath = !hasProcessedDeepLink && initialPath;
+		const shouldUseInitialPath = !hasUsedDeepLinkRef.current && initialPath;
 		const url = getWebViewUrl(shouldUseInitialPath ? initialPath : undefined);
 		setWebViewUrl(url);
-	}, [hasProcessedDeepLink, initialPath]);
+
+		if (shouldUseInitialPath) {
+			hasUsedDeepLinkRef.current = true;
+		}
+	}, [initialPath]);
 
 	const updateWebViewUrl = (path?: string) => {
 		const url = getWebViewUrl(path);
@@ -43,18 +48,8 @@ export function WebViewProvider({ children }: PropsWithChildren) {
 	};
 
 	return (
-		<WebViewContext.Provider value={value}>
-			{children}
-		</WebViewContext.Provider>
+		<WebViewContext.Provider value={value}>{children}</WebViewContext.Provider>
 	);
-}
-
-export function useWebViewRef() {
-	const context = useContext(WebViewContext);
-	if (!context) {
-		throw new Error("useWebViewRef must be used within WebViewProvider");
-	}
-	return context.webViewRef;
 }
 
 export function useWebView() {

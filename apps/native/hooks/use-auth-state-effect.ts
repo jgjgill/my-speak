@@ -1,12 +1,12 @@
 import { useQueryClient } from "@tanstack/react-query";
 import { router, usePathname } from "expo-router";
 import { useEffect } from "react";
-import { useWebViewRef } from "@/context/webview-context";
+import { useWebView } from "@/context/webview-context";
 import { supabase } from "@/utils/supabase/client";
 
 export function useAuthStateEffect() {
 	const queryClient = useQueryClient();
-	const webViewRef = useWebViewRef();
+	const { webViewRef } = useWebView();
 	const pathname = usePathname();
 
 	useEffect(() => {
