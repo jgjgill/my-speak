@@ -1,0 +1,238 @@
+{
+  "topic": {
+    "id": "05f4b21c-0a42-4868-9d20-e28226551312",
+    "title": "주말 피크닉 계획하기",
+    "category": "일상생활",
+    "difficulty": "초급",
+    "description": "친구들과 함께 주말 피크닉을 계획하는 상황에서 사용하는 영어 표현",
+    "language_code": "en",
+    "total_sentences": 8
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "이번 주말에 뭐 할 계획이에요?"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "친구들과 피크닉을 계획하고 있어요."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "날씨가 좋으면 공원에서 피크닉을 할 수 있어요."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "음식을 준비해야 해요."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "샌드위치와 과일을 가져갈 예정이에요."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "돗자리도 필요해요."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "오후 2시에 공원에서 만날까요?"
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "정말 좋은 아이디어예요!"
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "What are your plans for this weekend?",
+      "chunked_text": "What are your plans | for this weekend?"
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "I'm planning a picnic with my friends.",
+      "chunked_text": "I'm planning a picnic | with my friends."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "If the weather is nice, we can have a picnic in the park.",
+      "chunked_text": "If the weather is nice, | we can have a picnic | in the park."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "We need to prepare food.",
+      "chunked_text": "We need to prepare | food."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "We're planning to bring sandwiches and fruits.",
+      "chunked_text": "We're planning to bring | sandwiches and fruits."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "We also need a mat.",
+      "chunked_text": "We also need | a mat."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "Shall we meet at the park at 2 PM?",
+      "chunked_text": "Shall we meet | at the park | at 2 PM?"
+    },
+    {
+      "sentence_order": 8,
+      "foreign_text": "That's a great idea!",
+      "chunked_text": "That's | a great idea!"
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "주말",
+        "계획"
+      ],
+      "target_sentence": "What are your plans for this weekend?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "피크닉",
+        "친구들"
+      ],
+      "target_sentence": "I'm planning a picnic with my friends.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "날씨",
+        "좋으면",
+        "공원"
+      ],
+      "target_sentence": "If the weather is nice, we can have a picnic in the park.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 4,
+      "keywords": [
+        "주말 계획"
+      ],
+      "target_sentence": "What are your plans for this weekend?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 5,
+      "keywords": [
+        "피크닉"
+      ],
+      "target_sentence": "I'm planning a picnic with my friends.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 6,
+      "keywords": [
+        "음식 준비"
+      ],
+      "target_sentence": "We need to prepare food.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 7,
+      "keywords": [
+        "계획"
+      ],
+      "target_sentence": "What are your plans for this weekend?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 8,
+      "keywords": [
+        "피크닉"
+      ],
+      "target_sentence": "I'm planning a picnic with my friends.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 9,
+      "keywords": [
+        "planning"
+      ],
+      "target_sentence": "I'm planning a picnic with my friends.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 10,
+      "keywords": [
+        "prepare"
+      ],
+      "target_sentence": "We need to prepare food.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "피크닉을 계획하고 있어요",
+      "foreign_phrase": "planning a picnic"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "피크닉을 할 수 있어요",
+      "foreign_phrase": "we can have a picnic"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "음식을 준비해야 해요",
+      "foreign_phrase": "we need to prepare food"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "가져갈 예정이에요",
+      "foreign_phrase": "planning to bring"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "돗자리도 필요해요",
+      "foreign_phrase": "we also need a mat"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "공원에서 만날까요",
+      "foreign_phrase": "shall we meet at the park"
+    },
+    {
+      "sentence_order": 8,
+      "korean_phrase": "좋은 아이디어예요",
+      "foreign_phrase": "that's a great idea"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 3,
+      "korean_text": "날씨가 좋으면 공원에서 피크닉을 할 수 있어요.",
+      "foreign_text": "If the weather is nice, we can have a picnic in the park.",
+      "reason": "조건문과 함께 제안하는 표현으로 일상 대화에서 자주 사용되는 핵심 패턴"
+    }
+  ]
+}
