@@ -23,17 +23,11 @@ export function WebViewProvider({ children }: PropsWithChildren) {
 	const webViewRef = useRef<WebView>(null);
 	const { initialPath } = useDeepLink();
 	const [webViewUrl, setWebViewUrl] = useState<string>("");
-	const hasUsedDeepLinkRef = useRef(false);
 
 	// 웹뷰 URL 초기화 및 업데이트
 	useEffect(() => {
-		const shouldUseInitialPath = !hasUsedDeepLinkRef.current && initialPath;
-		const url = getWebViewUrl(shouldUseInitialPath ? initialPath : undefined);
+		const url = getWebViewUrl(initialPath);
 		setWebViewUrl(url);
-
-		if (shouldUseInitialPath) {
-			hasUsedDeepLinkRef.current = true;
-		}
 	}, [initialPath]);
 
 	const updateWebViewUrl = (path?: string) => {
