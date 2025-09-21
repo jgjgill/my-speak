@@ -8,6 +8,7 @@ import { Suspense } from "react";
 import { type LanguageCode, languageInfo } from "../../../constants/languages";
 import { getCurrentUser } from "../../../utils/auth/server";
 import { createClient } from "../../../utils/supabase/server";
+import FloatingAppButton from "./components/floating-app-button";
 import TopicClientWrapperSkeleton from "./components/skeletons/topic-client-wrapper-skeleton";
 import TopicHeaderSkeleton from "./components/skeletons/topic-header-skeleton";
 import TopicClientWrapper from "./components/topic-client-wrapper";
@@ -150,6 +151,8 @@ export default async function TopicDetailPage({ params }: Props) {
 					<TopicClientWrapper topicId={id} />
 				</Suspense>
 			</div>
+
+			<FloatingAppButton />
 		</HydrationBoundary>
 	);
 }

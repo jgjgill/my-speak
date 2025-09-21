@@ -2,57 +2,21 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import {
-	isAndroidClient,
-	isDesktopClient,
-	isIOSClient,
-	isMobileWebClient,
-} from "../utils/platform-client";
+import { getDeviceType, getStoreLinks } from "../utils/deep-link";
+import { isMobileWebClient } from "../utils/platform-client";
 
-type DeviceType = "ios" | "android" | "desktop" | "unknown";
-const NATIVE_DEEP_LINK_LIST = ["/profile", "/login", "/terms", "/privacy"];
+type DeviceType = "ios" | "android" | "unknown";
 
 export default function AppDownloadModal() {
 	const [isVisible, setIsVisible] = useState(false);
 	const [isClosing, setIsClosing] = useState(false);
 	const [deviceType, setDeviceType] = useState<DeviceType>("unknown");
 
-	useEffect(() => {
-		// 모바일 웹에서만 모달 표시
-		if (!isMobileWebClient()) return;
-
-		// sessionStorage에서 "다시 보지 않기" 설정 확인
-		const dontShowAgain = sessionStorage.getItem("hideAppDownloadModal");
-		if (dontShowAgain === "true") return;
-
-		// 디바이스 타입 설정
-		if (isIOSClient()) {
-			setDeviceType("ios");
-		} else if (isAndroidClient()) {
-			setDeviceType("android");
-		} else if (isDesktopClient()) {
-			setDeviceType("desktop");
-		}
-
-		// 모달 표시
-		setIsVisible(true);
-	}, []);
-
-	const createDeepLinkUrl = (currentPath: string): string => {
-		const isNativeRoute = NATIVE_DEEP_LINK_LIST.some((route) =>
-			currentPath.startsWith(route),
-		);
-
-		if (isNativeRoute) {
-			return `https://myspeak-native.expo.app${currentPath}`;
-		} else {
-			return `https://myspeak-native.expo.app?path=${encodeURIComponent(currentPath)}`;
-		}
-	};
+	const storeLinks = getStoreLinks();
 
 	const handleOpenInApp = () => {
 		const currentPath = window.location.pathname;
-		const deepLinkUrl = createDeepLinkUrl(currentPath);
+		const deepLinkUrl = `https://myspeak-native.expo.app?path=${encodeURIComponent(currentPath)}`;
 		window.location.href = deepLinkUrl;
 	};
 
@@ -72,6 +36,17 @@ export default function AppDownloadModal() {
 			handleClose();
 		}
 	};
+
+	useEffect(() => {
+		if (!isMobileWebClient()) return;
+
+		const dontShowAgain = sessionStorage.getItem("hideAppDownloadModal");
+		if (dontShowAgain === "true") return;
+
+		setDeviceType(getDeviceType());
+
+		setIsVisible(true);
+	}, []);
 
 	if (!isVisible) return null;
 
@@ -141,7 +116,7 @@ export default function AppDownloadModal() {
 						<div className="flex space-x-2">
 							{deviceType === "ios" && (
 								<a
-									href="https://apps.apple.com/kr/app/myspeak/id6752112155"
+									href={storeLinks.ios}
 									target="_blank"
 									rel="noopener noreferrer"
 									className="flex-1 bg-gray-100 text-gray-700 py-2 px-3 rounded-lg text-center text-sm hover:bg-gray-200 transition-colors"
