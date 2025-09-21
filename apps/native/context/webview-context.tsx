@@ -25,11 +25,7 @@ export function WebViewProvider({ children }: PropsWithChildren) {
 	const [webViewUrl, setWebViewUrl] = useState<string>("");
 
 	// 웹뷰 URL 초기화 및 업데이트
-	// biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
 	useEffect(() => {
-		setTimeout(() => {
-			alert(`흐음... ${initialPath} ${webViewUrl}`);
-		}, 3000);
 		const url = getWebViewUrl(initialPath);
 		setWebViewUrl(url);
 	}, [initialPath]);

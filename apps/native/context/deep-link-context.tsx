@@ -2,6 +2,7 @@ import * as Linking from "expo-linking";
 import {
 	createContext,
 	type PropsWithChildren,
+	useCallback,
 	useContext,
 	useRef,
 	useState,
@@ -20,8 +21,7 @@ export function DeepLinkProvider({ children }: PropsWithChildren) {
 	const [initialPath, setInitialPath] = useState<string | undefined>();
 	const hasProcessedRef = useRef(false);
 
-	const processDeepLink = async () => {
-		alert(hasProcessedRef.current);
+	const processDeepLink = useCallback(async () => {
 		if (hasProcessedRef.current) {
 			console.log("📱 딥링크 이미 처리됨, initialPath 초기화");
 			setInitialPath(undefined);
@@ -30,18 +30,11 @@ export function DeepLinkProvider({ children }: PropsWithChildren) {
 
 		try {
 			const initialUrl = await Linking.getInitialURL();
-			setTimeout(() => {
-				alert("initialUrl: " + initialUrl);
-			}, 6000);
 
 			if (initialUrl) {
 				console.log("📱 딥링크로 앱 시작:", initialUrl);
 				const parsed = Linking.parse(initialUrl);
 				const pathParam = parsed.queryParams?.path;
-
-				setTimeout(() => {
-					alert("pathParam: " + pathParam);
-				}, 9000);
 
 				if (pathParam && typeof pathParam === "string") {
 					console.log("📱 추출된 초기 경로:", pathParam);
@@ -54,7 +47,7 @@ export function DeepLinkProvider({ children }: PropsWithChildren) {
 			console.error("딥링크 처리 중 오류:", error);
 			hasProcessedRef.current = true;
 		}
-	};
+	}, []);
 
 	const value: DeepLinkContextType = {
 		initialPath,

@@ -94,7 +94,7 @@ export default function Index() {
 		setCanGoBack(canGoBack);
 	};
 
-	// 딥링크 처리
+	// 딥링크 처리 - 앱 시작 시 한 번만 실행
 	useEffect(() => {
 		processDeepLink();
 	}, [processDeepLink]);
