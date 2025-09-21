@@ -2,6 +2,7 @@ import { router } from "expo-router";
 import { useCallback, useEffect, useRef, useState } from "react";
 import {
 	ActivityIndicator,
+	Alert,
 	BackHandler,
 	Platform,
 	ToastAndroid,
@@ -159,7 +160,7 @@ export default function Index() {
 				"https://apps.apple.com/kr/app/myspeak/id6752112155";
 		} else if (/Android/.test(userAgent)) {
 			// Android는 임시로 alert 처리
-			alert(
+			Alert.alert(
 				"Android Play Store 링크가 준비 중입니다. iOS App Store로 이동합니다.",
 			);
 			window.location.href =
