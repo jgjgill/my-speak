@@ -50,7 +50,7 @@ export function openInApp(): void {
 export function getStoreLinks() {
 	return {
 		ios: "https://apps.apple.com/kr/app/myspeak/id6752112155",
-		android: null, // Google Play Store 링크 준비 중
+		android: "https://play.google.com/store/apps/details?id=com.myspeaknative",
 	};
 }
 

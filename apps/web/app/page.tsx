@@ -127,12 +127,16 @@ export default async function Home() {
 								<p className="text-sm text-gray-600 mt-3">iOS App Store</p>
 							</div>
 
-							{/* Android - 출시 예정 */}
+							{/* Android QR 코드 */}
 							<div className="text-center">
-								<div className="inline-block p-4 bg-white rounded-xl shadow-sm opacity-50">
-									<div className="w-[120px] h-[120px] mx-auto bg-gray-200 rounded-lg flex items-center justify-center">
-										<span className="text-gray-500 text-sm">출시 예정</span>
-									</div>
+								<div className="inline-block p-4 bg-white rounded-xl shadow-sm">
+									<Image
+										src="/google-store-qr-code.png"
+										alt="Android 앱 다운로드 QR 코드"
+										width={120}
+										height={120}
+										className="mx-auto"
+									/>
 								</div>
 								<p className="text-sm text-gray-600 mt-3">Google Play Store</p>
 							</div>

@@ -125,13 +125,14 @@ export default function AppDownloadModal() {
 								</a>
 							)}
 							{deviceType === "android" && (
-								<button
-									type="button"
-									onClick={() => alert("Google Play Store 링크 준비 중입니다.")}
+								<a
+									href={storeLinks.android}
+									target="_blank"
+									rel="noopener noreferrer"
 									className="flex-1 bg-gray-100 text-gray-700 py-2 px-3 rounded-lg text-center text-sm hover:bg-gray-200 transition-colors"
 								>
 									Play Store
-								</button>
+								</a>
 							)}
 						</div>
 					</div>
