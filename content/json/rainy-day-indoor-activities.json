@@ -1,0 +1,252 @@
+{
+  "topic": {
+    "id": "9bfa237c-896d-4262-a513-9f7b59f76704",
+    "title": "비오는 날 실내 활동 계획하기",
+    "category": "일상생활",
+    "difficulty": "초급",
+    "description": "비가 올 때 실내에서 즐길 수 있는 활동들을 계획하고 이야기하는 상황",
+    "language_code": "en",
+    "total_sentences": 8
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "오늘 하루 종일 비가 올 예정이에요."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "밖에 나가기 어려우니 집에서 뭔가 재미있는 일을 해야겠어요."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "영화를 보거나 요리를 해볼까 생각 중이에요."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "넷플릭스에 새로운 드라마가 업로드되었다고 들었어요."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "아니면 새로운 레시피를 찾아서 오늘 저녁을 만들어볼 수도 있죠."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "친구들과 화상통화로 보드게임을 하는 것 도 좋은 아이디어인 것 같아요."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "독서를 하거나 온라인 강의를 들으며 시간을 보낼 수도 있어요."
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "비 오는 날에는 평소보다 여유롭게 시간을 보낼 수 있어서 좋네요."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "It's supposed to rain all day today.",
+      "chunked_text": "It's supposed to rain | all day today."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Since it's hard to go outside, I need to do something fun at home.",
+      "chunked_text": "Since it's hard | to go outside, | I need to do something fun | at home."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "I'm thinking about watching a movie or trying some cooking.",
+      "chunked_text": "I'm thinking about | watching a movie | or trying some cooking."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "I heard that a new drama was uploaded on Netflix.",
+      "chunked_text": "I heard that | a new drama | was uploaded on Netflix."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Or I could look for a new recipe and make dinner tonight.",
+      "chunked_text": "Or I could | look for a new recipe | and make dinner tonight."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Playing board games with friends over video call sounds like a good idea too.",
+      "chunked_text": "Playing board games | with friends | over video call | sounds like a good idea too."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "I could also spend time reading books or taking online courses.",
+      "chunked_text": "I could also | spend time | reading books | or taking online courses."
+    },
+    {
+      "sentence_order": 8,
+      "foreign_text": "I like rainy days because I can spend time more leisurely than usual.",
+      "chunked_text": "I like rainy days | because I can | spend time more leisurely | than usual."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "하루 종일",
+        "비",
+        "집에서"
+      ],
+      "target_sentence": "It's supposed to rain all day today.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "영화",
+        "요리",
+        "생각 중"
+      ],
+      "target_sentence": "I'm thinking about watching a movie or trying some cooking.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "새로운 레시피",
+        "저녁"
+      ],
+      "target_sentence": "Or I could look for a new recipe and make dinner tonight.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 4,
+      "keywords": [
+        "비",
+        "집"
+      ],
+      "target_sentence": "It's supposed to rain all day today.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 5,
+      "keywords": [
+        "영화",
+        "요리"
+      ],
+      "target_sentence": "I'm thinking about watching a movie or trying some cooking.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 6,
+      "keywords": [
+        "레시피",
+        "저녁"
+      ],
+      "target_sentence": "Or I could look for a new recipe and make dinner tonight.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 7,
+      "keywords": [
+        "비"
+      ],
+      "target_sentence": "It's supposed to rain all day today.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 8,
+      "keywords": [
+        "영화"
+      ],
+      "target_sentence": "I'm thinking about watching a movie or trying some cooking.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 9,
+      "keywords": [
+        "요리"
+      ],
+      "target_sentence": "Or I could look for a new recipe and make dinner tonight.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 10,
+      "keywords": [
+        "rain"
+      ],
+      "target_sentence": "It's supposed to rain all day today.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 11,
+      "keywords": [
+        "movie"
+      ],
+      "target_sentence": "I'm thinking about watching a movie or trying some cooking.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 12,
+      "keywords": [
+        "recipe"
+      ],
+      "target_sentence": "Or I could look for a new recipe and make dinner tonight.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 3,
+      "korean_phrase": "영화를 보거나 요리를 해볼까",
+      "foreign_phrase": "watch a movie or try some cooking"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "새로운 레시피를 찾아서",
+      "foreign_phrase": "look for a new recipe"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "보드게임을 하는 것",
+      "foreign_phrase": "playing board games"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "독서를 하거나 온라인 강의를 들으며",
+      "foreign_phrase": "reading books or taking online courses"
+    },
+    {
+      "sentence_order": 8,
+      "korean_phrase": "여유롭게 시간을 보낼 수 있어서",
+      "foreign_phrase": "I can spend time more leisurely"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 3,
+      "korean_text": "영화를 보거나 요리를 해볼까 생각 중이에요.",
+      "foreign_text": "I'm thinking about watching a movie or trying some cooking.",
+      "reason": "실내 활동 제안 시 자주 사용되는 핵심 표현"
+    }
+  ]
+}
