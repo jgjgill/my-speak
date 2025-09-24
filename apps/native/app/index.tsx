@@ -4,7 +4,9 @@ import {
 	ActivityIndicator,
 	BackHandler,
 	Platform,
+	Text,
 	ToastAndroid,
+	TouchableOpacity,
 	View,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -160,9 +162,9 @@ export default function Index() {
 		} else if (/Android/.test(userAgent)) {
 			window.location.href =
 				"https://play.google.com/store/apps/details?id=com.myspeaknative";
+		} else {
+			window.location.href = "https://my-speak.com";
 		}
-
-		window.location.href = "https://my-speak.com";
 	}, [isWeb]);
 
 	if (isLoading) {
@@ -176,8 +178,68 @@ export default function Index() {
 	return (
 		<SafeAreaView className="flex-1 bg-white">
 			{isWeb && (
-				<View className="flex-1 justify-center items-center">
-					<View>앱 다운로드 페이지로 이동 중...</View>
+				<View className="flex-1 bg-white px-6 pt-12">
+					{/* 자연스러운 헤더 */}
+					<View className="items-center mb-8">
+						<Text className="text-3xl font-light text-gray-800 mb-2">
+							MySpeak
+						</Text>
+						<View className="w-12 h-0.5 bg-gray-300"></View>
+					</View>
+
+					{/* 콘텐츠 중심의 안내 */}
+					<View className="flex-1 justify-center -mt-16">
+						<View className="mb-8">
+							<Text className="text-xl text-gray-800 mb-3 leading-relaxed">
+								안녕하세요! 👋
+							</Text>
+							<Text className="text-base text-gray-600 leading-relaxed mb-6">
+								더 나은 스피킹 학습을 위해 전용 앱을 권장합니다.
+								{"\n"}웹에서도 동일한 학습이 가능해요.
+							</Text>
+						</View>
+
+						{/* 자연스러운 액션 */}
+						<View className="space-y-4">
+							<TouchableOpacity
+								onPress={() => {
+									window.location.href = "https://my-speak.com";
+								}}
+								className="py-3 border-b border-gray-200"
+								activeOpacity={0.7}
+							>
+								<Text className="text-blue-600 text-lg font-medium">
+									웹에서 바로 시작하기 →
+								</Text>
+							</TouchableOpacity>
+
+							<TouchableOpacity
+								onPress={() => {
+									const userAgent = navigator.userAgent;
+									if (/iPhone|iPad|iPod/.test(userAgent)) {
+										window.location.href = "https://apps.apple.com/kr/app/myspeak/id6752112155";
+									} else if (/Android/.test(userAgent)) {
+										window.location.href = "https://play.google.com/store/apps/details?id=com.myspeaknative";
+									} else {
+										window.location.href = "https://my-speak.com";
+									}
+								}}
+								className="py-3 border-b border-gray-200"
+								activeOpacity={0.7}
+							>
+								<Text className="text-gray-600 text-lg font-medium">
+									앱 다운로드 하기 →
+								</Text>
+							</TouchableOpacity>
+						</View>
+					</View>
+
+					{/* 하단 서브텍스트 */}
+					<View className="pb-8">
+						<Text className="text-center text-sm text-gray-400">
+							언어 학습의 새로운 경험을 만나보세요
+						</Text>
+					</View>
 				</View>
 			)}
 
