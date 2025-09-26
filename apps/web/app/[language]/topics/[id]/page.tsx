@@ -99,12 +99,12 @@ export default async function TopicDetailPage({ params }: Props) {
 
 	const getGuestProgress = async () => 1;
 
-	await queryClient.prefetchQuery({
+	queryClient.prefetchQuery({
 		queryKey: ["topic", id],
 		queryFn: () => getTopic(id, supabase),
 	});
 
-	await Promise.all([
+	Promise.all([
 		queryClient.prefetchQuery({
 			queryKey: ["korean-scripts", id],
 			queryFn: () => getKoreanScripts(id, supabase),
