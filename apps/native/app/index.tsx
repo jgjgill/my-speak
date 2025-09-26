@@ -217,9 +217,11 @@ export default function Index() {
 								onPress={() => {
 									const userAgent = navigator.userAgent;
 									if (/iPhone|iPad|iPod/.test(userAgent)) {
-										window.location.href = "https://apps.apple.com/kr/app/myspeak/id6752112155";
+										window.location.href =
+											"https://apps.apple.com/kr/app/myspeak/id6752112155";
 									} else if (/Android/.test(userAgent)) {
-										window.location.href = "https://play.google.com/store/apps/details?id=com.myspeaknative";
+										window.location.href =
+											"https://play.google.com/store/apps/details?id=com.myspeaknative";
 									} else {
 										window.location.href = "https://my-speak.com";
 									}

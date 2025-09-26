@@ -13,7 +13,9 @@ export function TrackingTransparency() {
 			if (Platform.OS === "ios") {
 				try {
 					// 동적 import로 네이티브 환경에서만 로드
-					const { requestTrackingPermissionsAsync } = await import("expo-tracking-transparency");
+					const { requestTrackingPermissionsAsync } = await import(
+						"expo-tracking-transparency"
+					);
 					const { status } = await requestTrackingPermissionsAsync();
 
 					if (status === "granted") {
