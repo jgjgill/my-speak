@@ -12,7 +12,7 @@ export interface TopicWithHighlight extends Topic {
 export interface TopicsQueryParams {
 	limit?: number;
 	page?: number;
-	languageCode?: string;
+	language?: string;
 }
 
 export interface TopicsResponse {
@@ -29,7 +29,7 @@ export async function getTopics(
 ): Promise<TopicsResponse> {
 	const client = supabase || createClient();
 
-	const { limit = 5, page = 0, languageCode = "en" } = params;
+	const { limit = 5, page = 0, language = "en" } = params;
 
 	const offset = page * limit;
 
@@ -40,7 +40,7 @@ export async function getTopics(
 	} = await client
 		.from("topics")
 		.select("*, highlight_sentences(*)", { count: "exact" })
-		.eq("language_code", languageCode)
+		.eq("language_code", language)
 		.order("created_at", { ascending: false })
 		.range(offset, offset + limit - 1);
 

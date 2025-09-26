@@ -1,12 +1,16 @@
 "use client";
 
+import { useParams } from "next/navigation";
 import { useEffect, useRef } from "react";
 import { useTopicsInfinite } from "../hooks/use-topics-infinite";
 import { TopicCard } from "./topic-card";
 
 export function TopicsList() {
+	const params = useParams();
+	const language = params.language as string;
+
 	const { data, fetchNextPage, hasNextPage, isFetchingNextPage } =
-		useTopicsInfinite();
+		useTopicsInfinite({ language });
 	const loadMoreRef = useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
