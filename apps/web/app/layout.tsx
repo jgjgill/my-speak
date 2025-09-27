@@ -3,6 +3,7 @@ import type { PropsWithChildren } from "react";
 import { Suspense } from "react";
 
 import "./global.css";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { headers } from "next/headers";
 import ConditionalHeader from "./components/conditional-header";
 import GoogleAnalytics from "./components/google-analytics";
@@ -112,6 +113,7 @@ export default async function Layout({ children }: RootLayoutProps) {
 									<ConditionalHeader />
 									<main>{children}</main>
 									<ToastContainer />
+									<SpeedInsights />
 								</WebViewProvider>
 							</Suspense>
 						</ToastProvider>
