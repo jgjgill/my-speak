@@ -57,22 +57,13 @@ export default async function TopicsPage({ params }: TopicsPageProps) {
 
 	const queryClient = new QueryClient();
 
-	console.log('🔍 [TopicsPage] Server prefetch starting for language:', language);
-	console.log('🔍 [TopicsPage] Server query key:', ["topics", "infinite", { language }]);
-
 	queryClient.prefetchInfiniteQuery({
 		queryKey: ["topics", "infinite", { language }],
 		queryFn: async ({ pageParam = 0 }) => {
-			console.log('🔍 [TopicsPage] Server queryFn executed with pageParam:', pageParam);
-			const result = await getTopics({ page: pageParam, language }, supabase);
-			console.log('🔍 [TopicsPage] Server queryFn result:', result);
-			return result;
+			return getTopics({ page: pageParam, language }, supabase);
 		},
 		initialPageParam: 0,
 	});
-
-	console.log('🔍 [TopicsPage] Server prefetch initiated (no await)');
-	console.log('🔍 [TopicsPage] Dehydrating queryClient...');
 
 	const currentLanguage = languageInfo[language as LanguageCode];
 
