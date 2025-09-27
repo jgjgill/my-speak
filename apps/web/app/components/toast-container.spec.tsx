@@ -7,6 +7,7 @@ import {
 } from "@testing-library/react";
 import { afterEach, describe, expect, it } from "vitest";
 import { ToastProvider, useToast } from "../contexts/toast-context";
+import { WebViewProvider } from "../contexts/webview-context";
 import ToastContainer from "./toast-container";
 
 function TestComponent() {
@@ -31,15 +32,20 @@ function TestComponent() {
 }
 
 describe("ToastContainer", () => {
+	const renderWithProviders = (component: React.ReactElement) => {
+		return render(
+			<WebViewProvider>
+				<ToastProvider>{component}</ToastProvider>
+			</WebViewProvider>,
+		);
+	};
+
 	afterEach(() => {
 		cleanup();
 	});
+
 	it("shows toast messages", async () => {
-		render(
-			<ToastProvider>
-				<TestComponent />
-			</ToastProvider>,
-		);
+		renderWithProviders(<TestComponent />);
 
 		fireEvent.click(screen.getByText("Add Success"));
 		await waitFor(() => {
@@ -48,11 +54,7 @@ describe("ToastContainer", () => {
 	});
 
 	it("closes toast when clicked", async () => {
-		render(
-			<ToastProvider>
-				<TestComponent />
-			</ToastProvider>,
-		);
+		renderWithProviders(<TestComponent />);
 
 		fireEvent.click(screen.getByText("Add Success"));
 		await waitFor(() => screen.getByText("Success!"));

@@ -2,14 +2,16 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { useBooleanState, usePreservedCallback } from "react-simplikit";
 import { getDeviceType, getStoreLinks } from "../utils/deep-link";
 import { isMobileWebClient } from "../utils/platform-client";
 
 type DeviceType = "ios" | "android" | "unknown";
 
 export default function AppDownloadModal() {
-	const [isVisible, setIsVisible] = useState(false);
-	const [isClosing, setIsClosing] = useState(false);
+	const [isVisible, openModal, closeModal] = useBooleanState(false);
+	const [isExiting, startExit, finishExit] = useBooleanState(false);
+
 	const [deviceType, setDeviceType] = useState<DeviceType>("unknown");
 
 	const storeLinks = getStoreLinks();
@@ -20,16 +22,16 @@ export default function AppDownloadModal() {
 		window.location.href = deepLinkUrl;
 	};
 
-	const handleClose = () => {
-		setIsClosing(true);
+	const handleClose = usePreservedCallback(() => {
+		startExit();
 		sessionStorage.setItem("hideAppDownloadModal", "true");
 
 		// 애니메이션 완료 후 모달 숨기기
 		setTimeout(() => {
-			setIsVisible(false);
-			setIsClosing(false);
+			closeModal();
+			finishExit();
 		}, 300); // 애니메이션 시간과 동일
-	};
+	});
 
 	const handleBackgroundClick = (e: React.MouseEvent) => {
 		if (e.target === e.currentTarget) {
@@ -45,14 +47,30 @@ export default function AppDownloadModal() {
 
 		setDeviceType(getDeviceType());
 
-		setIsVisible(true);
-	}, []);
+		openModal();
+	}, [openModal]);
+
+	useEffect(() => {
+		if (!isVisible) return;
+
+		const handleKeyDown = (e: KeyboardEvent) => {
+			if (e.key === "Escape") {
+				handleClose();
+			}
+		};
+
+		document.addEventListener("keydown", handleKeyDown);
+		return () => document.removeEventListener("keydown", handleKeyDown);
+	}, [isVisible, handleClose]);
 
 	if (!isVisible) return null;
 
 	return (
 		<div
-			role="dialog"
+			role="alertdialog"
+			aria-modal="true"
+			aria-labelledby="modal-title"
+			aria-describedby="modal-description"
 			className="fixed inset-0 z-50 flex items-end justify-center bg-black/50"
 			onClick={handleBackgroundClick}
 			onKeyDown={(e) => {
@@ -60,15 +78,16 @@ export default function AppDownloadModal() {
 					handleClose();
 				}
 			}}
+			tabIndex={-1}
 		>
 			<div
 				className={`w-full max-w-md bg-white rounded-t-2xl p-6 mx-4 mb-0 ${
-					isClosing ? "animate-slide-down" : "animate-slide-up"
+					isExiting ? "animate-slide-down" : "animate-slide-up"
 				}`}
 			>
 				{/* 헤더 */}
 				<div className="flex justify-between items-center mb-4">
-					<h3 className="text-lg font-semibold text-korean">
+					<h3 id="modal-title" className="text-lg font-semibold text-korean">
 						더 나은 앱 경험을 위해
 					</h3>
 					<button
@@ -82,7 +101,7 @@ export default function AppDownloadModal() {
 				</div>
 
 				{/* 콘텐츠 */}
-				<div className="space-y-4">
+				<div id="modal-description" className="space-y-4">
 					{/* 앱 아이콘과 설명 */}
 					<div className="flex items-center space-x-4">
 						<div className="w-16 h-16 rounded-xl bg-primary flex items-center justify-center overflow-hidden">
