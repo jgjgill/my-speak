@@ -2,12 +2,35 @@
 
 import { useParams } from "next/navigation";
 import { useEffect, useRef } from "react";
+import { useQueryClient } from "@tanstack/react-query";
 import { useTopicsInfinite } from "../hooks/use-topics-infinite";
 import { TopicCard } from "./topic-card";
 
 export function TopicsList() {
 	const params = useParams();
 	const language = params.language as string;
+	const queryClient = useQueryClient();
+
+	console.log('🔍 [TopicsList] Component rendered');
+	console.log('🔍 [TopicsList] Params:', params);
+	console.log('🔍 [TopicsList] Language extracted:', language);
+	console.log('🔍 [TopicsList] Props to hook:', { language });
+
+	// 캐시 상태 확인
+	const queryKey = ["topics", "infinite", { language }];
+	const cacheData = queryClient.getQueryData(queryKey);
+	const queryState = queryClient.getQueryState(queryKey);
+
+	console.log('🔍 [TopicsList] Cache data exists:', !!cacheData);
+	console.log('🔍 [TopicsList] Cache data:', cacheData);
+	console.log('🔍 [TopicsList] Query state:', queryState);
+	console.log('🔍 [TopicsList] All cached queries:',
+		queryClient.getQueryCache().getAll().map(q => ({
+			queryKey: q.queryKey,
+			state: q.state.status,
+			dataUpdatedAt: q.state.dataUpdatedAt
+		}))
+	);
 
 	const { data, fetchNextPage, hasNextPage, isFetchingNextPage } =
 		useTopicsInfinite({ language });
