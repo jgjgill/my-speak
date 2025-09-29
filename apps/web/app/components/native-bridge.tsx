@@ -39,11 +39,29 @@ interface NativeGoHomeMessage {
 	type: "GO_HOME";
 }
 
+interface NativeTTSSpeakMessage {
+	type: "TTS_SPEAK";
+	text: string;
+	language: string;
+}
+
+interface NativeTTSStopMessage {
+	type: "TTS_STOP";
+}
+
+interface NativeTTSStatusMessage {
+	type: "TTS_STATUS";
+	status: "speaking" | "stopped" | "error";
+}
+
 type NativeMessage =
 	| NativeAuthMessage
 	| NativeLogoutMessage
 	| NativeGoBackMessage
-	| NativeGoHomeMessage;
+	| NativeGoHomeMessage
+	| NativeTTSSpeakMessage
+	| NativeTTSStopMessage
+	| NativeTTSStatusMessage;
 
 export default function NativeBridge() {
 	const queryClient = useQueryClient();

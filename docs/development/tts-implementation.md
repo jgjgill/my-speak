@@ -123,21 +123,50 @@ type TTSMessage =
 4. 🚧 **브릿지 통신 확장** - 웹뷰 환경 지원 (다음 단계)
 5. 📋 **언어팩 가이드** - 사용자 친화적 안내 시스템 (향후 계획)
 
-## 다음 단계: WebView TTS 구현
+## 2단계: WebView TTS 구현 현황 (🚧 진행 중)
 
-### expo-speech 브릿지 통신 구조
+### 구현된 브릿지 통신 구조
+- ✅ **NativeBridge**: TTS 메시지 타입 추가 (`TTS_SPEAK`, `TTS_STOP`, `TTS_STATUS`)
+- ✅ **tts-bridge.ts**: WebView → Native 메시지 전송 유틸리티
+- ✅ **WebViewTTS**: expo-speech 브릿지 통신 컴포넌트
+
+### 브릿지 메시지 타입
 ```typescript
 // WebView → Native 메시지
-type TTSMessage =
-  | { type: "TTS_SPEAK", text: string, language: string }
-  | { type: "TTS_STOP" }
-  | { type: "TTS_STATUS_REQUEST" }
+interface NativeTTSSpeakMessage {
+  type: "TTS_SPEAK";
+  text: string;
+  language: string;
+}
+
+interface NativeTTSStopMessage {
+  type: "TTS_STOP";
+}
 
 // Native → WebView 응답
-type TTSResponse =
-  | { type: "TTS_STATUS", status: "speaking" | "stopped" | "error" }
-  | { type: "TTS_LANGUAGE_SUPPORT", supported: boolean }
+interface NativeTTSStatusMessage {
+  type: "TTS_STATUS";
+  status: "speaking" | "stopped" | "error";
+}
 ```
+
+### WebViewTTS 주요 기능
+```typescript
+// 핵심 기능
+- 브릿지 통신을 통한 네이티브 TTS 제어
+- 재생/정지 상태 관리 (useBooleanState)
+- TTS_STATUS 메시지 수신 및 콜백 처리
+- 환경 감지 불필요 (TTSManager에서 처리)
+
+// UI 특징
+- 🔊 재생 버튼 / ⏸️ 일시정지 버튼
+- 파란색 테마 (브라우저 TTS와 구분)
+- 브릿지 통신 실패시 적절한 에러 처리
+```
+
+### 다음 구현 필요사항
+- 📋 **네이티브 앱**: expo-speech 연동 및 브릿지 메시지 처리
+- 📋 **TTS_STATUS_REQUEST**: 초기 상태 확인 메시지 (필요시)
 
 ## 관련 문서
 
