@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import type { PropsWithChildren } from "react";
-import { Suspense } from "react";
 
 import "./global.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { headers } from "next/headers";
+import { NuqsAdapter } from "nuqs/adapters/next/app";
 import ConditionalHeader from "./components/conditional-header";
 import GoogleAnalytics from "./components/google-analytics";
 import NativeBridge from "./components/native-bridge";
@@ -102,9 +102,9 @@ export default async function Layout({ children }: RootLayoutProps) {
 				<GoogleAnalytics />
 				<StructuredData />
 				<QueryProvider>
-					<AuthProvider initialUser={initialUser}>
-						<ToastProvider>
-							<Suspense fallback={null}>
+					<NuqsAdapter>
+						<AuthProvider initialUser={initialUser}>
+							<ToastProvider>
 								<WebViewProvider
 									initialIsWebView={initialIsWebView}
 									initialHideHeader={initialHideHeader}
@@ -115,9 +115,9 @@ export default async function Layout({ children }: RootLayoutProps) {
 									<ToastContainer />
 									<SpeedInsights />
 								</WebViewProvider>
-							</Suspense>
-						</ToastProvider>
-					</AuthProvider>
+							</ToastProvider>
+						</AuthProvider>
+					</NuqsAdapter>
 				</QueryProvider>
 			</body>
 		</html>
