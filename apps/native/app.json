@@ -39,7 +39,32 @@
 						{
 							"scheme": "https",
 							"host": "myspeak-native.expo.app",
-							"pathPrefix": "/"
+							"path": "/"
+						},
+						{
+							"scheme": "https",
+							"host": "myspeak-native.expo.app",
+							"pathPrefix": "/topics/"
+						},
+						{
+							"scheme": "https",
+							"host": "myspeak-native.expo.app",
+							"path": "/login"
+						},
+						{
+							"scheme": "https",
+							"host": "myspeak-native.expo.app",
+							"path": "/profile"
+						},
+						{
+							"scheme": "https",
+							"host": "myspeak-native.expo.app",
+							"path": "/terms"
+						},
+						{
+							"scheme": "https",
+							"host": "myspeak-native.expo.app",
+							"path": "/privacy"
 						}
 					],
 					"category": ["BROWSABLE", "DEFAULT"]

@@ -54,6 +54,25 @@ turbo build --filter=web
 - **타입 체크**: TypeScript strict 모드
 - **자동 수정**: `pnpm format-and-lint:fix`
 
+### 테스트 환경
+
+- **테스트 프레임워크**: Vitest (루트에서 통합 관리)
+- **테스트 라이브러리**: @testing-library/react, @testing-library/jest-dom
+- **설정 파일**: `vitest.config.ts` (루트 위치)
+- **프로젝트 구성**: 모든 패키지와 앱을 포함한 멀티 프로젝트 설정
+
+```bash
+# 테스트 실행 (루트에서)
+vitest
+
+# 커버리지 포함 테스트
+vitest --coverage
+
+# 특정 패키지/앱 테스트
+vitest --project=web
+vitest --project=content-parser
+```
+
 
 ## 아키텍처 구조
 

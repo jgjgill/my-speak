@@ -104,7 +104,7 @@ export default async function TopicDetailPage({ params }: Props) {
 		queryFn: () => getTopic(id, supabase),
 	});
 
-	Promise.all([
+	await Promise.all([
 		queryClient.prefetchQuery({
 			queryKey: ["korean-scripts", id],
 			queryFn: () => getKoreanScripts(id, supabase),
