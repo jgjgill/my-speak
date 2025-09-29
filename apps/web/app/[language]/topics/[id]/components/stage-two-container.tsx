@@ -1,6 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import { useParams } from "next/navigation";
 import { useState } from "react";
 import { useAuth } from "../../../../contexts/auth-context";
 import { useStageTwoPublicData } from "../hooks/use-stage-two-public-data";
@@ -12,6 +13,7 @@ import {
 } from "../utils/learning-points";
 import AudioRecorderManager from "./audio-recorder/audio-recorder-manager";
 import TextHighlighter from "./text-highlighter/text-highlighter";
+import TTSManager from "./tts/tts-manager";
 
 const UserTranslationDisplay = dynamic(
 	() => import("./user-translation-display"),
@@ -28,6 +30,8 @@ export default function StageTwoContainer({
 	onStageComplete,
 }: StageTwoContainerProps) {
 	const { user } = useAuth();
+	const params = useParams<{ language: string; id: string }>();
+	const language = params.language;
 	const [hasRecorded, setHasRecorded] = useState(false);
 
 	const [
@@ -193,13 +197,16 @@ export default function StageTwoContainer({
 
 				{foreignScripts.map((script, index) => (
 					<div key={script.id} className="topic-card mb-4">
-						<div className="flex items-center gap-2 mb-3">
-							<div className="w-6 h-6 bg-stage-2 text-white rounded-full flex items-center justify-center text-xs font-bold">
-								{index + 1}
+						<div className="flex items-center justify-between mb-3">
+							<div className="flex items-center gap-2">
+								<div className="w-6 h-6 bg-stage-2 text-white rounded-full flex items-center justify-center text-xs font-bold">
+									{index + 1}
+								</div>
+								<span className="text-sm font-medium text-text-secondary">
+									발음 연습 {index + 1}
+								</span>
 							</div>
-							<span className="text-sm font-medium text-text-secondary">
-								발음 연습 {index + 1}
-							</span>
+							<TTSManager text={script.chunked_text} language={language} />
 						</div>
 						<p className="text-text-secondary leading-relaxed">
 							{script.chunked_text}
