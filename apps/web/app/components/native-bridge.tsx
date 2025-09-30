@@ -39,10 +39,37 @@ interface NativeGoHomeMessage {
 	type: "GO_HOME";
 }
 
+// 오디오 녹음 관련 메시지들
+interface NativeAudioRecordingStartMessage {
+	type: "AUDIO_RECORDING_START";
+}
+
+interface NativeAudioRecordingStopMessage {
+	type: "AUDIO_RECORDING_STOP";
+}
+
+interface NativeAudioPlaybackStartMessage {
+	type: "AUDIO_PLAYBACK_START";
+}
+
+interface NativeAudioPlaybackPauseMessage {
+	type: "AUDIO_PLAYBACK_PAUSE";
+}
+
+interface NativeAudioPlaybackSeekMessage {
+	type: "AUDIO_PLAYBACK_SEEK";
+	payload: {
+		seekTime: number;
+	};
+}
+
+// TTS 관련 메시지들 (payload 구조로 통일)
 interface NativeTTSSpeakMessage {
 	type: "TTS_SPEAK";
-	text: string;
-	language: string;
+	payload: {
+		text: string;
+		language: string;
+	};
 }
 
 interface NativeTTSStopMessage {
@@ -51,7 +78,9 @@ interface NativeTTSStopMessage {
 
 interface NativeTTSStatusMessage {
 	type: "TTS_STATUS";
-	status: "speaking" | "stopped" | "error";
+	payload: {
+		status: "speaking" | "stopped" | "error";
+	};
 }
 
 type NativeMessage =
@@ -59,6 +88,11 @@ type NativeMessage =
 	| NativeLogoutMessage
 	| NativeGoBackMessage
 	| NativeGoHomeMessage
+	| NativeAudioRecordingStartMessage
+	| NativeAudioRecordingStopMessage
+	| NativeAudioPlaybackStartMessage
+	| NativeAudioPlaybackPauseMessage
+	| NativeAudioPlaybackSeekMessage
 	| NativeTTSSpeakMessage
 	| NativeTTSStopMessage
 	| NativeTTSStatusMessage;
