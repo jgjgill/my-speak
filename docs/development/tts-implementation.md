@@ -51,28 +51,30 @@ interface TTSManagerProps {
   language?: string;
   onSpeakStart?: () => void;
   onSpeakEnd?: () => void;
+  onError?: (error: string) => void;
+  id: string; // WebView TTS 개별 상태 관리용 필수 ID
 }
 
-export default function TTSManager({ text, language, onSpeakStart, onSpeakEnd }: TTSManagerProps) {
+export default function TTSManager({ text, language, onSpeakStart, onSpeakEnd, onError, id }: TTSManagerProps) {
   const ttsMode = useTTSMode(); // webview | browser | unsupported
 
   return (
     <>
       {ttsMode === "browser" && <BrowserTTS {...props} />}
-      {ttsMode === "webview" && <WebViewTTS {...props} />}
+      {ttsMode === "webview" && <WebViewTTS id={id} {...props} />}
       {ttsMode === "unsupported" && <UnsupportedTTS />}
     </>
   );
 }
 ```
 
-### 브릿지 메시지 확장
+### 브릿지 메시지 확장 (Payload 구조)
 ```typescript
-// 기존 NativeMessage에 추가
+// 기존 NativeMessage에 추가 (payload 기반 일관성)
 type TTSMessage =
-  | { type: "TTS_SPEAK"; text: string; language: string }
-  | { type: "TTS_STOP" }
-  | { type: "TTS_STATUS"; status: "speaking" | "stopped" | "error" };
+  | { type: "TTS_SPEAK"; payload: { text: string; language: string; id: string } }
+  | { type: "TTS_STOP"; payload: { id: string } }
+  | { type: "TTS_STATUS"; payload: { status: "speaking" | "stopped" | "error"; id: string } };
 ```
 
 ### stage-two-container 통합 포인트
@@ -120,33 +122,44 @@ type TTSMessage =
 1. ✅ **웹 환경 TTS 기능** - `BrowserTTS` 컴포넌트 구현
 2. ✅ **stage-two-container 통합** - 각 문장별 TTS 버튼 추가
 3. ✅ **매니저 패턴 적용** - `TTSManager` 및 환경 감지 훅
-4. 🚧 **브릿지 통신 확장** - 웹뷰 환경 지원 (다음 단계)
-5. 📋 **언어팩 가이드** - 사용자 친화적 안내 시스템 (향후 계획)
+4. ✅ **브릿지 통신 확장** - 웹뷰 환경 지원 및 개별 상태 관리
+5. ✅ **네이티브 앱 구현** - expo-speech 연동 및 메시지 핸들러
+6. 📋 **언어팩 가이드** - 사용자 친화적 안내 시스템 (향후 계획)
 
-## 2단계: WebView TTS 구현 현황 (🚧 진행 중)
+## 2단계: WebView TTS 구현 현황 (✅ 완료)
 
 ### 구현된 브릿지 통신 구조
 - ✅ **NativeBridge**: TTS 메시지 타입 추가 (`TTS_SPEAK`, `TTS_STOP`, `TTS_STATUS`)
 - ✅ **tts-bridge.ts**: WebView → Native 메시지 전송 유틸리티
 - ✅ **WebViewTTS**: expo-speech 브릿지 통신 컴포넌트
+- ✅ **개별 TTS 상태 관리**: ID 기반 독립적 버튼 상태 제어
 
-### 브릿지 메시지 타입
+### 브릿지 메시지 타입 (Payload 구조)
 ```typescript
 // WebView → Native 메시지
 interface NativeTTSSpeakMessage {
   type: "TTS_SPEAK";
-  text: string;
-  language: string;
+  payload: {
+    text: string;
+    language: string;
+    id: string; // 개별 TTS 버튼 식별자
+  };
 }
 
 interface NativeTTSStopMessage {
   type: "TTS_STOP";
+  payload: {
+    id: string; // 특정 TTS 버튼 중지
+  };
 }
 
 // Native → WebView 응답
 interface NativeTTSStatusMessage {
   type: "TTS_STATUS";
-  status: "speaking" | "stopped" | "error";
+  payload: {
+    status: "speaking" | "stopped" | "error";
+    id: string; // 해당 TTS 버튼 식별
+  };
 }
 ```
 
@@ -154,19 +167,45 @@ interface NativeTTSStatusMessage {
 ```typescript
 // 핵심 기능
 - 브릿지 통신을 통한 네이티브 TTS 제어
-- 재생/정지 상태 관리 (useBooleanState)
-- TTS_STATUS 메시지 수신 및 콜백 처리
+- 개별 ID 기반 독립적 상태 관리 (useBooleanState)
+- TTS_STATUS 메시지 수신 시 ID 매칭 후 상태 업데이트
 - 환경 감지 불필요 (TTSManager에서 처리)
 
 // UI 특징
 - 🔊 재생 버튼 / ⏸️ 일시정지 버튼
 - 파란색 테마 (브라우저 TTS와 구분)
 - 브릿지 통신 실패시 적절한 에러 처리
+- 각 버튼별 독립적 상태 표시
 ```
 
-### 다음 구현 필요사항
-- 📋 **네이티브 앱**: expo-speech 연동 및 브릿지 메시지 처리
-- 📋 **TTS_STATUS_REQUEST**: 초기 상태 확인 메시지 (필요시)
+## 3단계: 네이티브 앱 TTS 구현 현황 (✅ 완료)
+
+### 구현된 네이티브 아키텍처
+- ✅ **useTTSMessageHandlers**: expo-speech 연동 훅
+- ✅ **useWebViewMessageRouter**: Command Pattern 기반 메시지 라우터
+- ✅ **useAudioRecorderMessageHandlers**: 오디오 녹음 핸들러 분리
+- ✅ **메시지 핸들러 리팩터링**: 불필요한 useCallback/useMemo 제거
+
+### 네이티브 TTS 핸들러 구조
+```typescript
+// useTTSMessageHandlers 주요 기능
+- expo-speech Speech.speak() API 연동
+- 언어별 TTS 옵션 설정 (pitch, rate, volume)
+- onStart/onDone/onError 콜백을 통한 상태 브로드캐스팅
+- ID 기반 개별 TTS 제어 지원
+
+// useWebViewMessageRouter 주요 기능
+- Command Pattern 기반 메시지 디스패칭
+- TTS_SPEAK/TTS_STOP 메시지 처리
+- payload 구조를 통한 일관된 메시지 처리
+- 코드 단순화 (이른 최적화 제거)
+```
+
+### 개별 상태 관리 해결사항
+- ✅ **문제 해결**: 모든 TTS 버튼이 동일한 상태로 변경되는 이슈
+- ✅ **해결 방법**: 각 TTS 버튼에 고유 ID 부여 (`script-${index}`)
+- ✅ **메시지 필터링**: WebView에서 자신의 ID와 일치하는 메시지만 처리
+- ✅ **상태 독립성**: 각 버튼이 독립적인 재생/정지 상태 유지
 
 ## 관련 문서
 
