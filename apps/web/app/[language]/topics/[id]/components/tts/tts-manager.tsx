@@ -11,6 +11,7 @@ interface TTSManagerProps {
 	onSpeakStart?: () => void;
 	onSpeakEnd?: () => void;
 	onError?: (error: string) => void;
+	id: string;
 }
 
 export default function TTSManager({
@@ -19,6 +20,7 @@ export default function TTSManager({
 	onSpeakStart,
 	onSpeakEnd,
 	onError,
+	id,
 }: TTSManagerProps) {
 	const ttsMode = useTTSMode();
 
@@ -35,6 +37,7 @@ export default function TTSManager({
 			)}
 			{ttsMode === "webview" && (
 				<WebViewTTS
+					id={id}
 					text={text}
 					language={language}
 					onSpeakStart={onSpeakStart}

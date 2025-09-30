@@ -5,6 +5,7 @@ import { useBooleanState } from "react-simplikit";
 import { sendTTSSpeak, sendTTSStop } from "../../../../../utils/tts-bridge";
 
 interface WebViewTTSProps {
+	id: string;
 	text: string;
 	language?: string;
 	onSpeakStart?: () => void;
@@ -13,6 +14,7 @@ interface WebViewTTSProps {
 }
 
 export default function WebViewTTS({
+	id,
 	text,
 	language = "en",
 	onSpeakStart,
@@ -32,20 +34,23 @@ export default function WebViewTTS({
 
 				const message = JSON.parse(messageEvent.data);
 
-				if (message.type === "TTS_STATUS") {
-					switch (message.status) {
-						case "speaking":
-							playTts();
-							onSpeakStart?.();
-							break;
-						case "stopped":
-							pauseTts();
-							onSpeakEnd?.();
-							break;
-						case "error":
-							pauseTts();
-							onError?.("TTS playback error");
-							break;
+				if (message.type === "TTS_STATUS" && message.payload) {
+					// 해당 ID의 TTS 버튼에만 상태 변경 적용
+					if (message.payload.id === id) {
+						switch (message.payload.status) {
+							case "speaking":
+								playTts();
+								onSpeakStart?.();
+								break;
+							case "stopped":
+								pauseTts();
+								onSpeakEnd?.();
+								break;
+							case "error":
+								pauseTts();
+								onError?.("TTS playback error");
+								break;
+						}
 					}
 				}
 			} catch (error) {
@@ -60,15 +65,15 @@ export default function WebViewTTS({
 			document.removeEventListener("message", handleTTSStatusMessage);
 			window.removeEventListener("message", handleTTSStatusMessage);
 		};
-	}, [playTts, pauseTts, onSpeakStart, onSpeakEnd, onError]);
+	}, [id, playTts, pauseTts, onSpeakStart, onSpeakEnd, onError]);
 
 	const speak = () => {
 		if (!text.trim()) return;
-		sendTTSSpeak(text, language);
+		sendTTSSpeak(text, language, id);
 	};
 
 	const stop = () => {
-		sendTTSStop();
+		sendTTSStop(id);
 		pauseTts();
 	};
 

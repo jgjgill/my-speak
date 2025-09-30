@@ -2,7 +2,7 @@
  * WebView에서 네이티브 앱으로 TTS 관련 메시지를 전송하는 유틸리티 함수들
  */
 
-export function sendTTSSpeak(text: string, language: string): void {
+export function sendTTSSpeak(text: string, language: string, id: string): void {
 	if (typeof window === "undefined" || !window.ReactNativeWebView) {
 		console.warn("TTS: ReactNativeWebView not available");
 		return;
@@ -11,13 +11,16 @@ export function sendTTSSpeak(text: string, language: string): void {
 	window.ReactNativeWebView.postMessage(
 		JSON.stringify({
 			type: "TTS_SPEAK",
-			text,
-			language,
+			payload: {
+				text,
+				language,
+				id,
+			},
 		}),
 	);
 }
 
-export function sendTTSStop(): void {
+export function sendTTSStop(id: string): void {
 	if (typeof window === "undefined" || !window.ReactNativeWebView) {
 		console.warn("TTS: ReactNativeWebView not available");
 		return;
@@ -26,6 +29,9 @@ export function sendTTSStop(): void {
 	window.ReactNativeWebView.postMessage(
 		JSON.stringify({
 			type: "TTS_STOP",
+			payload: {
+				id,
+			},
 		}),
 	);
 }

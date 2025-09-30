@@ -206,7 +206,11 @@ export default function StageTwoContainer({
 									발음 연습 {index + 1}
 								</span>
 							</div>
-							<TTSManager text={script.chunked_text} language={language} />
+							<TTSManager
+								text={script.chunked_text}
+								language={language}
+								id={`script-${index}`}
+							/>
 						</div>
 						<p className="text-text-secondary leading-relaxed">
 							{script.chunked_text}
