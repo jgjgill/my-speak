@@ -1,0 +1,234 @@
+{
+  "topic": {
+    "id": "9367BC84-DEC1-4200-8B75-CF3BA1154CAF",
+    "title": "공항에서 체크인 및 수하물 처리",
+    "category": "일상생활",
+    "difficulty": "초급",
+    "description": "공항에서 체크인하고 수하물을 처리하는 기본적인 여행 영어 표현",
+    "language_code": "en",
+    "total_sentences": 8
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 체크인을 하러 왔습니다."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "여권과 항공권을 보여드리겠습니다."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "수하물을 체크인하고 싶습니다."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "이 가방은 기내 반입이 가능한가요?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "수하물 무게가 초과되었나요?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "좌석을 변경할 수 있을까요?"
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "탑승구가 어디인지 알려주세요."
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "언제부터 탑승이 시작되나요?"
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, I'm here to check in.",
+      "chunked_text": "Hello, | I'm here | to check in."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "I'll show you my passport and boarding pass.",
+      "chunked_text": "I'll show you | my passport | and boarding pass."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "I'd like to check in my baggage.",
+      "chunked_text": "I'd like to | check in | my baggage."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Is this bag allowed as carry-on?",
+      "chunked_text": "Is this bag | allowed | as carry-on?"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Is my baggage weight over the limit?",
+      "chunked_text": "Is my baggage weight | over the limit?"
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Can I change my seat?",
+      "chunked_text": "Can I | change my seat?"
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "Please tell me where the gate is.",
+      "chunked_text": "Please tell me | where the gate is."
+    },
+    {
+      "sentence_order": 8,
+      "foreign_text": "When does boarding start?",
+      "chunked_text": "When does | boarding start?"
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "체크인",
+        "도착"
+      ],
+      "target_sentence": "Hello, I'm here to check in.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "여권",
+        "항공권",
+        "보여주기"
+      ],
+      "target_sentence": "I'll show you my passport and boarding pass.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "수하물",
+        "체크인"
+      ],
+      "target_sentence": "I'd like to check in my baggage.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 4,
+      "keywords": [
+        "체크인"
+      ],
+      "target_sentence": "Hello, I'm here to check in.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 5,
+      "keywords": [
+        "여권",
+        "항공권"
+      ],
+      "target_sentence": "I'll show you my passport and boarding pass.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 6,
+      "keywords": [
+        "수하물"
+      ],
+      "target_sentence": "I'd like to check in my baggage.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 7,
+      "keywords": [
+        "체크인"
+      ],
+      "target_sentence": "Hello, I'm here to check in.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 8,
+      "keywords": [
+        "수하물"
+      ],
+      "target_sentence": "I'd like to check in my baggage.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 9,
+      "keywords": [
+        "check in"
+      ],
+      "target_sentence": "Hello, I'm here to check in.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 10,
+      "keywords": [
+        "baggage"
+      ],
+      "target_sentence": "I'd like to check in my baggage.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "여권과 항공권",
+      "foreign_phrase": "passport and boarding pass"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "기내 반입",
+      "foreign_phrase": "carry-on"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "수하물 무게",
+      "foreign_phrase": "baggage weight"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "좌석을 변경",
+      "foreign_phrase": "change my seat"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "탑승구",
+      "foreign_phrase": "gate"
+    },
+    {
+      "sentence_order": 8,
+      "korean_phrase": "탑승이 시작",
+      "foreign_phrase": "boarding starts"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 3,
+      "korean_text": "수하물을 체크인하고 싶습니다.",
+      "foreign_text": "I'd like to check in my baggage.",
+      "reason": "공항에서 가장 기본적이고 필수적인 수하물 처리 요청 표현"
+    }
+  ]
+}
