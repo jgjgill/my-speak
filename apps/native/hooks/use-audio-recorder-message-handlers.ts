@@ -17,13 +17,13 @@ interface WebViewRef {
 	} | null;
 }
 
-export function useWebViewAudioRecorder(webViewRef: WebViewRef) {
+export function useAudioRecorderMessageHandlers(webViewRef: WebViewRef) {
 	const [permissionGranted, setPermissionGranted] = useState<boolean | null>(
 		null,
 	); // null: 미확인, false: 거부, true: 허용
 	const [recordedUri, setRecordedUri] = useState<string | null>(null);
 
-	const audioRecorder = useAudioRecorder(RecordingPresets.HIGH_QUALITY);
+	const audioRecorder = useAudioRecorder(RecordingPresets.HIGH_QUALITY!);
 	const recorderState = useAudioRecorderState(audioRecorder);
 
 	const audioPlayer = useAudioPlayer(recordedUri || "");

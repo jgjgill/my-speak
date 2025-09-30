@@ -15,7 +15,7 @@ import SimpleWebView from "@/components/simple-webview";
 import { useAuth } from "@/context/auth";
 import { useDeepLink } from "@/context/deep-link-context";
 import { useWebView } from "@/context/webview-context";
-import { useWebViewAudioRecorder } from "@/hooks/use-audio-recorder";
+import { useWebViewMessageRouter } from "@/hooks/use-webview-message-router";
 
 export default function Index() {
 	const { isLoading } = useAuth();
@@ -29,14 +29,8 @@ export default function Index() {
 
 	const backPressCountRef = useRef(0);
 
-	// 오디오 녹음 훅 사용
-	const {
-		startRecording,
-		stopRecording,
-		playRecording,
-		pauseRecording,
-		seekToPosition,
-	} = useWebViewAudioRecorder(webViewRef);
+	// 웹뷰 메시지 라우터 훅 사용
+	const handleWebViewMessage = useWebViewMessageRouter(webViewRef);
 
 	const handleWebViewBack = () => {
 		if (webViewRef.current) {
@@ -111,44 +105,6 @@ export default function Index() {
 		return () => backHandler.remove();
 	}, [handleHardwareBackPress]);
 
-	// WebView에서 온 메시지 처리
-	// biome-ignore lint/suspicious/noExplicitAny: <bridge>
-	const handleWebViewMessage = (message: { type: string; payload?: any }) => {
-		console.log("📨 WebView 메시지 수신:", message);
-
-		switch (message.type) {
-			case "AUDIO_RECORDING_START":
-				console.log("🎤 녹음 시작 요청 받음");
-				startRecording();
-				break;
-
-			case "AUDIO_RECORDING_STOP":
-				console.log("⏹️ 녹음 중지 요청 받음");
-				stopRecording();
-				break;
-
-			case "AUDIO_PLAYBACK_START":
-				console.log("▶️ 재생 시작 요청 받음");
-				playRecording();
-				break;
-
-			case "AUDIO_PLAYBACK_PAUSE":
-				console.log("⏸️ 재생 일시정지 요청 받음");
-				pauseRecording();
-				break;
-
-			case "AUDIO_PLAYBACK_SEEK":
-				console.log("⏭️ 재생 위치 이동 요청 받음:", message.payload);
-				if (message.payload?.seekTime !== undefined) {
-					seekToPosition(message.payload.seekTime);
-				}
-				break;
-
-			default:
-				// 기존 다른 메시지들은 그대로 처리
-				break;
-		}
-	};
 
 	// 웹에서 접속한 경우 스토어로 리다이렉트
 	useEffect(() => {
