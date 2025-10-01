@@ -46,7 +46,7 @@ export default function StageOneContainer({
 	);
 
 	return (
-		<div className="topic-card mb-6">
+		<div className="bg-white border border-gray-200 p-4 rounded-xl shadow-sm mb-6">
 			{/* 1단계 헤더 */}
 			<div className="flex items-center gap-3 mb-6">
 				<div className="w-8 h-8 bg-stage-1 text-white rounded-full flex items-center justify-center text-sm font-bold">

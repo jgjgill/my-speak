@@ -2,6 +2,18 @@
 
 import dynamic from "next/dynamic";
 
+const StickyProgressBar = dynamic(() => import("./sticky-progress-bar"), {
+	ssr: false,
+	loading: () => (
+		<div className="h-2 bg-gray-200 rounded-full overflow-hidden -mx-4 mb-2">
+			<div
+				className="h-full bg-gray-300 animate-pulse"
+				style={{ width: "0%" }}
+			/>
+		</div>
+	),
+});
+
 const ProgressIndicator = dynamic(() => import("./progress-indicator"), {
 	ssr: false,
 	loading: () => (
@@ -21,6 +33,8 @@ export default function PracticeHeader({
 }: PracticeHeaderProps) {
 	return (
 		<>
+			<StickyProgressBar progressPercentage={progressPercentage} />
+
 			<div className="flex justify-between items-center mb-4">
 				<h3 className="font-bold">문장별 번역 연습</h3>
 				<ProgressIndicator progressPercentage={progressPercentage} />

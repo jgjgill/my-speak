@@ -142,7 +142,7 @@ export default async function TopicDetailPage({ params }: Props) {
 
 	return (
 		<HydrationBoundary state={dehydrate(queryClient)}>
-			<div className="p-4">
+			<div className="p-4 min-h-screen">
 				<Suspense fallback={<TopicHeaderSkeleton />}>
 					<TopicHeader topicId={id} />
 				</Suspense>

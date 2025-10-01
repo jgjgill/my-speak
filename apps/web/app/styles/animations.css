@@ -63,3 +63,17 @@
 .animate-slide-down {
 	animation: slide-down 0.3s cubic-bezier(0.55, 0.06, 0.68, 0.19) forwards;
 }
+
+/* Progress Bar Animation */
+@keyframes progress-grow {
+	from {
+		width: 0%;
+	}
+	to {
+		width: var(--target-width);
+	}
+}
+
+.animate-progress-grow {
+	animation: progress-grow 0.5s ease-out forwards;
+}
