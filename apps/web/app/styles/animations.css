@@ -77,3 +77,20 @@
 .animate-progress-grow {
 	animation: progress-grow 0.5s ease-out forwards;
 }
+
+/* Completion Border Pulse Animation */
+@keyframes pulse-border {
+	0%,
+	100% {
+		border-color: rgba(59, 130, 246, 0.5);
+		box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.4);
+	}
+	50% {
+		border-color: rgba(96, 165, 250, 0.6);
+		box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+	}
+}
+
+.animate-pulse-border {
+	animation: pulse-border 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

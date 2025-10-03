@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 import { useState } from "react";
 import { useAuth } from "../../../../contexts/auth-context";
 import { useToast } from "../../../../contexts/toast-context";
+import { useIsMounted } from "../../../../hooks/use-is-mounted";
 import { useLearningPointMutations } from "../hooks/use-learning-point-mutations";
 import { useTranslationMutation } from "../hooks/use-translation-mutations";
 import { useUserTranslations } from "../hooks/use-user-translations";
@@ -48,6 +49,7 @@ export default function StageOnePractice({
 	const { addToast } = useToast();
 
 	const [selectedPoints, setSelectedPoints] = useState(initialSelectedPoints);
+	const isMounted = useIsMounted();
 	const { data: userTranslations } = useUserTranslations(topicId, user);
 
 	const translationMutation = useTranslationMutation(topicId, user);
@@ -147,8 +149,22 @@ export default function StageOnePractice({
 				const sentenceOrder = script.sentence_order;
 				const learningPoints = learningPointsByOrder[sentenceOrder] || [];
 
+				// 완료 상태 확인 (CSR only)
+				const isCompleted =
+					isMounted &&
+					userTranslations.find(
+						(t) => t.sentence_order === sentenceOrder && t.is_completed,
+					);
+
 				return (
-					<div key={script.id} className="topic-card mb-6">
+					<div
+						key={script.id}
+						className={`bg-white rounded-xl shadow-sm p-4 transition-all duration-500 mb-6 relative ${
+							isCompleted
+								? "border-2 border-stage-1 animate-pulse-border scale-[1.01]"
+								: "border border-gray-200"
+						}`}
+					>
 						<div className="mb-4">
 							<div className="flex items-center gap-2 mb-3">
 								<div className="w-6 h-6 bg-stage-1 text-white rounded-full flex items-center justify-center text-xs font-bold">
