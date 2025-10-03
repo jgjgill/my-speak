@@ -110,7 +110,6 @@ export default function AppDownloadModal() {
 								alt="My Speak 앱 아이콘"
 								width={64}
 								height={64}
-								className="w-full h-full object-cover"
 							/>
 						</div>
 						<div>

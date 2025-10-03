@@ -33,7 +33,6 @@ export default function LoginPage() {
 								alt="My Speak 로고"
 								width={80}
 								height={80}
-								className="w-full h-full object-cover"
 							/>
 						</div>
 

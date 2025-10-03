@@ -76,7 +76,8 @@ export default function AuthButton() {
 								alt="프로필"
 								width={32}
 								height={32}
-								className="w-8 h-8 rounded-full border border-white shadow-sm"
+								className="rounded-full border border-white shadow-sm"
+								priority
 							/>
 						) : (
 							<div

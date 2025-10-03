@@ -7,11 +7,9 @@ export default async function Home() {
 	const isNativeApp = await isNativeWebView();
 
 	return (
-		<div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
-			{/* 히어로 섹션 */}
+		<div className="min-h-screen">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-24">
 				<div className="text-center">
-					{/* 로고 및 메인 타이틀 */}
 					<div className="mb-8">
 						<div className="w-20 h-20 mx-auto mb-6 rounded-full bg-primary flex items-center justify-center overflow-hidden">
 							<Image
@@ -19,7 +17,7 @@ export default async function Home() {
 								alt="My Speak 로고"
 								width={80}
 								height={80}
-								className="w-full h-full object-cover"
+								priority
 							/>
 						</div>
 						<h1 className="text-hero font-bold text-korean text-primary mb-4">
@@ -32,12 +30,10 @@ export default async function Home() {
 						</p>
 					</div>
 
-					{/* 언어별 학습 카드 */}
 					<div className="mb-12">
 						<div
 							className={`grid ${isNativeApp ? "grid-cols-1 max-w-2xl" : "md:grid-cols-2 max-w-4xl"} gap-6 mx-auto`}
 						>
-							{/* 영어 학습 */}
 							<Link href="/en/topics" className="topic-card group">
 								<div className="flex items-center mb-4">
 									<div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold text-lg mr-4">
@@ -68,7 +64,6 @@ export default async function Home() {
 								</div>
 							</Link>
 
-							{/* 일본어 학습 (준비중) - 웹에서만 표시 */}
 							{!isNativeApp && (
 								<div className="topic-card opacity-60 cursor-not-allowed">
 									<div className="flex items-center mb-4">
@@ -104,16 +99,14 @@ export default async function Home() {
 				</div>
 			</div>
 
-			{/* 앱 다운로드 QR 코드 - 데스크톱에서만 표시 */}
 			{!isNativeApp && (
-				<div className="bg-gray-50 py-12">
+				<div className="py-12">
 					<div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 						<h2 className="text-title font-bold text-korean mb-8">
 							모바일 앱으로 더 편리하게
 						</h2>
 
 						<div className="grid md:grid-cols-2 gap-8 max-w-md mx-auto">
-							{/* iOS QR 코드 */}
 							<div className="text-center">
 								<div className="inline-block p-4 bg-white rounded-xl shadow-sm">
 									<Image
@@ -127,7 +120,6 @@ export default async function Home() {
 								<p className="text-sm text-gray-600 mt-3">iOS App Store</p>
 							</div>
 
-							{/* Android QR 코드 */}
 							<div className="text-center">
 								<div className="inline-block p-4 bg-white rounded-xl shadow-sm">
 									<Image
@@ -145,7 +137,6 @@ export default async function Home() {
 				</div>
 			)}
 
-			{/* 학습 방법 소개 */}
 			<div className="bg-white py-16">
 				<div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 					<div className="text-center mb-12">
@@ -159,7 +150,6 @@ export default async function Home() {
 					</div>
 
 					<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-						{/* 1단계 */}
 						<div className="text-center p-6 rounded-xl border border-blue-100 bg-blue-50">
 							<div className="w-12 h-12 mx-auto mb-4 rounded-full bg-stage-1 flex items-center justify-center text-white font-bold">
 								1
@@ -172,7 +162,6 @@ export default async function Home() {
 							</p>
 						</div>
 
-						{/* 2단계 */}
 						<div className="text-center p-6 rounded-xl border border-green-100 bg-green-50">
 							<div className="w-12 h-12 mx-auto mb-4 rounded-full bg-stage-2 flex items-center justify-center text-white font-bold">
 								2
@@ -185,7 +174,6 @@ export default async function Home() {
 							</p>
 						</div>
 
-						{/* 3단계 */}
 						<div className="text-center p-6 rounded-xl border border-pink-200 bg-pink-50">
 							<div className="w-12 h-12 mx-auto mb-4 rounded-full bg-stage-3 flex items-center justify-center text-white font-bold">
 								3
@@ -198,7 +186,6 @@ export default async function Home() {
 							</p>
 						</div>
 
-						{/* 4단계 */}
 						<div className="text-center p-6 rounded-xl border border-purple-100 bg-purple-50">
 							<div className="w-12 h-12 mx-auto mb-4 rounded-full bg-stage-4 flex items-center justify-center text-white font-bold">
 								4
