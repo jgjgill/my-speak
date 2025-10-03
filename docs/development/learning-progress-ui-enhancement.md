@@ -64,63 +64,54 @@ const topPosition = isWebView && hideHeader ? "top-0" : "top-16";
 - `z-40` (ConditionalHeader z-50보다 낮게)
 - `stage-one-container.tsx`의 `topic-card` hover 효과 제거 (sticky 요소 가림 방지)
 
-### 2. 완료 카드 시각적 피드백
+### 2. 완료 카드 시각적 피드백 ✅
 
 #### 설계
-- **완료 상태 표시**: border 색상 변경 + 배경색 추가
-- **애니메이션**: border 색상 전환 애니메이션
+- **완료 상태 표시**: border 색상 변경 + 펄스 애니메이션 + 스케일 효과
+- **애니메이션**:
+  - border 색상 전환 (500ms transition)
+  - 펄스 애니메이션 (무한 반복)
+  - 약간의 스케일 확대 (1.01배)
 - **상태 구분**:
-  - 미완료: `border-gray-200`
-  - 완료: `border-green-500 bg-green-50/30`
+  - 미완료: `border border-gray-200`
+  - 완료: `border-2 border-stage-1 animate-pulse-border scale-[1.01]`
 
-#### 구현 위치
-- 파일: `apps/web/app/[language]/topics/[id]/components/stage-one-practice.tsx`
-- `.topic-card` 요소에 동적 className 적용
+#### 구현 완료
 
-#### 완료 상태 판단
+##### 구현 위치
+- **파일**: `apps/web/app/[language]/topics/[id]/components/stage-one-practice.tsx`
+
+##### 핵심 로직
 ```tsx
-const isCompleted = userTranslations.find(
-  t => t.sentence_order === sentenceOrder && t.is_completed
-);
-```
+// 완료 상태 판단
+const isCompleted = isMounted &&
+  userTranslations.find(t => t.sentence_order === sentenceOrder && t.is_completed);
 
-#### 스타일링
-```tsx
-className={`topic-card mb-6 transition-all duration-300 ${
+// 동적 스타일링
+className={`... ${
   isCompleted
-    ? 'border-green-500 bg-green-50/30'
-    : 'border-gray-200'
+    ? "border-2 border-stage-1 animate-pulse-border scale-[1.01]"
+    : "border border-gray-200"
 }`}
 ```
 
-### 3. 마일스톤 기반 토스트 알림
+##### 디자인 결정
+- **색상**: `border-stage-1` (1단계 테마 색상) 사용
+- **펄스 효과**: `animate-pulse-border` 커스텀 애니메이션
+- **스케일**: `scale-[1.01]` 미세한 크기 변화로 강조
+- **전환 시간**: `duration-500` (0.5초) 부드러운 전환
 
-#### 설계
-- **트리거**: 25%, 50%, 75%, 100% 달성 시
-- **메시지**:
-  - 25%: "🎯 좋아요! 벌써 1/4 완료했어요"
-  - 50%: "🔥 절반 완주! 계속 가볼까요?"
-  - 75%: "⚡️ 거의 다 왔어요! 조금만 더!"
-  - 100%: "🎉 완벽해요! 다음 단계로 가볼까요?"
+### 3. 마일스톤 게이미피케이션 (설계 중)
 
-#### 구현 위치
-- 파일: `apps/web/app/[language]/topics/[id]/components/stage-one-practice.tsx`
-- `handleTranslationSubmit` 함수 내 진행률 계산 후 토스트 트리거
+#### 현재 상태
+- ~~토스트 알림 방식~~ → UX 문제로 제거
+  - 문제점: "번역이 저장되었습니다!" 토스트와 중첩되어 정보 과부하
+  - 문제점: 중복 마일스톤 표시 이슈
 
-#### 중복 방지
-```tsx
-const [shownMilestones, setShownMilestones] = useState<Set<number>>(new Set());
-
-// 마일스톤 체크
-const milestone = [25, 50, 75, 100].find(m =>
-  progressPercentage >= m && !shownMilestones.has(m)
-);
-
-if (milestone) {
-  addToast({ message: milestoneMessages[milestone], type: "success" });
-  setShownMilestones(prev => new Set(prev).add(milestone));
-}
-```
+#### 대안 방식 검토 중
+- **Progress Bar 마일스톤 마커**: 25%, 50%, 75%, 100% 위치에 이모지 마커 표시
+- **Confetti 효과**: 100% 달성 시만 화면 전체 애니메이션
+- **Progress Bar 애니메이션**: 마일스톤 달성 시 색상 변화 + 펄스 효과
 
 ## 구현 체크리스트
 
@@ -130,8 +121,8 @@ if (milestone) {
 - [x] 하이드레이션 이슈 해결 (CSR 전용 처리)
 - [x] 데스크탑 환경 sticky 작동 보장 (min-h-screen)
 - [x] hover 효과 제거로 sticky 요소 가림 방지
-- [ ] 완료 카드 스타일링 및 애니메이션
-- [ ] 마일스톤 토스트 시스템 구현
+- [x] 완료 카드 스타일링 및 애니메이션
+- [ ] 마일스톤 게이미피케이션 (새로운 UI 방식 검토 중)
 - [ ] 웹 환경 테스트
 - [ ] 네이티브 WebView 환경 테스트
 - [ ] 진행률 0% → 100% 전체 플로우 검증

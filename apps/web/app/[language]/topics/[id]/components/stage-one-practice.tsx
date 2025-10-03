@@ -149,7 +149,6 @@ export default function StageOnePractice({
 				const sentenceOrder = script.sentence_order;
 				const learningPoints = learningPointsByOrder[sentenceOrder] || [];
 
-				// 완료 상태 확인 (CSR only)
 				const isCompleted =
 					isMounted &&
 					userTranslations.find(
