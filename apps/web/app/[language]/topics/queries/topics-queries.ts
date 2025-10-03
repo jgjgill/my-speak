@@ -1,5 +1,4 @@
 import type { Tables } from "@repo/typescript-config/supabase-types";
-import type { SupabaseClient } from "@supabase/supabase-js";
 import { createClient } from "../../../utils/supabase/client";
 
 export type Topic = Tables<"topics">;
@@ -25,9 +24,8 @@ export interface TopicsResponse {
 
 export async function getTopics(
 	params: TopicsQueryParams = {},
-	supabase?: SupabaseClient,
 ): Promise<TopicsResponse> {
-	const client = supabase || createClient();
+	const client = createClient();
 
 	const { limit = 5, page = 0, language = "en" } = params;
 

@@ -9,8 +9,6 @@ export function TopicsList() {
 	const params = useParams();
 	const language = params.language as string;
 
-
-
 	const { data, fetchNextPage, hasNextPage, isFetchingNextPage } =
 		useTopicsInfinite({ language });
 	const loadMoreRef = useRef<HTMLDivElement>(null);

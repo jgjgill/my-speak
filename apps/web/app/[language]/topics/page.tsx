@@ -1,15 +1,8 @@
-import {
-	dehydrate,
-	HydrationBoundary,
-	QueryClient,
-} from "@tanstack/react-query";
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import { type LanguageCode, languageInfo } from "../../constants/languages";
-import { createClient } from "../../utils/supabase/server";
 import { TopicsList } from "./components/topics-list";
 import { TopicsLoading } from "./components/topics-loading";
-import { getTopics } from "./queries/topics-queries";
 
 interface TopicsPageProps {
 	params: Promise<{ language: string }>;
@@ -53,17 +46,6 @@ export async function generateMetadata({
 
 export default async function TopicsPage({ params }: TopicsPageProps) {
 	const { language } = await params;
-	const supabase = await createClient();
-
-	const queryClient = new QueryClient();
-
-	queryClient.prefetchInfiniteQuery({
-		queryKey: ["topics", "infinite", { language }],
-		queryFn: async ({ pageParam = 0 }) => {
-			return getTopics({ page: pageParam, language }, supabase);
-		},
-		initialPageParam: 0,
-	});
 
 	const currentLanguage = languageInfo[language as LanguageCode];
 
@@ -86,13 +68,10 @@ export default async function TopicsPage({ params }: TopicsPageProps) {
 				</div>
 			</div>
 
-			{/* 콘텐츠 */}
 			<div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-				<HydrationBoundary state={dehydrate(queryClient)}>
-					<Suspense fallback={<TopicsLoading />}>
-						<TopicsList />
-					</Suspense>
-				</HydrationBoundary>
+				<Suspense fallback={<TopicsLoading />}>
+					<TopicsList />
+				</Suspense>
 			</div>
 		</div>
 	);

@@ -14,7 +14,9 @@ export async function getUserProgress(
 		.select("*")
 		.eq("user_id", user.id)
 		.eq("topic_id", topicId)
-		.single();
+		.maybeSingle();
+
+	console.log(data, error);
 
 	if (error && error.code !== "PGRST116") {
 		// PGRST116: no rows returned
