@@ -75,7 +75,7 @@
 }
 
 .animate-progress-grow {
-	animation: progress-grow 0.5s ease-out forwards;
+	animation: progress-grow 0.5s ease-out;
 }
 
 /* Completion Border Pulse Animation */

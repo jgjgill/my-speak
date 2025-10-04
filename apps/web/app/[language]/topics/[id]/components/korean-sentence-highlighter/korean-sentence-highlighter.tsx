@@ -1,6 +1,7 @@
 "use client";
 
 import type { Tables } from "@repo/typescript-config/supabase-types";
+import { useIsMounted } from "../../../../../hooks/use-is-mounted";
 import {
 	parseTextSegments,
 	type TextSegment,
@@ -25,6 +26,8 @@ export default function KoreanSentenceHighlighter({
 	onLearningPointClick,
 	isLoading,
 }: KoreanSentenceHighlighterProps) {
+	const isMounted = useIsMounted();
+
 	const segments = parseTextSegments(
 		koreanText,
 		sentenceOrder,
@@ -51,14 +54,13 @@ export default function KoreanSentenceHighlighter({
 		<div className="text-lg leading-relaxed">
 			{segments.map((segment, index) => {
 				if (segment.isKeyword) {
-					let highlightClass: string;
-					if (isLoading) {
-						highlightClass = highlightVariants.loading;
-					} else if (segment.isSelected) {
-						highlightClass = highlightVariants.selected;
-					} else {
-						highlightClass = highlightVariants.default;
-					}
+					const highlightClass = isMounted
+						? isLoading
+							? highlightVariants.loading
+							: segment.isSelected
+								? highlightVariants.selected
+								: highlightVariants.default
+						: highlightVariants.default;
 
 					const keywordKey = segment.learningPoint
 						? `keyword-${segment.learningPoint.id}-${index}`

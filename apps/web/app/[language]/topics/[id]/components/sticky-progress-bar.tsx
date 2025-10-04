@@ -17,10 +17,11 @@ export default function StickyProgressBar({
 		<div className={`sticky ${topPosition} z-40 bg-white -mx-4 px-4 pb-2`}>
 			<div className="h-2 bg-gray-200 rounded-full overflow-hidden">
 				<div
-					className="h-full bg-primary animate-progress-grow"
+					className="h-full bg-primary animate-progress-grow transition-[width] duration-500 ease-out"
 					style={
 						{
 							"--target-width": `${progressPercentage}%`,
+							width: `${progressPercentage}%`,
 						} as React.CSSProperties
 					}
 				/>
