@@ -14,7 +14,9 @@ export function TopicCard({
 	isCompleted = false,
 	completionPercentage = 0,
 }: TopicCardProps) {
-	const { language } = useParams();
+	const params = useParams();
+	const language = params?.language as string;
+
 	const currentLanguage = languageInfo[language as LanguageCode];
 
 	return (

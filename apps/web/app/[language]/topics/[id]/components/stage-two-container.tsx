@@ -31,7 +31,7 @@ export default function StageTwoContainer({
 }: StageTwoContainerProps) {
 	const { user } = useAuth();
 	const params = useParams<{ language: string; id: string }>();
-	const language = params.language;
+	const language = params?.language;
 	const [hasRecorded, setHasRecorded] = useState(false);
 
 	const [

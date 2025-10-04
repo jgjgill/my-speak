@@ -7,7 +7,7 @@ import { TopicCard } from "./topic-card";
 
 export function TopicsList() {
 	const params = useParams();
-	const language = params.language as string;
+	const language = params?.language as string;
 
 	const { data, fetchNextPage, hasNextPage, isFetchingNextPage } =
 		useTopicsInfinite({ language });
