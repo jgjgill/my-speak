@@ -1,0 +1,210 @@
+{
+  "topic": {
+    "id": "64402e58-b0c5-4815-9afe-ab4f4785f38d",
+    "title": "주말 루틴 이야기하기",
+    "category": "일상생활",
+    "difficulty": "초급",
+    "description": "주말에 하는 일상적인 활동들을 영어로 표현하는 법을 배웁니다",
+    "language_code": "en",
+    "total_sentences": 6
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "저는 주말마다 늦잠을 자요."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "보통 10시쯤 일어납니다."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "보통 집 청소를 하고 빨래를 합니다."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "오후에는 친구들을 만나거나 영화를 봅니다."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "저녁에는 외식을 하거나 집에서 요리를 합니다."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "일요일 밤에는 다음 주를 준비합니다."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "I sleep in every weekend.",
+      "chunked_text": "I sleep in | every weekend."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "I usually wake up around 10 o'clock.",
+      "chunked_text": "I usually | wake up | around 10 o'clock."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "I usually clean the house and do laundry.",
+      "chunked_text": "I usually | clean the house | and do laundry."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "In the afternoon, I meet up with friends or watch movies.",
+      "chunked_text": "In the afternoon, | I meet up with friends | or watch movies."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "In the evening, I eat out or cook at home.",
+      "chunked_text": "In the evening, | I eat out | or cook at home."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "On Sunday night, I prepare for the next week.",
+      "chunked_text": "On Sunday night, | I prepare for | the next week."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "늦잠",
+        "주말마다"
+      ],
+      "target_sentence": "I sleep in every weekend.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "10시쯤",
+        "일어납니다"
+      ],
+      "target_sentence": "I usually wake up around 10 o'clock.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "집 청소",
+        "빨래"
+      ],
+      "target_sentence": "I usually clean the house and do laundry.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 4,
+      "keywords": [
+        "늦잠"
+      ],
+      "target_sentence": "I sleep in every weekend.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 5,
+      "keywords": [
+        "10시"
+      ],
+      "target_sentence": "I usually wake up around 10 o'clock.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 6,
+      "keywords": [
+        "청소",
+        "빨래"
+      ],
+      "target_sentence": "I usually clean the house and do laundry.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 7,
+      "keywords": [
+        "주말"
+      ],
+      "target_sentence": "I sleep in every weekend.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 8,
+      "keywords": [
+        "오후"
+      ],
+      "target_sentence": "In the afternoon, I meet up with friends or watch movies.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 9,
+      "keywords": [
+        "sleep in"
+      ],
+      "target_sentence": "I sleep in every weekend.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 10,
+      "keywords": [
+        "prepare for"
+      ],
+      "target_sentence": "On Sunday night, I prepare for the next week.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "일어납니다",
+      "foreign_phrase": "wake up"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "빨래를 합니다",
+      "foreign_phrase": "do laundry"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "만나거나",
+      "foreign_phrase": "meet up with"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "외식을 하거나",
+      "foreign_phrase": "eat out"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "준비합니다",
+      "foreign_phrase": "prepare for"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 3,
+      "korean_text": "보통 집 청소를 하고 빨래를 합니다.",
+      "foreign_text": "I usually clean the house and do laundry.",
+      "reason": "주말 루틴에서 가장 보편적으로 사용되는 집안일 표현을 담고 있어 실용적입니다"
+    }
+  ]
+}
