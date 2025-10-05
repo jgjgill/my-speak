@@ -1,0 +1,236 @@
+{
+  "topic": {
+    "id": "e5e3e645-a638-4d51-86b6-a56ee4f1ee0b",
+    "title": "집 청소하기",
+    "category": "일상생활",
+    "difficulty": "초급",
+    "description": "집안 청소를 할 때 사용하는 기본적인 표현과 행동을 학습합니다",
+    "language_code": "en",
+    "total_sentences": 7
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "주말이라서 집 청소를 하려고 해요."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "먼저 바닥에 떨어진 물건들을 주워서 제자리에 놓을게요."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "오늘은 거실과 주방을 깨끗하게 청소할 거예요."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "먼지를 닦고, 진공청소기로 바닥을 청소할게요."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "주방 싱크대도 설거지를 하고 정리해야 해요."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "화장실은 변기를 닦고 거울을 깨끗하게 닦을 거예요."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "청소를 마치면 집이 훨씬 쾌적해질 거예요."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "It's the weekend, so I'm going to clean the house.",
+      "chunked_text": "It's the weekend, | so I'm going to | clean the house."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "First, I'll pick up things from the floor and put them back in place.",
+      "chunked_text": "First, | I'll pick up things | from the floor | and put them back | in place."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Today, I'm going to clean the living room and kitchen thoroughly.",
+      "chunked_text": "Today, | I'm going to clean | the living room and kitchen | thoroughly."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "I'll wipe the dust and vacuum the floor.",
+      "chunked_text": "I'll wipe the dust | and vacuum the floor."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "I need to wash the dishes and organize the kitchen sink area.",
+      "chunked_text": "I need to | wash the dishes | and organize | the kitchen sink area."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "In the bathroom, I'll clean the toilet and wipe the mirror clean.",
+      "chunked_text": "In the bathroom, | I'll clean the toilet | and wipe the mirror | clean."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "After cleaning, the house will be much more comfortable.",
+      "chunked_text": "After cleaning, | the house will be | much more comfortable."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "주말",
+        "집 청소"
+      ],
+      "target_sentence": "It's the weekend, so I'm going to clean the house.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "물건들",
+        "주워서",
+        "제자리"
+      ],
+      "target_sentence": "I'll pick up things from the floor and put them back in place.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "거실과 주방",
+        "깨끗하게"
+      ],
+      "target_sentence": "Today, I'm going to clean the living room and kitchen thoroughly.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 4,
+      "keywords": [
+        "집 청소"
+      ],
+      "target_sentence": "It's the weekend, so I'm going to clean the house.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 5,
+      "keywords": [
+        "물건들",
+        "제자리"
+      ],
+      "target_sentence": "I'll pick up things from the floor and put them back in place.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 6,
+      "keywords": [
+        "먼지 닦고",
+        "진공청소"
+      ],
+      "target_sentence": "I'll wipe the dust and vacuum the floor.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 7,
+      "keywords": [
+        "청소"
+      ],
+      "target_sentence": "It's the weekend, so I'm going to clean the house.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 8,
+      "keywords": [
+        "제자리"
+      ],
+      "target_sentence": "I'll pick up things from the floor and put them back in place.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 9,
+      "keywords": [
+        "진공청소"
+      ],
+      "target_sentence": "I'll wipe the dust and vacuum the floor.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 10,
+      "keywords": [
+        "clean"
+      ],
+      "target_sentence": "It's the weekend, so I'm going to clean the house.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 11,
+      "keywords": [
+        "vacuum"
+      ],
+      "target_sentence": "I'll wipe the dust and vacuum the floor.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 12,
+      "keywords": [
+        "toilet"
+      ],
+      "target_sentence": "In the bathroom, I'll clean the toilet and wipe the mirror clean.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "바닥에 떨어진 물건들을 주워서 제자리에 놓을게요",
+      "foreign_phrase": "I'll pick up things from the floor and put them back in place"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "먼지를 닦고",
+      "foreign_phrase": "wipe the dust"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "진공청소기로 바닥을 청소할게요",
+      "foreign_phrase": "vacuum the floor"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "변기를 닦고",
+      "foreign_phrase": "clean the toilet"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 3,
+      "korean_text": "오늘은 거실과 주방을 깨끗하게 청소할 거예요.",
+      "foreign_text": "Today, I'm going to clean the living room and kitchen thoroughly.",
+      "reason": "청소 계획을 구체적으로 표현하는 핵심 문장"
+    }
+  ]
+}
