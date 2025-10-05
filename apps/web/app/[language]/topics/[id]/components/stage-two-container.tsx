@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import { useParams } from "next/navigation";
 import { useState } from "react";
 import { useAuth } from "../../../../contexts/auth-context";
+import { useIsMounted } from "../../../../hooks/use-is-mounted";
 import { useStageTwoPublicData } from "../hooks/use-stage-two-public-data";
 import { useUserTranslations } from "../hooks/use-user-translations";
 import {
@@ -30,6 +31,7 @@ export default function StageTwoContainer({
 	onStageComplete,
 }: StageTwoContainerProps) {
 	const { user } = useAuth();
+	const isMounted = useIsMounted();
 	const params = useParams<{ language: string; id: string }>();
 	const language = params?.language;
 	const [hasRecorded, setHasRecorded] = useState(false);
@@ -124,14 +126,18 @@ export default function StageTwoContainer({
 					const userTranslation = userTranslations.find(
 						(t) => t.sentence_order === script.sentence_order,
 					);
-					const selectedKoreanKeywords = getSelectedKoreanKeywords(
-						selectedLearningPointsByOrder,
-						script.sentence_order,
-					);
-					const selectedForeignKeywords = getSelectedForeignKeywords(
-						selectedLearningPointsByOrder,
-						script.sentence_order,
-					);
+					const selectedKoreanKeywords = isMounted
+						? getSelectedKoreanKeywords(
+								selectedLearningPointsByOrder,
+								script.sentence_order,
+							)
+						: [];
+					const selectedForeignKeywords = isMounted
+						? getSelectedForeignKeywords(
+								selectedLearningPointsByOrder,
+								script.sentence_order,
+							)
+						: [];
 
 					return (
 						<div key={script.id} className="topic-card mb-4">

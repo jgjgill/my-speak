@@ -1,6 +1,7 @@
 "use client";
 
 import { useAuth } from "../../../../contexts/auth-context";
+import { useIsMounted } from "../../../../hooks/use-is-mounted";
 import { useStageThreePublicData } from "../hooks/use-stage-three-public-data";
 import {
 	createSelectedLearningPointsByOrder,
@@ -18,6 +19,7 @@ export default function StageThreeContainer({
 	onStageComplete,
 }: StageThreeContainerProps) {
 	const { user } = useAuth();
+	const isMounted = useIsMounted();
 
 	const [
 		{ data: koreanScripts },
@@ -78,10 +80,12 @@ export default function StageThreeContainer({
 			</div>
 
 			{koreanScripts.map((script, index) => {
-				const selectedKoreanKeywords = getSelectedKoreanKeywords(
-					selectedLearningPointsByOrder,
-					script.sentence_order,
-				);
+				const selectedKoreanKeywords = isMounted
+					? getSelectedKoreanKeywords(
+							selectedLearningPointsByOrder,
+							script.sentence_order,
+						)
+					: [];
 
 				return (
 					<div key={script.id} className="topic-card mb-4">
