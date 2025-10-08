@@ -32,7 +32,7 @@ export default function ConditionalHeader() {
 								<div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center shadow-sm overflow-hidden">
 									<Image
 										src="/app-icon.png"
-										alt="My Speak"
+										alt="My Speak 로고"
 										width={40}
 										height={40}
 										priority
