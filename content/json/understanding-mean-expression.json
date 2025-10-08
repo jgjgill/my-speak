@@ -1,0 +1,244 @@
+{
+  "topic": {
+    "id": "ddff74e1-5177-4c48-8b0a-008e6f1b92fa",
+    "title": "mean의 다양한 활용법",
+    "category": "일상생활",
+    "difficulty": "초급",
+    "description": "의도, 의미, 확인 등 다양한 상황에서 활용되는 mean 표현 익히기",
+    "language_code": "en",
+    "total_sentences": 7
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "나 너한테 상처 주려던 건 아니었어."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "미안, 무슨 뜻이야?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "그럼 내일 만나자는 거야?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "나 이번 주말에 운동 시작할 거야."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "정말? 진심이야?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "아, 그 식당이 문 닫았다는 거야?"
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "미안, 일부러 그런 건 아니야."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "I didn't mean to hurt you.",
+      "chunked_text": "I didn't mean to | hurt you."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Sorry, what do you mean?",
+      "chunked_text": "Sorry, | what do you mean?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "You mean we should meet tomorrow?",
+      "chunked_text": "You mean | we should meet tomorrow?"
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "I mean to start exercising this weekend.",
+      "chunked_text": "I mean to | start exercising | this weekend."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Really? Do you mean it?",
+      "chunked_text": "Really? | Do you mean it?"
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Oh, you mean the restaurant is closed?",
+      "chunked_text": "Oh, | you mean | the restaurant is closed?"
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "Sorry, I didn't mean it.",
+      "chunked_text": "Sorry, | I didn't mean it."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "상처 주다",
+        "아니었어"
+      ],
+      "target_sentence": "I didn't mean to hurt you.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "무슨",
+        "뜻"
+      ],
+      "target_sentence": "Sorry, what do you mean?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "내일",
+        "만나다"
+      ],
+      "target_sentence": "You mean we should meet tomorrow?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 4,
+      "keywords": [
+        "상처",
+        "의도 아님"
+      ],
+      "target_sentence": "I didn't mean to hurt you.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 5,
+      "keywords": [
+        "뜻"
+      ],
+      "target_sentence": "Sorry, what do you mean?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 6,
+      "keywords": [
+        "내일"
+      ],
+      "target_sentence": "You mean we should meet tomorrow?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 7,
+      "keywords": [
+        "상처"
+      ],
+      "target_sentence": "I didn't mean to hurt you.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 8,
+      "keywords": [
+        "뜻"
+      ],
+      "target_sentence": "Sorry, what do you mean?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 9,
+      "keywords": [
+        "내일"
+      ],
+      "target_sentence": "You mean we should meet tomorrow?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 10,
+      "keywords": [
+        "hurt"
+      ],
+      "target_sentence": "I didn't mean to hurt you.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 11,
+      "keywords": [
+        "mean"
+      ],
+      "target_sentence": "Sorry, what do you mean?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 12,
+      "keywords": [
+        "tomorrow"
+      ],
+      "target_sentence": "You mean we should meet tomorrow?",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 1,
+      "korean_phrase": "상처 주려던 건 아니었어",
+      "foreign_phrase": "didn't mean to hurt"
+    },
+    {
+      "sentence_order": 2,
+      "korean_phrase": "무슨 뜻이야",
+      "foreign_phrase": "what do you mean"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "내일 만나자는 거야",
+      "foreign_phrase": "you mean we should meet"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "진심이야",
+      "foreign_phrase": "do you mean it"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "그 식당이 문 닫았다는 거야",
+      "foreign_phrase": "you mean the restaurant is closed"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "일부러 그런 건 아니야",
+      "foreign_phrase": "I didn't mean it"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 4,
+      "korean_text": "그럼 내일 만나자는 거야?",
+      "foreign_text": "You mean we should meet tomorrow?",
+      "reason": "상대방 말을 확인하는 You mean 패턴의 가장 실용적인 활용 예시"
+    }
+  ]
+}
