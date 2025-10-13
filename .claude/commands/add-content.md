@@ -1,20 +1,21 @@
-외국어 학습 콘텐츠를 자동으로 생성합니다. [language] [difficulty]
+---
+description: 외국어 학습 콘텐츠를 자동으로 생성합니다
+argument-hint: "[language] [difficulty]"
+---
 
-## 사용법
+# 외국어 학습 콘텐츠 자동 생성
 
-```
-/add-content [language] [difficulty]
-```
+랜덤한 주제로 완전한 4단계 외국어 학습 콘텐츠를 자동 생성합니다.
 
-- `language`: `en` (default), `ja` 
-- `difficulty`: `초급` (default), `중급`, `고급`
+## 매개변수
 
-### 예시
+- `$1` (language): `en` (기본값), `ja`
+- `$2` (difficulty): `초급` (기본값), `중급`, `고급`
+
+## 사용 예시
 - `/add-content` - 영어 초급 콘텐츠 생성
 - `/add-content en 중급` - 영어 중급 콘텐츠 생성
 - `/add-content ja 초급` - 일본어 초급 콘텐츠 생성
-
-이 명령어를 실행하면 랜덤한 주제로 완전한 4단계 외국어 학습 콘텐츠가 자동 생성됩니다.
 
 ## 작업 프로세스
 
@@ -37,19 +38,19 @@
 
 ## 매개변수 처리 로직
 
-### 언어 처리 (language)
-- **기본값**: `en`
+### 언어 처리 ($1)
+- **기본값**: `en` (매개변수가 없을 때)
 - **허용값**: `en`, `ja`
-- **처리**: 
-  - 입력값을 그대로 `language_code` 필드에 저장
+- **처리**:
+  - `$1` 값을 `language_code` 필드에 저장
   - 해당 언어에 맞는 번역 콘텐츠 생성
   - 파일명은 모든 언어 공통으로 영어 slug 사용
 
-### 난이도 처리 (difficulty)
-- **기본값**: `초급`
+### 난이도 처리 ($2)
+- **기본값**: `초급` (매개변수가 없을 때)
 - **허용값**: `초급`, `중급`, `고급`
 - **처리**:
-  - 난이도에 따른 어휘 수준 조절
+  - `$2` 값으로 난이도에 따른 어휘 수준 조절
   - 문장 구조 복잡도 조정
   - 키워드 스피치 난이도 설정
 
@@ -66,9 +67,9 @@
 topic_id: "[UUID 형식]"
 title: "[자동 생성된 주제명]"
 category: "[랜덤 카테고리]"
-difficulty: "[매개변수 기반 난이도]" 
+difficulty: "[$2 값 또는 기본값 '초급']"
 description: "[주제에 맞는 설명]"
-language_code: "[en/ja - 매개변수 기반]"
+language_code: "[$1 값 또는 기본값 'en']"
 highlight_sentence:
   sentence_order: [핵심 문장 순서]
   korean_text: "[핵심 한글 문장]"
@@ -166,7 +167,7 @@ pnpm run parse [생성된파일명].md
 
 ### 자동 커밋 메시지 형식
 ```
-content: [생성된 문서 제목] ([언어코드] [난이도])
+content: [생성된 문서 제목] ($1 $2)
 
 예시:
 content: 카페에서 음료 주문하기 (en 초급)
