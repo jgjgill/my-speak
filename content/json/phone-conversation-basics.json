@@ -1,0 +1,232 @@
+{
+  "topic": {
+    "id": "522c9f67-b177-444d-9b3c-2a927aa45885",
+    "title": "전화로 대화하기",
+    "category": "일상생활",
+    "difficulty": "초급",
+    "description": "전화 통화에서 자주 사용하는 기본적인 표현들을 익히는 실용 회화",
+    "language_code": "en",
+    "total_sentences": 7
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "여보세요, 전화 받을 수 있나요?"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "지금 통화 가능하세요?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "네, 제가 본인이에요."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "잠깐만 기다려 주시겠어요?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "죄송하지만, 다시 한번 말씀해 주시겠어요?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "통화가 잘 안 들려요."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "나중에 다시 전화 드릴게요."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, may I speak to?",
+      "chunked_text": "Hello, | may I speak to?"
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Are you available to talk now?",
+      "chunked_text": "Are you available | to talk now?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Yes, this is me.",
+      "chunked_text": "Yes, | this is me."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Could you hold on for a moment?",
+      "chunked_text": "Could you hold on | for a moment?"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "I'm sorry, could you say that again?",
+      "chunked_text": "I'm sorry, | could you say that again?"
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "I can't hear you well.",
+      "chunked_text": "I can't hear you | well."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "I'll call you back later.",
+      "chunked_text": "I'll call you back | later."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "전화",
+        "받을 수 있나요"
+      ],
+      "target_sentence": "Hello, may I speak to?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "잠깐만",
+        "기다려",
+        "주시겠어요"
+      ],
+      "target_sentence": "Could you hold on for a moment?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "다시",
+        "전화 드릴게요"
+      ],
+      "target_sentence": "I'll call you back later.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 4,
+      "keywords": [
+        "전화",
+        "받을"
+      ],
+      "target_sentence": "Hello, may I speak to?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 5,
+      "keywords": [
+        "기다려",
+        "잠깐"
+      ],
+      "target_sentence": "Could you hold on for a moment?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 6,
+      "keywords": [
+        "다시",
+        "전화"
+      ],
+      "target_sentence": "I'll call you back later.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 7,
+      "keywords": [
+        "전화"
+      ],
+      "target_sentence": "Hello, may I speak to?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 8,
+      "keywords": [
+        "기다려"
+      ],
+      "target_sentence": "Could you hold on for a moment?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 9,
+      "keywords": [
+        "나중에"
+      ],
+      "target_sentence": "I'll call you back later.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 10,
+      "keywords": [
+        "speak"
+      ],
+      "target_sentence": "Hello, may I speak to?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 11,
+      "keywords": [
+        "hold on"
+      ],
+      "target_sentence": "Could you hold on for a moment?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 12,
+      "keywords": [
+        "call back"
+      ],
+      "target_sentence": "I'll call you back later.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 1,
+      "korean_phrase": "전화 받을 수 있나요",
+      "foreign_phrase": "May I speak to"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "잠깐만 기다려 주시겠어요",
+      "foreign_phrase": "Could you hold on for a moment"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "다시 전화 드릴게요",
+      "foreign_phrase": "call you back later"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 4,
+      "korean_text": "잠깐만 기다려 주시겠어요?",
+      "foreign_text": "Could you hold on for a moment?",
+      "reason": "전화 통화에서 가장 빈번하게 사용되는 정중한 대기 요청 표현으로, 'hold on' 패턴을 익힐 수 있는 핵심 문장"
+    }
+  ]
+}
