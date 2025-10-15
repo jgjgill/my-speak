@@ -1,0 +1,255 @@
+{
+  "topic": {
+    "id": "41ccfb24-9563-4b2e-9eb9-8c86581cc3ee",
+    "title": "배달 음식 주문하기",
+    "category": "일상생활",
+    "difficulty": "초급",
+    "description": "전화로 배달 음식을 주문하는 실용적인 회화 표현을 학습합니다.",
+    "language_code": "en",
+    "total_sentences": 8
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 배달 주문하고 싶은데요."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "주소는 서울시 강남구 테헤란로 123번지입니다."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "메뉴 추천 좀 받을 수 있을까요?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "배달까지 얼마나 걸리나요?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "현금으로 결제할 수 있나요?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "추가 요청사항이 있는데, 문 앞에 놓아주세요."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "전화번호는 010-1234-5678입니다."
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "감사합니다!"
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, I'd like to place a delivery order.",
+      "chunked_text": "Hello, | I'd like to place | a delivery order."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "The address is 123 Teheran-ro, Gangnam-gu, Seoul.",
+      "chunked_text": "The address is | 123 Teheran-ro, | Gangnam-gu, Seoul."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Can I get a menu recommendation?",
+      "chunked_text": "Can I get | a menu recommendation?"
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "How long will the delivery take?",
+      "chunked_text": "How long | will the delivery take?"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Can I pay in cash?",
+      "chunked_text": "Can I | pay in cash?"
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "I have special requests - please leave it at the door.",
+      "chunked_text": "I have special requests - | please leave it | at the door."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "My phone number is 010-1234-5678.",
+      "chunked_text": "My phone number is | 010-1234-5678."
+    },
+    {
+      "sentence_order": 8,
+      "foreign_text": "Thank you!",
+      "chunked_text": "Thank you!"
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "배달 주문"
+      ],
+      "target_sentence": "Hello, I'd like to place a delivery order.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "배달 시간"
+      ],
+      "target_sentence": "How long will the delivery take?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "현금 결제"
+      ],
+      "target_sentence": "Can I pay in cash?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "문 앞"
+      ],
+      "target_sentence": "I have special requests - please leave it at the door.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 5,
+      "keywords": [
+        "주문"
+      ],
+      "target_sentence": "Hello, I'd like to place a delivery order.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 6,
+      "keywords": [
+        "얼마나"
+      ],
+      "target_sentence": "How long will the delivery take?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 7,
+      "keywords": [
+        "현금"
+      ],
+      "target_sentence": "Can I pay in cash?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 8,
+      "keywords": [
+        "delivery order"
+      ],
+      "target_sentence": "Hello, I'd like to place a delivery order.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 9,
+      "keywords": [
+        "how long"
+      ],
+      "target_sentence": "How long will the delivery take?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 10,
+      "keywords": [
+        "cash"
+      ],
+      "target_sentence": "Can I pay in cash?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 11,
+      "keywords": [
+        "place a delivery order"
+      ],
+      "target_sentence": "Hello, I'd like to place a delivery order.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 12,
+      "keywords": [
+        "how long",
+        "delivery"
+      ],
+      "target_sentence": "How long will the delivery take?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 13,
+      "keywords": [
+        "pay in cash"
+      ],
+      "target_sentence": "Can I pay in cash?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 14,
+      "keywords": [
+        "leave it at the door"
+      ],
+      "target_sentence": "I have special requests - please leave it at the door.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 3,
+      "korean_phrase": "메뉴 추천",
+      "foreign_phrase": "menu recommendation"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "현금으로 결제",
+      "foreign_phrase": "pay in cash"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "추가 요청사항",
+      "foreign_phrase": "special requests"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 4,
+      "korean_text": "배달까지 얼마나 걸리나요?",
+      "foreign_text": "How long will the delivery take?",
+      "reason": "배달 주문 시 가장 중요한 정보인 배달 시간을 묻는 핵심 표현으로, 실생활에서 매우 자주 사용됩니다."
+    }
+  ]
+}
