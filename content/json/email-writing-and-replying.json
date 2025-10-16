@@ -1,0 +1,218 @@
+{
+  "topic": {
+    "id": "4d307ab2-2f6a-41d7-a557-f13ce37a9257",
+    "title": "이메일 작성 및 회신하기",
+    "category": "업무/학업",
+    "difficulty": "초급",
+    "description": "업무 상황에서 영어 이메일을 작성하고 회신하는 기본적인 방법을 학습합니다",
+    "language_code": "en",
+    "total_sentences": 6
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 김과장님."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "어제 보내주신 프로젝트 자료 잘 받았습니다."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "회의 일정을 조율하고 싶어요."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "이번 주 목요일이나 금요일 중 괜찮으신 시간이 있으실까요?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "회의는 약 30분 정도 소요될 예정입니다."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "편하신 시간대를 알려주시면 감사하겠습니다."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, Manager Kim.",
+      "chunked_text": "Hello, | Manager Kim."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "I received the project materials you sent yesterday.",
+      "chunked_text": "I received | the project materials | you sent yesterday."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "I'd like to schedule a meeting.",
+      "chunked_text": "I'd like to | schedule a meeting."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Do you have any available time this Thursday or Friday?",
+      "chunked_text": "Do you have | any available time | this Thursday or Friday?"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "The meeting will take about 30 minutes.",
+      "chunked_text": "The meeting | will take | about 30 minutes."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Please let me know your available time.",
+      "chunked_text": "Please let me know | your available time."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "안녕하세요",
+        "김과장님"
+      ],
+      "target_sentence": "Hello, Manager Kim.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "프로젝트 자료",
+        "잘 받았습니다"
+      ],
+      "target_sentence": "I received the project materials you sent yesterday.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "회의 일정 조율"
+      ],
+      "target_sentence": "I'd like to schedule a meeting.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 4,
+      "keywords": [
+        "김과장님"
+      ],
+      "target_sentence": "Hello, Manager Kim.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 5,
+      "keywords": [
+        "자료 받았습니다"
+      ],
+      "target_sentence": "I received the project materials you sent yesterday.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 6,
+      "keywords": [
+        "회의 일정"
+      ],
+      "target_sentence": "I'd like to schedule a meeting.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 7,
+      "keywords": [
+        "과장님"
+      ],
+      "target_sentence": "Hello, Manager Kim.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 8,
+      "keywords": [
+        "받았습니다"
+      ],
+      "target_sentence": "I received the project materials you sent yesterday.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 9,
+      "keywords": [
+        "회의"
+      ],
+      "target_sentence": "I'd like to schedule a meeting.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 10,
+      "keywords": [
+        "Manager Kim"
+      ],
+      "target_sentence": "Hello, Manager Kim.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 11,
+      "keywords": [
+        "received"
+      ],
+      "target_sentence": "I received the project materials you sent yesterday.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 12,
+      "keywords": [
+        "schedule a meeting"
+      ],
+      "target_sentence": "I'd like to schedule a meeting.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "잘 받았습니다",
+      "foreign_phrase": "received well"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "회의 일정을 조율하고 싶어요",
+      "foreign_phrase": "I'd like to schedule a meeting"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "편하신 시간대를 알려주시면",
+      "foreign_phrase": "please let me know your available time"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 3,
+      "korean_text": "회의 일정을 조율하고 싶어요.",
+      "foreign_text": "I'd like to schedule a meeting.",
+      "reason": "업무 이메일에서 가장 자주 사용되는 회의 요청 표현으로, 비즈니스 커뮤니케이션의 핵심 패턴입니다"
+    }
+  ]
+}
