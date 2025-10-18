@@ -82,8 +82,20 @@ jobs:
 
           # 생성된 파일 확인
           if [ -n "$(git status --porcelain)" ]; then
-            # 생성된 파일의 제목 추출 (frontmatter에서)
-            TITLE=$(grep -m 1 "^title:" content/source/*.md | tail -1 | sed 's/title: "\(.*\)"/\1/' | sed 's/title: //')
+            # 새로 생성된 파일 찾기
+            NEW_FILE=$(git status --porcelain | grep "^??" | grep "content/source/.*\.md" | awk '{print $2}' | head -1)
+
+            if [ -z "$NEW_FILE" ]; then
+              # 수정된 파일 찾기 (생성이 아니라 수정인 경우)
+              NEW_FILE=$(git status --porcelain | grep "^ M" | grep "content/source/.*\.md" | awk '{print $2}' | head -1)
+            fi
+
+            # 해당 파일에서 제목 추출
+            if [ -n "$NEW_FILE" ]; then
+              TITLE=$(grep -m 1 "^title:" "$NEW_FILE" | sed 's/title: "\(.*\)"/\1/' | sed 's/title: //' | tr -d '"')
+            else
+              TITLE="새 학습 콘텐츠"
+            fi
 
             if [ -z "$TITLE" ]; then
               TITLE="새 학습 콘텐츠"
