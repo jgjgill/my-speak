@@ -1,0 +1,241 @@
+{
+  "topic": {
+    "id": "8c6b970f-5eb8-4536-9755-8414d427d761",
+    "title": "길 묻기",
+    "category": "여행",
+    "difficulty": "초급",
+    "description": "거리에서 목적지까지 가는 길을 물어보고 답변을 이해하는 상황",
+    "language_code": "en",
+    "total_sentences": 7
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "저기요, 혹시 중앙 도서관이 어디 있는지 아세요?"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "네, 알아요. 이 길을 따라 쭉 가세요."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "그럼 두 번째 신호등에서 왼쪽으로 도세요."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "걸어서 약 10분 정도 걸려요."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "건물은 모퉁이에 있어요."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "감사합니다! 찾기 쉬울까요?"
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "네, 큰 건물이라 놓치기 어려워요."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Excuse me, do you know where the Central Library is?",
+      "chunked_text": "Excuse me, | do you know | where the Central Library is?"
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Yes, I do. Go straight along this street.",
+      "chunked_text": "Yes, I do. || Go straight | along this street."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Then turn left at the second traffic light.",
+      "chunked_text": "Then | turn left | at the second traffic light."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "It takes about 10 minutes on foot.",
+      "chunked_text": "It takes | about 10 minutes | on foot."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "The building is on the corner.",
+      "chunked_text": "The building is | on the corner."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Thank you! Will it be easy to find?",
+      "chunked_text": "Thank you! || Will it be | easy to find?"
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "Yes, it's a big building, so you can't miss it.",
+      "chunked_text": "Yes, | it's a big building, | so you can't miss it."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "중앙 도서관",
+        "어디"
+      ],
+      "target_sentence": "Excuse me, do you know where the Central Library is?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "이 길",
+        "쭉",
+        "두 번째 신호등",
+        "왼쪽"
+      ],
+      "target_sentence": "Go straight along this street. Then turn left at the second traffic light.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "걸어서",
+        "약 10분"
+      ],
+      "target_sentence": "It takes about 10 minutes on foot.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 4,
+      "keywords": [
+        "도서관",
+        "어디"
+      ],
+      "target_sentence": "Do you know where the Central Library is?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 5,
+      "keywords": [
+        "쭉",
+        "왼쪽 돌기"
+      ],
+      "target_sentence": "Go straight. Turn left at the second traffic light.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 6,
+      "keywords": [
+        "10분",
+        "모퉁이"
+      ],
+      "target_sentence": "It takes 10 minutes. The building is on the corner.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 7,
+      "keywords": [
+        "도서관"
+      ],
+      "target_sentence": "Where is the Central Library?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 8,
+      "keywords": [
+        "쭉",
+        "왼쪽"
+      ],
+      "target_sentence": "Go straight. Turn left.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 9,
+      "keywords": [
+        "10분"
+      ],
+      "target_sentence": "It takes about 10 minutes on foot.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 10,
+      "keywords": [
+        "Library"
+      ],
+      "target_sentence": "Do you know where the Central Library is?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 11,
+      "keywords": [
+        "Straight",
+        "left"
+      ],
+      "target_sentence": "Go straight. Then turn left at the second traffic light.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 12,
+      "keywords": [
+        "10 minutes",
+        "corner"
+      ],
+      "target_sentence": "It takes 10 minutes. It's on the corner.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "쭉 가세요",
+      "foreign_phrase": "go straight"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "왼쪽으로 도세요",
+      "foreign_phrase": "turn left"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "모퉁이에",
+      "foreign_phrase": "on the corner"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "놓치기 어려워요",
+      "foreign_phrase": "you can't miss it"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 3,
+      "korean_text": "걸어서 약 10분 정도 걸려요.",
+      "foreign_text": "It takes about 10 minutes on foot.",
+      "reason": "시간과 이동 수단을 함께 설명하는 실용적인 표현으로, 길 안내 시 자주 사용되는 핵심 문장입니다."
+    }
+  ]
+}
