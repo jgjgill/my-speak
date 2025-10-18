@@ -1,0 +1,8 @@
+# act 설정 파일
+# GitHub Actions를 로컬에서 실행하기 위한 설정
+
+# Docker 이미지 설정 (ubuntu-latest에 해당하는 이미지)
+-P ubuntu-latest=catthehacker/ubuntu:act-latest
+
+# Secrets 파일 자동 로드
+--secret-file .secrets
