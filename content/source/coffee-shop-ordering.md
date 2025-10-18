@@ -1,6 +1,7 @@
 ---
 topic_id: "1db759f7-f0ca-43f4-9a82-bd97a6b736d5"
 title: "카페에서 음료 주문하기"
+slug: "coffee-shop-ordering"
 category: "일상생활"
 difficulty: "초급"
 description: "카페에서 음료를 주문할 때 사용하는 기본적인 영어 표현과 대화를 학습합니다."

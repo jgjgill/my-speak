@@ -51,6 +51,9 @@ if [ -z "$GEMINI_API_KEY" ]; then
   exit 1
 fi
 
+# UUID 생성 (Node.js 기반 - 크로스 플랫폼 호환)
+UUID=$(node -e "console.log(require('crypto').randomUUID())")
+
 # 임시 프롬프트 파일 생성 (파라미터 추가)
 TEMP_PROMPT=$(mktemp)
 cat "$PROMPT_FILE" > "$TEMP_PROMPT"
@@ -63,10 +66,11 @@ cat >> "$TEMP_PROMPT" <<EOF
 ## 🎯 실행 파라미터
 
 **이번 생성 요청에 사용할 파라미터**:
+- **UUID**: $UUID
 - **언어 코드**: $LANGUAGE
 - **난이도**: $DIFFICULTY
 
-**중요**: 위 파라미터를 frontmatter의 language_code와 difficulty 필드에 정확히 반영하세요.
+**중요**: 위 파라미터를 frontmatter의 topic_id, language_code, difficulty 필드에 정확히 반영하세요.
 
 ---
 
@@ -79,6 +83,10 @@ echo ""
 # gemini-cli 실행하여 콘텐츠 생성 (비대화형 모드)
 GENERATED_CONTENT=$(gemini --yolo -p "$(cat "$TEMP_PROMPT")" 2>&1)
 EXIT_CODE=$?
+
+echo -e "${BLUE}=== Gemini CLI Raw Output ===${NC}"
+echo "$GENERATED_CONTENT"
+echo -e "${BLUE}=============================${NC}"
 
 # 임시 파일 정리
 rm -f "$TEMP_PROMPT"
@@ -107,26 +115,41 @@ fi
 # 마크다운 코드 블록 제거 및 불필요한 텍스트 제거
 CLEANED_CONTENT=$(echo "$GENERATED_CONTENT" | sed -e '/^```markdown$/d' -e '/^```$/d')
 
+echo -e "${BLUE}=== After removing code blocks ===${NC}"
+echo "$CLEANED_CONTENT" | head -30
+echo -e "${BLUE}=================================${NC}"
+
 # Gemini가 추가한 "Suggested filename:" 같은 불필요한 텍스트 제거
-# frontmatter 시작(---) 이전의 모든 텍스트 제거
-CLEANED_CONTENT=$(echo "$CLEANED_CONTENT" | awk '/^---/{flag=1} flag')
+# frontmatter 시작(---) 이전의 모든 텍스트 제거 (공백 허용)
+CLEANED_CONTENT=$(echo "$CLEANED_CONTENT" | awk '/^[[:space:]]*---/{flag=1} flag')
 
-# 파일명 추출 시도 (여러 패턴 시도)
-FILENAME=""
+echo -e "${BLUE}=== After frontmatter extraction ===${NC}"
+echo "$CLEANED_CONTENT" | head -30
+echo -e "${BLUE}====================================${NC}"
 
-# 패턴 1: "파일명: xxx.md" 형식
-FILENAME=$(echo "$CLEANED_CONTENT" | grep -i "파일명:" | sed 's/.*파일명:\s*//i' | sed 's/[^a-z0-9.-]//g' | head -1)
-
-# 패턴 2: "Filename: xxx.md" 형식
-if [ -z "$FILENAME" ]; then
-  FILENAME=$(echo "$CLEANED_CONTENT" | grep -i "filename:" | sed 's/.*filename:\s*//i' | sed 's/[^a-z0-9.-]//g' | head -1)
+# CLEANED_CONTENT가 비어있는 경우 에러
+if [ -z "$CLEANED_CONTENT" ]; then
+  echo -e "${RED}❌ 정리된 콘텐츠가 비어있습니다${NC}"
+  echo -e "${RED}원본 Gemini 출력:${NC}"
+  echo "$GENERATED_CONTENT"
+  exit 1
 fi
 
-# 파일명이 없거나 .md로 끝나지 않으면 기본값 생성
-if [ -z "$FILENAME" ] || [[ ! "$FILENAME" =~ \.md$ ]]; then
+# frontmatter에서 slug 추출하여 파일명 생성
+SLUG=$(echo "$CLEANED_CONTENT" | grep -m 1 '^slug:' | sed 's/^slug:\s*"\?\(.*\)"\?$/\1/' | tr -d '"' | xargs)
+
+if [ -n "$SLUG" ] && [[ "$SLUG" =~ ^[a-z0-9-]+$ ]]; then
+  # slug가 유효한 형식이면 파일명으로 사용
+  FILENAME="${SLUG}.md"
+  echo -e "${GREEN}✅ Slug에서 파일명 생성: $SLUG → $FILENAME${NC}"
+else
+  # slug가 없거나 잘못된 형식이면 타임스탬프 사용
   TIMESTAMP=$(date +%Y%m%d-%H%M%S)
   FILENAME="content-${LANGUAGE}-${TIMESTAMP}.md"
-  echo -e "${YELLOW}⚠️  파일명 제안이 없어 기본 파일명 사용: $FILENAME${NC}"
+  echo -e "${YELLOW}⚠️  Slug를 찾을 수 없어 기본 파일명 사용: $FILENAME${NC}"
+  if [ -n "$SLUG" ]; then
+    echo -e "${YELLOW}   (잘못된 slug 형식: '$SLUG')${NC}"
+  fi
 fi
 
 # 콘텐츠 파일 저장

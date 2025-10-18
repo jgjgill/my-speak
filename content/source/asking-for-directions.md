@@ -1,6 +1,7 @@
 ---
 topic_id: "8c6b970f-5eb8-4536-9755-8414d427d761"
 title: "길 묻기"
+slug: "asking-for-directions"
 category: "여행"
 difficulty: "초급"
 description: "거리에서 목적지까지 가는 길을 물어보고 답변을 이해하는 상황"
