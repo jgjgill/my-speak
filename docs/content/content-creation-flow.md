@@ -24,11 +24,12 @@ content/source/
 
 ```markdown
 ---
-topic_id: "550e8400-e29b-41d4-a716-446655440000"  # 필수: 유효한 UUID
+topic_id: "550e8400-e29b-41d4-a716-446655440000"  # 필수: UUID v4 형식 (시스템 명령어로 생성)
 title: "주제명"
-category: "일상생활"  # 일상생활, 업무/학업, 사회/문화, 개인성장
+category: "일상생활"  # 일상생활, 업무/학습, 여행, 건강/의료, 쇼핑, 취미/여가, etc
 difficulty: "초급"    # 초급, 중급, 고급
 description: "간단한 설명"
+language_code: "en"   # en (영어), ja (일본어)
 highlight_sentence:
   sentence_order: 2
   korean_text: "핵심이 되는 한글 문장"
@@ -86,6 +87,26 @@ expression → This is the second sentence with important expression.
 ```markdown
 **한글 핵심 표현**{corresponding foreign phrase}
 ```
+
+### UUID 생성 방법
+
+**중요**: topic_id는 반드시 유효한 UUID v4 형식이어야 합니다.
+
+```bash
+# macOS/Linux에서 UUID 생성
+uuidgen | tr '[:upper:]' '[:lower:]'
+
+# 출력 예시: 8c6b970f-5eb8-4536-9755-8414d427d761
+```
+
+**UUID v4 형식 요구사항**:
+- 3번째 그룹의 첫 문자: `1-5` 중 하나 (버전 표시)
+- 4번째 그룹의 첫 문자: `8`, `9`, `a`, `b` 중 하나 (변형 표시)
+
+**자동 콘텐츠 생성 시**:
+- `/add-content` 명령어는 자동으로 시스템 명령어로 UUID 생성
+- LLM이 직접 UUID 생성 시 형식 오류 발생 가능성 있음
+- 수동 작성 시에도 `uuidgen` 사용 권장
 
 ---
 
