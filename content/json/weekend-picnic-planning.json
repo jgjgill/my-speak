@@ -1,87 +1,96 @@
 {
   "topic": {
-    "id": "05f4b21c-0a42-4868-9d20-e28226551312",
-    "title": "주말 피크닉 계획하기",
-    "category": "일상생활",
+    "id": "de0f20cd-d8c2-4cb1-968f-4443339deea5",
+    "title": "주말 소풍 계획하기",
+    "category": "일상",
     "difficulty": "초급",
-    "description": "친구들과 함께 주말 피크닉을 계획하는 상황에서 사용하는 영어 표현",
+    "description": "날씨 좋은 주말에 친구와 함께 소풍 계획을 세우는 상황의 대화입니다.",
     "language_code": "en",
-    "total_sentences": 8
+    "total_sentences": 9
   },
   "korean_scripts": [
     {
       "sentence_order": 1,
-      "korean_text": "이번 주말에 뭐 할 계획이에요?"
+      "korean_text": "이번 주말에 날씨가 정말 좋대요."
     },
     {
       "sentence_order": 2,
-      "korean_text": "친구들과 피크닉을 계획하고 있어요."
+      "korean_text": "네, 맞아요. 우리 뭔가 특별한 걸 해보는 게 어때요?"
     },
     {
       "sentence_order": 3,
-      "korean_text": "날씨가 좋으면 공원에서 피크닉을 할 수 있어요."
+      "korean_text": "좋은 생각이에요. 우리 소풍 가는 거 어때요?"
     },
     {
       "sentence_order": 4,
-      "korean_text": "음식을 준비해야 해요."
+      "korean_text": "완전 좋아요! 어디로 가면 좋을까요?"
     },
     {
       "sentence_order": 5,
-      "korean_text": "샌드위치와 과일을 가져갈 예정이에요."
+      "korean_text": "서울숲 공원은 어때요? 거기 가본 적 있어요?"
     },
     {
       "sentence_order": 6,
-      "korean_text": "돗자리도 필요해요."
+      "korean_text": "아니요, 없어요. 거기서 뭘 할 수 있는데요?"
     },
     {
       "sentence_order": 7,
-      "korean_text": "오후 2시에 공원에서 만날까요?"
+      "korean_text": "자전거도 탈 수 있고, 맛있는 샌드위치를 먹을 수도 있어요."
     },
     {
       "sentence_order": 8,
-      "korean_text": "정말 좋은 아이디어예요!"
+      "korean_text": "좋아요! 제가 간식이랑 음료수를 가져갈게요."
+    },
+    {
+      "sentence_order": 9,
+      "korean_text": "그럼 제가 샌드위치를 만들게요. 토요일에 만나요!"
     }
   ],
   "foreign_scripts": [
     {
       "sentence_order": 1,
-      "foreign_text": "What are your plans for this weekend?",
-      "chunked_text": "What are your plans | for this weekend?"
+      "foreign_text": "The weather is supposed to be really nice this weekend.",
+      "chunked_text": "The weather is supposed to be really nice | this weekend."
     },
     {
       "sentence_order": 2,
-      "foreign_text": "I'm planning a picnic with my friends.",
-      "chunked_text": "I'm planning a picnic | with my friends."
+      "foreign_text": "Yeah, I know. Why don't we do something special?",
+      "chunked_text": "Yeah, | I know. || Why don't we do something special?"
     },
     {
       "sentence_order": 3,
-      "foreign_text": "If the weather is nice, we can have a picnic in the park.",
-      "chunked_text": "If the weather is nice, | we can have a picnic | in the park."
+      "foreign_text": "That's a great idea. How about we go on a picnic?",
+      "chunked_text": "That's a great idea. || How about we go on a picnic?"
     },
     {
       "sentence_order": 4,
-      "foreign_text": "We need to prepare food.",
-      "chunked_text": "We need to prepare | food."
+      "foreign_text": "Sounds perfect! Where should we go?",
+      "chunked_text": "Sounds perfect! || Where should we go?"
     },
     {
       "sentence_order": 5,
-      "foreign_text": "We're planning to bring sandwiches and fruits.",
-      "chunked_text": "We're planning to bring | sandwiches and fruits."
+      "foreign_text": "How about Seoul Forest Park? Have you ever been there?",
+      "chunked_text": "How about Seoul Forest Park? || Have you ever been there?"
     },
     {
       "sentence_order": 6,
-      "foreign_text": "We also need a mat.",
-      "chunked_text": "We also need | a mat."
+      "foreign_text": "No, I haven't. What can we do there?",
+      "chunked_text": "No, | I haven't. || What can we do there?"
     },
     {
       "sentence_order": 7,
-      "foreign_text": "Shall we meet at the park at 2 PM?",
-      "chunked_text": "Shall we meet | at the park | at 2 PM?"
+      "foreign_text": "We can ride bikes and eat delicious sandwiches.",
+      "chunked_text": "We can ride bikes | and eat delicious sandwiches."
     },
     {
       "sentence_order": 8,
-      "foreign_text": "That's a great idea!",
-      "chunked_text": "That's | a great idea!"
+      "foreign_text": "Okay! I'll bring some snacks and drinks.",
+      "chunked_text": "Okay! || I'll bring some snacks and drinks."
+    },
+    {
+      "sentence_order": 9,
+      "foreign_text": "Then I'll make the sandwiches. See you on Saturday!",
+      "chunked_text": "Then I'll make the sandwiches. || See you on Saturday!"
     }
   ],
   "keyword_speeches": [
@@ -90,10 +99,10 @@
       "level": 1,
       "sequence_order": 1,
       "keywords": [
-        "주말",
-        "계획"
+        "이번 주말",
+        "날씨 좋음"
       ],
-      "target_sentence": "What are your plans for this weekend?",
+      "target_sentence": "The weather is supposed to be really nice this weekend.",
       "difficulty_percentage": 70
     },
     {
@@ -101,10 +110,10 @@
       "level": 1,
       "sequence_order": 2,
       "keywords": [
-        "피크닉",
-        "친구들"
+        "특별한 것",
+        "해보는 게 어때요"
       ],
-      "target_sentence": "I'm planning a picnic with my friends.",
+      "target_sentence": "Why don't we do something special?",
       "difficulty_percentage": 70
     },
     {
@@ -112,31 +121,31 @@
       "level": 1,
       "sequence_order": 3,
       "keywords": [
-        "날씨",
-        "좋으면",
-        "공원"
+        "소풍 가는 거",
+        "어때요"
       ],
-      "target_sentence": "If the weather is nice, we can have a picnic in the park.",
+      "target_sentence": "How about we go on a picnic?",
       "difficulty_percentage": 70
     },
     {
       "stage": 4,
-      "level": 2,
+      "level": 1,
       "sequence_order": 4,
       "keywords": [
-        "주말 계획"
+        "제가 간식",
+        "음료수 가져갈게요"
       ],
-      "target_sentence": "What are your plans for this weekend?",
-      "difficulty_percentage": 50
+      "target_sentence": "I'll bring some snacks and drinks.",
+      "difficulty_percentage": 70
     },
     {
       "stage": 4,
       "level": 2,
       "sequence_order": 5,
       "keywords": [
-        "피크닉"
+        "주말 날씨"
       ],
-      "target_sentence": "I'm planning a picnic with my friends.",
+      "target_sentence": "The weather is supposed to be really nice this weekend.",
       "difficulty_percentage": 50
     },
     {
@@ -144,95 +153,143 @@
       "level": 2,
       "sequence_order": 6,
       "keywords": [
-        "음식 준비"
+        "특별한 것 제안"
       ],
-      "target_sentence": "We need to prepare food.",
+      "target_sentence": "Why don't we do something special?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 7,
+      "keywords": [
+        "소풍 제안"
+      ],
+      "target_sentence": "How about we go on a picnic?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "가져갈 것"
+      ],
+      "target_sentence": "I'll bring some snacks and drinks.",
       "difficulty_percentage": 50
     },
     {
       "stage": 4,
       "level": 3,
-      "sequence_order": 7,
+      "sequence_order": 9,
       "keywords": [
-        "계획"
+        "날씨"
       ],
-      "target_sentence": "What are your plans for this weekend?",
+      "target_sentence": "The weather is supposed to be really nice this weekend.",
       "difficulty_percentage": 30
     },
     {
       "stage": 4,
       "level": 3,
-      "sequence_order": 8,
+      "sequence_order": 10,
       "keywords": [
-        "피크닉"
+        "제안"
       ],
-      "target_sentence": "I'm planning a picnic with my friends.",
+      "target_sentence": "Why don't we do something special?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 11,
+      "keywords": [
+        "소풍"
+      ],
+      "target_sentence": "How about we go on a picnic?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 12,
+      "keywords": [
+        "가져가다"
+      ],
+      "target_sentence": "I'll bring some snacks and drinks.",
       "difficulty_percentage": 30
     },
     {
       "stage": 4,
       "level": 4,
-      "sequence_order": 9,
+      "sequence_order": 13,
       "keywords": [
-        "planning"
+        "weather",
+        "weekend"
       ],
-      "target_sentence": "I'm planning a picnic with my friends.",
+      "target_sentence": "The weather is supposed to be really nice this weekend.",
       "difficulty_percentage": 0
     },
     {
       "stage": 4,
       "level": 4,
-      "sequence_order": 10,
+      "sequence_order": 14,
       "keywords": [
-        "prepare"
+        "suggest",
+        "special"
       ],
-      "target_sentence": "We need to prepare food.",
+      "target_sentence": "Why don't we do something special?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 15,
+      "keywords": [
+        "picnic"
+      ],
+      "target_sentence": "How about we go on a picnic?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 16,
+      "keywords": [
+        "bring",
+        "snacks"
+      ],
+      "target_sentence": "I'll bring some snacks and drinks.",
       "difficulty_percentage": 0
     }
   ],
   "learning_points": [
     {
       "sentence_order": 2,
-      "korean_phrase": "피크닉을 계획하고 있어요",
-      "foreign_phrase": "planning a picnic"
+      "korean_phrase": "뭔가 특별한 걸 해보는 게 어때요",
+      "foreign_phrase": "why don't we do something special"
     },
     {
       "sentence_order": 3,
-      "korean_phrase": "피크닉을 할 수 있어요",
-      "foreign_phrase": "we can have a picnic"
-    },
-    {
-      "sentence_order": 4,
-      "korean_phrase": "음식을 준비해야 해요",
-      "foreign_phrase": "we need to prepare food"
+      "korean_phrase": "소풍 가는 거 어때요",
+      "foreign_phrase": "How about we go on a picnic"
     },
     {
       "sentence_order": 5,
-      "korean_phrase": "가져갈 예정이에요",
-      "foreign_phrase": "planning to bring"
-    },
-    {
-      "sentence_order": 6,
-      "korean_phrase": "돗자리도 필요해요",
-      "foreign_phrase": "we also need a mat"
-    },
-    {
-      "sentence_order": 7,
-      "korean_phrase": "공원에서 만날까요",
-      "foreign_phrase": "shall we meet at the park"
+      "korean_phrase": "거기 가본 적 있어요",
+      "foreign_phrase": "Have you ever been there"
     },
     {
       "sentence_order": 8,
-      "korean_phrase": "좋은 아이디어예요",
-      "foreign_phrase": "that's a great idea"
+      "korean_phrase": "가져갈게요",
+      "foreign_phrase": "I'll bring"
     }
   ],
   "highlight_sentences": [
     {
       "sentence_order": 3,
-      "korean_text": "날씨가 좋으면 공원에서 피크닉을 할 수 있어요.",
-      "foreign_text": "If the weather is nice, we can have a picnic in the park.",
-      "reason": "조건문과 함께 제안하는 표현으로 일상 대화에서 자주 사용되는 핵심 패턴"
+      "korean_text": "우리 소풍 가는 거 어때요?",
+      "foreign_text": "How about we go on a picnic?",
+      "reason": "활동을 제안할 때 자주 사용하는 핵심 패턴인 'How about ~?'을 연습할 수 있습니다."
     }
   ]
 }
