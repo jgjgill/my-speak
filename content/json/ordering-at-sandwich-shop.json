@@ -1,0 +1,219 @@
+{
+  "topic": {
+    "id": "34d2a709-ee95-4a21-8997-f59de2c6e212",
+    "title": "샌드위치 가게에서 주문하기",
+    "category": "음식 주문",
+    "difficulty": "초급",
+    "description": "샌드위치 가게에서 원하는 샌드위치를 주문하고 결제하는 상황을 연습합니다.",
+    "language_code": "en",
+    "total_sentences": 8
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "점원: 안녕하세요! 무엇을 도와드릴까요?"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "손님: 안녕하세요. 칠면조 샌드위치 하나 주세요."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "점원: 네. 빵은 어떤 종류로 하시겠어요?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "손님: 호밀빵으로 해주세요. 그리고 안에 들어가는 야채는 전부 넣어주시고요."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "점원: 알겠습니다. 다른 필요한 거 있으세요?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "손님: 아니요, 그게 다예요. 포장해 주세요?"
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "점원: 네, 물론이죠. 총 8달러입니다."
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "손님: 여기 카드요."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Clerk: Hi! What can I get for you?",
+      "chunked_text": "Hi! | What can I get for you?"
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Customer: Hi. I'd like to have a turkey sandwich.",
+      "chunked_text": "Hi. | I'd like to have | a turkey sandwich."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Clerk: Sure. What kind of bread would you like?",
+      "chunked_text": "Sure. || What kind of bread | would you like?"
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Customer: Rye bread, please. And I'll have all the vegetables on it.",
+      "chunked_text": "Rye bread, | please. || And I'll have all the vegetables | on it."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Clerk: Got it. Anything else for you?",
+      "chunked_text": "Got it. || Anything else | for you?"
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Customer: No, that's all. Can I get it to go?",
+      "chunked_text": "No, | that's all. || Can I get it to go?"
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "Clerk: Yes, of course. Your total is $8.",
+      "chunked_text": "Yes, | of course. || Your total | is $8."
+    },
+    {
+      "sentence_order": 8,
+      "foreign_text": "Customer: Here's my card.",
+      "chunked_text": "Here's my card."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "칠면조 샌드위치",
+        "하나 주세요"
+      ],
+      "target_sentence": "I'd like to have a turkey sandwich.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "호밀빵",
+        "모든 야채"
+      ],
+      "target_sentence": "Rye bread, please. And I'll have all the vegetables on it.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "그게 다예요",
+        "포장해주세요"
+      ],
+      "target_sentence": "No, that's all. Can I get it to go?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 4,
+      "keywords": [
+        "칠면조 샌드위치",
+        "주세요"
+      ],
+      "target_sentence": "I'd like to have a turkey sandwich.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 5,
+      "keywords": [
+        "호밀빵",
+        "야채 전부"
+      ],
+      "target_sentence": "Rye bread, please. And I'll have all the vegetables on it.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 6,
+      "keywords": [
+        "포장"
+      ],
+      "target_sentence": "Can I get it to go?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 7,
+      "keywords": [
+        "칠면조 샌드위치"
+      ],
+      "target_sentence": "I'd like to have a turkey sandwich.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 8,
+      "keywords": [
+        "포장"
+      ],
+      "target_sentence": "Can I get it to go?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 9,
+      "keywords": [
+        "turkey sandwich"
+      ],
+      "target_sentence": "I'd like to have a turkey sandwich.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 10,
+      "keywords": [
+        "to go"
+      ],
+      "target_sentence": "Can I get it to go?",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "하나 주세요",
+      "foreign_phrase": "I'd like to have"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "안에 들어가는",
+      "foreign_phrase": "on it"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "포장해 주세요",
+      "foreign_phrase": "Can I get it to go"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 6,
+      "korean_text": "아니요, 그게 다예요. 포장해 주세요?",
+      "foreign_text": "No, that's all. Can I get it to go?",
+      "reason": "음식을 주문한 후 포장해 갈 때 사용하는 필수적인 표현입니다."
+    }
+  ]
+}
