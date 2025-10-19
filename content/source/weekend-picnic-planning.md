@@ -1,53 +1,53 @@
 ---
-topic_id: "de0f20cd-d8c2-4cb1-968f-4443339deea5"
+topic_id: "6c839e9e-acb7-4e12-862a-1c3e11ae1da9"
 title: "주말 소풍 계획하기"
 slug: "weekend-picnic-planning"
 category: "일상"
 difficulty: "초급"
-description: "날씨 좋은 주말에 친구와 함께 소풍 계획을 세우는 상황의 대화입니다."
+description: "주말에 친구와 함께 소풍 계획을 세우는 상황에 대한 대화입니다."
 language_code: "en"
 highlight_sentence:
   sentence_order: 3
-  korean_text: "우리 소풍 가는 거 어때요?"
-  foreign_text: "How about we go on a picnic?"
-  reason: "활동을 제안할 때 자주 사용하는 핵심 패턴인 'How about ~?'을 연습할 수 있습니다."
+  korean_text: "우리 샌드위치랑 과일 좀 준비해 갈까요?"
+  foreign_text: "Shall we prepare some sandwiches and fruits?"
+  reason: "제안하기와 관련된 표현으로, 계획을 세울 때 자주 사용되는 유용한 문장입니다."
 ---
 
 # 1단계: 한글 스크립트
 
-이번 주말에 날씨가 정말 좋대요.
-네, 맞아요. 우리 **뭔가 특별한 걸 해보는 게 어때요**{why don't we do something special}?
-좋은 생각이에요. 우리 **소풍 가는 거 어때요**{How about we go on a picnic}?
-완전 좋아요! 어디로 가면 좋을까요?
-서울숲 공원은 어때요? **거기 가본 적 있어요**{Have you ever been there}?
-아니요, 없어요. 거기서 뭘 할 수 있는데요?
-자전거도 탈 수 있고, 맛있는 샌드위치를 먹을 수도 있어요.
-좋아요! 제가 간식이랑 음료수를 **가져갈게요**{I'll bring}.
-그럼 제가 샌드위치를 만들게요. 토요일에 만나요!
+A: 이번 주말에 **뭐 할지**{what to do} 정했어?
+B: 아니, 아직 특별한 계획은 없어. 왜?
+A: 우리 샌드위치랑 과일 좀 **준비해 갈까요**{Shall we prepare}?
+B: 좋은 생각이야! 내가 음료수랑 과자도 좀 챙길게.
+A: 그럼 어디로 가는 게 좋을까?
+B: 서울숲 공원 어때? **거기 가본 적 있어**{Have you ever been there}?
+A: 응, 거기 정말 좋더라. 자전거 타기도 좋고.
+B: 그럼 토요일 오후 2시에 공원 입구에서 만나자.
+A: 좋아! 그때 봐.
 
 # 2단계: 외국어 스크립트
 
-The weather is supposed to be really nice this weekend.
-Yeah, I know. Why don't we do something special?
-That's a great idea. How about we go on a picnic?
-Sounds perfect! Where should we go?
-How about Seoul Forest Park? Have you ever been there?
-No, I haven't. What can we do there?
-We can ride bikes and eat delicious sandwiches.
-Okay! I'll bring some snacks and drinks.
-Then I'll make the sandwiches. See you on Saturday!
+A: Have you decided what to do this weekend?
+B: No, I don't have any special plans yet. Why?
+A: Shall we prepare some sandwiches and fruits?
+B: That's a great idea! I'll also bring some drinks and snacks.
+A: Then where would be a good place to go?
+B: How about Seoul Forest Park? Have you ever been there?
+A: Yes, it was really nice there. It's also good for riding a bike.
+B: Then let's meet at the park entrance at 2 PM on Saturday.
+A: Sounds good! See you then.
 
 # 2단계: 끊어읽기 버전
 
-The weather is supposed to be really nice | this weekend.
-Yeah, | I know. || Why don't we do something special?
-That's a great idea. || How about we go on a picnic?
-Sounds perfect! || Where should we go?
-How about Seoul Forest Park? || Have you ever been there?
-No, | I haven't. || What can we do there?
-We can ride bikes | and eat delicious sandwiches.
-Okay! || I'll bring some snacks and drinks.
-Then I'll make the sandwiches. || See you on Saturday!
+A: Have you decided | what to do this weekend?
+B: No, | I don't have any special plans yet. || Why?
+A: Shall we prepare | some sandwiches and fruits?
+B: That's a great idea! || I'll also bring | some drinks and snacks.
+A: Then where would be | a good place to go?
+B: How about Seoul Forest Park? || Have you ever been there?
+A: Yes, | it was really nice there. || It's also good | for riding a bike.
+B: Then let's meet | at the park entrance | at 2 PM on Saturday.
+A: Sounds good! || See you then.
 
 # 3단계: 사용자 자유 연습
 
@@ -57,28 +57,24 @@ Then I'll make the sandwiches. || See you on Saturday!
 
 ## 레벨 1: 상세한 키워드 (70% 정보)
 
-이번 주말, 날씨 좋음 → The weather is supposed to be really nice this weekend.
-특별한 것, 해보는 게 어때요 → Why don't we do something special?
-소풍 가는 거, 어때요 → How about we go on a picnic?
-제가 간식, 음료수 가져갈게요 → I'll bring some snacks and drinks.
+- 이번 주말, 뭐 할지 정했어? → Have you decided what to do this weekend?
+- 샌드위치랑 과일, 준비해 갈까요? → Shall we prepare some sandwiches and fruits?
+- 서울숲 공원 어때? 거기 가본 적 있어? → How about Seoul Forest Park? Have you ever been there?
 
 ## 레벨 2: 핵심 키워드 (50% 정보)
 
-주말 날씨 → The weather is supposed to be really nice this weekend.
-특별한 것 제안 → Why don't we do something special?
-소풍 제안 → How about we go on a picnic?
-가져갈 것 → I'll bring some snacks and drinks.
+- 주말 계획 → Have you decided what to do this weekend?
+- 음식 준비 → Shall we prepare some sandwiches and fruits?
+- 장소 제안, 경험 → How about Seoul Forest Park? Have you ever been there?
 
 ## 레벨 3: 최소한의 키워드 (30% 정보)
 
-날씨 → The weather is supposed to be really nice this weekend.
-제안 → Why don't we do something special?
-소풍 → How about we go on a picnic?
-가져가다 → I'll bring some snacks and drinks.
+- 주말 → Have you decided what to do this weekend?
+- 음식 → Shall we prepare some sandwiches and fruits?
+- 장소 → How about Seoul Forest Park? Have you ever been there?
 
 ## 레벨 4: 외국어 키워드
 
-weather, weekend → The weather is supposed to be really nice this weekend.
-suggest, special → Why don't we do something special?
-picnic → How about we go on a picnic?
-bring, snacks → I'll bring some snacks and drinks.
+- weekend plan → Have you decided what to do this weekend?
+- prepare food → Shall we prepare some sandwiches and fruits?
+- suggest a place → How about Seoul Forest Park? Have you ever been there?
