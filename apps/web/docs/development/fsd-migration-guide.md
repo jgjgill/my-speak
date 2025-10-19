@@ -156,22 +156,75 @@ graph LR
 
 ## 단계별 마이그레이션 로드맵
 
-### 1단계: Shared Layer 구축
+### 1단계: Shared Layer 구축 ✅ **완료**
+
+#### 최종 구조
 
 ```
 src/shared/
-├── api/          # Supabase, TanStack Query
-├── lib/          # platform, deep-link 등
-├── config/       # languages 등
-├── ui/           # 공통 UI 컴포넌트
-└── model/        # Context
+├── api/
+│   └── supabase/           # Supabase 클라이언트 (client, server, middleware)
+├── lib/
+│   ├── auth/               # 인증 유틸리티 + Context
+│   │   ├── server.ts       # getCurrentUser 등
+│   │   ├── auth-context.ts # AuthContext + useAuth
+│   │   └── index.ts
+│   ├── toast/              # Toast Context
+│   │   ├── toast-context.ts
+│   │   └── index.ts
+│   ├── webview/            # WebView Context
+│   │   ├── webview-context.ts
+│   │   └── index.ts
+│   ├── platform/           # 플랫폼 감지
+│   │   ├── server.ts
+│   │   ├── client.ts
+│   │   └── index.ts
+│   ├── deep-link.ts        # 딥링크 유틸
+│   ├── tts-bridge.ts       # TTS 브릿지
+│   ├── use-is-mounted.ts   # 마운트 체크 훅
+│   ├── create-safe-context.ts  # Context 유틸리티
+│   └── index.ts
+├── config/
+│   ├── languages.ts        # 언어 상수
+│   └── index.ts
+└── ui/
+    ├── modal/              # 모달 컴포넌트
+    ├── toast/              # 토스트 컴포넌트
+    ├── auth-button.tsx
+    ├── conditional-header.tsx
+    ├── google-analytics.tsx
+    ├── native-bridge.tsx
+    ├── structured-data.tsx
+    └── index.ts
+
+src/app/providers/          # Provider 컴포넌트 (App 레이어)
+├── auth-provider.tsx       # AuthProvider 로직
+├── toast-provider.tsx      # ToastProvider 로직
+├── webview-provider.tsx    # WebViewProvider 로직
+├── query-provider.tsx      # TanStack Query Provider
+└── index.ts
 ```
 
-**이동 대상**:
-- `app/utils/supabase/` → `shared/api/supabase/`
-- `app/utils/platform.ts` → `shared/lib/platform/`
-- `app/constants/languages.ts` → `shared/config/languages/`
-- `app/contexts/` → `shared/model/context/`
+#### 핵심 결정사항
+
+**1. Context와 Provider 분리 (FSD 원칙 준수)**
+- **Context 정의 + Hook**: `shared/lib/{auth,toast,webview}/`
+- **Provider 로직**: `app/providers/`
+- `createSafeContext` 유틸리티로 보일러플레이트 제거
+
+**2. 단일 파일 vs 폴더 구조**
+- 단일 파일: 폴더 없이 직접 파일 (예: `deep-link.ts`, `tts-bridge.ts`)
+- 확장 가능성 있는 것: 폴더로 구성 (예: `auth/`, `platform/`)
+- **FSD 원칙**: "what"이 아닌 "why" 기반 네이밍
+
+**3. 의존성 방향**
+- ✅ `shared/ui` → `shared/lib` (Context hook 사용)
+- ❌ `shared` → `app` (FSD 위반 방지)
+
+#### 검증 완료
+- ✅ TypeScript 타입 체크: 0 에러
+- ✅ Biome 린트/포맷: 통과
+- ✅ Public API 패턴: 모든 슬라이스에 `index.ts` 구성
 
 ---
 
