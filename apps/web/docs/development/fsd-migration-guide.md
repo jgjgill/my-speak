@@ -228,32 +228,75 @@ src/app/providers/          # Provider 컴포넌트 (App 레이어)
 
 ---
 
-### 2단계: Entities Layer 구축
+### 2단계: Entities & Features Layer 구축 ✅ **완료**
+
+#### Entities Layer - Data & Read (데이터와 렌더링)
+
+**핵심 개념**: entities는 **data, read, pure, query, render** - 수정되지 않을 원본 그 자체
 
 ```
 src/entities/
 ├── topic/      # api/, model/, ui/
 ├── user/       # api/, model/, ui/
-└── progress/   # api/, model/, ui/
+└── progress/   # api/, model/
 ```
 
-**슬라이스 구조** (예: topic):
+**최종 Entities 구조**:
 ```
-topic/
-├── index.ts    # Public API
-├── api/        # get-topic, get-topics
-├── model/      # types, hooks
-└── ui/         # topic-card
+entities/topic/
+├── api/topic-queries.ts      # getTopic, getTopics
+├── model/use-topics-infinite.ts  # Read-only 무한 스크롤
+├── ui/topic-card.tsx         # Topic 표시 컴포넌트
+└── index.ts
+
+entities/user/
+├── api/user-queries.ts       # getUser
+├── model/use-user.ts         # Read-only useUser
+└── index.ts
+
+entities/progress/
+├── api/progress-queries.ts   # getUserProgress, getGuestProgress
+├── model/use-user-progress.ts  # Read-only 진행도 조회
+└── index.ts
 ```
 
-**이동 대상**:
-- `app/[id]/queries/topic-info-queries.ts` → `entities/topic/api/`
-- `app/topics/components/topic-card.tsx` → `entities/topic/ui/`
-- `app/hooks/use-user.ts` → `entities/user/model/`
+#### Features Layer - Action & Mutation (사용자 행동과 상태 변경)
+
+**핵심 개념**: features는 **action, write, mutation, state, store** - 사용자 행동과 데이터 변경
+
+**최종 Features 구조**:
+```
+features/progress/
+├── api/update-progress.ts       # updateUserProgress mutation
+├── model/
+│   ├── use-update-progress.ts   # Mutation hook
+│   ├── use-progress.ts          # 비즈니스 로직 (stage 전환)
+│   └── use-guest-progress.ts    # Guest 상태 관리
+└── index.ts
+```
+
+#### 핵심 학습 사항
+
+**1. Entities vs Features 구분**
+- **Entities**: data, read, pure, query, render (수정되지 않을 원본)
+- **Features**: action, write, mutation, state, store (사용자 행동과 변경)
+
+**2. 도메인 중심 네이밍**
+- ✅ `features/progress/` (도메인 명사)
+- ❌ `features/complete-learning-stage/` (기능 동사구)
+
+**3. Read-only Hook 위치**
+- `useUser`, `useUserProgress`, `useTopicsInfinite` → **Entities** (단순 Read)
+- `useUpdateProgress`, `useProgress`, `useGuestProgress` → **Features** (Mutation/State)
+
+#### 검증 완료
+- ✅ TypeScript: 0 에러
+- ✅ Biome: 통과 (5개 파일 자동 수정)
+- ✅ 총 생성 파일: 29개
 
 ---
 
-### 3단계: Features Layer 구축
+### 3단계: Features Layer 확장
 
 ```
 src/features/

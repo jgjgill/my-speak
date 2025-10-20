@@ -9,8 +9,8 @@ import {
 	useContext,
 	useEffect,
 } from "react";
-import { useUser } from "../hooks/use-user";
-import { createClient } from "../utils/supabase/client";
+import { useUser } from "@/entities/user";
+import { createBrowserClient as createClient } from "@/shared/api/supabase";
 
 /**
  * @link

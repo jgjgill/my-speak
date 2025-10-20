@@ -1,9 +1,9 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import { useUserProgress } from "@/entities/progress";
+import { useProgress } from "@/features/progress";
 import { useAuth } from "../../../../contexts/auth-context";
-import { useProgress } from "../hooks/use-progress";
-import { useUserProgress } from "../hooks/use-user-progress";
 import StageFourContainer from "./stage-four-container";
 import StageNavigation from "./stage-navigation";
 import StageOneContainer from "./stage-one-container";
