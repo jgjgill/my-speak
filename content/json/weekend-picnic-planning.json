@@ -1,6 +1,6 @@
 {
   "topic": {
-    "id": "5988beb1-ad62-4b18-b3ae-1745fa918041",
+    "id": "4fb24d49-ca78-4853-b247-b55b2e93a58e",
     "title": "주말 소풍 계획하기",
     "category": "일상",
     "difficulty": "초급",
@@ -11,77 +11,77 @@
   "korean_scripts": [
     {
       "sentence_order": 1,
-      "korean_text": "이번 주말에 뭐해?"
+      "korean_text": "A: 이번 주말에 뭐 특별한 계획 있어요"
     },
     {
       "sentence_order": 2,
-      "korean_text": "별일 없어. 그냥 집에서 쉴까 생각 중이야."
+      "korean_text": "B: 아니요, 아직 없어요. 왜요?"
     },
     {
       "sentence_order": 3,
-      "korean_text": "우리 샌드위치랑 과일 좀 싸가면 어때?"
+      "korean_text": "A: 날씨가 아주 좋을 것 같아요. 우리 같이 공원에 소풍 가는 거 어때요?"
     },
     {
       "sentence_order": 4,
-      "korean_text": "좋은 생각이야! 내가 과일 가져갈게."
+      "korean_text": "B: 좋은 생각이에요! 각자 먹을 것을 좀 가져가는 게 어때요?"
     },
     {
       "sentence_order": 5,
-      "korean_text": "그럼 내가 샌드위치 만들게. 어디로 가는 게 좋을까?"
+      "korean_text": "A: 좋아요. 저는 샌드위치를 만들게요."
     },
     {
       "sentence_order": 6,
-      "korean_text": "중앙 공원이 좋을 것 같아. 거기가 넓고 조용하잖아."
+      "korean_text": "B: 그럼 저는 과일이랑 음료수를 좀 가져갈게요."
     },
     {
       "sentence_order": 7,
-      "korean_text": "완벽해! 그럼 토요일 오전 11시에 공원 입구에서 만나자."
+      "korean_text": "A: 완벽해요! 토요일 오전 11시에 공원 입구에서 만나요."
     },
     {
       "sentence_order": 8,
-      "korean_text": "알았어. 그때 봐!"
+      "korean_text": "B: 알겠어요. 그때 봐요!"
     }
   ],
   "foreign_scripts": [
     {
       "sentence_order": 1,
-      "foreign_text": "What are you doing this weekend?",
-      "chunked_text": "What are you doing | this weekend?"
+      "foreign_text": "A: Have you got any special plans for this weekend?",
+      "chunked_text": "A: Have you got any special plans | for this weekend?"
     },
     {
       "sentence_order": 2,
-      "foreign_text": "Nothing special. I'm just thinking of resting at home.",
-      "chunked_text": "Nothing special. || I'm just thinking of | resting at home."
+      "foreign_text": "B: No, not yet. Why?",
+      "chunked_text": "B: No, | not yet. || Why?"
     },
     {
       "sentence_order": 3,
-      "foreign_text": "How about we pack some sandwiches and fruits?",
-      "chunked_text": "How about we pack | some sandwiches and fruits?"
+      "foreign_text": "A: The weather is going to be great. How about we go on a picnic to the park together?",
+      "chunked_text": "A: The weather is going to be great. || How about we go on a picnic | to the park together?"
     },
     {
       "sentence_order": 4,
-      "foreign_text": "That's a great idea! I'll bring the fruits.",
-      "chunked_text": "That's a great idea! || I'll bring the fruits."
+      "foreign_text": "B: That's a great idea! How about we each bring something to eat?",
+      "chunked_text": "B: That's a great idea! || How about we each bring | something to eat?"
     },
     {
       "sentence_order": 5,
-      "foreign_text": "Then I'll make the sandwiches. Where should we go?",
-      "chunked_text": "Then I'll make the sandwiches. || Where should we go?"
+      "foreign_text": "A: Sounds good. I'll make some sandwiches.",
+      "chunked_text": "A: Sounds good. || I'll make some sandwiches."
     },
     {
       "sentence_order": 6,
-      "foreign_text": "I think Central Park would be nice. It's spacious and quiet there.",
-      "chunked_text": "I think Central Park | would be nice. || It's spacious and quiet | there."
+      "foreign_text": "B: Then I'll bring some fruit and drinks.",
+      "chunked_text": "B: Then I'll bring | some fruit and drinks."
     },
     {
       "sentence_order": 7,
-      "foreign_text": "Perfect! Then let's meet at the park entrance at 11 a.m. on Saturday.",
-      "chunked_text": "Perfect! || Then let's meet | at the park entrance | at 11 a.m. on Saturday."
+      "foreign_text": "A: Perfect! Let's meet at the park entrance at 11 a.m. on Saturday.",
+      "chunked_text": "A: Perfect! || Let's meet at the park entrance | at 11 a.m. on Saturday."
     },
     {
       "sentence_order": 8,
-      "foreign_text": "Okay. See you then!",
-      "chunked_text": "Okay. || See you then!"
+      "foreign_text": "B: Okay. See you then!",
+      "chunked_text": "B: Okay. || See you then!"
     }
   ],
   "keyword_speeches": [
@@ -91,9 +91,9 @@
       "sequence_order": 1,
       "keywords": [
         "이번 주말",
-        "뭐해?"
+        "특별한 계획"
       ],
-      "target_sentence": "What are you doing this weekend?",
+      "target_sentence": "Have you got any special plans for this weekend?",
       "difficulty_percentage": 70
     },
     {
@@ -101,10 +101,10 @@
       "level": 1,
       "sequence_order": 2,
       "keywords": [
-        "샌드위치랑 과일",
-        "싸가면 어때?"
+        "날씨 좋을 예정",
+        "공원 소풍 제안"
       ],
-      "target_sentence": "How about we pack some sandwiches and fruits?",
+      "target_sentence": "The weather is going to be great. How about we go on a picnic to the park together?",
       "difficulty_percentage": 70
     },
     {
@@ -112,10 +112,9 @@
       "level": 1,
       "sequence_order": 3,
       "keywords": [
-        "어디로",
-        "가는 게 좋을까?"
+        "각자 음식 가져오기 제안"
       ],
-      "target_sentence": "Where should we go?",
+      "target_sentence": "How about we each bring something to eat?",
       "difficulty_percentage": 70
     },
     {
@@ -134,10 +133,9 @@
       "level": 2,
       "sequence_order": 5,
       "keywords": [
-        "주말",
-        "계획"
+        "주말 계획"
       ],
-      "target_sentence": "What are you doing this weekend?",
+      "target_sentence": "Have you got any special plans for this weekend?",
       "difficulty_percentage": 50
     },
     {
@@ -145,10 +143,9 @@
       "level": 2,
       "sequence_order": 6,
       "keywords": [
-        "샌드위치",
-        "과일"
+        "소풍 제안"
       ],
-      "target_sentence": "How about we pack some sandwiches and fruits?",
+      "target_sentence": "How about we go on a picnic?",
       "difficulty_percentage": 50
     },
     {
@@ -156,9 +153,9 @@
       "level": 2,
       "sequence_order": 7,
       "keywords": [
-        "어디로?"
+        "음식 각자"
       ],
-      "target_sentence": "Where should we go?",
+      "target_sentence": "How about we each bring something to eat?",
       "difficulty_percentage": 50
     },
     {
@@ -166,10 +163,10 @@
       "level": 2,
       "sequence_order": 8,
       "keywords": [
-        "토요일 11시",
-        "공원"
+        "만날 시간",
+        "장소"
       ],
-      "target_sentence": "Let's meet at the park entrance at 11 a.m. on Saturday.",
+      "target_sentence": "Let's meet at the park entrance at 11 a.m.",
       "difficulty_percentage": 50
     },
     {
@@ -179,7 +176,7 @@
       "keywords": [
         "주말"
       ],
-      "target_sentence": "What are you doing this weekend?",
+      "target_sentence": "Have you got any special plans for this weekend?",
       "difficulty_percentage": 30
     },
     {
@@ -187,9 +184,9 @@
       "level": 3,
       "sequence_order": 10,
       "keywords": [
-        "음식 제안"
+        "소풍"
       ],
-      "target_sentence": "How about we pack some sandwiches and fruits?",
+      "target_sentence": "How about we go on a picnic?",
       "difficulty_percentage": 30
     },
     {
@@ -197,9 +194,9 @@
       "level": 3,
       "sequence_order": 11,
       "keywords": [
-        "장소"
+        "음식"
       ],
-      "target_sentence": "Where should we go?",
+      "target_sentence": "How about we each bring something to eat?",
       "difficulty_percentage": 30
     },
     {
@@ -207,9 +204,9 @@
       "level": 3,
       "sequence_order": 12,
       "keywords": [
-        "약속"
+        "만나자"
       ],
-      "target_sentence": "Let's meet at the park entrance at 11 a.m. on Saturday.",
+      "target_sentence": "Let's meet.",
       "difficulty_percentage": 30
     },
     {
@@ -217,9 +214,9 @@
       "level": 4,
       "sequence_order": 13,
       "keywords": [
-        "Weekend"
+        "weekend plans"
       ],
-      "target_sentence": "What are you doing this weekend?",
+      "target_sentence": "Have you got any special plans for this weekend?",
       "difficulty_percentage": 0
     },
     {
@@ -227,10 +224,9 @@
       "level": 4,
       "sequence_order": 14,
       "keywords": [
-        "Sandwiches",
-        "fruits"
+        "picnic"
       ],
-      "target_sentence": "How about we pack some sandwiches and fruits?",
+      "target_sentence": "How about we go on a picnic to the park together?",
       "difficulty_percentage": 0
     },
     {
@@ -238,9 +234,9 @@
       "level": 4,
       "sequence_order": 15,
       "keywords": [
-        "Where"
+        "bring food"
       ],
-      "target_sentence": "Where should we go?",
+      "target_sentence": "How about we each bring something to eat?",
       "difficulty_percentage": 0
     },
     {
@@ -248,9 +244,7 @@
       "level": 4,
       "sequence_order": 16,
       "keywords": [
-        "Meet",
-        "Park",
-        "11 a.m."
+        "meet"
       ],
       "target_sentence": "Let's meet at the park entrance at 11 a.m. on Saturday.",
       "difficulty_percentage": 0
@@ -258,22 +252,22 @@
   ],
   "learning_points": [
     {
-      "sentence_order": 2,
-      "korean_phrase": "별일 없어",
-      "foreign_phrase": "Nothing special"
+      "sentence_order": 1,
+      "korean_phrase": "뭐 특별한 계획 있어요",
+      "foreign_phrase": "got any special plans"
     },
     {
-      "sentence_order": 5,
-      "korean_phrase": "어디로 가는 게 좋을까",
-      "foreign_phrase": "Where should we go"
+      "sentence_order": 4,
+      "korean_phrase": "각자 먹을 것을 좀 가져가는 게 어때요",
+      "foreign_phrase": "How about we each bring something to eat"
     }
   ],
   "highlight_sentences": [
     {
-      "sentence_order": 3,
-      "korean_text": "우리 샌드위치랑 과일 좀 싸가면 어때?",
-      "foreign_text": "How about we pack some sandwiches and fruits?",
-      "reason": "제안하기'의 핵심 패턴인 'How about we...?'를 사용하여 다양한 상황에서 응용할 수 있기 때문입니다."
+      "sentence_order": 4,
+      "korean_text": "각자 먹을 것을 좀 가져가는 게 어때요?",
+      "foreign_text": "How about we each bring something to eat?",
+      "reason": "제안하기 표현인 'How about we...?'는 일상 대화에서 매우 유용하게 사용할 수 있는 핵심 패턴입니다."
     }
   ]
 }
