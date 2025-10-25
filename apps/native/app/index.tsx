@@ -105,7 +105,6 @@ export default function Index() {
 		return () => backHandler.remove();
 	}, [handleHardwareBackPress]);
 
-
 	// 웹에서 접속한 경우 스토어로 리다이렉트
 	useEffect(() => {
 		if (!isWeb) return;

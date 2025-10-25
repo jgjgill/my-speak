@@ -17,6 +17,88 @@
 
 ---
 
+## 핵심 맥락 (반드시 숙지)
+
+이 섹션은 FSD 마이그레이션 작업 중 발견한 핵심 원칙과 실수 방지를 위한 지침입니다.
+
+### 1. Entities vs Features 구분 원칙
+
+**Entities: "Data & Render"**
+- **키워드**: data, read, pure, query, render
+- **특성**: 수정되지 않을 원본 그 자체, 그저 데이터
+- **예시**: `useUser` (조회), `useUserProgress` (조회), `useTopicsInfinite` (조회)
+- **Query 타입**: `useQuery`, `useSuspenseQuery`
+
+**Features: "Action & Interaction"**
+- **키워드**: action, write, mutation, state, store
+- **특성**: 사용자 행동과 상태 변경, 데이터 변경이 주 관심사
+- **예시**: `useUpdateProgress` (변경), `useProgress` (상태), `useGuestProgress` (상태)
+- **Query 타입**: `useMutation` + 복잡한 state 로직
+
+### 2. 도메인 중심 네이밍 (Features)
+
+Features 슬라이스는 **도메인 명사**로 네이밍합니다.
+
+✅ **올바른 예**:
+```
+features/progress/      # Progress 도메인의 모든 사용자 행동
+features/topic/         # Topic 도메인의 모든 사용자 행동
+features/stage/         # Stage 도메인의 모든 사용자 행동
+```
+
+❌ **잘못된 예**:
+```
+features/complete-learning-stage/     # 기능 동사구
+features/track-user-progress/         # 기능 동사구
+features/browse-topics/               # 기능 동사구
+```
+
+**이유**: 같은 도메인의 여러 기능을 하나의 슬라이스에 모아야 확장성과 유지보수성이 좋습니다.
+
+### 3. Read-only Hook의 위치
+
+**Entities에 속하는 Hook**:
+- 단순 데이터 조회만 하는 Hook
+- `useQuery`, `useSuspenseQuery` 사용
+- 비즈니스 로직 없음
+- 예: `useUser`, `useUserProgress`, `useTopicsInfinite`
+
+**Features에 속하는 Hook**:
+- Mutation을 수행하는 Hook
+- 복잡한 상태 관리를 하는 Hook
+- `useMutation` 사용 또는 여러 entity 조합
+- 예: `useUpdateProgress`, `useProgress`, `useGuestProgress`
+
+### 4. 기존 파일 처리 방침
+
+**중요**: FSD 마이그레이션 중에는 기존 파일을 수정하지 않습니다.
+
+- ✅ 새로운 FSD 구조만 `src/`에 구축
+- ✅ 기존 `app/` 디렉토리 파일은 그대로 유지
+- ✅ 전체 마이그레이션 완료 후 기존 파일 정리
+- ❌ 기존 파일을 deprecated 처리하거나 re-export로 변경하지 않음
+
+**이유**: 기존 코드는 나중에 삭제될 예정이므로 불필요한 작업 방지
+
+### 5. 실수 방지 체크리스트
+
+**Entities 생성 시**:
+- [ ] Read-only 작업만 포함하는가?
+- [ ] Mutation이 없는가?
+- [ ] 단순 데이터 조회인가?
+
+**Features 생성 시**:
+- [ ] 도메인 명사로 네이밍했는가?
+- [ ] 사용자 행동/상태 변경을 포함하는가?
+- [ ] 같은 도메인의 기능들을 모았는가?
+
+**파일 이동 시**:
+- [ ] 기존 파일은 그대로 두었는가?
+- [ ] 새로운 FSD 구조만 생성했는가?
+- [ ] Public API (`index.ts`) 패턴을 적용했는가?
+
+---
+
 ## FSD 아키텍처 핵심
 
 ### 레이어 구조 (상위 → 하위)
