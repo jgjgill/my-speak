@@ -6,4 +6,3 @@ export {
 	isMobileWebClient,
 	isNativeWebViewClient,
 } from "./client";
-export { getUserAgent, isNativeWebView } from "./server";
