@@ -1,5 +1,5 @@
 import type { User } from "@supabase/supabase-js";
-import { createServerClient } from "@/shared/api/supabase";
+import { createClient as createServerClient } from "@/shared/api/supabase/server";
 
 /**
  * 서버 사이드에서 현재 사용자 정보를 가져옵니다.
