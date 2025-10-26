@@ -1,0 +1,327 @@
+{
+  "topic": {
+    "id": "37e01bbd-ba13-4679-9972-18ff2495961f",
+    "title": "친구를 위한 서프라이즈 파티 계획하기",
+    "category": "Socializing",
+    "difficulty": "초급",
+    "description": "친구의 생일을 맞아 서프라이즈 파티를 계획하는 상황에 대한 대화입니다.",
+    "language_code": "en",
+    "total_sentences": 12
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "1. 이번 주 토요일이 민준이 생일인 거 알아?"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "2. 응, 당연히 알지. 우리 서프라이즈 파티를 열어주는 거 어때?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "3. 좋은 생각이야! 그가 정말 좋아할 거야."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "4. 우선, 누구를 초대할지 명단을 만들어야 해."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "5. 알았어. 내가 그의 친한 친구들 몇 명에게 연락해 볼게."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "6. 나는 케이크랑 장식 좀 알아볼게."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "7. 파티 장소는 어디로 할까?"
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "8. 우리 집이 괜찮을 것 같아. 공간이 충분해."
+    },
+    {
+      "sentence_order": 9,
+      "korean_text": "9. 완벽해! 그럼 내가 사람들에게 음식을 좀 가져오라고 부탁할게."
+    },
+    {
+      "sentence_order": 10,
+      "korean_text": "10. 가장 중요한 건, 민준이에게 비밀로 해야 한다는 거야."
+    },
+    {
+      "sentence_order": 11,
+      "korean_text": "11. 물론이지! 그가 아무것도 눈치채지 못하게 하자."
+    },
+    {
+      "sentence_order": 12,
+      "korean_text": "12. 좋아, 그럼 토요일에 보자!"
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "1. Do you know it's Minjun's birthday this Saturday?",
+      "chunked_text": "1. Do you know | it's Minjun's birthday | this Saturday?"
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "2. Yes, of course. How about we throw him a surprise party?",
+      "chunked_text": "2. Yes, | of course. || How about we throw him | a surprise party?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "3. That's a great idea! He would really love that.",
+      "chunked_text": "3. That's a great idea! || He would really love that."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "4. First, we need to make a guest list.",
+      "chunked_text": "4. First, | we need to make | a guest list."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "5. Okay. I'll contact some of his close friends.",
+      "chunked_text": "5. Okay. || I'll contact | some of his close friends."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "6. I'll look into the cake and decorations.",
+      "chunked_text": "6. I'll look into | the cake and decorations."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "7. Where should we have the party?",
+      "chunked_text": "7. Where should we have | the party?"
+    },
+    {
+      "sentence_order": 8,
+      "foreign_text": "8. I think my place would be good. There's enough space.",
+      "chunked_text": "8. I think my place | would be good. || There's enough space."
+    },
+    {
+      "sentence_order": 9,
+      "foreign_text": "9. Perfect! Then I'll ask people to bring some food.",
+      "chunked_text": "9. Perfect! || Then I'll ask people | to bring some food."
+    },
+    {
+      "sentence_order": 10,
+      "foreign_text": "10. The most important thing is that we have to keep it a secret from Minjun.",
+      "chunked_text": "10. The most important thing is | that we have to keep it a secret | from Minjun."
+    },
+    {
+      "sentence_order": 11,
+      "foreign_text": "11. Of course! Let's make sure he doesn't notice anything.",
+      "chunked_text": "11. Of course! || Let's make sure | he doesn't notice anything."
+    },
+    {
+      "sentence_order": 12,
+      "foreign_text": "12. Great, see you on Saturday then!",
+      "chunked_text": "12. Great, | see you on Saturday | then!"
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "서프라이즈 파티",
+        "열어주는 거 어때"
+      ],
+      "target_sentence": "How about we throw him a surprise party?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "누구 초대할지",
+        "명단 만들어야 해"
+      ],
+      "target_sentence": "First, we need to make a guest list.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "사람들에게",
+        "음식 좀 가져오라고 부탁할게"
+      ],
+      "target_sentence": "I'll ask people to bring some food.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "가장 중요한 것",
+        "민준이에게 비밀로 해야 해"
+      ],
+      "target_sentence": "The most important thing is that we have to keep it a secret from Minjun.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 5,
+      "keywords": [
+        "서프라이즈 파티",
+        "어때"
+      ],
+      "target_sentence": "How about we throw him a surprise party?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 6,
+      "keywords": [
+        "초대 명단",
+        "만들어야"
+      ],
+      "target_sentence": "We need to make a guest list.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 7,
+      "keywords": [
+        "사람들",
+        "음식 가져오라고"
+      ],
+      "target_sentence": "I'll ask people to bring some food.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "중요한 건",
+        "비밀 유지"
+      ],
+      "target_sentence": "The most important thing is that we have to keep it a secret.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 9,
+      "keywords": [
+        "서프라이즈 파티"
+      ],
+      "target_sentence": "How about we throw him a surprise party?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 10,
+      "keywords": [
+        "명단 만들기"
+      ],
+      "target_sentence": "We need to make a guest list.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 11,
+      "keywords": [
+        "음식 가져오기"
+      ],
+      "target_sentence": "I'll ask people to bring some food.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 12,
+      "keywords": [
+        "비밀 유지"
+      ],
+      "target_sentence": "We have to keep it a secret.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 13,
+      "keywords": [
+        "throw",
+        "surprise party"
+      ],
+      "target_sentence": "How about we throw him a surprise party?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 14,
+      "keywords": [
+        "make",
+        "guest list"
+      ],
+      "target_sentence": "We need to make a guest list.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 15,
+      "keywords": [
+        "ask",
+        "bring food"
+      ],
+      "target_sentence": "I'll ask people to bring some food.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 16,
+      "keywords": [
+        "keep",
+        "a secret"
+      ],
+      "target_sentence": "We have to keep it a secret from Minjun.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "서프라이즈 파티를 열어주는 거 어때",
+      "foreign_phrase": "how about we throw him a surprise party"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "명단을 만들어야 해",
+      "foreign_phrase": "we need to make a guest list"
+    },
+    {
+      "sentence_order": 9,
+      "korean_phrase": "가져오라고 부탁할게",
+      "foreign_phrase": "I'll ask people to bring some food"
+    },
+    {
+      "sentence_order": 10,
+      "korean_phrase": "비밀로 해야 한다는 거야",
+      "foreign_phrase": "we have to keep it a secret from Minjun"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 10,
+      "korean_text": "가장 중요한 건, 민준이에게 비밀로 해야 한다는 거야",
+      "foreign_text": "The most important thing is that we have to keep it a secret from Minjun",
+      "reason": "서프라이즈 파티의 성공을 위해 가장 핵심적인 '비밀 유지'의 중요성을 강조하는 문장입니다."
+    }
+  ]
+}
