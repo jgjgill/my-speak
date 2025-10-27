@@ -1,0 +1,160 @@
+{
+  "topic": {
+    "id": "27cc601d-cdb9-4198-8904-45d0600a7b49",
+    "title": "새로운 애완동물 입양 상담하기",
+    "category": "일상생활",
+    "difficulty": "초급",
+    "description": "동물 보호소에서 새로운 애완동물을 입양하기 위해 직원과 상담하는 상황입니다.",
+    "language_code": "en",
+    "total_sentences": 6
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 강아지를 입양하고 싶어서 왔어요."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "어떤 종류의 강아지를 찾고 계신가요?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "저는 아파트에서 키울 수 있는 작은 강아지를 원해요."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "이 아이는 성격이 매우 온순하고 사람을 잘 따라요."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "입양 절차는 어떻게 진행되나요?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "먼저 입양 신청서를 작성해 주셔야 해요."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, I'm here because I'd like to adopt a dog.",
+      "chunked_text": "Hello, | I'm here because | I'd like to adopt a dog."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "What kind of dog are you looking for?",
+      "chunked_text": "What kind of dog | are you looking for?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "I want a small dog that I can raise in an apartment.",
+      "chunked_text": "I want a small dog | that I can raise | in an apartment."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "This one has a very gentle personality and gets along well with people.",
+      "chunked_text": "This one has a very gentle personality | and gets along well | with people."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "What's the process for adoption?",
+      "chunked_text": "What's the process | for adoption?"
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "First, you'll need to fill out an adoption application.",
+      "chunked_text": "First, | you'll need to fill out | an adoption application."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "아파트에서 키울",
+        "작은 강아지"
+      ],
+      "target_sentence": "I want a small dog that I can raise in an apartment.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "성격 온순",
+        "사람 잘 따름"
+      ],
+      "target_sentence": "This one has a very gentle personality and gets along well with people.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 3,
+      "keywords": [
+        "어떤 종류",
+        "찾고 있나요"
+      ],
+      "target_sentence": "What kind of dog are you looking for?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 4,
+      "keywords": [
+        "입양 신청서",
+        "작성 필요"
+      ],
+      "target_sentence": "You'll need to fill out an adoption application.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 5,
+      "keywords": [
+        "입양 절차"
+      ],
+      "target_sentence": "What's the process for adoption?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 6,
+      "keywords": [
+        "adopt a dog"
+      ],
+      "target_sentence": "Hello, I'm here because I'd like to adopt a dog.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "찾고 계신가요",
+      "foreign_phrase": "are you looking for"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "사람을 잘 따라요",
+      "foreign_phrase": "gets along well with people"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "입양 신청서를 작성해 주셔야 해요",
+      "foreign_phrase": "you'll need to fill out an adoption application"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 5,
+      "korean_text": "입양 절차는 어떻게 진행되나요?",
+      "foreign_text": "What's the process for adoption?",
+      "reason": "입양 과정의 핵심적인 다음 단계를 묻는 질문으로, 실제 상황에서 반드시 필요한 표현입니다."
+    }
+  ]
+}
