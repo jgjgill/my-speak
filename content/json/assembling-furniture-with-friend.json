@@ -1,0 +1,272 @@
+{
+  "topic": {
+    "id": "62cad268-8010-419a-bfab-f09d7c1ea58f",
+    "title": "친구와 함께 가구 조립하기",
+    "category": "일상 회화",
+    "difficulty": "초급",
+    "description": "친구와 함께 새로 산 가구를 조립하면서 필요한 표현을 배워봅니다.",
+    "language_code": "en",
+    "total_sentences": 12
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "와, 이 책장 정말 크다. 우리 이거 조립할 수 있을까?"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "설명서 좀 건네줄래?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "여기 있어. 먼저 뭘 해야 한대?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "음... 모든 부품이 다 있는지 확인하라고 나와 있어."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "좋아, 내가 부품 목록을 확인할게. 너는 나사들을 종류별로 나눠줄래?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "알았어. 어, 이 나사는 어디에 쓰는 거지? 좀 헷갈리네."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "설명서 그림을 한번 보자. 아, 이건 옆판을 고정하는 데 쓰는 거래."
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "그렇구나! 이제 이해가 됐어."
+    },
+    {
+      "sentence_order": 9,
+      "korean_text": "좋아, 이제 옆판 두 개를 연결하자. 망치 좀 가져다줄래?"
+    },
+    {
+      "sentence_order": 10,
+      "korean_text": "잠깐만, 망치를 너무 세게 치면 안 돼. 나무가 손상될 수 있어."
+    },
+    {
+      "sentence_order": 11,
+      "korean_text": "조심할게. 거의 다 된 것 같아! 우리 정말 잘하는 것 같아."
+    },
+    {
+      "sentence_order": 12,
+      "korean_text": "맞아! 완성되면 정말 뿌듯하겠다."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Wow, this bookshelf is huge. Can we assemble this?",
+      "chunked_text": "Wow, | this bookshelf is huge. || Can we assemble this?"
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Can you pass me the instructions?",
+      "chunked_text": "Can you pass me | the instructions?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Here you go. What does it say to do first?",
+      "chunked_text": "Here you go. || What does it say | to do first?"
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Hmm... It says to check if we have all the parts.",
+      "chunked_text": "Hmm... || It says to check | if we have all the parts."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Okay, I'll check the parts list. Can you sort the screws by type?",
+      "chunked_text": "Okay, | I'll check the parts list. || Can you sort the screws | by type?"
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Got it. Uh, where does this screw go? I'm a bit confused.",
+      "chunked_text": "Got it. || Uh, | where does this screw go? || I'm a bit confused."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "Let's look at the diagram in the instructions. Oh, it's for attaching the side panel.",
+      "chunked_text": "Let's look at the diagram | in the instructions. || Oh, | it's for attaching | the side panel."
+    },
+    {
+      "sentence_order": 8,
+      "foreign_text": "I see! I get it now.",
+      "chunked_text": "I see! || I get it now."
+    },
+    {
+      "sentence_order": 9,
+      "foreign_text": "Great, let's connect the two side panels now. Can you get me the hammer?",
+      "chunked_text": "Great, | let's connect the two side panels now. || Can you get me | the hammer?"
+    },
+    {
+      "sentence_order": 10,
+      "foreign_text": "Wait, don't hit it too hard with the hammer. You might damage the wood.",
+      "chunked_text": "Wait, | don't hit it too hard | with the hammer. || You might damage | the wood."
+    },
+    {
+      "sentence_order": 11,
+      "foreign_text": "I'll be careful. I think we're almost done! I think we're doing a great job.",
+      "chunked_text": "I'll be careful. || I think we're almost done! || I think we're doing | a great job."
+    },
+    {
+      "sentence_order": 12,
+      "foreign_text": "I agree! It'll be so satisfying when it's finished.",
+      "chunked_text": "I agree! || It'll be so satisfying | when it's finished."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "설명서 건네주기"
+      ],
+      "target_sentence": "Can you pass me the instructions?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "나사 종류별로 나누기"
+      ],
+      "target_sentence": "Can you sort the screws by type?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "망치 가져다주기"
+      ],
+      "target_sentence": "Can you get me the hammer?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 4,
+      "keywords": [
+        "설명서",
+        "건네줄래"
+      ],
+      "target_sentence": "Can you pass me the instructions?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 5,
+      "keywords": [
+        "좀 헷갈려"
+      ],
+      "target_sentence": "I'm a bit confused.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 6,
+      "keywords": [
+        "우리 잘하고 있어"
+      ],
+      "target_sentence": "I think we're doing a great job.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 7,
+      "keywords": [
+        "설명서"
+      ],
+      "target_sentence": "Can you pass me the instructions?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 8,
+      "keywords": [
+        "이해했어"
+      ],
+      "target_sentence": "I get it now.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 9,
+      "keywords": [
+        "pass",
+        "instructions"
+      ],
+      "target_sentence": "Can you pass me the instructions?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 10,
+      "keywords": [
+        "a bit confused"
+      ],
+      "target_sentence": "I'm a bit confused.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 11,
+      "keywords": [
+        "doing a great job"
+      ],
+      "target_sentence": "I think we're doing a great job.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "설명서 좀 건네줄래",
+      "foreign_phrase": "Can you pass me the instructions"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "좀 헷갈리네",
+      "foreign_phrase": "I'm a bit confused"
+    },
+    {
+      "sentence_order": 8,
+      "korean_phrase": "이해가 됐어",
+      "foreign_phrase": "I get it now"
+    },
+    {
+      "sentence_order": 9,
+      "korean_phrase": "망치 좀 가져다줄래",
+      "foreign_phrase": "Can you get me the hammer"
+    },
+    {
+      "sentence_order": 11,
+      "korean_phrase": "우리 정말 잘하는 것 같아",
+      "foreign_phrase": "I think we're doing a great job"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 2,
+      "korean_text": "설명서 좀 건네줄래?",
+      "foreign_text": "Can you pass me the instructions?",
+      "reason": "무언가를 요청할 때 일상생활에서 매우 유용하게 사용할 수 있는 핵심 패턴 문장입니다."
+    }
+  ]
+}
