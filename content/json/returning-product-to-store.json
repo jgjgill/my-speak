@@ -1,0 +1,188 @@
+{
+  "topic": {
+    "id": "d5d57452-0e3b-4533-b5cf-cfc73e695bab",
+    "title": "가게에 상품 환불하기",
+    "category": "쇼핑",
+    "difficulty": "초급",
+    "description": "가게에서 구매한 상품이 마음에 들지 않거나 문제가 있을 때 환불을 요청하는 상황의 대화입니다.",
+    "language_code": "en",
+    "total_sentences": 8
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 이 셔츠를 환불하고 싶어요."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "네, 물론이죠. 영수증 가지고 계신가요?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "네, 여기 있어요. 어제 구매했어요."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "알겠습니다. 환불하시려는 특별한 이유가 있으신가요?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "집에 와서 입어보니 사이즈가 안 맞더라고요."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "그렇군요. 환불 처리를 도와드리겠습니다."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "감사합니다."
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "결제하신 카드로 금액이 다시 들어갈 거예요."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, I'd like to return this shirt.",
+      "chunked_text": "Hello, | I'd like to return this shirt."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Of course. Do you have the receipt?",
+      "chunked_text": "Of course. || Do you have the receipt?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Yes, here it is. I bought it yesterday.",
+      "chunked_text": "Yes, | here it is. || I bought it yesterday."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Okay. Is there a specific reason for the return?",
+      "chunked_text": "Okay. || Is there a specific reason | for the return?"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "When I got home and tried it on, it didn't fit right.",
+      "chunked_text": "When I got home and tried it on, | it didn't fit right."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "I see. I can process the refund for you.",
+      "chunked_text": "I see. || I can process the refund | for you."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "Thank you.",
+      "chunked_text": "Thank you."
+    },
+    {
+      "sentence_order": 8,
+      "foreign_text": "The amount will be credited back to the card you paid with.",
+      "chunked_text": "The amount will be credited back | to the card you paid with."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "이 셔츠 환불",
+        "영수증",
+        "어제 구매"
+      ],
+      "target_sentence": "I'd like to return this shirt. I have the receipt. I bought it yesterday.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "환불 이유",
+        "집에 와서 입어보니",
+        "사이즈 안 맞음"
+      ],
+      "target_sentence": "The reason for the return is that when I got home and tried it on, it didn't fit right.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 3,
+      "keywords": [
+        "환불 요청",
+        "영수증 있음"
+      ],
+      "target_sentence": "I'd like a refund. I have the receipt.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 4,
+      "keywords": [
+        "사이즈 안 맞음",
+        "환불 처리"
+      ],
+      "target_sentence": "It didn't fit right, so please process the refund.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 5,
+      "keywords": [
+        "환불",
+        "사이즈"
+      ],
+      "target_sentence": "I'd like to return this because of the size.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 6,
+      "keywords": [
+        "return",
+        "receipt",
+        "didn't fit"
+      ],
+      "target_sentence": "I'd like to return this. I have the receipt. It didn't fit right.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "영수증 가지고 계신가요",
+      "foreign_phrase": "Do you have the receipt"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "특별한 이유가 있으신가요",
+      "foreign_phrase": "Is there a specific reason for the return"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "사이즈가 안 맞더라고요",
+      "foreign_phrase": "it didn't fit right"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "환불 처리를 도와드리겠습니다",
+      "foreign_phrase": "I can process the refund for you"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 5,
+      "korean_text": "집에 와서 입어보니 사이즈가 안 맞더라고요.",
+      "foreign_text": "When I got home and tried it on, it didn't fit right.",
+      "reason": "상품의 사이즈가 맞지 않아 환불하는 상황에서 필수적인 핵심 표현입니다."
+    }
+  ]
+}
