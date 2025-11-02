@@ -1,0 +1,282 @@
+{
+  "topic": {
+    "id": "9a24edb1-c8a2-43f0-87de-b7af9e4cddfc",
+    "title": "친구와 소풍 계획하기",
+    "category": "여가",
+    "difficulty": "초급",
+    "description": "친구와 함께 공원에서 소풍을 가기 위한 계획을 세우는 대화입니다.",
+    "language_code": "en",
+    "total_sentences": 7
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "이번 주말에 날씨가 아주 좋대."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "우리 공원으로 소풍 가는 거 어때?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "정말 좋은 생각이야!"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "내가 샌드위치랑 과일을 좀 챙길게."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "그럼 나는 마실 거랑 돗자리를 가져갈게."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "우리 언제 만날까?"
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "토요일 오전 11시쯤 공원 입구에서 보자."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "The weather is supposed to be great this weekend.",
+      "chunked_text": "The weather is supposed to be great | this weekend."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "How about going on a picnic to the park?",
+      "chunked_text": "How about going on a picnic | to the park?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "That's a great idea!",
+      "chunked_text": "That's a great idea!"
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "I'll pack some sandwiches and fruit.",
+      "chunked_text": "I'll pack | some sandwiches and fruit."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Then I'll bring drinks and a mat.",
+      "chunked_text": "Then I'll bring | drinks and a mat."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "When should we meet?",
+      "chunked_text": "When should we meet?"
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "Let's meet at the park entrance around 11 AM on Saturday.",
+      "chunked_text": "Let's meet at the park entrance || around 11 AM on Saturday."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "이번 주말",
+        "날씨 좋대"
+      ],
+      "target_sentence": "The weather is supposed to be great this weekend.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "공원",
+        "소풍 가는 거 어때"
+      ],
+      "target_sentence": "How about going on a picnic to the park?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "샌드위치",
+        "과일",
+        "챙길게"
+      ],
+      "target_sentence": "I'll pack some sandwiches and fruit.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "토요일 오전 11시",
+        "공원 입구",
+        "만나자"
+      ],
+      "target_sentence": "Let's meet at the park entrance around 11 AM on Saturday.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 5,
+      "keywords": [
+        "주말 날씨"
+      ],
+      "target_sentence": "The weather is supposed to be great this weekend.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 6,
+      "keywords": [
+        "공원 소풍 제안"
+      ],
+      "target_sentence": "How about going on a picnic to the park?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 7,
+      "keywords": [
+        "내가 챙길 것"
+      ],
+      "target_sentence": "I'll pack some sandwiches and fruit.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "만날 시간",
+        "장소"
+      ],
+      "target_sentence": "Let's meet at the park entrance around 11 AM on Saturday.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 9,
+      "keywords": [
+        "날씨"
+      ],
+      "target_sentence": "The weather is supposed to be great this weekend.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 10,
+      "keywords": [
+        "소풍?"
+      ],
+      "target_sentence": "How about going on a picnic to the park?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 11,
+      "keywords": [
+        "음식"
+      ],
+      "target_sentence": "I'll pack some sandwiches and fruit.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 12,
+      "keywords": [
+        "약속"
+      ],
+      "target_sentence": "Let's meet at the park entrance around 11 AM on Saturday.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 13,
+      "keywords": [
+        "Weather",
+        "weekend"
+      ],
+      "target_sentence": "The weather is supposed to be great this weekend.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 14,
+      "keywords": [
+        "Picnic",
+        "park"
+      ],
+      "target_sentence": "How about going on a picnic to the park?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 15,
+      "keywords": [
+        "Pack",
+        "sandwiches"
+      ],
+      "target_sentence": "I'll pack some sandwiches and fruit.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 16,
+      "keywords": [
+        "Meet",
+        "when",
+        "where"
+      ],
+      "target_sentence": "Let's meet at the park entrance around 11 AM on Saturday.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "소풍 가는 거 어때",
+      "foreign_phrase": "How about going on a picnic"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "좋은 생각이야",
+      "foreign_phrase": "That's a great idea"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "챙길게",
+      "foreign_phrase": "I'll pack"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "언제 만날까",
+      "foreign_phrase": "When should we meet"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 2,
+      "korean_text": "우리 공원으로 소풍 가는 거 어때?",
+      "foreign_text": "How about going on a picnic to the park?",
+      "reason": "제안하기 상황에서 가장 기본적이고 활용도 높은 핵심 패턴인 'How about ~?'을 포함하고 있어 학습 가치가 높습니다."
+    }
+  ]
+}
