@@ -60,13 +60,20 @@ CONTENT_DIR="$PROJECT_ROOT/content/source"
 RECENT_TOPICS=""
 
 if [ -d "$CONTENT_DIR" ] && [ "$(ls -A $CONTENT_DIR/*.md 2>/dev/null)" ]; then
-  # 최근 10개 파일의 title 추출 (존재하는 경우만)
-  RECENT_TOPICS=$(ls -t "$CONTENT_DIR"/*.md 2>/dev/null | head -10 | while read file; do
-    grep "^title:" "$file" 2>/dev/null | sed 's/^title:\s*"\?\(.*\)"\?$/\1/' | tr -d '"'
+  # 최근 20개 파일의 title 추출 (awk로 정확하게 파싱)
+  RECENT_TOPICS=$(ls -t "$CONTENT_DIR"/*.md 2>/dev/null | head -20 | while read file; do
+    awk '/^title:/ {gsub(/^title:[[:space:]]*"|"[[:space:]]*$/, ""); print}' "$file"
   done | paste -sd ", " -)
 
   if [ -n "$RECENT_TOPICS" ]; then
-    echo -e "${BLUE}최근 생성된 주제: $RECENT_TOPICS${NC}"
+    echo -e "${BLUE}최근 생성된 주제 (20개):${NC}"
+    echo -e "${BLUE}$RECENT_TOPICS${NC}"
+  else
+    echo -e "${YELLOW}⚠️  주제 추출 실패 - 디버깅 정보:${NC}"
+    ls -t "$CONTENT_DIR"/*.md 2>/dev/null | head -3 | while read file; do
+      echo "  파일: $(basename $file)"
+      grep "^title:" "$file" || echo "    → title 필드 없음"
+    done
   fi
 fi
 
