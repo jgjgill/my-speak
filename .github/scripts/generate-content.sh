@@ -59,22 +59,24 @@ echo -e "${YELLOW}📋 최근 생성된 주제 확인 중...${NC}"
 CONTENT_DIR="$PROJECT_ROOT/content/source"
 RECENT_TOPICS=""
 
-if [ -d "$CONTENT_DIR" ] && [ "$(ls -A $CONTENT_DIR/*.md 2>/dev/null)" ]; then
-  # 최근 20개 파일의 title 추출 (awk로 정확하게 파싱)
-  RECENT_TOPICS=$(ls -t "$CONTENT_DIR"/*.md 2>/dev/null | head -20 | while read file; do
-    awk '/^title:/ {gsub(/^title:[[:space:]]*"|"[[:space:]]*$/, ""); print}' "$file"
-  done | paste -sd ", " -)
+if [ -d "$PROJECT_ROOT/.git" ]; then
+  # Git 커밋 메시지 기반으로 최근 25개 콘텐츠 주제 추출 (중복 제거 후 20개 사용)
+  RECENT_TOPICS=$(git log --all --oneline --grep="^content:" 2>/dev/null | head -25 | while read hash message; do
+    # 각 커밋에서 content/source/*.md 파일 찾기
+    git show --name-only --pretty=format: "$hash" 2>/dev/null | grep "^content/source/.*\.md$" | head -1 | while read filepath; do
+      # 해당 파일에서 title 추출
+      git show "$hash:$filepath" 2>/dev/null | awk '/^title:/ {gsub(/^title:[[:space:]]*"|"[[:space:]]*$/, ""); print; exit}'
+    done
+  done | awk '!seen[$0]++' | head -20 | paste -sd ", " -)
 
   if [ -n "$RECENT_TOPICS" ]; then
-    echo -e "${BLUE}최근 생성된 주제 (20개):${NC}"
+    echo -e "${BLUE}최근 생성된 주제 (Git 커밋 기준, 중복 제거):${NC}"
     echo -e "${BLUE}$RECENT_TOPICS${NC}"
   else
-    echo -e "${YELLOW}⚠️  주제 추출 실패 - 디버깅 정보:${NC}"
-    ls -t "$CONTENT_DIR"/*.md 2>/dev/null | head -3 | while read file; do
-      echo "  파일: $(basename $file)"
-      grep "^title:" "$file" || echo "    → title 필드 없음"
-    done
+    echo -e "${YELLOW}⚠️  Git 커밋에서 주제 추출 실패${NC}"
   fi
+else
+  echo -e "${YELLOW}⚠️  Git 저장소가 아닙니다. 블랙리스트 사용 안 함.${NC}"
 fi
 
 # UUID의 마지막 문자를 추출하여 문장 수 가이드 생성
