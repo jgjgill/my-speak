@@ -186,7 +186,7 @@ if [ -z "$CLEANED_CONTENT" ]; then
 fi
 
 # frontmatter에서 slug 추출하여 파일명 생성
-SLUG=$(echo "$CLEANED_CONTENT" | grep -m 1 '^slug:' | sed 's/^slug:\s*"\?\(.*\)"\?$/\1/' | tr -d '"' | xargs)
+SLUG=$(echo "$CLEANED_CONTENT" | awk '/^slug:/ {gsub(/^slug:[[:space:]]*"|"[[:space:]]*$/, ""); print; exit}' | xargs)
 
 if [ -n "$SLUG" ] && [[ "$SLUG" =~ ^[a-z0-9-]+$ ]]; then
   # slug가 유효한 형식이면 파일명으로 사용
