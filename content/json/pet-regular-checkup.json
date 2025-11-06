@@ -1,0 +1,321 @@
+{
+  "topic": {
+    "id": "515589ce-88de-4079-86e6-f5de0657c8af",
+    "title": "반려동물 정기 검진받기",
+    "category": "일상",
+    "difficulty": "초급",
+    "description": "동물병원에 방문하여 반려동물의 정기 건강 검진을 받는 상황의 대화입니다.",
+    "language_code": "en",
+    "total_sentences": 12
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 제 고양이 레오 정기 검진을 예약했는데요."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "네, 확인되었습니다. 잠시만 기다려주세요."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "최근에 레오가 어디 불편한 곳은 없었나요?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "아니요, 특별한 문제는 없었어요."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "식욕은 어때요? 평소처럼 잘 먹나요?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "네, 밥도 잘 먹고 간식도 좋아해요."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "알겠습니다. 오늘 예방접종도 같이 할 수 있을까요?"
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "네, 수의사 선생님과 상담 후에 가능합니다."
+    },
+    {
+      "sentence_order": 9,
+      "korean_text": "혹시 특별히 걱정되는 부분이 있으신가요?"
+    },
+    {
+      "sentence_order": 10,
+      "korean_text": "음, 가끔 재채기를 하는 것 같아요."
+    },
+    {
+      "sentence_order": 11,
+      "korean_text": "알겠습니다. 그 부분도 진료 때 말씀드릴게요."
+    },
+    {
+      "sentence_order": 12,
+      "korean_text": "이제 진료실로 들어가시면 됩니다."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, I have an appointment for a regular check-up for my cat, Leo.",
+      "chunked_text": "Hello, | I have an appointment for a regular check-up | for my cat, | Leo."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Okay, I've confirmed it. Please wait a moment.",
+      "chunked_text": "Okay, | I've confirmed it. || Please wait a moment."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Has Leo shown any signs of discomfort recently?",
+      "chunked_text": "Has Leo shown any signs of discomfort | recently?"
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "No, there haven't been any particular problems.",
+      "chunked_text": "No, | there haven't been any particular problems."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "How is his appetite? Is he eating well as usual?",
+      "chunked_text": "How is his appetite? || Is he eating well as usual?"
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Yes, he eats his meals well and loves his treats.",
+      "chunked_text": "Yes, | he eats his meals well | and loves his treats."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "I see. Yes, can we also get his vaccinations today?",
+      "chunked_text": "I see. || Yes, | can we also get his vaccinations today?"
+    },
+    {
+      "sentence_order": 8,
+      "foreign_text": "Yes, that's possible after consulting with the veterinarian.",
+      "chunked_text": "Yes, | that's possible | after consulting with the veterinarian."
+    },
+    {
+      "sentence_order": 9,
+      "foreign_text": "Do you have any particular concerns?",
+      "chunked_text": "Do you have | any particular concerns?"
+    },
+    {
+      "sentence_order": 10,
+      "foreign_text": "Well, he seems to sneeze sometimes.",
+      "chunked_text": "Well, | he seems to sneeze sometimes."
+    },
+    {
+      "sentence_order": 11,
+      "foreign_text": "Okay. I'll mention that during the examination.",
+      "chunked_text": "Okay. || I'll mention that | during the examination."
+    },
+    {
+      "sentence_order": 12,
+      "foreign_text": "You can go into the exam room now.",
+      "chunked_text": "You can go into the exam room | now."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "고양이 정기 검진",
+        "예약했어요"
+      ],
+      "target_sentence": "Hello, I have an appointment for a regular check-up for my cat, Leo.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "최근 불편한 점",
+        "있었나요"
+      ],
+      "target_sentence": "Has Leo shown any signs of discomfort recently?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "오늘 예방접종",
+        "가능할까요"
+      ],
+      "target_sentence": "Can we also get his vaccinations today?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "가끔 재채기",
+        "하는 것 같아요"
+      ],
+      "target_sentence": "He seems to sneeze sometimes.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 5,
+      "keywords": [
+        "정기 검진 예약"
+      ],
+      "target_sentence": "I have an appointment for a regular check-up.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 6,
+      "keywords": [
+        "식욕은 어떤가요"
+      ],
+      "target_sentence": "How is his appetite?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 7,
+      "keywords": [
+        "예방접종 가능 여부"
+      ],
+      "target_sentence": "Can we also get his vaccinations today?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "걱정되는 부분"
+      ],
+      "target_sentence": "Do you have any particular concerns?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 9,
+      "keywords": [
+        "예약"
+      ],
+      "target_sentence": "I have an appointment.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 10,
+      "keywords": [
+        "식욕"
+      ],
+      "target_sentence": "How is his appetite?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 11,
+      "keywords": [
+        "예방접종"
+      ],
+      "target_sentence": "Can we get his vaccinations?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 12,
+      "keywords": [
+        "걱정"
+      ],
+      "target_sentence": "Any concerns?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 13,
+      "keywords": [
+        "Appointment",
+        "check-up"
+      ],
+      "target_sentence": "I have an appointment for a regular check-up.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 14,
+      "keywords": [
+        "Appetite"
+      ],
+      "target_sentence": "How is his appetite?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 15,
+      "keywords": [
+        "Vaccinations"
+      ],
+      "target_sentence": "Can we also get his vaccinations today?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 16,
+      "keywords": [
+        "Concerns",
+        "sneeze"
+      ],
+      "target_sentence": "Do you have any particular concerns? He seems to sneeze sometimes.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 1,
+      "korean_phrase": "정기 검진을 예약했는데요",
+      "foreign_phrase": "I have an appointment for a regular check-up"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "식욕은 어때요",
+      "foreign_phrase": "How is his appetite"
+    },
+    {
+      "sentence_order": 9,
+      "korean_phrase": "특별히 걱정되는 부분",
+      "foreign_phrase": "any particular concerns"
+    },
+    {
+      "sentence_order": 10,
+      "korean_phrase": "재채기를 하는 것 같아요",
+      "foreign_phrase": "seems to sneeze sometimes"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 7,
+      "korean_text": "네, 오늘 예방접종도 같이 할 수 있을까요?",
+      "foreign_text": "Yes, can we also get his vaccinations today?",
+      "reason": "정기 검진 시 예방접종 가능 여부를 묻는 것은 매우 실용적이고 자주 사용되는 핵심 질문입니다."
+    }
+  ]
+}
