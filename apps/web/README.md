@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/create-next-app).
+# Web App
 
-## Getting Started
+Next.js 기반 언어 학습 웹 애플리케이션. 4단계 학습 시스템과 Supabase 연동 인증을 제공합니다.
 
-First, run the development server:
+## 기술 스택
+
+- **Next.js 15** + React 19 (App Router)
+- **Tailwind CSS v4** - 스타일링
+- **Supabase** - 인증 및 데이터베이스
+- **TanStack Query 5** - 서버 상태 관리
+- **TypeScript 5.8** - 타입 안정성
+
+## 주요 기능
+
+- 4단계 학습 시스템 (한글→외국어→자유연습→키워드 스피치)
+- Google OAuth 인증
+- 학습 진행도 추적
+- TTS(Text-to-Speech) 음성 재생
+- 음성 녹음 및 평가
+
+## 개발 환경 설정
+
+### 환경 변수
+
+`.env.local` 파일을 생성하고 다음 변수를 설정하세요:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 개발 서버 실행
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# 루트에서 실행 (권장)
+pnpm dev --filter=web
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load Inter, a custom Google Font.
+# 또는 apps/web 디렉토리에서
+pnpm dev
+```
 
-## Learn More
+개발 서버: http://localhost:3000
 
-To learn more about Next.js, take a look at the following resources:
+## 명령어
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+# 개발
+pnpm dev
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# 빌드
+pnpm build
 
-## Deploy on Vercel
+# 프로덕션 실행
+pnpm start
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# 린트 및 타입 체크
+pnpm lint
+pnpm check-types
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# 테스트
+pnpm test
+```
+
+## 아키텍처 문서
+
+- [TanStack Query 아키텍처](./docs/development/tanstack-query-architecture.md)
+- [WebView 연동 아키텍처](../../docs/development/webview-integration-architecture.md)
+- [인증 아키텍처](../../docs/development/authentication-architecture.md)

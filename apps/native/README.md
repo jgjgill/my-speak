@@ -1,50 +1,95 @@
-# Welcome to your Expo app 👋
+# Native App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Expo 기반 React Native 모바일 애플리케이션. WebView 연동과 네이티브 기능(음성, 인증)을 제공합니다.
 
-## Get started
+## 기술 스택
 
-1. Install dependencies
+- **Expo 53** + React Native 0.79
+- **NativeWind** - Tailwind CSS for React Native
+- **Supabase OAuth** - Google, Apple 로그인
+- **TanStack Query 5** - 서버 상태 관리
+- **React Native WebView** - 웹 앱 연동
+- **Expo Speech & Audio** - 음성 재생 및 녹음
 
-   ```bash
-   npm install
-   ```
+## 주요 기능
 
-2. Start the app
+- 네이티브 Google/Apple 로그인
+- WebView로 웹 앱 임베딩 (세션 동기화)
+- 음성 재생 (TTS)
+- 음성 녹음 및 평가
+- Safe Area 자동 처리
 
-   ```bash
-   npx expo start
-   ```
+## 개발 환경 설정
 
-In the output, you'll find options to open the app in a
+### 환경 변수
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+`.env` 파일을 생성하고 다음 변수를 설정하세요:
 
 ```bash
-npm run reset-project
+# Supabase 설정
+EXPO_PUBLIC_SUPABASE_URL=your_supabase_url
+EXPO_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+
+# 앱 URL 설정
+EXPO_PUBLIC_BASE_URL=your_base_url
+EXPO_PUBLIC_WEB_APP_URL=your_web_app_url
+EXPO_PUBLIC_SCHEME=myspeaknative://
+
+# OAuth 설정 (Google)
+GOOGLE_CLIENT_ID=your_google_client_id
+GOOGLE_CLIENT_SECRET=your_google_client_secret
+
+# OAuth 설정 (Apple)
+APPLE_CLIENT_ID_WEB=your_apple_client_id
+APPLE_CLIENT_SECRET_WEB=your_apple_client_secret
+
+# JWT 설정
+JWT_SECRET=your_jwt_secret
+JWT_REFRESH_SECRET=your_jwt_refresh_secret
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 개발 서버 실행
 
-## Learn more
+```bash
+# 루트에서 실행 (권장)
+pnpm dev --filter=native
 
-To learn more about developing your project with Expo, look at the following resources:
+# 또는 apps/native 디렉토리에서
+pnpm start
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### 플랫폼별 실행
 
-## Join the community
+```bash
+# iOS 시뮬레이터
+pnpm ios
 
-Join our community of developers creating universal apps.
+# Android 에뮬레이터
+pnpm android
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+# 웹 (개발용)
+pnpm web
+```
+
+## 명령어
+
+```bash
+# 개발 서버 시작
+pnpm start
+
+# 린트
+pnpm lint
+pnpm lint:fix
+
+# 프로젝트 초기화 (새 시작 시)
+pnpm reset-project
+```
+
+## 아키텍처 문서
+
+- [WebView 연동 아키텍처](../../docs/development/webview-integration-architecture.md)
+- [인증 아키텍처](../../docs/development/authentication-architecture.md)
+
+## 빌드 및 배포
+
+Expo 앱 빌드는 [Expo 공식 문서](https://docs.expo.dev/build/introduction/)를 참조하세요.
