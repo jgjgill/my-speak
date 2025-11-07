@@ -1,0 +1,306 @@
+{
+  "topic": {
+    "id": "af05f78f-b20c-4c55-bb05-ed1978285cdf",
+    "title": "동물 보호소에서 처음으로 봉사활동하기",
+    "category": "일상",
+    "difficulty": "초급",
+    "description": "동물 보호소에서 처음으로 봉사활동을 시작하며 직원과 나누는 대화입니다. 기본적인 업무 지시를 받고 질문하는 표현을 배울 수 있습니다.",
+    "language_code": "en",
+    "total_sentences": 12
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 오늘부터 새로 온 봉사자 김민준입니다."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "안녕하세요, 민준 씨! 환영합니다. 저는 사라예요."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "제가 오늘 무엇을 도와드리면 될까요?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "우선, 강아지들에게 물을 좀 채워주시겠어요?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "네, 알겠습니다. 물그릇은 어디에 있나요?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "저쪽 선반 위에 있어요. 그리고 산책이 필요한 강아지들이 몇 마리 있어요."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "제가 강아지들을 산책시켜도 괜찮을까요?"
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "물론이죠! 저기 세 마리 강아지들이 오늘 산책할 차례예요."
+    },
+    {
+      "sentence_order": 9,
+      "korean_text": "알겠습니다. 산책 시간은 보통 얼마나 되나요?"
+    },
+    {
+      "sentence_order": 10,
+      "korean_text": "마리당 약 15분 정도면 충분해요."
+    },
+    {
+      "sentence_order": 11,
+      "korean_text": "네, 알겠습니다. 다녀와서 또 뭘 하면 될지 여쭤볼게요."
+    },
+    {
+      "sentence_order": 12,
+      "korean_text": "고마워요! 도움이 필요하면 언제든지 물어보세요."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, I'm Kim Minjun, the new volunteer starting today.",
+      "chunked_text": "Hello, | I'm Kim Minjun, | the new volunteer | starting today."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Hi, Minjun! Welcome. I'm Sarah.",
+      "chunked_text": "Hi, Minjun! | Welcome. || I'm Sarah."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "What can I help with today?",
+      "chunked_text": "What can I help with | today?"
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "First, could you please fill up the water bowls for the dogs?",
+      "chunked_text": "First, | could you please fill up | the water bowls | for the dogs?"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Yes, I can do that. Where are the water bowls?",
+      "chunked_text": "Yes, | I can do that. || Where are the water bowls?"
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "They're on the shelf over there. Also, there are a few dogs that need to be walked.",
+      "chunked_text": "They're on the shelf | over there. || Also, | there are a few dogs | that need to be walked."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "Is it okay if I walk the dogs?",
+      "chunked_text": "Is it okay | if I walk the dogs?"
+    },
+    {
+      "sentence_order": 8,
+      "foreign_text": "Of course! Those three dogs over there are next for their walk today.",
+      "chunked_text": "Of course! || Those three dogs over there | are next for their walk today."
+    },
+    {
+      "sentence_order": 9,
+      "foreign_text": "Got it. How long are the walks usually?",
+      "chunked_text": "Got it. || How long are the walks | usually?"
+    },
+    {
+      "sentence_order": 10,
+      "foreign_text": "About 15 minutes per dog is enough.",
+      "chunked_text": "About 15 minutes | per dog | is enough."
+    },
+    {
+      "sentence_order": 11,
+      "foreign_text": "Okay, I understand. I'll ask what to do next when I get back.",
+      "chunked_text": "Okay, | I understand. || I'll ask what to do next | when I get back."
+    },
+    {
+      "sentence_order": 12,
+      "foreign_text": "Thank you! If you need any help, feel free to ask.",
+      "chunked_text": "Thank you! || If you need any help, | feel free to ask."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "새로운 봉사자",
+        "오늘 시작"
+      ],
+      "target_sentence": "Hello, I'm the new volunteer starting today.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "오늘 무엇을 도와드릴까요"
+      ],
+      "target_sentence": "What can I help with today?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "산책이 필요한 강아지들"
+      ],
+      "target_sentence": "There are a few dogs that need to be walked.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "마리당 약 15분이면 충분해요"
+      ],
+      "target_sentence": "About 15 minutes per dog is enough.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 5,
+      "keywords": [
+        "새로운 봉사자"
+      ],
+      "target_sentence": "I'm the new volunteer.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 6,
+      "keywords": [
+        "도와드릴까요?"
+      ],
+      "target_sentence": "What can I help with?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 7,
+      "keywords": [
+        "강아지 산책"
+      ],
+      "target_sentence": "Walk the dogs.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "15분"
+      ],
+      "target_sentence": "15 minutes is enough.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 9,
+      "keywords": [
+        "봉사자"
+      ],
+      "target_sentence": "I'm a volunteer.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 10,
+      "keywords": [
+        "산책"
+      ],
+      "target_sentence": "Walk the dogs.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 11,
+      "keywords": [
+        "도움 필요"
+      ],
+      "target_sentence": "Need any help?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 12,
+      "keywords": [
+        "New volunteer"
+      ],
+      "target_sentence": "Hello, I'm the new volunteer starting today.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 13,
+      "keywords": [
+        "Help with"
+      ],
+      "target_sentence": "What can I help with today?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 14,
+      "keywords": [
+        "Need to be walked"
+      ],
+      "target_sentence": "There are a few dogs that need to be walked.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 15,
+      "keywords": [
+        "Feel free to ask"
+      ],
+      "target_sentence": "If you need any help, feel free to ask.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 3,
+      "korean_phrase": "무엇을 도와드리면 될까요",
+      "foreign_phrase": "what I can help with"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "산책이 필요한",
+      "foreign_phrase": "need to be walked"
+    },
+    {
+      "sentence_order": 10,
+      "korean_phrase": "마리당 약 15분 정도면",
+      "foreign_phrase": "about 15 minutes per dog"
+    },
+    {
+      "sentence_order": 12,
+      "korean_phrase": "언제든지 물어보세요",
+      "foreign_phrase": "feel free to ask"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 3,
+      "korean_text": "제가 오늘 무엇을 도와드리면 될까요?",
+      "foreign_text": "What can I help with today?",
+      "reason": "봉사활동이나 새로운 업무를 시작할 때, 자신이 할 일을 주도적으로 묻는 매우 실용적이고 필수적인 표현입니다."
+    }
+  ]
+}
