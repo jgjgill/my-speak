@@ -1,0 +1,51 @@
+"use client";
+
+import { useTTSMode } from "../model/use-tts-mode";
+import BrowserTTS from "./browser-tts";
+import UnsupportedTTS from "./unsupported-tts";
+import WebViewTTS from "./webview-tts";
+
+interface TTSManagerProps {
+	text: string;
+	language?: string;
+	onSpeakStart?: () => void;
+	onSpeakEnd?: () => void;
+	onError?: (error: string) => void;
+	id: string;
+}
+
+export default function TTSManager({
+	text,
+	language,
+	onSpeakStart,
+	onSpeakEnd,
+	onError,
+	id,
+}: TTSManagerProps) {
+	const ttsMode = useTTSMode();
+
+	return (
+		<>
+			{ttsMode === "browser" && (
+				<BrowserTTS
+					text={text}
+					language={language}
+					onSpeakStart={onSpeakStart}
+					onSpeakEnd={onSpeakEnd}
+					onError={onError}
+				/>
+			)}
+			{ttsMode === "webview" && (
+				<WebViewTTS
+					id={id}
+					text={text}
+					language={language}
+					onSpeakStart={onSpeakStart}
+					onSpeakEnd={onSpeakEnd}
+					onError={onError}
+				/>
+			)}
+			{ttsMode === "unsupported" && <UnsupportedTTS />}
+		</>
+	);
+}
