@@ -1,5 +1,6 @@
 export * from "./auth";
 export * from "./deep-link";
+export * from "./learning-points";
 export * from "./platform";
 export * from "./toast";
 export * from "./tts-bridge";
