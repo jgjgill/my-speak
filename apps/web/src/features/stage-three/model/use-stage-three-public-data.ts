@@ -9,7 +9,7 @@ import {
 
 export const getEmptyUserSelectedPoints = async (): Promise<never[]> => [];
 
-export function useStageTwoPublicData(topicId: string, user?: User | null) {
+export function useStageThreePublicData(topicId: string, user?: User | null) {
 	return useSuspenseQueries({
 		queries: [
 			{

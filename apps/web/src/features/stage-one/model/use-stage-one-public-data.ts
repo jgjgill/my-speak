@@ -4,7 +4,7 @@ import {
 	getKoreanScripts,
 	getLearningPoints,
 	getUserSelectedPoints,
-} from "../../../../app/[language]/topics/[id]/queries/stage-queries";
+} from "@/entities/topic";
 
 export const getEmptyUserSelectedPoints = async (): Promise<never[]> => [];
 
