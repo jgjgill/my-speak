@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useParams } from "next/navigation";
-import { type LanguageCode, languageInfo } from "../../../constants/languages";
+import { type LanguageCode, languageInfo } from "@/shared/config";
 import type { TopicWithHighlight } from "../queries/topics-queries";
 
 interface TopicCardProps {

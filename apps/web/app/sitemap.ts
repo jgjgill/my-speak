@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import {
 	getSupportedLanguages,
 	getTopicsForSitemap,
-} from "./utils/sitemap/data";
+} from "@/shared/lib/sitemap";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 	const baseUrl = "https://my-speak.com";
