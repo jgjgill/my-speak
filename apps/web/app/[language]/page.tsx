@@ -1,3 +1,1 @@
-export default function LanguagePage() {
-	return <div>Language Page ing...</div>;
-}
+export { default } from "@/views/language-home";
