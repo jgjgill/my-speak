@@ -1,6 +1,6 @@
 import type { User } from "@supabase/supabase-js";
 import { useQuery } from "@tanstack/react-query";
-import { createClient } from "../utils/supabase/client";
+import { createClient } from "@/shared/api/supabase/client";
 
 async function getUser(): Promise<User | null> {
 	try {
