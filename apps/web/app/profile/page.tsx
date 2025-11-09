@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
-import { useAuth } from "../contexts/auth-context";
+import { useAuth } from "@/shared/lib/auth";
 import { getAvatarColor, getDisplayName, getInitials } from "./avatar.utils";
 
 export default function ProfilePage() {

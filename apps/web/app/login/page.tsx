@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
-import { useAuth } from "../contexts/auth-context";
+import { useAuth } from "@/shared/lib/auth";
 
 export default function LoginPage() {
 	const { user, signInWithGoogle, signInWithApple } = useAuth();

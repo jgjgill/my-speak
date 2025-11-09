@@ -1,7 +1,7 @@
 "use client";
 
-import { useToast } from "../contexts/toast-context";
-import { useWebView } from "../contexts/webview-context";
+import { useToast } from "@/shared/lib/toast";
+import { useWebView } from "@/shared/lib/webview";
 
 const MAX_VISIBLE_TOASTS = 3;
 

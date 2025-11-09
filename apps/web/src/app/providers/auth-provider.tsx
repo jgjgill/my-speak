@@ -4,6 +4,7 @@ import type { User } from "@supabase/supabase-js";
 import { useQueryClient } from "@tanstack/react-query";
 import { useRouter } from "next/navigation";
 import { type PropsWithChildren, useEffect } from "react";
+import { useUser } from "@/entities/user";
 import { createBrowserClient } from "@/shared/api/supabase";
 import { AuthProvider as AuthContextProvider } from "@/shared/lib/auth";
 
@@ -14,14 +15,6 @@ import { AuthProvider as AuthContextProvider } from "@/shared/lib/auth";
 
 interface AuthProviderProps extends PropsWithChildren {
 	initialUser?: User | null;
-}
-
-// useUser hook - entities/user로 이동 예정이지만 일단 여기 유지
-function useUser(initialUser: User | null = null) {
-	// TODO: 2단계에서 entities/user로 이동
-	const queryClient = useQueryClient();
-	const data = queryClient.getQueryData<User | null>(["user"]) ?? initialUser;
-	return { data, isLoading: false };
 }
 
 export function AuthProvider({

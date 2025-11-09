@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { useAuth } from "../contexts/auth-context";
+import { useAuth } from "@/shared/lib/auth";
 
 function getInitials(name?: string): string {
 	if (!name) return "U";

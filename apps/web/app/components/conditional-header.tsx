@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useWebView } from "../contexts/webview-context";
+import { useWebView } from "@/shared/lib/webview";
 import AuthButton from "./auth-button";
 
 export default function ConditionalHeader() {

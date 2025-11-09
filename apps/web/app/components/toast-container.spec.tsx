@@ -6,8 +6,9 @@ import {
 	waitFor,
 } from "@testing-library/react";
 import { afterEach, describe, expect, it } from "vitest";
-import { ToastProvider, useToast } from "../contexts/toast-context";
-import { WebViewProvider } from "../contexts/webview-context";
+import { ToastProvider } from "@/app/providers/toast-provider";
+import { WebViewProvider } from "@/app/providers/webview-provider";
+import { useToast } from "@/shared/lib/toast";
 import ToastContainer from "./toast-container";
 
 function TestComponent() {

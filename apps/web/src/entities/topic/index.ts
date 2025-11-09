@@ -22,6 +22,6 @@ export {
 	getUserTranslations,
 } from "./api";
 
-export { useTopicsInfinite } from "./model";
+export { useTopic, useTopicsInfinite } from "./model";
 
 export { TopicCard } from "./ui";
