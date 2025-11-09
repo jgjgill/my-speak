@@ -12,11 +12,13 @@ import {
 	WebViewProvider,
 } from "@/app/providers";
 import { getCurrentUser } from "@/shared/lib/auth/server";
-import ConditionalHeader from "../../app/components/conditional-header";
-import GoogleAnalytics from "../../app/components/google-analytics";
-import NativeBridge from "../../app/components/native-bridge";
-import StructuredData from "../../app/components/structured-data";
-import ToastContainer from "../../app/components/toast-container";
+import {
+	ConditionalHeader,
+	GoogleAnalytics,
+	NativeBridge,
+	StructuredData,
+	ToastContainer,
+} from "@/shared/ui";
 
 export const metadata: Metadata = {
 	title: {
