@@ -1,0 +1,218 @@
+{
+  "topic": {
+    "id": "3dda90db-3e80-43fb-aaa9-2587658b7021",
+    "title": "커뮤니티 센터에서 스포츠 강좌 등록하기",
+    "category": "일상",
+    "difficulty": "초급",
+    "description": "커뮤니티 센터에 방문하여 원하는 스포츠 강좌에 대해 문의하고 등록하는 상황의 대화입니다.",
+    "language_code": "en",
+    "total_sentences": 6
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 테니스 강좌에 대해 문의하고 싶어서요."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "네, 안녕하세요! 초급반은 화요일과 목요일 저녁에 있습니다."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "혹시 자리가 남아 있나요?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "네, 아직 몇 자리 남아있어요. 바로 등록 도와드릴까요?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "좋아요. 등록하려면 무엇이 필요한가요?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "이 신청서를 작성해 주시고 신분증을 보여주시면 됩니다."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, I'd like to ask about the tennis class.",
+      "chunked_text": "Hello, | I'd like to ask about | the tennis class."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Hi there! The beginner class is on Tuesday and Thursday evenings.",
+      "chunked_text": "Hi there! || The beginner class is on | Tuesday and Thursday evenings."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Are there any spots left?",
+      "chunked_text": "Are there | any spots left?"
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Yes, there are still a few spots available. Would you like to register now?",
+      "chunked_text": "Yes, | there are still a few spots available. || Would you like to | register now?"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Great. What do I need to do to sign up?",
+      "chunked_text": "Great. || What do I need to do | to sign up?"
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Just fill out this application form and show me your ID card, please.",
+      "chunked_text": "Just fill out | this application form | and show me your ID card, | please."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "테니스 강좌",
+        "문의"
+      ],
+      "target_sentence": "Hello, I'd like to ask about the tennis class.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "자리 남아 있나요"
+      ],
+      "target_sentence": "Are there any spots left?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "등록",
+        "무엇이 필요한가요"
+      ],
+      "target_sentence": "What do I need to do to sign up?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 4,
+      "keywords": [
+        "테니스 강좌 문의"
+      ],
+      "target_sentence": "Hello, I'd like to ask about the tennis class.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 5,
+      "keywords": [
+        "자리 있나요"
+      ],
+      "target_sentence": "Are there any spots left?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 6,
+      "keywords": [
+        "등록 방법"
+      ],
+      "target_sentence": "What do I need to do to sign up?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 7,
+      "keywords": [
+        "문의"
+      ],
+      "target_sentence": "I'd like to ask about...",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 8,
+      "keywords": [
+        "자리"
+      ],
+      "target_sentence": "any spots left?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 9,
+      "keywords": [
+        "등록"
+      ],
+      "target_sentence": "to sign up?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 10,
+      "keywords": [
+        "ask about"
+      ],
+      "target_sentence": "Hello, I'd like to ask about the tennis class.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 11,
+      "keywords": [
+        "spots left"
+      ],
+      "target_sentence": "Are there any spots left?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 12,
+      "keywords": [
+        "sign up"
+      ],
+      "target_sentence": "What do I need to do to sign up?",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 1,
+      "korean_phrase": "문의하고 싶어서요",
+      "foreign_phrase": "I'd like to ask about"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "자리가 남아 있나요",
+      "foreign_phrase": "are there any spots left"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "무엇이 필요한가요",
+      "foreign_phrase": "what do I need to do"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 3,
+      "korean_text": "혹시 자리가 남아 있나요?",
+      "foreign_text": "Are there any spots left?",
+      "reason": "강좌 등록 가능 여부를 묻는 핵심 질문으로, 다양한 예약 및 신청 상황에서 활용도가 높은 필수 표현입니다."
+    }
+  ]
+}
