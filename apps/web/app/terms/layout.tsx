@@ -1,1 +1,1 @@
-export { TermsLayout as default, metadata } from "@/views/terms";
+export { metadata, TermsLayout as default } from "@/views/terms";

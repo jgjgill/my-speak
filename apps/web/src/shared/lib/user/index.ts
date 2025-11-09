@@ -1,1 +1,1 @@
-export { getDisplayName, getInitials, getAvatarColor } from "./avatar";
+export { getAvatarColor, getDisplayName, getInitials } from "./avatar";

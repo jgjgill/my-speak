@@ -5,9 +5,7 @@ interface LanguageLayoutProps {
 	children: ReactNode;
 }
 
-export default function LanguageHomeLayout({
-	children,
-}: LanguageLayoutProps) {
+export default function LanguageHomeLayout({ children }: LanguageLayoutProps) {
 	return (
 		<>
 			{children}

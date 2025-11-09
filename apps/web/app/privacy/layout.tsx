@@ -1,1 +1,1 @@
-export { PrivacyLayout as default, metadata } from "@/views/privacy";
+export { metadata, PrivacyLayout as default } from "@/views/privacy";

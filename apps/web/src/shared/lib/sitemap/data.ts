@@ -1,8 +1,8 @@
+import { createClient } from "@/shared/api/supabase/server";
 import {
 	languageInfo,
 	type LanguageCode as SupportedLanguage,
 } from "@/shared/config";
-import { createClient } from "@/shared/api/supabase/server";
 
 export interface TopicSitemapData {
 	id: string;
