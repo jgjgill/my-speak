@@ -3,13 +3,16 @@
 import dynamic from "next/dynamic";
 import { useUserProgress } from "@/entities/progress";
 import { useProgress } from "@/features/progress";
-import { StageOneContainer } from "@/features/stage-one";
-import { StageTwoContainer } from "@/features/stage-two";
-import { StageThreeContainer } from "@/features/stage-three";
 import { StageFourContainer } from "@/features/stage-four";
+import { StageOneContainer } from "@/features/stage-one";
+import { StageThreeContainer } from "@/features/stage-three";
+import { StageTwoContainer } from "@/features/stage-two";
 import { useAuth } from "@/shared/lib";
-import ScrollToTopButton from "./scroll-to-top-button";
 import StageNavigation from "./stage-navigation";
+
+const ScrollToTopButton = dynamic(() => import("./scroll-to-top-button"), {
+	ssr: false,
+});
 
 interface TopicClientWrapperProps {
 	topicId: string;

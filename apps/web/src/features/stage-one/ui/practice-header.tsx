@@ -1,0 +1,68 @@
+"use client";
+
+import dynamic from "next/dynamic";
+
+const StickyProgressBar = dynamic(() => import("./sticky-progress-bar"), {
+	ssr: false,
+	loading: () => (
+		<div className="h-2 bg-gray-200 rounded-full overflow-hidden -mx-4 mb-2">
+			<div
+				className="h-full bg-gray-300 animate-pulse"
+				style={{ width: "0%" }}
+			/>
+		</div>
+	),
+});
+
+const ProgressIndicator = dynamic(() => import("./progress-indicator"), {
+	ssr: false,
+	loading: () => (
+		<div className="text-sm text-gray-600">
+			진행률:{" "}
+			<span className="inline-block w-8 h-3 bg-gray-200 animate-pulse rounded"></span>
+		</div>
+	),
+});
+
+interface PracticeHeaderProps {
+	progressPercentage: number;
+}
+
+export default function PracticeHeader({
+	progressPercentage,
+}: PracticeHeaderProps) {
+	return (
+		<>
+			<StickyProgressBar progressPercentage={progressPercentage} />
+
+			<div className="flex justify-between items-center mb-4">
+				<h3 className="font-bold">문장별 번역 연습</h3>
+				<ProgressIndicator progressPercentage={progressPercentage} />
+			</div>
+
+			<div className="mb-4 p-3 bg-gray-50 border border-gray-200 rounded">
+				<h4 className="font-semibold mb-2 text-text-primary">
+					학습 포인트 안내
+				</h4>
+				<div className="flex flex-wrap gap-4 text-sm">
+					<div className="flex items-center gap-2">
+						<span className="bg-gray-100 text-gray-700 px-2 py-1 rounded border">
+							기본 학습 포인트
+						</span>
+						<span className="text-text-secondary">
+							← 클릭하면 영어 표현 확인
+						</span>
+					</div>
+					<div className="flex items-center gap-2">
+						<span className="bg-amber-100 text-amber-800 px-2 py-1 rounded border border-amber-300">
+							내가 선택한 포인트
+						</span>
+						<span className="text-text-secondary">
+							← 체크포인트로도 저장됨 (로그인 사용자만)
+						</span>
+					</div>
+				</div>
+			</div>
+		</>
+	);
+}

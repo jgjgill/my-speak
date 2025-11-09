@@ -1,8 +1,8 @@
 "use client";
 
+import { useRecordingMode } from "../model/use-recording-mode";
 import BrowserAudioRecorder from "./browser-audio-recorder";
 import UnsupportedAudioRecorder from "./unsupported-audio-recorder";
-import { useRecordingMode } from "../model/use-recording-mode";
 import WebViewAudioRecorder from "./webview-audio-recorder";
 
 interface AudioRecorderProps {

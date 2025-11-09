@@ -1,12 +1,12 @@
 "use client";
 
+import { TextHighlighter } from "@/features/stage-two";
 import {
 	createSelectedLearningPointsByOrder,
 	getSelectedKoreanKeywords,
 	useAuth,
 	useIsMounted,
 } from "@/shared/lib";
-import { TextHighlighter } from "@/features/stage-two";
 import { useStageThreePublicData } from "../model/use-stage-three-public-data";
 
 interface StageThreeContainerProps {
