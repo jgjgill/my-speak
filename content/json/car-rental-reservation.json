@@ -1,0 +1,180 @@
+{
+  "topic": {
+    "id": "f95581eb-1874-4672-bfaa-5bcb121b2b14",
+    "title": "렌터카 예약 및 대여하기",
+    "category": "여행",
+    "difficulty": "초급",
+    "description": "렌터카 회사에서 차량을 예약하고 대여하는 과정에 대한 대화입니다.",
+    "language_code": "en",
+    "total_sentences": 6
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 렌터카를 예약하고 싶어요."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "어떤 종류의 차량을 원하시나요?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "소형차로 이틀 동안 빌리고 싶어요."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "운전면허증과 신용카드를 보여주시겠어요?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "차량 반납은 어디로 하면 되나요?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "공항 지점에 반납하시면 됩니다."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, I'd like to reserve a rental car.",
+      "chunked_text": "Hello, | I'd like to reserve a rental car."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "What type of car are you looking for?",
+      "chunked_text": "What type of car | are you looking for?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "I'd like to rent a compact car for two days.",
+      "chunked_text": "I'd like to rent a compact car | for two days."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Could you show me your driver's license and credit card?",
+      "chunked_text": "Could you show me | your driver's license and credit card?"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Where should I return the car?",
+      "chunked_text": "Where should I | return the car?"
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "You can drop it off at the airport branch.",
+      "chunked_text": "You can drop it off | at the airport branch."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "렌터카 예약",
+        "이틀 동안 소형차"
+      ],
+      "target_sentence": "I'd like to reserve a rental car. I'd like to rent a compact car for two days.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "운전면허증",
+        "신용카드 보여주세요"
+      ],
+      "target_sentence": "Could you show me your driver's license and credit card?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 3,
+      "keywords": [
+        "렌터카",
+        "이틀"
+      ],
+      "target_sentence": "I'd like to rent a car for two days.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 4,
+      "keywords": [
+        "차량 반납 장소"
+      ],
+      "target_sentence": "Where should I return the car?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 5,
+      "keywords": [
+        "차량 종류"
+      ],
+      "target_sentence": "What type of car are you looking for?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 6,
+      "keywords": [
+        "공항 지점 반납"
+      ],
+      "target_sentence": "You can drop it off at the airport branch.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 7,
+      "keywords": [
+        "Reserve",
+        "rental car"
+      ],
+      "target_sentence": "I'd like to reserve a rental car.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 8,
+      "keywords": [
+        "Return the car"
+      ],
+      "target_sentence": "Where should I return the car?",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 3,
+      "korean_phrase": "이틀 동안 빌리고 싶어요",
+      "foreign_phrase": "I'd like to rent it for two days"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "보여주시겠어요",
+      "foreign_phrase": "Could you show me"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "반납하시면 됩니다",
+      "foreign_phrase": "You can drop it off"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 4,
+      "korean_text": "운전면허증과 신용카드를 보여주시겠어요?",
+      "foreign_text": "Could you show me your driver's license and credit card?",
+      "reason": "차량 대여 시 반드시 필요한 신분 확인 절차를 나타내는 핵심적인 요청 문장입니다."
+    }
+  ]
+}
