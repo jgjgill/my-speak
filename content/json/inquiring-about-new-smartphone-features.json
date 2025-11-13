@@ -1,10 +1,10 @@
 {
   "topic": {
-    "id": "3efd5baf-1d94-41f3-b103-ec5ed38c9766",
+    "id": "109049aa-1463-43e4-841e-e28b5ded4825",
     "title": "새 스마트폰 기능에 대해 문의하기",
     "category": "쇼핑",
     "difficulty": "초급",
-    "description": "새로 나온 스마트폰의 기능에 대해 매장 직원에게 질문하고 설명을 듣는 상황입니다.",
+    "description": "새로 나온 스마트폰의 기능, 특히 카메라와 배터리 수명에 대해 매장 직원에게 문의하는 상황입니다.",
     "language_code": "en",
     "total_sentences": 6
   },
@@ -15,55 +15,55 @@
     },
     {
       "sentence_order": 2,
-      "korean_text": "이 모델의 가장 큰 특징은 무엇인가요?"
+      "korean_text": "네, 무엇이 궁금하신가요?"
     },
     {
       "sentence_order": 3,
-      "korean_text": "카메라 성능이 향상되었다고 들었어요."
+      "korean_text": "이 모델의 카메라 성능은 어떤가요? 사진이 잘 나오나요?"
     },
     {
       "sentence_order": 4,
-      "korean_text": "배터리는 한 번 충전으로 얼마나 오래 가나요?"
+      "korean_text": "그럼요, 2억 화소 카메라가 탑재되어 있고 야간 모드도 훌륭합니다."
     },
     {
       "sentence_order": 5,
-      "korean_text": "다른 색상 옵션도 있는지 궁금해요."
+      "korean_text": "배터리는 얼마나 오래 가나요?"
     },
     {
       "sentence_order": 6,
-      "korean_text": "직접 한번 만져봐도 될까요?"
+      "korean_text": "한 번 충전으로 하루 종일 사용하실 수 있습니다."
     }
   ],
   "foreign_scripts": [
     {
       "sentence_order": 1,
-      "foreign_text": "Hi, I'd like to ask about the new smartphone.",
-      "chunked_text": "Hi, | I'd like to ask about | the new smartphone."
+      "foreign_text": "Hello, I'd like to ask about the new smartphone.",
+      "chunked_text": "Hello, | I'd like to ask about | the new smartphone."
     },
     {
       "sentence_order": 2,
-      "foreign_text": "What is the main feature of this model?",
-      "chunked_text": "What is the main feature | of this model?"
+      "foreign_text": "Sure, what are you curious about?",
+      "chunked_text": "Sure, | what are you curious about?"
     },
     {
       "sentence_order": 3,
-      "foreign_text": "I heard the camera performance has improved.",
-      "chunked_text": "I heard | the camera performance | has improved."
+      "foreign_text": "How is the camera performance on this model? Does it take good pictures?",
+      "chunked_text": "How is the camera performance | on this model? || Does it take good pictures?"
     },
     {
       "sentence_order": 4,
-      "foreign_text": "How long does the battery last on a single charge?",
-      "chunked_text": "How long does the battery last | on a single charge?"
+      "foreign_text": "Of course, it has a 200-megapixel camera and the night mode is excellent.",
+      "chunked_text": "Of course, | it has a 200-megapixel camera | and the night mode is excellent."
     },
     {
       "sentence_order": 5,
-      "foreign_text": "I'm curious if there are other color options.",
-      "chunked_text": "I'm curious if | there are other color options."
+      "foreign_text": "How long does the battery last?",
+      "chunked_text": "How long | does the battery last?"
     },
     {
       "sentence_order": 6,
-      "foreign_text": "Can I try holding it in my hand?",
-      "chunked_text": "Can I try | holding it in my hand?"
+      "foreign_text": "You can use it all day on a single charge.",
+      "chunked_text": "You can use it all day | on a single charge."
     }
   ],
   "keyword_speeches": [
@@ -72,145 +72,46 @@
       "level": 1,
       "sequence_order": 1,
       "keywords": [
-        "새 스마트폰",
-        "물어보고 싶어요"
+        "새 스마트폰 문의",
+        "카메라 성능",
+        "사진 잘 나오는지",
+        "배터리 얼마나 가는지"
       ],
-      "target_sentence": "I'd like to ask about the new smartphone.",
+      "target_sentence": "Hello, I'd like to ask about the new smartphone. How is the camera performance? Does it take good pictures? How long does the battery last?",
       "difficulty_percentage": 70
     },
     {
       "stage": 4,
-      "level": 1,
+      "level": 2,
       "sequence_order": 2,
       "keywords": [
-        "이 모델",
-        "가장 큰 특징"
-      ],
-      "target_sentence": "What is the main feature of this model?",
-      "difficulty_percentage": 70
-    },
-    {
-      "stage": 4,
-      "level": 1,
-      "sequence_order": 3,
-      "keywords": [
-        "카메라 성능",
-        "향상되었다고 들었어요"
-      ],
-      "target_sentence": "I heard the camera performance has improved.",
-      "difficulty_percentage": 70
-    },
-    {
-      "stage": 4,
-      "level": 1,
-      "sequence_order": 4,
-      "keywords": [
-        "다른 색상 옵션",
-        "궁금해요"
-      ],
-      "target_sentence": "I'm curious if there are other color options.",
-      "difficulty_percentage": 70
-    },
-    {
-      "stage": 4,
-      "level": 2,
-      "sequence_order": 5,
-      "keywords": [
         "새 스마트폰",
-        "문의"
-      ],
-      "target_sentence": "I'd like to ask about the new smartphone.",
-      "difficulty_percentage": 50
-    },
-    {
-      "stage": 4,
-      "level": 2,
-      "sequence_order": 6,
-      "keywords": [
-        "주요 특징"
-      ],
-      "target_sentence": "What is the main feature of this model?",
-      "difficulty_percentage": 50
-    },
-    {
-      "stage": 4,
-      "level": 2,
-      "sequence_order": 7,
-      "keywords": [
-        "카메라 성능 향상"
-      ],
-      "target_sentence": "I heard the camera performance has improved.",
-      "difficulty_percentage": 50
-    },
-    {
-      "stage": 4,
-      "level": 2,
-      "sequence_order": 8,
-      "keywords": [
-        "다른 색상"
-      ],
-      "target_sentence": "I'm curious if there are other color options.",
-      "difficulty_percentage": 50
-    },
-    {
-      "stage": 4,
-      "level": 3,
-      "sequence_order": 9,
-      "keywords": [
-        "문의"
-      ],
-      "target_sentence": "I'd like to ask about the new smartphone.",
-      "difficulty_percentage": 30
-    },
-    {
-      "stage": 4,
-      "level": 3,
-      "sequence_order": 10,
-      "keywords": [
-        "특징"
-      ],
-      "target_sentence": "What is the main feature of this model?",
-      "difficulty_percentage": 30
-    },
-    {
-      "stage": 4,
-      "level": 3,
-      "sequence_order": 11,
-      "keywords": [
+        "카메라",
         "배터리"
       ],
-      "target_sentence": "How long does the battery last on a single charge?",
+      "target_sentence": "I'd like to ask about the new smartphone's camera and battery.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 3,
+      "keywords": [
+        "스마트폰 문의"
+      ],
+      "target_sentence": "I have a question about the smartphone.",
       "difficulty_percentage": 30
     },
     {
       "stage": 4,
       "level": 4,
-      "sequence_order": 12,
+      "sequence_order": 4,
       "keywords": [
-        "ask about",
-        "new"
+        "new smartphone",
+        "camera",
+        "battery"
       ],
-      "target_sentence": "I'd like to ask about the new smartphone.",
-      "difficulty_percentage": 0
-    },
-    {
-      "stage": 4,
-      "level": 4,
-      "sequence_order": 13,
-      "keywords": [
-        "main feature"
-      ],
-      "target_sentence": "What is the main feature of this model?",
-      "difficulty_percentage": 0
-    },
-    {
-      "stage": 4,
-      "level": 4,
-      "sequence_order": 14,
-      "keywords": [
-        "battery life"
-      ],
-      "target_sentence": "How long does the battery last on a single charge?",
+      "target_sentence": "I'd like to ask about the new smartphone's camera and battery.",
       "difficulty_percentage": 0
     }
   ],
@@ -222,21 +123,21 @@
     },
     {
       "sentence_order": 3,
-      "korean_phrase": "향상되었다고 들었어요",
-      "foreign_phrase": "I heard the camera performance has improved"
+      "korean_phrase": "사진이 잘 나오나요",
+      "foreign_phrase": "Does it take good pictures"
     },
     {
       "sentence_order": 5,
-      "korean_phrase": "궁금해요",
-      "foreign_phrase": "I'm curious if"
+      "korean_phrase": "얼마나 오래 가나요",
+      "foreign_phrase": "how long does the battery last"
     }
   ],
   "highlight_sentences": [
     {
-      "sentence_order": 2,
-      "korean_text": "이 모델의 가장 큰 특징은 무엇인가요?",
-      "foreign_text": "What is the main feature of this model?",
-      "reason": "제품의 핵심적인 장점이나 특징을 직접적으로 물어볼 때 사용하는 필수적인 질문입니다."
+      "sentence_order": 5,
+      "korean_text": "배터리는 얼마나 오래 가나요?",
+      "foreign_text": "How long does the battery last?",
+      "reason": "스마트폰 구매 시 배터리 수명은 가장 중요한 고려 사항 중 하나이며, 실생활에서 매우 유용하게 사용할 수 있는 질문입니다."
     }
   ]
 }
