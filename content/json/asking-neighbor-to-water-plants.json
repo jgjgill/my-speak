@@ -1,87 +1,69 @@
 {
   "topic": {
-    "id": "cbd3df9b-e36b-4878-8b01-8788ee5f2a3a",
-    "title": "휴가 중 이웃에게 식물 물주기 부탁하기",
+    "id": "c68778b1-24ec-4b61-a73b-03bb139a8997",
+    "title": "이웃에게 화분 물주기 부탁하기",
     "category": "일상",
     "difficulty": "초급",
-    "description": "장기간 집을 비울 때 이웃에게 식물에 물을 주는 것과 같은 작은 부탁을 하는 상황의 대화입니다.",
+    "description": "휴가 기간 동안 집을 비우게 되어 이웃에게 화분에 물을 줘달라고 정중하게 부탁하는 상황의 대화입니다.",
     "language_code": "en",
-    "total_sentences": 8
+    "total_sentences": 6
   },
   "korean_scripts": [
     {
       "sentence_order": 1,
-      "korean_text": "안녕하세요, 민준 씨. 좋은 아침이에요!"
+      "korean_text": "안녕하세요, 이웃님. 잠시 시간 괜찮으세요?"
     },
     {
       "sentence_order": 2,
-      "korean_text": "아, 지혜 씨! 안녕하세요. 어디 가세요?"
+      "korean_text": "네, 안녕하세요. 무슨 일 있으세요?"
     },
     {
       "sentence_order": 3,
-      "korean_text": "저희 다음 주에 가족 여행을 가거든요. 부탁할 게 하나 있는데, 혹시 시간 괜찮으세요?"
+      "korean_text": "제가 다음 주에 잠시 집을 비우게 되었는데, 부탁 하나만 드려도 될까요?"
     },
     {
       "sentence_order": 4,
-      "korean_text": "네, 그럼요. 무슨 일인데요?"
+      "korean_text": "그럼요, 제가 도울 일이라도 있나요?"
     },
     {
       "sentence_order": 5,
-      "korean_text": "혹시 괜찮으시다면, 저희 휴가 간 동안 식물에 물 좀 주실 수 있을까요?"
+      "korean_text": "혹시 제가 없는 동안 저희 집 화분에 물 좀 주실 수 있을까요?"
     },
     {
       "sentence_order": 6,
-      "korean_text": "물론이죠! 기꺼이 도와드릴게요. 식물은 어디에 있나요?"
-    },
-    {
-      "sentence_order": 7,
-      "korean_text": "거실 창가에 있어요. 이틀에 한 번만 주시면 돼요. 정말 감사합니다!"
-    },
-    {
-      "sentence_order": 8,
-      "korean_text": "별말씀을요. 걱정 말고 여행 잘 다녀오세요!"
+      "korean_text": "물론이죠! 걱정 말고 휴가 잘 다녀오세요."
     }
   ],
   "foreign_scripts": [
     {
       "sentence_order": 1,
-      "foreign_text": "Hi, Minjun. Good morning!",
-      "chunked_text": "Hi, Minjun. | Good morning!"
+      "foreign_text": "Hi, neighbor. Do you have a moment?",
+      "chunked_text": "Hi, neighbor. | Do you have a moment?"
     },
     {
       "sentence_order": 2,
-      "foreign_text": "Oh, Jihye! Hello. Are you going somewhere?",
-      "chunked_text": "Oh, Jihye! | Hello. || Are you going somewhere?"
+      "foreign_text": "Oh, hi. Sure, what's up?",
+      "chunked_text": "Oh, hi. | Sure, what's up?"
     },
     {
       "sentence_order": 3,
-      "foreign_text": "We're going on a family trip next week. **I have a favor to ask**, if you have a moment.",
-      "chunked_text": "We're going on a family trip | next week. || **I have a favor to ask**, | if you have a moment."
+      "foreign_text": "I'll be out of town next week, and I was wondering if I could ask you a favor?",
+      "chunked_text": "I'll be out of town next week, || and I was wondering if I could ask you a favor?"
     },
     {
       "sentence_order": 4,
-      "foreign_text": "Yes, of course. What is it?",
-      "chunked_text": "Yes, | of course. || What is it?"
+      "foreign_text": "Of course, what can I help you with?",
+      "chunked_text": "Of course, | what can I help you with?"
     },
     {
       "sentence_order": 5,
-      "foreign_text": "If you don't mind, could you **water our plants** while we're on vacation?",
-      "chunked_text": "If you don't mind, | could you **water our plants** | while we're on vacation?"
+      "foreign_text": "Could you possibly water my plants while I'm away?",
+      "chunked_text": "Could you possibly | water my plants | while I'm away?"
     },
     {
       "sentence_order": 6,
-      "foreign_text": "Of course! I'd be happy to help. Where are the plants?",
-      "chunked_text": "Of course! || I'd be happy to help. | Where are the plants?"
-    },
-    {
-      "sentence_order": 7,
-      "foreign_text": "They're by the living room window. You just need to water them **once every two days**. Thank you so much!",
-      "chunked_text": "They're by the living room window. || You just need to water them | **once every two days**. || Thank you so much!"
-    },
-    {
-      "sentence_order": 8,
-      "foreign_text": "Don't mention it. Have a great trip without any worries!",
-      "chunked_text": "Don't mention it. || Have a great trip | without any worries!"
+      "foreign_text": "Absolutely! Don't worry and have a great vacation.",
+      "chunked_text": "Absolutely! || Don't worry and have a great vacation."
     }
   ],
   "keyword_speeches": [
@@ -90,10 +72,10 @@
       "level": 1,
       "sequence_order": 1,
       "keywords": [
-        "가족 여행",
-        "부탁할 것"
+        "다음 주 집 비움",
+        "부탁 하나"
       ],
-      "target_sentence": "We're going on a family trip next week. I have a favor to ask.",
+      "target_sentence": "I'll be out of town next week, and I was wondering if I could ask you a favor?",
       "difficulty_percentage": 70
     },
     {
@@ -101,110 +83,94 @@
       "level": 1,
       "sequence_order": 2,
       "keywords": [
-        "휴가 동안",
-        "식물에 물 주기"
+        "제가 없는 동안",
+        "화분에 물 주기"
       ],
-      "target_sentence": "Could you water our plants while we're on vacation?",
+      "target_sentence": "Could you possibly water my plants while I'm away?",
       "difficulty_percentage": 70
     },
     {
       "stage": 4,
-      "level": 1,
+      "level": 2,
       "sequence_order": 3,
       "keywords": [
-        "이틀에 한 번",
-        "물 주기"
+        "집 비움",
+        "부탁"
       ],
-      "target_sentence": "You just need to water them once every two days.",
-      "difficulty_percentage": 70
+      "target_sentence": "I'll be out of town, and I was wondering if I could ask you a favor?",
+      "difficulty_percentage": 50
     },
     {
       "stage": 4,
       "level": 2,
       "sequence_order": 4,
       "keywords": [
-        "부탁",
-        "식물 물 주기"
+        "없는 동안",
+        "물 주기"
       ],
-      "target_sentence": "I have a favor to ask, could you water the plants?",
+      "target_sentence": "Could you possibly water my plants while I'm away?",
       "difficulty_percentage": 50
     },
     {
       "stage": 4,
-      "level": 2,
+      "level": 3,
       "sequence_order": 5,
       "keywords": [
-        "이틀에 한 번"
+        "부탁"
       ],
-      "target_sentence": "Once every two days.",
-      "difficulty_percentage": 50
+      "target_sentence": "I was wondering if I could ask you a favor?",
+      "difficulty_percentage": 30
     },
     {
       "stage": 4,
       "level": 3,
       "sequence_order": 6,
       "keywords": [
-        "부탁"
+        "화분에 물 주기"
       ],
-      "target_sentence": "A favor",
+      "target_sentence": "Could you possibly water my plants?",
       "difficulty_percentage": 30
     },
     {
       "stage": 4,
-      "level": 3,
+      "level": 4,
       "sequence_order": 7,
       "keywords": [
-        "식물"
+        "out of town",
+        "favor"
       ],
-      "target_sentence": "Plants",
-      "difficulty_percentage": 30
+      "target_sentence": "I'll be out of town next week, and I was wondering if I could ask you a favor?",
+      "difficulty_percentage": 0
     },
     {
       "stage": 4,
       "level": 4,
       "sequence_order": 8,
       "keywords": [
-        "favor",
-        "water plants"
+        "water my plants"
       ],
-      "target_sentence": "Could you do me a favor and water the plants?",
-      "difficulty_percentage": 0
-    },
-    {
-      "stage": 4,
-      "level": 4,
-      "sequence_order": 9,
-      "keywords": [
-        "once",
-        "two days"
-      ],
-      "target_sentence": "Water them once every two days.",
+      "target_sentence": "Could you possibly water my plants while I'm away?",
       "difficulty_percentage": 0
     }
   ],
   "learning_points": [
     {
       "sentence_order": 3,
-      "korean_phrase": "부탁할 게 하나 있는데",
-      "foreign_phrase": "I have a favor to ask"
+      "korean_phrase": "부탁 하나만 드려도 될까요",
+      "foreign_phrase": "ask you a favor"
     },
     {
       "sentence_order": 5,
-      "korean_phrase": "식물에 물 좀 주실 수 있을까요",
-      "foreign_phrase": "water our plants"
-    },
-    {
-      "sentence_order": 7,
-      "korean_phrase": "이틀에 한 번만",
-      "foreign_phrase": "once every two days"
+      "korean_phrase": "화분에 물 좀 주실 수 있을까요",
+      "foreign_phrase": "water my plants"
     }
   ],
   "highlight_sentences": [
     {
       "sentence_order": 5,
-      "korean_text": "혹시 괜찮으시다면, 저희 휴가 간 동안 식물에 물 좀 주실 수 있을까요?",
-      "foreign_text": "If you don't mind, could you water our plants while we're on vacation?",
-      "reason": "상대방의 의사를 먼저 물으며 정중하게 부탁하는 핵심 표현으로, 다양한 상황에서 유용하게 사용할 수 있습니다."
+      "korean_text": "혹시 제가 없는 동안 저희 집 화분에 물 좀 주실 수 있을까요?",
+      "foreign_text": "Could you possibly water my plants while I'm away?",
+      "reason": "상대방에게 무언가를 정중하게 부탁할 때 사용하는 핵심적인 요청 표현입니다."
     }
   ]
 }
