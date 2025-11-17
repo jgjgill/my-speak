@@ -54,29 +54,22 @@ fi
 # UUID 생성 (Node.js 기반 - 크로스 플랫폼 호환)
 UUID=$(node -e "console.log(require('crypto').randomUUID())")
 
-# 최근 생성된 콘텐츠의 주제 추출 (블랙리스트)
+# 최근 생성된 주제 캐시 파일 읽기
 echo -e "${YELLOW}📋 최근 생성된 주제 확인 중...${NC}"
 CONTENT_DIR="$PROJECT_ROOT/content/source"
+RECENT_TOPICS_FILE="$PROJECT_ROOT/content/.recent-topics"
 RECENT_TOPICS=""
 
-if [ -d "$PROJECT_ROOT/.git" ]; then
-  # Git 커밋 메시지 기반으로 최근 25개 콘텐츠 주제 추출 (중복 제거 후 20개 사용)
-  RECENT_TOPICS=$(git log --all --oneline --grep="^content:" 2>/dev/null | head -25 | while read hash message; do
-    # 각 커밋에서 content/source/*.md 파일 찾기
-    git show --name-only --pretty=format: "$hash" 2>/dev/null | grep "^content/source/.*\.md$" | head -1 | while read filepath; do
-      # 해당 파일에서 title 추출
-      git show "$hash:$filepath" 2>/dev/null | awk '/^title:/ {gsub(/^title:[[:space:]]*"|"[[:space:]]*$/, ""); print; exit}'
-    done
-  done | awk '!seen[$0]++' | head -20 | paste -sd ", " -)
-
+if [ -f "$RECENT_TOPICS_FILE" ]; then
+  RECENT_TOPICS=$(cat "$RECENT_TOPICS_FILE" | paste -sd ", " -)
   if [ -n "$RECENT_TOPICS" ]; then
-    echo -e "${BLUE}최근 생성된 주제 (Git 커밋 기준, 중복 제거):${NC}"
+    echo -e "${BLUE}최근 생성된 주제 (캐시):${NC}"
     echo -e "${BLUE}$RECENT_TOPICS${NC}"
-  else
-    echo -e "${YELLOW}⚠️  Git 커밋에서 주제 추출 실패${NC}"
   fi
 else
-  echo -e "${YELLOW}⚠️  Git 저장소가 아닙니다. 블랙리스트 사용 안 함.${NC}"
+  echo -e "${YELLOW}⚠️  캐시 파일이 없습니다. 첫 콘텐츠를 생성합니다.${NC}"
+  mkdir -p "$PROJECT_ROOT/content"
+  touch "$RECENT_TOPICS_FILE"
 fi
 
 # UUID의 마지막 문자를 추출하여 문장 수 가이드 생성
@@ -104,13 +97,16 @@ cat >> "$TEMP_PROMPT" <<EOF
 
 ---
 
-## 🚫 절대 사용 금지 주제 (최근 생성됨)
+## 🚫 절대 사용 금지 주제 (최근 10개)
 
 다음 주제들은 최근에 이미 생성되었으므로 **절대 사용하지 마세요**:
 
 $RECENT_TOPICS
 
-**필수**: 위 목록과 **완전히 다른 새로운 주제**를 만들어야 합니다. 비슷한 주제도 허용되지 않습니다.
+**필수 규칙**:
+1. **주제 다양성**: 위 목록과 **완전히 다른 새로운 주제**를 창의적으로 만드세요
+2. **slug 고유성**: 유사한 주제라도 slug는 구체적으로 차별화 (예: `-during-vacation`, `-at-vet`, `-for-business` 등 추가)
+3. **비슷한 패턴 회피**: 장소/행위/상황이 겹치지 않도록 주의하세요
 
 ---
 
@@ -208,6 +204,14 @@ fi
 CONTENT_DIR="$PROJECT_ROOT/content/source"
 OUTPUT_FILE="$CONTENT_DIR/$FILENAME"
 
+# 파일 중복 체크 (기존 파일 덮어쓰기 방지)
+if [ -f "$OUTPUT_FILE" ]; then
+  echo -e "${RED}❌ 동일한 slug의 파일이 이미 존재합니다: $FILENAME${NC}"
+  echo -e "${RED}   기존 파일을 덮어쓰지 않습니다.${NC}"
+  echo -e "${YELLOW}💡 AI가 더 차별화된 slug를 생성하도록 프롬프트를 개선해주세요.${NC}"
+  exit 1
+fi
+
 mkdir -p "$CONTENT_DIR"
 echo "$CLEANED_CONTENT" > "$OUTPUT_FILE"
 
@@ -240,6 +244,15 @@ EOF
 # 파싱 실행
 if pnpm run parse "$FILENAME" 2>&1; then
   echo -e "${GREEN}✅ 파싱 및 Supabase 업로드 완료${NC}"
+
+  # 캐시 파일 업데이트 (최근 10개 주제만 유지)
+  TITLE=$(awk '/^title:/ {gsub(/^title:[[:space:]]*"|"[[:space:]]*$/, ""); print; exit}' "$OUTPUT_FILE")
+  if [ -n "$TITLE" ]; then
+    echo "$TITLE" > "${RECENT_TOPICS_FILE}.tmp"
+    head -9 "$RECENT_TOPICS_FILE" >> "${RECENT_TOPICS_FILE}.tmp" 2>/dev/null || true
+    mv "${RECENT_TOPICS_FILE}.tmp" "$RECENT_TOPICS_FILE"
+    echo -e "${GREEN}✅ 캐시 파일 업데이트 완료: $TITLE${NC}"
+  fi
 else
   echo -e "${RED}❌ 파싱 실패${NC}"
   echo -e "${YELLOW}⚠️  생성된 파일은 유지됩니다: $OUTPUT_FILE${NC}"

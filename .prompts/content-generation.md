@@ -72,11 +72,17 @@
 - **title**: 한글로 작성된 주제명 (예: "커피숍에서 주문하기", "길 묻기")
 - **slug**: title의 핵심 내용을 영어로 번역하여 kebab-case 형식으로 작성
   - **규칙**: 소문자, 하이픈으로 단어 구분, 영문자와 숫자만 사용
-  - **예시**:
-    - "커피숍에서 주문하기" → `coffee-shop-ordering`
-    - "길 묻기" → `asking-for-directions`
-    - "가까운 지하철역 길 묻기" → `asking-for-nearest-subway`
-  - **중요**: 파일명으로 사용되므로 간결하고 명확하게 작성
+  - **고유성 원칙** (🚨 매우 중요):
+    - **구체적인 상황 포함**: 일반적인 slug 대신 구체적인 맥락 추가
+    - **차별화 요소 강조**: 장소, 시간, 대상, 목적 등으로 차별화
+    - **예시**:
+      - ❌ `ordering-coffee` (너무 일반적)
+      - ✅ `ordering-specialty-coffee-at-cafe` (구체적)
+      - ❌ `asking-directions` (너무 짧음)
+      - ✅ `asking-for-nearest-subway-station` (명확)
+      - ❌ `asking-neighbor-to-water-plants` (일반적)
+      - ✅ `asking-neighbor-to-water-plants-during-vacation` (구체적 + 차별화)
+  - **중요**: 파일명으로 사용되므로 충돌 방지를 위해 최대한 구체적으로 작성
 - **category**: 랜덤 선택 (회화에 핵심적인 실용적 상황 우선)
 - **difficulty**: 입력 파라미터로 설정 (기본값: 초급)
 - **language_code**: 입력 파라미터로 설정 (기본값: en)
@@ -254,3 +260,5 @@ Suggested filename: coffee-shop.md
 ## 사용 컨텍스트
 
 생성된 콘텐츠는 `content/source/` 디렉토리에 저장되며, content-parser를 통해 JSON으로 변환되어 Supabase에 업로드됩니다.
+
+**중요**: slug는 파일명으로 사용되므로 기존 파일과 충돌하면 생성이 실패합니다. 반드시 구체적이고 고유한 slug를 작성하세요.
