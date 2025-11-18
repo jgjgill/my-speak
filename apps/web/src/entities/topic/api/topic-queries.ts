@@ -10,19 +10,39 @@ export type LearningPoint = Tables<"learning_points">;
 export type UserTranslation = Tables<"user_translations">;
 export type UserSelectedPoint = Tables<"user_selected_points">;
 export type KeywordSpeech = Tables<"keyword_speeches">;
+export type UserProgress = Tables<"user_progress">;
 
 export interface TopicWithHighlight extends Topic {
 	highlight_sentences: HighlightSentence | null;
+}
+
+export interface TopicWithProgress extends TopicWithHighlight {
+	user_progress: UserProgress | null;
+}
+
+// 정렬 옵션
+export type TopicSortOption =
+	| "latest" // 최신순 (created_at desc)
+	| "oldest" // 오래된순 (created_at asc)
+	| "most_sentences" // 문항수 많은순
+	| "least_sentences"; // 문항수 적은순
+
+// 필터 옵션
+export interface TopicFilterOptions {
+	difficulties?: string[]; // ["초급", "중급", "고급"]
+	completionStatus?: "all" | "completed" | "in_progress" | "not_started";
 }
 
 export interface TopicsQueryParams {
 	limit?: number;
 	page?: number;
 	language?: string;
+	sortBy?: TopicSortOption;
+	filters?: TopicFilterOptions;
 }
 
 export interface TopicsResponse {
-	topics: TopicWithHighlight[];
+	topics: TopicWithProgress[];
 	totalCount: number;
 	hasMore: boolean;
 	currentPage: number;
@@ -49,23 +69,95 @@ export async function getTopics(
 ): Promise<TopicsResponse> {
 	const client = createBrowserClient();
 
-	const { limit = 5, page = 0, language = "en" } = params;
+	const {
+		limit = 5,
+		page = 0,
+		language = "en",
+		sortBy = "latest",
+		filters = {},
+	} = params;
 
 	const offset = page * limit;
 
+	// 사용자 인증 확인
 	const {
-		data: topics,
-		error,
-		count,
-	} = await client
+		data: { user },
+	} = await client.auth.getUser();
+
+	// 기본 쿼리 빌드
+	let query = client
 		.from("topics")
-		.select("*, highlight_sentences(*)", { count: "exact" })
-		.eq("language_code", language)
-		.order("created_at", { ascending: false })
-		.range(offset, offset + limit - 1);
+		.select("*, highlight_sentences(*), user_progress(*)", { count: "exact" })
+		.eq("language_code", language);
+
+	// 난이도 필터 적용
+	if (filters.difficulties && filters.difficulties.length > 0) {
+		query = query.in("difficulty", filters.difficulties);
+	}
+
+	// 정렬 적용
+	switch (sortBy) {
+		case "latest":
+			query = query.order("created_at", { ascending: false });
+			break;
+		case "oldest":
+			query = query.order("created_at", { ascending: true });
+			break;
+		case "most_sentences":
+			query = query.order("total_sentences", {
+				ascending: false,
+				nullsFirst: false,
+			});
+			break;
+		case "least_sentences":
+			query = query.order("total_sentences", {
+				ascending: true,
+				nullsFirst: false,
+			});
+			break;
+	}
+
+	// 페이지네이션 적용
+	query = query.range(offset, offset + limit - 1);
+
+	const { data: topics, error, count } = await query;
 
 	if (error) {
 		throw new Error(`Failed to fetch topics: ${error.message}`);
+	}
+
+	// user_progress 필터링 (user_id로 필터링)
+	let filteredTopics = (topics || []).map((topic) => ({
+		...topic,
+		user_progress: user
+			? Array.isArray(topic.user_progress)
+				? topic.user_progress.find((up) => up.user_id === user.id) || null
+				: topic.user_progress
+			: null,
+	}));
+
+	// 풀이 현황 필터 적용 (클라이언트 사이드)
+	if (user && filters.completionStatus && filters.completionStatus !== "all") {
+		filteredTopics = filteredTopics.filter((topic) => {
+			const progress = topic.user_progress;
+			const totalSentences = topic.total_sentences || 0;
+
+			switch (filters.completionStatus) {
+				case "completed":
+					return (
+						(progress?.completed_sentences?.length ?? 0) >= totalSentences &&
+						totalSentences > 0
+					);
+				case "in_progress": {
+					const completedCount = progress?.completed_sentences?.length ?? 0;
+					return completedCount > 0 && completedCount < totalSentences;
+				}
+				case "not_started":
+					return (progress?.completed_sentences?.length ?? 0) === 0;
+				default:
+					return true;
+			}
+		});
 	}
 
 	const totalCount = count || 0;
@@ -73,7 +165,7 @@ export async function getTopics(
 	const hasMore = page + 1 < totalPages;
 
 	return {
-		topics: topics || [],
+		topics: filteredTopics,
 		totalCount,
 		hasMore,
 		currentPage: page,
