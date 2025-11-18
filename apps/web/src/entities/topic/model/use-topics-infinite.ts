@@ -8,13 +8,11 @@ export function useTopicsInfinite(props: Omit<TopicsQueryParams, "page"> = {}) {
 
 	return useSuspenseInfiniteQuery({
 		queryKey,
-		queryFn: ({ pageParam = 0 }) => {
-			return getTopics({
-				limit: props.limit,
+		queryFn: ({ pageParam = 0 }) =>
+			getTopics({
+				...props,
 				page: pageParam,
-				language: props.language,
-			});
-		},
+			}),
 		getNextPageParam: (lastPage) =>
 			lastPage.hasMore ? lastPage.currentPage + 1 : undefined,
 		initialPageParam: 0,
