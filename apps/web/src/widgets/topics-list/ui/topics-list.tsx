@@ -3,13 +3,24 @@
 import { useParams } from "next/navigation";
 import { useEffect, useRef } from "react";
 import { TopicCard, useTopicsInfinite } from "@/entities/topic";
+import { useTopicsFilterParams } from "../model/use-topics-filter-params";
+import { TopicsFilterControls } from "./topics-filter-controls";
 
 export function TopicsList() {
 	const params = useParams();
 	const language = params?.language as string;
 
+	const [urlParams] = useTopicsFilterParams();
+
 	const { data, fetchNextPage, hasNextPage, isFetchingNextPage } =
-		useTopicsInfinite({ language });
+		useTopicsInfinite({
+			language,
+			sortBy: urlParams.sortBy,
+			filters: {
+				difficulties: urlParams.difficulties || undefined,
+				completionStatus: urlParams.completionStatus,
+			},
+		});
 	const loadMoreRef = useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
@@ -38,11 +49,30 @@ export function TopicsList() {
 
 	return (
 		<div>
+			{/* 필터/정렬 컨트롤 */}
+			<TopicsFilterControls showCompletionFilter={false} />
+
 			{/* 주제 카드 그리드 */}
 			<div className="space-y-4">
-				{allTopics.map((topic) => (
-					<TopicCard key={topic.id} topic={topic} />
-				))}
+				{allTopics.map((topic) => {
+					const completedCount =
+						topic.user_progress?.completed_sentences?.length || 0;
+					const totalSentences = topic.total_sentences ?? 0;
+					const completionPercentage =
+						totalSentences > 0
+							? Math.round((completedCount / totalSentences) * 100)
+							: 0;
+					const isCompleted = completionPercentage === 100;
+
+					return (
+						<TopicCard
+							key={topic.id}
+							topic={topic}
+							isCompleted={isCompleted}
+							completionPercentage={completionPercentage}
+						/>
+					);
+				})}
 			</div>
 
 			{/* 빈 상태 */}

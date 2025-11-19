@@ -20,6 +20,16 @@ export interface TopicWithProgress extends TopicWithHighlight {
 	user_progress: UserProgress | null;
 }
 
+// 난이도 레벨
+export type DifficultyLevel = "초급" | "중급" | "고급";
+
+// 완료 상태
+export type CompletionStatus =
+	| "all"
+	| "completed"
+	| "in_progress"
+	| "not_started";
+
 // 정렬 옵션
 export type TopicSortOption =
 	| "latest" // 최신순 (created_at desc)
@@ -29,8 +39,8 @@ export type TopicSortOption =
 
 // 필터 옵션
 export interface TopicFilterOptions {
-	difficulties?: string[]; // ["초급", "중급", "고급"]
-	completionStatus?: "all" | "completed" | "in_progress" | "not_started";
+	difficulties?: DifficultyLevel[];
+	completionStatus?: CompletionStatus;
 }
 
 export interface TopicsQueryParams {

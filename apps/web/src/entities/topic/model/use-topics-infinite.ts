@@ -4,7 +4,23 @@ import { useSuspenseInfiniteQuery } from "@tanstack/react-query";
 import { getTopics, type TopicsQueryParams } from "../api";
 
 export function useTopicsInfinite(props: Omit<TopicsQueryParams, "page"> = {}) {
-	const queryKey = ["topics", "infinite", props];
+	const sortedDifficulties = props.filters?.difficulties
+		? [...props.filters.difficulties].sort()
+		: undefined;
+
+	const queryKey = [
+		"topics",
+		"infinite",
+		{
+			...props,
+			filters: props.filters
+				? {
+						...props.filters,
+						difficulties: sortedDifficulties,
+					}
+				: undefined,
+		},
+	];
 
 	return useSuspenseInfiniteQuery({
 		queryKey,
