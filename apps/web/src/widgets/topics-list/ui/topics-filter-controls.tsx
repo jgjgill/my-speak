@@ -23,6 +23,22 @@ const COMPLETION_STATUS_OPTIONS = [
 	{ value: "completed", label: "완료" },
 ] as const;
 
+// 난이도별 색상 매핑 (Topic 카드와 동일)
+const DIFFICULTY_COLORS = {
+	초급: {
+		selected: "bg-green-50 text-green-700 border-green-300",
+		unselected: "bg-gray-50 text-gray-600 border-gray-200",
+	},
+	중급: {
+		selected: "bg-yellow-50 text-yellow-700 border-yellow-300",
+		unselected: "bg-gray-50 text-gray-600 border-gray-200",
+	},
+	고급: {
+		selected: "bg-red-50 text-red-700 border-red-300",
+		unselected: "bg-gray-50 text-gray-600 border-gray-200",
+	},
+} as const;
+
 interface TopicsFilterControlsProps {
 	showCompletionFilter?: boolean;
 	onFilterChange?: (params: {
@@ -80,72 +96,23 @@ export function TopicsFilterControls({
 	};
 
 	return (
-		<div className="mb-6 space-y-4 rounded-lg border border-gray-200 bg-white p-4 shadow-sm">
-			{/* 정렬 */}
-			<div className="flex items-center gap-3">
-				<label
-					htmlFor="sort-select"
-					className="text-sm font-medium text-gray-700"
-				>
-					정렬:
-				</label>
-				<select
-					id="sort-select"
-					value={params.sortBy}
-					onChange={(e) => handleSortChange(e.target.value as TopicSortOption)}
-					className="rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
-				>
-					{SORT_OPTIONS.map((option) => (
-						<option key={option.value} value={option.value}>
-							{option.label}
-						</option>
-					))}
-				</select>
-			</div>
-
-			{/* 난이도 필터 */}
-			<div>
-				<div className="mb-2 text-sm font-medium text-gray-700">난이도:</div>
-				<div className="flex flex-wrap gap-2">
-					{DIFFICULTY_OPTIONS.map((option) => {
-						const isSelected =
-							params.difficulties?.includes(option.value) ?? false;
-						return (
-							<button
-								key={option.value}
-								type="button"
-								onClick={() => handleDifficultyToggle(option.value)}
-								className={`rounded-full px-4 py-2 text-sm font-medium transition-colors ${
-									isSelected
-										? "bg-blue-500 text-white hover:bg-blue-600"
-										: "bg-gray-100 text-gray-700 hover:bg-gray-200"
-								}`}
-							>
-								{option.label}
-							</button>
-						);
-					})}
-				</div>
-			</div>
-
-			{/* 풀이 현황 필터 (로그인 사용자만) */}
-			{showCompletionFilter && (
-				<div>
-					<div className="mb-2 text-sm font-medium text-gray-700">
-						풀이 현황:
-					</div>
-					<div className="flex flex-wrap gap-2">
-						{COMPLETION_STATUS_OPTIONS.map((option) => {
-							const isSelected = params.completionStatus === option.value;
+		<div className="mb-4 border-b border-gray-200 pb-4">
+			<div className="flex flex-wrap items-start gap-x-6 gap-y-4">
+				{/* 정렬 */}
+				<div className="flex flex-wrap items-center gap-2">
+					<span className="text-xs font-medium text-gray-500">정렬:</span>
+					<div className="flex flex-wrap gap-1.5">
+						{SORT_OPTIONS.map((option) => {
+							const isSelected = params.sortBy === option.value;
 							return (
 								<button
 									key={option.value}
 									type="button"
-									onClick={() => handleCompletionStatusChange(option.value)}
-									className={`rounded-full px-4 py-2 text-sm font-medium transition-colors ${
+									onClick={() => handleSortChange(option.value)}
+									className={`min-h-[36px] rounded-full border px-3 py-1.5 text-xs font-medium transition-all duration-200 ${
 										isSelected
-											? "bg-green-500 text-white hover:bg-green-600"
-											: "bg-gray-100 text-gray-700 hover:bg-gray-200"
+											? "border-primary bg-primary-light text-primary shadow-sm"
+											: "border-gray-200 bg-white text-gray-600 hover:border-gray-300 hover:bg-gray-50"
 									}`}
 								>
 									{option.label}
@@ -154,7 +121,59 @@ export function TopicsFilterControls({
 						})}
 					</div>
 				</div>
-			)}
+
+				{/* 난이도 필터 */}
+				<div className="flex flex-wrap items-center gap-2">
+					<span className="text-xs font-medium text-gray-500">난이도:</span>
+					<div className="flex flex-wrap gap-1.5">
+						{DIFFICULTY_OPTIONS.map((option) => {
+							const isSelected =
+								params.difficulties?.includes(option.value) ?? false;
+							const colorClass = isSelected
+								? DIFFICULTY_COLORS[option.value].selected
+								: DIFFICULTY_COLORS[option.value].unselected;
+							return (
+								<button
+									key={option.value}
+									type="button"
+									onClick={() => handleDifficultyToggle(option.value)}
+									className={`min-h-[36px] rounded-full border px-3 py-1.5 text-xs font-medium transition-all duration-200 ${colorClass} ${
+										isSelected ? "shadow-sm" : "hover:border-gray-300 hover:bg-gray-100"
+									}`}
+								>
+									{option.label}
+								</button>
+							);
+						})}
+					</div>
+				</div>
+
+				{/* 풀이 현황 필터 (로그인 사용자만) */}
+				{showCompletionFilter && (
+					<div className="flex flex-wrap items-center gap-2">
+						<span className="text-xs font-medium text-gray-500">풀이 현황:</span>
+						<div className="flex flex-wrap gap-1.5">
+							{COMPLETION_STATUS_OPTIONS.map((option) => {
+								const isSelected = params.completionStatus === option.value;
+								return (
+									<button
+										key={option.value}
+										type="button"
+										onClick={() => handleCompletionStatusChange(option.value)}
+										className={`min-h-[36px] rounded-full border px-3 py-1.5 text-xs font-medium transition-all duration-200 ${
+											isSelected
+												? "border-gray-700 bg-gray-700 text-white shadow-sm"
+												: "border-gray-200 bg-white text-gray-600 hover:border-gray-300 hover:bg-gray-50"
+										}`}
+									>
+										{option.label}
+									</button>
+								);
+							})}
+						</div>
+					</div>
+				)}
+			</div>
 		</div>
 	);
 }
