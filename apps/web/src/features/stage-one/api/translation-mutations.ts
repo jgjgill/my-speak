@@ -1,4 +1,5 @@
 import type { Tables } from "@repo/typescript-config/supabase-types";
+import { updateCompletedSentences } from "@/features/progress/api";
 import { createBrowserClient } from "@/shared/api/supabase";
 
 type UserTranslation = Tables<"user_translations">;
@@ -34,5 +35,14 @@ export async function updateTranslation(
 		.single();
 
 	if (error) throw error;
+
+	// user_progress의 completed_sentences 업데이트
+	await updateCompletedSentences(
+		params.userId,
+		params.topicId,
+		params.sentenceOrder,
+		params.isCompleted,
+	);
+
 	return data;
 }
