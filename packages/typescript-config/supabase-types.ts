@@ -53,6 +53,13 @@ export type Database = {
             referencedRelation: "topics"
             referencedColumns: ["id"]
           },
+          {
+            foreignKeyName: "foreign_scripts_topic_id_fkey"
+            columns: ["topic_id"]
+            isOneToOne: false
+            referencedRelation: "user_topic_completion_status"
+            referencedColumns: ["topic_id"]
+          },
         ]
       }
       highlight_sentences: {
@@ -90,6 +97,13 @@ export type Database = {
             isOneToOne: true
             referencedRelation: "topics"
             referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "highlight_sentences_topic_id_fkey"
+            columns: ["topic_id"]
+            isOneToOne: true
+            referencedRelation: "user_topic_completion_status"
+            referencedColumns: ["topic_id"]
           },
         ]
       }
@@ -135,6 +149,13 @@ export type Database = {
             referencedRelation: "topics"
             referencedColumns: ["id"]
           },
+          {
+            foreignKeyName: "keyword_speeches_topic_id_fkey"
+            columns: ["topic_id"]
+            isOneToOne: false
+            referencedRelation: "user_topic_completion_status"
+            referencedColumns: ["topic_id"]
+          },
         ]
       }
       korean_scripts: {
@@ -166,6 +187,13 @@ export type Database = {
             isOneToOne: false
             referencedRelation: "topics"
             referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "korean_scripts_topic_id_fkey"
+            columns: ["topic_id"]
+            isOneToOne: false
+            referencedRelation: "user_topic_completion_status"
+            referencedColumns: ["topic_id"]
           },
         ]
       }
@@ -201,6 +229,13 @@ export type Database = {
             isOneToOne: false
             referencedRelation: "topics"
             referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "learning_points_topic_id_fkey"
+            columns: ["topic_id"]
+            isOneToOne: false
+            referencedRelation: "user_topic_completion_status"
+            referencedColumns: ["topic_id"]
           },
         ]
       }
@@ -300,6 +335,13 @@ export type Database = {
             referencedRelation: "topics"
             referencedColumns: ["id"]
           },
+          {
+            foreignKeyName: "user_progress_topic_id_fkey"
+            columns: ["topic_id"]
+            isOneToOne: false
+            referencedRelation: "user_topic_completion_status"
+            referencedColumns: ["topic_id"]
+          },
         ]
       }
       user_selected_points: {
@@ -338,6 +380,13 @@ export type Database = {
             isOneToOne: false
             referencedRelation: "topics"
             referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "user_selected_points_topic_id_fkey"
+            columns: ["topic_id"]
+            isOneToOne: false
+            referencedRelation: "user_topic_completion_status"
+            referencedColumns: ["topic_id"]
           },
         ]
       }
@@ -383,11 +432,33 @@ export type Database = {
             referencedRelation: "topics"
             referencedColumns: ["id"]
           },
+          {
+            foreignKeyName: "user_translations_topic_id_fkey"
+            columns: ["topic_id"]
+            isOneToOne: false
+            referencedRelation: "user_topic_completion_status"
+            referencedColumns: ["topic_id"]
+          },
         ]
       }
     }
     Views: {
-      [_ in never]: never
+      user_topic_completion_status: {
+        Row: {
+          category: string | null
+          completed_count: number | null
+          completed_sentences: number[] | null
+          completion_status: string | null
+          created_at: string | null
+          difficulty: string | null
+          language_code: string | null
+          title: string | null
+          topic_id: string | null
+          total_sentences: number | null
+          user_id: string | null
+        }
+        Relationships: []
+      }
     }
     Functions: {
       [_ in never]: never
