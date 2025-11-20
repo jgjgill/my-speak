@@ -1,6 +1,11 @@
 "use client";
 
-import type { TopicFilterOptions, TopicSortOption } from "@/entities/topic/api";
+import type {
+	CompletionStatus,
+	DifficultyLevel,
+	TopicFilterOptions,
+	TopicSortOption,
+} from "@/entities/topic/api";
 import { useTopicsFilterParams } from "../model/use-topics-filter-params";
 
 const SORT_OPTIONS: { value: TopicSortOption; label: string }[] = [
@@ -10,21 +15,24 @@ const SORT_OPTIONS: { value: TopicSortOption; label: string }[] = [
 	{ value: "least_sentences", label: "문항수 적은순" },
 ];
 
-const DIFFICULTY_OPTIONS = [
+const DIFFICULTY_OPTIONS: { value: DifficultyLevel; label: string }[] = [
 	{ value: "초급", label: "초급" },
 	{ value: "중급", label: "중급" },
 	{ value: "고급", label: "고급" },
-] as const;
+];
 
-const COMPLETION_STATUS_OPTIONS = [
-	{ value: "all", label: "전체" },
-	{ value: "not_started", label: "미시작" },
-	{ value: "in_progress", label: "진행중" },
-	{ value: "completed", label: "완료" },
-] as const;
+const COMPLETION_STATUS_OPTIONS: { value: CompletionStatus; label: string }[] =
+	[
+		{ value: "all", label: "전체" },
+		{ value: "not_started", label: "미시작" },
+		{ value: "in_progress", label: "진행중" },
+		{ value: "completed", label: "완료" },
+	];
 
-// 난이도별 색상 매핑 (Topic 카드와 동일)
-const DIFFICULTY_COLORS = {
+const DIFFICULTY_COLORS: Record<
+	DifficultyLevel,
+	{ selected: string; unselected: string }
+> = {
 	초급: {
 		selected: "bg-green-50 text-green-700 border-green-300",
 		unselected: "bg-gray-50 text-gray-600 border-gray-200",
@@ -37,7 +45,7 @@ const DIFFICULTY_COLORS = {
 		selected: "bg-red-50 text-red-700 border-red-300",
 		unselected: "bg-gray-50 text-gray-600 border-gray-200",
 	},
-} as const;
+};
 
 interface TopicsFilterControlsProps {
 	showCompletionFilter?: boolean;
@@ -138,7 +146,9 @@ export function TopicsFilterControls({
 									type="button"
 									onClick={() => handleDifficultyToggle(option.value)}
 									className={`min-h-[36px] rounded-full border px-3 py-1.5 text-xs font-medium transition-all duration-200 ${colorClass} ${
-										isSelected ? "shadow-sm" : "hover:border-gray-300 hover:bg-gray-100"
+										isSelected
+											? "shadow-sm"
+											: "hover:border-gray-300 hover:bg-gray-100"
 									}`}
 								>
 									{option.label}
@@ -151,7 +161,9 @@ export function TopicsFilterControls({
 				{/* 풀이 현황 필터 (로그인 사용자만) */}
 				{showCompletionFilter && (
 					<div className="flex flex-wrap items-center gap-2">
-						<span className="text-xs font-medium text-gray-500">풀이 현황:</span>
+						<span className="text-xs font-medium text-gray-500">
+							풀이 현황:
+						</span>
 						<div className="flex flex-wrap gap-1.5">
 							{COMPLETION_STATUS_OPTIONS.map((option) => {
 								const isSelected = params.completionStatus === option.value;
