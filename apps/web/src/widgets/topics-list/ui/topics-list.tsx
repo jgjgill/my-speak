@@ -3,12 +3,16 @@
 import { useParams } from "next/navigation";
 import { useEffect, useRef } from "react";
 import { TopicCard, useTopicsInfinite } from "@/entities/topic";
+import { useUser } from "@/entities/user";
 import { useTopicsFilterParams } from "../model/use-topics-filter-params";
 import { TopicsFilterControls } from "./topics-filter-controls";
 
 export function TopicsList() {
 	const params = useParams();
 	const language = params?.language as string;
+
+	const { data: user } = useUser();
+	const isAuthenticated = !!user;
 
 	const [urlParams] = useTopicsFilterParams();
 
@@ -50,7 +54,7 @@ export function TopicsList() {
 	return (
 		<div>
 			{/* 필터/정렬 컨트롤 */}
-			<TopicsFilterControls showCompletionFilter={false} />
+			<TopicsFilterControls showCompletionFilter={isAuthenticated} />
 
 			{/* 주제 카드 그리드 */}
 			<div className="space-y-4">
