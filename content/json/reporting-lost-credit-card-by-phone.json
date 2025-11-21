@@ -1,0 +1,180 @@
+{
+  "topic": {
+    "id": "a8828344-9606-45b6-b51a-a558a8e8af66",
+    "title": "분실한 신용카드 신고하기",
+    "category": "문제 해결",
+    "difficulty": "초급",
+    "description": "전화로 은행에 연락하여 분실한 신용카드를 신고하고 재발급을 요청하는 상황의 대화입니다.",
+    "language_code": "en",
+    "total_sentences": 6
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 신용카드를 분실해서 연락드렸습니다."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "제 카드를 즉시 정지시켜 주시겠어요?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "네, 확인을 위해 몇 가지 정보를 여쭤봐도 될까요?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "마지막으로 카드를 사용한 곳이 어디인지 기억나시나요?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "잘 모르겠어요. 카드를 재발급받고 싶습니다."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "알겠습니다, 새 카드는 영업일 기준 5일 이내에 주소지로 배송될 것입니다."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, I'm calling because I've lost my credit card.",
+      "chunked_text": "Hello, | I'm calling because | I've lost my credit card."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Could you please deactivate my card immediately?",
+      "chunked_text": "Could you please | deactivate my card | immediately?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Yes, of course. May I ask for some information for verification?",
+      "chunked_text": "Yes, of course. || May I ask for some information | for verification?"
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Do you remember where you last used the card?",
+      "chunked_text": "Do you remember | where you last used the card?"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "I'm not sure. I'd like to get a replacement card.",
+      "chunked_text": "I'm not sure. || I'd like to get a replacement card."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Understood, a new card will be delivered to your address within 5 business days.",
+      "chunked_text": "Understood, | a new card will be delivered to your address | within 5 business days."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "신용카드 분실",
+        "연락"
+      ],
+      "target_sentence": "Hello, I'm calling because I've lost my credit card.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "카드 즉시 정지 요청"
+      ],
+      "target_sentence": "Could you please deactivate my card immediately?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "카드 재발급 희망"
+      ],
+      "target_sentence": "I'd like to get a replacement card.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 4,
+      "keywords": [
+        "카드 분실 신고"
+      ],
+      "target_sentence": "Hello, I'm calling because I've lost my credit card.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 5,
+      "keywords": [
+        "카드 정지",
+        "재발급"
+      ],
+      "target_sentence": "Could you please deactivate my card immediately? I'd like to get a replacement card.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 6,
+      "keywords": [
+        "분실",
+        "재발급"
+      ],
+      "target_sentence": "I've lost my credit card and I'd like to get a replacement.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 7,
+      "keywords": [
+        "lost card",
+        "deactivate"
+      ],
+      "target_sentence": "I've lost my credit card. Could you please deactivate it?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 8,
+      "keywords": [
+        "replacement card"
+      ],
+      "target_sentence": "I'd like to get a replacement card.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "정지시켜 주시겠어요",
+      "foreign_phrase": "deactivate my card"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "여쭤봐도 될까요",
+      "foreign_phrase": "ask for some information"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "카드를 재발급받고 싶습니다",
+      "foreign_phrase": "I'd like to get a replacement card"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 5,
+      "korean_text": "카드를 재발급받고 싶습니다.",
+      "foreign_text": "I'd like to get a replacement card.",
+      "reason": "카드 분실 상황에서 자신의 요구사항을 명확하게 전달하는 핵심적인 표현입니다."
+    }
+  ]
+}
