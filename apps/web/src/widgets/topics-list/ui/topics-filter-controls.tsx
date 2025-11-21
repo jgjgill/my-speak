@@ -105,7 +105,7 @@ export function TopicsFilterControls({
 
 	return (
 		<div className="mb-4 border-b border-gray-200 pb-4">
-			<div className="flex flex-wrap items-start gap-x-6 gap-y-4">
+			<div className="flex flex-wrap items-start gap-x-6 gap-y-4 min-h-24">
 				{/* 정렬 */}
 				<div className="flex flex-wrap items-center gap-2">
 					<span className="text-xs font-medium text-gray-500">정렬:</span>

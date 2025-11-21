@@ -77,8 +77,9 @@ export async function getTopic(
 
 export async function getTopics(
 	params: TopicsQueryParams = {},
+	supabase?: SupabaseClient,
 ): Promise<TopicsResponse> {
-	const client = createBrowserClient();
+	const client = supabase || createBrowserClient();
 
 	const {
 		limit = 5,
@@ -90,14 +91,14 @@ export async function getTopics(
 
 	const offset = page * limit;
 
-	// 사용자 인증 확인
+	// 사용자 인증 확인 (서버/클라이언트 모두 지원)
 	const {
 		data: { user },
 	} = await client.auth.getUser();
 
 	// 완료 상태 필터가 있고 사용자가 인증된 경우 뷰 사용
 	if (filters.completionStatus && filters.completionStatus !== "all" && user) {
-		return getTopicsWithCompletionFilter(params, user);
+		return getTopicsWithCompletionFilter(params, user, client);
 	}
 
 	// 기본 쿼리 빌드
@@ -147,7 +148,8 @@ export async function getTopics(
 		...topic,
 		user_progress: user
 			? Array.isArray(topic.user_progress)
-				? topic.user_progress.find((up) => up.user_id === user.id) || null
+				? topic.user_progress.find((up: UserProgress) => up.user_id === user.id) ||
+					null
 				: topic.user_progress
 			: null,
 	}));
@@ -269,8 +271,9 @@ export async function getKeywordSpeeches(
 async function getTopicsWithCompletionFilter(
 	params: TopicsQueryParams,
 	user: User,
+	supabase?: SupabaseClient,
 ): Promise<TopicsResponse> {
-	const client = createBrowserClient();
+	const client = supabase || createBrowserClient();
 
 	const {
 		limit = 5,

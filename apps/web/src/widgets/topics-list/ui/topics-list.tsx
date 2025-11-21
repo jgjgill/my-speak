@@ -4,6 +4,7 @@ import { useParams } from "next/navigation";
 import { useEffect, useRef } from "react";
 import { TopicCard, useTopicsInfinite } from "@/entities/topic";
 import { useUser } from "@/entities/user";
+import { useIsMounted } from "@/shared/lib/use-is-mounted";
 import { useTopicsFilterParams } from "../model/use-topics-filter-params";
 import { TopicsFilterControls } from "./topics-filter-controls";
 
@@ -12,6 +13,7 @@ export function TopicsList() {
 	const language = params?.language as string;
 
 	const { data: user } = useUser();
+	const isMounted = useIsMounted();
 	const isAuthenticated = !!user;
 
 	const [urlParams] = useTopicsFilterParams();
@@ -51,6 +53,14 @@ export function TopicsList() {
 
 	const allTopics = data.pages.flatMap((page) => page.topics);
 
+	// in_progress, completed 필터는 클라이언트에서만 렌더링
+	const shouldWaitForMount =
+		urlParams.completionStatus === "in_progress" ||
+		urlParams.completionStatus === "completed";
+
+	// 마운트 대기가 필요한데 아직 마운트되지 않았으면 렌더링하지 않음
+	const shouldRenderTopics = !shouldWaitForMount || isMounted;
+
 	return (
 		<div>
 			{/* 필터/정렬 컨트롤 */}
@@ -58,29 +68,32 @@ export function TopicsList() {
 
 			{/* 주제 카드 그리드 */}
 			<div className="space-y-4">
-				{allTopics.map((topic) => {
-					const completedCount =
-						topic.user_progress?.completed_sentences?.length || 0;
-					const totalSentences = topic.total_sentences ?? 0;
-					const completionPercentage =
-						totalSentences > 0
-							? Math.round((completedCount / totalSentences) * 100)
+				{shouldRenderTopics &&
+					allTopics.map((topic) => {
+						// 클라이언트에서만 완료 상태 계산 (하이드레이션 에러 방지)
+						const completedCount = isMounted
+							? topic.user_progress?.completed_sentences?.length || 0
 							: 0;
-					const isCompleted = completionPercentage === 100;
+						const totalSentences = topic.total_sentences ?? 0;
+						const completionPercentage =
+							totalSentences > 0 && isMounted
+								? Math.round((completedCount / totalSentences) * 100)
+								: 0;
+						const isCompleted = isMounted && completionPercentage === 100;
 
-					return (
-						<TopicCard
-							key={topic.id}
-							topic={topic}
-							isCompleted={isCompleted}
-							completionPercentage={completionPercentage}
-						/>
-					);
-				})}
+						return (
+							<TopicCard
+								key={topic.id}
+								topic={topic}
+								isCompleted={isCompleted}
+								completionPercentage={completionPercentage}
+							/>
+						);
+					})}
 			</div>
 
 			{/* 빈 상태 */}
-			{allTopics.length === 0 && (
+			{shouldRenderTopics && allTopics.length === 0 && (
 				<div className="text-center py-12">
 					<div className="w-16 h-16 mx-auto mb-4 rounded-full bg-white flex items-center justify-center">
 						<svg
