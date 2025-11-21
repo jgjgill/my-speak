@@ -24,24 +24,33 @@ export function TopicCard({
 	return (
 		<Link key={topic.id} href={`/${language}/topics/${topic.id}`}>
 			<div
-				className={`topic-card mb-6 ${isCompleted ? "topic-card-completed" : ""}`}
+				className="topic-card mb-6"
+				style={
+					completionPercentage > 0
+						? ({
+								"--progress": `${completionPercentage}%`,
+							} as React.CSSProperties)
+						: undefined
+				}
 			>
-				{completionPercentage > 0 && (
-					<div className="progress-bar mb-4">
-						<div
-							className="progress-fill"
-							style={{ width: `${completionPercentage}%` }}
-						/>
-					</div>
-				)}
-
 				<div className="flex items-start justify-between mb-3">
 					<h2 className="text-heading font-semibold text-korean flex-1 pr-3">
 						{topic.title}
 					</h2>
 					{isCompleted && (
-						<div className="feedback-correct px-2 py-1 text-xs font-medium">
-							완료
+						<div className="flex items-center justify-center w-6 h-6 bg-gray-700 text-white rounded-full shadow-sm flex-shrink-0">
+							<svg
+								className="w-3.5 h-3.5"
+								viewBox="0 0 20 20"
+								fill="currentColor"
+							>
+								<title>완료</title>
+								<path
+									fillRule="evenodd"
+									d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+									clipRule="evenodd"
+								/>
+							</svg>
 						</div>
 					)}
 				</div>
