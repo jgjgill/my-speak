@@ -1,0 +1,139 @@
+{
+  "topic": {
+    "id": "120a9780-b65e-4c7c-96f8-f515a46ab4d1",
+    "title": "버스에 두고 내린 물건 신고하기",
+    "category": "일상",
+    "difficulty": "초급",
+    "description": "버스에 배낭을 두고 내렸을 때 분실물 센터에 연락하여 신고하고 찾는 방법을 배우는 대화입니다.",
+    "language_code": "en",
+    "total_sentences": 6
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 버스 분실물 관련해서 전화드렸어요."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "오늘 아침에 7번 버스에서 제 배낭을 두고 내린 것 같아요."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "배낭은 파란색이고 옆주머니에 곰인형 열쇠고리가 달려 있어요."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "혹시 제 배낭이 들어온 게 있는지 확인해 주실 수 있나요?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "네, 지금 확인해 볼게요. 성함과 연락처를 알려주시겠어요?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "제 이름은 박서준이고, 전화번호는 010-1234-5678입니다."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, I'm calling about a lost item on the bus.",
+      "chunked_text": "Hello, | I'm calling about a lost item | on the bus."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "I think I left behind my backpack on the number 7 bus this morning.",
+      "chunked_text": "I think | I left behind my backpack || on the number 7 bus | this morning."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "The backpack is blue and has a teddy bear keychain on the side pocket.",
+      "chunked_text": "The backpack is blue | and has a teddy bear keychain | on the side pocket."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Could you please check if my backpack has been turned in?",
+      "chunked_text": "Could you please check || if my backpack | has been turned in?"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Yes, I'll check now. Could I have your name and phone number?",
+      "chunked_text": "Yes, | I'll check now. || Could I have your name | and phone number?"
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "My name is Seojun Park, and my phone number is 010-1234-5678.",
+      "chunked_text": "My name is Seojun Park, | and my phone number is | 010-1234-5678."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "버스 분실물 문의",
+        "7번 버스",
+        "파란색 배낭",
+        "곰인형 열쇠고리",
+        "들어왔는지 확인"
+      ],
+      "target_sentence": "I'm calling about a lost item. I think I left my blue backpack with a teddy bear keychain on the number 7 bus. Can you check if it's there?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 2,
+      "keywords": [
+        "분실물 신고",
+        "7번 버스",
+        "배낭"
+      ],
+      "target_sentence": "I'm calling to report a lost backpack on the number 7 bus.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 3,
+      "keywords": [
+        "분실물",
+        "버스"
+      ],
+      "target_sentence": "I lost my item on the bus.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 4,
+      "keywords": [
+        "Lost item",
+        "bus"
+      ],
+      "target_sentence": "I'm calling about a lost item on the bus.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "두고 내린 것 같아요",
+      "foreign_phrase": "I think I left behind"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "들어온 게 있는지",
+      "foreign_phrase": "has been turned in"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 4,
+      "korean_text": "혹시 제 배낭이 들어온 게 있는지 확인해 주실 수 있나요?",
+      "foreign_text": "Could you please check if my backpack has been turned in?",
+      "reason": "분실물을 찾기 위해 담당자에게 확인을 요청하는 핵심적인 질문 표현으로, 다양한 상황에서 유용하게 사용할 수 있습니다."
+    }
+  ]
+}
