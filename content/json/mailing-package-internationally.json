@@ -1,0 +1,209 @@
+{
+  "topic": {
+    "id": "db1cc9db-9f42-4cb4-8f93-7dffccc067f7",
+    "title": "해외로 소포 부치기",
+    "category": "일상",
+    "difficulty": "초급",
+    "description": "우체국에서 해외로 소포를 부치는 상황에 대한 대화입니다.",
+    "language_code": "en",
+    "total_sentences": 6
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 이 소포를 한국으로 보내고 싶어요."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "네, 이 안에 깨지기 쉬운 물건이 있나요?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "아니요, 없어요. 옷이랑 책 몇 권이에요."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "알겠습니다. 배송은 일반 우편과 특급 우편 중 어떤 걸로 하시겠어요?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "각각 요금이 얼마인가요?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "일반 우편은 20달러, 특급 우편은 45달러입니다."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, I'd like to send this package to Korea.",
+      "chunked_text": "Hello, | I'd like to send this package | to Korea."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Okay, are there **any fragile items** inside?",
+      "chunked_text": "Okay, | are there **any fragile items** | inside?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "No, there aren't. It's just some clothes and a few books.",
+      "chunked_text": "No, | there aren't. || It's just some clothes | and a few books."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "I see. Would you like standard shipping or express shipping?",
+      "chunked_text": "I see. || Would you like | standard shipping | or express shipping?"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Standard is $20 and express is $45.",
+      "chunked_text": "Standard is $20 | and express is $45."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "소포",
+        "한국으로 보내기"
+      ],
+      "target_sentence": "I'd like to send this package to Korea.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "깨지기 쉬운 물건",
+        "안에 있나요"
+      ],
+      "target_sentence": "Are there any fragile items inside?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "요금",
+        "각각 얼마"
+      ],
+      "target_sentence": "How much is the fee for each?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 4,
+      "keywords": [
+        "한국으로 소포 보내기"
+      ],
+      "target_sentence": "I'd like to send this package to Korea.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 5,
+      "keywords": [
+        "깨지기 쉬운 물건"
+      ],
+      "target_sentence": "Are there any fragile items inside?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 6,
+      "keywords": [
+        "요금 문의"
+      ],
+      "target_sentence": "How much is the fee for each?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 7,
+      "keywords": [
+        "소포 보내기"
+      ],
+      "target_sentence": "I'd like to send this package to Korea.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 8,
+      "keywords": [
+        "내용물 확인"
+      ],
+      "target_sentence": "Are there any fragile items inside?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 9,
+      "keywords": [
+        "요금"
+      ],
+      "target_sentence": "How much is the fee for each?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 10,
+      "keywords": [
+        "send package"
+      ],
+      "target_sentence": "I'd like to send this package to Korea.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 11,
+      "keywords": [
+        "fragile items"
+      ],
+      "target_sentence": "Are there any fragile items inside?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 12,
+      "keywords": [
+        "fee for each"
+      ],
+      "target_sentence": "How much is the fee for each?",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "깨지기 쉬운 물건",
+      "foreign_phrase": "any fragile items"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "요금이 얼마인가요",
+      "foreign_phrase": "How much is the fee"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 5,
+      "korean_text": "요금이 얼마인가요?",
+      "foreign_text": "How much is the fee for each?",
+      "reason": "비용을 문의하는 것은 다양한 상황에서 매우 유용하게 사용되는 핵심 표현이기 때문입니다."
+    }
+  ]
+}
