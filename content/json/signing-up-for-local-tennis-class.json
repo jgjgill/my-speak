@@ -1,0 +1,138 @@
+{
+  "topic": {
+    "id": "731563de-4b57-40be-bf93-d1cdb65824f4",
+    "title": "스포츠 강좌에 등록하기",
+    "category": "일상",
+    "difficulty": "초급",
+    "description": "지역 커뮤니티 센터에서 테니스 강좌에 대해 문의하고 등록하는 대화입니다.",
+    "language_code": "en",
+    "total_sentences": 6
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 테니스 강좌에 대해 문의하고 싶어요."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "네, 물론이죠. 초급반과 중급반이 있는데, 어떤 걸 찾으세요?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "저는 완전 초보예요. 초급반은 언제 수업이 있나요?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "초급반은 매주 화요일과 목요일 저녁 7시에 있습니다."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "좋아요. 수강 신청하려면 어떻게 해야 하나요?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "이 신청서를 작성해주시고, 수강료를 결제하시면 됩니다."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, I'd like to inquire about the tennis classes.",
+      "chunked_text": "Hello, | I'd like to inquire | about the tennis classes."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Yes, of course. We have beginner and intermediate classes. Which one are you looking for?",
+      "chunked_text": "Yes, | of course. || We have beginner and intermediate classes. | Which one are you looking for?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "I'm a complete beginner. When are the beginner classes?",
+      "chunked_text": "I'm a complete beginner. || When are | the beginner classes?"
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "The beginner class is every Tuesday and Thursday at 7 PM.",
+      "chunked_text": "The beginner class is every Tuesday and Thursday | at 7 PM."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Great. How do I sign up for the class?",
+      "chunked_text": "Great. || How do I sign up | for the class?"
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Please fill out this application form and pay the course fee.",
+      "chunked_text": "Please fill out | this application form || and pay the course fee."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "테니스 강좌 문의",
+        "완전 초보",
+        "수업 시간",
+        "수강 신청 방법"
+      ],
+      "target_sentence": "Hello, I'd like to inquire about the tennis classes. I'm a complete beginner and would like to know the class schedule and how to sign up.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 2,
+      "keywords": [
+        "테니스 문의",
+        "초급반",
+        "신청 방법"
+      ],
+      "target_sentence": "I'd like to ask about the beginner tennis class and how to register.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 3,
+      "keywords": [
+        "테니스 강좌 등록"
+      ],
+      "target_sentence": "I want to register for a tennis class.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 4,
+      "keywords": [
+        "Inquire",
+        "Beginner tennis",
+        "Sign up"
+      ],
+      "target_sentence": "I'd like to inquire about the beginner tennis class and sign up.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 3,
+      "korean_phrase": "완전 초보예요",
+      "foreign_phrase": "I'm a complete beginner"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "수강 신청하려면",
+      "foreign_phrase": "To sign up for the class"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 5,
+      "korean_text": "수강 신청하려면 어떻게 해야 하나요?",
+      "foreign_text": "How do I sign up for the class?",
+      "reason": "강좌 등록 절차를 묻는 핵심적인 질문으로, 학습자가 실제 상황에서 바로 사용할 수 있는 유용한 표현입니다."
+    }
+  ]
+}
