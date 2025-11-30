@@ -1,0 +1,139 @@
+{
+  "topic": {
+    "id": "0b302921-f405-481d-84e4-a65e3f75ff24",
+    "title": "세탁소에 얼룩진 셔츠 맡기기",
+    "category": "생활",
+    "difficulty": "초급",
+    "description": "세탁소에 얼룩진 셔츠를 맡기고 언제 찾을 수 있는지 묻는 상황입니다.",
+    "language_code": "en",
+    "total_sentences": 6
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 이 셔츠 세탁 좀 맡기려고요."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "네, 그런데 여기 커피 얼룩이 있네요."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "네, 맞아요. 이 얼룩을 뺄 수 있을까요?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "최선을 다해보겠지만, 완전히 빠질 거라고 장담은 못 드려요."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "알겠습니다. 그럼 언제쯤 찾으러 오면 될까요?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "금요일 오후부터 가능합니다."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hi, I'd like to drop this shirt off for cleaning.",
+      "chunked_text": "Hi, | I'd like to drop this shirt off | for cleaning."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Okay, but there's a coffee stain here.",
+      "chunked_text": "Okay, | but there's a coffee stain | here."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Yes, that's right. Can you get this stain out?",
+      "chunked_text": "Yes, | that's right. || Can you get this stain out?"
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "We'll do our best, but I can't guarantee it will come out completely.",
+      "chunked_text": "We'll do our best, || but I can't guarantee | it will come out completely."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "I understand. Then when can I come pick it up?",
+      "chunked_text": "I understand. || Then when | can I come pick it up?"
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "It will be ready from Friday afternoon.",
+      "chunked_text": "It will be ready | from Friday afternoon."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "셔츠 세탁 맡기기",
+        "커피 얼룩",
+        "얼룩 제거 가능?",
+        "언제 찾으러 오면 되는지"
+      ],
+      "target_sentence": "Hi, I'd like to drop this shirt off for cleaning. There's a coffee stain on it. Can you get this stain out? When can I come pick it up?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 2,
+      "keywords": [
+        "셔츠 맡기기",
+        "커피 얼룩",
+        "언제?"
+      ],
+      "target_sentence": "Drop off shirt, coffee stain, when?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 3,
+      "keywords": [
+        "세탁",
+        "얼룩"
+      ],
+      "target_sentence": "Cleaning, stain",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 4,
+      "keywords": [
+        "drop off",
+        "stain",
+        "pick up"
+      ],
+      "target_sentence": "When can I pick up the shirt I dropped off with a stain?",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 3,
+      "korean_phrase": "이 얼룩을 뺄 수 있을까요",
+      "foreign_phrase": "get this stain out"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "완전히 빠질 거라고 장담은 못 드려요",
+      "foreign_phrase": "I can't guarantee it will come out completely"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 3,
+      "korean_text": "이 얼룩을 뺄 수 있을까요",
+      "foreign_text": "Can you get this stain out",
+      "reason": "세탁소에서 특정 얼룩 제거 가능 여부를 묻는 핵심적인 질문으로, 실생활에서 유용하게 사용할 수 있습니다."
+    }
+  ]
+}
