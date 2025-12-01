@@ -1,0 +1,242 @@
+{
+  "topic": {
+    "id": "b1075c8a-29fe-4813-9725-a50568581319",
+    "title": "약국에서 감기 증상 설명하고 약 구매하기",
+    "category": "건강",
+    "difficulty": "초급",
+    "description": "약국에서 감기 증상을 설명하고 적절한 약을 추천받아 구매하는 상황의 대화입니다.",
+    "language_code": "en",
+    "total_sentences": 6
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 감기약 좀 사려고 하는데요."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "어떤 증상이 있으신가요?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "콧물이 나고 목이 좀 아파요."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "열은 없지만 몸살 기운이 약간 있어요."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "그럼 이 종합 감기약을 드셔보세요. 하루에 세 번 식후에 드시면 됩니다."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "네, 이걸로 주세요. 감사합니다."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, I'd like to buy some cold medicine.",
+      "chunked_text": "Hello, | I'd like to buy | some cold medicine."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "What are your symptoms?",
+      "chunked_text": "What are | your symptoms?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "I have a runny nose and a bit of a sore throat.",
+      "chunked_text": "I have a runny nose | and a bit of a sore throat."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "I don't have a fever, but I feel a bit achy.",
+      "chunked_text": "I don't have a fever, | but I feel a bit achy."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Then try this combination cold medicine. You can take it three times a day after meals.",
+      "chunked_text": "Then try | this combination cold medicine. || You can take it | three times a day | after meals."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Okay, I'll take this one. Thank you.",
+      "chunked_text": "Okay, | I'll take this one. | Thank you."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "감기약 구매"
+      ],
+      "target_sentence": "I'd like to buy some cold medicine.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "콧물",
+        "목 아픔"
+      ],
+      "target_sentence": "I have a runny nose and a bit of a sore throat.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "열 없음",
+        "몸살 기운"
+      ],
+      "target_sentence": "I don't have a fever, but I feel a bit achy.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "종합 감기약",
+        "하루 세 번",
+        "식후"
+      ],
+      "target_sentence": "Take this combination cold medicine three times a day after meals.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 5,
+      "keywords": [
+        "증상 질문"
+      ],
+      "target_sentence": "What are your symptoms?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 6,
+      "keywords": [
+        "콧물",
+        "목 통증"
+      ],
+      "target_sentence": "I have a runny nose and a bit of a sore throat.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 7,
+      "keywords": [
+        "몸살 기운"
+      ],
+      "target_sentence": "I feel a bit achy.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 8,
+      "keywords": [
+        "감기약"
+      ],
+      "target_sentence": "I'd like to buy some cold medicine.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 9,
+      "keywords": [
+        "증상"
+      ],
+      "target_sentence": "symptoms",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 10,
+      "keywords": [
+        "몸살"
+      ],
+      "target_sentence": "achy",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 11,
+      "keywords": [
+        "cold medicine"
+      ],
+      "target_sentence": "I'd like to buy some cold medicine.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 12,
+      "keywords": [
+        "symptoms"
+      ],
+      "target_sentence": "What are your symptoms?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 13,
+      "keywords": [
+        "runny nose",
+        "sore throat"
+      ],
+      "target_sentence": "I have a runny nose and a bit of a sore throat.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 14,
+      "keywords": [
+        "achy"
+      ],
+      "target_sentence": "I feel a bit achy.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 3,
+      "korean_phrase": "콧물이 나고",
+      "foreign_phrase": "I have a runny nose"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "몸살 기운이 약간 있어요",
+      "foreign_phrase": "I feel a bit achy"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "하루에 세 번",
+      "foreign_phrase": "three times a day"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 4,
+      "korean_text": "열은 없지만 몸살 기운이 약간 있어요.",
+      "foreign_text": "I don't have a fever, but I feel a bit achy.",
+      "reason": "감기나 몸살의 미묘한 초기 증상을 설명하는 실용적인 표현입니다."
+    }
+  ]
+}
