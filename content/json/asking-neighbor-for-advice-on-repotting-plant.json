@@ -1,0 +1,213 @@
+{
+  "topic": {
+    "id": "2f1a9bc3-5b07-495d-8cee-c892b4356536",
+    "title": "화분 분갈이 방법에 대해 이웃에게 조언 구하기",
+    "category": "생활",
+    "difficulty": "초급",
+    "description": "식물을 더 큰 화분으로 옮겨 심는 방법에 대해 경험 많은 이웃에게 조언을 구하는 상황의 대화입니다.",
+    "language_code": "en",
+    "total_sentences": 6
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 제라드 씨. 잠시 시간 괜찮으세요?"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "제 거실에 있는 화분이 너무 자라서 분갈이를 해야 할 것 같아요."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "사실, 전 한 번도 해본 적이 없어서요."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "항상 식물을 잘 키우시던데, 혹시 조언을 좀 받을 수 있을까요?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "물론이죠! 가장 중요한 건 뿌리가 다치지 않게 조심하고, 배수가 잘 되는 흙을 사용하는 거예요."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "아하, 그렇군요! 정말 감사합니다. 주말에 한번 해봐야겠어요."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, Mr. Gerard. Do you have a moment?",
+      "chunked_text": "Hello, | Mr. Gerard. || Do you have a moment?"
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "The plant in my living room has grown so much that I think it needs to be repotted.",
+      "chunked_text": "The plant in my living room | has grown so much || that I think | it needs to be repotted."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Actually, I've never done it before.",
+      "chunked_text": "Actually, | I've never done it before."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "You're always so good with plants, could I possibly get some advice?",
+      "chunked_text": "You're always so good with plants, || could I possibly | get some advice?"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Of course! The most important thing is to be careful not to damage the roots and to use soil with good drainage.",
+      "chunked_text": "Of course! || The most important thing is | to be careful not to damage the roots || and to use soil | with good drainage."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Oh, I see! Thank you so much. I'll give it a try this weekend.",
+      "chunked_text": "Oh, | I see! || Thank you so much. || I'll give it a try | this weekend."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "거실 화분",
+        "너무 자람",
+        "분갈이 필요"
+      ],
+      "target_sentence": "The plant in my living room has grown so much that I think it needs to be repotted.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "식물 잘 키우심",
+        "조언 가능?"
+      ],
+      "target_sentence": "You're always so good with plants, could I possibly get some advice?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "중요한 것: 뿌리 조심",
+        "배수 잘 되는 흙 사용"
+      ],
+      "target_sentence": "The most important thing is to be careful not to damage the roots and to use soil with good drainage.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 4,
+      "keywords": [
+        "화분",
+        "분갈이"
+      ],
+      "target_sentence": "The plant in my living room has grown so much that I think it needs to be repotted.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 5,
+      "keywords": [
+        "조언 요청"
+      ],
+      "target_sentence": "You're always so good with plants, could I possibly get some advice?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 6,
+      "keywords": [
+        "뿌리",
+        "흙"
+      ],
+      "target_sentence": "The most important thing is to be careful not to damage the roots and to use soil with good drainage.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 7,
+      "keywords": [
+        "분갈이"
+      ],
+      "target_sentence": "The plant in my living room has grown so much that I think it needs to be repotted.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 8,
+      "keywords": [
+        "조언?"
+      ],
+      "target_sentence": "You're always so good with plants, could I possibly get some advice?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 9,
+      "keywords": [
+        "repotting"
+      ],
+      "target_sentence": "The plant in my living room has grown so much that I think it needs to be repotted.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 10,
+      "keywords": [
+        "advice"
+      ],
+      "target_sentence": "You're always so good with plants, could I possibly get some advice?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 11,
+      "keywords": [
+        "roots",
+        "soil"
+      ],
+      "target_sentence": "The most important thing is to be careful not to damage the roots and to use soil with good drainage.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "분갈이를 해야 할 것 같아요",
+      "foreign_phrase": "it needs to be repotted"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "혹시 조언을 좀 받을 수 있을까요",
+      "foreign_phrase": "could I possibly get some advice"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "배수가 잘 되는 흙",
+      "foreign_phrase": "soil with good drainage"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 4,
+      "korean_text": "항상 식물을 잘 키우시던데, 혹시 조언을 좀 받을 수 있을까요?",
+      "foreign_text": "You're always so good with plants, could I possibly get some advice?",
+      "reason": "상대방의 전문성을 인정하며 정중하게 조언이나 도움을 요청할 때 매우 유용한 핵심 패턴 문장입니다."
+    }
+  ]
+}
