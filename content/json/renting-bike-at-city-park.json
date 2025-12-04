@@ -1,0 +1,144 @@
+{
+  "topic": {
+    "id": "0b8c0a5e-44ac-48ae-a4c4-bb9a78d48734",
+    "title": "공원에서 자전거 빌리기",
+    "category": "여행",
+    "difficulty": "초급",
+    "description": "공원 자전거 대여소에서 시간 단위로 자전거를 빌리고 요금을 문의하는 상황의 대화입니다.",
+    "language_code": "en",
+    "total_sentences": 6
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 자전거를 빌리고 싶어요."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "어떤 종류의 자전거가 있나요?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "1인용 자전거 두 시간 빌리는 데 얼마예요?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "헬멧도 같이 빌릴 수 있나요?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "결제하기 전에 자전거를 미리 타봐도 될까요?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "네, 이걸로 할게요. 여기 제 신분증이요."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, I'd like to rent a bike.",
+      "chunked_text": "Hello, | I'd like to rent a bike."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "What kind of bikes do you have?",
+      "chunked_text": "What kind of bikes | do you have?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "For a single bike, **how much is it to rent for two hours**?",
+      "chunked_text": "For a single bike, || **how much is it to rent for two hours**?"
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Can I rent a helmet as well?",
+      "chunked_text": "Can I rent a helmet | as well?"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Can I **try out the bike beforehand** before I pay?",
+      "chunked_text": "Can I **try out the bike beforehand** | before I pay?"
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Yes, I'll take this one. Here's my ID.",
+      "chunked_text": "Yes, | I'll take this one. || Here's my ID."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "자전거 빌리고 싶어요",
+        "어떤 종류",
+        "1인용",
+        "두 시간 얼마",
+        "헬멧도",
+        "결제 전 타보기"
+      ],
+      "target_sentence": "I'd like to rent a bike. What kind do you have? How much is it for two hours for a single bike? Can I rent a helmet? Can I try it out before I pay?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 2,
+      "keywords": [
+        "자전거 대여 문의",
+        "두 시간 가격",
+        "헬멧",
+        "시승 가능 여부"
+      ],
+      "target_sentence": "I'd like to rent a bike. How much for two hours? Can I get a helmet, and can I try it first?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 3,
+      "keywords": [
+        "자전거 대여",
+        "가격",
+        "신분증"
+      ],
+      "target_sentence": "I want to rent a bike. How much is it? Here is my ID.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 4,
+      "keywords": [
+        "rent a bike",
+        "how much",
+        "two hours",
+        "try out"
+      ],
+      "target_sentence": "I'd like to rent a bike. How much is it for two hours? Can I try it out?",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 3,
+      "korean_phrase": "두 시간 빌리는 데 얼마예요",
+      "foreign_phrase": "how much is it to rent for two hours"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "미리 타봐도 될까요",
+      "foreign_phrase": "try out the bike beforehand"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 3,
+      "korean_text": "1인용 자전거 두 시간 빌리는 데 얼마예요?",
+      "foreign_text": "For a single bike, how much is it to rent for two hours?",
+      "reason": "시간과 요금을 직접적으로 문의하는 핵심 표현으로, 다양한 대여 상황에서 응용할 수 있습니다."
+    }
+  ]
+}
