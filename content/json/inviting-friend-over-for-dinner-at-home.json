@@ -1,0 +1,212 @@
+{
+  "topic": {
+    "id": "23aa721e-f51d-4234-ba04-350cc4726114",
+    "title": "친구를 저녁 식사에 초대하기",
+    "category": "일상생활",
+    "difficulty": "초급",
+    "description": "친구를 집으로 저녁 식사에 초대하고 약속을 잡는 상황의 대화입니다.",
+    "language_code": "en",
+    "total_sentences": 6
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕, 민준. 이번 주 금요일 저녁에 시간 있어?"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "응, 괜찮아. 무슨 일이야?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "우리 집에 와서 같이 저녁 식사하는 거 어때?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "정말? 너무 좋다! 몇 시에 가면 될까?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "저녁 7시쯤 어때? 내가 맛있는 파스타 만들어 줄게."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "완벽해! 그럼 금요일에 보자."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hey, Minjun. Are you free this Friday evening?",
+      "chunked_text": "Hey, Minjun. | Are you free | this Friday evening?"
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Yeah, I'm free. What's up?",
+      "chunked_text": "Yeah, | I'm free. || What's up?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "How about coming over to my place and we **have dinner together**?",
+      "chunked_text": "How about coming over | to my place || and we have dinner together?"
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Really? That sounds great! What time should I be there?",
+      "chunked_text": "Really? | That sounds great! || What time | should I be there?"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "How about around 7 PM? I'll make some delicious pasta for you.",
+      "chunked_text": "How about | around 7 PM? || I'll make some delicious pasta | for you."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Perfect! See you on Friday then.",
+      "chunked_text": "Perfect! || See you on Friday then."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "이번 주 금요일 저녁",
+        "시간 있어?"
+      ],
+      "target_sentence": "Are you free this Friday evening?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "우리 집에 와서",
+        "같이 저녁 식사 제안"
+      ],
+      "target_sentence": "How about coming over to my place and we have dinner together?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "저녁 7시쯤",
+        "맛있는 파스타 만들어 줄게"
+      ],
+      "target_sentence": "How about around 7 PM? I'll make some delicious pasta for you.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 4,
+      "keywords": [
+        "금요일 저녁",
+        "시간"
+      ],
+      "target_sentence": "Are you free this Friday evening?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 5,
+      "keywords": [
+        "우리 집",
+        "저녁 식사"
+      ],
+      "target_sentence": "How about coming over to my place and we have dinner together?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 6,
+      "keywords": [
+        "7시",
+        "파스타"
+      ],
+      "target_sentence": "How about around 7 PM? I'll make some delicious pasta for you.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 7,
+      "keywords": [
+        "금요일 저녁"
+      ],
+      "target_sentence": "Are you free this Friday evening?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 8,
+      "keywords": [
+        "저녁 초대"
+      ],
+      "target_sentence": "How about coming over to my place and we have dinner together?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 9,
+      "keywords": [
+        "7시"
+      ],
+      "target_sentence": "How about around 7 PM?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 10,
+      "keywords": [
+        "Friday evening"
+      ],
+      "target_sentence": "Are you free this Friday evening?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 11,
+      "keywords": [
+        "Dinner together"
+      ],
+      "target_sentence": "How about coming over to my place and we have dinner together?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 12,
+      "keywords": [
+        "Around 7 PM"
+      ],
+      "target_sentence": "How about around 7 PM?",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 3,
+      "korean_phrase": "같이 저녁 식사하는 거 어때",
+      "foreign_phrase": "have dinner together"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 3,
+      "korean_text": "우리 집에 와서 같이 저녁 식사하는 거 어때?",
+      "foreign_text": "How about coming over to my place and we have dinner together?",
+      "reason": "상대방에게 저녁 식사를 제안하는 핵심적인 초대 문장입니다."
+    }
+  ]
+}
