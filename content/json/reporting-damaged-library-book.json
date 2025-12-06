@@ -1,0 +1,189 @@
+{
+  "topic": {
+    "id": "62cf3949-d914-479f-9027-721a58f1eb89",
+    "title": "도서관에서 빌린 책이 손상되었다고 알리기",
+    "category": "문제 해결",
+    "difficulty": "초급",
+    "description": "도서관에서 빌린 책의 일부 페이지가 찢어진 것을 발견하고 사서에게 상황을 설명하는 대화입니다.",
+    "language_code": "en",
+    "total_sentences": 6
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 이 책을 반납하려고 하는데요."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "그런데 문제가 하나 생겼어요."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "제가 빌린 책의 몇 페이지가 찢어져 있는 것을 발견했어요."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "제가 그런 게 아닌데, 어떻게 해야 할지 모르겠어요."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "혹시 제가 변상해야 하나요?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "알겠습니다, 확인해 주셔서 감사합니다."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, I'd like to return this book.",
+      "chunked_text": "Hello, | I'd like to return | this book."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "But I've run into a problem.",
+      "chunked_text": "But | I've run into | a problem."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "I discovered that a few pages in the book I borrowed are torn.",
+      "chunked_text": "I discovered that || a few pages | in the book I borrowed | are torn."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "It wasn't me, but I'm not sure what to do.",
+      "chunked_text": "It wasn't me, | but I'm not sure | what to do."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Do I have to pay for the damage?",
+      "chunked_text": "Do I have to | pay for the damage?"
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "I see, thank you for checking.",
+      "chunked_text": "I see, || thank you | for checking."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "책 반납",
+        "문제 발생"
+      ],
+      "target_sentence": "Hello, I'd like to return this book. But I've run into a problem.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "페이지 찢어진 것 발견",
+        "내가 안 그랬음"
+      ],
+      "target_sentence": "I discovered that a few pages in the book I borrowed are torn. It wasn't me.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "어떻게 해야 할지",
+        "변상해야 하는지"
+      ],
+      "target_sentence": "I'm not sure what to do. Do I have to pay for the damage?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 4,
+      "keywords": [
+        "책 반납",
+        "문제"
+      ],
+      "target_sentence": "Hello, I'd like to return this book. But I've run into a problem.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 5,
+      "keywords": [
+        "페이지 찢어짐",
+        "변상 여부"
+      ],
+      "target_sentence": "A few pages are torn. Do I have to pay for the damage?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 6,
+      "keywords": [
+        "문제",
+        "찢어진 책"
+      ],
+      "target_sentence": "I have a problem with this torn book.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 7,
+      "keywords": [
+        "변상?"
+      ],
+      "target_sentence": "Do I have to pay for it?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 8,
+      "keywords": [
+        "return book",
+        "problem"
+      ],
+      "target_sentence": "Hello, I'd like to return this book. But I've run into a problem.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 9,
+      "keywords": [
+        "pages torn",
+        "pay for damage"
+      ],
+      "target_sentence": "I discovered that a few pages are torn. Do I have to pay for the damage?",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "문제가 하나 생겼어요",
+      "foreign_phrase": "I've run into a problem"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "어떻게 해야 할지 모르겠어요",
+      "foreign_phrase": "I'm not sure what to do"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 3,
+      "korean_text": "제가 빌린 책의 몇 페이지가 찢어져 있는 것을 발견했어요.",
+      "foreign_text": "I discovered that a few pages in the book I borrowed are torn.",
+      "reason": "문제의 핵심 원인을 명확하게 설명하며, 비슷한 상황에서 유용하게 사용할 수 있는 필수 표현입니다."
+    }
+  ]
+}
