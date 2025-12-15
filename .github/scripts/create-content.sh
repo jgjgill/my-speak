@@ -122,7 +122,7 @@ EOF
 
   # Gemini로 콘텐츠 생성
   echo -e "${YELLOW}🤖 Gemini로 콘텐츠 생성 중...${NC}"
-  GENERATED_CONTENT=$(gemini --yolo -p "$(cat "$TEMP_PROMPT")" 2>&1)
+  GENERATED_CONTENT=$(cat "$TEMP_PROMPT" | gemini --yolo 2>&1)
   EXIT_CODE=$?
   rm -f "$TEMP_PROMPT"
 
