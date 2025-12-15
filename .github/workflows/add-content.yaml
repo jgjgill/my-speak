@@ -69,8 +69,8 @@ jobs:
           echo "난이도: $DIFFICULTY"
 
           # 스크립트 실행
-          chmod +x .github/scripts/generate-content.sh
-          ./.github/scripts/generate-content.sh "$LANGUAGE" "$DIFFICULTY"
+          chmod +x .github/scripts/create-content.sh
+          ./.github/scripts/create-content.sh "$LANGUAGE" "$DIFFICULTY"
 
       - name: Commit and push changes
         env:
