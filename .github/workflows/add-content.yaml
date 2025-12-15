@@ -101,7 +101,8 @@ jobs:
               TITLE="새 학습 콘텐츠"
             fi
 
-            git add content/
+            # 콘텐츠 파일과 인덱스 모두 커밋
+            git add content/source/ content/.content-index.json
             git commit -m "content: ${TITLE} (${LANGUAGE} ${DIFFICULTY})"
 
             # act 로컬 환경에서는 push 스킵
