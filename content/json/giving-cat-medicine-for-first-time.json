@@ -1,0 +1,408 @@
+{
+  "topic": {
+    "id": "63434678-dc9e-4b4a-9559-061da072dc5b",
+    "title": "고양이에게 처음 약 먹이기",
+    "category": "반려동물",
+    "difficulty": "초급",
+    "description": "반려묘에게 처음으로 약을 먹여야 하는 상황에서 친구와 함께 시도하며 방법을 배우는 대화입니다.",
+    "language_code": "en",
+    "total_sentences": 7
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "레오 약 먹일 시간이야. 도와줄 수 있어?"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "물론이지. 근데, 고양이한테 약 먹이는 거 처음인데. 어떻게 시작해야 할지 모르겠어."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "괜찮아, 내가 알려줄게. 먼저, 레오를 수건으로 부드럽게 감싸서 진정시켜야 해."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "알았어. 이렇게 하면 돼? 너무 꽉 조이는 건 아니겠지?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "아니, 완벽해. 이제 내가 턱을 살짝 들어 올릴게. 네가 약을 입에 넣어줘."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "해볼게! 와, 생각보다 빨리 삼켰네."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "잘했어! 이제 레오에게 간식을 줘서 칭찬해주자."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "It's time to give Leo his medicine. Can you help me?",
+      "chunked_text": "It's time | to give Leo | his medicine. | Can you help me?"
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Sure. But this is my first time giving a cat medicine. I don't know how to start.",
+      "chunked_text": "Sure. | But this is my first time | giving a cat medicine. | I don't know | how to start."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "It's okay, I'll show you. First, we need to gently wrap Leo in a towel to calm him down.",
+      "chunked_text": "It's okay, | I'll show you. | First, | we need to | gently wrap Leo | in a towel | to calm him down."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Okay. Like this? I hope it's not too tight.",
+      "chunked_text": "Okay. | Like this? | I hope | it's not too tight."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "No, that's perfect. Now I'll lift his chin slightly. You put the medicine in his mouth.",
+      "chunked_text": "No, | that's perfect. | Now I'll lift | his chin slightly. | You put the medicine | in his mouth."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "I'll try! Wow, he swallowed it faster than I thought.",
+      "chunked_text": "I'll try! | Wow, | he swallowed it faster | than I thought."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "Great job! Now let's give Leo a treat to praise him.",
+      "chunked_text": "Great job! | Now let's give Leo | a treat | to praise him."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "레오 약 먹일 시간",
+        "도와줄래?"
+      ],
+      "target_sentence": "It's time to give Leo his medicine. Can you help me?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "물론",
+        "고양이 약 처음",
+        "어떻게 시작할지 모름"
+      ],
+      "target_sentence": "Sure. But this is my first time giving a cat medicine. I don't know how to start.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "괜찮아",
+        "알려줄게",
+        "먼저 수건으로 감싸서 진정시켜"
+      ],
+      "target_sentence": "It's okay, I'll show you. First, we need to gently wrap Leo in a towel to calm him down.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "알았어",
+        "이렇게? 너무 꽉 아니지?"
+      ],
+      "target_sentence": "Okay. Like this? I hope it's not too tight.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "완벽해",
+        "내가 턱 들게",
+        "네가 약을 입에 넣어"
+      ],
+      "target_sentence": "No, that's perfect. Now I'll lift his chin slightly. You put the medicine in his mouth.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "해볼게",
+        "생각보다 빨리 삼켰네"
+      ],
+      "target_sentence": "I'll try! Wow, he swallowed it faster than I thought.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "잘했어",
+        "간식으로 칭찬해주자"
+      ],
+      "target_sentence": "Great job! Now let's give Leo a treat to praise him.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "약 먹일 시간",
+        "도와줘"
+      ],
+      "target_sentence": "It's time to give Leo his medicine. Can you help me?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "처음이야",
+        "어떻게 시작?"
+      ],
+      "target_sentence": "Sure. But this is my first time giving a cat medicine. I don't know how to start.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "수건으로 감싸",
+        "진정시켜"
+      ],
+      "target_sentence": "It's okay, I'll show you. First, we need to gently wrap Leo in a towel to calm him down.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "이렇게? 안 꽉?"
+      ],
+      "target_sentence": "Okay. Like this? I hope it's not too tight.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "내가 턱 들게",
+        "약 넣어줘"
+      ],
+      "target_sentence": "No, that's perfect. Now I'll lift his chin slightly. You put the medicine in his mouth.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "빨리 삼켰네"
+      ],
+      "target_sentence": "I'll try! Wow, he swallowed it faster than I thought.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "잘했어",
+        "간식 주자"
+      ],
+      "target_sentence": "Great job! Now let's give Leo a treat to praise him.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "약",
+        "도움"
+      ],
+      "target_sentence": "It's time to give Leo his medicine. Can you help me?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "처음",
+        "시작?"
+      ],
+      "target_sentence": "Sure. But this is my first time giving a cat medicine. I don't know how to start.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "수건",
+        "진정"
+      ],
+      "target_sentence": "It's okay, I'll show you. First, we need to gently wrap Leo in a towel to calm him down.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "이거?"
+      ],
+      "target_sentence": "Okay. Like this? I hope it's not too tight.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "턱",
+        "약"
+      ],
+      "target_sentence": "No, that's perfect. Now I'll lift his chin slightly. You put the medicine in his mouth.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "삼켰다"
+      ],
+      "target_sentence": "I'll try! Wow, he swallowed it faster than I thought.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "간식"
+      ],
+      "target_sentence": "Great job! Now let's give Leo a treat to praise him.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "Medicine",
+        "help"
+      ],
+      "target_sentence": "It's time to give Leo his medicine. Can you help me?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "First time",
+        "start?"
+      ],
+      "target_sentence": "Sure. But this is my first time giving a cat medicine. I don't know how to start.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "Towel",
+        "calm down"
+      ],
+      "target_sentence": "It's okay, I'll show you. First, we need to gently wrap Leo in a towel to calm him down.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "This?"
+      ],
+      "target_sentence": "Okay. Like this? I hope it's not too tight.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "Chin",
+        "medicine"
+      ],
+      "target_sentence": "No, that's perfect. Now I'll lift his chin slightly. You put the medicine in his mouth.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "Swallowed"
+      ],
+      "target_sentence": "I'll try! Wow, he swallowed it faster than I thought.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "Treat"
+      ],
+      "target_sentence": "Great job! Now let's give Leo a treat to praise him.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "어떻게 시작해야 할지",
+      "foreign_phrase": "how to start"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "진정시켜야 해",
+      "foreign_phrase": "calm him down"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "약을 입에 넣어줘",
+      "foreign_phrase": "put the medicine in his mouth"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 2,
+      "korean_text": "물론이지. 근데, 고양이한테 약 먹이는 거 처음인데. 어떻게 시작해야 할지 모르겠어.",
+      "foreign_text": "Sure. But this is my first time giving a cat medicine. I don't know how to start.",
+      "reason": "'how to + [verb]' (어떻게 ~해야 할지)는 초급자가 다양한 상황에서 유용하게 쓸 수 있는 핵심 패턴이기 때문입니다."
+    }
+  ]
+}
