@@ -52,23 +52,18 @@ if [ ! -f "$INDEX_FILE" ]; then
   exit 1
 fi
 
-# slugs 배열을 쉼표로 연결된 문자열로 변환 (Python 사용)
-EXISTING_SLUGS=$(python3 -c "
+# 인덱스에서 slug 목록과 개수 읽기 (한 번에)
+read -r SLUG_COUNT EXISTING_SLUGS <<< $(python3 -c "
 import json
 with open('$INDEX_FILE', 'r') as f:
     data = json.load(f)
-    print(', '.join(data['slugs']))
-" 2>/dev/null || echo "")
+    slugs = data.get('slugs', [])
+    print(len(slugs), ' '.join(slugs))
+" 2>/dev/null || echo "0 ")
 
-if [ -z "$EXISTING_SLUGS" ]; then
+if [ "$SLUG_COUNT" -eq 0 ]; then
   echo -e "${YELLOW}⚠️  기존 콘텐츠 없음 (첫 생성)${NC}"
-  SLUG_COUNT=0
 else
-  SLUG_COUNT=$(python3 -c "
-import json
-with open('$INDEX_FILE', 'r') as f:
-    print(json.load(f)['total_count'])
-")
   echo -e "${BLUE}기존 콘텐츠: ${SLUG_COUNT}개${NC}"
 fi
 
@@ -105,13 +100,10 @@ while [ $RETRY_COUNT -lt $MAX_RETRIES ] && [ "$SUCCESS" = false ]; do
 
 ---
 
-## 🚫 사용 금지 slug 목록
+## 📊 기존 콘텐츠 정보
 
-다음 slug들은 이미 사용 중이므로 **절대 사용하지 마세요**:
-
-$EXISTING_SLUGS
-
-**필수**: 완전히 다른 주제로 고유한 slug를 생성하세요.
+- **기존 콘텐츠 개수**: $SLUG_COUNT개
+- **고유한 slug 생성 필수**: 완전히 새로운 주제로 영문 kebab-case slug 생성
 
 ---
 
@@ -157,8 +149,8 @@ EOF
     continue
   fi
 
-  # 중복 체크 (인덱스 기반)
-  if echo "$EXISTING_SLUGS" | grep -qw "$SLUG"; then
+  # 중복 체크 (인덱스 기반) - 공백으로 구분된 목록에서 정확히 매칭
+  if [[ " $EXISTING_SLUGS " =~ " $SLUG " ]]; then
     echo -e "${YELLOW}⚠️  중복 slug 감지: $SLUG${NC}"
     echo -e "${YELLOW}   다른 주제로 재생성합니다...${NC}"
     RETRY_COUNT=$((RETRY_COUNT + 1))
