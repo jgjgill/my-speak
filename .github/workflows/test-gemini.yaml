@@ -1,0 +1,93 @@
+name: Test Gemini CLI
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test-gemini:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.17.1'
+
+      - name: Install Gemini CLI
+        run: |
+          npm install -g @google/gemini-cli
+          echo "$(npm root -g)/../bin" >> $GITHUB_PATH
+
+      - name: Test 1 - Simple Hello
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          echo "=== Test 1: Simple hello test ==="
+          echo "Hello, tell me a joke in 10 words or less" | gemini --yolo 2>&1 | tee /tmp/test1.log
+          EXIT_CODE=$?
+          echo "Exit code: $EXIT_CODE"
+          if [ $EXIT_CODE -ne 0 ]; then
+            echo "❌ Test 1 failed"
+            cat /tmp/test1.log
+            exit 1
+          else
+            echo "✅ Test 1 passed"
+          fi
+
+      - name: Test 2 - Check Quota
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          echo "=== Test 2: API quota check ==="
+          curl -s "https://generativelanguage.googleapis.com/v1beta/models?key=${GEMINI_API_KEY}" | \
+            python3 -c "import sys, json; data = json.load(sys.stdin); print('Available models:', len(data.get('models', [])))" || \
+            echo "API call failed"
+
+      - name: Test 3 - Long Prompt (Similar to Content Generation)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          echo "=== Test 3: Long prompt test ==="
+          cat > /tmp/test-prompt.txt <<'EOF'
+          Generate a simple markdown document with:
+          - A title
+          - A slug (lowercase, hyphenated)
+          - A short description (1-2 sentences)
+
+          Output ONLY the markdown, no explanation.
+          EOF
+
+          cat /tmp/test-prompt.txt | gemini --yolo 2>&1 | tee /tmp/test3.log
+          EXIT_CODE=$?
+          echo "Exit code: $EXIT_CODE"
+
+          if [ $EXIT_CODE -ne 0 ]; then
+            echo "❌ Test 3 failed"
+            echo "=== Error output ==="
+            cat /tmp/test3.log
+
+            # Check for specific error patterns
+            if grep -q "exhausted your daily quota" /tmp/test3.log; then
+              echo "🚨 QUOTA EXHAUSTED"
+            fi
+            if grep -q "503" /tmp/test3.log; then
+              echo "🚨 SERVICE UNAVAILABLE (503)"
+            fi
+            if grep -q "overloaded" /tmp/test3.log; then
+              echo "🚨 MODEL OVERLOADED"
+            fi
+            exit 1
+          else
+            echo "✅ Test 3 passed"
+            echo "=== Generated content ==="
+            head -20 /tmp/test3.log
+          fi
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "## Gemini CLI Test Results 🧪" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **Node Version**: $(node --version)" >> $GITHUB_STEP_SUMMARY
+          echo "- **Gemini CLI**: $(gemini --version 2>&1 || echo 'not found')" >> $GITHUB_STEP_SUMMARY
+          echo "- **Timestamp**: $(date -u +'%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_STEP_SUMMARY
