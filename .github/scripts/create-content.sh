@@ -122,12 +122,15 @@ EOF
 
   # Gemini로 콘텐츠 생성
   echo -e "${YELLOW}🤖 Gemini로 콘텐츠 생성 중...${NC}"
+  set +e  # 임시로 에러 시 종료 비활성화
   GENERATED_CONTENT=$(cat "$TEMP_PROMPT" | gemini --yolo 2>&1)
   EXIT_CODE=$?
+  set -e  # 다시 활성화
   rm -f "$TEMP_PROMPT"
 
   if [ $EXIT_CODE -ne 0 ]; then
-    echo -e "${RED}❌ Gemini 실행 실패${NC}"
+    echo -e "${RED}❌ Gemini 실행 실패 (exit code: $EXIT_CODE)${NC}"
+    echo -e "${RED}출력:${NC}"
     echo "$GENERATED_CONTENT"
     RETRY_COUNT=$((RETRY_COUNT + 1))
     continue
