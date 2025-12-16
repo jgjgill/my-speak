@@ -89,25 +89,16 @@ while [ $RETRY_COUNT -lt $MAX_RETRIES ] && [ "$SUCCESS" = false ]; do
 
 ---
 
-## 🎯 실행 파라미터
+## 실행 파라미터
 
-- **UUID**: $UUID
-- **UUID 마지막 문자**: $UUID_LAST_CHAR (문장 수 결정용)
-- **언어 코드**: $LANGUAGE
-- **난이도**: $DIFFICULTY
+**topic_id에 정확히 사용할 UUID**: $UUID
+**분량 결정 문자 (UUID 마지막)**: $UUID_LAST_CHAR
+**language_code**: $LANGUAGE
+**difficulty**: $DIFFICULTY
 
-**중요**: 위 파라미터를 frontmatter에 정확히 반영하세요.
+기존 콘텐츠: $SLUG_COUNT개 (고유한 slug 필수)
 
----
-
-## 📊 기존 콘텐츠 정보
-
-- **기존 콘텐츠 개수**: $SLUG_COUNT개
-- **고유한 slug 생성 필수**: 완전히 새로운 주제로 영문 kebab-case slug 생성
-
----
-
-**지금 즉시 완전한 마크다운 콘텐츠를 생성하세요. 추가 질문 없이 즉시 생성해주세요.**
+즉시 생성하세요. topic_id는 반드시 "$UUID"를 그대로 사용하세요.
 EOF
 
   # Gemini로 콘텐츠 생성
