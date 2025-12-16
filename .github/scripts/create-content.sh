@@ -3,8 +3,6 @@
 # 외국어 학습 콘텐츠 자동 생성 스크립트 (인덱스 기반)
 # 사용법: ./create-content.sh [language] [difficulty]
 
-set -e
-
 # 색상 코드
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -122,10 +120,8 @@ EOF
 
   # Gemini로 콘텐츠 생성
   echo -e "${YELLOW}🤖 Gemini로 콘텐츠 생성 중...${NC}"
-  set +e  # 임시로 에러 시 종료 비활성화
   GENERATED_CONTENT=$(cat "$TEMP_PROMPT" | gemini --yolo 2>&1)
   EXIT_CODE=$?
-  set -e  # 다시 활성화
   rm -f "$TEMP_PROMPT"
 
   if [ $EXIT_CODE -ne 0 ]; then
