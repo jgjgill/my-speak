@@ -1,0 +1,227 @@
+{
+  "topic": {
+    "id": "3ed169ce-adbc-4f41-978f-32e93bcde32d",
+    "title": "배관공에게 막힌 싱크대 수리 요청하기",
+    "category": "일상생활",
+    "difficulty": "초급",
+    "description": "싱크대가 막혔을 때 배관공에게 전화로 수리를 요청하는 상황",
+    "language_code": "en",
+    "total_sentences": 6
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 배관공을 예약하고 싶은데요."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "저희 집 주방 싱크대가 막혔어요."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "물이 전혀 안 내려가요."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "오늘 오후에 방문 가능하신가요?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "네, 주소는 메이플 스트리트 42번지예요."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "알겠습니다, 그럼 3시에 기다리고 있을게요."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, I'd like to book a plumber.",
+      "chunked_text": "Hello, | I'd like to book a plumber."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "My kitchen sink is clogged.",
+      "chunked_text": "My kitchen sink | is clogged."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "The water won't drain at all.",
+      "chunked_text": "The water | won't drain | at all."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Are you available to come by this afternoon?",
+      "chunked_text": "Are you available | to come by | this afternoon?"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Yes, the address is 42 Maple Street.",
+      "chunked_text": "Yes, | the address is | 42 Maple Street."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Okay, I'll be waiting at 3 o'clock.",
+      "chunked_text": "Okay, | I'll be waiting | at 3 o'clock."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "배관공 예약",
+        "주방 싱크대 막힘"
+      ],
+      "target_sentence": "I'd like to book a plumber. My kitchen sink is clogged.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "물 전혀 안 내려감"
+      ],
+      "target_sentence": "The water won't drain at all.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "오늘 오후 방문 가능? 주소 메이플 스트리트 42번지"
+      ],
+      "target_sentence": "Are you available to come by this afternoon? Yes, the address is 42 Maple Street.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 4,
+      "keywords": [
+        "배관공",
+        "싱크대 막힘"
+      ],
+      "target_sentence": "I'd like to book a plumber. My kitchen sink is clogged.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 5,
+      "keywords": [
+        "물 안 내려감"
+      ],
+      "target_sentence": "The water won't drain at all.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 6,
+      "keywords": [
+        "오늘 오후",
+        "주소"
+      ],
+      "target_sentence": "Are you available to come by this afternoon? Yes, the address is 42 Maple Street.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 7,
+      "keywords": [
+        "배관공 예약"
+      ],
+      "target_sentence": "I'd like to book a plumber.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 8,
+      "keywords": [
+        "싱크대 막힘"
+      ],
+      "target_sentence": "My kitchen sink is clogged.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 9,
+      "keywords": [
+        "오늘 오후?"
+      ],
+      "target_sentence": "Are you available to come by this afternoon?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 10,
+      "keywords": [
+        "book",
+        "plumber"
+      ],
+      "target_sentence": "I'd like to book a plumber.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 11,
+      "keywords": [
+        "clogged",
+        "drain"
+      ],
+      "target_sentence": "My kitchen sink is clogged. The water won't drain at all.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 12,
+      "keywords": [
+        "available",
+        "afternoon"
+      ],
+      "target_sentence": "Are you available to come by this afternoon?",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 1,
+      "korean_phrase": "예약하고 싶은데요",
+      "foreign_phrase": "book a plumber"
+    },
+    {
+      "sentence_order": 2,
+      "korean_phrase": "막혔어요",
+      "foreign_phrase": "is clogged"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "방문 가능하신가요",
+      "foreign_phrase": "available to come by"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "기다리고 있을게요",
+      "foreign_phrase": "I'll be waiting"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 3,
+      "korean_text": "물이 전혀 안 내려가요.",
+      "foreign_text": "The water won't drain at all.",
+      "reason": "문제 상황을 명확하게 전달하는 핵심 표현으로, 수리 요청 시 가장 중요한 문장"
+    }
+  ]
+}
