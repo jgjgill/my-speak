@@ -1,0 +1,200 @@
+{
+  "topic": {
+    "id": "706ed026-6eef-4755-b376-5d56f2ae4da1",
+    "title": "전화로 미용실 예약하기",
+    "category": "일상생활",
+    "difficulty": "초급",
+    "description": "전화로 미용실에 헤어컷 예약을 하는 상황",
+    "language_code": "en",
+    "total_sentences": 5
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 헤어컷 예약하고 싶은데요."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "이번 주 토요일에 예약 가능한가요?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "오전 11시가 좋을 것 같아요."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "네, 제 이름은 김민수예요."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "감사합니다, 그때 뵙겠습니다!"
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, I'd like to book a haircut.",
+      "chunked_text": "Hello, | I'd like to book a haircut."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Do you have any openings this Saturday?",
+      "chunked_text": "Do you have | any openings | this Saturday?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "11 AM would be great.",
+      "chunked_text": "11 AM | would be great."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Yes, my name is Minsu Kim.",
+      "chunked_text": "Yes, | my name is | Minsu Kim."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Thank you, see you then!",
+      "chunked_text": "Thank you, | see you then!"
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "헤어컷 예약"
+      ],
+      "target_sentence": "I'd like to book a haircut.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "이번 주 토요일",
+        "예약 가능?"
+      ],
+      "target_sentence": "Do you have any openings this Saturday?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "오전 11시"
+      ],
+      "target_sentence": "11 AM would be great.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 4,
+      "keywords": [
+        "헤어컷 예약"
+      ],
+      "target_sentence": "I'd like to book a haircut.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 5,
+      "keywords": [
+        "토요일 가능?"
+      ],
+      "target_sentence": "Do you have any openings this Saturday?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 6,
+      "keywords": [
+        "11시"
+      ],
+      "target_sentence": "11 AM would be great.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 7,
+      "keywords": [
+        "예약"
+      ],
+      "target_sentence": "I'd like to book a haircut.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 8,
+      "keywords": [
+        "토요일?"
+      ],
+      "target_sentence": "Do you have any openings this Saturday?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 9,
+      "keywords": [
+        "book",
+        "haircut"
+      ],
+      "target_sentence": "I'd like to book a haircut.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 10,
+      "keywords": [
+        "openings",
+        "Saturday"
+      ],
+      "target_sentence": "Do you have any openings this Saturday?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 11,
+      "keywords": [
+        "see you then"
+      ],
+      "target_sentence": "Thank you, see you then!",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 1,
+      "korean_phrase": "헤어컷 예약하고 싶은데요",
+      "foreign_phrase": "book a haircut"
+    },
+    {
+      "sentence_order": 2,
+      "korean_phrase": "예약 가능한가요",
+      "foreign_phrase": "have any openings"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "그때 뵙겠습니다",
+      "foreign_phrase": "see you then"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 2,
+      "korean_text": "이번 주 토요일에 예약 가능한가요?",
+      "foreign_text": "Do you have any openings this Saturday?",
+      "reason": "예약 가능 여부를 묻는 가장 핵심적인 표현으로, 예약 상황에서 필수적인 문장"
+    }
+  ]
+}
