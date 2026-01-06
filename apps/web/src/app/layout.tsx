@@ -4,6 +4,7 @@ import type { PropsWithChildren } from "react";
 import "../../app/global.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { headers } from "next/headers";
+import Script from "next/script";
 import { NuqsAdapter } from "nuqs/adapters/next/app";
 import {
 	AuthProvider,
@@ -102,6 +103,18 @@ export default async function Layout({ children }: RootLayoutProps) {
 
 	return (
 		<html lang="ko">
+			<head>
+				{process.env.NODE_ENV === "development" && (
+					<Script
+						src="//unpkg.com/react-grab/dist/index.global.js"
+						crossOrigin="anonymous"
+						strategy="beforeInteractive"
+						data-options={JSON.stringify({
+							activationKey: { key: "r", metaKey: true, shiftKey: true },
+						})}
+					/>
+				)}
+			</head>
 			<body>
 				<GoogleAnalytics />
 				<StructuredData />
