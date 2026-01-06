@@ -3,7 +3,7 @@ import { Suspense } from "react";
 import { getTopic } from "@/entities/topic";
 import { createClient } from "@/shared/api/supabase/server";
 import { type LanguageCode, languageInfo } from "@/shared/config";
-import { TopicClientWrapper } from "@/widgets/topic";
+import { TopicClientWrapperServer } from "@/widgets/topic";
 import FloatingAppButton from "./floating-app-button";
 import TopicClientWrapperSkeleton from "./skeletons/topic-client-wrapper-skeleton";
 import TopicHeaderSkeleton from "./skeletons/topic-header-skeleton";
@@ -73,7 +73,7 @@ export default async function TopicDetailPage({ params }: Props) {
 				</Suspense>
 
 				<Suspense fallback={<TopicClientWrapperSkeleton />}>
-					<TopicClientWrapper topicId={id} />
+					<TopicClientWrapperServer topicId={id} />
 				</Suspense>
 			</div>
 

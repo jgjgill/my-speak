@@ -2,7 +2,11 @@ import type { User } from "@supabase/supabase-js";
 import { useSuspenseQuery } from "@tanstack/react-query";
 import { getGuestProgress, getUserProgress } from "../api";
 
-export function useUserProgress(topicId: string, user: User | null) {
+export function useUserProgress(
+	topicId: string,
+	user: User | null,
+	initialData?: number,
+) {
 	return useSuspenseQuery({
 		queryKey: ["user-progress", topicId, user ? user.id : "guest"],
 		queryFn: user
@@ -11,5 +15,6 @@ export function useUserProgress(topicId: string, user: User | null) {
 					return progress?.current_stage || 1;
 				}
 			: getGuestProgress,
+		initialData,
 	});
 }

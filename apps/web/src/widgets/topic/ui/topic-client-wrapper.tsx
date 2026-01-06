@@ -16,13 +16,19 @@ const ScrollToTopButton = dynamic(() => import("./scroll-to-top-button"), {
 
 interface TopicClientWrapperProps {
 	topicId: string;
+	initialMaxStage?: number;
 }
 
 export default function TopicClientWrapper({
 	topicId,
+	initialMaxStage,
 }: TopicClientWrapperProps) {
 	const { user } = useAuth();
-	const { data: maxAvailableStage } = useUserProgress(topicId, user);
+	const { data: maxAvailableStage } = useUserProgress(
+		topicId,
+		user,
+		initialMaxStage,
+	);
 	const { currentStage, changeCurrentStage, completeStage } = useProgress({
 		topicId,
 		user,
