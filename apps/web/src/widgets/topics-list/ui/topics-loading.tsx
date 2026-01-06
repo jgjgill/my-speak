@@ -48,7 +48,9 @@ export function TopicsLoading() {
 							{/* 헤더 영역 */}
 							<div className="mb-3 flex items-start justify-between">
 								<div className="h-5 w-3/4 rounded bg-gray-200" />
-								{index === 0 && <div className="h-6 w-12 rounded bg-gray-200" />}
+								{index === 0 && (
+									<div className="h-6 w-12 rounded bg-gray-200" />
+								)}
 							</div>
 
 							{/* 메타데이터 태그들 */}

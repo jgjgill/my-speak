@@ -29,7 +29,8 @@ export function useTopicsFilterParams() {
 	return useQueryStates({
 		sortBy: parseAsStringLiteral(SORT_VALUES).withDefault("latest"),
 		difficulties: parseAsArrayOf(parseAsStringLiteral(DIFFICULTY_VALUES)),
-		completionStatus:
-			parseAsStringLiteral(COMPLETION_STATUS_VALUES).withDefault("all"),
+		completionStatus: parseAsStringLiteral(
+			COMPLETION_STATUS_VALUES,
+		).withDefault("all"),
 	});
 }

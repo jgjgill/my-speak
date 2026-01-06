@@ -148,8 +148,9 @@ export async function getTopics(
 		...topic,
 		user_progress: user
 			? Array.isArray(topic.user_progress)
-				? topic.user_progress.find((up: UserProgress) => up.user_id === user.id) ||
-					null
+				? topic.user_progress.find(
+						(up: UserProgress) => up.user_id === user.id,
+					) || null
 				: topic.user_progress
 			: null,
 	}));
