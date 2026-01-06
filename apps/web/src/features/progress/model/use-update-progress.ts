@@ -12,8 +12,15 @@ export function useUpdateProgress(topicId: string, user: User | null) {
 		},
 		onSuccess: () => {
 			if (!user) throw new Error("User not authenticated");
+
+			// Invalidate user progress cache
 			queryClient.invalidateQueries({
 				queryKey: ["user-progress", topicId, user.id],
+			});
+
+			// Invalidate topics list cache (to update max stage in list view)
+			queryClient.invalidateQueries({
+				queryKey: ["topics", "infinite"],
 			});
 		},
 	});

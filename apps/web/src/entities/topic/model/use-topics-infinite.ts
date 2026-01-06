@@ -32,5 +32,7 @@ export function useTopicsInfinite(props: Omit<TopicsQueryParams, "page"> = {}) {
 		getNextPageParam: (lastPage) =>
 			lastPage.hasMore ? lastPage.currentPage + 1 : undefined,
 		initialPageParam: 0,
+		// Always refetch on mount to ensure fresh data after mutations
+		refetchOnMount: "always",
 	});
 }

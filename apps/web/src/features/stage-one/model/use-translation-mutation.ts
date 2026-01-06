@@ -17,8 +17,20 @@ export function useTranslationMutation(topicId: string, user: User | null) {
 		},
 		onSuccess: () => {
 			if (!user) throw new Error("User not authenticated");
+
+			// Invalidate user translations cache
 			queryClient.invalidateQueries({
 				queryKey: ["user-translations", topicId, user.id],
+			});
+
+			// Invalidate user progress cache (for current_stage and completed_sentences)
+			queryClient.invalidateQueries({
+				queryKey: ["user-progress", topicId, user.id],
+			});
+
+			// Invalidate topics list cache (to update completion percentage in list view)
+			queryClient.invalidateQueries({
+				queryKey: ["topics", "infinite"],
 			});
 		},
 		onError: (error) => {
