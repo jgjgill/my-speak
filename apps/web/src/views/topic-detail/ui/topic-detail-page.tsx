@@ -1,15 +1,8 @@
-import {
-	dehydrate,
-	HydrationBoundary,
-	QueryClient,
-} from "@tanstack/react-query";
 import type { Metadata } from "next";
 import { Suspense } from "react";
-import { getGuestProgress, getUserProgress } from "@/entities/progress";
 import { getTopic } from "@/entities/topic";
 import { createClient } from "@/shared/api/supabase/server";
 import { type LanguageCode, languageInfo } from "@/shared/config";
-import { getCurrentUser } from "@/shared/lib/auth/server";
 import { TopicClientWrapper } from "@/widgets/topic";
 import FloatingAppButton from "./floating-app-button";
 import TopicClientWrapperSkeleton from "./skeletons/topic-client-wrapper-skeleton";
@@ -71,23 +64,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function TopicDetailPage({ params }: Props) {
 	const { id } = await params;
-	const currentUser = await getCurrentUser();
-	const supabase = await createClient();
-
-	const queryClient = new QueryClient();
-
-	await queryClient.prefetchQuery({
-		queryKey: ["user-progress", id, currentUser ? currentUser.id : "guest"],
-		queryFn: currentUser
-			? () =>
-					getUserProgress(id, currentUser, supabase).then(
-						(res) => res?.current_stage || 1,
-					)
-			: getGuestProgress,
-	});
 
 	return (
-		<HydrationBoundary state={dehydrate(queryClient)}>
+		<>
 			<div className="p-4 min-h-screen">
 				<Suspense fallback={<TopicHeaderSkeleton />}>
 					<TopicHeader topicId={id} />
@@ -99,6 +78,6 @@ export default async function TopicDetailPage({ params }: Props) {
 			</div>
 
 			<FloatingAppButton />
-		</HydrationBoundary>
+		</>
 	);
 }
