@@ -1,0 +1,72 @@
+name: Weekly Content Planning
+
+on:
+  schedule:
+    - cron: '0 15 * * 0' # 매주 일요일 00:00 KST (UTC 15:00)
+  workflow_dispatch: # 수동 실행
+
+jobs:
+  plan-week:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.17.1
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9.0.0
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Install gemini-cli
+        run: |
+          npm install -g @google/gemini-cli
+          echo "$(npm root -g)/../bin" >> $GITHUB_PATH
+
+      - name: Generate weekly plan
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          chmod +x .github/scripts/generate-weekly-plan.sh
+          ./.github/scripts/generate-weekly-plan.sh
+
+      - name: Commit weekly plan
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+          if [ -n "$(git status --porcelain)" ]; then
+            git add content/.content-index.json
+            WEEK_NUM=$(date +%U)
+            git commit -m "chore: weekly content plan for week $WEEK_NUM"
+
+            if [ -z "$ACT" ]; then
+              git push
+              echo "✅ 주간 계획 커밋 및 푸시 완료"
+            else
+              echo "✅ 주간 계획 커밋 완료 (act 환경이므로 push 스킵)"
+            fi
+          else
+            echo "⚠️  변경사항이 없습니다."
+          fi
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "## 주간 콘텐츠 계획 생성 완료 🎉" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **주차**: Week $(date +%U)" >> $GITHUB_STEP_SUMMARY
+          echo "- **생성 시각**: $(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### 생성된 주제" >> $GITHUB_STEP_SUMMARY
+          jq -r '.weekly_plan.planned_slugs[] | "- \(.title) (\(.slug))"' content/.content-index.json >> $GITHUB_STEP_SUMMARY

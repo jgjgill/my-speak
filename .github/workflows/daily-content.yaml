@@ -1,11 +1,8 @@
-name: Auto Generate Content
+name: Daily Content Generation
 
 on:
-  # 매일 0시에 자동 실행 (KST 기준)
   schedule:
-    - cron: '0 15 * * *'  # UTC 15:00 = KST 00:00
-
-  # 수동 트리거 지원
+    - cron: '30 15 * * *' # 매일 00:30 KST (UTC 15:30)
   workflow_dispatch:
     inputs:
       language:
@@ -61,16 +58,14 @@ jobs:
           PUBLIC_SUPABASE_URL: ${{ secrets.PUBLIC_SUPABASE_URL }}
           PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.PUBLIC_SUPABASE_ANON_KEY }}
         run: |
-          # 매개변수 설정 (수동 트리거 시 입력값 사용, 크론 실행 시 기본값)
           LANGUAGE="${{ github.event.inputs.language || 'en' }}"
           DIFFICULTY="${{ github.event.inputs.difficulty || '초급' }}"
 
           echo "언어: $LANGUAGE"
           echo "난이도: $DIFFICULTY"
 
-          # 스크립트 실행
-          chmod +x .github/scripts/create-content.sh
-          ./.github/scripts/create-content.sh "$LANGUAGE" "$DIFFICULTY"
+          chmod +x .github/scripts/generate-daily-content.sh
+          ./.github/scripts/generate-daily-content.sh "$LANGUAGE" "$DIFFICULTY"
 
       - name: Commit and push changes
         env:
@@ -80,19 +75,11 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
 
-          # 생성된 파일 확인
           if [ -n "$(git status --porcelain)" ]; then
-            # 새로 생성된 파일 찾기
-            NEW_FILE=$(git status --porcelain | grep "^??" | grep "content/source/.*\.md" | awk '{print $2}' | head -1)
+            NEW_FILE=$(git status --porcelain | grep "content/source/.*\.md" | awk '{print $2}' | head -1)
 
-            if [ -z "$NEW_FILE" ]; then
-              # 수정된 파일 찾기 (생성이 아니라 수정인 경우)
-              NEW_FILE=$(git status --porcelain | grep "^ M" | grep "content/source/.*\.md" | awk '{print $2}' | head -1)
-            fi
-
-            # 해당 파일에서 제목 추출
             if [ -n "$NEW_FILE" ]; then
-              TITLE=$(grep -m 1 "^title:" "$NEW_FILE" | sed 's/title: "\(.*\)"/\1/' | sed 's/title: //' | tr -d '"')
+              TITLE=$(grep -m 1 "^title:" "$NEW_FILE" | sed 's/title: //' | tr -d '"')
             else
               TITLE="새 학습 콘텐츠"
             fi
@@ -101,11 +88,9 @@ jobs:
               TITLE="새 학습 콘텐츠"
             fi
 
-            # 콘텐츠 파일과 인덱스 모두 커밋
             git add content/source/ content/.content-index.json
             git commit -m "content: ${TITLE} (${LANGUAGE} ${DIFFICULTY})"
 
-            # act 로컬 환경에서는 push 스킵
             if [ -z "$ACT" ]; then
               git push
               echo "✅ 커밋 및 푸시 완료: content: ${TITLE} (${LANGUAGE} ${DIFFICULTY})"
@@ -124,3 +109,7 @@ jobs:
           echo "- **언어**: ${{ github.event.inputs.language || 'en' }}" >> $GITHUB_STEP_SUMMARY
           echo "- **난이도**: ${{ github.event.inputs.difficulty || '초급' }}" >> $GITHUB_STEP_SUMMARY
           echo "- **생성 시각**: $(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          REMAINING=$(jq '[.weekly_plan.planned_slugs[] | select(.used == false)] | length' content/.content-index.json)
+          echo "- **남은 주간 계획**: ${REMAINING}/7" >> $GITHUB_STEP_SUMMARY
