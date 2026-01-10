@@ -91,7 +91,7 @@ sed -e "s|{{TITLE}}|${TITLE}|g" \
 
 # 5. Gemini로 콘텐츠 생성
 echo -e "${YELLOW}🤖 Gemini로 콘텐츠 생성 중...${NC}"
-CONTENT=$(cat "$TEMP_PROMPT" | gemini --model gemini-2.0-flash-lite --yolo 2>&1)
+CONTENT=$(cat "$TEMP_PROMPT" | gemini --model gemini-2.5-flash-lite --yolo 2>&1)
 EXIT_CODE=$?
 rm -f "$TEMP_PROMPT"
 
