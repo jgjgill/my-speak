@@ -1,11 +1,15 @@
 # 외국어 학습 콘텐츠 생성
 
 **주제**: {{TITLE}}
+**카테고리**: {{CATEGORY}}
 **언어**: {{LANGUAGE}}
 **난이도**: {{DIFFICULTY}}
 **UUID**: {{UUID}}
+**Slug**: {{SLUG}}
 
 다음 형식으로 마크다운 생성 (**코드 블록 없이 ---부터 시작**):
+
+**중요**: title, category, difficulty는 위에 제공된 한글 값을 그대로 사용하세요!
 
 ---
 topic_id: "{{UUID}}"
@@ -13,23 +17,23 @@ title: "{{TITLE}}"
 slug: "{{SLUG}}"
 category: "{{CATEGORY}}"
 difficulty: "{{DIFFICULTY}}"
-description: "[주제에 맞는 간단한 설명]"
+description: "[주제에 맞는 간단한 영문 설명 1-2문장]"
 language_code: "{{LANGUAGE}}"
 highlight_sentence:
-  sentence_order: [핵심 문장 순서]
-  korean_text: "[핵심 한글 문장]"
-  foreign_text: "[핵심 외국어 문장]"
-  reason: "[이 문장이 핵심인 이유]"
+  sentence_order: [핵심 문장 순서 번호 (예: [1])]
+  korean_text: "[가장 핵심적인 한글 문장 1개]"
+  foreign_text: "[핵심 문장의 외국어 번역]"
+  reason: "[이 문장이 핵심인 이유 영문으로]"
 ---
 
 # 1단계: 한글 스크립트
 
-[5-8문장의 자연스러운 대화]
+[5-8문장의 자연스러운 한글 대화]
 [**핵심표현**{외국어번역} 형식 포함]
 
 # 2단계: 외국어 스크립트
 
-[1단계의 자연스러운 번역]
+[1단계의 자연스러운 외국어 번역]
 
 # 2단계: 끊어읽기 버전
 
