@@ -1,7 +1,7 @@
 ---
 topic_id: "dfb47008-d68a-40bc-ac92-82e792a75258"
 title: "공항 보안 검색대 통과하기"
-slug: "airport-security-screening-202601"
+slug: "airport-security-screening"
 category: "여행"
 difficulty: "초급"
 description: "공항 보안 검색대를 통과하는 과정에서 필요한 필수 영어 표현을 배워봅니다."

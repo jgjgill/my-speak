@@ -4,14 +4,14 @@
 
 1. **기존 주제 회피**: {{EXISTING_SLUGS_SUMMARY}}
 2. **다양한 카테고리**: 회화, 여행, 비즈니스, 일상, 레저, 쇼핑, 의료, 금융
-3. **slug 형식**: `주제-영문-YYYYMM` (예: `coffee-ordering-202601`)
-4. **고유성**: 타임스탬프 포함으로 충돌 방지
+3. **slug 형식**: `주제-영문` (예: `coffee-shop-ordering`, `airport-checkin`)
+4. **고유성**: 기존 slug와 중복되지 않도록 주의
 
 **출력 형식** (다른 텍스트 없이 JSON만):
 ```json
 [
-  {"slug": "주제-영문-202601", "title": "한글 제목", "category": "회화"},
-  {"slug": "주제-영문-202601", "title": "한글 제목", "category": "여행"}
+  {"slug": "coffee-shop-ordering", "title": "한글 제목", "category": "회화"},
+  {"slug": "airport-checkin", "title": "한글 제목", "category": "여행"}
 ]
 ```
 

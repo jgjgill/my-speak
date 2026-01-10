@@ -20,7 +20,7 @@ difficulty: "{{DIFFICULTY}}"
 description: "[주제에 맞는 간단한 영문 설명 1-2문장]"
 language_code: "{{LANGUAGE}}"
 highlight_sentence:
-  sentence_order: [핵심 문장 순서 번호 (예: [1])]
+  sentence_order: [핵심 문장 순서 번호 - 정수 값만 입력 (예: 1 또는 3)]
   korean_text: "[가장 핵심적인 한글 문장 1개]"
   foreign_text: "[핵심 문장의 외국어 번역]"
   reason: "[이 문장이 핵심인 이유 영문으로]"
@@ -29,7 +29,12 @@ highlight_sentence:
 # 1단계: 한글 스크립트
 
 [5-8문장의 자연스러운 한글 대화]
-[**핵심표현**{외국어번역} 형식 포함]
+[학습 포인트는 **한글표현**{외국어 번역} 형식으로 표시]
+
+예시:
+안녕하세요, 저는 김철수입니다. **만나서 반갑습니다**{Nice to meet you}.
+저는 IT 회사에서 일하고 있어요.
+오늘 발표 정말 **유익했습니다**{was very informative}.
 
 # 2단계: 외국어 스크립트
 

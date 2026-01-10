@@ -6,43 +6,43 @@
     "week_number": 1,
     "planned_slugs": [
       {
-        "slug": "airport-security-screening-202601",
+        "slug": "airport-security-screening",
         "title": "공항 보안 검색대 통과하기",
         "category": "여행",
         "used": true
       },
       {
-        "slug": "conference-networking-202601",
+        "slug": "conference-networking",
         "title": "컨퍼런스에서 네트워킹하기",
         "category": "비즈니스",
         "used": false
       },
       {
-        "slug": "clothing-store-request-202601",
+        "slug": "clothing-store-request",
         "title": "옷가게에서 다른 사이즈나 색상 요청하기",
         "category": "쇼핑",
         "used": false
       },
       {
-        "slug": "public-transportation-inquiry-202601",
+        "slug": "public-transportation-inquiry",
         "title": "대중교통 이용하기 (환승 및 노선 문의)",
         "category": "일상",
         "used": false
       },
       {
-        "slug": "explaining-allergies-restaurant-202601",
+        "slug": "explaining-allergies-restaurant",
         "title": "레스토랑에서 알레르기 정보 설명하기",
         "category": "의료",
         "used": false
       },
       {
-        "slug": "purchasing-event-tickets-202601",
+        "slug": "purchasing-event-tickets",
         "title": "콘서트나 박물관 티켓 구매하기",
         "category": "레저",
         "used": false
       },
       {
-        "slug": "personal-loan-application-202601",
+        "slug": "personal-loan-application",
         "title": "개인 대출 신청하기",
         "category": "금융",
         "used": false
@@ -119,6 +119,6 @@
     "weekend-routine",
     "working-out-at-gym",
     "giving-cat-medicine-for-first-time",
-    "airport-security-screening-202601"
+    "airport-security-screening"
   ]
 }
