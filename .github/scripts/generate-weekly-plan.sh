@@ -72,8 +72,12 @@ TEMP_PROMPT=$(mktemp)
 sed "s|{{EXISTING_SLUGS_SUMMARY}}|${SLUG_COUNT}개 생성됨 (${CATEGORY_SUMMARY})|g" \
   "$PROMPT_FILE" > "$TEMP_PROMPT"
 
-# YYYYMM 형식 치환
-sed -i '' "s/YYYYMM/${YEAR_MONTH}/g" "$TEMP_PROMPT"
+# YYYYMM 형식 치환 (크로스 플랫폼 호환)
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  sed -i '' "s/YYYYMM/${YEAR_MONTH}/g" "$TEMP_PROMPT"
+else
+  sed -i "s/YYYYMM/${YEAR_MONTH}/g" "$TEMP_PROMPT"
+fi
 
 # 4. Gemini로 주간 계획 생성
 echo -e "${YELLOW}🤖 Gemini로 7개 주제 생성 중...${NC}"
