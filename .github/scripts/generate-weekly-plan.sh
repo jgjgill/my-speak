@@ -81,7 +81,7 @@ fi
 
 # 4. Gemini로 주간 계획 생성
 echo -e "${YELLOW}🤖 Gemini로 7개 주제 생성 중...${NC}"
-RESPONSE=$(cat "$TEMP_PROMPT" | gemini --model gemini-2.-flash-lite --yolo 2>&1)
+RESPONSE=$(cat "$TEMP_PROMPT" | gemini --model gemini-2.0-flash-lite --yolo 2>&1)
 EXIT_CODE=$?
 rm -f "$TEMP_PROMPT"
 
