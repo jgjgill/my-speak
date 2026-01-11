@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 	const supabase = await createClient();
 
 	try {
-		const topic = await getTopic(id, supabase);
+		const topic = await getTopic(id, language, supabase);
 		const currentLanguage = languageInfo[language as LanguageCode];
 
 		const title = `${topic.title} - ${currentLanguage?.nativeName || language.toUpperCase()} 학습`;
@@ -63,17 +63,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function TopicDetailPage({ params }: Props) {
-	const { id } = await params;
+	const { id, language } = await params;
 
 	return (
 		<>
 			<div className="p-4 min-h-screen">
 				<Suspense fallback={<TopicHeaderSkeleton />}>
-					<TopicHeader topicId={id} />
+					<TopicHeader />
 				</Suspense>
 
 				<Suspense fallback={<TopicClientWrapperSkeleton />}>
-					<TopicClientWrapperServer topicId={id} />
+					<TopicClientWrapperServer topicId={id} language={language} />
 				</Suspense>
 			</div>
 

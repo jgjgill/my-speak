@@ -4,11 +4,15 @@ import { getUserTranslations } from "@/entities/topic";
 
 export const getEmptyUserTranslations = async (): Promise<never[]> => [];
 
-export function useUserTranslations(topicId: string, user: User | null) {
+export function useUserTranslations(
+	topicId: string,
+	language: string,
+	user: User | null,
+) {
 	return useSuspenseQuery({
-		queryKey: ["user-translations", topicId, user ? user.id : "guest"],
+		queryKey: ["user-translations", topicId, language, user ? user.id : "guest"],
 		queryFn: user
-			? () => getUserTranslations(topicId, user)
+			? () => getUserTranslations(topicId, language, user)
 			: getEmptyUserTranslations,
 	});
 }

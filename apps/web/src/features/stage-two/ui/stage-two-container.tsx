@@ -22,18 +22,18 @@ const UserTranslationDisplay = dynamic(
 );
 
 interface StageTwoContainerProps {
-	topicId: string;
 	onStageComplete: () => void;
 }
 
 export default function StageTwoContainer({
-	topicId,
 	onStageComplete,
 }: StageTwoContainerProps) {
+	const params = useParams<{ language: string; id: string }>();
+	const topicId = params.id;
+	const language = params.language;
+
 	const { user } = useAuth();
 	const isMounted = useIsMounted();
-	const params = useParams<{ language: string; id: string }>();
-	const language = params?.language;
 	const [hasRecorded, setHasRecorded] = useState(false);
 
 	const [
@@ -41,8 +41,8 @@ export default function StageTwoContainer({
 		{ data: foreignScripts },
 		{ data: learningPoints },
 		{ data: userSelectedPoints },
-	] = useStageTwoPublicData(topicId, user);
-	const { data: userTranslations } = useUserTranslations(topicId, user);
+	] = useStageTwoPublicData(topicId, language, user);
+	const { data: userTranslations } = useUserTranslations(topicId, language, user);
 
 	const selectedLearningPointsByOrder = createSelectedLearningPointsByOrder(
 		userSelectedPoints,

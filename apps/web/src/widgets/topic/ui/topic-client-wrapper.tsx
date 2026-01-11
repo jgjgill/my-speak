@@ -1,6 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import { useParams } from "next/navigation";
 import { useUserProgress } from "@/entities/progress";
 import { useProgress } from "@/features/progress";
 import { StageFourContainer } from "@/features/stage-four";
@@ -23,9 +24,12 @@ export default function TopicClientWrapper({
 	topicId,
 	initialMaxStage,
 }: TopicClientWrapperProps) {
+	const params = useParams();
+	const language = params.language as string;
 	const { user } = useAuth();
 	const { data: maxAvailableStage } = useUserProgress(
 		topicId,
+		language,
 		user,
 		initialMaxStage,
 	);
@@ -45,7 +49,6 @@ export default function TopicClientWrapper({
 
 			{currentStage === 1 && (
 				<StageOneContainer
-					topicId={topicId}
 					onStageComplete={() => {
 						if (maxAvailableStage > 1) {
 							changeCurrentStage(2);
@@ -58,7 +61,6 @@ export default function TopicClientWrapper({
 			)}
 			{currentStage === 2 && (
 				<StageTwoContainer
-					topicId={topicId}
 					onStageComplete={() => {
 						if (maxAvailableStage > 2) {
 							changeCurrentStage(3);
@@ -71,7 +73,6 @@ export default function TopicClientWrapper({
 			)}
 			{currentStage === 3 && (
 				<StageThreeContainer
-					topicId={topicId}
 					onStageComplete={() => {
 						if (maxAvailableStage > 3) {
 							changeCurrentStage(4);
@@ -82,7 +83,7 @@ export default function TopicClientWrapper({
 					}}
 				/>
 			)}
-			{currentStage === 4 && <StageFourContainer topicId={topicId} />}
+			{currentStage === 4 && <StageFourContainer />}
 
 			<ScrollToTopButton />
 		</>

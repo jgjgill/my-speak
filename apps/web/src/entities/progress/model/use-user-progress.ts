@@ -4,14 +4,15 @@ import { getGuestProgress, getUserProgress } from "../api";
 
 export function useUserProgress(
 	topicId: string,
+	language: string,
 	user: User | null,
 	initialData?: number,
 ) {
 	return useSuspenseQuery({
-		queryKey: ["user-progress", topicId, user ? user.id : "guest"],
+		queryKey: ["user-progress", topicId, language, user ? user.id : "guest"],
 		queryFn: user
 			? async () => {
-					const progress = await getUserProgress(topicId, user);
+					const progress = await getUserProgress(topicId, language, user);
 					return progress?.current_stage || 1;
 				}
 			: getGuestProgress,

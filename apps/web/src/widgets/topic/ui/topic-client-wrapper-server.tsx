@@ -5,6 +5,7 @@ import TopicClientWrapper from "./topic-client-wrapper";
 
 interface TopicClientWrapperServerProps {
 	topicId: string;
+	language: string;
 }
 
 /**
@@ -15,13 +16,14 @@ interface TopicClientWrapperServerProps {
  */
 export default async function TopicClientWrapperServer({
 	topicId,
+	language,
 }: TopicClientWrapperServerProps) {
 	const currentUser = await getCurrentUser();
 	const supabase = await createClient();
 
 	// Fetch progress data on server to ensure consistent initial render
 	const initialMaxStage = currentUser
-		? await getUserProgress(topicId, currentUser, supabase).then(
+		? await getUserProgress(topicId, language, currentUser, supabase).then(
 				(res) => res?.current_stage || 1,
 			)
 		: 1; // Guest users always start at stage 1

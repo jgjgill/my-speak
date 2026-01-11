@@ -6,15 +6,17 @@ export type UserProgress = Tables<"user_progress">;
 
 export async function getUserProgress(
 	topicId: string,
+	language: string,
 	user: User,
 	supabase?: SupabaseClient,
 ): Promise<UserProgress | null> {
 	const client = supabase || createBrowserClient();
 	const { data, error } = await client
 		.from("user_progress")
-		.select("*")
+		.select("*, topics!inner(language_code)")
 		.eq("user_id", user.id)
 		.eq("topic_id", topicId)
+		.eq("topics.language_code", language)
 		.maybeSingle();
 
 	if (error && error.code !== "PGRST116") {

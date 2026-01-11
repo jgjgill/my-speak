@@ -2,6 +2,7 @@
 
 import type { Tables } from "@repo/typescript-config/supabase-types";
 import dynamic from "next/dynamic";
+import { useParams } from "next/navigation";
 import { useState } from "react";
 import { useAuth, useIsMounted, useToast } from "@/shared/lib";
 import { useLearningPointMutations } from "../model/use-learning-point-mutations";
@@ -21,7 +22,6 @@ type LearningPoint = Tables<"learning_points">;
 interface StageOnePracticeProps {
 	koreanScripts: KoreanScript[];
 	learningPointsByOrder: Record<number, LearningPoint[]>;
-	topicId: string;
 	initialSelectedPoints: Set<string>;
 	onStageComplete: () => void;
 }
@@ -39,16 +39,22 @@ const getLearningPointInfo = (
 export default function StageOnePractice({
 	koreanScripts,
 	learningPointsByOrder,
-	topicId,
 	initialSelectedPoints,
 	onStageComplete,
 }: StageOnePracticeProps) {
+	const params = useParams();
+	const topicId = params.id as string;
+	const language = params.language as string;
 	const { user } = useAuth();
 	const { addToast } = useToast();
 
 	const [selectedPoints, setSelectedPoints] = useState(initialSelectedPoints);
 	const isMounted = useIsMounted();
-	const { data: userTranslations } = useUserTranslations(topicId, user);
+	const { data: userTranslations } = useUserTranslations(
+		topicId,
+		language,
+		user,
+	);
 
 	const translationMutation = useTranslationMutation(topicId, user);
 	const { addLearningPoint } = useLearningPointMutations(topicId, user);
@@ -183,7 +189,6 @@ export default function StageOnePractice({
 
 						<TranslationInputForm
 							sentenceOrder={sentenceOrder}
-							topicId={topicId}
 							onTranslationSubmit={handleTranslationSubmit}
 						/>
 					</div>

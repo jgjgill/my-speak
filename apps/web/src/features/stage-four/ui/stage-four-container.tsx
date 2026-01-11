@@ -1,11 +1,8 @@
 "use client";
 
+import { useParams } from "next/navigation";
 import type { KeywordSpeech } from "@/entities/topic";
 import { useStageFourData } from "../model/use-stage-four-data";
-
-interface StageFourContainerProps {
-	topicId: string;
-}
 
 const levelMetadata = {
 	1: {
@@ -30,10 +27,12 @@ const levelMetadata = {
 	},
 };
 
-export default function StageFourContainer({
-	topicId,
-}: StageFourContainerProps) {
-	const { data: keywordSpeeches } = useStageFourData(topicId);
+export default function StageFourContainer() {
+	const params = useParams<{ language: string; id: string }>();
+	const topicId = params.id;
+	const language = params.language;
+
+	const { data: keywordSpeeches } = useStageFourData(topicId, language);
 
 	const keywordSpeechesByLevel = keywordSpeeches.reduce(
 		(acc, speech) => {

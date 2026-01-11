@@ -62,6 +62,7 @@ export interface TopicsResponse {
 
 export async function getTopic(
 	topicId: string,
+	language: string,
 	supabase?: SupabaseClient,
 ): Promise<Topic> {
 	const client = supabase || createBrowserClient();
@@ -69,6 +70,7 @@ export async function getTopic(
 		.from("topics")
 		.select("*")
 		.eq("id", topicId)
+		.eq("language_code", language)
 		.single();
 
 	if (error) throw error;
@@ -173,13 +175,15 @@ export async function getTopics(
 
 export async function getKoreanScripts(
 	topicId: string,
+	language: string,
 	supabase?: SupabaseClient,
 ): Promise<KoreanScript[]> {
 	const client = supabase || createBrowserClient();
 	const { data, error } = await client
 		.from("korean_scripts")
-		.select("*")
+		.select("*, topics!inner(language_code)")
 		.eq("topic_id", topicId)
+		.eq("topics.language_code", language)
 		.order("sentence_order");
 
 	if (error) throw error;
@@ -188,14 +192,16 @@ export async function getKoreanScripts(
 
 export async function getForeignScripts(
 	topicId: string,
+	language: string,
 	supabase?: SupabaseClient,
 ): Promise<ForeignScript[]> {
 	const client = supabase || createBrowserClient();
 
 	const { data, error } = await client
 		.from("foreign_scripts")
-		.select("*")
+		.select("*, topics!inner(language_code)")
 		.eq("topic_id", topicId)
+		.eq("topics.language_code", language)
 		.order("sentence_order");
 
 	if (error) throw error;
@@ -204,13 +210,15 @@ export async function getForeignScripts(
 
 export async function getLearningPoints(
 	topicId: string,
+	language: string,
 	supabase?: SupabaseClient,
 ): Promise<LearningPoint[]> {
 	const client = supabase || createBrowserClient();
 	const { data, error } = await client
 		.from("learning_points")
-		.select("*")
+		.select("*, topics!inner(language_code)")
 		.eq("topic_id", topicId)
+		.eq("topics.language_code", language)
 		.order("sentence_order");
 
 	if (error) throw error;
@@ -219,15 +227,17 @@ export async function getLearningPoints(
 
 export async function getUserTranslations(
 	topicId: string,
+	language: string,
 	user: User,
 	supabase?: SupabaseClient,
 ): Promise<UserTranslation[]> {
 	const client = supabase || createBrowserClient();
 	const { data, error } = await client
 		.from("user_translations")
-		.select("*")
+		.select("*, topics!inner(language_code)")
 		.eq("user_id", user.id)
-		.eq("topic_id", topicId);
+		.eq("topic_id", topicId)
+		.eq("topics.language_code", language);
 
 	if (error) throw error;
 	return data || [];
@@ -235,15 +245,17 @@ export async function getUserTranslations(
 
 export async function getUserSelectedPoints(
 	topicId: string,
+	language: string,
 	user: User,
 	supabase?: SupabaseClient,
 ): Promise<UserSelectedPoint[]> {
 	const client = supabase || createBrowserClient();
 	const { data, error } = await client
 		.from("user_selected_points")
-		.select("*")
+		.select("*, topics!inner(language_code)")
 		.eq("user_id", user.id)
-		.eq("topic_id", topicId);
+		.eq("topic_id", topicId)
+		.eq("topics.language_code", language);
 
 	if (error) throw error;
 	return data || [];
@@ -251,14 +263,16 @@ export async function getUserSelectedPoints(
 
 export async function getKeywordSpeeches(
 	topicId: string,
+	language: string,
 	supabase?: SupabaseClient,
 ): Promise<KeywordSpeech[]> {
 	const client = supabase || createBrowserClient();
 
 	const { data, error } = await client
 		.from("keyword_speeches")
-		.select("*")
+		.select("*, topics!inner(language_code)")
 		.eq("topic_id", topicId)
+		.eq("topics.language_code", language)
 		.order("sequence_order");
 
 	if (error) throw error;
@@ -353,7 +367,8 @@ async function getTopicsWithCompletionFilter(
 	const { data: topicsData, error: topicsError } = await client
 		.from("topics")
 		.select("*, highlight_sentences(*)")
-		.in("id", topicIds);
+		.in("id", topicIds)
+		.eq("language_code", language);
 
 	if (topicsError) {
 		throw new Error(`Failed to fetch topic details: ${topicsError.message}`);

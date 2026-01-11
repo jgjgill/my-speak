@@ -1,24 +1,27 @@
 "use client";
 
+import { useParams } from "next/navigation";
 import { useAuth } from "@/shared/lib";
 import { useStageOnePublicData } from "../model/use-stage-one-public-data";
 import StageOnePractice from "./stage-one-practice";
 
 interface StageOneContainerProps {
-	topicId: string;
 	onStageComplete: () => void;
 }
 
 export default function StageOneContainer({
-	topicId,
 	onStageComplete,
 }: StageOneContainerProps) {
+	const params = useParams<{ language: string; id: string }>();
+	const topicId = params.id;
+	const language = params.language;
+
 	const { user } = useAuth();
 	const [
 		{ data: koreanScripts },
 		{ data: learningPoints },
 		{ data: userSelectedPoints },
-	] = useStageOnePublicData(topicId, user);
+	] = useStageOnePublicData(topicId, language, user);
 
 	const learningPointsByOrder = learningPoints.reduce(
 		(acc, point) => {
@@ -90,7 +93,6 @@ export default function StageOneContainer({
 			<StageOnePractice
 				koreanScripts={koreanScripts}
 				learningPointsByOrder={learningPointsByOrder}
-				topicId={topicId}
 				initialSelectedPoints={initialSelectedPoints}
 				onStageComplete={onStageComplete}
 			/>

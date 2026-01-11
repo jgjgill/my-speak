@@ -1,13 +1,14 @@
 "use client";
 
+import { useParams } from "next/navigation";
 import { useTopic } from "@/entities/topic";
 
-interface TopicHeaderProps {
-	topicId: string;
-}
+export default function TopicHeader() {
+	const params = useParams<{ language: string; id: string }>();
+	const topicId = params.id;
+	const language = params.language;
 
-export default function TopicHeader({ topicId }: TopicHeaderProps) {
-	const { data: topic } = useTopic(topicId);
+	const { data: topic } = useTopic(topicId, language);
 
 	return (
 		<div className="mb-6">

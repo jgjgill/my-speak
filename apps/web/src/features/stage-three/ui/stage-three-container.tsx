@@ -1,5 +1,6 @@
 "use client";
 
+import { useParams } from "next/navigation";
 import { TextHighlighter } from "@/features/stage-two";
 import {
 	createSelectedLearningPointsByOrder,
@@ -10,14 +11,16 @@ import {
 import { useStageThreePublicData } from "../model/use-stage-three-public-data";
 
 interface StageThreeContainerProps {
-	topicId: string;
 	onStageComplete: () => void;
 }
 
 export default function StageThreeContainer({
-	topicId,
 	onStageComplete,
 }: StageThreeContainerProps) {
+	const params = useParams<{ language: string; id: string }>();
+	const topicId = params.id;
+	const language = params.language;
+
 	const { user } = useAuth();
 	const isMounted = useIsMounted();
 
@@ -26,7 +29,7 @@ export default function StageThreeContainer({
 		{ data: foreignScripts },
 		{ data: learningPoints },
 		{ data: userSelectedPoints },
-	] = useStageThreePublicData(topicId, user);
+	] = useStageThreePublicData(topicId, language, user);
 
 	const selectedLearningPointsByOrder = createSelectedLearningPointsByOrder(
 		userSelectedPoints,

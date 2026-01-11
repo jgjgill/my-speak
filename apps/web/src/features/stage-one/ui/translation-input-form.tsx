@@ -1,12 +1,12 @@
 "use client";
 
+import { useParams } from "next/navigation";
 import { type SubmitHandler, useForm } from "react-hook-form";
 import { useAuth } from "@/shared/lib";
 import { useUserTranslations } from "../model/use-user-translations";
 
 interface TranslationInputFormProps {
 	sentenceOrder: number;
-	topicId: string;
 	onTranslationSubmit: (sentenceOrder: number, translated: string) => void;
 }
 
@@ -16,11 +16,17 @@ type Inputs = {
 
 export default function TranslationInputForm({
 	sentenceOrder,
-	topicId,
 	onTranslationSubmit,
 }: TranslationInputFormProps) {
+	const params = useParams();
+	const topicId = params.id as string;
+	const language = params.language as string;
 	const { user } = useAuth();
-	const { data: userTranslations } = useUserTranslations(topicId, user);
+	const { data: userTranslations } = useUserTranslations(
+		topicId,
+		language,
+		user,
+	);
 
 	const userTranslation = userTranslations.find(
 		(t) => t.sentence_order === sentenceOrder,

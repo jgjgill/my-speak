@@ -8,21 +8,30 @@ import {
 
 export const getEmptyUserSelectedPoints = async (): Promise<never[]> => [];
 
-export function useStageOnePublicData(topicId: string, user?: User | null) {
+export function useStageOnePublicData(
+	topicId: string,
+	language: string,
+	user?: User | null,
+) {
 	return useSuspenseQueries({
 		queries: [
 			{
-				queryKey: ["korean-scripts", topicId],
-				queryFn: () => getKoreanScripts(topicId),
+				queryKey: ["korean-scripts", topicId, language],
+				queryFn: () => getKoreanScripts(topicId, language),
 			},
 			{
-				queryKey: ["learning-points", topicId],
-				queryFn: () => getLearningPoints(topicId),
+				queryKey: ["learning-points", topicId, language],
+				queryFn: () => getLearningPoints(topicId, language),
 			},
 			{
-				queryKey: ["user-selected-points", topicId, user ? user.id : "guest"],
+				queryKey: [
+					"user-selected-points",
+					topicId,
+					language,
+					user ? user.id : "guest",
+				],
 				queryFn: user
-					? () => getUserSelectedPoints(topicId, user)
+					? () => getUserSelectedPoints(topicId, language, user)
 					: getEmptyUserSelectedPoints,
 			},
 		],
