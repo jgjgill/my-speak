@@ -61,7 +61,22 @@ PLAN_ITEM=$(jq -r '.weekly_plan.planned_slugs[] | select(.used == false) | @json
 
 if [ -z "$PLAN_ITEM" ]; then
   echo -e "${RED}❌ 사용 가능한 주간 계획이 없습니다${NC}"
-  echo -e "${YELLOW}💡 먼저 generate-weekly-plan.sh를 실행하세요${NC}"
+  echo -e "${YELLOW}🔍 디버깅 정보:${NC}"
+
+  # 전체 계획 개수 확인
+  TOTAL_PLANNED=$(jq '[.weekly_plan.planned_slugs[] // empty] | length' "$INDEX_FILE" 2>/dev/null || echo "0")
+  USED_COUNT=$(jq '[.weekly_plan.planned_slugs[] | select(.used == true)] | length' "$INDEX_FILE" 2>/dev/null || echo "0")
+
+  echo "  - 전체 주간 계획: ${TOTAL_PLANNED}개"
+  echo "  - 이미 사용됨: ${USED_COUNT}개"
+  echo "  - 남은 계획: $((TOTAL_PLANNED - USED_COUNT))개"
+  echo ""
+
+  if [ "$TOTAL_PLANNED" -eq 0 ]; then
+    echo -e "${YELLOW}💡 주간 계획이 없습니다. generate-weekly-plan.sh를 실행하세요${NC}"
+  else
+    echo -e "${YELLOW}💡 모든 주간 계획을 소진했습니다. 다음 주 계획을 생성하세요${NC}"
+  fi
   exit 1
 fi
 
@@ -108,11 +123,32 @@ if [ -z "$CONTENT" ]; then
 fi
 
 # 6. 마크다운 정리
+echo -e "${YELLOW}🔍 원본 콘텐츠 (처음 10줄):${NC}"
+echo "$CONTENT" | head -10
+echo ""
+
 CLEANED_CONTENT=$(echo "$CONTENT" | sed -e '/^```markdown$/d' -e '/^```$/d')
+echo -e "${YELLOW}🔍 코드 블록 제거 후 (처음 10줄):${NC}"
+echo "$CLEANED_CONTENT" | head -10
+echo ""
+
 CLEANED_CONTENT=$(echo "$CLEANED_CONTENT" | awk '/^[[:space:]]*---/{flag=1} flag')
 
 if [ -z "$CLEANED_CONTENT" ]; then
   echo -e "${RED}❌ 정리된 콘텐츠 없음${NC}"
+  echo -e "${YELLOW}🔍 디버깅 정보:${NC}"
+  echo "  - 원본 콘텐츠 길이: ${#CONTENT} 문자"
+  echo "  - 코드 블록 제거 후 길이: $(echo "$CONTENT" | sed -e '/^```markdown$/d' -e '/^```$/d' | wc -c) 문자"
+  echo ""
+  echo -e "${YELLOW}🔍 원본 콘텐츠 전체:${NC}"
+  echo "=========================================="
+  echo "$CONTENT"
+  echo "=========================================="
+  echo ""
+  echo -e "${RED}❓ 가능한 원인:${NC}"
+  echo "  1. Gemini가 frontmatter(---로 시작)를 포함하지 않음"
+  echo "  2. 콘텐츠 형식이 예상과 다름"
+  echo "  3. awk 패턴 매칭 실패"
   exit 1
 fi
 
@@ -154,11 +190,20 @@ PUBLIC_SUPABASE_ANON_KEY=$PUBLIC_SUPABASE_ANON_KEY
 EOF
 
 # 파싱 실행
-if pnpm run parse "${SLUG}.md" 2>&1; then
+PARSE_OUTPUT=$(pnpm run parse "${SLUG}.md" 2>&1)
+PARSE_EXIT_CODE=$?
+
+if [ $PARSE_EXIT_CODE -eq 0 ]; then
   echo -e "${GREEN}✅ 파싱 및 Supabase 업로드 완료${NC}"
 else
-  echo -e "${RED}❌ 파싱 실패${NC}"
+  echo -e "${RED}❌ 파싱 실패 (exit code: $PARSE_EXIT_CODE)${NC}"
+  echo -e "${YELLOW}🔍 파싱 에러 로그:${NC}"
+  echo "=========================================="
+  echo "$PARSE_OUTPUT"
+  echo "=========================================="
+  echo ""
   echo -e "${YELLOW}⚠️  생성된 파일은 유지: $OUTPUT_FILE${NC}"
+  echo -e "${YELLOW}💡 파일을 확인하고 수동으로 파싱을 재시도하세요${NC}"
   exit 1
 fi
 
