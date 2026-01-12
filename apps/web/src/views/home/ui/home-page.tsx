@@ -34,7 +34,7 @@ export default async function HomePage() {
 						<div
 							className={`grid ${isNativeApp ? "grid-cols-1 max-w-2xl" : "md:grid-cols-2 max-w-4xl"} gap-6 mx-auto`}
 						>
-							<Link href="/en/topics" className="topic-card group">
+							<Link href="/en" className="topic-card group">
 								<div className="flex items-center mb-4">
 									<div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold text-lg mr-4">
 										EN
