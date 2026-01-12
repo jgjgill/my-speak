@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-01-10T06:02:27Z",
-  "total_count": 70,
+  "generated_at": "2026-01-12T15:42:44Z",
+  "total_count": 71,
   "weekly_plan": {
     "generated_at": "2026-01-11T15:03:25Z",
     "week_number": 2,
@@ -9,7 +9,7 @@
         "slug": "apologize-late",
         "title": "늦어서 사과하기",
         "category": "회화",
-        "used": false
+        "used": true
       },
       {
         "slug": "buy-train-ticket",
@@ -119,6 +119,7 @@
     "weekend-routine",
     "working-out-at-gym",
     "giving-cat-medicine-for-first-time",
-    "airport-security-screening"
+    "airport-security-screening",
+    "apologize-late"
   ]
 }
