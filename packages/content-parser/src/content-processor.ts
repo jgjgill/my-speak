@@ -2,14 +2,14 @@ import { pipe } from "@fxts/core";
 import {
 	parseForeignScripts,
 	updateChunkedText,
-} from "./parsers/foreign-script-parser.js";
-import { parseFrontmatter } from "./parsers/frontmatter-parser.js";
-import { parseKeywordSpeeches } from "./parsers/keyword-speech-parser.js";
-import { parseKoreanScripts } from "./parsers/korean-script-parser.js";
-import { findSection, parseSections } from "./parsers/section-parser.js";
-import { uploadToSupabase } from "./services/database-service.js";
-import { readFile, saveToJsonFile } from "./services/file-service.js";
-import type { ParsedContent } from "./types/content-types.js";
+} from "./parsers/foreign-script-parser";
+import { parseFrontmatter } from "./parsers/frontmatter-parser";
+import { parseKeywordSpeeches } from "./parsers/keyword-speech-parser";
+import { parseKoreanScripts } from "./parsers/korean-script-parser";
+import { findSection, parseSections } from "./parsers/section-parser";
+import { uploadToSupabase } from "./services/database-service";
+import { readFile, saveToJsonFile } from "./services/file-service";
+import type { ParsedContent } from "./types/content-types";
 
 /**
  * 마크다운 콘텐츠를 파싱하여 구조화된 데이터로 변환합니다.

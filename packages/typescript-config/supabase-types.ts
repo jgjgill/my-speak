@@ -14,6 +14,119 @@ export type Database = {
   }
   public: {
     Tables: {
+      expression_blanks: {
+        Row: {
+          blank_text: string
+          expression_id: string | null
+          id: string
+          sequence_order: number
+        }
+        Insert: {
+          blank_text: string
+          expression_id?: string | null
+          id?: string
+          sequence_order: number
+        }
+        Update: {
+          blank_text?: string
+          expression_id?: string | null
+          id?: string
+          sequence_order?: number
+        }
+        Relationships: [
+          {
+            foreignKeyName: "expression_blanks_expression_id_fkey"
+            columns: ["expression_id"]
+            isOneToOne: false
+            referencedRelation: "expressions"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      expression_details: {
+        Row: {
+          blank_id: string | null
+          expression_id: string | null
+          id: string
+          meaning: string
+          usage_examples: string[]
+          usage_tips: string | null
+        }
+        Insert: {
+          blank_id?: string | null
+          expression_id?: string | null
+          id?: string
+          meaning: string
+          usage_examples: string[]
+          usage_tips?: string | null
+        }
+        Update: {
+          blank_id?: string | null
+          expression_id?: string | null
+          id?: string
+          meaning?: string
+          usage_examples?: string[]
+          usage_tips?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "expression_details_blank_id_fkey"
+            columns: ["blank_id"]
+            isOneToOne: true
+            referencedRelation: "expression_blanks"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "expression_details_expression_id_fkey"
+            columns: ["expression_id"]
+            isOneToOne: false
+            referencedRelation: "expressions"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      expressions: {
+        Row: {
+          created_at: string | null
+          english_script: string
+          highlight_sentence: string
+          id: string
+          korean_translation: string
+          language_code: string | null
+          slug: string
+          thumbnail_url: string | null
+          title: string
+          total_blanks: number | null
+          updated_at: string | null
+        }
+        Insert: {
+          created_at?: string | null
+          english_script: string
+          highlight_sentence: string
+          id?: string
+          korean_translation: string
+          language_code?: string | null
+          slug: string
+          thumbnail_url?: string | null
+          title: string
+          total_blanks?: number | null
+          updated_at?: string | null
+        }
+        Update: {
+          created_at?: string | null
+          english_script?: string
+          highlight_sentence?: string
+          id?: string
+          korean_translation?: string
+          language_code?: string | null
+          slug?: string
+          thumbnail_url?: string | null
+          title?: string
+          total_blanks?: number | null
+          updated_at?: string | null
+        }
+        Relationships: []
+      }
       foreign_scripts: {
         Row: {
           chunked_text: string

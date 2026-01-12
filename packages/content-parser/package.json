@@ -11,6 +11,8 @@
 	"scripts": {
 		"parse": "tsx src/cli.ts",
 		"parse:all": "tsx src/cli.ts all",
+		"parse:expression": "tsx src/expression-cli.ts",
+		"parse:expression:all": "tsx src/expression-cli.ts all",
 		"test": "vitest",
 		"test:run": "vitest run",
 		"test:coverage": "vitest run --coverage"

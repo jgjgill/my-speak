@@ -2,10 +2,10 @@
 
 import { readdir } from "node:fs/promises";
 import { basename, extname, join } from "node:path";
-import { processMarkdownFile } from "./content-processor";
+import { processExpressionMarkdownFile } from "./expression-processor";
 
-const CONTENT_SOURCE_DIR = "../../content/source";
-const CONTENT_JSON_DIR = "../../content/json";
+const CONTENT_SOURCE_DIR = "../../content/source/expressions";
+const CONTENT_JSON_DIR = "../../content/json/expressions";
 
 async function parseFile(filename: string) {
 	const inputPath = join(CONTENT_SOURCE_DIR, filename);
@@ -15,9 +15,9 @@ async function parseFile(filename: string) {
 	console.log(`📖 Processing: ${filename}`);
 
 	try {
-		const result = await processMarkdownFile(inputPath, outputPath);
+		const result = await processExpressionMarkdownFile(inputPath, outputPath);
 		console.log(`✅ Successfully processed: ${filename}`);
-		console.log(`📄 Topic created with ID: ${result.id}`);
+		console.log(`📄 Expression created with ID: ${result.id}`);
 		console.log(`💾 JSON saved to: ${outputPath}`);
 		return result;
 	} catch (error) {
@@ -72,15 +72,15 @@ async function main() {
 	const args = process.argv.slice(2);
 
 	if (args.length === 0) {
-		console.log("🚀 Content Parser CLI");
+		console.log("🚀 Expression Content Parser CLI");
 		console.log("");
 		console.log("Usage:");
-		console.log("  pnpm parse:all           # Parse all markdown files");
-		console.log("  pnpm parse <filename>    # Parse specific file");
+		console.log("  pnpm parse:expression:all           # Parse all expression markdown files");
+		console.log("  pnpm parse:expression <filename>    # Parse specific expression file");
 		console.log("");
 		console.log("Examples:");
-		console.log("  pnpm parse meeting-collaboration.md");
-		console.log("  pnpm parse:all");
+		console.log("  pnpm parse:expression cafe-takeout-expressions.md");
+		console.log("  pnpm parse:expression:all");
 		process.exit(0);
 	}
 
