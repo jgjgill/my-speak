@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useParams } from "next/navigation";
 import { useState } from "react";
 import { useExpressionBySlug } from "@/entities/expression/api/use-expressions";
 
@@ -9,7 +10,10 @@ interface ExpressionContentProps {
 }
 
 export function ExpressionContent({ slug }: ExpressionContentProps) {
-	const { data: expression } = useExpressionBySlug(slug);
+	const params = useParams<{ language: string }>();
+	const language = params.language;
+
+	const { data: expression } = useExpressionBySlug(slug, language);
 	const [hiddenBlanks, setHiddenBlanks] = useState<Set<number>>(new Set());
 
 	if (!expression) {
@@ -70,8 +74,7 @@ export function ExpressionContent({ slug }: ExpressionContentProps) {
 			{/* 영어 스크립트 (빈칸 토글) */}
 			<div className="mb-8">
 				<h2 className="text-xl font-bold mb-3">English Script</h2>
-				<button
-					type="button"
+				<div
 					className="prose max-w-none"
 					// biome-ignore lint/security/noDangerouslySetInnerHtml: 빈칸 렌더링을 위해 필요
 					dangerouslySetInnerHTML={{ __html: renderScript() }}

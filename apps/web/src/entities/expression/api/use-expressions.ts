@@ -3,10 +3,10 @@
 import { useSuspenseQuery } from "@tanstack/react-query";
 import { createBrowserClient } from "@/shared/api/supabase";
 import {
-	getExpressions,
-	getExpressionBySlug,
-	type ExpressionWithBlanks,
 	type ExpressionComplete,
+	type ExpressionWithBlanks,
+	getExpressionBySlug,
+	getExpressions,
 } from "./expression-queries";
 
 /**
@@ -24,11 +24,11 @@ export function useExpressions(languageCode = "en") {
 /**
  * 특정 Expression의 상세 정보를 조회하는 TanStack Query 훅
  */
-export function useExpressionBySlug(slug: string) {
+export function useExpressionBySlug(slug: string, languageCode: string) {
 	const supabase = createBrowserClient();
 
 	return useSuspenseQuery<ExpressionComplete | null>({
-		queryKey: ["expression", slug],
-		queryFn: () => getExpressionBySlug(supabase, slug),
+		queryKey: ["expression", slug, languageCode],
+		queryFn: () => getExpressionBySlug(supabase, slug, languageCode),
 	});
 }

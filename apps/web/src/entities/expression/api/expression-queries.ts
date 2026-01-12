@@ -41,6 +41,7 @@ export async function getExpressions(
 export async function getExpressionBySlug(
 	supabase: SupabaseClient,
 	slug: string,
+	languageCode: string,
 ): Promise<ExpressionComplete | null> {
 	const { data, error } = await supabase
 		.from("expressions")
@@ -52,6 +53,7 @@ export async function getExpressionBySlug(
 		`,
 		)
 		.eq("slug", slug)
+		.eq("language_code", languageCode)
 		.single();
 
 	if (error) throw error;
