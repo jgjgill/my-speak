@@ -73,30 +73,106 @@ B: 안녕하세요
 
 # 2단계: 외국어 스크립트
 
-[1단계의 자연스러운 외국어 번역]
+[1단계의 자연스러운 외국어 번역을 작성하세요]
+[템플릿 지침은 제외하고 번역된 대화 내용만 출력하세요]
+
+**올바른 예시**:
+```
+Hello, what can I get for you?
+I would like one iced americano.
+What size would you like?
+Medium size, please.
+For here or to go?
+To go, please.
+Alright. That's 4,500 won total.
+```
 
 # 2단계: 끊어읽기 버전
 
-[| 기호로 끊어읽기]
+[| 기호로 의미 단위를 끊어서 표시하세요]
+[템플릿 지침은 제외하고 끊어읽기 내용만 출력하세요]
+
+**올바른 예시**:
+```
+Hello, | what can I get for you?
+I would like | one iced americano.
+What size | would you like?
+Medium size, | please.
+For here | or to go?
+To go, | please.
+Alright. | That's 4,500 won total.
+```
 
 # 3단계: 사용자 자유 연습
 
-1 ~ 2단계에서 구성한 콘텐츠 기반으로 한→외국어 스피킹 연습 진행
+[이 섹션은 항상 동일한 고정 텍스트를 사용하세요]
+
+**올바른 예시**:
+```
+1 ~ 2단계에서 구성한 콘텐츠 기반으로 한→영 스피킹 연습 진행
+```
 
 # 4단계: 키워드 스피치
 
+[각 레벨별로 한글 키워드 → 외국어 전체 문장 형식으로 작성하세요]
+[2단계 외국어 스크립트의 모든 문장을 포함해야 합니다]
+
 ## 레벨 1: 상세한 키워드 (70% 정보)
 
-한글 키워드들 → 목표 외국어 문장
+[핵심 단어들을 많이 포함하여 70% 정도의 정보를 제공]
+
+**올바른 예시**:
+```
+무엇을, 드릴까요 → Hello, what can I get for you?
+아이스 아메리카노, 한 잔, 원합니다 → I would like one iced americano.
+사이즈는, 어떻게 → What size would you like?
+미디엄 사이즈, 주세요 → Medium size, please.
+여기서, 아니면, 가져가실 → For here or to go?
+가져갈게요 → To go, please.
+총, 4,500원 → That's 4,500 won total.
+```
 
 ## 레벨 2: 핵심 키워드 (50% 정보)
 
-한글 키워드들 → 목표 외국어 문장
+[핵심 단어만 남겨서 50% 정도의 정보를 제공]
+
+**올바른 예시**:
+```
+무엇을, 드릴까요 → What can I get for you?
+아이스 아메리카노, 원합니다 → I would like one iced americano.
+사이즈는 → What size would you like?
+미디엄, 주세요 → Medium size, please.
+가져가실 → For here or to go?
+가져갈게요 → To go, please.
+총 4,500원 → That's 4,500 won total.
+```
 
 ## 레벨 3: 최소한의 키워드 (30% 정보)
 
-한글 키워드 → 목표 외국어 문장
+[최소한의 키워드만 제공하여 30% 정도의 정보만 제공]
+
+**올바른 예시**:
+```
+무엇을 → What can I get for you?
+아메리카노 → I would like one iced americano.
+사이즈 → What size would you like?
+미디엄 → Medium size, please.
+가져가실 → For here or to go?
+가져갈게요 → To go, please.
+4,500원 → That's 4,500 won total.
+```
 
 ## 레벨 4: 외국어 키워드
 
-외국어 키워드 → 목표 외국어 문장
+[외국어 핵심 단어만 제공]
+
+**올바른 예시**:
+```
+get → What can I get for you?
+americano → I would like one iced americano.
+size → What size would you like?
+medium → Medium size, please.
+to go → For here or to go?
+go → To go, please.
+total → That's 4,500 won total.
+```
