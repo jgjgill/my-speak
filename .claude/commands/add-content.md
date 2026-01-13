@@ -23,7 +23,7 @@ argument-hint: "[language] [difficulty]"
    ```bash
    uuidgen | tr '[:upper:]' '[:lower:]'
    ```
-2. **프롬프트 읽기**: @.prompts/content-generation.md 파일을 읽어서 콘텐츠 생성 규칙을 파악합니다
+2. **프롬프트 읽기**: @.prompts/daily-content.md 파일을 읽어서 콘텐츠 생성 규칙을 파악합니다
 3. **변수 치환**: 프롬프트의 변수를 치환합니다
    - `{{UUID}}`: 1단계에서 생성한 UUID
    - `{{LANGUAGE}}`: `$1` (기본값: `en`)

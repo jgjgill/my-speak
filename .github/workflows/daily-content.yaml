@@ -2,7 +2,7 @@ name: Daily Content Generation
 
 on:
   schedule:
-    - cron: '30 15 * * *' # 매일 00:30 KST (UTC 15:30)
+    - cron: '30 15 * * 1,3,5' # 월/수/금 00:30 KST (UTC 15:30)
   workflow_dispatch:
     inputs:
       language:
@@ -112,4 +112,4 @@ jobs:
           echo "" >> $GITHUB_STEP_SUMMARY
 
           REMAINING=$(jq '[.weekly_plan.planned_slugs[] | select(.used == false)] | length' content/.content-index.json)
-          echo "- **남은 주간 계획**: ${REMAINING}/7" >> $GITHUB_STEP_SUMMARY
+          echo "- **남은 주간 계획**: ${REMAINING}/3" >> $GITHUB_STEP_SUMMARY

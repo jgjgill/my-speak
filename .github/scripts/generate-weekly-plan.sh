@@ -80,7 +80,7 @@ else
 fi
 
 # 4. Gemini로 주간 계획 생성
-echo -e "${YELLOW}🤖 Gemini로 7개 주제 생성 중...${NC}"
+echo -e "${YELLOW}🤖 Gemini로 3개 주제 생성 중...${NC}"
 RESPONSE=$(cat "$TEMP_PROMPT" | gemini --model gemini-2.5-flash-lite --yolo 2>&1)
 EXIT_CODE=$?
 rm -f "$TEMP_PROMPT"
@@ -117,10 +117,10 @@ if ! echo "$JSON_ARRAY" | jq empty 2>/dev/null; then
   exit 1
 fi
 
-# 7개 항목 확인
+# 3개 항목 확인
 ITEM_COUNT=$(echo "$JSON_ARRAY" | jq 'length')
-if [ "$ITEM_COUNT" -ne 7 ]; then
-  echo -e "${YELLOW}⚠️  7개가 아닌 ${ITEM_COUNT}개 생성됨${NC}"
+if [ "$ITEM_COUNT" -ne 3 ]; then
+  echo -e "${YELLOW}⚠️  3개가 아닌 ${ITEM_COUNT}개 생성됨${NC}"
 fi
 
 echo -e "${GREEN}✅ ${ITEM_COUNT}개 주제 생성 완료${NC}"
@@ -147,7 +147,7 @@ echo -e "${GREEN}✅ 인덱스 파일 업데이트 완료${NC}"
 echo ""
 
 # 8. 생성된 주제 미리보기
-echo -e "${BLUE}=== 생성된 7개 주제 ===${NC}"
+echo -e "${BLUE}=== 생성된 3개 주제 ===${NC}"
 jq -r '.weekly_plan.planned_slugs[] | "- \(.title) (\(.slug))"' "$INDEX_FILE"
 echo ""
 
