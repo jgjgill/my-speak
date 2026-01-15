@@ -10,24 +10,9 @@
 ## 📋 출력 형식 지침
 
 **절대적 요구사항**:
-1. ❌ 마크다운 코드 블록(```markdown)으로 감싸지 마세요
-2. ✅ 첫 줄부터 바로 `---`로 시작하세요
-3. ✅ title, category, difficulty는 위에 제공된 한글 값을 **그대로** 사용하세요
-4. ✅ 응답의 첫 문자는 반드시 `-` (대시 3개의 첫 번째)여야 합니다
-
-**올바른 출력 예시**:
-```
----
-topic_id: "abc-123"
-...
-```
-
-**잘못된 출력 예시**:
-```
-```markdown
----
-...
-```
+1. 첫 줄부터 바로 `---`로 시작 (코드 블록 사용 금지)
+2. title, category, difficulty는 위에 제공된 한글 값을 **그대로** 사용
+3. 응답의 첫 문자는 반드시 `-` (대시 3개의 첫 번째)
 
 ---
 topic_id: "{{UUID}}"
@@ -46,133 +31,96 @@ highlight_sentence:
 
 # 1단계: 한글 스크립트
 
-[5-8문장의 자연스러운 한글 대화를 작성하세요]
-[학습 포인트는 **한글표현**{외국어 번역} 형식으로 표시하세요]
-[템플릿 지침은 제외하고 대화 내용만 출력하세요]
-[A:, B: 같은 화자 구분은 사용하지 마세요]
+5-8문장의 자연스러운 한글 대화. 학습 포인트는 **한글표현**{외국어 번역} 형식. 화자 구분(A:, B:) 사용 금지.
 
-**올바른 예시** (카페에서 음료 주문하기):
+예시:
 ```
 안녕하세요, 무엇을 드릴까요?
 저는 **아이스 아메리카노 한 잔**{one iced americano}을 원합니다.
 **사이즈는 어떻게**{what size} 해드릴까요?
 **미디엄 사이즈**{medium size}로 주세요.
-**여기서 드실 건가요, 아니면 가져가실 건가요**{for here or to go}?
-가져갈게요.
-알겠습니다. **총 4,500원**{that's 4,500 won total}입니다.
-```
-
-**잘못된 예시** (이렇게 작성하지 마세요):
-```
-[5-8문장의 자연스러운 한글 대화]
-[학습 포인트는 **한글표현**{외국어 번역} 형식으로 표시]
-
-A: 안녕하세요
-B: 안녕하세요
 ```
 
 # 2단계: 외국어 스크립트
 
-[1단계의 자연스러운 외국어 번역을 작성하세요]
-[템플릿 지침은 제외하고 번역된 대화 내용만 출력하세요]
+1단계를 자연스럽게 외국어로 번역.
 
-**올바른 예시**:
+예시:
 ```
 Hello, what can I get for you?
 I would like one iced americano.
 What size would you like?
 Medium size, please.
-For here or to go?
-To go, please.
-Alright. That's 4,500 won total.
 ```
 
 # 2단계: 끊어읽기 버전
 
-[| 기호로 의미 단위를 끊어서 표시하세요]
-[템플릿 지침은 제외하고 끊어읽기 내용만 출력하세요]
+| 기호로 의미 단위 구분.
 
-**올바른 예시**:
+예시:
 ```
 Hello, | what can I get for you?
 I would like | one iced americano.
 What size | would you like?
 Medium size, | please.
-For here | or to go?
-To go, | please.
-Alright. | That's 4,500 won total.
 ```
 
 # 3단계: 사용자 자유 연습
 
-[이 섹션은 항상 동일한 고정 텍스트를 사용하세요]
+다음 고정 텍스트를 그대로 사용:
 
-**올바른 예시**:
 ```
 1 ~ 2단계에서 구성한 콘텐츠 기반으로 한→영 스피킹 연습 진행
 ```
 
 # 4단계: 키워드 스피치
 
-[각 레벨별로 한글 키워드 → 외국어 전체 문장 형식으로 작성하세요]
-[2단계 외국어 스크립트의 모든 문장을 포함해야 합니다]
+각 레벨별로 한글 키워드 → 외국어 전체 문장 형식으로 작성. 2단계 외국어 스크립트의 모든 문장을 포함해야 함.
 
 ## 레벨 1: 상세한 키워드 (70% 정보)
 
-[핵심 단어들을 많이 포함하여 70% 정도의 정보를 제공]
+핵심 단어들을 많이 포함하여 70% 정도의 정보를 제공.
 
-**올바른 예시**:
+예시:
 ```
 무엇을, 드릴까요 → Hello, what can I get for you?
 아이스 아메리카노, 한 잔, 원합니다 → I would like one iced americano.
 사이즈는, 어떻게 → What size would you like?
 미디엄 사이즈, 주세요 → Medium size, please.
-여기서, 아니면, 가져가실 → For here or to go?
-가져갈게요 → To go, please.
-총, 4,500원 → That's 4,500 won total.
 ```
 
 ## 레벨 2: 핵심 키워드 (50% 정보)
 
-[핵심 단어만 남겨서 50% 정도의 정보를 제공]
+핵심 단어만 남겨서 50% 정도의 정보를 제공.
 
-**올바른 예시**:
+예시:
 ```
 무엇을, 드릴까요 → What can I get for you?
 아이스 아메리카노, 원합니다 → I would like one iced americano.
 사이즈는 → What size would you like?
 미디엄, 주세요 → Medium size, please.
-가져가실 → For here or to go?
-가져갈게요 → To go, please.
-총 4,500원 → That's 4,500 won total.
 ```
 
 ## 레벨 3: 최소한의 키워드 (30% 정보)
 
-[최소한의 키워드만 제공하여 30% 정도의 정보만 제공]
+최소한의 키워드만 제공하여 30% 정도의 정보만 제공.
 
-**올바른 예시**:
+예시:
 ```
 무엇을 → What can I get for you?
 아메리카노 → I would like one iced americano.
 사이즈 → What size would you like?
 미디엄 → Medium size, please.
-가져가실 → For here or to go?
-가져갈게요 → To go, please.
-4,500원 → That's 4,500 won total.
 ```
 
 ## 레벨 4: 외국어 키워드
 
-[외국어 핵심 단어만 제공]
+외국어 핵심 단어만 제공.
 
-**올바른 예시**:
+예시:
 ```
 get → What can I get for you?
 americano → I would like one iced americano.
 size → What size would you like?
 medium → Medium size, please.
-to go → For here or to go?
-go → To go, please.
-total → That's 4,500 won total.
 ```
