@@ -23,7 +23,7 @@ difficulty: "{{DIFFICULTY}}"
 description: "[주제에 맞는 간단한 한글 설명 1-2문장]"
 language_code: "{{LANGUAGE}}"
 highlight_sentence:
-  sentence_order: [핵심 문장 순서 번호 - 정수 값만 입력 (예: 1 또는 3)]
+  sentence_order: 3 # 예시값 - 1단계에서 가장 핵심적인 문장의 순서 번호(정수)
   korean_text: "[가장 핵심적인 한글 문장 1개]"
   foreign_text: "[핵심 문장의 외국어 번역]"
   reason: "[이 문장이 핵심인 이유를 한글로 설명]"
