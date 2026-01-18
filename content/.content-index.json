@@ -2,48 +2,24 @@
   "generated_at": "2026-01-12T15:42:44Z",
   "total_count": 71,
   "weekly_plan": {
-    "generated_at": "2026-01-11T15:03:25Z",
-    "week_number": 2,
+    "generated_at": "2026-01-18T15:03:18Z",
+    "week_number": 3,
     "planned_slugs": [
       {
-        "slug": "apologize-late",
-        "title": "늦어서 사과하기",
+        "slug": "complaining-public-transport",
+        "title": "대중교통 불평하기",
         "category": "회화",
-        "used": true
+        "used": false
       },
       {
-        "slug": "buy-train-ticket",
-        "title": "기차표 구매하기",
+        "slug": "asking-tourist-information",
+        "title": "관광 정보 문의하기",
         "category": "여행",
         "used": false
       },
       {
-        "slug": "project-presentation",
-        "title": "프로젝트 발표하기",
-        "category": "비즈니스",
-        "used": false
-      },
-      {
-        "slug": "cook-new-recipe",
-        "title": "새로운 레시피로 요리하기",
-        "category": "일상",
-        "used": false
-      },
-      {
-        "slug": "attend-concert",
-        "title": "콘서트 관람하기",
-        "category": "레저",
-        "used": false
-      },
-      {
-        "slug": "try-on-clothes",
-        "title": "옷 입어보기",
-        "category": "쇼핑",
-        "used": false
-      },
-      {
-        "slug": "check-account-balance",
-        "title": "계좌 잔액 확인하기",
+        "slug": "applying-for-loan",
+        "title": "대출 신청하기",
         "category": "금융",
         "used": false
       }
