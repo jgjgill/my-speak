@@ -88,7 +88,7 @@ jobs:
               TITLE="새 학습 콘텐츠"
             fi
 
-            git add content/source/ content/.content-index.json content/parsed/
+            git add content/source/ content/.content-index.json content/json/
             git commit -m "content: ${TITLE} (${LANGUAGE} ${DIFFICULTY})"
 
             if [ -z "$ACT" ]; then
