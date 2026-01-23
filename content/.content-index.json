@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-01-12T15:42:44Z",
-  "total_count": 71,
+  "generated_at": "2026-01-23T15:40:01Z",
+  "total_count": 72,
   "weekly_plan": {
     "generated_at": "2026-01-18T15:03:18Z",
     "week_number": 3,
@@ -9,7 +9,7 @@
         "slug": "complaining-public-transport",
         "title": "대중교통 불평하기",
         "category": "회화",
-        "used": false
+        "used": true
       },
       {
         "slug": "asking-tourist-information",
@@ -96,6 +96,7 @@
     "working-out-at-gym",
     "giving-cat-medicine-for-first-time",
     "airport-security-screening",
-    "apologize-late"
+    "apologize-late",
+    "complaining-public-transport"
   ]
 }
