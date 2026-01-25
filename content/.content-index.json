@@ -2,25 +2,25 @@
   "generated_at": "2026-01-23T15:40:01Z",
   "total_count": 72,
   "weekly_plan": {
-    "generated_at": "2026-01-18T15:03:18Z",
-    "week_number": 3,
+    "generated_at": "2026-01-25T15:03:34Z",
+    "week_number": 4,
     "planned_slugs": [
       {
-        "slug": "complaining-public-transport",
-        "title": "대중교통 불평하기",
-        "category": "회화",
-        "used": true
-      },
-      {
-        "slug": "asking-tourist-information",
-        "title": "관광 정보 문의하기",
-        "category": "여행",
+        "slug": "managing-investments",
+        "title": "투자 관리",
+        "category": "금융",
         "used": false
       },
       {
-        "slug": "applying-for-loan",
-        "title": "대출 신청하기",
-        "category": "금융",
+        "slug": "gardening-basics",
+        "title": "원예 기초",
+        "category": "레저",
+        "used": false
+      },
+      {
+        "slug": "navigating-public-transportation",
+        "title": "대중교통 이용하기",
+        "category": "여행",
         "used": false
       }
     ]
