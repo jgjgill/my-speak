@@ -1,0 +1,367 @@
+{
+  "topic": {
+    "id": "41423932-9022-4302-8324-55a94af485a5",
+    "title": "투자 관리",
+    "category": "금융",
+    "difficulty": "초급",
+    "description": "투자의 기본 개념과 시작 방법을 배우는 간단한 대화입니다.",
+    "language_code": "en",
+    "total_sentences": 6
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 투자에 대해 배우고 싶습니다."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "좋습니다. 투자는 돈을 벌기 위해 돈을 사용하는 것이에요."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "가장 쉬운 시작 방법은 무엇인가요?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "처음에는 분산 투자가 되는 뮤추얼 펀드 같은 것을 고려해 보세요."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "그것이 위험을 줄이는 데 도움이 되나요?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "네, 일반적으로요. 투자는 항상 위험을 수반합니다."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, I want to learn about investing.",
+      "chunked_text": "Hello, | I want to learn about investing."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Great. Investing is using money to make money.",
+      "chunked_text": "Great. | Investing is using money | to make money."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "What is the easiest way to start?",
+      "chunked_text": "What is the easiest way | to start?"
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "To start, consider something diversified like mutual funds.",
+      "chunked_text": "To start, | consider something diversified | like mutual funds."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Does that help reduce risk?",
+      "chunked_text": "Does that help | reduce risk?"
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Yes, generally, yes. Investing always involves risk.",
+      "chunked_text": "Yes, generally, yes. | Investing always involves risk."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "learn about investing"
+      ],
+      "target_sentence": "Hello, I want to learn about investing.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "using money",
+        "make money"
+      ],
+      "target_sentence": "Investing is using money to make money.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "easiest way",
+        "start"
+      ],
+      "target_sentence": "What is the easiest way to start?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "diversified",
+        "mutual funds"
+      ],
+      "target_sentence": "To start, consider something diversified like mutual funds.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "reduce risk"
+      ],
+      "target_sentence": "Does that help reduce risk?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "generally",
+        "yes",
+        "always",
+        "risk"
+      ],
+      "target_sentence": "Yes, generally, yes. Investing always involves risk.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 7,
+      "keywords": [
+        "learn",
+        "investing"
+      ],
+      "target_sentence": "Hello, I want to learn about investing.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "money",
+        "make money"
+      ],
+      "target_sentence": "Investing is using money to make money.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "easiest",
+        "start"
+      ],
+      "target_sentence": "What is the easiest way to start?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "diversified",
+        "mutual funds"
+      ],
+      "target_sentence": "Consider something diversified like mutual funds.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "reduce risk"
+      ],
+      "target_sentence": "Help reduce risk?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "generally",
+        "risk"
+      ],
+      "target_sentence": "Generally, yes. Investing involves risk.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 13,
+      "keywords": [
+        "investing"
+      ],
+      "target_sentence": "Hello, I want to learn about investing.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 14,
+      "keywords": [
+        "money"
+      ],
+      "target_sentence": "Investing is using money to make money.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "start"
+      ],
+      "target_sentence": "What is the easiest way to start?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "mutual funds"
+      ],
+      "target_sentence": "Consider mutual funds.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "risk"
+      ],
+      "target_sentence": "Does that help reduce risk?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "risk"
+      ],
+      "target_sentence": "Investing always involves risk.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 19,
+      "keywords": [
+        "learn"
+      ],
+      "target_sentence": "Hello, I want to learn about investing.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 20,
+      "keywords": [
+        "money"
+      ],
+      "target_sentence": "Investing is using money to make money.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 21,
+      "keywords": [
+        "start"
+      ],
+      "target_sentence": "What is the easiest way to start?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "diversified"
+      ],
+      "target_sentence": "To start, consider something diversified like mutual funds.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "risk"
+      ],
+      "target_sentence": "Does that help reduce risk?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "risk"
+      ],
+      "target_sentence": "Investing always involves risk.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "투자는 돈을 벌기 위해 돈을 사용하는 것",
+      "foreign_phrase": "using money to make money"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "가장 쉬운 시작 방법",
+      "foreign_phrase": "easiest way to start"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "분산 투자",
+      "foreign_phrase": "diversified investment"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "뮤추얼 펀드",
+      "foreign_phrase": "mutual funds"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "위험을 줄이는 데",
+      "foreign_phrase": "reduce risk"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "일반적으로요",
+      "foreign_phrase": "generally, yes"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "투자는 항상 위험을 수반합니다",
+      "foreign_phrase": "investing always involves risk"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 2,
+      "korean_text": "돈을 벌기 위해 돈을 사용하는 것",
+      "foreign_text": "using money to make money",
+      "reason": "투자의 가장 기본적인 정의로, 전체 내용을 이해하는 핵심입니다."
+    }
+  ]
+}

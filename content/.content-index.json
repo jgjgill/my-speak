@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-01-23T15:40:01Z",
-  "total_count": 72,
+  "generated_at": "2026-01-28T15:43:12Z",
+  "total_count": 73,
   "weekly_plan": {
     "generated_at": "2026-01-25T15:03:34Z",
     "week_number": 4,
@@ -9,7 +9,7 @@
         "slug": "managing-investments",
         "title": "투자 관리",
         "category": "금융",
-        "used": false
+        "used": true
       },
       {
         "slug": "gardening-basics",
@@ -97,6 +97,7 @@
     "giving-cat-medicine-for-first-time",
     "airport-security-screening",
     "apologize-late",
-    "complaining-public-transport"
+    "complaining-public-transport",
+    "managing-investments"
   ]
 }
