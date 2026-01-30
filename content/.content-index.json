@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-01-28T15:43:12Z",
-  "total_count": 73,
+  "generated_at": "2026-01-30T15:44:11Z",
+  "total_count": 74,
   "weekly_plan": {
     "generated_at": "2026-01-25T15:03:34Z",
     "week_number": 4,
@@ -15,7 +15,7 @@
         "slug": "gardening-basics",
         "title": "원예 기초",
         "category": "레저",
-        "used": false
+        "used": true
       },
       {
         "slug": "navigating-public-transportation",
@@ -98,6 +98,7 @@
     "airport-security-screening",
     "apologize-late",
     "complaining-public-transport",
-    "managing-investments"
+    "managing-investments",
+    "gardening-basics"
   ]
 }
