@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-01-30T15:44:11Z",
-  "total_count": 74,
+  "generated_at": "2026-02-02T15:44:02Z",
+  "total_count": 75,
   "weekly_plan": {
     "generated_at": "2026-02-01T15:05:11Z",
     "week_number": 5,
@@ -9,7 +9,7 @@
         "slug": "stock-investment",
         "title": "주식 투자",
         "category": "금융",
-        "used": false
+        "used": true
       },
       {
         "slug": "train-ticket-booking",
@@ -99,6 +99,7 @@
     "apologize-late",
     "complaining-public-transport",
     "managing-investments",
-    "gardening-basics"
+    "gardening-basics",
+    "stock-investment"
   ]
 }

@@ -1,0 +1,148 @@
+{
+  "topic": {
+    "id": "8899a850-be52-4c09-86c4-d094f9f6fcee",
+    "title": "주식 투자",
+    "category": "금융",
+    "difficulty": "초급",
+    "description": "주식 투자는 회사의 일부 소유권을 사는 행위입니다. 초급 단계에서는 주식 투자의 기본적인 개념과 용어를 배웁니다.",
+    "language_code": "en",
+    "total_sentences": 8
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "A: 안녕하세요, 주식 투자에 대해 배우고 싶어요."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "B: 좋아요. 주식 투자는 회사의 일부 소유권을 사는 것이에요."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "A: 왜 그렇게 하는 건가요?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "B: 회사가 성장하면, 돈을 벌 수 있기 때문이죠."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "A: 위험할 수도 있나요?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "B: 네, 가격이 오르거나 내릴 수 있어요."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "A: 기본적인 용어부터 배우고 싶어요."
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "B: 네, 회사의 가치와 수익률 같은 것들을 알아볼 거예요."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "A: Hello, I want to learn about **stock investment**.",
+      "chunked_text": "A: Hello, | I want to learn about stock investment."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "B: Okay. **Stock investment** is **buying a piece of ownership in a company**.",
+      "chunked_text": "B: Okay. | Stock investment is | buying a piece of ownership in a company."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "A: **Why do people do that**?",
+      "chunked_text": "A: Why do people do that?"
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "B: **If the company grows**, **because you can make money**.",
+      "chunked_text": "B: If the company grows, | because you can make money."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "A: **Can it be risky**?",
+      "chunked_text": "A: Can it be risky?"
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "B: Yes, **prices can go up or down**.",
+      "chunked_text": "B: Yes, | prices can go up or down."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "A: **Let's start with basic terms** I want to learn.",
+      "chunked_text": "A: Let's start with basic terms | I want to learn."
+    },
+    {
+      "sentence_order": 8,
+      "foreign_text": "B: Yes, we will look at things like **company's value** and **return rate**.",
+      "chunked_text": "B: Yes, | we will look at things like company's value | and return rate."
+    }
+  ],
+  "keyword_speeches": [],
+  "learning_points": [
+    {
+      "sentence_order": 1,
+      "korean_phrase": "주식 투자",
+      "foreign_phrase": "stock investment"
+    },
+    {
+      "sentence_order": 2,
+      "korean_phrase": "주식 투자는 회사의 일부 소유권을 사는 것",
+      "foreign_phrase": "buying a piece of ownership in a company"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "왜 그렇게 하는 건가요",
+      "foreign_phrase": "Why do people do that"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "회사가 성장하면",
+      "foreign_phrase": "If the company grows"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "돈을 벌 수 있기 때문",
+      "foreign_phrase": "because you can make money"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "위험할 수도 있나요",
+      "foreign_phrase": "Can it be risky"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "가격이 오르거나 내릴 수 있어요",
+      "foreign_phrase": "prices can go up or down"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "기본적인 용어부터",
+      "foreign_phrase": "Let's start with basic terms"
+    },
+    {
+      "sentence_order": 8,
+      "korean_phrase": "회사의 가치",
+      "foreign_phrase": "company's value"
+    },
+    {
+      "sentence_order": 8,
+      "korean_phrase": "수익률",
+      "foreign_phrase": "return rate"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 4,
+      "korean_text": "회사가 성장하면, 돈을 벌 수 있기 때문이죠.",
+      "foreign_text": "Because you can make money if the company grows.",
+      "reason": "이 문장은 주식 투자의 주된 동기를 명확하게 설명합니다."
+    }
+  ]
+}
