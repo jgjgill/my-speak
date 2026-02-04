@@ -1,0 +1,476 @@
+{
+  "topic": {
+    "id": "ee122d36-7a55-46f2-b242-1fabb2c0a682",
+    "title": "기차표 예매",
+    "category": "여행",
+    "difficulty": "초급",
+    "description": "기차표를 예매하는 데 필요한 기본적인 영어 표현을 학습합니다.",
+    "language_code": "en",
+    "total_sentences": 8
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 기차표 한 장을 사고 싶어요."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "어디로 가시나요?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "부산으로 주세요."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "언제 출발하시겠어요?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "내일 아침에요."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "네, 내일 아침 부산행 기차표 한 장. 총 50,000원입니다."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "여기 있습니다."
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "감사합니다. 여기 표입니다."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, I would like to buy one train ticket.",
+      "chunked_text": "Hello, | I would like to buy one train ticket."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Where are you going?",
+      "chunked_text": "Where are you going?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "To Busan, please.",
+      "chunked_text": "To Busan, | please."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "When would you like to depart?",
+      "chunked_text": "When would you like to depart?"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Tomorrow morning.",
+      "chunked_text": "Tomorrow morning."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Okay, one train ticket for tomorrow morning to Busan. That will be 50,000 won.",
+      "chunked_text": "Okay, | one train ticket for tomorrow morning to Busan. | That will be 50,000 won."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "Here you go.",
+      "chunked_text": "Here you go."
+    },
+    {
+      "sentence_order": 8,
+      "foreign_text": "Thank you. Here is your ticket.",
+      "chunked_text": "Thank you. | Here is your ticket."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "기차표 한 장",
+        "사고 싶어요"
+      ],
+      "target_sentence": "Hello, I would like to buy one train ticket.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "어디로 가시나요?"
+      ],
+      "target_sentence": "Where are you going?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "부산으로 주세요"
+      ],
+      "target_sentence": "To Busan, please.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "언제 출발하시겠어요?"
+      ],
+      "target_sentence": "When would you like to depart?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "내일 아침"
+      ],
+      "target_sentence": "Tomorrow morning.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "내일 아침 부산행",
+        "기차표",
+        "50",
+        "000원"
+      ],
+      "target_sentence": "Okay, one train ticket for tomorrow morning to Busan. That will be 50,000 won.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "여기 있습니다"
+      ],
+      "target_sentence": "Here you go.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 8,
+      "keywords": [
+        "여기 표"
+      ],
+      "target_sentence": "Thank you. Here is your ticket.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "기차표"
+      ],
+      "target_sentence": "Hello, I would like to buy one train ticket.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "어디"
+      ],
+      "target_sentence": "Where are you going?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "부산"
+      ],
+      "target_sentence": "To Busan, please.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "언제"
+      ],
+      "target_sentence": "When would you like to depart?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "내일"
+      ],
+      "target_sentence": "Tomorrow morning.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "부산행",
+        "50",
+        "000원"
+      ],
+      "target_sentence": "Okay, one train ticket for tomorrow morning to Busan. That will be 50,000 won.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 15,
+      "keywords": [
+        "여기"
+      ],
+      "target_sentence": "Here you go.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 16,
+      "keywords": [
+        "표"
+      ],
+      "target_sentence": "Thank you. Here is your ticket.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "기차표"
+      ],
+      "target_sentence": "Hello, I would like to buy one train ticket.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "어디"
+      ],
+      "target_sentence": "Where are you going?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "부산"
+      ],
+      "target_sentence": "To Busan, please.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "언제"
+      ],
+      "target_sentence": "When would you like to depart?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "내일"
+      ],
+      "target_sentence": "Tomorrow morning.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 22,
+      "keywords": [
+        "50",
+        "000원"
+      ],
+      "target_sentence": "Okay, one train ticket for tomorrow morning to Busan. That will be 50,000 won.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 23,
+      "keywords": [
+        "여기"
+      ],
+      "target_sentence": "Here you go.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 24,
+      "keywords": [
+        "표"
+      ],
+      "target_sentence": "Thank you. Here is your ticket.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "buy"
+      ],
+      "target_sentence": "Hello, I would like to buy one train ticket.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "going"
+      ],
+      "target_sentence": "Where are you going?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "Busan"
+      ],
+      "target_sentence": "To Busan, please.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "depart"
+      ],
+      "target_sentence": "When would you like to depart?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 29,
+      "keywords": [
+        "morning"
+      ],
+      "target_sentence": "Tomorrow morning.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 30,
+      "keywords": [
+        "ticket"
+      ],
+      "target_sentence": "Okay, one train ticket for tomorrow morning to Busan. That will be 50,000 won.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 31,
+      "keywords": [
+        "Here"
+      ],
+      "target_sentence": "Here you go.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 32,
+      "keywords": [
+        "ticket"
+      ],
+      "target_sentence": "Thank you. Here is your ticket.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 1,
+      "korean_phrase": "기차표 한 장",
+      "foreign_phrase": "one train ticket"
+    },
+    {
+      "sentence_order": 2,
+      "korean_phrase": "어디로 가시나요?",
+      "foreign_phrase": "Where are you going?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "부산",
+      "foreign_phrase": "Busan"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "언제",
+      "foreign_phrase": "When"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "내일 아침",
+      "foreign_phrase": "tomorrow morning"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "내일 아침 부산행",
+      "foreign_phrase": "for tomorrow morning to Busan"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "기차표",
+      "foreign_phrase": "train ticket"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "총 50,000원",
+      "foreign_phrase": "50,000 won"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "여기 있습니다",
+      "foreign_phrase": "Here you go"
+    },
+    {
+      "sentence_order": 8,
+      "korean_phrase": "여기 표",
+      "foreign_phrase": "Here is your ticket"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 3,
+      "korean_text": "부산으로 주세요.",
+      "foreign_text": "To Busan, please.",
+      "reason": "목적지를 명확히 전달하는 가장 기본적인 표현이기 때문입니다."
+    }
+  ]
+}
