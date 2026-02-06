@@ -1,0 +1,363 @@
+{
+  "topic": {
+    "id": "f6face1f-16dd-40e0-9a40-c0c4676e6527",
+    "title": "옷 구매하기",
+    "category": "쇼핑",
+    "difficulty": "초급",
+    "description": "옷을 구매할 때 사용할 수 있는 기본적인 영어 표현을 학습합니다.",
+    "language_code": "en",
+    "total_sentences": 7
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 무엇을 찾으세요?"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "이 셔츠 얼마예요?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "입어봐도 될까요?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "음... 사이즈가 너무 작아요."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "혹시 더 큰 사이즈 있나요?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "네, 이걸로 할게요."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "감사합니다."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, what are you looking for?",
+      "chunked_text": "Hello, | what are you looking for?"
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "How much is this shirt?",
+      "chunked_text": "How much is this shirt? |"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Can I try this on?",
+      "chunked_text": "Can I | try this on?"
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Hmm... It's too small.",
+      "chunked_text": "Hmm... | It's | too small."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Do you have a larger size?",
+      "chunked_text": "Do you have | a larger size?"
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Yes, I'll take this one.",
+      "chunked_text": "Yes, | I'll take this one."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "Thank you.",
+      "chunked_text": "Thank you."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "안녕하세요",
+        "무엇을 찾으세요?"
+      ],
+      "target_sentence": "Hello, what are you looking for?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "이 셔츠 얼마예요?"
+      ],
+      "target_sentence": "How much is this shirt?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "입어봐도 될까요?"
+      ],
+      "target_sentence": "Can I try this on?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "사이즈가 너무 작아요."
+      ],
+      "target_sentence": "Hmm... It's too small.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "더 큰 사이즈 있나요?"
+      ],
+      "target_sentence": "Do you have a larger size?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "네",
+        "이걸로 할게요."
+      ],
+      "target_sentence": "Yes, I'll take this one.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 7,
+      "keywords": [
+        "무엇을 찾으세요?"
+      ],
+      "target_sentence": "What are you looking for?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "셔츠 얼마예요?"
+      ],
+      "target_sentence": "How much is this shirt?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "입어봐도 될까요?"
+      ],
+      "target_sentence": "Can I try this on?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "너무 작아요."
+      ],
+      "target_sentence": "It's too small.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "큰 사이즈?"
+      ],
+      "target_sentence": "Do you have a larger size?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "이걸로 할게요."
+      ],
+      "target_sentence": "I'll take this one.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 13,
+      "keywords": [
+        "무엇을"
+      ],
+      "target_sentence": "What are you looking for?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 14,
+      "keywords": [
+        "얼마예요?"
+      ],
+      "target_sentence": "How much is this shirt?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "입어봐도?"
+      ],
+      "target_sentence": "Can I try this on?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "작아요."
+      ],
+      "target_sentence": "It's too small.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "큰 사이즈?"
+      ],
+      "target_sentence": "Do you have a larger size?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "할게요."
+      ],
+      "target_sentence": "I'll take this one.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 19,
+      "keywords": [
+        "looking for"
+      ],
+      "target_sentence": "Hello, what are you looking for?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 20,
+      "keywords": [
+        "much",
+        "shirt"
+      ],
+      "target_sentence": "How much is this shirt?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 21,
+      "keywords": [
+        "try on"
+      ],
+      "target_sentence": "Can I try this on?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "small"
+      ],
+      "target_sentence": "Hmm... It's too small.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "larger size"
+      ],
+      "target_sentence": "Do you have a larger size?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "take this"
+      ],
+      "target_sentence": "Yes, I'll take this one.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 1,
+      "korean_phrase": "무엇을 찾으세요",
+      "foreign_phrase": "what are you looking for"
+    },
+    {
+      "sentence_order": 2,
+      "korean_phrase": "얼마예요",
+      "foreign_phrase": "how much is this"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "입어봐도 될까요",
+      "foreign_phrase": "Can I try this on"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "너무 작아요",
+      "foreign_phrase": "It's too small"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "더 큰 사이즈",
+      "foreign_phrase": "a larger size"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "이걸로 할게요",
+      "foreign_phrase": "I'll take this one"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 2,
+      "korean_text": "이 셔츠 얼마예요?",
+      "foreign_text": "How much is this shirt?",
+      "reason": "옷을 구매할 때 가격을 묻는 것은 필수적인 단계이므로 이 문장을 핵심으로 선정했습니다."
+    }
+  ]
+}

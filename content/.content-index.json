@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-02-04T15:45:03Z",
-  "total_count": 76,
+  "generated_at": "2026-02-06T15:44:21Z",
+  "total_count": 77,
   "weekly_plan": {
     "generated_at": "2026-02-01T15:05:11Z",
     "week_number": 5,
@@ -21,7 +21,7 @@
         "slug": "buying-clothes",
         "title": "옷 구매하기",
         "category": "쇼핑",
-        "used": false
+        "used": true
       }
     ]
   },
@@ -101,6 +101,7 @@
     "managing-investments",
     "gardening-basics",
     "stock-investment",
-    "train-ticket-booking"
+    "train-ticket-booking",
+    "buying-clothes"
   ]
 }
