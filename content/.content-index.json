@@ -2,26 +2,26 @@
   "generated_at": "2026-02-06T15:44:21Z",
   "total_count": 77,
   "weekly_plan": {
-    "generated_at": "2026-02-01T15:05:11Z",
-    "week_number": 5,
+    "generated_at": "2026-02-08T15:06:05Z",
+    "week_number": 6,
     "planned_slugs": [
       {
-        "slug": "stock-investment",
-        "title": "주식 투자",
-        "category": "금융",
-        "used": true
+        "slug": "hobby-discussion",
+        "title": "취미 공유 및 토론",
+        "category": "회화",
+        "used": false
       },
       {
-        "slug": "train-ticket-booking",
-        "title": "기차표 예매",
+        "slug": "hostel-checkin",
+        "title": "호스텔 체크인하기",
         "category": "여행",
-        "used": true
+        "used": false
       },
       {
-        "slug": "buying-clothes",
-        "title": "옷 구매하기",
-        "category": "쇼핑",
-        "used": true
+        "slug": "payslip-understanding",
+        "title": "급여명세서 이해하기",
+        "category": "금융",
+        "used": false
       }
     ]
   },
