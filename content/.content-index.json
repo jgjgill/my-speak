@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-02-06T15:44:21Z",
-  "total_count": 77,
+  "generated_at": "2026-02-09T15:46:56Z",
+  "total_count": 78,
   "weekly_plan": {
     "generated_at": "2026-02-08T15:06:05Z",
     "week_number": 6,
@@ -9,7 +9,7 @@
         "slug": "hobby-discussion",
         "title": "취미 공유 및 토론",
         "category": "회화",
-        "used": false
+        "used": true
       },
       {
         "slug": "hostel-checkin",
@@ -102,6 +102,7 @@
     "gardening-basics",
     "stock-investment",
     "train-ticket-booking",
-    "buying-clothes"
+    "buying-clothes",
+    "hobby-discussion"
   ]
 }

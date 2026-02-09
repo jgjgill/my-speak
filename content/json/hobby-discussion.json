@@ -1,0 +1,489 @@
+{
+  "topic": {
+    "id": "71e462b1-5eca-4a9e-a86b-720974c01558",
+    "title": "취미 공유 및 토론",
+    "category": "회화",
+    "difficulty": "초급",
+    "description": "취미에 대해 이야기하고 서로의 관심사를 공유해 보세요.",
+    "language_code": "en",
+    "total_sentences": 8
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "여가 시간에 무엇을 즐겨 하세요?"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "저는 독서와 등산을 즐겨요. 당신은요?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "저는 비디오 게임을 하고 새로운 언어를 배우는 것을 좋아해요."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "재미있겠네요! 어떤 종류의 책을 주로 읽으세요?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "주로 판타지 소설을 읽어요."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "아, 저는 논픽션을 더 좋아해요. 등산은 마음을 정리하는 데 좋아요."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "네, 맞아요. 자주 등산 가세요?"
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "날씨가 좋으면 주로 주말에 가요."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "What do you enjoy doing in your free time?",
+      "chunked_text": "What do you enjoy doing | in your free time?"
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "I really like reading books and hiking. What about you?",
+      "chunked_text": "I really like | reading books | and hiking. | What about you?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "I enjoy playing video games and learning new languages.",
+      "chunked_text": "I enjoy | playing video games | and learning new languages."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "That sounds interesting! What kind of books do you usually read?",
+      "chunked_text": "That sounds interesting! | What kind of books | do you usually read?"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "I mostly read fantasy novels.",
+      "chunked_text": "I mostly read | fantasy novels."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Ah, I prefer non-fiction. Hiking is great for clearing your mind.",
+      "chunked_text": "Ah, | I prefer non-fiction. | Hiking is great for | clearing your mind."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "Yes, it is. Do you go hiking often?",
+      "chunked_text": "Yes, it is. | Do you go hiking often?"
+    },
+    {
+      "sentence_order": 8,
+      "foreign_text": "Usually on weekends if the weather is good.",
+      "chunked_text": "Usually on weekends | if the weather is good."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "여가 시간",
+        "무엇을",
+        "즐겨 하세요"
+      ],
+      "target_sentence": "What do you enjoy doing in your free time?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "독서",
+        "등산",
+        "즐겨요",
+        "당신은요"
+      ],
+      "target_sentence": "I really like reading books and hiking. What about you?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "비디오 게임",
+        "배우는 것",
+        "좋아해요"
+      ],
+      "target_sentence": "I enjoy playing video games and learning new languages.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "재미있겠네요",
+        "어떤 종류",
+        "책",
+        "읽으세요"
+      ],
+      "target_sentence": "That sounds interesting! What kind of books do you usually read?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "주로",
+        "판타지 소설"
+      ],
+      "target_sentence": "I mostly read fantasy novels.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "아",
+        "좋아해요",
+        "등산",
+        "마음을 정리하는 데"
+      ],
+      "target_sentence": "Ah, I prefer non-fiction. Hiking is great for clearing your mind.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "맞아요",
+        "자주",
+        "등산 가세요"
+      ],
+      "target_sentence": "Yes, it is. Do you go hiking often?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 8,
+      "keywords": [
+        "주로 주말에",
+        "날씨가 좋으면"
+      ],
+      "target_sentence": "Usually on weekends if the weather is good.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "무엇을",
+        "즐겨 하세요"
+      ],
+      "target_sentence": "What do you enjoy doing in your free time?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "독서",
+        "등산",
+        "당신은요"
+      ],
+      "target_sentence": "I really like reading books and hiking. What about you?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "게임",
+        "언어",
+        "배워요"
+      ],
+      "target_sentence": "I enjoy playing video games and learning new languages.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "어떤 책",
+        "읽으세요"
+      ],
+      "target_sentence": "That sounds interesting! What kind of books do you usually read?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "판타지 소설"
+      ],
+      "target_sentence": "I mostly read fantasy novels.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "등산",
+        "좋아요"
+      ],
+      "target_sentence": "Ah, I prefer non-fiction. Hiking is great for clearing your mind.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 15,
+      "keywords": [
+        "자주",
+        "등산"
+      ],
+      "target_sentence": "Yes, it is. Do you go hiking often?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 16,
+      "keywords": [
+        "주말에",
+        "날씨 좋으면"
+      ],
+      "target_sentence": "Usually on weekends if the weather is good.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "무엇을"
+      ],
+      "target_sentence": "What do you enjoy doing in your free time?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "독서",
+        "등산"
+      ],
+      "target_sentence": "I really like reading books and hiking. What about you?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "게임",
+        "언어"
+      ],
+      "target_sentence": "I enjoy playing video games and learning new languages.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "책"
+      ],
+      "target_sentence": "That sounds interesting! What kind of books do you usually read?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "판타지"
+      ],
+      "target_sentence": "I mostly read fantasy novels.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 22,
+      "keywords": [
+        "등산"
+      ],
+      "target_sentence": "Ah, I prefer non-fiction. Hiking is great for clearing your mind.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 23,
+      "keywords": [
+        "자주"
+      ],
+      "target_sentence": "Yes, it is. Do you go hiking often?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 24,
+      "keywords": [
+        "주말"
+      ],
+      "target_sentence": "Usually on weekends if the weather is good.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "enjoy"
+      ],
+      "target_sentence": "What do you enjoy doing in your free time?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "reading",
+        "hiking"
+      ],
+      "target_sentence": "I really like reading books and hiking. What about you?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "games",
+        "languages"
+      ],
+      "target_sentence": "I enjoy playing video games and learning new languages.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "books"
+      ],
+      "target_sentence": "That sounds interesting! What kind of books do you usually read?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 29,
+      "keywords": [
+        "fantasy"
+      ],
+      "target_sentence": "I mostly read fantasy novels.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 30,
+      "keywords": [
+        "hiking"
+      ],
+      "target_sentence": "Ah, I prefer non-fiction. Hiking is great for clearing your mind.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 31,
+      "keywords": [
+        "often"
+      ],
+      "target_sentence": "Yes, it is. Do you go hiking often?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 32,
+      "keywords": [
+        "weekends"
+      ],
+      "target_sentence": "Usually on weekends if the weather is good.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "독서",
+      "foreign_phrase": "reading books"
+    },
+    {
+      "sentence_order": 2,
+      "korean_phrase": "등산",
+      "foreign_phrase": "hiking"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "비디오 게임",
+      "foreign_phrase": "playing video games"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "새로운 언어",
+      "foreign_phrase": "learning new languages"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "어떤 종류의 책",
+      "foreign_phrase": "What kind of books"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "판타지 소설",
+      "foreign_phrase": "fantasy novels"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "등산은 마음을 정리하는 데",
+      "foreign_phrase": "Hiking is great for"
+    },
+    {
+      "sentence_order": 8,
+      "korean_phrase": "주로 주말에",
+      "foreign_phrase": "Usually on weekends"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 2,
+      "korean_text": "저는 **독서**와 **등산**을 즐겨요.",
+      "foreign_text": "I really like reading books and hiking.",
+      "reason": "이 문장은 두 가지 일반적인 취미를 소개하며 개인적인 관심사를 공유하는 좋은 시작점입니다."
+    }
+  ]
+}
