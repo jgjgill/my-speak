@@ -8,7 +8,7 @@ description: "취미에 대해 이야기하고 서로의 관심사를 공유해 
 language_code: "en"
 highlight_sentence:
   sentence_order: 2
-  korean_text: "저는 **독서**와 **등산**을 즐겨요."
+  korean_text: "저는 독서와 등산을 즐겨요."
   foreign_text: "I really like reading books and hiking."
   reason: "이 문장은 두 가지 일반적인 취미를 소개하며 개인적인 관심사를 공유하는 좋은 시작점입니다."
 ---

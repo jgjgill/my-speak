@@ -32,8 +32,8 @@ description: "간단한 설명"
 language_code: "en"   # en (영어), ja (일본어)
 highlight_sentence:
   sentence_order: 2
-  korean_text: "핵심이 되는 한글 문장"
-  foreign_text: "Core foreign sentence"
+  korean_text: "핵심이 되는 한글 문장"  # 순수 텍스트만 (** 볼드 마킹 금지)
+  foreign_text: "Core foreign sentence"  # 순수 텍스트만
   reason: "이 문장이 핵심인 이유"
 ---
 
