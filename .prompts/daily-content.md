@@ -13,6 +13,7 @@
 1. 첫 줄은 `---` (frontmatter 시작, 코드 블록 사용 금지)
 2. 두 번째 줄부터 `topic_id:` 등 필드 작성 (YAML 배열 형식 `-` 사용 금지)
 3. title, category, difficulty는 위에 제공된 한글 값을 **그대로** 사용
+4. highlight_sentence의 korean_text, foreign_text는 **순수 텍스트만** 사용 (1단계의 `**볼드**{번역}` 학습 포인트 마킹을 절대 포함하지 않음)
 
 ---
 topic_id: "{{UUID}}"
@@ -24,8 +25,8 @@ description: "[주제에 맞는 간단한 한글 설명 1-2문장]"
 language_code: "{{LANGUAGE}}"
 highlight_sentence:
   sentence_order: 3 # 예시값 - 1단계에서 가장 핵심적인 문장의 순서 번호(정수)
-  korean_text: "[가장 핵심적인 한글 문장 1개]"
-  foreign_text: "[핵심 문장의 외국어 번역]"
+  korean_text: "[가장 핵심적인 한글 문장 1개 - 순수 텍스트만, **볼드** 마킹 절대 금지]"
+  foreign_text: "[핵심 문장의 외국어 번역 - 순수 텍스트만]"
   reason: "[이 문장이 핵심인 이유를 한글로 설명]"
 ---
 
@@ -37,7 +38,6 @@ highlight_sentence:
 ```
 안녕하세요, 무엇을 드릴까요?
 저는 **아이스 아메리카노 한 잔**{one iced americano}을 원합니다.
-**사이즈는 어떻게**{what size} 해드릴까요?
 **미디엄 사이즈**{medium size}로 주세요.
 ```
 
@@ -49,7 +49,6 @@ highlight_sentence:
 ```
 Hello, what can I get for you?
 I would like one iced americano.
-What size would you like?
 Medium size, please.
 ```
 
@@ -61,7 +60,6 @@ Medium size, please.
 ```
 Hello, | what can I get for you?
 I would like | one iced americano.
-What size | would you like?
 Medium size, | please.
 ```
 
@@ -85,7 +83,6 @@ Medium size, | please.
 ```
 무엇을, 드릴까요 → Hello, what can I get for you?
 아이스 아메리카노, 한 잔, 원합니다 → I would like one iced americano.
-사이즈는, 어떻게 → What size would you like?
 미디엄 사이즈, 주세요 → Medium size, please.
 ```
 
@@ -95,9 +92,8 @@ Medium size, | please.
 
 예시:
 ```
-무엇을, 드릴까요 → What can I get for you?
-아이스 아메리카노, 원합니다 → I would like one iced americano.
-사이즈는 → What size would you like?
+무엇을 → Hello, what can I get for you?
+아메리카노, 원합니다 → I would like one iced americano.
 미디엄, 주세요 → Medium size, please.
 ```
 
@@ -109,7 +105,6 @@ Medium size, | please.
 ```
 무엇을 → What can I get for you?
 아메리카노 → I would like one iced americano.
-사이즈 → What size would you like?
 미디엄 → Medium size, please.
 ```
 
@@ -121,6 +116,5 @@ Medium size, | please.
 ```
 get → What can I get for you?
 americano → I would like one iced americano.
-size → What size would you like?
 medium → Medium size, please.
 ```
