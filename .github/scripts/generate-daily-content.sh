@@ -106,9 +106,10 @@ sed -e "s|{{TITLE}}|${TITLE}|g" \
 
 # 5. Gemini로 콘텐츠 생성
 echo -e "${YELLOW}🤖 Gemini로 콘텐츠 생성 중...${NC}"
-CONTENT=$(cat "$TEMP_PROMPT" | gemini --model gemini-2.5-flash-lite --yolo 2>&1)
-EXIT_CODE=$?
+PROMPT_CONTENT=$(cat "$TEMP_PROMPT")
 rm -f "$TEMP_PROMPT"
+CONTENT=$(gemini -p "$PROMPT_CONTENT" --model gemini-2.5-flash-lite 2>&1)
+EXIT_CODE=$?
 
 if [ $EXIT_CODE -ne 0 ]; then
   echo -e "${RED}❌ Gemini 실행 실패 (exit code: $EXIT_CODE)${NC}"
