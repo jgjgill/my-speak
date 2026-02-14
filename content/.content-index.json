@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-02-09T15:46:56Z",
-  "total_count": 78,
+  "generated_at": "2026-02-14T11:00:50Z",
+  "total_count": 79,
   "weekly_plan": {
     "generated_at": "2026-02-08T15:06:05Z",
     "week_number": 6,
@@ -15,7 +15,7 @@
         "slug": "hostel-checkin",
         "title": "호스텔 체크인하기",
         "category": "여행",
-        "used": false
+        "used": true
       },
       {
         "slug": "payslip-understanding",
@@ -103,6 +103,7 @@
     "stock-investment",
     "train-ticket-booking",
     "buying-clothes",
-    "hobby-discussion"
+    "hobby-discussion",
+    "hostel-checkin"
   ]
 }

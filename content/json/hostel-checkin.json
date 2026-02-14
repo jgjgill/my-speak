@@ -1,0 +1,377 @@
+{
+  "topic": {
+    "id": "3ca74e3f-eb32-4513-818b-db36be81fe3e",
+    "title": "호스텔 체크인하기",
+    "category": "여행",
+    "difficulty": "초급",
+    "description": "호스텔에 도착해서 예약 확인 및 체크인 절차를 진행하는 대화입니다.",
+    "language_code": "en",
+    "total_sentences": 7
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 예약 확인 부탁드려요."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "네, 예약자 성함이 어떻게 되시나요?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "제 이름은 김민준입니다."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "예, 김민준님 예약 확인되었습니다. 몇 박이신가요?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "2박입니다."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "침대칸은 6인실 도미토리입니다. 여기서 3층으로 올라가시면 됩니다."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "네, 감사합니다."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hi, I'd like to check in.",
+      "chunked_text": "Hi, | I'd like to check in."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Sure, what is the last name of the reservation?",
+      "chunked_text": "Sure, | what is the last name | of the reservation?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "It's Kim Minjun.",
+      "chunked_text": "It's | Kim Minjun."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Yes, Kim Minjun, your reservation is confirmed. How many nights?",
+      "chunked_text": "Yes, | Kim Minjun, | your reservation is confirmed. | How many nights?"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Two nights.",
+      "chunked_text": "Two nights."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "It's a 6-bed dormitory room. You can go up to the third floor from here.",
+      "chunked_text": "It's a | 6-bed dormitory room. | You can go up to the third floor | from here."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "Okay, thank you.",
+      "chunked_text": "Okay, | thank you."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "안녕하세요",
+        "예약 확인 부탁드려요"
+      ],
+      "target_sentence": "Hi, I'd like to check in.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "성함",
+        "예약자"
+      ],
+      "target_sentence": "Sure, what is the last name of the reservation?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "김민준입니다"
+      ],
+      "target_sentence": "It's Kim Minjun.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "김민준님",
+        "예약 확인",
+        "몇 박"
+      ],
+      "target_sentence": "Yes, Kim Minjun, your reservation is confirmed. How many nights?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "2박입니다"
+      ],
+      "target_sentence": "Two nights.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "6인실 도미토리",
+        "3층으로 올라가시면 됩니다"
+      ],
+      "target_sentence": "It's a 6-bed dormitory room. You can go up to the third floor from here.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "네",
+        "감사합니다"
+      ],
+      "target_sentence": "Okay, thank you.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "예약 확인"
+      ],
+      "target_sentence": "Hi, I'd like to check in.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "성함"
+      ],
+      "target_sentence": "Sure, what is the last name of the reservation?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "김민준"
+      ],
+      "target_sentence": "It's Kim Minjun.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "예약 확인",
+        "몇 박"
+      ],
+      "target_sentence": "Yes, Kim Minjun, your reservation is confirmed. How many nights?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "2박"
+      ],
+      "target_sentence": "Two nights.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "도미토리",
+        "3층"
+      ],
+      "target_sentence": "It's a 6-bed dormitory room. You can go up to the third floor from here.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "감사합니다"
+      ],
+      "target_sentence": "Okay, thank you.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "예약"
+      ],
+      "target_sentence": "Hi, I'd like to check in.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "성함"
+      ],
+      "target_sentence": "What is the last name?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "김민준"
+      ],
+      "target_sentence": "Kim Minjun.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "몇 박"
+      ],
+      "target_sentence": "How many nights?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "2박"
+      ],
+      "target_sentence": "Two nights.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "3층"
+      ],
+      "target_sentence": "Go up to the third floor.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "감사합니다"
+      ],
+      "target_sentence": "Thank you.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "check in"
+      ],
+      "target_sentence": "Hi, I'd like to check in.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "name"
+      ],
+      "target_sentence": "Sure, what is the last name of the reservation?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "Kim Minjun"
+      ],
+      "target_sentence": "It's Kim Minjun.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "nights"
+      ],
+      "target_sentence": "Yes, Kim Minjun, your reservation is confirmed. How many nights?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "Two"
+      ],
+      "target_sentence": "Two nights.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "third floor"
+      ],
+      "target_sentence": "You can go up to the third floor from here.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "thank you"
+      ],
+      "target_sentence": "Okay, thank you.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [],
+  "highlight_sentences": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 예약 확인 부탁드려요.",
+      "foreign_text": "Hi, I'd like to check in.",
+      "reason": "호스텔에 도착해서 가장 먼저 하는 말로, 체크인 의사를 명확하게 표현하는 핵심 문장입니다."
+    }
+  ]
+}
