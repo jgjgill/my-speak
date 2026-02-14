@@ -1,8 +1,6 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { useParams } from "next/navigation";
-import { useUserProgress } from "@/entities/progress";
 import { useProgress } from "@/features/progress";
 import { StageFourContainer } from "@/features/stage-four";
 import { StageOneContainer } from "@/features/stage-one";
@@ -15,26 +13,21 @@ const ScrollToTopButton = dynamic(() => import("./scroll-to-top-button"), {
 	ssr: false,
 });
 
-interface TopicClientWrapperProps {
+interface StageControllerProps {
 	topicId: string;
-	initialMaxStage?: number;
+	language: string;
+	maxAvailableStage: number;
 }
 
-export default function TopicClientWrapper({
+export default function StageController({
 	topicId,
-	initialMaxStage,
-}: TopicClientWrapperProps) {
-	const params = useParams();
-	const language = params.language as string;
+	language,
+	maxAvailableStage,
+}: StageControllerProps) {
 	const { user } = useAuth();
-	const { data: maxAvailableStage } = useUserProgress(
-		topicId,
-		language,
-		user,
-		initialMaxStage,
-	);
 	const { currentStage, changeCurrentStage, completeStage } = useProgress({
 		topicId,
+		language,
 		user,
 		maxAvailableStage,
 	});

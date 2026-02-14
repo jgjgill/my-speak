@@ -6,16 +6,15 @@ export function useUserProgress(
 	topicId: string,
 	language: string,
 	user: User | null,
-	initialData?: number,
 ) {
 	return useSuspenseQuery({
 		queryKey: ["user-progress", topicId, language, user ? user.id : "guest"],
 		queryFn: user
 			? async () => {
 					const progress = await getUserProgress(topicId, language, user);
+
 					return progress?.current_stage || 1;
 				}
 			: getGuestProgress,
-		initialData,
 	});
 }

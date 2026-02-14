@@ -6,6 +6,7 @@ import { useUpdateProgress } from "./use-update-progress";
 
 interface UseProgressProps {
 	topicId: string;
+	language: string;
 	user: User | null;
 	maxAvailableStage: number;
 }
@@ -18,15 +19,17 @@ interface UseProgressResult {
 
 export function useProgress({
 	topicId,
+	language,
 	user,
 	maxAvailableStage,
 }: UseProgressProps): UseProgressResult {
 	const [currentStage, setCurrentStage] = useState(maxAvailableStage);
+	const [localMaxStage, setLocalMaxStage] = useState(maxAvailableStage);
 
-	const updateProgressMutation = useUpdateProgress(topicId, user);
+	const updateProgressMutation = useUpdateProgress(topicId, language, user);
 
 	const changeCurrentStage = (stage: number): void => {
-		if (!(1 <= stage && stage <= maxAvailableStage)) {
+		if (!(1 <= stage && stage <= localMaxStage)) {
 			console.error("접근할 수 없는 단계:", stage);
 			return;
 		}
@@ -38,6 +41,7 @@ export function useProgress({
 		if (nextStage <= 4 && user) {
 			updateProgressMutation.mutate(nextStage, {
 				onSuccess: () => {
+					setLocalMaxStage(nextStage);
 					setCurrentStage(nextStage);
 				},
 			});
