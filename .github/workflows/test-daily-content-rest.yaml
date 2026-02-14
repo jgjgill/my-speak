@@ -1,0 +1,104 @@
+name: Test Daily Content (REST API)
+
+on:
+  workflow_dispatch:
+    inputs:
+      language:
+        description: '언어 코드'
+        required: true
+        default: 'en'
+        type: choice
+        options:
+          - en
+          - ja
+      difficulty:
+        description: '난이도'
+        required: true
+        default: '초급'
+        type: choice
+        options:
+          - 초급
+          - 중급
+          - 고급
+
+jobs:
+  generate-content:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.17.1
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9.0.0
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Generate content (REST API)
+        id: generate
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          PUBLIC_SUPABASE_URL: ${{ secrets.PUBLIC_SUPABASE_URL }}
+          PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.PUBLIC_SUPABASE_ANON_KEY }}
+        run: |
+          LANGUAGE="${{ github.event.inputs.language || 'en' }}"
+          DIFFICULTY="${{ github.event.inputs.difficulty || '초급' }}"
+
+          echo "언어: $LANGUAGE"
+          echo "난이도: $DIFFICULTY"
+
+          chmod +x .github/scripts/generate-daily-content-rest.sh
+          ./.github/scripts/generate-daily-content-rest.sh "$LANGUAGE" "$DIFFICULTY"
+
+      - name: Commit and push changes
+        env:
+          LANGUAGE: ${{ github.event.inputs.language || 'en' }}
+          DIFFICULTY: ${{ github.event.inputs.difficulty || '초급' }}
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+          if [ -n "$(git status --porcelain)" ]; then
+            NEW_FILE=$(git status --porcelain | grep "content/source/.*\.md" | awk '{print $2}' | head -1)
+
+            if [ -n "$NEW_FILE" ]; then
+              TITLE=$(grep -m 1 "^title:" "$NEW_FILE" | sed 's/title: //' | tr -d '"')
+            else
+              TITLE="새 학습 콘텐츠"
+            fi
+
+            if [ -z "$TITLE" ]; then
+              TITLE="새 학습 콘텐츠"
+            fi
+
+            git add content/source/ content/.content-index.json content/json/
+            git commit -m "content: ${TITLE} (${LANGUAGE} ${DIFFICULTY})"
+            git push
+            echo "✅ 커밋 및 푸시 완료: content: ${TITLE} (${LANGUAGE} ${DIFFICULTY})"
+          else
+            echo "⚠️  변경사항이 없습니다."
+          fi
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "## 콘텐츠 생성 (REST API 테스트) 🧪" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **방식**: Gemini REST API (CLI 미사용)" >> $GITHUB_STEP_SUMMARY
+          echo "- **언어**: ${{ github.event.inputs.language || 'en' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **난이도**: ${{ github.event.inputs.difficulty || '초급' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **생성 시각**: $(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          REMAINING=$(jq '[.weekly_plan.planned_slugs[] | select(.used == false)] | length' content/.content-index.json)
+          echo "- **남은 주간 계획**: ${REMAINING}/3" >> $GITHUB_STEP_SUMMARY
