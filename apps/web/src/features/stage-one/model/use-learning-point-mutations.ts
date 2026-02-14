@@ -8,7 +8,11 @@ import {
 	type ToggleLearningPointParams,
 } from "../api/learning-point-mutations";
 
-export function useLearningPointMutations(topicId: string, user: User | null) {
+export function useLearningPointMutations(
+	topicId: string,
+	language: string,
+	user: User | null,
+) {
 	const queryClient = useQueryClient();
 
 	const addMutation = useMutation({
@@ -19,7 +23,7 @@ export function useLearningPointMutations(topicId: string, user: User | null) {
 		onSuccess: () => {
 			if (!user) throw new Error("User not authenticated");
 			queryClient.invalidateQueries({
-				queryKey: ["user-selected-points", topicId, user.id],
+				queryKey: ["user-selected-points", topicId, language, user.id],
 			});
 		},
 		onError: (error) => {
@@ -35,7 +39,7 @@ export function useLearningPointMutations(topicId: string, user: User | null) {
 		onSuccess: () => {
 			if (!user) throw new Error("User not authenticated");
 			queryClient.invalidateQueries({
-				queryKey: ["user-selected-points", topicId, user.id],
+				queryKey: ["user-selected-points", topicId, language, user.id],
 			});
 		},
 		onError: (error) => {

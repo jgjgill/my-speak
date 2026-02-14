@@ -56,8 +56,12 @@ export default function StageOnePractice({
 		user,
 	);
 
-	const translationMutation = useTranslationMutation(topicId, user);
-	const { addLearningPoint } = useLearningPointMutations(topicId, user);
+	const translationMutation = useTranslationMutation(topicId, language, user);
+	const { addLearningPoint } = useLearningPointMutations(
+		topicId,
+		language,
+		user,
+	);
 
 	const handleTranslationSubmit = async (
 		sentenceOrder: number,
@@ -148,7 +152,6 @@ export default function StageOnePractice({
 	return (
 		<div className="mb-4">
 			<PracticeHeader progressPercentage={progressPercentage} />
-
 			{koreanScripts.map((script, index) => {
 				const sentenceOrder = script.sentence_order;
 				const learningPoints = learningPointsByOrder[sentenceOrder] || [];

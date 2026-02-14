@@ -7,7 +7,11 @@ import {
 	updateTranslation,
 } from "../api/translation-mutations";
 
-export function useTranslationMutation(topicId: string, user: User | null) {
+export function useTranslationMutation(
+	topicId: string,
+	language: string,
+	user: User | null,
+) {
 	const queryClient = useQueryClient();
 
 	return useMutation({
@@ -20,12 +24,12 @@ export function useTranslationMutation(topicId: string, user: User | null) {
 
 			// Invalidate user translations cache
 			queryClient.invalidateQueries({
-				queryKey: ["user-translations", topicId, user.id],
+				queryKey: ["user-translations", topicId, language, user.id],
 			});
 
 			// Invalidate user progress cache (for current_stage and completed_sentences)
 			queryClient.invalidateQueries({
-				queryKey: ["user-progress", topicId, user.id],
+				queryKey: ["user-progress", topicId, language, user.id],
 			});
 
 			// Invalidate topics list cache (to update completion percentage in list view)

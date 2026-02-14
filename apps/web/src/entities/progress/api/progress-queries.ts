@@ -23,6 +23,7 @@ export async function getUserProgress(
 		// PGRST116: no rows returned
 		throw error;
 	}
+
 	return data || null;
 }
 
