@@ -1,6 +1,7 @@
 "use client";
 
 import { useSuspenseInfiniteQuery } from "@tanstack/react-query";
+import { topicKeys } from "@/shared/api/query-keys";
 import { getTopics, type TopicsQueryParams } from "../api";
 
 export function useTopicsInfinite(props: Omit<TopicsQueryParams, "page"> = {}) {
@@ -9,8 +10,7 @@ export function useTopicsInfinite(props: Omit<TopicsQueryParams, "page"> = {}) {
 		: undefined;
 
 	const queryKey = [
-		"topics",
-		"infinite",
+		...topicKeys.infinite(),
 		{
 			...props,
 			filters: props.filters

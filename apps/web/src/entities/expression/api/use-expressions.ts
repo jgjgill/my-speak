@@ -1,6 +1,7 @@
 "use client";
 
 import { useSuspenseQuery } from "@tanstack/react-query";
+import { expressionKeys } from "@/shared/api/query-keys";
 import { createBrowserClient } from "@/shared/api/supabase";
 import {
 	type ExpressionComplete,
@@ -16,7 +17,7 @@ export function useExpressions(languageCode = "en") {
 	const supabase = createBrowserClient();
 
 	return useSuspenseQuery<ExpressionWithBlanks[]>({
-		queryKey: ["expressions", languageCode],
+		queryKey: expressionKeys.list(languageCode),
 		queryFn: () => getExpressions(supabase, languageCode),
 	});
 }
@@ -28,7 +29,7 @@ export function useExpressionBySlug(slug: string, languageCode: string) {
 	const supabase = createBrowserClient();
 
 	return useSuspenseQuery<ExpressionComplete | null>({
-		queryKey: ["expression", slug, languageCode],
+		queryKey: expressionKeys.detail(slug, languageCode),
 		queryFn: () => getExpressionBySlug(supabase, slug, languageCode),
 	});
 }

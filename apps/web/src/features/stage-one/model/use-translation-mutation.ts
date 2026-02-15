@@ -2,6 +2,7 @@
 
 import type { User } from "@supabase/supabase-js";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
+import { topicKeys, userDataKeys } from "@/shared/api/query-keys";
 import {
 	type UpsertTranslationParams,
 	updateTranslation,
@@ -24,17 +25,17 @@ export function useTranslationMutation(
 
 			// Invalidate user translations cache
 			queryClient.invalidateQueries({
-				queryKey: ["user-translations", topicId, language, user.id],
+				queryKey: userDataKeys.translations(topicId, language, user.id),
 			});
 
 			// Invalidate user progress cache (for current_stage and completed_sentences)
 			queryClient.invalidateQueries({
-				queryKey: ["user-progress", topicId, language, user.id],
+				queryKey: userDataKeys.progress(topicId, language, user.id),
 			});
 
 			// Invalidate topics list cache (to update completion percentage in list view)
 			queryClient.invalidateQueries({
-				queryKey: ["topics", "infinite"],
+				queryKey: topicKeys.infinite(),
 			});
 		},
 		onError: (error) => {

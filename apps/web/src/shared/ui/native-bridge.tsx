@@ -2,6 +2,7 @@
 
 import { useQueryClient } from "@tanstack/react-query";
 import { useEffect } from "react";
+import { userKeys } from "@/shared/api/query-keys";
 import { createBrowserClient } from "@/shared/api/supabase";
 import { isNativeWebViewClient } from "@/shared/lib";
 
@@ -135,7 +136,7 @@ export default function NativeBridge() {
 					const supabase = createBrowserClient();
 
 					// 즉시 쿼리 정리 (UI 빠른 반응)
-					queryClient.setQueryData(["user"], null);
+					queryClient.setQueryData(userKeys.all, null);
 					queryClient.clear();
 
 					// Supabase 세션 정리

@@ -5,6 +5,7 @@ import { useQueryClient } from "@tanstack/react-query";
 import { useRouter } from "next/navigation";
 import { type PropsWithChildren, useEffect } from "react";
 import { useUser } from "@/entities/user";
+import { userKeys } from "@/shared/api/query-keys";
 import { createBrowserClient } from "@/shared/api/supabase";
 import { AuthProvider as AuthContextProvider } from "@/shared/lib/auth";
 
@@ -53,7 +54,7 @@ export function AuthProvider({
 
 	const signOut = async () => {
 		// 로그아웃 요청 시 즉시 캐시 정리 (UI 빠른 반응)
-		queryClient.setQueryData(["user"], null);
+		queryClient.setQueryData(userKeys.all, null);
 		queryClient.clear();
 
 		supabase.auth.signOut().catch(() => {
@@ -95,9 +96,9 @@ export function AuthProvider({
 			data: { subscription },
 		} = supabase.auth.onAuthStateChange(async (event, session) => {
 			if (event === "SIGNED_IN" && session) {
-				queryClient.setQueryData(["user"], session.user);
+				queryClient.setQueryData(userKeys.all, session.user);
 			} else if (event === "SIGNED_OUT") {
-				queryClient.setQueryData(["user"], null); // 즉시 UI에 반영
+				queryClient.setQueryData(userKeys.all, null); // 즉시 UI에 반영
 			}
 		});
 

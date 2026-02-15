@@ -6,6 +6,7 @@ import {
 	getLearningPoints,
 	getUserSelectedPoints,
 } from "@/entities/topic";
+import { topicContentKeys, userDataKeys } from "@/shared/api/query-keys";
 
 export const getEmptyUserSelectedPoints = async (): Promise<never[]> => [];
 
@@ -17,24 +18,23 @@ export function useStageThreePublicData(
 	return useSuspenseQueries({
 		queries: [
 			{
-				queryKey: ["korean-scripts", topicId, language],
+				queryKey: topicContentKeys.koreanScripts(topicId, language),
 				queryFn: () => getKoreanScripts(topicId, language),
 			},
 			{
-				queryKey: ["foreign-scripts", topicId, language],
+				queryKey: topicContentKeys.foreignScripts(topicId, language),
 				queryFn: () => getForeignScripts(topicId, language),
 			},
 			{
-				queryKey: ["learning-points", topicId, language],
+				queryKey: topicContentKeys.learningPoints(topicId, language),
 				queryFn: () => getLearningPoints(topicId, language),
 			},
 			{
-				queryKey: [
-					"user-selected-points",
+				queryKey: userDataKeys.selectedPoints(
 					topicId,
 					language,
-					user ? user.id : "guest",
-				],
+					user?.id ?? null,
+				),
 				queryFn: user
 					? () => getUserSelectedPoints(topicId, language, user)
 					: getEmptyUserSelectedPoints,

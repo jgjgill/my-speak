@@ -1,5 +1,6 @@
 import type { User } from "@supabase/supabase-js";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
+import { topicKeys, userDataKeys } from "@/shared/api/query-keys";
 import { updateUserProgress } from "../api";
 
 export function useUpdateProgress(
@@ -19,12 +20,12 @@ export function useUpdateProgress(
 
 			// Invalidate user progress cache
 			queryClient.invalidateQueries({
-				queryKey: ["user-progress", topicId, language, user.id],
+				queryKey: userDataKeys.progress(topicId, language, user.id),
 			});
 
 			// Invalidate topics list cache (to update max stage in list view)
 			queryClient.invalidateQueries({
-				queryKey: ["topics", "infinite"],
+				queryKey: topicKeys.infinite(),
 			});
 		},
 	});

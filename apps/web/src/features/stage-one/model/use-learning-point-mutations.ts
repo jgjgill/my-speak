@@ -2,6 +2,7 @@
 
 import type { User } from "@supabase/supabase-js";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
+import { userDataKeys } from "@/shared/api/query-keys";
 import {
 	addLearningPoint,
 	removeLearningPoint,
@@ -23,7 +24,7 @@ export function useLearningPointMutations(
 		onSuccess: () => {
 			if (!user) throw new Error("User not authenticated");
 			queryClient.invalidateQueries({
-				queryKey: ["user-selected-points", topicId, language, user.id],
+				queryKey: userDataKeys.selectedPoints(topicId, language, user.id),
 			});
 		},
 		onError: (error) => {
@@ -39,7 +40,7 @@ export function useLearningPointMutations(
 		onSuccess: () => {
 			if (!user) throw new Error("User not authenticated");
 			queryClient.invalidateQueries({
-				queryKey: ["user-selected-points", topicId, language, user.id],
+				queryKey: userDataKeys.selectedPoints(topicId, language, user.id),
 			});
 		},
 		onError: (error) => {

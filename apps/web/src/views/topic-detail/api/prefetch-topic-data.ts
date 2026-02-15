@@ -10,6 +10,11 @@ import {
 	getUserSelectedPoints,
 	getUserTranslations,
 } from "@/entities/topic";
+import {
+	topicContentKeys,
+	topicKeys,
+	userDataKeys,
+} from "@/shared/api/query-keys";
 
 export async function prefetchTopicData(
 	queryClient: QueryClient,
@@ -18,34 +23,32 @@ export async function prefetchTopicData(
 	user: User | null,
 	supabase: SupabaseClient,
 ) {
-	const userId = user ? user.id : "guest";
-
 	await Promise.all([
 		// 공개 데이터
 		queryClient.prefetchQuery({
-			queryKey: ["topic", topicId, language],
+			queryKey: topicKeys.detail(topicId, language),
 			queryFn: () => getTopic(topicId, language, supabase),
 		}),
 		queryClient.prefetchQuery({
-			queryKey: ["korean-scripts", topicId, language],
+			queryKey: topicContentKeys.koreanScripts(topicId, language),
 			queryFn: () => getKoreanScripts(topicId, language, supabase),
 		}),
 		queryClient.prefetchQuery({
-			queryKey: ["learning-points", topicId, language],
+			queryKey: topicContentKeys.learningPoints(topicId, language),
 			queryFn: () => getLearningPoints(topicId, language, supabase),
 		}),
 		queryClient.prefetchQuery({
-			queryKey: ["foreign-scripts", topicId, language],
+			queryKey: topicContentKeys.foreignScripts(topicId, language),
 			queryFn: () => getForeignScripts(topicId, language, supabase),
 		}),
 		queryClient.prefetchQuery({
-			queryKey: ["keyword-speeches", topicId, language],
+			queryKey: topicContentKeys.keywordSpeeches(topicId, language),
 			queryFn: () => getKeywordSpeeches(topicId, language, supabase),
 		}),
 
 		// 유저 데이터
 		queryClient.prefetchQuery({
-			queryKey: ["user-progress", topicId, language, userId],
+			queryKey: userDataKeys.progress(topicId, language, user?.id ?? null),
 			queryFn: user
 				? async () => {
 						const progress = await getUserProgress(
@@ -59,13 +62,17 @@ export async function prefetchTopicData(
 				: getGuestProgress,
 		}),
 		queryClient.prefetchQuery({
-			queryKey: ["user-selected-points", topicId, language, userId],
+			queryKey: userDataKeys.selectedPoints(
+				topicId,
+				language,
+				user?.id ?? null,
+			),
 			queryFn: user
 				? () => getUserSelectedPoints(topicId, language, user, supabase)
 				: async () => [],
 		}),
 		queryClient.prefetchQuery({
-			queryKey: ["user-translations", topicId, language, userId],
+			queryKey: userDataKeys.translations(topicId, language, user?.id ?? null),
 			queryFn: user
 				? () => getUserTranslations(topicId, language, user, supabase)
 				: async () => [],
