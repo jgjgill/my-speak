@@ -26,8 +26,7 @@ export async function processExpressionMarkdownFile(
 	console.log(`✅ Parsed frontmatter: ${expression.title}`);
 
 	// 3. 영어/한글 스크립트 파싱
-	const { englishScript, koreanTranslation } =
-		parseExpressionScripts(content);
+	const { englishScript, koreanTranslation } = parseExpressionScripts(content);
 	console.log("✅ Parsed scripts (English & Korean)");
 
 	// 4. 빈칸 파싱

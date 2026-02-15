@@ -22,9 +22,7 @@ export default async function LanguageHomePage({
 						{currentLanguage?.nativeName || language.toUpperCase()}{" "}
 						{currentLanguage?.name || language}
 					</h1>
-					<p className="text-title text-gray-600">
-						학습 방법을 선택하세요
-					</p>
+					<p className="text-title text-gray-600">학습 방법을 선택하세요</p>
 				</div>
 
 				<div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">

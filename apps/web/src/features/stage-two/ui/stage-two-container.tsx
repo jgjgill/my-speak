@@ -42,7 +42,11 @@ export default function StageTwoContainer({
 		{ data: learningPoints },
 		{ data: userSelectedPoints },
 	] = useStageTwoPublicData(topicId, language, user);
-	const { data: userTranslations } = useUserTranslations(topicId, language, user);
+	const { data: userTranslations } = useUserTranslations(
+		topicId,
+		language,
+		user,
+	);
 
 	const selectedLearningPointsByOrder = createSelectedLearningPointsByOrder(
 		userSelectedPoints,

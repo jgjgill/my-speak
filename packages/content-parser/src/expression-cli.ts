@@ -75,8 +75,12 @@ async function main() {
 		console.log("🚀 Expression Content Parser CLI");
 		console.log("");
 		console.log("Usage:");
-		console.log("  pnpm parse:expression:all           # Parse all expression markdown files");
-		console.log("  pnpm parse:expression <filename>    # Parse specific expression file");
+		console.log(
+			"  pnpm parse:expression:all           # Parse all expression markdown files",
+		);
+		console.log(
+			"  pnpm parse:expression <filename>    # Parse specific expression file",
+		);
 		console.log("");
 		console.log("Examples:");
 		console.log("  pnpm parse:expression cafe-takeout-expressions.md");

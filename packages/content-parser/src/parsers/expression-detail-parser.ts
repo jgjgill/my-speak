@@ -58,8 +58,7 @@ export function parseExpressionDetails(
 
 			// 해당 blank 찾기
 			const blank = blanks.find(
-				(b) =>
-					b.sequence_order === sequenceOrder && b.blank_text === blankText,
+				(b) => b.sequence_order === sequenceOrder && b.blank_text === blankText,
 			);
 			if (!blank) {
 				throw new Error(
