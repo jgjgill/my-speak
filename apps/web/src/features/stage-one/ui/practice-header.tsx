@@ -1,28 +1,7 @@
 "use client";
 
-import dynamic from "next/dynamic";
-
-const StickyProgressBar = dynamic(() => import("./sticky-progress-bar"), {
-	ssr: false,
-	loading: () => (
-		<div className="h-2 bg-gray-200 rounded-full overflow-hidden -mx-4 mb-2">
-			<div
-				className="h-full bg-gray-300 animate-pulse"
-				style={{ width: "0%" }}
-			/>
-		</div>
-	),
-});
-
-const ProgressIndicator = dynamic(() => import("./progress-indicator"), {
-	ssr: false,
-	loading: () => (
-		<div className="text-sm text-gray-600">
-			진행률:{" "}
-			<span className="inline-block w-8 h-3 bg-gray-200 animate-pulse rounded"></span>
-		</div>
-	),
-});
+import ProgressIndicator from "./progress-indicator";
+import StickyProgressBar from "./sticky-progress-bar";
 
 interface PracticeHeaderProps {
 	progressPercentage: number;

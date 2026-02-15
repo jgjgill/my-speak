@@ -1,7 +1,6 @@
 "use client";
 
 import type { Tables } from "@repo/typescript-config/supabase-types";
-import dynamic from "next/dynamic";
 import { useParams } from "next/navigation";
 import { useState } from "react";
 import { useAuth, useIsMounted, useToast } from "@/shared/lib";
@@ -10,11 +9,8 @@ import { useTranslationMutation } from "../model/use-translation-mutation";
 import { useUserTranslations } from "../model/use-user-translations";
 import KoreanSentenceHighlighter from "./korean-sentence-highlighter/korean-sentence-highlighter";
 import PracticeHeader from "./practice-header";
+import StageCompleteButton from "./stage-complete-button";
 import TranslationInputForm from "./translation-input-form";
-
-const StageCompleteButton = dynamic(() => import("./stage-complete-button"), {
-	ssr: false,
-});
 
 type KoreanScript = Tables<"korean_scripts">;
 type LearningPoint = Tables<"learning_points">;

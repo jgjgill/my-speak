@@ -1,6 +1,5 @@
 "use client";
 
-import dynamic from "next/dynamic";
 import { useParams } from "next/navigation";
 import { useState } from "react";
 import { AudioRecorderManager } from "@/features/audio-recorder";
@@ -15,11 +14,7 @@ import {
 } from "@/shared/lib";
 import { useStageTwoPublicData } from "../model/use-stage-two-public-data";
 import TextHighlighter from "./text-highlighter/text-highlighter";
-
-const UserTranslationDisplay = dynamic(
-	() => import("./user-translation-display"),
-	{ ssr: false },
-);
+import UserTranslationDisplay from "./user-translation-display";
 
 interface StageTwoContainerProps {
 	onStageComplete: () => void;
