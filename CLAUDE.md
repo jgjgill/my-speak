@@ -98,7 +98,6 @@ packages/
 
 #### 데이터 아키텍처
 
-- [TanStack Query 아키텍처](apps/web/docs/development/tanstack-query-architecture.md)
 - [WebView 연동 아키텍처](docs/development/webview-integration-architecture.md)
 
 ### 네이티브 애플리케이션 (apps/native/)

@@ -1,9 +1,16 @@
+import {
+	dehydrate,
+	HydrationBoundary,
+	QueryClient,
+} from "@tanstack/react-query";
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import { getTopic } from "@/entities/topic";
 import { createClient } from "@/shared/api/supabase/server";
 import { type LanguageCode, languageInfo } from "@/shared/config";
-import { TopicContainer } from "@/widgets/topic";
+import { getCurrentUser } from "@/shared/lib/auth/server";
+import StageController from "@/widgets/topic/ui/stage-controller";
+import { prefetchTopicData } from "../api/prefetch-topic-data";
 import FloatingAppButton from "./floating-app-button";
 import TopicClientWrapperSkeleton from "./skeletons/topic-client-wrapper-skeleton";
 import TopicHeaderSkeleton from "./skeletons/topic-header-skeleton";
@@ -65,16 +72,24 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function TopicDetailPage({ params }: Props) {
 	const { id, language } = await params;
 
+	const supabase = await createClient();
+	const currentUser = await getCurrentUser();
+
+	const queryClient = new QueryClient();
+	await prefetchTopicData(queryClient, id, language, currentUser, supabase);
+
 	return (
 		<>
 			<div className="p-4 min-h-screen">
-				<Suspense fallback={<TopicHeaderSkeleton />}>
-					<TopicHeader />
-				</Suspense>
+				<HydrationBoundary state={dehydrate(queryClient)}>
+					<Suspense fallback={<TopicHeaderSkeleton />}>
+						<TopicHeader />
+					</Suspense>
 
-				<Suspense fallback={<TopicClientWrapperSkeleton />}>
-					<TopicContainer topicId={id} language={language} />
-				</Suspense>
+					<Suspense fallback={<TopicClientWrapperSkeleton />}>
+						<StageController topicId={id} language={language} />
+					</Suspense>
+				</HydrationBoundary>
 			</div>
 
 			<FloatingAppButton />

@@ -16,21 +16,19 @@ const ScrollToTopButton = dynamic(() => import("./scroll-to-top-button"), {
 interface StageControllerProps {
 	topicId: string;
 	language: string;
-	maxAvailableStage: number;
 }
 
 export default function StageController({
 	topicId,
 	language,
-	maxAvailableStage,
 }: StageControllerProps) {
 	const { user } = useAuth();
-	const { currentStage, changeCurrentStage, completeStage } = useProgress({
-		topicId,
-		language,
-		user,
-		maxAvailableStage,
-	});
+	const { currentStage, maxAvailableStage, changeCurrentStage, completeStage } =
+		useProgress({
+			topicId,
+			language,
+			user,
+		});
 
 	return (
 		<>
