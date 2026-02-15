@@ -2,25 +2,25 @@
   "generated_at": "2026-02-14T11:00:50Z",
   "total_count": 79,
   "weekly_plan": {
-    "generated_at": "2026-02-08T15:06:05Z",
-    "week_number": 6,
+    "generated_at": "2026-02-15T15:05:50Z",
+    "week_number": 7,
     "planned_slugs": [
       {
-        "slug": "hobby-discussion",
-        "title": "취미 공유 및 토론",
-        "category": "회화",
-        "used": true
-      },
-      {
-        "slug": "hostel-checkin",
-        "title": "호스텔 체크인하기",
-        "category": "여행",
-        "used": true
-      },
-      {
-        "slug": "payslip-understanding",
-        "title": "급여명세서 이해하기",
+        "slug": "mortgage-application-discussion",
+        "title": "주택담보대출 신청 상담",
         "category": "금융",
+        "used": false
+      },
+      {
+        "slug": "booking-historical-city-tour",
+        "title": "역사적인 도시 가이드 투어 예약",
+        "category": "여행",
+        "used": false
+      },
+      {
+        "slug": "discussing-new-movie",
+        "title": "최신 영화에 대해 이야기하기",
+        "category": "레저",
         "used": false
       }
     ]
