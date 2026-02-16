@@ -1,0 +1,443 @@
+{
+  "topic": {
+    "id": "e773fb99-5c78-493b-afab-bc3c52c4d409",
+    "title": "주택담보대출 신청 상담",
+    "category": "금융",
+    "difficulty": "초급",
+    "description": "주택담보대출 신청 절차와 자격 요건에 대해 상담하는 기초 대화입니다.",
+    "language_code": "en",
+    "total_sentences": 8
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 주택담보대출 신청에 대해 문의하고 싶습니다."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "네, 오세요. 어떤 종류의 대출을 찾고 계신가요?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "저는 처음으로 집을 사려고 합니다."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "좋습니다. 일반적인 주택담보대출에 대해 설명해 드릴게요."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "자격 요건은 어떻게 되나요?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "신용 점수, 소득, 그리고 선납금이 중요합니다."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "추가 정보는 어디서 얻을 수 있나요?"
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "저희 웹사이트를 방문하시거나, 제가 안내해 드릴게요."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, I would like to inquire about applying for a mortgage.",
+      "chunked_text": "Hello, | I would like to inquire about applying for a mortgage."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Yes, please come in. What kind of loan are you looking for?",
+      "chunked_text": "Yes, please come in. | What kind of loan are you looking for?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "I am looking to buy a home for the first time.",
+      "chunked_text": "I am looking to buy a home for the first time."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Great. I can explain about a standard mortgage loan.",
+      "chunked_text": "Great. | I can explain about a standard mortgage loan."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "What are the eligibility requirements?",
+      "chunked_text": "What are the eligibility requirements?"
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Credit score, income, and down payment are important.",
+      "chunked_text": "Credit score, income, and down payment are important."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "Where can I get more information?",
+      "chunked_text": "Where can I get more information?"
+    },
+    {
+      "sentence_order": 8,
+      "foreign_text": "You can visit our website, or I can guide you.",
+      "chunked_text": "You can visit our website, | or I can guide you."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "- \"Hello",
+        "mortgage application inquiry\""
+      ],
+      "target_sentence": "\"Hello, I would like to inquire about applying for a mortgage.\"",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "- \"Yes",
+        "what kind of loan?\""
+      ],
+      "target_sentence": "\"Yes, please come in. What kind of loan are you looking for?\"",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "- \"First time home buyer\""
+      ],
+      "target_sentence": "\"I am looking to buy a home for the first time.\"",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "- \"Great",
+        "standard mortgage loan explanation\""
+      ],
+      "target_sentence": "\"Great. I can explain about a standard mortgage loan.\"",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "- \"Eligibility requirements?\""
+      ],
+      "target_sentence": "\"What are the eligibility requirements?\"",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "- \"Credit score",
+        "income",
+        "down payment important\""
+      ],
+      "target_sentence": "\"Credit score, income, and down payment are important.\"",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "- \"Where get more information?\""
+      ],
+      "target_sentence": "\"Where can I get more information?\"",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 8,
+      "keywords": [
+        "- \"Visit website",
+        "guidance\""
+      ],
+      "target_sentence": "\"You can visit our website, or I can guide you.\"",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "- \"Mortgage inquiry\""
+      ],
+      "target_sentence": "\"Hello, I would like to inquire about applying for a mortgage.\"",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "- \"What loan?\""
+      ],
+      "target_sentence": "\"Yes, please come in. What kind of loan are you looking for?\"",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "- \"First home\""
+      ],
+      "target_sentence": "\"I am looking to buy a home for the first time.\"",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "- \"Standard mortgage\""
+      ],
+      "target_sentence": "\"Great. I can explain about a standard mortgage loan.\"",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "- \"Eligibility?\""
+      ],
+      "target_sentence": "\"What are the eligibility requirements?\"",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "- \"Score",
+        "income",
+        "down payment\""
+      ],
+      "target_sentence": "\"Credit score, income, and down payment are important.\"",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 15,
+      "keywords": [
+        "- \"More info?\""
+      ],
+      "target_sentence": "\"Where can I get more information?\"",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 16,
+      "keywords": [
+        "- \"Website",
+        "guide\""
+      ],
+      "target_sentence": "\"You can visit our website, or I can guide you.\"",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "- \"Inquire\""
+      ],
+      "target_sentence": "\"Hello, I would like to inquire about applying for a mortgage.\"",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "- \"Loan?\""
+      ],
+      "target_sentence": "\"Yes, please come in. What kind of loan are you looking for?\"",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "- \"Home\""
+      ],
+      "target_sentence": "\"I am looking to buy a home for the first time.\"",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "- \"Mortgage\""
+      ],
+      "target_sentence": "\"Great. I can explain about a standard mortgage loan.\"",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "- \"Requirements\""
+      ],
+      "target_sentence": "\"What are the eligibility requirements?\"",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 22,
+      "keywords": [
+        "- \"Important\""
+      ],
+      "target_sentence": "\"Credit score, income, and down payment are important.\"",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 23,
+      "keywords": [
+        "- \"Information\""
+      ],
+      "target_sentence": "\"Where can I get more information?\"",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 24,
+      "keywords": [
+        "- \"Guide\""
+      ],
+      "target_sentence": "\"You can visit our website, or I can guide you.\"",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "- \"inquire\""
+      ],
+      "target_sentence": "\"Hello, I would like to inquire about applying for a mortgage.\"",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "- \"loan\""
+      ],
+      "target_sentence": "\"Yes, please come in. What kind of loan are you looking for?\"",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "- \"home\""
+      ],
+      "target_sentence": "\"I am looking to buy a home for the first time.\"",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "- \"explain\""
+      ],
+      "target_sentence": "\"Great. I can explain about a standard mortgage loan.\"",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 29,
+      "keywords": [
+        "- \"requirements\""
+      ],
+      "target_sentence": "\"What are the eligibility requirements?\"",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 30,
+      "keywords": [
+        "- \"important\""
+      ],
+      "target_sentence": "\"Credit score, income, and down payment are important.\"",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 31,
+      "keywords": [
+        "- \"information\""
+      ],
+      "target_sentence": "\"Where can I get more information?\"",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 32,
+      "keywords": [
+        "- \"website\""
+      ],
+      "target_sentence": "\"You can visit our website, or I can guide you.\"",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 4,
+      "korean_phrase": "일반적인 주택담보대출",
+      "foreign_phrase": "a standard mortgage loan"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "자격 요건",
+      "foreign_phrase": "eligibility requirements"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "추가 정보는 어디서 얻을 수 있나요?",
+      "foreign_phrase": "Where can I get more information?"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 7,
+      "korean_text": "추가 정보는 어디서 얻을 수 있나요?",
+      "foreign_text": "Where can I get more information?",
+      "reason": "이 문장은 사용자가 대출 절차에 대한 추가 정보를 얻으려는 적극적인 단계를 나타내므로 중요합니다."
+    }
+  ]
+}

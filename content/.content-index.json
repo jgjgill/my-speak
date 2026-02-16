@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-02-14T11:00:50Z",
-  "total_count": 79,
+  "generated_at": "2026-02-16T15:45:06Z",
+  "total_count": 80,
   "weekly_plan": {
     "generated_at": "2026-02-15T15:05:50Z",
     "week_number": 7,
@@ -9,7 +9,7 @@
         "slug": "mortgage-application-discussion",
         "title": "주택담보대출 신청 상담",
         "category": "금융",
-        "used": false
+        "used": true
       },
       {
         "slug": "booking-historical-city-tour",
@@ -104,6 +104,7 @@
     "train-ticket-booking",
     "buying-clothes",
     "hobby-discussion",
-    "hostel-checkin"
+    "hostel-checkin",
+    "mortgage-application-discussion"
   ]
 }
