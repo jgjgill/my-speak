@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-02-16T15:45:06Z",
-  "total_count": 80,
+  "generated_at": "2026-02-18T15:46:20Z",
+  "total_count": 81,
   "weekly_plan": {
     "generated_at": "2026-02-15T15:05:50Z",
     "week_number": 7,
@@ -15,7 +15,7 @@
         "slug": "booking-historical-city-tour",
         "title": "역사적인 도시 가이드 투어 예약",
         "category": "여행",
-        "used": false
+        "used": true
       },
       {
         "slug": "discussing-new-movie",
@@ -105,6 +105,7 @@
     "buying-clothes",
     "hobby-discussion",
     "hostel-checkin",
-    "mortgage-application-discussion"
+    "mortgage-application-discussion",
+    "booking-historical-city-tour"
   ]
 }

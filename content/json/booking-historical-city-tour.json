@@ -1,0 +1,397 @@
+{
+  "topic": {
+    "id": "ed52f9dd-b1e9-4aa7-9c49-b0f682c8a902",
+    "title": "역사적인 도시 가이드 투어 예약",
+    "category": "여행",
+    "difficulty": "초급",
+    "description": "역사적인 도시 가이드 투어를 예약하는 방법을 배웁니다.",
+    "language_code": "en",
+    "total_sentences": 6
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 역사적인 도시 가이드 투어를 예약하고 싶습니다."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "네, 물론입니다! 어떤 날짜와 시간을 선호하시나요?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "내일 오전이면 좋겠습니다. 투어는 얼마나 걸리나요?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "3시간 동안 진행되며, 오전 9시에 시작합니다. 비용은 50달러입니다."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "좋습니다. 그럼 예약할게요."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "알겠습니다. 성함과 연락처를 알려주시겠어요?"
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, I'd like to book a historical city tour.",
+      "chunked_text": "Hello, | I'd like to book | a historical city tour."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Certainly! What date and time are you interested in?",
+      "chunked_text": "Certainly! | What date and time | are you interested in?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Tomorrow morning, please. And how long is the tour?",
+      "chunked_text": "Tomorrow morning, please. | And how long is the tour?"
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "It's a 3-hour tour, starting at 9 AM. The cost is $50.",
+      "chunked_text": "It's a 3-hour tour, | starting at 9 AM. | The cost is $50."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "That sounds great. I'll book it.",
+      "chunked_text": "That sounds great. | I'll book it."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Excellent. Can I get your name and contact number?",
+      "chunked_text": "Excellent. | Can I get your name | and contact number?"
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "안녕하세요",
+        "역사적인 도시 투어 예약하고 싶습니다"
+      ],
+      "target_sentence": "Hello, I'd like to book a historical city tour.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "네",
+        "물론입니다",
+        "어떤 날짜",
+        "시간",
+        "선호하시나요"
+      ],
+      "target_sentence": "Certainly! What date and time are you interested in?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "내일 오전",
+        "투어",
+        "얼마나",
+        "걸리나요"
+      ],
+      "target_sentence": "Tomorrow morning, please. And how long is the tour?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "3시간 투어",
+        "오전 9시",
+        "시작합니다",
+        "비용",
+        "50달러"
+      ],
+      "target_sentence": "It's a 3-hour tour, starting at 9 AM. The cost is $50.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "좋습니다",
+        "예약할게요"
+      ],
+      "target_sentence": "That sounds great. I'll book it.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "알겠습니다",
+        "성함",
+        "연락처",
+        "알려주시겠어요"
+      ],
+      "target_sentence": "Excellent. Can I get your name and contact number?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 7,
+      "keywords": [
+        "역사 도시 투어",
+        "예약"
+      ],
+      "target_sentence": "Hello, I'd like to book a historical city tour.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "날짜",
+        "시간"
+      ],
+      "target_sentence": "Certainly! What date and time are you interested in?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "내일",
+        "얼마나"
+      ],
+      "target_sentence": "Tomorrow morning, please. And how long is the tour?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "3시간",
+        "9시",
+        "50달러"
+      ],
+      "target_sentence": "It's a 3-hour tour, starting at 9 AM. The cost is $50.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "좋습니다",
+        "예약"
+      ],
+      "target_sentence": "That sounds great. I'll book it.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "성함",
+        "연락처"
+      ],
+      "target_sentence": "Excellent. Can I get your name and contact number?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 13,
+      "keywords": [
+        "투어 예약"
+      ],
+      "target_sentence": "Hello, I'd like to book a historical city tour.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 14,
+      "keywords": [
+        "날짜",
+        "시간"
+      ],
+      "target_sentence": "Certainly! What date and time are you interested in?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "내일",
+        "투어"
+      ],
+      "target_sentence": "Tomorrow morning, please. And how long is the tour?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "3시간",
+        "9시"
+      ],
+      "target_sentence": "It's a 3-hour tour, starting at 9 AM. The cost is $50.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "예약"
+      ],
+      "target_sentence": "That sounds great. I'll book it.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "성함",
+        "연락처"
+      ],
+      "target_sentence": "Excellent. Can I get your name and contact number?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 19,
+      "keywords": [
+        "book"
+      ],
+      "target_sentence": "Hello, I'd like to book a historical city tour.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 20,
+      "keywords": [
+        "date",
+        "time"
+      ],
+      "target_sentence": "Certainly! What date and time are you interested in?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 21,
+      "keywords": [
+        "tomorrow",
+        "tour"
+      ],
+      "target_sentence": "Tomorrow morning, please. And how long is the tour?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "3-hour",
+        "9 AM"
+      ],
+      "target_sentence": "It's a 3-hour tour, starting at 9 AM. The cost is $50.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "book"
+      ],
+      "target_sentence": "That sounds great. I'll book it.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "name",
+        "number"
+      ],
+      "target_sentence": "Excellent. Can I get your name and contact number?",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 1,
+      "korean_phrase": "역사적인 도시 가이드 투어",
+      "foreign_phrase": "historical city tour"
+    },
+    {
+      "sentence_order": 2,
+      "korean_phrase": "어떤 날짜와 시간을 선호하시나요?",
+      "foreign_phrase": "What date and time are you interested in?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "내일 오전",
+      "foreign_phrase": "Tomorrow morning"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "투어는 얼마나 걸리나요?",
+      "foreign_phrase": "And how long is the tour?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "3시간 동안 진행되며, 오전 9시에 시작합니다.",
+      "foreign_phrase": "It's a 3-hour tour, starting at 9 AM."
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "비용은 50달러입니다.",
+      "foreign_phrase": "The cost is $50."
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "좋습니다.",
+      "foreign_phrase": "That sounds great."
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "그럼 예약할게요.",
+      "foreign_phrase": "I'll book it."
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "알겠습니다. 성함과 연락처를 알려주시겠어요?",
+      "foreign_phrase": "Excellent. Can I get your name and contact number?"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 1,
+      "korean_text": "역사적인 도시 가이드 투어를 예약하고 싶습니다.",
+      "foreign_text": "I'd like to book a historical city tour.",
+      "reason": "여행의 목적과 행동(예약)을 명확히 나타내는 첫 문장입니다."
+    }
+  ]
+}
