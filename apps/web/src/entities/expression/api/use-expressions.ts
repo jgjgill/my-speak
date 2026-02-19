@@ -28,7 +28,7 @@ export function useExpressions(languageCode = "en") {
 export function useExpressionBySlug(slug: string, languageCode: string) {
 	const supabase = createBrowserClient();
 
-	return useSuspenseQuery<ExpressionComplete | null>({
+	return useSuspenseQuery<ExpressionComplete>({
 		queryKey: expressionKeys.detail(slug, languageCode),
 		queryFn: () => getExpressionBySlug(supabase, slug, languageCode),
 	});

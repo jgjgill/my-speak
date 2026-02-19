@@ -42,7 +42,7 @@ export async function getExpressionBySlug(
 	supabase: SupabaseClient,
 	slug: string,
 	languageCode: string,
-): Promise<ExpressionComplete | null> {
+): Promise<ExpressionComplete> {
 	const { data, error } = await supabase
 		.from("expressions")
 		.select(
