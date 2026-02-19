@@ -2,8 +2,10 @@
 
 import Image from "next/image";
 import { useParams } from "next/navigation";
-import { useState } from "react";
 import { useExpressionBySlug } from "@/entities/expression/api/use-expressions";
+import { parseScript } from "../lib/parse-script";
+import { useBlankToggle } from "../lib/use-blank-toggle";
+import { BlankButton } from "./blank-button";
 
 interface ExpressionContentProps {
 	slug: string;
@@ -14,45 +16,13 @@ export function ExpressionContent({ slug }: ExpressionContentProps) {
 	const language = params.language;
 
 	const { data: expression } = useExpressionBySlug(slug, language);
-	const [hiddenBlanks, setHiddenBlanks] = useState<Set<number>>(new Set());
+	const allBlankOrders = expression.blanks.map((b) => b.sequence_order);
+	const { hiddenBlanks, toggle, toggleAll } = useBlankToggle(allBlankOrders);
 
-	if (!expression) {
-		return <div>Expression not found</div>;
-	}
-
-	const toggleBlank = (sequenceOrder: number) => {
-		setHiddenBlanks((prev) => {
-			const next = new Set(prev);
-			if (next.has(sequenceOrder)) {
-				next.delete(sequenceOrder);
-			} else {
-				next.add(sequenceOrder);
-			}
-			return next;
-		});
-	};
-
-	// 빈칸 패턴을 찾아서 렌더링
-	const renderScript = () => {
-		let script = expression.english_script;
-		const sortedBlanks = [...expression.blanks].sort(
-			(a, b) => a.sequence_order - b.sequence_order,
-		);
-
-		// 각 빈칸을 버튼으로 교체
-		for (const blank of sortedBlanks) {
-			const pattern = `**${blank.blank_text}**{${blank.sequence_order}}`;
-			const isHidden = hiddenBlanks.has(blank.sequence_order);
-
-			const replacement = isHidden
-				? `<button class="blank-hidden" data-order="${blank.sequence_order}">______</button>`
-				: `<button class="blank-visible" data-order="${blank.sequence_order}">${blank.blank_text}</button>`;
-
-			script = script.replace(pattern, replacement);
-		}
-
-		return script;
-	};
+	const segments = parseScript(expression.english_script, expression.blanks);
+	const isAllHidden =
+		allBlankOrders.length > 0 &&
+		allBlankOrders.every((order) => hiddenBlanks.has(order));
 
 	return (
 		<>
@@ -73,19 +43,30 @@ export function ExpressionContent({ slug }: ExpressionContentProps) {
 
 			{/* 영어 스크립트 (빈칸 토글) */}
 			<div className="mb-8">
-				<h2 className="text-xl font-bold mb-3">English Script</h2>
-				<div
-					className="prose max-w-none"
-					// biome-ignore lint/security/noDangerouslySetInnerHtml: 빈칸 렌더링을 위해 필요
-					dangerouslySetInnerHTML={{ __html: renderScript() }}
-					onClick={(e) => {
-						const target = e.target as HTMLElement;
-						if (target.tagName === "BUTTON") {
-							const order = Number(target.dataset.order);
-							toggleBlank(order);
-						}
-					}}
-				/>
+				<div className="flex items-center gap-3 mb-3">
+					<h2 className="text-xl font-bold">English Script</h2>
+					<button
+						type="button"
+						onClick={toggleAll}
+						className="text-sm px-3 py-1 rounded border cursor-pointer transition-colors hover:bg-gray-50"
+					>
+						{isAllHidden ? "Show All" : "Hide All"}
+					</button>
+				</div>
+				<div className="prose max-w-none">
+					{segments.map((segment) =>
+						segment.type === "text" ? (
+							<span key={segment.value}>{segment.value}</span>
+						) : (
+							<BlankButton
+								key={`blank-${segment.blank.sequence_order}`}
+								text={segment.blank.blank_text}
+								hidden={hiddenBlanks.has(segment.blank.sequence_order)}
+								onToggle={() => toggle(segment.blank.sequence_order)}
+							/>
+						),
+					)}
+				</div>
 			</div>
 
 			{/* 한글 번역 */}
@@ -116,8 +97,8 @@ export function ExpressionContent({ slug }: ExpressionContentProps) {
 									<div>
 										<strong>활용 예시:</strong>
 										<ul className="list-disc list-inside ml-2 mt-1">
-											{detail.usage_examples.map((example, idx) => (
-												<li key={idx}>{example}</li>
+											{detail.usage_examples.map((example) => (
+												<li key={example}>{example}</li>
 											))}
 										</ul>
 									</div>
@@ -132,30 +113,6 @@ export function ExpressionContent({ slug }: ExpressionContentProps) {
 					})}
 				</div>
 			</div>
-
-			<style>{`
-				.blank-visible {
-					background-color: #dbeafe;
-					color: #1e40af;
-					padding: 2px 8px;
-					border-radius: 4px;
-					border: 1px solid #3b82f6;
-					cursor: pointer;
-					font-weight: 600;
-				}
-				.blank-hidden {
-					background-color: #f3f4f6;
-					color: #6b7280;
-					padding: 2px 8px;
-					border-radius: 4px;
-					border: 1px dashed #9ca3af;
-					cursor: pointer;
-				}
-				.blank-visible:hover,
-				.blank-hidden:hover {
-					opacity: 0.8;
-				}
-			`}</style>
 		</>
 	);
 }
