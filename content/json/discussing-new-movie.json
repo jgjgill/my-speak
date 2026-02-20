@@ -1,0 +1,357 @@
+{
+  "topic": {
+    "id": "1c143454-1813-4590-81c9-fe1df55403c9",
+    "title": "최신 영화에 대해 이야기하기",
+    "category": "레저",
+    "difficulty": "초급",
+    "description": "최근 본 영화에 대해 간단히 이야기하는 방법을 배워봅시다.",
+    "language_code": "en",
+    "total_sentences": 6
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕! 요즘 새로운 영화 봤어?"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "응, 어젯밤에 봤어. 정말 재미있었어!"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "오, 그래? 영화는 어땠어?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "나는 배우들의 연기가 정말 좋았다고 생각해."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "나도 동감이야. 하지만 스토리가 조금 느리게 느껴졌어."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "응, 나도 그래. 그래도 전반적으로는 즐길 수 있었어."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hi! Have you seen any new movies lately?",
+      "chunked_text": "Hi! | Have you seen any new movies lately?"
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Yeah, I saw one last night. It was really good!",
+      "chunked_text": "Yeah, I saw one last night. | It was really good!"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Oh, really? How was the movie?",
+      "chunked_text": "Oh, really? | How was the movie?"
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "I thought the actors' performances were great.",
+      "chunked_text": "I thought the actors' performances were great."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "I agree. But the story felt a bit slow.",
+      "chunked_text": "I agree. | But the story felt a bit slow."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Yeah, I felt the same. But overall, I could enjoy it.",
+      "chunked_text": "Yeah, I felt the same. | But overall, I could enjoy it."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "새로운 영화",
+        "최근"
+      ],
+      "target_sentence": "Hi! Have you seen any new movies lately?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "어젯밤",
+        "봤어",
+        "재미있었어"
+      ],
+      "target_sentence": "Yeah, I saw one last night. It was really good!",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "그래?",
+        "영화 어땠어?"
+      ],
+      "target_sentence": "Oh, really? How was the movie?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "배우들 연기"
+      ],
+      "target_sentence": "I thought the actors' performances were great.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "스토리",
+        "느렸어"
+      ],
+      "target_sentence": "But the story felt a bit slow.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "전반적으로",
+        "즐겼어"
+      ],
+      "target_sentence": "But overall, I could enjoy it.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 7,
+      "keywords": [
+        "영화"
+      ],
+      "target_sentence": "Have you seen any new movies lately?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "재미있었어"
+      ],
+      "target_sentence": "It was really good!",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "어땠어?"
+      ],
+      "target_sentence": "How was the movie?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "연기"
+      ],
+      "target_sentence": "The actors' performances were great.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "스토리"
+      ],
+      "target_sentence": "The story felt a bit slow.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "즐겼어"
+      ],
+      "target_sentence": "I could enjoy it.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 13,
+      "keywords": [
+        "영화?"
+      ],
+      "target_sentence": "Have you seen any new movies lately?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 14,
+      "keywords": [
+        "재미있었어!"
+      ],
+      "target_sentence": "It was really good!",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "어땠어?"
+      ],
+      "target_sentence": "How was the movie?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "연기"
+      ],
+      "target_sentence": "The actors' performances were great.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "느렸어"
+      ],
+      "target_sentence": "The story felt a bit slow.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "즐겼어"
+      ],
+      "target_sentence": "I could enjoy it.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 19,
+      "keywords": [
+        "movies"
+      ],
+      "target_sentence": "Have you seen any new movies lately?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 20,
+      "keywords": [
+        "good"
+      ],
+      "target_sentence": "It was really good!",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 21,
+      "keywords": [
+        "How"
+      ],
+      "target_sentence": "How was the movie?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "performances"
+      ],
+      "target_sentence": "The actors' performances were great.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "slow"
+      ],
+      "target_sentence": "The story felt a bit slow.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "overall"
+      ],
+      "target_sentence": "But overall, I could enjoy it.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 1,
+      "korean_phrase": "새로운 영화",
+      "foreign_phrase": "new movie"
+    },
+    {
+      "sentence_order": 2,
+      "korean_phrase": "정말 재미있었어!",
+      "foreign_phrase": "It was really good!"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "영화는 어땠어?",
+      "foreign_phrase": "How was the movie?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "배우들의 연기가 정말 좋았다고 생각해.",
+      "foreign_phrase": "I thought the actors' performances were great."
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "하지만 스토리가 조금 느리게 느껴졌어.",
+      "foreign_phrase": "But the story felt a bit slow."
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "그래도 전반적으로는 즐길 수 있었어.",
+      "foreign_phrase": "Yeah, I felt the same. But overall, I could enjoy it."
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 3,
+      "korean_text": "영화는 어땠어?",
+      "foreign_text": "How was the movie?",
+      "reason": "이 문장은 상대방에게 영화에 대한 의견을 묻는 가장 기본적인 표현입니다."
+    }
+  ]
+}
