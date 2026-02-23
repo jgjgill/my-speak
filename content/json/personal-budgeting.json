@@ -1,0 +1,455 @@
+{
+  "topic": {
+    "id": "94503c04-19b0-4c59-8a7e-9fd9e4d978a7",
+    "title": "개인 예산 관리하기",
+    "category": "금융",
+    "difficulty": "초급",
+    "description": "개인 예산 관리는 수입과 지출을 체계적으로 기록하고 계획하여 재정적 목표를 달성하는 방법입니다.",
+    "language_code": "en",
+    "total_sentences": 8
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "Bob, 요즘 돈 관리가 좀 어려워. 혹시 예산 관리하는 법 알아?"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "나도 처음엔 어려웠는데, 기본적인 것부터 시작했어."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "어떻게 시작해야 할지 모르겠어."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "가장 먼저 할 일은 한 달 수입과 지출을 모두 적는 거야."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "수입과 지출을 다 적는다고?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "응, 그러면 돈이 어디로 새는지 파악하는 데 도움이 돼."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "아하, 그걸 알아야 불필요한 지출을 줄일 수 있겠구나."
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "맞아, 그리고 나서 고정 지출과 변동 지출을 구분해서 계획을 세우면 돼."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Bob, I'm having trouble managing my money lately. **Do you know how to budget**?",
+      "chunked_text": "Bob, | I'm having trouble managing my money lately. | Do you know how to budget?"
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Yes! **It was hard for me at first too, but I started with the basics.**",
+      "chunked_text": "Yes! | It was hard for me at first too, | but I started with the basics."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Yes, **then it helps to identify where your money is going.**",
+      "chunked_text": "I don't know how to start."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Right, **and then you can plan by separating fixed and variable expenses.**",
+      "chunked_text": "The first thing to do is | to write down all your monthly income and expenses."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "Bob",
+        "trouble managing money lately",
+        "know how to budget"
+      ],
+      "target_sentence": "Bob, I'm having trouble managing my money lately. Do you know how to budget?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "Hard at first",
+        "started with basics"
+      ],
+      "target_sentence": "It was hard for me at first too, but I started with the basics.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "Don't know how to start"
+      ],
+      "target_sentence": "I don't know how to start.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "First thing",
+        "write down income and expenses"
+      ],
+      "target_sentence": "The first thing to do is to write down all your monthly income and expenses.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "Write down income and expenses?"
+      ],
+      "target_sentence": "Write down all income and expenses?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "Helps identify where money is going"
+      ],
+      "target_sentence": "Yes, then it helps to identify where your money is going.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "Knowing that",
+        "reduce unnecessary spending"
+      ],
+      "target_sentence": "Ah, I see, knowing that helps reduce unnecessary spending.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 8,
+      "keywords": [
+        "Plan",
+        "separate fixed and variable expenses"
+      ],
+      "target_sentence": "Right, and then you can plan by separating fixed and variable expenses.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "Money trouble",
+        "budget?"
+      ],
+      "target_sentence": "Bob, I'm having trouble managing my money lately. Do you know how to budget?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "Hard",
+        "started basics"
+      ],
+      "target_sentence": "It was hard for me at first too, but I started with the basics.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "How to start?"
+      ],
+      "target_sentence": "I don't know how to start.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "First",
+        "write income",
+        "expenses"
+      ],
+      "target_sentence": "The first thing to do is to write down all your monthly income and expenses.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "Income",
+        "expenses?"
+      ],
+      "target_sentence": "Write down all income and expenses?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "Identify money going"
+      ],
+      "target_sentence": "Yes, then it helps to identify where your money is going.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 15,
+      "keywords": [
+        "Reduce spending"
+      ],
+      "target_sentence": "Ah, I see, knowing that helps reduce unnecessary spending.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 16,
+      "keywords": [
+        "Plan",
+        "separate expenses"
+      ],
+      "target_sentence": "Right, and then you can plan by separating fixed and variable expenses.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "Budget?"
+      ],
+      "target_sentence": "Do you know how to budget?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "Started basics"
+      ],
+      "target_sentence": "It was hard for me at first too, but I started with the basics.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "Start?"
+      ],
+      "target_sentence": "I don't know how to start.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "Write income",
+        "expenses"
+      ],
+      "target_sentence": "The first thing to do is to write down all your monthly income and expenses.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "Income",
+        "expenses?"
+      ],
+      "target_sentence": "Write down all income and expenses?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 22,
+      "keywords": [
+        "Money going"
+      ],
+      "target_sentence": "Yes, then it helps to identify where your money is going.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 23,
+      "keywords": [
+        "Spending"
+      ],
+      "target_sentence": "Ah, I see, knowing that helps reduce unnecessary spending.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 24,
+      "keywords": [
+        "Plan"
+      ],
+      "target_sentence": "Right, and then you can plan by separating fixed and variable expenses.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "Budget"
+      ],
+      "target_sentence": "Do you know how to budget?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "Basics"
+      ],
+      "target_sentence": "It was hard for me at first too, but I started with the basics.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "Start"
+      ],
+      "target_sentence": "I don't know how to start.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "Income",
+        "expenses"
+      ],
+      "target_sentence": "The first thing to do is to write down all your monthly income and expenses.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 29,
+      "keywords": [
+        "Income",
+        "expenses"
+      ],
+      "target_sentence": "Write down all income and expenses?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 30,
+      "keywords": [
+        "Identify"
+      ],
+      "target_sentence": "Yes, then it helps to identify where your money is going.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 31,
+      "keywords": [
+        "Spending"
+      ],
+      "target_sentence": "Ah, I see, knowing that helps reduce unnecessary spending.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 32,
+      "keywords": [
+        "Plan"
+      ],
+      "target_sentence": "Right, and then you can plan by separating fixed and variable expenses.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 1,
+      "korean_phrase": "혹시 예산 관리하는 법 알아",
+      "foreign_phrase": "Do you know how to budget"
+    },
+    {
+      "sentence_order": 2,
+      "korean_phrase": "기본적인 것부터 시작했어.",
+      "foreign_phrase": "It was hard for me at first too, but I started with the basics."
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "어떻게 시작해야 할지 모르겠어.",
+      "foreign_phrase": "I don't know how to start."
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "가장 먼저 할 일은 한 달 수입과 지출을 모두 적는 거야.",
+      "foreign_phrase": "The first thing to do is to write down all your monthly income and expenses."
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "수입과 지출을 다 적는다고?",
+      "foreign_phrase": "Write down all income and expenses?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "그러면 돈이 어디로 새는지 파악하는 데 도움이 돼.",
+      "foreign_phrase": "Yes, then it helps to identify where your money is going."
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "아하, 그걸 알아야 불필요한 지출을 줄일 수 있겠구나.",
+      "foreign_phrase": "Ah, I see, knowing that helps reduce unnecessary spending."
+    },
+    {
+      "sentence_order": 8,
+      "korean_phrase": "그리고 나서 고정 지출과 변동 지출을 구분해서 계획을 세우면 돼.",
+      "foreign_phrase": "Right, and then you can plan by separating fixed and variable expenses."
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 6,
+      "korean_text": "그러면 돈이 어디로 새는지 파악하는 데 도움이 돼.",
+      "foreign_text": "then it helps to identify where your money is going.",
+      "reason": "이 문장은 예산 관리의 핵심 이점인 '돈의 흐름 파악'을 명확히 설명하여 초급 학습자가 중요성을 쉽게 인지하도록 돕습니다."
+    }
+  ]
+}

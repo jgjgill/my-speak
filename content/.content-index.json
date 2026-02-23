@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-02-20T15:43:56Z",
-  "total_count": 82,
+  "generated_at": "2026-02-23T15:54:24Z",
+  "total_count": 83,
   "weekly_plan": {
     "generated_at": "2026-02-22T15:04:59Z",
     "week_number": 8,
@@ -9,7 +9,7 @@
         "slug": "personal-budgeting",
         "title": "개인 예산 관리하기",
         "category": "금융",
-        "used": false
+        "used": true
       },
       {
         "slug": "visiting-a-museum",
@@ -107,6 +107,7 @@
     "hostel-checkin",
     "mortgage-application-discussion",
     "booking-historical-city-tour",
-    "discussing-new-movie"
+    "discussing-new-movie",
+    "personal-budgeting"
   ]
 }
