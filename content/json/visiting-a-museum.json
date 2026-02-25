@@ -1,0 +1,381 @@
+{
+  "topic": {
+    "id": "bfee9d3d-85b5-4f2e-b0fb-0c558b72a0d4",
+    "title": "박물관 방문하기",
+    "category": "레저",
+    "difficulty": "초급",
+    "description": "가족이나 친구와 함께 박물관을 방문하여 예술 작품이나 역사 유물을 감상하는 방법을 배웁니다. 티켓 예매, 관람 시간 확인 등 기본적인 대화를 연습합니다.",
+    "language_code": "en",
+    "total_sentences": 6
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "오늘 시간 괜찮으면 같이 박물관 갈래?"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "좋은 생각이야! 무엇을 볼 수 있을까?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "새로운 특별 전시가 열리고 있대. 표는 미리 예매하는 게 좋겠어."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "그래, 알겠어. 몇 시에 문 열어?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "오전 10시부터 오후 6시까지야. 그럼 2시에 만날까?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "완벽해!"
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Do you want to go to the museum together?",
+      "chunked_text": "Do you want to go to the museum together? |"
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "That's a great idea! What can we see?",
+      "chunked_text": "That's a great idea! | What can we see?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "They say there's a new special exhibition. It would be good to book tickets in advance.",
+      "chunked_text": "They say there's a new special exhibition. | It would be good to book tickets in advance."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Okay, got it. What time does it open?",
+      "chunked_text": "Okay, got it. | What time does it open?"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "From 10 AM to 6 PM. Shall we meet at 2 PM then?",
+      "chunked_text": "From 10 AM to 6 PM. | Shall we meet at 2 PM then?"
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Perfect!",
+      "chunked_text": "Perfect! |"
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "박물관 갈래"
+      ],
+      "target_sentence": "Do you want to go to the museum together?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "좋은 생각이야",
+        "무엇을 볼 수 있을까"
+      ],
+      "target_sentence": "That's a great idea! What can we see?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "특별 전시",
+        "표",
+        "미리 예매"
+      ],
+      "target_sentence": "A new special exhibition. It would be good to book tickets in advance.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "몇 시에 문 열어"
+      ],
+      "target_sentence": "Okay, got it. What time does it open?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "오전 10시",
+        "2시에 만날까"
+      ],
+      "target_sentence": "From 10 AM to 6 PM. Shall we meet at 2 PM then?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "완벽해"
+      ],
+      "target_sentence": "Perfect!",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 7,
+      "keywords": [
+        "박물관"
+      ],
+      "target_sentence": "Do you want to go to the museum together?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "생각이야",
+        "볼 수 있을까"
+      ],
+      "target_sentence": "That's a great idea! What can we see?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "전시",
+        "예매"
+      ],
+      "target_sentence": "A new special exhibition. It would be good to book tickets in advance.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "몇 시"
+      ],
+      "target_sentence": "What time does it open?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "10시",
+        "2시에"
+      ],
+      "target_sentence": "From 10 AM to 6 PM. Shall we meet at 2 PM then?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "완벽"
+      ],
+      "target_sentence": "Perfect!",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 13,
+      "keywords": [
+        "박물관"
+      ],
+      "target_sentence": "Go to the museum?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 14,
+      "keywords": [
+        "생각이야"
+      ],
+      "target_sentence": "Great idea!",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "전시"
+      ],
+      "target_sentence": "Special exhibition.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "시"
+      ],
+      "target_sentence": "What time?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "10시",
+        "2시"
+      ],
+      "target_sentence": "10 AM, 2 PM.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "완벽"
+      ],
+      "target_sentence": "Perfect!",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 19,
+      "keywords": [
+        "museum"
+      ],
+      "target_sentence": "Do you want to go to the museum together?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 20,
+      "keywords": [
+        "see"
+      ],
+      "target_sentence": "That's a great idea! What can we see?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 21,
+      "keywords": [
+        "exhibition",
+        "book"
+      ],
+      "target_sentence": "A new special exhibition. It would be good to book tickets in advance.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "open"
+      ],
+      "target_sentence": "What time does it open?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "10 AM",
+        "2 PM"
+      ],
+      "target_sentence": "From 10 AM to 6 PM. Shall we meet at 2 PM then?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "Perfect"
+      ],
+      "target_sentence": "Perfect!",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 1,
+      "korean_phrase": "같이 박물관 갈래",
+      "foreign_phrase": "Do you want to go to the museum together"
+    },
+    {
+      "sentence_order": 2,
+      "korean_phrase": "좋은 생각이야",
+      "foreign_phrase": "That's a great idea"
+    },
+    {
+      "sentence_order": 2,
+      "korean_phrase": "무엇을 볼 수 있을까",
+      "foreign_phrase": "What can we see"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "새로운 특별 전시",
+      "foreign_phrase": "A new special exhibition"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "표는 미리 예매하는 게 좋겠어",
+      "foreign_phrase": "It would be good to book tickets in advance"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "그래, 알겠어",
+      "foreign_phrase": "Okay, got it"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "몇 시에 문 열어",
+      "foreign_phrase": "What time does it open"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "오전 10시부터",
+      "foreign_phrase": "From 10 AM"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "그럼 2시에 만날까",
+      "foreign_phrase": "Shall we meet at 2 PM then"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "완벽해",
+      "foreign_phrase": "Perfect"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 4,
+      "korean_text": "표는 미리 예매하는 게 좋겠어",
+      "foreign_text": "It would be good to book tickets in advance",
+      "reason": "이 문장은 박물관 방문 시 유용한 팁을 제공하며, 일반적인 행동을 강조합니다."
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-02-23T15:54:24Z",
-  "total_count": 83,
+  "generated_at": "2026-02-25T15:48:07Z",
+  "total_count": 84,
   "weekly_plan": {
     "generated_at": "2026-02-22T15:04:59Z",
     "week_number": 8,
@@ -15,7 +15,7 @@
         "slug": "visiting-a-museum",
         "title": "박물관 방문하기",
         "category": "레저",
-        "used": false
+        "used": true
       },
       {
         "slug": "asking-for-product-information",
@@ -108,6 +108,7 @@
     "mortgage-application-discussion",
     "booking-historical-city-tour",
     "discussing-new-movie",
-    "personal-budgeting"
+    "personal-budgeting",
+    "visiting-a-museum"
   ]
 }
