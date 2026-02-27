@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-02-25T15:48:07Z",
-  "total_count": 84,
+  "generated_at": "2026-02-27T15:43:58Z",
+  "total_count": 85,
   "weekly_plan": {
     "generated_at": "2026-02-22T15:04:59Z",
     "week_number": 8,
@@ -21,7 +21,7 @@
         "slug": "asking-for-product-information",
         "title": "상품 정보 문의하기",
         "category": "쇼핑",
-        "used": false
+        "used": true
       }
     ]
   },
@@ -109,6 +109,7 @@
     "booking-historical-city-tour",
     "discussing-new-movie",
     "personal-budgeting",
-    "visiting-a-museum"
+    "visiting-a-museum",
+    "asking-for-product-information"
   ]
 }

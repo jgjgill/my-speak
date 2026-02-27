@@ -1,0 +1,399 @@
+{
+  "topic": {
+    "id": "4585df8c-0391-4f22-b0f0-9674f042dcd7",
+    "title": "상품 정보 문의하기",
+    "category": "쇼핑",
+    "difficulty": "초급",
+    "description": "상품의 소재나 가격 등 구체적인 정보를 묻는 대화를 연습합니다. 쇼핑 상황에서 유용하게 사용할 수 있습니다.",
+    "language_code": "en",
+    "total_sentences": 7
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "이 제품 좀 볼 수 있을까요?"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "네, 그럼요. 어떤 걸 찾으세요?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "이 셔츠는 어떤 재질로 만들어졌나요?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "이 셔츠는 100% 면으로 만들어졌어요."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "그럼 가격은 어떻게 되나요?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "이 셔츠는 35,000원입니다."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "정보 감사합니다. 다른 것도 좀 볼게요."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Can I see this product?",
+      "chunked_text": "Can I see this product? |"
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Yes, of course. What are you looking for?",
+      "chunked_text": "Yes, of course. | What are you looking for?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "What material is this shirt made of?",
+      "chunked_text": "What material | is this shirt made of?"
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "This shirt is made of 100% cotton.",
+      "chunked_text": "This shirt is made of | 100% cotton."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "So, how much does it cost?",
+      "chunked_text": "So, | how much does it cost?"
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "This shirt is 35,000 won.",
+      "chunked_text": "This shirt is | 35,000 won."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "Thank you for the information. I'll look at some other things.",
+      "chunked_text": "Thank you for the information. | I'll look at some other things."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "볼 수 있을까요",
+        "이 제품"
+      ],
+      "target_sentence": "Can I see this product?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "찾으세요"
+      ],
+      "target_sentence": "Yes, of course. What are you looking for?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "어떤 재질",
+        "만들어졌나요"
+      ],
+      "target_sentence": "What material is this shirt made of?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "100% 면",
+        "만들어졌어요"
+      ],
+      "target_sentence": "This shirt is made of 100% cotton.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "가격",
+        "어떻게 되나요"
+      ],
+      "target_sentence": "So, how much does it cost?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "35",
+        "000원"
+      ],
+      "target_sentence": "This shirt is 35,000 won.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "정보 감사합니다",
+        "볼게요"
+      ],
+      "target_sentence": "Thank you for the information. I'll look at some other things.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "볼까요"
+      ],
+      "target_sentence": "Can I see this product?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "찾으세요"
+      ],
+      "target_sentence": "Yes, of course. What are you looking for?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "재질"
+      ],
+      "target_sentence": "What material is this shirt made of?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "면"
+      ],
+      "target_sentence": "This shirt is made of 100% cotton.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "가격"
+      ],
+      "target_sentence": "So, how much does it cost?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "35",
+        "000원"
+      ],
+      "target_sentence": "This shirt is 35,000 won.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "감사합니다"
+      ],
+      "target_sentence": "Thank you for the information. I'll look at some other things.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "볼까요"
+      ],
+      "target_sentence": "Can I see this product?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "찾으세요"
+      ],
+      "target_sentence": "What are you looking for?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "재질"
+      ],
+      "target_sentence": "What material is this shirt made of?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "면"
+      ],
+      "target_sentence": "This shirt is made of 100% cotton.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "가격"
+      ],
+      "target_sentence": "How much does it cost?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "35",
+        "000"
+      ],
+      "target_sentence": "This shirt is 35,000 won.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "볼게요"
+      ],
+      "target_sentence": "Thank you for the information. I'll look at some other things.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "see"
+      ],
+      "target_sentence": "Can I see this product?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "looking for"
+      ],
+      "target_sentence": "Yes, of course. What are you looking for?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "material"
+      ],
+      "target_sentence": "What material is this shirt made of?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "cotton"
+      ],
+      "target_sentence": "This shirt is made of 100% cotton.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "cost"
+      ],
+      "target_sentence": "So, how much does it cost?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "35",
+        "000"
+      ],
+      "target_sentence": "This shirt is 35,000 won.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "other things"
+      ],
+      "target_sentence": "Thank you for the information. I'll look at some other things.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 3,
+      "korean_phrase": "어떤 재질로 만들어졌나요",
+      "foreign_phrase": "what material is this shirt made of"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "100% 면",
+      "foreign_phrase": "100% cotton"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "가격은 어떻게 되나요",
+      "foreign_phrase": "how much does it cost"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "35,000원",
+      "foreign_phrase": "35,000 won"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 3,
+      "korean_text": "이 셔츠는 어떤 재질로 만들어졌나요?",
+      "foreign_text": "What material is this shirt made of?",
+      "reason": "이 문장은 상품의 소재에 대해 직접적으로 질문하여 구매 결정에 중요한 정보를 얻을 수 있기 때문입니다."
+    }
+  ]
+}
