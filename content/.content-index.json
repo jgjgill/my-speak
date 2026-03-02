@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-02-27T15:43:58Z",
-  "total_count": 85,
+  "generated_at": "2026-03-02T15:44:32Z",
+  "total_count": 86,
   "weekly_plan": {
     "generated_at": "2026-03-01T15:03:39Z",
     "week_number": 9,
@@ -9,7 +9,7 @@
         "slug": "discussing-insurance-options",
         "title": "보험 상담",
         "category": "Finance",
-        "used": false
+        "used": true
       },
       {
         "slug": "learning-musical-instrument",
@@ -110,6 +110,7 @@
     "discussing-new-movie",
     "personal-budgeting",
     "visiting-a-museum",
-    "asking-for-product-information"
+    "asking-for-product-information",
+    "discussing-insurance-options"
   ]
 }

@@ -1,0 +1,469 @@
+{
+  "topic": {
+    "id": "08927584-4272-4b0f-9abb-f7a823928efa",
+    "title": "보험 상담",
+    "category": "Finance",
+    "difficulty": "초급",
+    "description": "보험 상담 시 기본적인 질문과 답변을 연습합니다.",
+    "language_code": "en",
+    "total_sentences": 8
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 어떤 보험에 대해 알아보고 싶으신가요?"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "건강 보험에 대해 알아보고 싶습니다."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "네, 저희는 여러 건강 보험 상품이 있습니다. 어떤 종류의 보장을 찾으시나요?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "저는 입원비와 수술비 보장이 중요합니다."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "그렇다면 이 상품이 적합할 수 있습니다. 월 보험료는 5만원입니다."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "알겠습니다. 이 보험에 가입하려면 어떻게 해야 하나요?"
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "가입 신청서를 작성해주시면 됩니다."
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "감사합니다."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, what kind of insurance would you like to learn about?",
+      "chunked_text": "Hello, | what kind of insurance would you like to learn about?"
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "I'd like to learn about health insurance.",
+      "chunked_text": "I'd like to learn about | health insurance."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Yes, we have several health insurance products. What kind of coverage are you looking for?",
+      "chunked_text": "Yes, we have several health insurance products. | What kind of coverage are you looking for?"
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "I need coverage for hospitalization and surgery.",
+      "chunked_text": "I need coverage for | hospitalization and surgery."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Then this product might be suitable. The monthly premium is 50,000 won.",
+      "chunked_text": "Then this product might be suitable. | The monthly premium is 50,000 won."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Okay. How do I sign up for this insurance?",
+      "chunked_text": "Okay. | How do I sign up for this insurance?"
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "You just need to fill out an application form.",
+      "chunked_text": "You just need to fill out | an application form."
+    },
+    {
+      "sentence_order": 8,
+      "foreign_text": "Thank you.",
+      "chunked_text": "Thank you."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "안녕하세요",
+        "어떤 보험",
+        "알아보고 싶으신가요?"
+      ],
+      "target_sentence": "Hello, what kind of insurance would you like to learn about?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "건강 보험",
+        "알아보고 싶습니다."
+      ],
+      "target_sentence": "I'd like to learn about health insurance.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "네",
+        "여러 건강 보험 상품",
+        "어떤 종류",
+        "보장",
+        "찾으시나요?"
+      ],
+      "target_sentence": "Yes, we have several health insurance products. What kind of coverage are you looking for?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "입원비",
+        "수술비 보장",
+        "중요합니다."
+      ],
+      "target_sentence": "I need coverage for hospitalization and surgery.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "상품",
+        "적합",
+        "월 보험료",
+        "5만원입니다."
+      ],
+      "target_sentence": "Then this product might be suitable. The monthly premium is 50,000 won.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "알겠습니다",
+        "이 보험",
+        "가입하려면",
+        "어떻게 해야 하나요?"
+      ],
+      "target_sentence": "Okay. How do I sign up for this insurance?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "가입 신청서",
+        "작성해주시면 됩니다."
+      ],
+      "target_sentence": "You just need to fill out an application form.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 8,
+      "keywords": [
+        "감사합니다."
+      ],
+      "target_sentence": "Thank you.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "보험",
+        "알아보고 싶으신가요?"
+      ],
+      "target_sentence": "Hello, what kind of insurance would you like to learn about?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "건강 보험"
+      ],
+      "target_sentence": "I'd like to learn about health insurance.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "건강 보험 상품",
+        "어떤 보장?"
+      ],
+      "target_sentence": "Yes, we have several health insurance products. What kind of coverage are you looking for?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "입원비",
+        "수술비"
+      ],
+      "target_sentence": "I need coverage for hospitalization and surgery.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "보험료",
+        "5만원"
+      ],
+      "target_sentence": "Then this product might be suitable. The monthly premium is 50,000 won.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "가입",
+        "어떻게?"
+      ],
+      "target_sentence": "Okay. How do I sign up for this insurance?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 15,
+      "keywords": [
+        "신청서",
+        "작성"
+      ],
+      "target_sentence": "You just need to fill out an application form.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 16,
+      "keywords": [
+        "감사합니다."
+      ],
+      "target_sentence": "Thank you.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "보험",
+        "알아보고 싶어요?"
+      ],
+      "target_sentence": "Hello, what kind of insurance would you like to learn about?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "건강 보험"
+      ],
+      "target_sentence": "I'd like to learn about health insurance.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "상품",
+        "보장?"
+      ],
+      "target_sentence": "Yes, we have several health insurance products. What kind of coverage are you looking for?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "입원비",
+        "수술비"
+      ],
+      "target_sentence": "I need coverage for hospitalization and surgery.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "보험료",
+        "5만원"
+      ],
+      "target_sentence": "Then this product might be suitable. The monthly premium is 50,000 won.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 22,
+      "keywords": [
+        "가입",
+        "어떻게?"
+      ],
+      "target_sentence": "Okay. How do I sign up for this insurance?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 23,
+      "keywords": [
+        "신청서",
+        "작성"
+      ],
+      "target_sentence": "You just need to fill out an application form.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 24,
+      "keywords": [
+        "감사합니다."
+      ],
+      "target_sentence": "Thank you.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "insurance",
+        "learn about?"
+      ],
+      "target_sentence": "Hello, what kind of insurance would you like to learn about?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "health insurance"
+      ],
+      "target_sentence": "I'd like to learn about health insurance.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "products",
+        "coverage?"
+      ],
+      "target_sentence": "Yes, we have several health insurance products. What kind of coverage are you looking for?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "hospitalization",
+        "surgery"
+      ],
+      "target_sentence": "I need coverage for hospitalization and surgery.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 29,
+      "keywords": [
+        "premium",
+        "50",
+        "000 won"
+      ],
+      "target_sentence": "Then this product might be suitable. The monthly premium is 50,000 won.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 30,
+      "keywords": [
+        "sign up",
+        "how?"
+      ],
+      "target_sentence": "Okay. How do I sign up for this insurance?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 31,
+      "keywords": [
+        "application form",
+        "fill out"
+      ],
+      "target_sentence": "You just need to fill out an application form.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 32,
+      "keywords": [
+        "Thank you."
+      ],
+      "target_sentence": "Thank you.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 3,
+      "korean_phrase": "어떤 종류의 보장을 찾으시나요?",
+      "foreign_phrase": "What kind of coverage are you looking for?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "월 보험료는 5만원입니다.",
+      "foreign_phrase": "The monthly premium is 50,000 won."
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "이 보험에 가입하려면 어떻게 해야 하나요?",
+      "foreign_phrase": "How do I sign up for this insurance?"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 3,
+      "korean_text": "어떤 종류의 보장을 찾으시나요?",
+      "foreign_text": "What kind of coverage are you looking for?",
+      "reason": "이 문장은 상담사가 고객의 요구사항을 파악하는 데 필수적인 질문이기 때문입니다."
+    }
+  ]
+}
