@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-02T15:44:32Z",
-  "total_count": 86,
+  "generated_at": "2026-03-04T15:44:39Z",
+  "total_count": 87,
   "weekly_plan": {
     "generated_at": "2026-03-01T15:03:39Z",
     "week_number": 9,
@@ -15,7 +15,7 @@
         "slug": "learning-musical-instrument",
         "title": "악기 배우기",
         "category": "Leisure",
-        "used": false
+        "used": true
       },
       {
         "slug": "navigating-public-transport",
@@ -111,6 +111,7 @@
     "personal-budgeting",
     "visiting-a-museum",
     "asking-for-product-information",
-    "discussing-insurance-options"
+    "discussing-insurance-options",
+    "learning-musical-instrument"
   ]
 }

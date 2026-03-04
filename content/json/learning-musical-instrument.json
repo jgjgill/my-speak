@@ -1,0 +1,439 @@
+{
+  "topic": {
+    "id": "c9c4c188-7aca-457f-b39a-b2b51af30a57",
+    "title": "악기 배우기",
+    "category": "Leisure",
+    "difficulty": "초급",
+    "description": "[악기를 처음 배우는 초보자를 위한 즐거운 취미 활동에 대한 안내입니다.]",
+    "language_code": "en",
+    "total_sentences": 7
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 악기 배우는 것에 대해 궁금한 점이 있어요."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "네, 어떤 점이 궁금하신가요?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "저는 기타를 배우고 싶은데, 처음 시작하기에 좋은 악기일까요?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "네, 기타는 초보자에게 인기가 많아요. 운반이 쉽고 다양한 장르의 음악을 연주할 수 있다는 장점이 있습니다."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "그렇군요. 그럼 시작하려면 어떤 준비가 필요한가요?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "기본적인 기타와 튜너 정도면 충분합니다. 온라인 강좌나 레슨을 병행하면 더 빨리 배울 수 있어요."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "감사합니다! 어서 빨리 기타를 연주해보고 싶어요."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, I have some questions about learning a musical instrument.",
+      "chunked_text": "Hello, | I have some questions about learning a musical instrument."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Yes, what are you curious about?",
+      "chunked_text": "Yes, | what are you curious about?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "I want to learn the guitar, is it a good instrument to start with?",
+      "chunked_text": "I want to learn the guitar, | is it a good instrument to start with?"
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Yes, the guitar is very popular among beginners. It's **easy to carry** and you **can play various genres of music**, which are its advantages.",
+      "chunked_text": "Yes, | the guitar is very popular among beginners. | It's easy to carry | and you can play various genres of music, | which are its advantages."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "I see. **Then, what preparations are needed to start?**",
+      "chunked_text": "I see. | Then, what preparations are needed to start?"
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "A **basic guitar and** a **tuner** are enough. You can learn faster by taking **online courses** or **lessons** concurrently.",
+      "chunked_text": "A basic guitar and a tuner are enough. | You can learn faster | by taking online courses | or lessons concurrently."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "Thank you! **I can't wait to play the guitar.**",
+      "chunked_text": "Thank you! | I can't wait to play the guitar."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "Hello",
+        "some questions",
+        "learning musical instrument"
+      ],
+      "target_sentence": "Hello, I have some questions about learning a musical instrument.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "Yes",
+        "curious about?"
+      ],
+      "target_sentence": "Yes, what are you curious about?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "Want learn guitar",
+        "good instrument start?"
+      ],
+      "target_sentence": "I want to learn the guitar, is it a good instrument to start with?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "Yes",
+        "guitar popular beginners. easy carry",
+        "play various genres music"
+      ],
+      "target_sentence": "Yes, the guitar is very popular among beginners. It's easy to carry and you can play various genres of music, which are its advantages.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "See. Then",
+        "preparations needed start?"
+      ],
+      "target_sentence": "I see. Then, what preparations are needed to start?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "Basic guitar",
+        "tuner enough. learn faster",
+        "taking online courses",
+        "lessons concurrently"
+      ],
+      "target_sentence": "A basic guitar and a tuner are enough. You can learn faster by taking online courses or lessons concurrently.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "Thank you! can't wait play guitar"
+      ],
+      "target_sentence": "Thank you! I can't wait to play the guitar.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "Questions",
+        "learning instrument"
+      ],
+      "target_sentence": "Hello, I have some questions about learning a musical instrument.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "Curious?"
+      ],
+      "target_sentence": "Yes, what are you curious about?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "Learn guitar",
+        "good start?"
+      ],
+      "target_sentence": "I want to learn the guitar, is it a good instrument to start with?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "Guitar popular",
+        "easy carry",
+        "play genres"
+      ],
+      "target_sentence": "Yes, the guitar is very popular among beginners. It's easy to carry and you can play various genres of music, which are its advantages.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "Preparations needed?"
+      ],
+      "target_sentence": "I see. Then, what preparations are needed to start?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "Guitar",
+        "tuner. Learn faster",
+        "courses",
+        "lessons"
+      ],
+      "target_sentence": "A basic guitar and a tuner are enough. You can learn faster by taking online courses or lessons concurrently.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "Wait",
+        "play guitar"
+      ],
+      "target_sentence": "Thank you! I can't wait to play the guitar.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "Questions"
+      ],
+      "target_sentence": "Hello, I have some questions about learning a musical instrument.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "Curious"
+      ],
+      "target_sentence": "Yes, what are you curious about?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "Guitar"
+      ],
+      "target_sentence": "I want to learn the guitar, is it a good instrument to start with?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "Popular",
+        "carry",
+        "genres"
+      ],
+      "target_sentence": "Yes, the guitar is very popular among beginners. It's easy to carry and you can play various genres of music, which are its advantages.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "Preparations"
+      ],
+      "target_sentence": "I see. Then, what preparations are needed to start?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "Basic",
+        "tuner. Faster",
+        "courses",
+        "lessons"
+      ],
+      "target_sentence": "A basic guitar and a tuner are enough. You can learn faster by taking online courses or lessons concurrently.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "Wait"
+      ],
+      "target_sentence": "Thank you! I can't wait to play the guitar.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "questions"
+      ],
+      "target_sentence": "Hello, I have some questions about learning a musical instrument.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "curious"
+      ],
+      "target_sentence": "Yes, what are you curious about?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "guitar"
+      ],
+      "target_sentence": "I want to learn the guitar, is it a good instrument to start with?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "popular"
+      ],
+      "target_sentence": "Yes, the guitar is very popular among beginners. It's easy to carry and you can play various genres of music, which are its advantages.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "preparations"
+      ],
+      "target_sentence": "I see. Then, what preparations are needed to start?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "basic",
+        "tuner"
+      ],
+      "target_sentence": "A basic guitar and a tuner are enough. You can learn faster by taking online courses or lessons concurrently.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "wait"
+      ],
+      "target_sentence": "Thank you! I can't wait to play the guitar.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 3,
+      "korean_phrase": "기타를 배우고 싶은데, 처음 시작하기에 좋은 악기일까요?",
+      "foreign_phrase": "I want to learn the guitar, is it a good instrument to start with?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "운반이 쉽고",
+      "foreign_phrase": "easy to carry"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "다양한 장르의 음악을 연주할 수 있다",
+      "foreign_phrase": "can play various genres of music"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "그럼 시작하려면 어떤 준비가 필요한가요?",
+      "foreign_phrase": "Then, what preparations are needed to start?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "기본적인 기타와",
+      "foreign_phrase": "a basic guitar and"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "튜너",
+      "foreign_phrase": "a tuner"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "온라인 강좌",
+      "foreign_phrase": "online courses"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "레슨",
+      "foreign_phrase": "lessons"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "어서 빨리 기타를 연주해보고 싶어요.",
+      "foreign_phrase": "I can't wait to play the guitar."
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 3,
+      "korean_text": "기타를 배우고 싶은데, 처음 시작하기에 좋은 악기일까요?",
+      "foreign_text": "I want to learn the guitar, is it a good instrument to start with?",
+      "reason": "이 문장은 학습 목표(악기 배우기)와 구체적인 악기(기타)에 대한 관심, 그리고 초급 학습자의 일반적인 고민(시작하기 좋은 악기인가)을 담고 있어, 전체 콘텐츠의 핵심 질문이자 시작점 역할을 합니다."
+    }
+  ]
+}
