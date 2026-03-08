@@ -2,25 +2,25 @@
   "generated_at": "2026-03-04T15:44:39Z",
   "total_count": 87,
   "weekly_plan": {
-    "generated_at": "2026-03-01T15:03:39Z",
-    "week_number": 9,
+    "generated_at": "2026-03-08T15:04:16Z",
+    "week_number": 10,
     "planned_slugs": [
       {
-        "slug": "discussing-insurance-options",
-        "title": "보험 상담",
-        "category": "Finance",
-        "used": true
+        "slug": "festival-photography",
+        "title": "축제 사진 촬영",
+        "category": "레저",
+        "used": false
       },
       {
-        "slug": "learning-musical-instrument",
-        "title": "악기 배우기",
-        "category": "Leisure",
-        "used": true
+        "slug": "opening-investment-account",
+        "title": "투자 계좌 개설",
+        "category": "금융",
+        "used": false
       },
       {
-        "slug": "navigating-public-transport",
-        "title": "대중교통 이용하기",
-        "category": "Travel",
+        "slug": "fish-tank-maintenance",
+        "title": "어항 관리",
+        "category": "일상",
         "used": false
       }
     ]
