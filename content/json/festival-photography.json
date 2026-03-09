@@ -1,0 +1,403 @@
+{
+  "topic": {
+    "id": "d91c173d-a4e4-4bd8-bd99-af80c737b6ea",
+    "title": "축제 사진 촬영",
+    "category": "레저",
+    "difficulty": "초급",
+    "description": "축제에서 멋진 사진을 남기고 싶으신가요? 이 콘텐츠는 축제 사진 촬영에 필요한 기초적인 영어 표현들을 배울 수 있도록 도와줍니다.",
+    "language_code": "en",
+    "total_sentences": 7
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "와, 축제 정말 신난다!"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "저는 멋진 사진 몇 장 찍고 싶어요."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "여기서 가장 사진 찍기 좋은 곳이 어디인가요?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "사람들 사진을 찍어도 괜찮을까요?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "플래시 사용은 괜찮나요?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "인생샷을 건지고 싶어요."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "축제 분위기를 잘 담고 싶어요."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Wow, the festival is really exciting!",
+      "chunked_text": "Wow, | the festival is really exciting!"
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "I want to take some great photos.",
+      "chunked_text": "I want to take | some great photos."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Where is the best place to take photos here?",
+      "chunked_text": "Where is | the best place to take photos here?"
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Is it okay to take pictures of people?",
+      "chunked_text": "Is it okay | to take pictures of people?"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Is using the flash okay?",
+      "chunked_text": "Is using the flash | okay?"
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "I want to capture a shot of a lifetime.",
+      "chunked_text": "I want to capture | a shot of a lifetime."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "I want to capture the festival atmosphere well.",
+      "chunked_text": "I want to capture | the festival atmosphere well."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "축제",
+        "신난다"
+      ],
+      "target_sentence": "Wow, the festival is really exciting!",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "사진",
+        "몇 장",
+        "찍고 싶어요"
+      ],
+      "target_sentence": "I want to take some great photos.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "가장 사진 찍기 좋은 곳"
+      ],
+      "target_sentence": "Where is the best place to take photos here?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "사람들 사진"
+      ],
+      "target_sentence": "Is it okay to take pictures of people?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "플래시 사용"
+      ],
+      "target_sentence": "Is using the flash okay?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "인생샷"
+      ],
+      "target_sentence": "I want to capture a shot of a lifetime.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "축제 분위기"
+      ],
+      "target_sentence": "I want to capture the festival atmosphere well.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "축제"
+      ],
+      "target_sentence": "The festival is really exciting!",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "사진"
+      ],
+      "target_sentence": "I want to take some great photos.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "좋은 곳"
+      ],
+      "target_sentence": "Where is the best place to take photos?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "사람들"
+      ],
+      "target_sentence": "Is it okay to take pictures of people?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "플래시"
+      ],
+      "target_sentence": "Is using the flash okay?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "인생샷"
+      ],
+      "target_sentence": "I want to capture a shot of a lifetime.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "분위기"
+      ],
+      "target_sentence": "I want to capture the festival atmosphere well.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "축제"
+      ],
+      "target_sentence": "The festival is exciting!",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "사진"
+      ],
+      "target_sentence": "I want to take photos.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "좋은 곳"
+      ],
+      "target_sentence": "Best place?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "사람들"
+      ],
+      "target_sentence": "Pictures of people?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "플래시"
+      ],
+      "target_sentence": "Use flash?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "인생샷"
+      ],
+      "target_sentence": "Shot of a lifetime?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "분위기"
+      ],
+      "target_sentence": "Festival atmosphere?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "festival"
+      ],
+      "target_sentence": "Wow, the festival is really exciting!",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "photos"
+      ],
+      "target_sentence": "I want to take some great photos.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "place"
+      ],
+      "target_sentence": "Where is the best place to take photos here?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "people"
+      ],
+      "target_sentence": "Is it okay to take pictures of people?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "flash"
+      ],
+      "target_sentence": "Is using the flash okay?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "lifetime"
+      ],
+      "target_sentence": "I want to capture a shot of a lifetime.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "atmosphere"
+      ],
+      "target_sentence": "I want to capture the festival atmosphere well.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "멋진 사진 몇 장 찍고 싶어요",
+      "foreign_phrase": "I want to take some great photos"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "가장 사진 찍기 좋은 곳",
+      "foreign_phrase": "the best place to take photos"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "사람들 사진",
+      "foreign_phrase": "photos of people"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "플래시 사용",
+      "foreign_phrase": "using the flash"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "인생샷",
+      "foreign_phrase": "a shot of a lifetime"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "축제 분위기",
+      "foreign_phrase": "festival atmosphere"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 1,
+      "korean_text": "축제 분위기를 담은 사진이 정말 예쁠 것 같아요.",
+      "foreign_text": "Photos capturing the festival atmosphere will be really beautiful.",
+      "reason": "이 문장은 축제 사진 촬영의 주요 목표 중 하나인 분위기 포착을 강조하며, 학습자가 이를 통해 사진의 미학적 가치를 이해하도록 돕습니다."
+    }
+  ]
+}
