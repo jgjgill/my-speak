@@ -1,0 +1,418 @@
+{
+  "topic": {
+    "id": "2ea0b2ee-39e3-41f4-acd4-d6ca063a95c2",
+    "title": "투자 계좌 개설",
+    "category": "금융",
+    "difficulty": "초급",
+    "description": "투자 계좌 개설 방법을 배우고, 금융 시장에 첫 발을 내딛어 보세요.",
+    "language_code": "en",
+    "total_sentences": 7
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 투자 계좌 개설을 문의하려고 합니다."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "네, 처음이신가요? 어떤 종류의 투자 계좌에 관심 있으신가요?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "주식이나 펀드에 투자하고 싶은데, 처음 시작하기 좋은 계좌가 있을까요?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "네, 가장 기본적인 투자 계좌가 있습니다. 필요한 서류가 무엇인가요?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "신분증과 최근 소득 증명서가 필요합니다."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "서류 작성 후 제출하시면, 보통 며칠 내로 계좌가 개설됩니다."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "알겠습니다, 안내 감사합니다."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, I would like to inquire about opening an investment account.",
+      "chunked_text": "Hello, | I would like to inquire about opening an investment account."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Yes, is this your first time? What kind of investment account are you interested in?",
+      "chunked_text": "Yes, | is this your first time? | What kind of investment account are you interested in?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "I want to invest in stocks or funds, is there a good account to start with?",
+      "chunked_text": "I want to invest in stocks or funds, | is there a good account to start with?"
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Yes, we have the most basic investment account. What documents are needed?",
+      "chunked_text": "Yes, we have the most basic investment account. | What documents are needed?"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "You will need your ID card and recent proof of income.",
+      "chunked_text": "You will need your ID card and recent proof of income."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "After you fill out the forms and submit them, the account is usually opened within a few days.",
+      "chunked_text": "After you fill out the forms and submit them, | the account is usually opened within a few days."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "Okay, Thank you for the guidance.",
+      "chunked_text": "Okay, | Thank you for the guidance."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "안녕하세요",
+        "투자 계좌 개설을 문의하려고 합니다"
+      ],
+      "target_sentence": "Hello, I would like to inquire about opening an investment account.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "처음이신가요",
+        "어떤 종류의 투자 계좌 관심"
+      ],
+      "target_sentence": "Yes, is this your first time? What kind of investment account are you interested in?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "주식",
+        "펀드 투자",
+        "처음 시작하기 좋은 계좌 있을까요"
+      ],
+      "target_sentence": "I want to invest in stocks or funds, is there a good account to start with?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "가장 기본적인 투자 계좌",
+        "필요한 서류"
+      ],
+      "target_sentence": "Yes, we have the most basic investment account. What documents are needed?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "신분증",
+        "최근 소득 증명서"
+      ],
+      "target_sentence": "You will need your ID card and recent proof of income.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "서류 제출",
+        "며칠 내 계좌 개설"
+      ],
+      "target_sentence": "After you fill out the forms and submit them, the account is usually opened within a few days.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "안내 감사합니다"
+      ],
+      "target_sentence": "Okay, Thank you for the guidance.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "투자 계좌 문의"
+      ],
+      "target_sentence": "Hello, I would like to inquire about opening an investment account.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "처음",
+        "투자 계좌 관심"
+      ],
+      "target_sentence": "Yes, is this your first time? What kind of investment account are you interested in?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "주식",
+        "펀드",
+        "시작 계좌"
+      ],
+      "target_sentence": "I want to invest in stocks or funds, is there a good account to start with?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "기본 계좌",
+        "서류"
+      ],
+      "target_sentence": "Yes, we have the most basic investment account. What documents are needed?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "신분증",
+        "소득 증명"
+      ],
+      "target_sentence": "You will need your ID card and recent proof of income.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "서류 제출",
+        "며칠 계좌"
+      ],
+      "target_sentence": "After you fill out the forms and submit them, the account is usually opened within a few days.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "감사"
+      ],
+      "target_sentence": "Okay, Thank you for the guidance.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "투자 계좌 개설"
+      ],
+      "target_sentence": "Hello, I would like to inquire about opening an investment account.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "처음"
+      ],
+      "target_sentence": "Yes, is this your first time? What kind of investment account are you interested in?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "시작 계좌"
+      ],
+      "target_sentence": "I want to invest in stocks or funds, is there a good account to start with?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "기본 계좌"
+      ],
+      "target_sentence": "Yes, we have the most basic investment account. What documents are needed?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "서류"
+      ],
+      "target_sentence": "You will need your ID card and recent proof of income.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "며칠"
+      ],
+      "target_sentence": "After you fill out the forms and submit them, the account is usually opened within a few days.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "감사"
+      ],
+      "target_sentence": "Okay, Thank you for the guidance.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "inquire"
+      ],
+      "target_sentence": "Hello, I would like to inquire about opening an investment account.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "first time"
+      ],
+      "target_sentence": "Yes, is this your first time? What kind of investment account are you interested in?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "invest"
+      ],
+      "target_sentence": "I want to invest in stocks or funds, is there a good account to start with?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "basic"
+      ],
+      "target_sentence": "Yes, we have the most basic investment account. What documents are needed?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "income"
+      ],
+      "target_sentence": "You will need your ID card and recent proof of income.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "opened"
+      ],
+      "target_sentence": "After you fill out the forms and submit them, the account is usually opened within a few days.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "guidance"
+      ],
+      "target_sentence": "Okay, Thank you for the guidance.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "어떤 종류의 투자 계좌",
+      "foreign_phrase": "What kind of investment account"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "처음 시작하기 좋은 계좌",
+      "foreign_phrase": "a good account to start with"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "가장 기본적인 투자 계좌",
+      "foreign_phrase": "the most basic investment account"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "필요한 서류",
+      "foreign_phrase": "What documents are needed"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "최근 소득 증명서",
+      "foreign_phrase": "recent proof of income"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "보통 며칠 내로 계좌가 개설",
+      "foreign_phrase": "the account is usually opened within a few days"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "안내 감사합니다",
+      "foreign_phrase": "Thank you for the guidance"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 3,
+      "korean_text": "주식이나 펀드에 투자하고 싶은데, 처음 시작하기 좋은 계좌가 있을까요?",
+      "foreign_text": "I want to invest in stocks or funds, is there a good account to start with?",
+      "reason": "이 문장은 학습자가 투자하려는 상품과 자신의 수준에 맞는 계좌를 문의하는 핵심적인 질문이기 때문입니다."
+    }
+  ]
+}

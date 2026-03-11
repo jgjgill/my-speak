@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-09T15:47:31Z",
-  "total_count": 88,
+  "generated_at": "2026-03-11T15:45:46Z",
+  "total_count": 89,
   "weekly_plan": {
     "generated_at": "2026-03-08T15:04:16Z",
     "week_number": 10,
@@ -15,7 +15,7 @@
         "slug": "opening-investment-account",
         "title": "투자 계좌 개설",
         "category": "금융",
-        "used": false
+        "used": true
       },
       {
         "slug": "fish-tank-maintenance",
@@ -113,6 +113,7 @@
     "asking-for-product-information",
     "discussing-insurance-options",
     "learning-musical-instrument",
-    "festival-photography"
+    "festival-photography",
+    "opening-investment-account"
   ]
 }
