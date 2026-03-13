@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-11T15:45:46Z",
-  "total_count": 89,
+  "generated_at": "2026-03-13T15:44:46Z",
+  "total_count": 90,
   "weekly_plan": {
     "generated_at": "2026-03-08T15:04:16Z",
     "week_number": 10,
@@ -21,7 +21,7 @@
         "slug": "fish-tank-maintenance",
         "title": "어항 관리",
         "category": "일상",
-        "used": false
+        "used": true
       }
     ]
   },
@@ -114,6 +114,7 @@
     "discussing-insurance-options",
     "learning-musical-instrument",
     "festival-photography",
-    "opening-investment-account"
+    "opening-investment-account",
+    "fish-tank-maintenance"
   ]
 }

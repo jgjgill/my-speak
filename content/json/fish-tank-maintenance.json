@@ -1,0 +1,327 @@
+{
+  "topic": {
+    "id": "0bea0c3b-2e66-4c7d-b371-1e1c5838454e",
+    "title": "어항 관리",
+    "category": "일상",
+    "difficulty": "초급",
+    "description": "어항을 깨끗하게 유지하고 물고기에게 적절한 환경을 제공하는 기본적인 방법을 배웁니다.",
+    "language_code": "en",
+    "total_sentences": 6
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요! 어항 관리가 처음이라서요."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "가장 중요한 것이 무엇인가요?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "매일 물고기에게 먹이를 조금씩 주세요."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "그리고 일주일에 한 번 물을 20% 정도 갈아주는 것이 좋아요."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "어항 온도를 꾸준히 확인하는 것도 잊지 마세요."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "이렇게 하면 물고기들이 건강하게 지낼 수 있어요."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello! It's my first time managing a fish tank.",
+      "chunked_text": "Hello! | It's my first time | managing a fish tank."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "What is the most important thing?",
+      "chunked_text": "What is | the most important thing?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Feed the fish a little bit every day.",
+      "chunked_text": "Feed the fish | a little bit | every day."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "And it's good to change about 20% of the water once a week.",
+      "chunked_text": "And it's good | to change about 20% of the water | once a week."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Also, don't forget to consistently check the tank's temperature.",
+      "chunked_text": "Also, | don't forget | to consistently check | the tank's temperature."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Doing this helps the fish stay healthy.",
+      "chunked_text": "Doing this | helps the fish | stay healthy."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "처음",
+        "어항 관리"
+      ],
+      "target_sentence": "Hello! It's my first time managing a fish tank.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "가장 중요한 것"
+      ],
+      "target_sentence": "What is the most important thing?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "먹이",
+        "조금씩",
+        "매일 주세요"
+      ],
+      "target_sentence": "Feed the fish a little bit every day.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "물 20% 정도",
+        "일주일에 한 번 갈아줘요"
+      ],
+      "target_sentence": "And it's good to change about 20% of the water once a week.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "온도",
+        "꾸준히 확인"
+      ],
+      "target_sentence": "Also, don't forget to consistently check the tank's temperature.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "물고기 건강하게 지내요"
+      ],
+      "target_sentence": "Doing this helps the fish stay healthy.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 7,
+      "keywords": [
+        "어항 처음"
+      ],
+      "target_sentence": "Hello! It's my first time managing a fish tank.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "중요한 것"
+      ],
+      "target_sentence": "What is the most important thing?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "먹이",
+        "매일"
+      ],
+      "target_sentence": "Feed the fish a little bit every day.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "물 갈기",
+        "일주일에"
+      ],
+      "target_sentence": "And it's good to change about 20% of the water once a week.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "온도 확인"
+      ],
+      "target_sentence": "Also, don't forget to consistently check the tank's temperature.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "건강"
+      ],
+      "target_sentence": "Doing this helps the fish stay healthy.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 13,
+      "keywords": [
+        "어항"
+      ],
+      "target_sentence": "Hello! It's my first time managing a fish tank.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 14,
+      "keywords": [
+        "중요"
+      ],
+      "target_sentence": "What is the most important thing?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "매일"
+      ],
+      "target_sentence": "Feed the fish a little bit every day.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "물"
+      ],
+      "target_sentence": "And it's good to change about 20% of the water once a week.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "온도"
+      ],
+      "target_sentence": "Also, don't forget to consistently check the tank's temperature.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "건강"
+      ],
+      "target_sentence": "Doing this helps the fish stay healthy.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 19,
+      "keywords": [
+        "first time"
+      ],
+      "target_sentence": "Hello! It's my first time managing a fish tank.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 20,
+      "keywords": [
+        "important"
+      ],
+      "target_sentence": "What is the most important thing?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 21,
+      "keywords": [
+        "feed"
+      ],
+      "target_sentence": "Feed the fish a little bit every day.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "water"
+      ],
+      "target_sentence": "And it's good to change about 20% of the water once a week.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "temperature"
+      ],
+      "target_sentence": "Also, don't forget to consistently check the tank's temperature.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "healthy"
+      ],
+      "target_sentence": "Doing this helps the fish stay healthy.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [],
+  "highlight_sentences": [
+    {
+      "sentence_order": 3,
+      "korean_text": "매일 물고기에게 먹이를 조금씩 주세요.",
+      "foreign_text": "Feed the fish a little bit every day.",
+      "reason": "어항 관리의 가장 기본적인 일상 활동이기 때문입니다."
+    }
+  ]
+}
