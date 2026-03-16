@@ -1,0 +1,358 @@
+{
+  "topic": {
+    "id": "426b4530-e129-4380-83c9-411ecd6c88e1",
+    "title": "대출 신청하기",
+    "category": "금융",
+    "difficulty": "초급",
+    "description": "대출 신청 절차에 대한 기본적인 대화를 배우고 연습합니다.",
+    "language_code": "en",
+    "total_sentences": 6
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 대출 상담을 받고 싶습니다."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "네, 어떤 종류의 대출을 생각하고 계신가요?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "주택 담보 대출에 대해 알고 싶습니다."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "알겠습니다. 소득 증빙 서류를 준비해 오셨나요?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "네, 여기 있습니다."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "감사합니다. 그럼 함께 서류를 검토해 보겠습니다."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, I would like to get a loan consultation.",
+      "chunked_text": "Hello, | I would like to get a loan consultation."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Yes, what kind of loan are you considering?",
+      "chunked_text": "Yes, | what kind of loan are you considering?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "I would like to know about a home mortgage loan.",
+      "chunked_text": "I would like to know about | a home mortgage loan."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Understood. Have you prepared income verification documents?",
+      "chunked_text": "Understood. | Have you prepared | income verification documents?"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Yes, here they are.",
+      "chunked_text": "Yes, | here they are."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Thank you. Let's review the documents together.",
+      "chunked_text": "Thank you. | Let's review the documents together."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "안녕하세요",
+        "대출 상담"
+      ],
+      "target_sentence": "Hello, I would like to get a loan consultation.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "네",
+        "어떤 종류의 대출"
+      ],
+      "target_sentence": "Yes, what kind of loan are you considering?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "주택 담보 대출"
+      ],
+      "target_sentence": "I would like to know about a home mortgage loan.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "소득 증빙 서류",
+        "준비"
+      ],
+      "target_sentence": "Understood. Have you prepared income verification documents?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "네",
+        "여기"
+      ],
+      "target_sentence": "Yes, here they are.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "감사합니다",
+        "서류 검토"
+      ],
+      "target_sentence": "Thank you. Let's review the documents together.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 7,
+      "keywords": [
+        "대출 상담"
+      ],
+      "target_sentence": "Hello, I would like to get a loan consultation.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "어떤 대출"
+      ],
+      "target_sentence": "Yes, what kind of loan are you considering?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "주택 대출"
+      ],
+      "target_sentence": "I would like to know about a home mortgage loan.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "소득 서류",
+        "준비"
+      ],
+      "target_sentence": "Understood. Have you prepared income verification documents?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "여기"
+      ],
+      "target_sentence": "Yes, here they are.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "서류 검토"
+      ],
+      "target_sentence": "Thank you. Let's review the documents together.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 13,
+      "keywords": [
+        "상담"
+      ],
+      "target_sentence": "Hello, I would like to get a loan consultation.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 14,
+      "keywords": [
+        "종류"
+      ],
+      "target_sentence": "Yes, what kind of loan are you considering?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "주택"
+      ],
+      "target_sentence": "I would like to know about a home mortgage loan.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "소득",
+        "준비"
+      ],
+      "target_sentence": "Understood. Have you prepared income verification documents?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "있습니다"
+      ],
+      "target_sentence": "Yes, here they are.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "검토"
+      ],
+      "target_sentence": "Thank you. Let's review the documents together.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 19,
+      "keywords": [
+        "loan consultation"
+      ],
+      "target_sentence": "Hello, I would like to get a loan consultation.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 20,
+      "keywords": [
+        "kind of loan"
+      ],
+      "target_sentence": "Yes, what kind of loan are you considering?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 21,
+      "keywords": [
+        "home mortgage"
+      ],
+      "target_sentence": "I would like to know about a home mortgage loan.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "income documents"
+      ],
+      "target_sentence": "Understood. Have you prepared income verification documents?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "here"
+      ],
+      "target_sentence": "Yes, here they are.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "review documents"
+      ],
+      "target_sentence": "Thank you. Let's review the documents together.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 1,
+      "korean_phrase": "대출 상담을 받고 싶습니다",
+      "foreign_phrase": "I would like to get a loan consultation"
+    },
+    {
+      "sentence_order": 2,
+      "korean_phrase": "어떤 종류의 대출",
+      "foreign_phrase": "what kind of loan"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "주택 담보 대출",
+      "foreign_phrase": "home mortgage loan"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "소득 증빙 서류",
+      "foreign_phrase": "income verification documents"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "준비해 오셨나요",
+      "foreign_phrase": "Have you prepared"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "서류를 검토해 보겠습니다",
+      "foreign_phrase": "Let's review the documents"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 1,
+      "korean_text": "대출 상담을 받고 싶습니다.",
+      "foreign_text": "I would like to get a loan consultation.",
+      "reason": "이 문장은 대출 신청 절차를 시작하는 가장 기본적인 요청이기 때문입니다."
+    }
+  ]
+}
