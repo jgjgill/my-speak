@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-16T15:49:49Z",
-  "total_count": 91,
+  "generated_at": "2026-03-18T15:52:48Z",
+  "total_count": 92,
   "weekly_plan": {
     "generated_at": "2026-03-15T15:06:58Z",
     "week_number": 11,
@@ -15,7 +15,7 @@
         "slug": "camping-trip-planning",
         "title": "캠핑 여행 계획하기",
         "category": "여행",
-        "used": false
+        "used": true
       },
       {
         "slug": "art-gallery-visit",
@@ -116,6 +116,7 @@
     "festival-photography",
     "opening-investment-account",
     "fish-tank-maintenance",
-    "loan-application"
+    "loan-application",
+    "camping-trip-planning"
   ]
 }
