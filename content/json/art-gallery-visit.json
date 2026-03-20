@@ -1,0 +1,394 @@
+{
+  "topic": {
+    "id": "56901da7-7f34-42d4-8b53-06570c099023",
+    "title": "미술관 방문하기",
+    "category": "레저",
+    "difficulty": "초급",
+    "description": "미술관을 방문하여 특별 전시와 운영 시간을 문의하고 티켓 가격을 알아보는 초급 회화 연습입니다.",
+    "language_code": "en",
+    "total_sentences": 7
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요. 오늘 미술관에 특별한 전시가 있나요?"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "네, 지금은 인상주의 화가들의 작품을 전시 중입니다."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "표 가격은 어떻게 되나요?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "성인은 15,000원이고, 학생 할인은 10,000원입니다."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "오늘 몇 시까지 문을 닫나요?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "저희는 오후 6시에 문을 닫습니다."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "네, 감사합니다. 방문하겠습니다."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello. Are there any special exhibitions at the art museum today?",
+      "chunked_text": "Hello. | Are there any special exhibitions at the art museum today?"
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Yes, we are currently exhibiting works by **Impressionist painters**.",
+      "chunked_text": "Yes, | we are currently exhibiting works by **Impressionist painters**."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Adults are 15,000 won, and students get a discount at 10,000 won.",
+      "chunked_text": "Adults are 15,000 won, | and students get a discount at 10,000 won."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "We close at 6 PM.",
+      "chunked_text": "We close at 6 PM."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Yes, thank you. I will visit.",
+      "chunked_text": "Yes, thank you. | I will visit."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "오늘",
+        "미술관",
+        "특별 전시",
+        "있나요?"
+      ],
+      "target_sentence": "Hello. Are there any special exhibitions at the art museum today?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "인상주의 화가들",
+        "작품 전시"
+      ],
+      "target_sentence": "Yes, we are currently exhibiting works by Impressionist painters.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "표 가격",
+        "어떻게 되나요?"
+      ],
+      "target_sentence": "How much is the ticket price?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "성인",
+        "15",
+        "000원",
+        "학생 할인",
+        "10",
+        "000원"
+      ],
+      "target_sentence": "Adults are 15,000 won, and students get a discount at 10,000 won.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "오늘",
+        "몇 시",
+        "문 닫나요?"
+      ],
+      "target_sentence": "What time do you close today?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "오후 6시",
+        "문 닫습니다"
+      ],
+      "target_sentence": "We close at 6 PM.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "감사합니다",
+        "방문하겠습니다"
+      ],
+      "target_sentence": "Yes, thank you. I will visit.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "전시",
+        "있나요?"
+      ],
+      "target_sentence": "Are there any special exhibitions at the art museum today?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "화가들",
+        "전시"
+      ],
+      "target_sentence": "Yes, we are currently exhibiting works by Impressionist painters.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "가격?"
+      ],
+      "target_sentence": "How much is the ticket price?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "성인",
+        "학생"
+      ],
+      "target_sentence": "Adults are 15,000 won, and students get a discount at 10,000 won.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "몇 시",
+        "닫나요?"
+      ],
+      "target_sentence": "What time do you close today?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "6시",
+        "닫습니다"
+      ],
+      "target_sentence": "We close at 6 PM.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "방문"
+      ],
+      "target_sentence": "Yes, thank you. I will visit.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "전시?"
+      ],
+      "target_sentence": "Are there any special exhibitions at the art museum today?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "화가들"
+      ],
+      "target_sentence": "Yes, we are currently exhibiting works by Impressionist painters.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "가격?"
+      ],
+      "target_sentence": "How much is the ticket price?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "학생"
+      ],
+      "target_sentence": "Adults are 15,000 won, and students get a discount at 10,000 won.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "몇 시?"
+      ],
+      "target_sentence": "What time do you close today?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "6시"
+      ],
+      "target_sentence": "We close at 6 PM.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "방문"
+      ],
+      "target_sentence": "Yes, thank you. I will visit.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "Exhibitions"
+      ],
+      "target_sentence": "Hello. Are there any special exhibitions at the art museum today?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "Impressionist"
+      ],
+      "target_sentence": "Yes, we are currently exhibiting works by Impressionist painters.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "Price"
+      ],
+      "target_sentence": "How much is the ticket price?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "Students"
+      ],
+      "target_sentence": "Adults are 15,000 won, and students get a discount at 10,000 won.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "Close"
+      ],
+      "target_sentence": "What time do you close today?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "6 PM"
+      ],
+      "target_sentence": "We close at 6 PM.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "Visit"
+      ],
+      "target_sentence": "Yes, thank you. I will visit.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "인상주의 화가들",
+      "foreign_phrase": "Impressionist painters"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "표 가격은 어떻게 되나요?",
+      "foreign_phrase": "How much is the ticket price?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "오늘 몇 시까지 문을 닫나요?",
+      "foreign_phrase": "What time do you close today?"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 3,
+      "korean_text": "표 가격은 어떻게 되나요?",
+      "foreign_text": "How much is the ticket price?",
+      "reason": "이 문장은 미술관 방문 시 필요한 필수 정보인 가격을 직접적으로 묻기 때문에 중요합니다."
+    }
+  ]
+}
