@@ -2,26 +2,26 @@
   "generated_at": "2026-03-20T15:44:30Z",
   "total_count": 93,
   "weekly_plan": {
-    "generated_at": "2026-03-15T15:06:58Z",
-    "week_number": 11,
+    "generated_at": "2026-03-22T15:05:10Z",
+    "week_number": 12,
     "planned_slugs": [
       {
-        "slug": "loan-application",
-        "title": "대출 신청하기",
+        "slug": "managing-credit-card-debt",
+        "title": "신용카드 부채 관리",
         "category": "금융",
-        "used": true
+        "used": false
       },
       {
-        "slug": "camping-trip-planning",
-        "title": "캠핑 여행 계획하기",
-        "category": "여행",
-        "used": true
-      },
-      {
-        "slug": "art-gallery-visit",
-        "title": "미술관 방문하기",
+        "slug": "attending-a-concert",
+        "title": "콘서트 참석하기",
         "category": "레저",
-        "used": true
+        "used": false
+      },
+      {
+        "slug": "asking-for-hotel-recommendations",
+        "title": "호텔 추천 요청하기",
+        "category": "여행",
+        "used": false
       }
     ]
   },
