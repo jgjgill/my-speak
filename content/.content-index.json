@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-20T15:44:30Z",
-  "total_count": 93,
+  "generated_at": "2026-03-23T15:48:05Z",
+  "total_count": 94,
   "weekly_plan": {
     "generated_at": "2026-03-22T15:05:10Z",
     "week_number": 12,
@@ -9,7 +9,7 @@
         "slug": "managing-credit-card-debt",
         "title": "신용카드 부채 관리",
         "category": "금융",
-        "used": false
+        "used": true
       },
       {
         "slug": "attending-a-concert",
@@ -118,6 +118,7 @@
     "fish-tank-maintenance",
     "loan-application",
     "camping-trip-planning",
-    "art-gallery-visit"
+    "art-gallery-visit",
+    "managing-credit-card-debt"
   ]
 }

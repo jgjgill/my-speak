@@ -1,0 +1,364 @@
+{
+  "topic": {
+    "id": "21b0d949-73ec-42dc-a60c-944986c6a30b",
+    "title": "신용카드 부채 관리",
+    "category": "금융",
+    "difficulty": "초급",
+    "description": "신용카드 빚을 효과적으로 관리하고 재정 건강을 개선하는 방법을 배우세요.",
+    "language_code": "en",
+    "total_sentences": 6
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "신용카드 빚을 잘 관리하는 것이 중요해요."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "매달 최소 상환액 이상을 갚도록 노력하세요."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "불필요한 지출을 줄이면 빚을 더 빨리 갚을 수 있어요."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "개인 예산을 세우고 지키는 것이 도움이 됩니다."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "높은 이자율을 가진 카드부터 갚아나가는 것이 현명해요."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "정기적으로 재정 상황을 점검하는 습관을 들이세요."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Managing credit card debt well is important.",
+      "chunked_text": "Managing credit card debt well | is important."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Try to pay more than the minimum payment each month.",
+      "chunked_text": "Try to pay | more than the minimum payment | each month."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Reducing unnecessary spending can help you pay off debt faster.",
+      "chunked_text": "Reducing unnecessary spending | can help you | pay off debt faster."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Creating and sticking to a personal budget is helpful.",
+      "chunked_text": "Creating and sticking to | a personal budget | is helpful."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "It's wise to pay off cards with high interest rates first.",
+      "chunked_text": "It's wise to pay off cards | with high interest rates | first."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Make a habit of checking your financial situation regularly.",
+      "chunked_text": "Make a habit of checking | your financial situation | regularly."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "신용카드 빚",
+        "관리",
+        "중요해요"
+      ],
+      "target_sentence": "Managing credit card debt well is important.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "최소 상환액 이상",
+        "갚으려고 노력하세요"
+      ],
+      "target_sentence": "Try to pay more than the minimum payment each month.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "불필요한 지출",
+        "줄이면",
+        "빚 빨리 갚아요"
+      ],
+      "target_sentence": "Reducing unnecessary spending can help you pay off debt faster.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "개인 예산",
+        "세우고",
+        "지키는 것",
+        "도움"
+      ],
+      "target_sentence": "Creating and sticking to a personal budget is helpful.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "높은 이자율",
+        "카드부터",
+        "갚아나가세요"
+      ],
+      "target_sentence": "It's wise to pay off cards with high interest rates first.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "재정 상황",
+        "점검하는 습관"
+      ],
+      "target_sentence": "Make a habit of checking your financial situation regularly.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 7,
+      "keywords": [
+        "빚 관리",
+        "중요해요"
+      ],
+      "target_sentence": "Managing credit card debt well is important.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "최소 상환액",
+        "갚으세요"
+      ],
+      "target_sentence": "Try to pay more than the minimum payment each month.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "지출 줄이면",
+        "빚 빨리 갚아요"
+      ],
+      "target_sentence": "Reducing unnecessary spending can help you pay off debt faster.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "예산",
+        "지키는 것",
+        "도움"
+      ],
+      "target_sentence": "Creating and sticking to a personal budget is helpful.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "높은 이자율",
+        "갚아나가세요"
+      ],
+      "target_sentence": "It's wise to pay off cards with high interest rates first.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "재정 상황",
+        "점검"
+      ],
+      "target_sentence": "Make a habit of checking your financial situation regularly.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 13,
+      "keywords": [
+        "빚 관리"
+      ],
+      "target_sentence": "Managing credit card debt well is important.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 14,
+      "keywords": [
+        "최소 상환액"
+      ],
+      "target_sentence": "Try to pay more than the minimum payment each month.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "지출 줄이면"
+      ],
+      "target_sentence": "Reducing unnecessary spending can help you pay off debt faster.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "예산"
+      ],
+      "target_sentence": "Creating and sticking to a personal budget is helpful.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "이자율"
+      ],
+      "target_sentence": "It's wise to pay off cards with high interest rates first.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "상황 점검"
+      ],
+      "target_sentence": "Make a habit of checking your financial situation regularly.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 19,
+      "keywords": [
+        "debt"
+      ],
+      "target_sentence": "Managing credit card debt well is important.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 20,
+      "keywords": [
+        "minimum payment"
+      ],
+      "target_sentence": "Try to pay more than the minimum payment each month.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 21,
+      "keywords": [
+        "spending"
+      ],
+      "target_sentence": "Reducing unnecessary spending can help you pay off debt faster.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "budget"
+      ],
+      "target_sentence": "Creating and sticking to a personal budget is helpful.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "interest rates"
+      ],
+      "target_sentence": "It's wise to pay off cards with high interest rates first.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "situation"
+      ],
+      "target_sentence": "Make a habit of checking your financial situation regularly.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "최소 상환액 이상",
+      "foreign_phrase": "more than the minimum payment"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "불필요한 지출",
+      "foreign_phrase": "unnecessary spending"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "개인 예산",
+      "foreign_phrase": "personal budget"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "높은 이자율",
+      "foreign_phrase": "high interest rates"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "재정 상황",
+      "foreign_phrase": "financial situation"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 2,
+      "korean_text": "매달 최소 상환액 이상을 갚도록 노력하세요.",
+      "foreign_text": "Try to pay more than the minimum payment each month.",
+      "reason": "이 문장은 신용카드 부채 관리에 있어 가장 중요하고 실천 가능한 첫걸음을 제시하기 때문입니다."
+    }
+  ]
+}
