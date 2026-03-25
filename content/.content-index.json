@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-23T15:48:05Z",
-  "total_count": 94,
+  "generated_at": "2026-03-25T15:51:14Z",
+  "total_count": 95,
   "weekly_plan": {
     "generated_at": "2026-03-22T15:05:10Z",
     "week_number": 12,
@@ -15,7 +15,7 @@
         "slug": "attending-a-concert",
         "title": "콘서트 참석하기",
         "category": "레저",
-        "used": false
+        "used": true
       },
       {
         "slug": "asking-for-hotel-recommendations",
@@ -119,6 +119,7 @@
     "loan-application",
     "camping-trip-planning",
     "art-gallery-visit",
-    "managing-credit-card-debt"
+    "managing-credit-card-debt",
+    "attending-a-concert"
   ]
 }

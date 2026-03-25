@@ -1,0 +1,390 @@
+{
+  "topic": {
+    "id": "2de1f7b3-3ebf-4731-b34b-7e0fd087d97c",
+    "title": "콘서트 참석하기",
+    "category": "레저",
+    "difficulty": "초급",
+    "description": "친구와 함께 콘서트에 가서 좋아하는 음악을 즐기는 방법에 대해 배웁니다. 티켓 예매부터 좋은 자리를 잡는 것까지 기본적인 대화 내용을 익힐 수 있습니다.",
+    "language_code": "en",
+    "total_sentences": 6
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕, 이번 주말에 콘서트 갈래?"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "오, 좋다! 어떤 콘서트인데?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "가장 좋아하는 밴드의 공연이야."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "정말? 그럼 빨리 티켓을 사야겠네."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "응, 온라인으로 예매할 수 있어. 지금 바로 예약하자."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "좋아! 자리 좋은 곳으로 잡자."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hi, do you want to go to a concert this weekend?",
+      "chunked_text": "Hi, | do you want to go to a concert this weekend?"
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Oh, great! What kind of concert is it?",
+      "chunked_text": "Oh, great! | What kind of concert is it?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "It's my favorite band's performance.",
+      "chunked_text": "It's my favorite band's performance."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Really? Then we need to buy tickets quickly.",
+      "chunked_text": "Really? | Then we need to buy tickets quickly."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Yes, we can reserve tickets online. Let's book it right now.",
+      "chunked_text": "Yes, | we can reserve tickets online. | Let's book it right now."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Sounds good! Let's get good seats.",
+      "chunked_text": "Sounds good! | Let's get good seats."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "안녕",
+        "이번 주말에",
+        "콘서트",
+        "갈래"
+      ],
+      "target_sentence": "Hi, do you want to go to a concert this weekend?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "오",
+        "좋다",
+        "어떤",
+        "콘서트",
+        "인데"
+      ],
+      "target_sentence": "Oh, great! What kind of concert is it?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "가장",
+        "좋아하는",
+        "밴드",
+        "공연"
+      ],
+      "target_sentence": "It's my favorite band's performance.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "정말",
+        "그럼",
+        "빨리",
+        "티켓",
+        "사야겠네"
+      ],
+      "target_sentence": "Really? Then we need to buy tickets quickly.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "응",
+        "온라인",
+        "예매",
+        "할 수 있어",
+        "지금",
+        "바로",
+        "예약하자"
+      ],
+      "target_sentence": "Yes, we can reserve tickets online. Let's book it right now.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "좋아",
+        "자리",
+        "좋은 곳",
+        "잡자"
+      ],
+      "target_sentence": "Sounds good! Let's get good seats.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 7,
+      "keywords": [
+        "콘서트",
+        "갈래"
+      ],
+      "target_sentence": "Hi, do you want to go to a concert this weekend?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "어떤",
+        "콘서트"
+      ],
+      "target_sentence": "Oh, great! What kind of concert is it?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "밴드",
+        "공연"
+      ],
+      "target_sentence": "It's my favorite band's performance.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "티켓",
+        "사야겠네"
+      ],
+      "target_sentence": "Really? Then we need to buy tickets quickly.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "온라인",
+        "예약하자"
+      ],
+      "target_sentence": "Yes, we can reserve tickets online. Let's book it right now.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "좋은",
+        "자리"
+      ],
+      "target_sentence": "Sounds good! Let's get good seats.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 13,
+      "keywords": [
+        "콘서트"
+      ],
+      "target_sentence": "Hi, do you want to go to a concert this weekend?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 14,
+      "keywords": [
+        "콘서트"
+      ],
+      "target_sentence": "Oh, great! What kind of concert is it?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "밴드"
+      ],
+      "target_sentence": "It's my favorite band's performance.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "티켓"
+      ],
+      "target_sentence": "Really? Then we need to buy tickets quickly.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "예약"
+      ],
+      "target_sentence": "Yes, we can reserve tickets online. Let's book it right now.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "자리"
+      ],
+      "target_sentence": "Sounds good! Let's get good seats.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 19,
+      "keywords": [
+        "concert"
+      ],
+      "target_sentence": "Hi, do you want to go to a concert this weekend?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 20,
+      "keywords": [
+        "concert"
+      ],
+      "target_sentence": "Oh, great! What kind of concert is it?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 21,
+      "keywords": [
+        "band"
+      ],
+      "target_sentence": "It's my favorite band's performance.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "tickets"
+      ],
+      "target_sentence": "Really? Then we need to buy tickets quickly.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "online"
+      ],
+      "target_sentence": "Yes, we can reserve tickets online. Let's book it right now.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "seats"
+      ],
+      "target_sentence": "Sounds good! Let's get good seats.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 1,
+      "korean_phrase": "이번 주말에 콘서트 갈래",
+      "foreign_phrase": "Do you want to go to a concert this weekend?"
+    },
+    {
+      "sentence_order": 2,
+      "korean_phrase": "어떤 콘서트인데",
+      "foreign_phrase": "What kind of concert is it?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "가장 좋아하는 밴드의 공연",
+      "foreign_phrase": "My favorite band's performance"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "정말? 그럼 빨리 티켓을 사야겠네.",
+      "foreign_phrase": "Really? Then we need to buy tickets quickly."
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "온라인으로 예매할 수 있어",
+      "foreign_phrase": "We can reserve tickets online"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "지금 바로 예약하자",
+      "foreign_phrase": "Let's book it right now"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "좋아!",
+      "foreign_phrase": "Sounds good!"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "자리 좋은 곳으로 잡자",
+      "foreign_phrase": "Let's get good seats"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 4,
+      "korean_text": "정말? 그럼 빨리 티켓을 사야겠네.",
+      "foreign_text": "Really? Then we need to buy tickets quickly.",
+      "reason": "콘서트 참석 결정 후 티켓 구매라는 다음 행동으로 이어지는 결정적인 역할을 하기 때문입니다."
+    }
+  ]
+}
