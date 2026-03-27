@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-25T15:51:14Z",
-  "total_count": 95,
+  "generated_at": "2026-03-27T15:46:01Z",
+  "total_count": 96,
   "weekly_plan": {
     "generated_at": "2026-03-22T15:05:10Z",
     "week_number": 12,
@@ -21,7 +21,7 @@
         "slug": "asking-for-hotel-recommendations",
         "title": "호텔 추천 요청하기",
         "category": "여행",
-        "used": false
+        "used": true
       }
     ]
   },
@@ -120,6 +120,7 @@
     "camping-trip-planning",
     "art-gallery-visit",
     "managing-credit-card-debt",
-    "attending-a-concert"
+    "attending-a-concert",
+    "asking-for-hotel-recommendations"
   ]
 }

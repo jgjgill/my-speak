@@ -1,0 +1,358 @@
+{
+  "topic": {
+    "id": "be29dd01-7f86-4f70-b546-03d83d4cd3d1",
+    "title": "호텔 추천 요청하기",
+    "category": "여행",
+    "difficulty": "초급",
+    "description": "호텔 추천 요청 시 유용한 기본적인 영어 표현을 익힙니다.",
+    "language_code": "en",
+    "total_sentences": 6
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요. 혹시 호텔 좀 추천해 주실 수 있나요?"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "네, 어떤 종류의 호텔을 찾으시나요?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "저는 1박에 100달러 이하로 깨끗하고 조용한 곳을 찾고 있어요."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "아, 그렇군요. 위치가 좋은 곳도 중요하신가요?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "네, 대중교통 이용이 편리한 곳이면 더 좋겠어요."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "알겠습니다. 몇 군데 추천해 드릴게요."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello. Could you recommend a hotel for me?",
+      "chunked_text": "Hello. | Could you recommend a hotel for me?"
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Yes, what kind of hotel are you looking for?",
+      "chunked_text": "Yes, | what kind of hotel are you looking for?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "I'm looking for a clean and quiet place under $100 per night.",
+      "chunked_text": "I'm looking for | a clean and quiet place | under $100 per night."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Oh, I see. Is a place with a good location also important?",
+      "chunked_text": "Oh, I see. | Is a place with a good location | also important?"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Yes, a place convenient for public transport would be even better.",
+      "chunked_text": "Yes, | a place convenient for public transport | would be even better."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Understood. I will recommend a few places for you.",
+      "chunked_text": "Understood. | I will recommend a few places for you."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "추천",
+        "호텔"
+      ],
+      "target_sentence": "Hello. Could you recommend a hotel for me?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "어떤",
+        "호텔"
+      ],
+      "target_sentence": "Yes, what kind of hotel are you looking for?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "찾고 있어요",
+        "깨끗한",
+        "조용한",
+        "100달러 이하"
+      ],
+      "target_sentence": "I'm looking for a clean and quiet place under $100 per night.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "좋은 위치"
+      ],
+      "target_sentence": "Oh, I see. Is a place with a good location also important?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "대중교통",
+        "편리한"
+      ],
+      "target_sentence": "Yes, a place convenient for public transport would be even better.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "추천",
+        "해드릴게요"
+      ],
+      "target_sentence": "Understood. I will recommend a few places for you.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 7,
+      "keywords": [
+        "추천",
+        "호텔"
+      ],
+      "target_sentence": "Hello. Could you recommend a hotel for me?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "어떤",
+        "호텔"
+      ],
+      "target_sentence": "What kind of hotel are you looking for?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "깨끗한",
+        "100달러"
+      ],
+      "target_sentence": "I'm looking for a clean and quiet place under $100 per night.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "위치"
+      ],
+      "target_sentence": "Is a place with a good location also important?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "대중교통"
+      ],
+      "target_sentence": "Yes, a place convenient for public transport would be even better.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "추천"
+      ],
+      "target_sentence": "Understood. I will recommend a few places for you.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 13,
+      "keywords": [
+        "추천"
+      ],
+      "target_sentence": "Hello. Could you recommend a hotel for me?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 14,
+      "keywords": [
+        "호텔"
+      ],
+      "target_sentence": "What kind of hotel are you looking for?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "깨끗한",
+        "100달러"
+      ],
+      "target_sentence": "I'm looking for a clean and quiet place under $100 per night.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "위치"
+      ],
+      "target_sentence": "Is a place with a good location also important?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "대중교통"
+      ],
+      "target_sentence": "A place convenient for public transport would be even better.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "추천"
+      ],
+      "target_sentence": "I will recommend a few places for you.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 19,
+      "keywords": [
+        "recommend"
+      ],
+      "target_sentence": "Hello. Could you recommend a hotel for me?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 20,
+      "keywords": [
+        "kind"
+      ],
+      "target_sentence": "Yes, what kind of hotel are you looking for?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 21,
+      "keywords": [
+        "clean",
+        "$100"
+      ],
+      "target_sentence": "I'm looking for a clean and quiet place under $100 per night.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "location"
+      ],
+      "target_sentence": "Oh, I see. Is a place with a good location also important?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "public transport"
+      ],
+      "target_sentence": "Yes, a place convenient for public transport would be even better.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "recommend"
+      ],
+      "target_sentence": "Understood. I will recommend a few places for you.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 3,
+      "korean_phrase": "1박에 100달러 이하",
+      "foreign_phrase": "under $100 per night"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "깨끗하고 조용한 곳",
+      "foreign_phrase": "a clean and quiet place"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "위치가 좋은 곳",
+      "foreign_phrase": "a place with a good location"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "대중교통 이용이 편리한 곳",
+      "foreign_phrase": "a place convenient for public transport"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "몇 군데 추천해 드릴게요",
+      "foreign_phrase": "I will recommend a few places for you"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 3,
+      "korean_text": "1박에 100달러 이하로 깨끗하고 조용한 곳을 찾고 있어요.",
+      "foreign_text": "I'm looking for a clean and quiet place under $100 per night.",
+      "reason": "이 문장은 사용자가 원하는 호텔의 가격대와 특징(깨끗하고 조용함)을 명확하게 전달하여 가장 중요합니다."
+    }
+  ]
+}
