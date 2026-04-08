@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-03T15:43:24Z",
-  "total_count": 99,
+  "generated_at": "2026-04-08T15:59:13Z",
+  "total_count": 100,
   "weekly_plan": {
     "generated_at": "2026-04-05T15:08:14Z",
     "week_number": 14,
@@ -9,7 +9,7 @@
         "slug": "tax-preparation-filing",
         "title": "세금 준비 및 신고",
         "category": "금융",
-        "used": false
+        "used": true
       },
       {
         "slug": "understanding-local-customs",
@@ -124,6 +124,7 @@
     "asking-for-hotel-recommendations",
     "exploring-new-city-local-attractions",
     "project-discussion-with-colleagues",
-    "troubleshooting-new-electronic-device"
+    "troubleshooting-new-electronic-device",
+    "tax-preparation-filing"
   ]
 }
