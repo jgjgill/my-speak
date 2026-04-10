@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-08T15:59:13Z",
-  "total_count": 100,
+  "generated_at": "2026-04-10T15:46:16Z",
+  "total_count": 101,
   "weekly_plan": {
     "generated_at": "2026-04-05T15:08:14Z",
     "week_number": 14,
@@ -15,7 +15,7 @@
         "slug": "understanding-local-customs",
         "title": "현지 문화 및 관습 이해",
         "category": "여행",
-        "used": false
+        "used": true
       },
       {
         "slug": "diy-home-repair-discussion",
@@ -125,6 +125,7 @@
     "exploring-new-city-local-attractions",
     "project-discussion-with-colleagues",
     "troubleshooting-new-electronic-device",
-    "tax-preparation-filing"
+    "tax-preparation-filing",
+    "understanding-local-customs"
   ]
 }

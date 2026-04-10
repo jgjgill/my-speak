@@ -1,0 +1,432 @@
+{
+  "topic": {
+    "id": "8658acc5-7a1e-4d08-bd64-4315fa002355",
+    "title": "현지 문화 및 관습 이해",
+    "category": "여행",
+    "difficulty": "초급",
+    "description": "이 콘텐츠는 외국인 여행객이 현지에서 식사할 때 겪을 수 있는 문화적 차이를 이해하고 적절한 예절을 배우는 데 도움을 줍니다.",
+    "language_code": "en",
+    "total_sentences": 7
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요! 혹시 이 지역에서 식사할 때 기본적인 예절이 있을까요?"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "네, 몇 가지 있어요. 예를 들어, 식사 중에 손가락으로 가리키는 것은 실례라고 생각할 수 있습니다."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "그렇군요. 그럼 식탁 위에서 팔꿈치를 올리는 것은 괜찮은가요?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "일반적으로는 팔꿈치를 식탁에 올리는 것은 피하는 것이 좋습니다."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "알겠습니다. 식사를 마치고 접시를 어떻게 처리해야 하는지도 궁금합니다."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "식사를 마치면 접시를 옆으로 살짝 밀어두면 됩니다. 서버가 치워줄 거예요."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "정말 감사합니다! 큰 도움이 되었어요."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello! Are there any **basic etiquette** for dining in this area?",
+      "chunked_text": "Hello! | Are there any basic etiquette | for dining in this area?"
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Yes, there are a few. For example, **pointing with your finger during meals** might be considered rude.",
+      "chunked_text": "Yes, there are a few. | For example, | pointing with your finger during meals | might be considered rude."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "I see. Then is it okay to **put your elbows on the table**?",
+      "chunked_text": "I see. | Then is it okay | to put your elbows on the table?"
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Generally, it's better to avoid **placing your elbows on the table**.",
+      "chunked_text": "Generally, | it's better to avoid | placing your elbows on the table."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Understood. I'm also curious about **what to do with the plate after finishing the meal**.",
+      "chunked_text": "Understood. | I'm also curious about | what to do with the plate after finishing the meal."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Once you're done, **you can just push the plate slightly to the side.** The server will take it away.",
+      "chunked_text": "Once you're done, | you can just push the plate slightly to the side. | The server will take it away."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "Thank you so much! That was very helpful.",
+      "chunked_text": "Thank you so much! | That was very helpful."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "안녕하세요",
+        "혹시",
+        "이 지역",
+        "식사",
+        "기본적인 예절"
+      ],
+      "target_sentence": "Hello! Are there any basic etiquette for dining in this area?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "네",
+        "몇 가지",
+        "예를 들어",
+        "식사 중",
+        "손가락",
+        "가리키는 것",
+        "실례"
+      ],
+      "target_sentence": "Yes, there are a few. For example, pointing with your finger during meals might be considered rude.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "그렇군요",
+        "그럼",
+        "식탁 위",
+        "팔꿈치",
+        "올리는 것",
+        "괜찮은가요"
+      ],
+      "target_sentence": "I see. Then is it okay to put your elbows on the table?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "일반적으로",
+        "피하는 것",
+        "좋습니다"
+      ],
+      "target_sentence": "Generally, it's better to avoid placing your elbows on the table.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "알겠습니다",
+        "궁금합니다",
+        "식사 마치고",
+        "접시",
+        "처리"
+      ],
+      "target_sentence": "Understood. I'm also curious about what to do with the plate after finishing the meal.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "마치면",
+        "밀어두면 됩니다",
+        "서버",
+        "치워줄 거예요"
+      ],
+      "target_sentence": "Once you're done, you can just push the plate slightly to the side. The server will take it away.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "감사합니다",
+        "큰 도움"
+      ],
+      "target_sentence": "Thank you so much! That was very helpful.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "안녕하세요",
+        "예절"
+      ],
+      "target_sentence": "Hello! Are there any basic etiquette for dining in this area?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "가리키는 것",
+        "실례"
+      ],
+      "target_sentence": "Yes, there are a few. For example, pointing with your finger during meals might be considered rude.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "팔꿈치",
+        "괜찮은가요"
+      ],
+      "target_sentence": "I see. Then is it okay to put your elbows on the table?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "팔꿈치",
+        "피하는 것"
+      ],
+      "target_sentence": "Generally, it's better to avoid placing your elbows on the table.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "접시",
+        "처리"
+      ],
+      "target_sentence": "Understood. I'm also curious about what to do with the plate after finishing the meal.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "밀어두면",
+        "서버"
+      ],
+      "target_sentence": "Once you're done, you can just push the plate slightly to the side. The server will take it away.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "감사합니다",
+        "도움"
+      ],
+      "target_sentence": "Thank you so much! That was very helpful.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "예절"
+      ],
+      "target_sentence": "Hello! Are there any basic etiquette for dining in this area?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "가리키는 것"
+      ],
+      "target_sentence": "Yes, there are a few. For example, pointing with your finger during meals might be considered rude.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "팔꿈치"
+      ],
+      "target_sentence": "I see. Then is it okay to put your elbows on the table?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "피하는 것"
+      ],
+      "target_sentence": "Generally, it's better to avoid placing your elbows on the table.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "접시"
+      ],
+      "target_sentence": "Understood. I'm also curious about what to do with the plate after finishing the meal.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "밀어두면"
+      ],
+      "target_sentence": "Once you're done, you can just push the plate slightly to the side. The server will take it away.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "도움"
+      ],
+      "target_sentence": "Thank you so much! That was very helpful.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "etiquette"
+      ],
+      "target_sentence": "Hello! Are there any basic etiquette for dining in this area?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "pointing"
+      ],
+      "target_sentence": "Yes, there are a few. For example, pointing with your finger during meals might be considered rude.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "elbows"
+      ],
+      "target_sentence": "I see. Then is it okay to put your elbows on the table?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "avoid"
+      ],
+      "target_sentence": "Generally, it's better to avoid placing your elbows on the table.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "plate"
+      ],
+      "target_sentence": "Understood. I'm also curious about what to do with the plate after finishing the meal.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "push"
+      ],
+      "target_sentence": "Once you're done, you can just push the plate slightly to the side. The server will take it away.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "helpful"
+      ],
+      "target_sentence": "Thank you so much! That was very helpful.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 1,
+      "korean_phrase": "기본적인 예절",
+      "foreign_phrase": "basic etiquette"
+    },
+    {
+      "sentence_order": 2,
+      "korean_phrase": "식사 중에 손가락으로 가리키는 것",
+      "foreign_phrase": "pointing with your finger during meals"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "식탁 위에서 팔꿈치를 올리는 것",
+      "foreign_phrase": "putting your elbows on the table"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "팔꿈치를 식탁에 올리는 것",
+      "foreign_phrase": "placing elbows on the table"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "식사를 마치고 접시를 어떻게 처리해야 하는지",
+      "foreign_phrase": "what to do with the plate after finishing the meal"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "접시를 옆으로 살짝 밀어두면 됩니다.",
+      "foreign_phrase": "you can just push the plate slightly to the side."
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요! 혹시 이 지역에서 식사할 때 기본적인 예절이 있을까요?",
+      "foreign_text": "Hello! Are there any basic etiquette for dining in this area?",
+      "reason": "여행자가 현지 문화를 배우려는 의도를 명확히 보여주는 문장입니다."
+    }
+  ]
+}
