@@ -2,25 +2,25 @@
   "generated_at": "2026-04-10T15:46:16Z",
   "total_count": 101,
   "weekly_plan": {
-    "generated_at": "2026-04-05T15:08:14Z",
-    "week_number": 14,
+    "generated_at": "2026-04-12T15:12:27Z",
+    "week_number": 15,
     "planned_slugs": [
       {
-        "slug": "tax-preparation-filing",
-        "title": "세금 준비 및 신고",
+        "slug": "learning-photography-basics",
+        "title": "사진 촬영 기본 배우기",
+        "category": "레저",
+        "used": false
+      },
+      {
+        "slug": "understanding-investment-portfolios",
+        "title": "투자 포트폴리오 이해하기",
         "category": "금융",
-        "used": true
+        "used": false
       },
       {
-        "slug": "understanding-local-customs",
-        "title": "현지 문화 및 관습 이해",
-        "category": "여행",
-        "used": true
-      },
-      {
-        "slug": "diy-home-repair-discussion",
-        "title": "DIY 주택 수리 논의",
-        "category": "일상",
+        "slug": "scheduling-doctor-appointment",
+        "title": "의사 진료 예약하기",
+        "category": "의료",
         "used": false
       }
     ]
