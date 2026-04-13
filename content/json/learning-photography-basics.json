@@ -1,0 +1,497 @@
+{
+  "topic": {
+    "id": "50beb8f8-74e5-4ba4-84fc-643eaef4c843",
+    "title": "사진 촬영 기본 배우기",
+    "category": "레저",
+    "difficulty": "초급",
+    "description": "사진 촬영의 기본적인 요소와 초보자를 위한 팁을 배우는 영어 학습 콘텐츠입니다.",
+    "language_code": "en",
+    "total_sentences": 8
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "요즘 사진 찍는 실력을 좀 늘리고 싶어, 특히 여행 갈 때 쓸 사진들 말이야."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "와, 그거 좋다! 사진은 정말 보람 있는 취미지. 어떤 사진을 주로 찍고 싶어?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "주로 풍경 사진이랑 우리 사진도 몇 장 찍고 싶어. 어디서부터 시작해야 할지 모르겠네."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "풍경 사진에는 빛을 잘 담는 것이 중요해. 해 뜨고 난 직후나 해 지기 전인 골든 아워가 보통 가장 좋은 시간이야."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "골든 아워, 알겠어. 그럼 인물 사진은 어때?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "인물 사진에서는 배경이 인물에게서 주의를 분산시키지 않도록 신경 쓰고, 얼굴에 조명이 잘 들어오는지 확인하는 게 좋아."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "그렇구나. 그럼 빛이랑 배경에 집중하면 되겠네. 팁 고마워!"
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "천만에! 연습이 완벽을 만드는 거지."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "I want to improve my photography skills lately, especially for our trip.",
+      "chunked_text": "I want to improve my photography skills lately, | especially for our trip."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Wow, that's great! Photography is a very rewarding hobby. What kind of photos do you mainly want to take?",
+      "chunked_text": "Wow, that's great! | Photography is a very rewarding hobby. | What kind of photos do you mainly want to take?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "I mainly want to take landscape photos and a few pictures of us. I'm not sure where to start.",
+      "chunked_text": "I mainly want to take landscape photos | and a few pictures of us. | I'm not sure where to start."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "For landscape photos, capturing the light is important. The golden hour, right after sunrise or before sunset, is usually the best time.",
+      "chunked_text": "For landscape photos, | capturing the light is important. | The golden hour, | right after sunrise or before sunset, | is usually the best time."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Golden hour, got it. How about portrait photos?",
+      "chunked_text": "Golden hour, got it. | How about portrait photos?"
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "For portrait photos, pay attention so that the background doesn't distract from the person, and make sure the lighting is good on their face.",
+      "chunked_text": "For portrait photos, | pay attention so that the background doesn't distract from the person, | and make sure the lighting is good on their face."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "I see. So, I should focus on light and background. Thanks for the tips!",
+      "chunked_text": "I see. | So, I should focus on light and background. | Thanks for the tips!"
+    },
+    {
+      "sentence_order": 8,
+      "foreign_text": "You're welcome! Practice makes perfect.",
+      "chunked_text": "You're welcome! | Practice makes perfect."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "요즘",
+        "사진 실력",
+        "늘리고 싶어",
+        "특히",
+        "여행"
+      ],
+      "target_sentence": "I want to improve my photography skills lately, especially for our trip.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "좋다",
+        "사진",
+        "보람",
+        "취미",
+        "어떤 사진",
+        "주로",
+        "찍고 싶어"
+      ],
+      "target_sentence": "Wow, that's great! Photography is a very rewarding hobby. What kind of photos do you mainly want to take?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "풍경 사진",
+        "우리 사진",
+        "몇 장",
+        "찍고 싶어",
+        "어디서부터",
+        "시작해야 할지",
+        "모르겠네"
+      ],
+      "target_sentence": "I mainly want to take landscape photos and a few pictures of us. I'm not sure where to start.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "풍경 사진",
+        "빛",
+        "잘 담는 것",
+        "중요해",
+        "골든 아워",
+        "가장 좋은 시간"
+      ],
+      "target_sentence": "For landscape photos, capturing the light is important. The golden hour, right after sunrise or before sunset, is usually the best time.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "골든 아워",
+        "알겠어",
+        "인물 사진"
+      ],
+      "target_sentence": "Golden hour, got it. How about portrait photos?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "인물 사진",
+        "배경",
+        "주의",
+        "조명",
+        "얼굴"
+      ],
+      "target_sentence": "For portrait photos, pay attention so that the background doesn't distract from the person, and make sure the lighting is good on their face.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "그렇구나",
+        "빛",
+        "배경",
+        "집중",
+        "팁",
+        "고마워"
+      ],
+      "target_sentence": "I see. So, I should focus on light and background. Thanks for the tips!",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 8,
+      "keywords": [
+        "천만에",
+        "연습"
+      ],
+      "target_sentence": "You're welcome! Practice makes perfect.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "사진",
+        "여행"
+      ],
+      "target_sentence": "I want to improve my photography skills lately, especially for our trip.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "사진",
+        "어떤 사진"
+      ],
+      "target_sentence": "Wow, that's great! Photography is a very rewarding hobby. What kind of photos do you mainly want to take?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "풍경",
+        "사진",
+        "시작"
+      ],
+      "target_sentence": "I mainly want to take landscape photos and a few pictures of us. I'm not sure where to start.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "풍경",
+        "빛",
+        "골든 아워"
+      ],
+      "target_sentence": "For landscape photos, capturing the light is important. The golden hour, right after sunrise or before sunset, is usually the best time.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "골든",
+        "인물"
+      ],
+      "target_sentence": "Golden hour, got it. How about portrait photos?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "배경",
+        "조명"
+      ],
+      "target_sentence": "For portrait photos, pay attention so that the background doesn't distract from the person, and make sure the lighting is good on their face.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 15,
+      "keywords": [
+        "빛",
+        "배경",
+        "팁"
+      ],
+      "target_sentence": "I see. So, I should focus on light and background. Thanks for the tips!",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 16,
+      "keywords": [
+        "연습"
+      ],
+      "target_sentence": "You're welcome! Practice makes perfect.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "사진",
+        "여행"
+      ],
+      "target_sentence": "I want to improve my photography skills lately, especially for our trip.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "사진",
+        "어떤"
+      ],
+      "target_sentence": "Wow, that's great! Photography is a very rewarding hobby. What kind of photos do you mainly want to take?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "풍경",
+        "시작"
+      ],
+      "target_sentence": "I mainly want to take landscape photos and a few pictures of us. I'm not sure where to start.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "빛",
+        "골든 아워"
+      ],
+      "target_sentence": "For landscape photos, capturing the light is important. The golden hour, right after sunrise or before sunset, is usually the best time.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "골든",
+        "인물"
+      ],
+      "target_sentence": "Golden hour, got it. How about portrait photos?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 22,
+      "keywords": [
+        "배경",
+        "조명"
+      ],
+      "target_sentence": "For portrait photos, pay attention so that the background doesn't distract from the person, and make sure the lighting is good on their face.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 23,
+      "keywords": [
+        "빛",
+        "배경"
+      ],
+      "target_sentence": "I see. So, I should focus on light and background. Thanks for the tips!",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 24,
+      "keywords": [
+        "연습"
+      ],
+      "target_sentence": "You're welcome! Practice makes perfect.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "photography",
+        "trip"
+      ],
+      "target_sentence": "I want to improve my photography skills lately, especially for our trip.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "photography",
+        "photos"
+      ],
+      "target_sentence": "Wow, that's great! Photography is a very rewarding hobby. What kind of photos do you mainly want to take?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "landscape",
+        "start"
+      ],
+      "target_sentence": "I mainly want to take landscape photos and a few pictures of us. I'm not sure where to start.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "light",
+        "golden hour"
+      ],
+      "target_sentence": "For landscape photos, capturing the light is important. The golden hour, right after sunrise or before sunset, is usually the best time.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 29,
+      "keywords": [
+        "golden hour",
+        "portrait"
+      ],
+      "target_sentence": "Golden hour, got it. How about portrait photos?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 30,
+      "keywords": [
+        "background",
+        "lighting"
+      ],
+      "target_sentence": "For portrait photos, pay attention so that the background doesn't distract from the person, and make sure the lighting is good on their face.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 31,
+      "keywords": [
+        "light",
+        "background",
+        "tips"
+      ],
+      "target_sentence": "I see. So, I should focus on light and background. Thanks for the tips!",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 32,
+      "keywords": [
+        "practice"
+      ],
+      "target_sentence": "You're welcome! Practice makes perfect.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 4,
+      "korean_phrase": "빛을 잘 담는 것",
+      "foreign_phrase": "capturing the light"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "골든 아워",
+      "foreign_phrase": "golden hour"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "배경이 인물에게서 주의를 분산시키지 않도록",
+      "foreign_phrase": "the background doesn't distract from the person"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "조명이 잘 들어오는지",
+      "foreign_phrase": "lighting is good on their face"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 4,
+      "korean_text": "풍경 사진에는 빛을 잘 담는 것이 중요해. 해 뜨고 난 직후나 해 지기 전인 골든 아워가 보통 가장 좋은 시간이야.",
+      "foreign_text": "For landscape photos, capturing the light is important. The golden hour, right after sunrise or before sunset, is usually the best time.",
+      "reason": "풍경 사진의 핵심 원칙과 시간대를 구체적으로 설명하여 초보자가 사진 촬영의 기본을 이해하는 데 도움을 주기 때문입니다."
+    }
+  ]
+}
