@@ -1,0 +1,429 @@
+{
+  "topic": {
+    "id": "c61fd5f2-28ea-4fb3-88bb-10b54f66f024",
+    "title": "의사 진료 예약하기",
+    "category": "의료",
+    "difficulty": "초급",
+    "description": "이 콘텐츠는 외국인 환자가 병원에 전화하여 진료 예약을 하는 상황을 연습할 수 있도록 돕습니다.",
+    "language_code": "en",
+    "total_sentences": 8
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 병원입니다. 무엇을 도와드릴까요?"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "안녕하세요. 의사 선생님 예약을 하고 싶습니다."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "네, 언제 방문하시겠어요?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "내일 오후 3시 괜찮을까요?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "잠시만요... 네, 그 시간 가능합니다."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "제 이름은 존 스미스입니다."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "알겠습니다. 존 스미스 씨, 내일 오후 3시에 예약되었습니다."
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "감사합니다."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, this is the hospital. How can I help you?",
+      "chunked_text": "Hello, | this is the hospital. | How can I help you?"
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "I would like to schedule a doctor's appointment.",
+      "chunked_text": "I would like to schedule | a doctor's appointment."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Yes, when would you like to come in?",
+      "chunked_text": "Yes, | when would you like to come in?"
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Would tomorrow afternoon at 3 PM be okay?",
+      "chunked_text": "Would tomorrow afternoon at 3 PM | be okay?"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Yes, that time is available.",
+      "chunked_text": "Yes, | that time is available."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "My name is John Smith.",
+      "chunked_text": "My name is | John Smith."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "Mr. John Smith, you are booked for tomorrow at 3 PM.",
+      "chunked_text": "Mr. John Smith, | you are booked for | tomorrow at 3 PM."
+    },
+    {
+      "sentence_order": 8,
+      "foreign_text": "Thank you.",
+      "chunked_text": "Thank you."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "무엇을 도와드릴까요"
+      ],
+      "target_sentence": "Hello, this is the hospital. How can I help you?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "의사 선생님 예약",
+        "싶습니다"
+      ],
+      "target_sentence": "I would like to schedule a doctor's appointment.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "언제",
+        "방문하시겠어요"
+      ],
+      "target_sentence": "Yes, when would you like to come in?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "내일 오후 3시",
+        "괜찮을까요"
+      ],
+      "target_sentence": "Would tomorrow afternoon at 3 PM be okay?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "네",
+        "시간",
+        "가능합니다"
+      ],
+      "target_sentence": "Yes, that time is available.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "제 이름은",
+        "존 스미스"
+      ],
+      "target_sentence": "My name is John Smith.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "존 스미스 씨",
+        "내일 3시",
+        "예약"
+      ],
+      "target_sentence": "Mr. John Smith, you are booked for tomorrow at 3 PM.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "도와드릴까요"
+      ],
+      "target_sentence": "Hello, this is the hospital. How can I help you?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "예약",
+        "싶습니다"
+      ],
+      "target_sentence": "I would like to schedule a doctor's appointment.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "언제"
+      ],
+      "target_sentence": "Yes, when would you like to come in?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "내일 3시"
+      ],
+      "target_sentence": "Would tomorrow afternoon at 3 PM be okay?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "가능"
+      ],
+      "target_sentence": "Yes, that time is available.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "이름"
+      ],
+      "target_sentence": "My name is John Smith.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "존 스미스 씨",
+        "내일 3시"
+      ],
+      "target_sentence": "Mr. John Smith, you are booked for tomorrow at 3 PM.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "무엇을"
+      ],
+      "target_sentence": "How can I help you?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "예약"
+      ],
+      "target_sentence": "Doctor's appointment.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "언제"
+      ],
+      "target_sentence": "When?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "내일 3시"
+      ],
+      "target_sentence": "Tomorrow 3 PM?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "가능"
+      ],
+      "target_sentence": "Available.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "이름"
+      ],
+      "target_sentence": "John Smith.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "존 스미스 씨"
+      ],
+      "target_sentence": "Mr. John Smith.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "get"
+      ],
+      "target_sentence": "Hello, this is the hospital. How can I help you?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "schedule"
+      ],
+      "target_sentence": "I would like to schedule a doctor's appointment.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "when"
+      ],
+      "target_sentence": "Yes, when would you like to come in?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "tomorrow"
+      ],
+      "target_sentence": "Would tomorrow afternoon at 3 PM be okay?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "available"
+      ],
+      "target_sentence": "Yes, that time is available.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "name"
+      ],
+      "target_sentence": "My name is John Smith.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "booked"
+      ],
+      "target_sentence": "Mr. John Smith, you are booked for tomorrow at 3 PM.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "의사 선생님 예약",
+      "foreign_phrase": "doctor's appointment"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "언제 방문하시겠어요?",
+      "foreign_phrase": "When would you like to come in?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "내일 오후 3시",
+      "foreign_phrase": "tomorrow afternoon at 3 PM"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "그 시간 가능합니다.",
+      "foreign_phrase": "Yes, that time is available."
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "제 이름은",
+      "foreign_phrase": "My name is"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "존 스미스",
+      "foreign_phrase": "John Smith"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "존 스미스 씨",
+      "foreign_phrase": "Mr. John Smith"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "내일 오후 3시",
+      "foreign_phrase": "tomorrow at 3 PM"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 2,
+      "korean_text": "의사 선생님 예약을 하고 싶습니다.",
+      "foreign_text": "I would like to schedule a doctor's appointment.",
+      "reason": "진료 예약을 요청하는 핵심적인 의도 전달"
+    }
+  ]
+}

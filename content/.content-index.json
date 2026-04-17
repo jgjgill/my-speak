@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-15T15:51:55Z",
-  "total_count": 103,
+  "generated_at": "2026-04-17T15:46:45Z",
+  "total_count": 104,
   "weekly_plan": {
     "generated_at": "2026-04-12T15:12:27Z",
     "week_number": 15,
@@ -21,7 +21,7 @@
         "slug": "scheduling-doctor-appointment",
         "title": "의사 진료 예약하기",
         "category": "의료",
-        "used": false
+        "used": true
       }
     ]
   },
@@ -128,6 +128,7 @@
     "tax-preparation-filing",
     "understanding-local-customs",
     "learning-photography-basics",
-    "understanding-investment-portfolios"
+    "understanding-investment-portfolios",
+    "scheduling-doctor-appointment"
   ]
 }
