@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-17T15:46:45Z",
-  "total_count": 104,
+  "generated_at": "2026-04-20T15:55:46Z",
+  "total_count": 105,
   "weekly_plan": {
     "generated_at": "2026-04-19T15:12:48Z",
     "week_number": 16,
@@ -9,7 +9,7 @@
         "slug": "lost-luggage-airport",
         "title": "공항 수하물 분실 대처",
         "category": "여행",
-        "used": false
+        "used": true
       },
       {
         "slug": "project-status-presentation",
@@ -129,6 +129,7 @@
     "understanding-local-customs",
     "learning-photography-basics",
     "understanding-investment-portfolios",
-    "scheduling-doctor-appointment"
+    "scheduling-doctor-appointment",
+    "lost-luggage-airport"
   ]
 }

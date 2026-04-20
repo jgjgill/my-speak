@@ -1,0 +1,409 @@
+{
+  "topic": {
+    "id": "a96d82a3-10eb-4caf-9d4f-85119e54b439",
+    "title": "공항 수하물 분실 대처",
+    "category": "여행",
+    "difficulty": "초급",
+    "description": "공항에서 짐을 분실했을 때 필요한 표현을 배웁니다.",
+    "language_code": "en",
+    "total_sentences": 7
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 제 짐이 나오지 않았어요."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "제 수하물이 분실된 것 같아요."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "제가 어떻게 해야 할까요?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "여기에 제 비행기 정보가 있어요."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "제 가방은 파란색이에요."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "빨간색 꼬리표가 있어요."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "제 짐을 찾는 것을 도와주실 수 있나요?"
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, my luggage didn't arrive.",
+      "chunked_text": "Hello, | my luggage didn't arrive."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "My luggage seems to be lost.",
+      "chunked_text": "My luggage seems to be lost. | What should I do?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "What should I do?",
+      "chunked_text": "Here is my flight information. | My bag is blue. | It has a red tag."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Here is my flight information.",
+      "chunked_text": "Can you help me find my luggage?"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "My bag is blue.",
+      "chunked_text": "My bag is blue."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "It has a red tag.",
+      "chunked_text": "It has a red tag."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "Can you help me find my luggage?",
+      "chunked_text": "Can you help me find my luggage?"
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "안녕하세요",
+        "제 짐이 나오지 않았어요"
+      ],
+      "target_sentence": "Hello, my luggage didn't arrive.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "수하물이 분실된 것 같아요"
+      ],
+      "target_sentence": "My luggage seems to be lost.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "제가 어떻게 해야 할까요"
+      ],
+      "target_sentence": "What should I do?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "여기에 제 비행기 정보가 있어요"
+      ],
+      "target_sentence": "Here is my flight information.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "제 가방은 파란색이에요"
+      ],
+      "target_sentence": "My bag is blue.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "빨간색 꼬리표가 있어요"
+      ],
+      "target_sentence": "It has a red tag.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "제 짐을 찾는 것을 도와주실 수 있나요"
+      ],
+      "target_sentence": "Can you help me find my luggage?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "짐",
+        "나오지 않음"
+      ],
+      "target_sentence": "Hello, my luggage didn't arrive.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "분실",
+        "수하물"
+      ],
+      "target_sentence": "My luggage seems to be lost.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "어떻게",
+        "할까요"
+      ],
+      "target_sentence": "What should I do?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "비행기",
+        "정보"
+      ],
+      "target_sentence": "Here is my flight information.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "가방",
+        "파란색"
+      ],
+      "target_sentence": "My bag is blue.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "빨간색",
+        "꼬리표"
+      ],
+      "target_sentence": "It has a red tag.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "도와주세요",
+        "찾기"
+      ],
+      "target_sentence": "Can you help me find my luggage?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "짐",
+        "없음"
+      ],
+      "target_sentence": "My luggage didn't arrive.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "분실"
+      ],
+      "target_sentence": "My luggage seems to be lost.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "무엇?"
+      ],
+      "target_sentence": "What should I do?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "비행기"
+      ],
+      "target_sentence": "Here is my flight information.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "파란색"
+      ],
+      "target_sentence": "My bag is blue.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "꼬리표"
+      ],
+      "target_sentence": "It has a red tag.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "도움"
+      ],
+      "target_sentence": "Can you help me find my luggage?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "luggage"
+      ],
+      "target_sentence": "Hello, my luggage didn't arrive.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "lost"
+      ],
+      "target_sentence": "My luggage seems to be lost.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "do"
+      ],
+      "target_sentence": "What should I do?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "information"
+      ],
+      "target_sentence": "Here is my flight information.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "blue"
+      ],
+      "target_sentence": "My bag is blue.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "tag"
+      ],
+      "target_sentence": "It has a red tag.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "find"
+      ],
+      "target_sentence": "Can you help me find my luggage?",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "수하물이 분실된 것 같아요",
+      "foreign_phrase": "My luggage seems to be lost"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "제가 어떻게 해야 할까요",
+      "foreign_phrase": "What should I do"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "여기에 제 비행기 정보가 있어요",
+      "foreign_phrase": "Here is my flight information"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "제 가방은 파란색이에요",
+      "foreign_phrase": "My bag is blue"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "빨간색 꼬리표가 있어요",
+      "foreign_phrase": "It has a red tag"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "제 짐을 찾는 것을 도와주실 수 있나요",
+      "foreign_phrase": "Can you help me find my luggage"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 2,
+      "korean_text": "수하물이 분실된 것 같아요",
+      "foreign_text": "My luggage seems to be lost.",
+      "reason": "가장 중요하게 신고해야 할 내용이기 때문입니다."
+    }
+  ]
+}
