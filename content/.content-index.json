@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-20T15:55:46Z",
-  "total_count": 105,
+  "generated_at": "2026-04-22T15:55:13Z",
+  "total_count": 106,
   "weekly_plan": {
     "generated_at": "2026-04-19T15:12:48Z",
     "week_number": 16,
@@ -15,7 +15,7 @@
         "slug": "project-status-presentation",
         "title": "프로젝트 현황 발표",
         "category": "비즈니스",
-        "used": false
+        "used": true
       },
       {
         "slug": "book-discussion-with-friend",
@@ -130,6 +130,7 @@
     "learning-photography-basics",
     "understanding-investment-portfolios",
     "scheduling-doctor-appointment",
-    "lost-luggage-airport"
+    "lost-luggage-airport",
+    "project-status-presentation"
   ]
 }

@@ -1,0 +1,370 @@
+{
+  "topic": {
+    "id": "2640ed8e-a0d2-47b1-b751-5406343e058a",
+    "title": "프로젝트 현황 발표",
+    "category": "비즈니스",
+    "difficulty": "초급",
+    "description": "프로젝트의 현재 진행 상황과 향후 계획을 간단하고 명확하게 발표하는 방법을 배웁니다.",
+    "language_code": "en",
+    "total_sentences": 6
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "다음 주에 프로젝트 현황을 발표해야 해요."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "네, 어떤 내용을 포함해야 할까요?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "현재까지 진행된 작업과 앞으로 할 일을 중심으로 설명해야 해요."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "발표 시간은 얼마나 되나요?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "10분 정도입니다. 간단하고 명확하게 전달하는 것이 중요해요."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "알겠습니다. 슬라이드를 준비하는 것을 도울게요."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "I need to present the project status next week.",
+      "chunked_text": "I need to present the project status next week. | Yes, | what should we include? | We should explain | the work done so far | and the tasks ahead. | How much time do we have | for the presentation? | About 10 minutes. | It's important | to convey it simply and clearly. | Okay. | I can help prepare the slides."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Yes, what should we include?",
+      "chunked_text": "Yes, what should we include?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "We should explain the work done so far and the tasks ahead.",
+      "chunked_text": "We should explain the work done so far and the tasks ahead."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "How much time do we have for the presentation?",
+      "chunked_text": "How much time do we have for the presentation?"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "About 10 minutes. It's important to convey it simply and clearly.",
+      "chunked_text": "About 10 minutes. It's important to convey it simply and clearly."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Okay. I can help prepare the slides.",
+      "chunked_text": "Okay. I can help prepare the slides."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "다음 주",
+        "프로젝트 현황",
+        "발표해야 해요"
+      ],
+      "target_sentence": "I need to present the project status next week.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "네",
+        "어떤 내용",
+        "포함해야 할까요?"
+      ],
+      "target_sentence": "Yes, what should we include?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "현재까지 진행된 작업",
+        "앞으로 할 일",
+        "중심으로",
+        "설명해야 해요"
+      ],
+      "target_sentence": "We should explain the work done so far and the tasks ahead.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "발표 시간",
+        "얼마나 되나요?"
+      ],
+      "target_sentence": "How much time do we have for the presentation?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "10분",
+        "간단하고 명확하게",
+        "전달",
+        "중요해요"
+      ],
+      "target_sentence": "About 10 minutes. It's important to convey it simply and clearly.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "알겠습니다",
+        "슬라이드",
+        "준비하는 것",
+        "도울게요"
+      ],
+      "target_sentence": "Okay. I can help prepare the slides.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 7,
+      "keywords": [
+        "프로젝트",
+        "발표"
+      ],
+      "target_sentence": "I need to present the project status next week.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "어떤 내용"
+      ],
+      "target_sentence": "Yes, what should we include?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "작업",
+        "할 일",
+        "설명"
+      ],
+      "target_sentence": "We should explain the work done so far and the tasks ahead.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "발표 시간"
+      ],
+      "target_sentence": "How much time do we have for the presentation?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "10분",
+        "명확하게"
+      ],
+      "target_sentence": "About 10 minutes. It's important to convey it simply and clearly.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "슬라이드",
+        "도울게요"
+      ],
+      "target_sentence": "Okay. I can help prepare the slides.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 13,
+      "keywords": [
+        "프로젝트 발표"
+      ],
+      "target_sentence": "I need to present the project status next week.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 14,
+      "keywords": [
+        "내용"
+      ],
+      "target_sentence": "Yes, what should we include?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "설명"
+      ],
+      "target_sentence": "We should explain the work done so far and the tasks ahead.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "시간"
+      ],
+      "target_sentence": "How much time do we have for the presentation?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "명확하게"
+      ],
+      "target_sentence": "About 10 minutes. It's important to convey it simply and clearly.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "도움"
+      ],
+      "target_sentence": "Okay. I can help prepare the slides.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 19,
+      "keywords": [
+        "present"
+      ],
+      "target_sentence": "I need to present the project status next week.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 20,
+      "keywords": [
+        "include"
+      ],
+      "target_sentence": "Yes, what should we include?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 21,
+      "keywords": [
+        "explain"
+      ],
+      "target_sentence": "We should explain the work done so far and the tasks ahead.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "time"
+      ],
+      "target_sentence": "How much time do we have for the presentation?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "clearly"
+      ],
+      "target_sentence": "About 10 minutes. It's important to convey it simply and clearly.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "help"
+      ],
+      "target_sentence": "Okay. I can help prepare the slides.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "어떤 내용을 포함해야 할까요?",
+      "foreign_phrase": "What should we include?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "현재까지 진행된 작업",
+      "foreign_phrase": "work done so far"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "앞으로 할 일",
+      "foreign_phrase": "tasks ahead"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "발표 시간은 얼마나 되나요?",
+      "foreign_phrase": "How much time do we have for the presentation?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "간단하고 명확하게",
+      "foreign_phrase": "simply and clearly"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "슬라이드를 준비하는 것을 도울게요.",
+      "foreign_phrase": "I can help prepare the slides."
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 3,
+      "korean_text": "현재까지 진행된 작업과 앞으로 할 일을 중심으로 설명해야 해요.",
+      "foreign_text": "We should explain the work done so far and the tasks ahead.",
+      "reason": "프로젝트 현황 발표의 핵심 내용을 간결하게 설명하기 때문입니다."
+    }
+  ]
+}
