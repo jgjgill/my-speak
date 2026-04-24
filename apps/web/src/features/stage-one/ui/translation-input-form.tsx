@@ -54,8 +54,18 @@ export default function TranslationInputForm({
 				<textarea
 					{...register("translated", { required: true })}
 					rows={2}
-					placeholder="영어 번역을 입력하세요."
+					placeholder="영어 번역을 입력하세요. (Enter: 등록, Shift+Enter: 줄바꿈)"
 					className="form-textarea mt-1"
+					onKeyDown={(e) => {
+						if (
+							e.key === "Enter" &&
+							!e.shiftKey &&
+							!e.nativeEvent.isComposing
+						) {
+							e.preventDefault();
+							handleSubmit(onSubmit)();
+						}
+					}}
 				/>
 			</label>
 
