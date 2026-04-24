@@ -33,12 +33,12 @@ Do you understand? Yes, thank you.
 
 # 2단계: 끊어읽기 버전
 
-Hello, | could you explain what an investment portfolio is? |
-Simply put, | it means a collection of various types of investment assets. |
-This is a good way | to spread the risk of investment. |
-It's important to allocate assets | according to your financial goals and risk tolerance. |
-Consistently managing | from a long-term perspective | is the key to success. |
-Do you understand? | Yes, thank you. |
+Hello, | could you explain | what an investment portfolio is?
+Simply put, | it means a collection | of various types of investment assets.
+This is a good way | to spread the risk of investment.
+It's important | to allocate assets | according to your financial goals | and risk tolerance.
+Consistently managing | from a long-term perspective | is the key to success.
+Do you understand? | Yes, thank you.
 
 # 3단계: 사용자 자유 연습
 

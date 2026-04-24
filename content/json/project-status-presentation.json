@@ -38,32 +38,32 @@
     {
       "sentence_order": 1,
       "foreign_text": "I need to present the project status next week.",
-      "chunked_text": "I need to present the project status next week. | Yes, | what should we include? | We should explain | the work done so far | and the tasks ahead. | How much time do we have | for the presentation? | About 10 minutes. | It's important | to convey it simply and clearly. | Okay. | I can help prepare the slides."
+      "chunked_text": "I need to present | the project status | next week."
     },
     {
       "sentence_order": 2,
       "foreign_text": "Yes, what should we include?",
-      "chunked_text": "Yes, what should we include?"
+      "chunked_text": "Yes, | what should we include?"
     },
     {
       "sentence_order": 3,
       "foreign_text": "We should explain the work done so far and the tasks ahead.",
-      "chunked_text": "We should explain the work done so far and the tasks ahead."
+      "chunked_text": "We should explain | the work done so far | and the tasks ahead."
     },
     {
       "sentence_order": 4,
       "foreign_text": "How much time do we have for the presentation?",
-      "chunked_text": "How much time do we have for the presentation?"
+      "chunked_text": "How much time do we have | for the presentation?"
     },
     {
       "sentence_order": 5,
       "foreign_text": "About 10 minutes. It's important to convey it simply and clearly.",
-      "chunked_text": "About 10 minutes. It's important to convey it simply and clearly."
+      "chunked_text": "About 10 minutes. | It's important | to convey it | simply and clearly."
     },
     {
       "sentence_order": 6,
       "foreign_text": "Okay. I can help prepare the slides.",
-      "chunked_text": "Okay. I can help prepare the slides."
+      "chunked_text": "Okay. | I can help | prepare the slides."
     }
   ],
   "keyword_speeches": [

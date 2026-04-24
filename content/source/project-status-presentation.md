@@ -33,7 +33,12 @@ Okay. I can help prepare the slides.
 
 # 2단계: 끊어읽기 버전
 
-I need to present the project status next week. | Yes, | what should we include? | We should explain | the work done so far | and the tasks ahead. | How much time do we have | for the presentation? | About 10 minutes. | It's important | to convey it simply and clearly. | Okay. | I can help prepare the slides.
+I need to present | the project status | next week.
+Yes, | what should we include?
+We should explain | the work done so far | and the tasks ahead.
+How much time do we have | for the presentation?
+About 10 minutes. | It's important | to convey it | simply and clearly.
+Okay. | I can help | prepare the slides.
 
 # 3단계: 사용자 자유 연습
 
