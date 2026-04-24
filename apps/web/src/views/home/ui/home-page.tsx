@@ -11,7 +11,7 @@ export default async function HomePage() {
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-24">
 				<div className="text-center">
 					<div className="mb-8">
-						<div className="w-20 h-20 mx-auto mb-6 rounded-full bg-primary flex items-center justify-center overflow-hidden">
+						<div className="w-20 h-20 mx-auto mb-6 rounded-full bg-myspeak-primary flex items-center justify-center overflow-hidden">
 							<Image
 								src="/app-icon.png"
 								alt="My Speak 로고"
@@ -20,7 +20,7 @@ export default async function HomePage() {
 								priority
 							/>
 						</div>
-						<h1 className="text-hero font-bold text-korean text-primary mb-4">
+						<h1 className="text-hero font-bold text-korean text-myspeak-primary mb-4">
 							My Speak
 						</h1>
 						<p className="text-title text-gray-600 max-w-2xl mx-auto leading-relaxed">
@@ -36,7 +36,7 @@ export default async function HomePage() {
 						>
 							<Link href="/en" className="topic-card group">
 								<div className="flex items-center mb-4">
-									<div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold text-lg mr-4">
+									<div className="w-12 h-12 rounded-full bg-myspeak-primary flex items-center justify-center text-white font-bold text-lg mr-4">
 										EN
 									</div>
 									<div>
@@ -45,7 +45,7 @@ export default async function HomePage() {
 										</h3>
 									</div>
 								</div>
-								<div className="flex items-center text-primary font-medium">
+								<div className="flex items-center text-myspeak-primary font-medium">
 									<span>학습 시작하기</span>
 									<svg
 										className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"
@@ -151,7 +151,7 @@ export default async function HomePage() {
 
 					<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
 						<div className="text-center p-6 rounded-xl border border-blue-100 bg-blue-50">
-							<div className="w-12 h-12 mx-auto mb-4 rounded-full bg-stage-1 flex items-center justify-center text-white font-bold">
+							<div className="w-12 h-12 mx-auto mb-4 rounded-full bg-myspeak-stage-1 flex items-center justify-center text-white font-bold">
 								1
 							</div>
 							<h3 className="text-heading font-semibold text-korean mb-2">
@@ -163,7 +163,7 @@ export default async function HomePage() {
 						</div>
 
 						<div className="text-center p-6 rounded-xl border border-green-100 bg-green-50">
-							<div className="w-12 h-12 mx-auto mb-4 rounded-full bg-stage-2 flex items-center justify-center text-white font-bold">
+							<div className="w-12 h-12 mx-auto mb-4 rounded-full bg-myspeak-stage-2 flex items-center justify-center text-white font-bold">
 								2
 							</div>
 							<h3 className="text-heading font-semibold text-korean mb-2">
@@ -175,7 +175,7 @@ export default async function HomePage() {
 						</div>
 
 						<div className="text-center p-6 rounded-xl border border-pink-200 bg-pink-50">
-							<div className="w-12 h-12 mx-auto mb-4 rounded-full bg-stage-3 flex items-center justify-center text-white font-bold">
+							<div className="w-12 h-12 mx-auto mb-4 rounded-full bg-myspeak-stage-3 flex items-center justify-center text-white font-bold">
 								3
 							</div>
 							<h3 className="text-heading font-semibold text-korean mb-2">
@@ -187,7 +187,7 @@ export default async function HomePage() {
 						</div>
 
 						<div className="text-center p-6 rounded-xl border border-purple-100 bg-purple-50">
-							<div className="w-12 h-12 mx-auto mb-4 rounded-full bg-stage-4 flex items-center justify-center text-white font-bold">
+							<div className="w-12 h-12 mx-auto mb-4 rounded-full bg-myspeak-stage-4 flex items-center justify-center text-white font-bold">
 								4
 							</div>
 							<h3 className="text-heading font-semibold text-korean mb-2">

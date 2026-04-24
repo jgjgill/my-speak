@@ -56,7 +56,7 @@ export function TopicCard({
 				</div>
 
 				<div className="flex flex-wrap gap-2 mb-3">
-					<span className="px-3 py-1 text-xs font-medium rounded-full bg-primary-light text-primary border border-primary-light">
+					<span className="px-3 py-1 text-xs font-medium rounded-full bg-myspeak-primary-light text-myspeak-primary border border-myspeak-primary-light">
 						{topic.category}
 					</span>
 					<span

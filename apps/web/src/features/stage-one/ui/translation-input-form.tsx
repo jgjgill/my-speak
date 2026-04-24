@@ -66,7 +66,7 @@ export default function TranslationInputForm({
 					disabled={!user || !isValid}
 					className={`px-3 py-1 rounded transition-colors ${
 						user && isValid
-							? "bg-primary text-white hover:bg-primary-dark"
+							? "bg-myspeak-primary text-white hover:bg-myspeak-primary-dark"
 							: "bg-gray-300 text-gray-500 cursor-not-allowed"
 					}`}
 				/>

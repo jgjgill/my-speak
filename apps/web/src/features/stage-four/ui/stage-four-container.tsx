@@ -50,10 +50,10 @@ export default function StageFourContainer() {
 		<div className="topic-card">
 			{/* 4단계 헤더 - 보라색 계열 */}
 			<div className="flex items-center gap-3 mb-6">
-				<div className="w-8 h-8 bg-stage-4 text-white rounded-full flex items-center justify-center text-sm font-bold">
+				<div className="w-8 h-8 bg-myspeak-stage-4 text-white rounded-full flex items-center justify-center text-sm font-bold">
 					4
 				</div>
-				<h2 className="text-title font-bold text-text-primary">
+				<h2 className="text-title font-bold text-text-myspeak-primary">
 					키워드 스피치
 				</h2>
 			</div>
@@ -65,26 +65,26 @@ export default function StageFourContainer() {
 						💬
 					</div>
 					<div>
-						<h4 className="font-semibold text-text-primary mb-1">
+						<h4 className="font-semibold text-text-myspeak-primary mb-1">
 							키워드 스피치 미션
 						</h4>
-						<p className="text-text-secondary text-sm">
+						<p className="text-myspeak-text-secondary text-sm">
 							키워드를 보고 완전한 문장을 만들어보세요.
 						</p>
 					</div>
 				</div>
 			</div>
 
-			<div className="bg-purple-50 border border-stage-4 rounded-lg p-4 mb-6">
+			<div className="bg-purple-50 border border-myspeak-stage-4 rounded-lg p-4 mb-6">
 				<div className="flex items-start gap-3">
-					<div className="w-6 h-6 bg-stage-4 text-white rounded-full flex items-center justify-center text-xs font-bold mt-0.5">
+					<div className="w-6 h-6 bg-myspeak-stage-4 text-white rounded-full flex items-center justify-center text-xs font-bold mt-0.5">
 						🎯
 					</div>
 					<div>
-						<h4 className="font-semibold text-text-primary mb-1">
+						<h4 className="font-semibold text-text-myspeak-primary mb-1">
 							학습 진행 방식
 						</h4>
-						<div className="text-sm space-y-1 text-text-secondary">
+						<div className="text-sm space-y-1 text-myspeak-text-secondary">
 							<p>
 								• <strong>Level 1</strong>부터 순차적으로 진행하세요.
 							</p>
@@ -107,21 +107,21 @@ export default function StageFourContainer() {
 								<summary className="cursor-pointer p-4 hover:bg-gray-50 transition-all duration-200 rounded-lg">
 									<div className="flex items-center justify-between">
 										<div className="flex items-center gap-3">
-											<div className="w-8 h-8 bg-stage-4 text-white rounded-full flex items-center justify-center text-sm font-bold">
+											<div className="w-8 h-8 bg-myspeak-stage-4 text-white rounded-full flex items-center justify-center text-sm font-bold">
 												{level}
 											</div>
 											<div>
-												<h3 className="text-lg font-bold text-text-primary">
+												<h3 className="text-lg font-bold text-text-myspeak-primary">
 													{metadata.title}
 												</h3>
-												<p className="text-sm text-text-secondary mt-1">
+												<p className="text-sm text-myspeak-text-secondary mt-1">
 													{metadata.description}
 												</p>
 											</div>
 										</div>
 
 										<div className="flex items-center gap-3">
-											<span className="text-sm bg-white px-3 py-1 rounded-full border text-text-secondary">
+											<span className="text-sm bg-white px-3 py-1 rounded-full border text-myspeak-text-secondary">
 												{levelSpeeches.length}개 문항
 											</span>
 											<div className="w-6 h-6 flex items-center justify-center">
@@ -152,7 +152,7 @@ export default function StageFourContainer() {
 										>
 											<div className="mb-3">
 												<div className="flex items-center gap-2 mb-2">
-													<div className="w-6 h-6 bg-stage-4 text-white rounded-full flex items-center justify-center text-xs font-bold">
+													<div className="w-6 h-6 bg-myspeak-stage-4 text-white rounded-full flex items-center justify-center text-xs font-bold">
 														{index + 1}
 													</div>
 
@@ -175,7 +175,7 @@ export default function StageFourContainer() {
 												</summary>
 
 												<div className="mt-3 p-3 bg-gray-50 rounded border-l-4 border-gray-400">
-													<p className="text-sm font-medium text-text-secondary">
+													<p className="text-sm font-medium text-myspeak-text-secondary">
 														{speech.target_sentence}
 													</p>
 												</div>
@@ -194,7 +194,7 @@ export default function StageFourContainer() {
 					<div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-indigo-500 text-white rounded-full flex items-center justify-center">
 						🏆
 					</div>
-					<h3 className="text-lg font-bold text-text-primary">
+					<h3 className="text-lg font-bold text-text-myspeak-primary">
 						모든 레벨 완료!
 					</h3>
 				</div>

@@ -119,7 +119,7 @@ export function TopicsFilterControls({
 									onClick={() => handleSortChange(option.value)}
 									className={`min-h-[36px] rounded-full border px-3 py-1.5 text-xs font-medium transition-all duration-200 ${
 										isSelected
-											? "border-primary bg-primary-light text-primary shadow-sm"
+											? "border-myspeak-primary bg-myspeak-primary-light text-myspeak-primary shadow-sm"
 											: "border-gray-200 bg-white text-gray-600 hover:border-gray-300 hover:bg-gray-50"
 									}`}
 								>

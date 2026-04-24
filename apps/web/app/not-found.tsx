@@ -23,10 +23,10 @@ export default function NotFoundPage() {
 							</svg>
 						</div>
 						<div>
-							<h1 className="text-title font-bold text-text-primary mb-1">
+							<h1 className="text-title font-bold text-text-myspeak-primary mb-1">
 								페이지를 찾을 수 없어요
 							</h1>
-							<p className="text-text-secondary text-korean">
+							<p className="text-myspeak-text-secondary text-korean">
 								요청하신 페이지가 존재하지 않습니다.
 							</p>
 						</div>
@@ -38,7 +38,7 @@ export default function NotFoundPage() {
 							onClick={() => {
 								window.history.back();
 							}}
-							className="w-full bg-primary hover:bg-primary-dark text-white py-3 px-4 rounded-xl font-medium flex items-center justify-center gap-3 transition-all duration-200"
+							className="w-full bg-myspeak-primary hover:bg-myspeak-primary-dark text-white py-3 px-4 rounded-xl font-medium flex items-center justify-center gap-3 transition-all duration-200"
 						>
 							<svg
 								className="w-5 h-5"
@@ -62,7 +62,7 @@ export default function NotFoundPage() {
 							onClick={() => {
 								window.location.href = "/";
 							}}
-							className="w-full bg-white hover:bg-gray-50 text-text-primary py-3 px-4 rounded-xl font-medium border border-gray-200 flex items-center justify-center gap-3 transition-all duration-200"
+							className="w-full bg-white hover:bg-gray-50 text-text-myspeak-primary py-3 px-4 rounded-xl font-medium border border-gray-200 flex items-center justify-center gap-3 transition-all duration-200"
 						>
 							<svg
 								className="w-5 h-5"
@@ -84,7 +84,7 @@ export default function NotFoundPage() {
 				</div>
 
 				<div className="topic-card">
-					<h3 className="font-semibold text-text-primary mb-4 flex items-center gap-2">
+					<h3 className="font-semibold text-text-myspeak-primary mb-4 flex items-center gap-2">
 						<span>🚀</span>
 						학습을 시작해보세요
 					</h3>
@@ -93,7 +93,7 @@ export default function NotFoundPage() {
 							href="/en/topics"
 							className="flex items-center gap-3 p-4 bg-blue-50 hover:bg-blue-100 rounded-xl transition-all duration-200 text-blue-700 border border-blue-200 hover:border-blue-300 w-full max-w-xs"
 						>
-							<div className="w-8 h-8 bg-stage-1 rounded-lg flex items-center justify-center text-white text-sm font-bold">
+							<div className="w-8 h-8 bg-myspeak-stage-1 rounded-lg flex items-center justify-center text-white text-sm font-bold">
 								EN
 							</div>
 							<div>

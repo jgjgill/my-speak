@@ -52,26 +52,26 @@ export default function StageTwoContainer({
 		<div className="topic-card mb-6">
 			{/* 2단계 헤더 - 초록색 계열 */}
 			<div className="flex items-center gap-3 mb-6">
-				<div className="w-8 h-8 bg-stage-2 text-white rounded-full flex items-center justify-center text-sm font-bold">
+				<div className="w-8 h-8 bg-myspeak-stage-2 text-white rounded-full flex items-center justify-center text-sm font-bold">
 					2
 				</div>
-				<h2 className="text-title font-bold text-text-primary">
+				<h2 className="text-title font-bold text-text-myspeak-primary">
 					영어 문장완성
 				</h2>
 			</div>
 
 			<div className="mb-8">
-				<h3 className="text-heading font-semibold text-text-primary mb-4 flex items-center gap-2">
-					<div className="w-2 h-2 bg-stage-2 rounded-full"></div>
+				<h3 className="text-heading font-semibold text-text-myspeak-primary mb-4 flex items-center gap-2">
+					<div className="w-2 h-2 bg-myspeak-stage-2 rounded-full"></div>
 					한글 ↔ 영어 비교
 				</h3>
 
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 					<div className="bg-gray-50 rounded-lg p-4">
-						<h4 className="font-semibold mb-3 text-text-primary flex items-center gap-2">
+						<h4 className="font-semibold mb-3 text-text-myspeak-primary flex items-center gap-2">
 							🇰🇷 한글
 						</h4>
-						<div className="text-text-secondary text-korean leading-relaxed">
+						<div className="text-myspeak-text-secondary text-korean leading-relaxed">
 							{koreanScripts.map((script, index) => (
 								<span key={script.id}>
 									{script.korean_text}
@@ -82,10 +82,10 @@ export default function StageTwoContainer({
 					</div>
 
 					<div className="bg-green-50 rounded-lg p-4 border border-green-200">
-						<h4 className="font-semibold mb-3 stage-2 flex items-center gap-2">
+						<h4 className="font-semibold mb-3 text-myspeak-stage-2 flex items-center gap-2">
 							🇺🇸 영어
 						</h4>
-						<div className="text-text-secondary leading-relaxed">
+						<div className="text-myspeak-text-secondary leading-relaxed">
 							{foreignScripts.map((script, index) => (
 								<span key={script.id}>
 									{script.foreign_text}
@@ -98,18 +98,18 @@ export default function StageTwoContainer({
 			</div>
 
 			<div className="mb-8">
-				<h3 className="text-heading font-semibold text-text-primary mb-4 flex items-center gap-2">
-					<div className="w-2 h-2 bg-stage-2 rounded-full"></div>
+				<h3 className="text-heading font-semibold text-text-myspeak-primary mb-4 flex items-center gap-2">
+					<div className="w-2 h-2 bg-myspeak-stage-2 rounded-full"></div>
 					문장별 한영 비교
 				</h3>
 
-				<div className="mb-6 bg-green-50 border border-stage-2 rounded-lg p-4">
+				<div className="mb-6 bg-green-50 border border-myspeak-stage-2 rounded-lg p-4">
 					<div className="flex items-start gap-3">
-						<div className="w-6 h-6 bg-stage-2 text-white rounded-full flex items-center justify-center text-xs font-bold mt-0.5">
+						<div className="w-6 h-6 bg-myspeak-stage-2 text-white rounded-full flex items-center justify-center text-xs font-bold mt-0.5">
 							💡
 						</div>
 						<div>
-							<h4 className="font-semibold text-text-primary mb-1">
+							<h4 className="font-semibold text-text-myspeak-primary mb-1">
 								1단계에서 체크한 학습 포인트
 							</h4>
 							<div className="flex items-center gap-2 text-sm">
@@ -141,10 +141,10 @@ export default function StageTwoContainer({
 					return (
 						<div key={script.id} className="topic-card mb-4">
 							<div className="flex items-center gap-2 mb-3">
-								<div className="w-6 h-6 bg-stage-2 text-white rounded-full flex items-center justify-center text-xs font-bold">
+								<div className="w-6 h-6 bg-myspeak-stage-2 text-white rounded-full flex items-center justify-center text-xs font-bold">
 									{index + 1}
 								</div>
-								<span className="font-medium text-text-secondary">
+								<span className="font-medium text-myspeak-text-secondary">
 									문장 {index + 1}
 								</span>
 							</div>
@@ -180,19 +180,21 @@ export default function StageTwoContainer({
 			</div>
 
 			<div className="mb-8">
-				<h3 className="text-heading font-semibold text-text-primary mb-4 flex items-center gap-2">
-					<div className="w-2 h-2 bg-stage-2 rounded-full"></div>
+				<h3 className="text-heading font-semibold text-text-myspeak-primary mb-4 flex items-center gap-2">
+					<div className="w-2 h-2 bg-myspeak-stage-2 rounded-full"></div>
 					끊어읽기 발음 연습
 				</h3>
 
-				<div className="bg-green-50 border border-stage-2 rounded-lg p-4 mb-6">
+				<div className="bg-green-50 border border-myspeak-stage-2 rounded-lg p-4 mb-6">
 					<div className="flex items-start gap-3">
-						<div className="w-6 h-6 bg-stage-2 text-white rounded-full flex items-center justify-center text-xs font-bold mt-0.5">
+						<div className="w-6 h-6 bg-myspeak-stage-2 text-white rounded-full flex items-center justify-center text-xs font-bold mt-0.5">
 							📢
 						</div>
 						<div>
-							<h4 className="font-semibold stage-2 mb-1">발음 가이드</h4>
-							<p className="text-text-secondary text-sm">
+							<h4 className="font-semibold text-myspeak-stage-2 mb-1">
+								발음 가이드
+							</h4>
+							<p className="text-myspeak-text-secondary text-sm">
 								| 표시된 곳에서 잠깐 멈춤, || 표시된 곳에서 긴 호흡을 하며
 								읽어보세요.
 							</p>
@@ -204,10 +206,10 @@ export default function StageTwoContainer({
 					<div key={script.id} className="topic-card mb-4">
 						<div className="flex items-center justify-between mb-3">
 							<div className="flex items-center gap-2">
-								<div className="w-6 h-6 bg-stage-2 text-white rounded-full flex items-center justify-center text-xs font-bold">
+								<div className="w-6 h-6 bg-myspeak-stage-2 text-white rounded-full flex items-center justify-center text-xs font-bold">
 									{index + 1}
 								</div>
-								<span className="text-sm font-medium text-text-secondary">
+								<span className="text-sm font-medium text-myspeak-text-secondary">
 									발음 연습 {index + 1}
 								</span>
 							</div>
@@ -217,7 +219,7 @@ export default function StageTwoContainer({
 								id={`script-${index}`}
 							/>
 						</div>
-						<p className="text-text-secondary leading-relaxed">
+						<p className="text-myspeak-text-secondary leading-relaxed">
 							{script.chunked_text}
 						</p>
 					</div>
@@ -225,16 +227,16 @@ export default function StageTwoContainer({
 
 				<div className="topic-card mt-6">
 					<div className="flex items-center gap-3 mb-4">
-						<div className="w-8 h-8 bg-stage-2 text-white rounded-full flex items-center justify-center text-sm font-bold">
+						<div className="w-8 h-8 bg-myspeak-stage-2 text-white rounded-full flex items-center justify-center text-sm font-bold">
 							🎯
 						</div>
-						<h4 className="text-heading font-bold text-text-primary">
+						<h4 className="text-heading font-bold text-text-myspeak-primary">
 							전체 끊어읽기 스크립트
 						</h4>
 					</div>
 
-					<div className="bg-green-50 border border-stage-2 rounded-lg p-4 mb-4">
-						<p className="text-text-secondary text-sm">
+					<div className="bg-green-50 border border-myspeak-stage-2 rounded-lg p-4 mb-4">
+						<p className="text-myspeak-text-secondary text-sm">
 							이제 전체를 한 번에 따라 읽어보세요.
 						</p>
 					</div>

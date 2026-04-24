@@ -42,7 +42,7 @@ export default function FloatingAppButton() {
 			onClick={handleClick}
 			className={`
 				fixed bottom-6 left-6 z-50
-				bg-primary hover:bg-primary/90 text-white
+				bg-myspeak-primary hover:bg-myspeak-primary/90 text-white
 				shadow-lg hover:shadow-xl
 				transition-all duration-300 ease-in-out
 				transform hover:scale-105 active:scale-95

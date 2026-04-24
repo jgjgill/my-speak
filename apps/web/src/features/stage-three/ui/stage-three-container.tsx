@@ -40,10 +40,12 @@ export default function StageThreeContainer({
 		<div className="topic-card mb-6">
 			{/* 3단계 헤더 - 딥 핑크색 계열 */}
 			<div className="flex items-center gap-3 mb-6">
-				<div className="w-8 h-8 bg-stage-3 text-white rounded-full flex items-center justify-center text-sm font-bold">
+				<div className="w-8 h-8 bg-myspeak-stage-3 text-white rounded-full flex items-center justify-center text-sm font-bold">
 					3
 				</div>
-				<h2 className="text-title font-bold text-text-primary">스피킹 연습</h2>
+				<h2 className="text-title font-bold text-text-myspeak-primary">
+					스피킹 연습
+				</h2>
 			</div>
 
 			{/* 미션 안내 */}
@@ -53,10 +55,10 @@ export default function StageThreeContainer({
 						🎤
 					</div>
 					<div>
-						<h4 className="font-semibold text-text-primary mb-1">
+						<h4 className="font-semibold text-text-myspeak-primary mb-1">
 							스피킹 미션
 						</h4>
-						<p className="text-text-secondary text-sm">
+						<p className="text-myspeak-text-secondary text-sm">
 							한글을 보고 영어로 말해보세요.
 						</p>
 					</div>
@@ -64,13 +66,13 @@ export default function StageThreeContainer({
 			</div>
 
 			{/* 학습 포인트 */}
-			<div className="mb-6 bg-pink-50 border border-stage-3 rounded-lg p-4">
+			<div className="mb-6 bg-pink-50 border border-myspeak-stage-3 rounded-lg p-4">
 				<div className="flex items-start gap-3">
-					<div className="w-6 h-6 bg-stage-3 text-white rounded-full flex items-center justify-center text-xs font-bold mt-0.5">
+					<div className="w-6 h-6 bg-myspeak-stage-3 text-white rounded-full flex items-center justify-center text-xs font-bold mt-0.5">
 						💡
 					</div>
 					<div>
-						<h4 className="font-semibold text-text-primary mb-1">
+						<h4 className="font-semibold text-text-myspeak-primary mb-1">
 							1단계에서 체크한 학습 포인트
 						</h4>
 						<div className="flex items-center gap-2 text-sm">
@@ -93,7 +95,7 @@ export default function StageThreeContainer({
 				return (
 					<div key={script.id} className="topic-card mb-4">
 						<div className="flex items-start gap-3 mb-3">
-							<div className="w-6 h-6 bg-stage-3 text-white rounded-full flex items-center justify-center text-xs font-bold mt-1">
+							<div className="w-6 h-6 bg-myspeak-stage-3 text-white rounded-full flex items-center justify-center text-xs font-bold mt-1">
 								{index + 1}
 							</div>
 							<div className="flex-1">
@@ -111,7 +113,7 @@ export default function StageThreeContainer({
 								답안 보기
 							</summary>
 							<div className="mt-3 p-3 bg-gray-50 border border-gray-200 rounded-lg">
-								<p className="text-text-secondary leading-relaxed">
+								<p className="text-myspeak-text-secondary leading-relaxed">
 									{foreignScripts[index]?.chunked_text}
 								</p>
 							</div>
@@ -120,7 +122,7 @@ export default function StageThreeContainer({
 				);
 			})}
 
-			<div className="mt-6 p-4 bg-pink-50 border border-stage-3 rounded-lg">
+			<div className="mt-6 p-4 bg-pink-50 border border-myspeak-stage-3 rounded-lg">
 				<div className="flex items-center justify-between">
 					<div>
 						<h4 className="font-bold text-pink-800 mb-1">
@@ -133,7 +135,7 @@ export default function StageThreeContainer({
 					<button
 						type="button"
 						onClick={onStageComplete}
-						className="px-4 py-2 cursor-pointer bg-stage-3 text-white rounded-lg font-medium hover:bg-pink-700 transition-colors"
+						className="px-4 py-2 cursor-pointer bg-myspeak-stage-3 text-white rounded-lg font-medium hover:bg-pink-700 transition-colors"
 					>
 						4단계로 이동하기
 					</button>

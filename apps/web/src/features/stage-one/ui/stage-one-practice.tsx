@@ -163,16 +163,16 @@ export default function StageOnePractice({
 						key={script.id}
 						className={`bg-white rounded-xl shadow-sm p-4 transition-all duration-500 mb-6 relative ${
 							isCompleted
-								? "border-2 border-stage-1 animate-pulse-border scale-[1.01]"
+								? "border-2 border-myspeak-stage-1 animate-pulse-border scale-[1.01]"
 								: "border border-gray-200"
 						}`}
 					>
 						<div className="mb-4">
 							<div className="flex items-center gap-2 mb-3">
-								<div className="w-6 h-6 bg-stage-1 text-white rounded-full flex items-center justify-center text-xs font-bold">
+								<div className="w-6 h-6 bg-myspeak-stage-1 text-white rounded-full flex items-center justify-center text-xs font-bold">
 									{index + 1}
 								</div>
-								<span className="text-sm font-medium text-text-secondary">
+								<span className="text-sm font-medium text-myspeak-text-secondary">
 									문장 {index + 1}
 								</span>
 							</div>

@@ -103,7 +103,7 @@ export default function AppDownloadModal() {
 				<div id="modal-description" className="space-y-4">
 					{/* 앱 아이콘과 설명 */}
 					<div className="flex items-center space-x-4">
-						<div className="w-16 h-16 rounded-xl bg-primary flex items-center justify-center overflow-hidden">
+						<div className="w-16 h-16 rounded-xl bg-myspeak-primary flex items-center justify-center overflow-hidden">
 							<Image
 								src="/app-icon.png"
 								alt="My Speak 앱 아이콘"
@@ -124,7 +124,7 @@ export default function AppDownloadModal() {
 						<button
 							type="button"
 							onClick={handleOpenInApp}
-							className="w-full bg-primary text-white py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors"
+							className="w-full bg-myspeak-primary text-white py-3 rounded-lg font-medium hover:bg-myspeak-primary/90 transition-colors"
 						>
 							앱으로 보기
 						</button>
@@ -159,7 +159,7 @@ export default function AppDownloadModal() {
 						<button
 							type="button"
 							onClick={handleClose}
-							className="text-primary hover:text-primary/80"
+							className="text-myspeak-primary hover:text-myspeak-primary/80"
 						>
 							웹에서 계속하기
 						</button>

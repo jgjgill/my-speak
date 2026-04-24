@@ -27,7 +27,7 @@
 	/* Form Components */
 	.form-textarea {
 		@apply w-full px-3 py-2 border border-gray-300 rounded-lg text-base;
-		@apply focus:outline-none focus:ring-2 focus:ring-stage-1/20 focus:border-stage-1;
+		@apply focus:outline-none focus:ring-2 focus:ring-myspeak-stage-1/20 focus:border-myspeak-stage-1;
 		@apply transition-all duration-200 resize-none min-h-20 leading-relaxed;
 		@apply placeholder:text-gray-400;
 	}

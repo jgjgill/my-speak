@@ -15,10 +15,10 @@ export default async function LanguageHomePage({
 		<div className="min-h-screen">
 			<div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-24">
 				<div className="text-center mb-12">
-					<div className="w-20 h-20 mx-auto mb-6 rounded-full bg-primary flex items-center justify-center text-white font-bold text-3xl">
+					<div className="w-20 h-20 mx-auto mb-6 rounded-full bg-myspeak-primary flex items-center justify-center text-white font-bold text-3xl">
 						{currentLanguage?.flag || language.toUpperCase()}
 					</div>
-					<h1 className="text-hero font-bold text-korean text-primary mb-4">
+					<h1 className="text-hero font-bold text-korean text-myspeak-primary mb-4">
 						{currentLanguage?.nativeName || language.toUpperCase()}{" "}
 						{currentLanguage?.name || language}
 					</h1>
@@ -29,7 +29,7 @@ export default async function LanguageHomePage({
 					{/* Topics 학습 */}
 					<Link
 						href={`/${language}/topics`}
-						className="block p-8 rounded-xl border-2 border-gray-200 hover:border-primary hover:shadow-lg transition-all group"
+						className="block p-8 rounded-xl border-2 border-gray-200 hover:border-myspeak-primary hover:shadow-lg transition-all group"
 					>
 						<div className="flex items-center mb-4">
 							<div className="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center mr-4">
@@ -78,7 +78,7 @@ export default async function LanguageHomePage({
 							</span>
 						</div>
 
-						<div className="mt-6 flex items-center text-primary font-medium group-hover:translate-x-1 transition-transform">
+						<div className="mt-6 flex items-center text-myspeak-primary font-medium group-hover:translate-x-1 transition-transform">
 							<span>학습 시작하기</span>
 							<svg
 								className="w-4 h-4 ml-2"

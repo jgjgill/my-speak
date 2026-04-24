@@ -26,43 +26,43 @@ export default function StageButton({
 		switch (stageNumber) {
 			case 1:
 				return {
-					bg: "bg-stage-1",
-					border: "border-stage-1",
+					bg: "bg-myspeak-stage-1",
+					border: "border-myspeak-stage-1",
 					shadow: "shadow-blue-200",
 					text: "text-blue-700",
 					textSecondary: "text-blue-600",
 				};
 			case 2:
 				return {
-					bg: "bg-stage-2",
-					border: "border-stage-2",
+					bg: "bg-myspeak-stage-2",
+					border: "border-myspeak-stage-2",
 					shadow: "shadow-green-200",
 					text: "text-green-700",
 					textSecondary: "text-green-600",
 				};
 			case 3:
 				return {
-					bg: "bg-stage-3",
-					border: "border-stage-3",
+					bg: "bg-myspeak-stage-3",
+					border: "border-myspeak-stage-3",
 					shadow: "shadow-pink-200",
 					text: "text-pink-700",
 					textSecondary: "text-pink-600",
 				};
 			case 4:
 				return {
-					bg: "bg-stage-4",
-					border: "border-stage-4",
+					bg: "bg-myspeak-stage-4",
+					border: "border-myspeak-stage-4",
 					shadow: "shadow-purple-200",
 					text: "text-purple-700",
 					textSecondary: "text-purple-600",
 				};
 			default:
 				return {
-					bg: "bg-primary",
-					border: "border-primary",
+					bg: "bg-myspeak-primary",
+					border: "border-myspeak-primary",
 					shadow: "shadow-blue-200",
-					text: "text-primary",
-					textSecondary: "text-primary-dark",
+					text: "text-myspeak-primary",
+					textSecondary: "text-myspeak-primary-dark",
 				};
 		}
 	};
