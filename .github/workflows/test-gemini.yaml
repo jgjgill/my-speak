@@ -6,6 +6,8 @@ on:
 jobs:
   test-gemini:
     runs-on: ubuntu-latest
+    env:
+      GEMINI_CLI_TRUST_WORKSPACE: 'true'
 
     steps:
       - name: Setup Node.js
