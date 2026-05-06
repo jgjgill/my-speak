@@ -1,0 +1,420 @@
+{
+  "topic": {
+    "id": "a2e5e4cd-c615-4b9e-b928-7cbac6e46990",
+    "title": "친구와 책 토론하기",
+    "category": "레저",
+    "difficulty": "초급",
+    "description": "친구와 최근에 읽은 책에 대해 이야기를 나누는 초급 영어 대화입니다.",
+    "language_code": "en",
+    "total_sentences": 6
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 네가 추천해 준 책 다 읽었어. 결말은 어떻게 생각했어?"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "어, 정말? 나는 결말이 좀 예상 밖이었어. 너는 어떻게 봤는데?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "나도 그래. 주인공이 목표를 달성할 수 있을지 확신이 없었는데, 결과는 만족스러웠어."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "나도! 그리고 작가가 조연 캐릭터들을 흥미롭게 잘 그려냈다고 생각해."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "맞아. 그래서 전체적인 줄거리가 더 흥미진진했어. 네가 제일 좋았던 부분은 뭐야?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "음, 숨겨진 메시지를 발견하는 장면이 제일 좋았어. 정말 짜릿했지!"
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hey, I finished the book you recommended. What did you think of the ending?",
+      "chunked_text": "Hey, | I finished the book you recommended. | What did you think of the ending?"
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Oh, really? I thought the ending was a bit unexpected. What was your take on it?",
+      "chunked_text": "Oh, really? | I thought the ending was a bit unexpected. | What was your take on it?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Me too. I wasn't sure if the main character would achieve their goal, but I was happy with the outcome.",
+      "chunked_text": "Me too. | I wasn't sure if the main character would achieve their goal, | but I was happy with the outcome."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Me too! And I thought the author developed the supporting characters well.",
+      "chunked_text": "Me too! | And I thought the author developed the supporting characters well."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Right. That's why the whole plot was more engaging. What was your favorite part?",
+      "chunked_text": "Right. | That's why the whole plot was more engaging. | What was your favorite part?"
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Hmm, I liked the scene where they discover the hidden message the most. It was really thrilling!",
+      "chunked_text": "Hmm, | I liked the scene where they discover the hidden message the most. | It was really thrilling!"
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "안녕하세요",
+        "네가 추천해 준 책 다 읽었어. 결말은 어떻게 생각했어?"
+      ],
+      "target_sentence": "Hey, I finished the book you recommended. What did you think of the ending?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "결말이 좀 예상 밖이었어."
+      ],
+      "target_sentence": "I thought the ending was a bit unexpected.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "너는 어떻게 봤는데?"
+      ],
+      "target_sentence": "What was your take on it?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "주인공이 목표를 달성할 수 있을지 확신이 없었는데",
+        "결과는 만족스러웠어."
+      ],
+      "target_sentence": "I wasn't sure if the main character would achieve their goal, but I was happy with the outcome.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "작가가 조연 캐릭터들을 흥미롭게 잘 그려냈다고 생각해."
+      ],
+      "target_sentence": "And I thought the author developed the supporting characters well.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "전체적인 줄거리가 더 흥미진진했어."
+      ],
+      "target_sentence": "That's why the whole plot was more engaging.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "네가 제일 좋았던 부분은 뭐야?"
+      ],
+      "target_sentence": "What was your favorite part?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 8,
+      "keywords": [
+        "숨겨진 메시지를 발견하는 장면이 제일 좋았어. 정말 짜릿했지!"
+      ],
+      "target_sentence": "Hmm, I liked the scene where they discover the hidden message the most. It was really thrilling!",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "책",
+        "결말?"
+      ],
+      "target_sentence": "Hey, I finished the book you recommended. What did you think of the ending?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "결말",
+        "예상 밖?"
+      ],
+      "target_sentence": "I thought the ending was a bit unexpected.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "너 생각?"
+      ],
+      "target_sentence": "What was your take on it?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "주인공",
+        "목표 달성? 만족."
+      ],
+      "target_sentence": "I wasn't sure if the main character would achieve their goal, but I was happy with the outcome.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "조연",
+        "잘 그려냈어."
+      ],
+      "target_sentence": "And I thought the author developed the supporting characters well.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "줄거리",
+        "흥미진진."
+      ],
+      "target_sentence": "That's why the whole plot was more engaging.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 15,
+      "keywords": [
+        "제일 좋았던 부분?"
+      ],
+      "target_sentence": "What was your favorite part?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 16,
+      "keywords": [
+        "숨겨진 메시지 발견. 짜릿!"
+      ],
+      "target_sentence": "Hmm, I liked the scene where they discover the hidden message the most. It was really thrilling!",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "책",
+        "결말?"
+      ],
+      "target_sentence": "Hey, I finished the book you recommended. What did you think of the ending?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "예상 밖."
+      ],
+      "target_sentence": "I thought the ending was a bit unexpected.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "네 생각?"
+      ],
+      "target_sentence": "What was your take on it?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "주인공",
+        "목표",
+        "결과."
+      ],
+      "target_sentence": "I wasn't sure if the main character would achieve their goal, but I was happy with the outcome.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "조연",
+        "개발."
+      ],
+      "target_sentence": "And I thought the author developed the supporting characters well.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 22,
+      "keywords": [
+        "줄거리",
+        "흥미."
+      ],
+      "target_sentence": "That's why the whole plot was more engaging.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 23,
+      "keywords": [
+        "좋았던 부분?"
+      ],
+      "target_sentence": "What was your favorite part?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 24,
+      "keywords": [
+        "메시지 발견",
+        "짜릿."
+      ],
+      "target_sentence": "Hmm, I liked the scene where they discover the hidden message the most. It was really thrilling!",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "book",
+        "ending"
+      ],
+      "target_sentence": "Hey, I finished the book you recommended. What did you think of the ending?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "ending",
+        "unexpected"
+      ],
+      "target_sentence": "I thought the ending was a bit unexpected.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "your take"
+      ],
+      "target_sentence": "What was your take on it?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "character",
+        "goal",
+        "outcome"
+      ],
+      "target_sentence": "I wasn't sure if the main character would achieve their goal, but I was happy with the outcome.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 29,
+      "keywords": [
+        "characters",
+        "developed"
+      ],
+      "target_sentence": "And I thought the author developed the supporting characters well.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 30,
+      "keywords": [
+        "plot",
+        "engaging"
+      ],
+      "target_sentence": "That's why the whole plot was more engaging.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 31,
+      "keywords": [
+        "favorite part"
+      ],
+      "target_sentence": "What was your favorite part?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 32,
+      "keywords": [
+        "message",
+        "thrilling"
+      ],
+      "target_sentence": "Hmm, I liked the scene where they discover the hidden message the most. It was really thrilling!",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [],
+  "highlight_sentences": [
+    {
+      "sentence_order": 2,
+      "korean_text": "나는 결말이 좀 예상 밖이었어.",
+      "foreign_text": "I thought the ending was a bit unexpected.",
+      "reason": "주인공의 목표 달성 여부가 불확실했음을 시사하며, 대화의 긴장감을 높이는 핵심 문장입니다."
+    }
+  ]
+}
