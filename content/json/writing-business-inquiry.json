@@ -1,0 +1,363 @@
+{
+  "topic": {
+    "id": "80c1e68e-1049-4c37-9b62-ddc45c7d09c3",
+    "title": "비즈니스 문의 메일 작성",
+    "category": "비즈니스",
+    "difficulty": "초급",
+    "description": "비즈니스 파트너에게 제품이나 서비스에 대한 정보를 문의하는 이메일을 작성하는 방법을 배웁니다.",
+    "language_code": "en",
+    "total_sentences": 6
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, [회사명]입니다."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "저희는 귀사의 신제품 카탈로그에 대해 문의드리고자 합니다."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "해당 제품의 가격표와 상세 사양을 받아볼 수 있을까요?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "또한, 견본 제공이 가능한지 여부도 알고 싶습니다."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "견적 요청과 관련하여 필요한 절차가 있다면 알려주시면 감사하겠습니다."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "빠른 시일 내에 회신을 부탁드립니다."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, this is [Company Name].",
+      "chunked_text": "Hello, | this is [Company Name]."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "We would like to inquire about your company's new product catalog.",
+      "chunked_text": "We would like to inquire | about your company's new product catalog."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Could we receive the price list and detailed specifications for this product?",
+      "chunked_text": "Could we receive | the price list | and detailed specifications | for this product?"
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Also, we would like to know about the possibility of sample provision.",
+      "chunked_text": "Also, | we would like to know | about the possibility of sample provision."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "If there are any necessary procedures for requesting a quotation, we would appreciate it if you could inform us.",
+      "chunked_text": "If there are any necessary procedures | for requesting a quotation, | we would appreciate it | if you could inform us."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "We look forward to your prompt reply.",
+      "chunked_text": "We look forward to your prompt reply."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "[회사명]",
+        "문의"
+      ],
+      "target_sentence": "Hello, this is [Company Name].",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "신제품",
+        "카탈로그",
+        "문의"
+      ],
+      "target_sentence": "We would like to inquire about your company's new product catalog.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "가격표",
+        "상세 사양",
+        "받아볼 수 있을까요"
+      ],
+      "target_sentence": "Could we receive the price list and detailed specifications for this product?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "견본 제공",
+        "가능 여부"
+      ],
+      "target_sentence": "Also, we would like to know about the possibility of sample provision.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "견적 요청",
+        "필요한 절차",
+        "알려주시면"
+      ],
+      "target_sentence": "If there are any necessary procedures for requesting a quotation, we would appreciate it if you could inform us.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "회신"
+      ],
+      "target_sentence": "We look forward to your prompt reply.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 7,
+      "keywords": [
+        "문의"
+      ],
+      "target_sentence": "Hello, this is [Company Name].",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "카탈로그",
+        "문의"
+      ],
+      "target_sentence": "We would like to inquire about your company's new product catalog.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "가격",
+        "사양"
+      ],
+      "target_sentence": "Could we receive the price list and detailed specifications for this product?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "견본"
+      ],
+      "target_sentence": "Also, we would like to know about the possibility of sample provision.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "견적",
+        "절차"
+      ],
+      "target_sentence": "If there are any necessary procedures for requesting a quotation, we would appreciate it if you could inform us.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "회신"
+      ],
+      "target_sentence": "We look forward to your prompt reply.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 13,
+      "keywords": [
+        "문의"
+      ],
+      "target_sentence": "Hello, this is [Company Name].",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 14,
+      "keywords": [
+        "카탈로그"
+      ],
+      "target_sentence": "We would like to inquire about your company's new product catalog.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "가격"
+      ],
+      "target_sentence": "Could we receive the price list and detailed specifications for this product?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "견본"
+      ],
+      "target_sentence": "Also, we would like to know about the possibility of sample provision.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "견적"
+      ],
+      "target_sentence": "If there are any necessary procedures for requesting a quotation, we would appreciate it if you could inform us.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "회신"
+      ],
+      "target_sentence": "We look forward to your prompt reply.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 19,
+      "keywords": [
+        "inquire"
+      ],
+      "target_sentence": "Hello, this is [Company Name].",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 20,
+      "keywords": [
+        "catalog"
+      ],
+      "target_sentence": "We would like to inquire about your company's new product catalog.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 21,
+      "keywords": [
+        "price",
+        "specifications"
+      ],
+      "target_sentence": "Could we receive the price list and detailed specifications for this product?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "sample"
+      ],
+      "target_sentence": "Also, we would like to know about the possibility of sample provision.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "quotation"
+      ],
+      "target_sentence": "If there are any necessary procedures for requesting a quotation, we would appreciate it if you could inform us.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "reply"
+      ],
+      "target_sentence": "We look forward to your prompt reply.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "카탈로그",
+      "foreign_phrase": "catalog"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "가격표",
+      "foreign_phrase": "price list"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "상세 사양",
+      "foreign_phrase": "detailed specifications"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "견본 제공",
+      "foreign_phrase": "sample provision"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "견적 요청",
+      "foreign_phrase": "request for a quotation"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "회신",
+      "foreign_phrase": "reply"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 2,
+      "korean_text": "저희는 귀사의 신제품 카탈로그에 대해 문의드리고자 합니다.",
+      "foreign_text": "We would like to inquire about your company's new product catalog.",
+      "reason": "비즈니스 문의의 핵심 목적인 특정 제품에 대한 정보 요청을 명확히 나타내며, 문의의 시작을 알리는 중요한 문장입니다."
+    }
+  ]
+}

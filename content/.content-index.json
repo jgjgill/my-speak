@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-13T16:15:34Z",
-  "total_count": 108,
+  "generated_at": "2026-05-15T16:11:38Z",
+  "total_count": 109,
   "weekly_plan": {
     "generated_at": "2026-05-10T15:19:25Z",
     "week_number": 19,
@@ -15,7 +15,7 @@
         "slug": "writing-business-inquiry",
         "title": "비즈니스 문의 메일 작성",
         "category": "비즈니스",
-        "used": false
+        "used": true
       },
       {
         "slug": "attending-cooking-class",
@@ -133,6 +133,7 @@
     "lost-luggage-airport",
     "project-status-presentation",
     "book-discussion-with-friend",
-    "student-daily-routine"
+    "student-daily-routine",
+    "writing-business-inquiry"
   ]
 }
