@@ -1,0 +1,430 @@
+{
+  "topic": {
+    "id": "12c03c65-a195-4146-9ca9-9d535e8ea7ac",
+    "title": "신용 점수 상담",
+    "category": "금융",
+    "difficulty": "초급",
+    "description": "신용 점수는 금융 거래의 신뢰도를 나타내는 중요한 지표입니다. 이 대화를 통해 신용 점수에 대해 배우고 개선 방법을 알아봅니다.",
+    "language_code": "en",
+    "total_sentences": 8
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 상담받고 싶은 것이 있습니다."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "네, 무엇을 도와드릴까요?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "제 신용 점수가 얼마인지 알고 싶습니다."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "현재 신용 점수를 확인해 드릴게요. 음... 좋은 편은 아니네요."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "신용 점수를 어떻게 하면 더 좋게 만들 수 있을까요?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "연체 없이 꾸준히 상환하는 것이 가장 중요합니다."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "알겠습니다. 그 외에 다른 방법도 있나요?"
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "신용카드 사용 내역을 관리하고, 불필요한 조회는 피하는 것이 좋습니다."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, I have something I'd like to consult about.",
+      "chunked_text": "Hello, | I have something I'd like to consult about."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Yes, how can I help you?",
+      "chunked_text": "Yes, | how can I help you?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "I want to know what my credit score is.",
+      "chunked_text": "I want to know | what my credit score is."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "I will check your current credit score for you. Hmm... It's not very good.",
+      "chunked_text": "I will check your current credit score for you. | Hmm... | It's not very good."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "How can I make my credit score better?",
+      "chunked_text": "How can I make my credit score better?"
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Consistently paying on time without delays is most important.",
+      "chunked_text": "Consistently paying on time | without delays | is most important."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "I understand. Are there any other ways besides that?",
+      "chunked_text": "I understand. | Are there any other ways | besides that?"
+    },
+    {
+      "sentence_order": 8,
+      "foreign_text": "It's good to manage credit card usage and avoid unnecessary inquiries.",
+      "chunked_text": "It's good to manage credit card usage | and avoid unnecessary inquiries."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "상담",
+        "원합니다"
+      ],
+      "target_sentence": "Hello, I have something I'd like to consult about.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "신용 점수",
+        "얼마인지",
+        "알고 싶습니다"
+      ],
+      "target_sentence": "I want to know what my credit score is.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "확인",
+        "안 좋네요"
+      ],
+      "target_sentence": "I will check your current credit score for you. Hmm... It's not very good.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "어떻게",
+        "좋게",
+        "만들 수 있을까요?"
+      ],
+      "target_sentence": "How can I make my credit score better?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "연체 없이",
+        "꾸준히",
+        "상환",
+        "가장 중요합니다"
+      ],
+      "target_sentence": "Consistently paying on time without delays is most important.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "그 외",
+        "다른 방법",
+        "있나요?"
+      ],
+      "target_sentence": "I understand. Are there any other ways besides that?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "신용카드",
+        "관리",
+        "조회",
+        "피하는 것",
+        "좋습니다"
+      ],
+      "target_sentence": "It's good to manage credit card usage and avoid unnecessary inquiries.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "상담"
+      ],
+      "target_sentence": "Hello, I have something I'd like to consult about.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "신용 점수"
+      ],
+      "target_sentence": "I want to know what my credit score is.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "확인",
+        "안 좋네요"
+      ],
+      "target_sentence": "It's not very good.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "어떻게",
+        "좋게?"
+      ],
+      "target_sentence": "How can I make my credit score better?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "연체 없이",
+        "상환"
+      ],
+      "target_sentence": "Consistently paying on time without delays is most important.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "다른 방법?"
+      ],
+      "target_sentence": "Are there any other ways besides that?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "신용카드",
+        "피하는 것"
+      ],
+      "target_sentence": "It's good to manage credit card usage and avoid unnecessary inquiries.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "상담"
+      ],
+      "target_sentence": "Hello, I have something I'd like to consult about.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "신용 점수"
+      ],
+      "target_sentence": "What my credit score is.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "안 좋네요"
+      ],
+      "target_sentence": "Not very good.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "어떻게",
+        "좋게?"
+      ],
+      "target_sentence": "Make credit score better?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "연체 없이"
+      ],
+      "target_sentence": "Paying on time.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "다른 방법?"
+      ],
+      "target_sentence": "Other ways?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "신용카드",
+        "조회"
+      ],
+      "target_sentence": "Credit card, inquiries.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "consult"
+      ],
+      "target_sentence": "Hello, I have something I'd like to consult about.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "score"
+      ],
+      "target_sentence": "I want to know what my credit score is.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "good"
+      ],
+      "target_sentence": "It's not very good.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "better"
+      ],
+      "target_sentence": "How can I make my credit score better?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "paying"
+      ],
+      "target_sentence": "Consistently paying on time without delays is most important.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "ways"
+      ],
+      "target_sentence": "Are there any other ways besides that?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "manage"
+      ],
+      "target_sentence": "It's good to manage credit card usage and avoid unnecessary inquiries.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 3,
+      "korean_phrase": "신용 점수",
+      "foreign_phrase": "credit score"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "좋은 편은 아니네요.",
+      "foreign_phrase": "It's not very good."
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "신용 점수를 어떻게 하면 더 좋게 만들 수 있을까요?",
+      "foreign_phrase": "How can I make my credit score better?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "연체 없이 꾸준히 상환하는 것이 가장 중요합니다.",
+      "foreign_phrase": "Consistently paying on time without delays is most important."
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "그 외에 다른 방법도 있나요?",
+      "foreign_phrase": "Are there any other ways besides that?"
+    },
+    {
+      "sentence_order": 8,
+      "korean_phrase": "신용카드 사용 내역을 관리하고, 불필요한 조회는 피하는 것이 좋습니다.",
+      "foreign_phrase": "It's good to manage credit card usage and avoid unnecessary inquiries."
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 3,
+      "korean_text": "신용 점수를 어떻게 하면 더 좋게 만들 수 있을까요?",
+      "foreign_text": "How can I make my credit score better?",
+      "reason": "이 문장은 사용자가 자신의 신용 점수를 개선하고자 하는 구체적인 목표를 제시하며, 상담의 핵심적인 질문이기 때문입니다."
+    }
+  ]
+}
