@@ -1,0 +1,372 @@
+{
+  "topic": {
+    "id": "ed7fd76c-6ef4-4eb0-be4d-6ac526bf3685",
+    "title": "테마파크 방문",
+    "category": "레저",
+    "difficulty": "초급",
+    "description": "테마파크 방문에 필요한 기본적인 영어 표현을 배웁니다. 티켓 구매, 입장, 운영 시간 등에 대한 질문을 할 수 있습니다.",
+    "language_code": "en",
+    "total_sentences": 8
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요. 입장권을 사고 싶어요."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "네, 오늘 입장권 가격은 얼마인가요?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "어른 두 장으로 주세요."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "네, 총 50달러입니다."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "입구는 어디에 있나요?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "저쪽으로 쭉 직진하시면 됩니다."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "몇 시에 문 닫아요?"
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "저녁 9시에 문 닫습니다."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello. I would like to buy an entrance ticket.",
+      "chunked_text": "Hello. | I would like to buy an entrance ticket."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Yes, what is the ticket price for today?",
+      "chunked_text": "Yes, | what is the ticket price for today?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Two adult tickets, please.",
+      "chunked_text": "Two adult tickets, | please."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Yes, that's a total of 50 dollars.",
+      "chunked_text": "Yes, | that's a total of 50 dollars."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Where is the entrance?",
+      "chunked_text": "Where is the entrance?"
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Just go straight that way.",
+      "chunked_text": "Just go straight that way."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "What time does it close?",
+      "chunked_text": "What time does it close?"
+    },
+    {
+      "sentence_order": 8,
+      "foreign_text": "It closes at 9 PM.",
+      "chunked_text": "It closes at 9 PM."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "안녕하세요",
+        "입장권 사고 싶어요"
+      ],
+      "target_sentence": "Hello. I would like to buy an entrance ticket.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "오늘 입장권 가격 얼마인가요"
+      ],
+      "target_sentence": "Yes, what is the ticket price for today?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "어른 두 장 주세요"
+      ],
+      "target_sentence": "Two adult tickets, please.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "총 50달러입니다"
+      ],
+      "target_sentence": "Yes, that's a total of 50 dollars.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "입구 어디에 있나요"
+      ],
+      "target_sentence": "Where is the entrance?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "몇 시에 문 닫아요"
+      ],
+      "target_sentence": "What time does it close?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 7,
+      "keywords": [
+        "입장권",
+        "싶어요"
+      ],
+      "target_sentence": "Hello. I would like to buy an entrance ticket.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "가격",
+        "얼마인가요"
+      ],
+      "target_sentence": "Yes, what is the ticket price for today?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "어른 두 장"
+      ],
+      "target_sentence": "Two adult tickets, please.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "50달러"
+      ],
+      "target_sentence": "Yes, that's a total of 50 dollars.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "입구"
+      ],
+      "target_sentence": "Where is the entrance?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "문 닫아요"
+      ],
+      "target_sentence": "What time does it close?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 13,
+      "keywords": [
+        "입장권"
+      ],
+      "target_sentence": "I would like to buy an entrance ticket.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 14,
+      "keywords": [
+        "가격"
+      ],
+      "target_sentence": "What is the ticket price?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "어른"
+      ],
+      "target_sentence": "Two adult tickets, please.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "50달러"
+      ],
+      "target_sentence": "That's 50 dollars.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "입구"
+      ],
+      "target_sentence": "Where is the entrance?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "닫아요"
+      ],
+      "target_sentence": "What time does it close?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 19,
+      "keywords": [
+        "buy"
+      ],
+      "target_sentence": "Hello. I would like to buy an entrance ticket.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 20,
+      "keywords": [
+        "price"
+      ],
+      "target_sentence": "Yes, what is the ticket price for today?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 21,
+      "keywords": [
+        "adult"
+      ],
+      "target_sentence": "Two adult tickets, please.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "dollars"
+      ],
+      "target_sentence": "That's a total of 50 dollars.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "entrance"
+      ],
+      "target_sentence": "Where is the entrance?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "close"
+      ],
+      "target_sentence": "What time does it close?",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 1,
+      "korean_phrase": "입장권",
+      "foreign_phrase": "entrance ticket"
+    },
+    {
+      "sentence_order": 2,
+      "korean_phrase": "입장권 가격",
+      "foreign_phrase": "ticket price"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "어른 두 장",
+      "foreign_phrase": "two adult tickets"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "총 50달러",
+      "foreign_phrase": "a total of 50 dollars"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "입구",
+      "foreign_phrase": "the entrance"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "몇 시에 문 닫아요",
+      "foreign_phrase": "What time does it close"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 3,
+      "korean_text": "어른 두 장으로 주세요.",
+      "foreign_text": "Two adult tickets, please.",
+      "reason": "이 문장은 수량과 종류를 명시하며 티켓 구매에 대한 직접적인 요청이므로 핵심적입니다."
+    }
+  ]
+}
