@@ -1,0 +1,410 @@
+{
+  "topic": {
+    "id": "c938b370-8b68-43a0-8e1b-e75b7a002210",
+    "title": "사업 제안 토론",
+    "category": "비즈니스",
+    "difficulty": "초급",
+    "description": "새로운 사업 제안에 대해 동료와 논의하는 상황입니다.",
+    "language_code": "en",
+    "total_sentences": 7
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 새로운 제안서 검토는 어떻게 되어가고 있나요?"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "제안은 강력하지만 잠재적인 예산 문제를 해결해야 합니다."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "비용 절감 방안에 대한 섹션을 초안으로 작성했습니다."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "일정은 어떻게 되나요?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "현실적인 출시 일정을 제안했습니다."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "좋아요, 재정 예측을 주의 깊게 검토하겠습니다."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "오늘 업무 종료 전까지 마무리하도록 합시다."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, how is the review of the new proposal coming along?",
+      "chunked_text": "Hello, | how is the review of the new proposal coming along?"
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "The proposal is strong, but we need to address potential budget concerns.",
+      "chunked_text": "The proposal is strong, | but we need to address potential budget concerns."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "I've drafted a section on cost-saving measures.",
+      "chunked_text": "I've drafted a section | on cost-saving measures."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "What about the timeline?",
+      "chunked_text": "What about | the timeline?"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "We've proposed a realistic rollout schedule.",
+      "chunked_text": "We've proposed | a realistic rollout schedule."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Okay, I'll review the financial projections carefully.",
+      "chunked_text": "Okay, | I'll review the financial projections | carefully."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "Let's finalize this by end of day.",
+      "chunked_text": "Let's finalize this | by end of day."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "안녕하세요",
+        "어떻게"
+      ],
+      "target_sentence": "Hello, how is the review of the new proposal coming along?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "제안은 강력하지만",
+        "잠재적인 예산 문제를 해결해야 합니다"
+      ],
+      "target_sentence": "The proposal is strong, but we need to address potential budget concerns.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "비용 절감 방안",
+        "섹션",
+        "초안 작성"
+      ],
+      "target_sentence": "I've drafted a section on cost-saving measures.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "일정",
+        "어떻게 되나요"
+      ],
+      "target_sentence": "What about the timeline?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "현실적인 출시 일정",
+        "제안했습니다"
+      ],
+      "target_sentence": "We've proposed a realistic rollout schedule.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "좋아요",
+        "재정 예측",
+        "주의 깊게 검토하겠습니다"
+      ],
+      "target_sentence": "Okay, I'll review the financial projections carefully.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "마무리",
+        "오늘 업무 종료 전까지"
+      ],
+      "target_sentence": "Let's finalize this by end of day.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "어떻게",
+        "제안서"
+      ],
+      "target_sentence": "Hello, how is the review of the new proposal coming along?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "강력하지만",
+        "예산 문제"
+      ],
+      "target_sentence": "The proposal is strong, but we need to address potential budget concerns.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "비용 절감",
+        "초안"
+      ],
+      "target_sentence": "I've drafted a section on cost-saving measures.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "일정"
+      ],
+      "target_sentence": "What about the timeline?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "출시 일정",
+        "제안"
+      ],
+      "target_sentence": "We've proposed a realistic rollout schedule.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "재정 예측",
+        "검토"
+      ],
+      "target_sentence": "Okay, I'll review the financial projections carefully.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "마무리",
+        "종료 전"
+      ],
+      "target_sentence": "Let's finalize this by end of day.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "제안서"
+      ],
+      "target_sentence": "Hello, how is the review of the new proposal coming along?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "예산 문제"
+      ],
+      "target_sentence": "The proposal is strong, but we need to address potential budget concerns.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "비용 절감"
+      ],
+      "target_sentence": "I've drafted a section on cost-saving measures.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "일정"
+      ],
+      "target_sentence": "What about the timeline?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "일정"
+      ],
+      "target_sentence": "We've proposed a realistic rollout schedule.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "재정 예측"
+      ],
+      "target_sentence": "Okay, I'll review the financial projections carefully.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "마무리"
+      ],
+      "target_sentence": "Let's finalize this by end of day.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "review"
+      ],
+      "target_sentence": "Hello, how is the review of the new proposal coming along?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "budget concerns"
+      ],
+      "target_sentence": "The proposal is strong, but we need to address potential budget concerns.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "cost-saving"
+      ],
+      "target_sentence": "I've drafted a section on cost-saving measures.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "timeline"
+      ],
+      "target_sentence": "What about the timeline?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "rollout schedule"
+      ],
+      "target_sentence": "We've proposed a realistic rollout schedule.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "financial projections"
+      ],
+      "target_sentence": "Okay, I'll review the financial projections carefully.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "finalize"
+      ],
+      "target_sentence": "Let's finalize this by end of day.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "잠재적인 예산 문제",
+      "foreign_phrase": "potential budget concerns"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "비용 절감 방안",
+      "foreign_phrase": "cost-saving measures"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "일정",
+      "foreign_phrase": "timeline"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "현실적인 출시 일정",
+      "foreign_phrase": "realistic rollout schedule"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "재정 예측",
+      "foreign_phrase": "financial projections"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 2,
+      "korean_text": "제안은 강력하지만 잠재적인 예산 문제를 해결해야 합니다.",
+      "foreign_text": "The proposal is strong, but we need to address potential budget concerns.",
+      "reason": "이 문장은 제안의 긍정적인 측면과 함께 실제적인 문제를 제기하며, 토론의 핵심적인 방향을 제시하기 때문입니다."
+    }
+  ]
+}

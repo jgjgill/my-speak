@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-20T16:33:17Z",
-  "total_count": 111,
+  "generated_at": "2026-05-22T16:16:17Z",
+  "total_count": 112,
   "weekly_plan": {
     "generated_at": "2026-05-17T15:21:43Z",
     "week_number": 20,
@@ -21,7 +21,7 @@
         "slug": "business-proposal-discussion",
         "title": "사업 제안 토론",
         "category": "비즈니스",
-        "used": false
+        "used": true
       }
     ]
   },
@@ -136,6 +136,7 @@
     "student-daily-routine",
     "writing-business-inquiry",
     "credit-score-discussion",
-    "visiting-a-theme-park"
+    "visiting-a-theme-park",
+    "business-proposal-discussion"
   ]
 }
