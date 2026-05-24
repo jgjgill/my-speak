@@ -2,26 +2,26 @@
   "generated_at": "2026-05-22T16:16:17Z",
   "total_count": 112,
   "weekly_plan": {
-    "generated_at": "2026-05-17T15:21:43Z",
-    "week_number": 20,
+    "generated_at": "2026-05-24T15:23:38Z",
+    "week_number": 21,
     "planned_slugs": [
       {
-        "slug": "credit-score-discussion",
-        "title": "신용 점수 상담",
+        "slug": "doctor-follow-up-chronic-condition",
+        "title": "의사의 만성 질환 추적 진료",
+        "category": "의료",
+        "used": false
+      },
+      {
+        "slug": "saving-for-down-payment",
+        "title": "계약금 저축하기",
         "category": "금융",
-        "used": true
+        "used": false
       },
       {
-        "slug": "visiting-a-theme-park",
-        "title": "테마파크 방문",
+        "slug": "attending-pottery-class",
+        "title": "도예 수업 참석하기",
         "category": "레저",
-        "used": true
-      },
-      {
-        "slug": "business-proposal-discussion",
-        "title": "사업 제안 토론",
-        "category": "비즈니스",
-        "used": true
+        "used": false
       }
     ]
   },
