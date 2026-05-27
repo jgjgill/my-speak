@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-25T16:16:09Z",
-  "total_count": 113,
+  "generated_at": "2026-05-27T16:43:33Z",
+  "total_count": 114,
   "weekly_plan": {
     "generated_at": "2026-05-24T15:23:38Z",
     "week_number": 21,
@@ -15,7 +15,7 @@
         "slug": "saving-for-down-payment",
         "title": "계약금 저축하기",
         "category": "금융",
-        "used": false
+        "used": true
       },
       {
         "slug": "attending-pottery-class",
@@ -138,6 +138,7 @@
     "credit-score-discussion",
     "visiting-a-theme-park",
     "business-proposal-discussion",
-    "doctor-follow-up-chronic-condition"
+    "doctor-follow-up-chronic-condition",
+    "saving-for-down-payment"
   ]
 }
