@@ -1,0 +1,424 @@
+{
+  "topic": {
+    "id": "b2b061e2-4616-4eea-8c21-98e96a471d35",
+    "title": "도예 수업 참석하기",
+    "category": "레저",
+    "difficulty": "초급",
+    "description": "도예 수업에 처음 참가하는 초급자를 위한 기본 안내 및 대화 연습 콘텐츠입니다.",
+    "language_code": "en",
+    "total_sentences": 7
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요! 도예 수업에 오신 것을 환영합니다."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "안녕하세요. 오늘 수업이 처음인데, 어떤 것부터 시작해야 할까요?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "걱정 마세요. 먼저 기본적인 도구 사용법을 알려드릴게요."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "네, 좋습니다. 준비물은 다 챙겨왔어요."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "잘하셨어요. 그럼 흙을 만져볼 준비를 해볼까요?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "네! 얼른 만들어보고 싶어요."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "좋아요. 작은 그릇부터 시작해봅시다."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello! Welcome to the pottery class.",
+      "chunked_text": "Hello, | welcome to the pottery class."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Hello. It's my first class today, what should I start with?",
+      "chunked_text": "Hello. | It's my first class today, | what should I start with?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Don't worry. First, I'll show you how to use basic tools.",
+      "chunked_text": "Don't worry. | First, | I'll show you how to use basic tools."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Yes, that's great. I brought all the necessary supplies.",
+      "chunked_text": "Yes, that's great. | I brought all the necessary supplies."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Well done. Shall we get ready to touch the clay?",
+      "chunked_text": "Well done. | Shall we get ready to touch the clay?"
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Yes! I can't wait to try making something.",
+      "chunked_text": "Yes! | I can't wait to try making something."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "Great. Let's start with a small bowl.",
+      "chunked_text": "Great. | Let's start with a small bowl."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "안녕하세요",
+        "도예 수업에 오신 것을 환영합니다"
+      ],
+      "target_sentence": "Hello! Welcome to the pottery class.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "오늘",
+        "처음",
+        "무엇부터",
+        "시작해야 할까요"
+      ],
+      "target_sentence": "It's my first class today, what should I start with?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "걱정 마세요",
+        "기본",
+        "도구 사용법",
+        "알려드릴게요"
+      ],
+      "target_sentence": "Don't worry. First, I'll show you how to use basic tools.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "네",
+        "좋습니다",
+        "준비물",
+        "다 챙겨왔어요"
+      ],
+      "target_sentence": "Yes, that's great. I brought all the necessary supplies.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "잘하셨어요",
+        "흙",
+        "만져볼 준비"
+      ],
+      "target_sentence": "Well done. Shall we get ready to touch the clay?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "네",
+        "빨리",
+        "만들어보고 싶어요"
+      ],
+      "target_sentence": "Yes! I can't wait to try making something.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "좋아요",
+        "작은 그릇",
+        "시작"
+      ],
+      "target_sentence": "Great. Let's start with a small bowl.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "안녕하세요",
+        "환영합니다"
+      ],
+      "target_sentence": "Hello! Welcome to the pottery class.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "첫 수업",
+        "무엇부터"
+      ],
+      "target_sentence": "It's my first class today, what should I start with?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "기본",
+        "도구 사용법"
+      ],
+      "target_sentence": "Don't worry. First, I'll show you how to use basic tools.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "준비물",
+        "챙겨왔어요"
+      ],
+      "target_sentence": "Yes, that's great. I brought all the necessary supplies.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "흙",
+        "준비"
+      ],
+      "target_sentence": "Well done. Shall we get ready to touch the clay?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "빨리",
+        "만들고 싶어요"
+      ],
+      "target_sentence": "Yes! I can't wait to try making something.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "작은 그릇",
+        "시작"
+      ],
+      "target_sentence": "Great. Let's start with a small bowl.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "환영합니다"
+      ],
+      "target_sentence": "Welcome to the pottery class.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "첫 수업"
+      ],
+      "target_sentence": "It's my first class today, what should I start with?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "도구 사용법"
+      ],
+      "target_sentence": "I'll show you how to use basic tools.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "준비물"
+      ],
+      "target_sentence": "I brought all the necessary supplies.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "흙"
+      ],
+      "target_sentence": "Shall we get ready to touch the clay?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "만들고 싶어요"
+      ],
+      "target_sentence": "I can't wait to try making something.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "작은 그릇"
+      ],
+      "target_sentence": "Let's start with a small bowl.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "Welcome"
+      ],
+      "target_sentence": "Hello! Welcome to the pottery class.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "First class",
+        "start"
+      ],
+      "target_sentence": "It's my first class today, what should I start with?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "Tools"
+      ],
+      "target_sentence": "Don't worry. First, I'll show you how to use basic tools.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "Supplies"
+      ],
+      "target_sentence": "Yes, that's great. I brought all the necessary supplies.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "Clay"
+      ],
+      "target_sentence": "Well done. Shall we get ready to touch the clay?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "Making"
+      ],
+      "target_sentence": "Yes! I can't wait to try making something.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "Bowl"
+      ],
+      "target_sentence": "Great. Let's start with a small bowl.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "어떤 것부터 시작해야 할까요?",
+      "foreign_phrase": "What should I start with?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "기본적인 도구 사용법",
+      "foreign_phrase": "how to use basic tools"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "준비물은 다 챙겨왔어요.",
+      "foreign_phrase": "I brought all the necessary supplies."
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "흙을 만져볼 준비",
+      "foreign_phrase": "ready to touch the clay"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "얼른 만들어보고 싶어요.",
+      "foreign_phrase": "I can't wait to try making something."
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "작은 그릇부터 시작",
+      "foreign_phrase": "Let's start with a small bowl"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 3,
+      "korean_text": "오늘 수업이 처음인데, 어떤 것부터 시작해야 할까요?",
+      "foreign_text": "It's my first class today, what should I start with?",
+      "reason": "초급 학습자가 수업에 대한 막연한 두려움을 해소하고 첫걸음을 떼는 데 필요한 질문이기 때문입니다."
+    }
+  ]
+}
