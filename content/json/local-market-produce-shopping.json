@@ -1,0 +1,338 @@
+{
+  "topic": {
+    "id": "929ac88e-539e-41e8-9dda-42d347c2441c",
+    "title": "지역 시장 농산물 구매",
+    "category": "쇼핑",
+    "difficulty": "초급",
+    "description": "지역 시장에서 농산물을 구매하는 기본적인 영어 대화 스크립트입니다.",
+    "language_code": "en",
+    "total_sentences": 6
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요! 오늘 뭘 도와드릴까요?"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "네, 싱싱한 토마토는 얼마인가요?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "이 토마토는 1kg에 3,000원입니다."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "두 팩 주세요."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "네, 여기 있습니다."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "**감사합니다**."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello! What can I help you with today?",
+      "chunked_text": "Hello! | what can I help you with today?"
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Yes, how much are the **fresh tomatoes**?",
+      "chunked_text": "Yes, | how much are the fresh tomatoes?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "These tomatoes are 3,000 won per kg.",
+      "chunked_text": "These tomatoes are | 3,000 won per kg."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Please give me **two packs**.",
+      "chunked_text": "Please give me | two packs."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Yes, here you are.",
+      "chunked_text": "Yes, | here you are."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "안녕하세요",
+        "무엇을 도와드릴까요?"
+      ],
+      "target_sentence": "Hello! What can I help you with today?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "네",
+        "싱싱한 토마토",
+        "얼마인가요?"
+      ],
+      "target_sentence": "Yes, how much are the fresh tomatoes?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "이 토마토",
+        "1kg에 3",
+        "000원"
+      ],
+      "target_sentence": "These tomatoes are 3,000 won per kg.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "두 팩",
+        "주세요"
+      ],
+      "target_sentence": "Please give me two packs.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "네",
+        "여기 있습니다"
+      ],
+      "target_sentence": "Yes, here you are.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "감사합니다"
+      ],
+      "target_sentence": "Thank you.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 7,
+      "keywords": [
+        "안녕하세요"
+      ],
+      "target_sentence": "Hello! What can I help you with today?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "토마토",
+        "얼마인가요"
+      ],
+      "target_sentence": "Yes, how much are the fresh tomatoes?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "1kg",
+        "3",
+        "000원"
+      ],
+      "target_sentence": "These tomatoes are 3,000 won per kg.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "두 팩"
+      ],
+      "target_sentence": "Please give me two packs.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "여기 있습니다"
+      ],
+      "target_sentence": "Yes, here you are.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "감사합니다"
+      ],
+      "target_sentence": "Thank you.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 13,
+      "keywords": [
+        "무엇을"
+      ],
+      "target_sentence": "What can I help you with today?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 14,
+      "keywords": [
+        "토마토"
+      ],
+      "target_sentence": "How much are the fresh tomatoes?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "3",
+        "000원"
+      ],
+      "target_sentence": "3,000 won per kg.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "두 팩"
+      ],
+      "target_sentence": "Please give me two packs.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "여기"
+      ],
+      "target_sentence": "Yes, here you are.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "감사합니다"
+      ],
+      "target_sentence": "Thank you.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 19,
+      "keywords": [
+        "hello"
+      ],
+      "target_sentence": "Hello! What can I help you with today?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 20,
+      "keywords": [
+        "tomatoes"
+      ],
+      "target_sentence": "Yes, how much are the fresh tomatoes?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 21,
+      "keywords": [
+        "3",
+        "000"
+      ],
+      "target_sentence": "These tomatoes are 3,000 won per kg.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "two"
+      ],
+      "target_sentence": "Please give me two packs.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "here"
+      ],
+      "target_sentence": "Yes, here you are.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "thank you"
+      ],
+      "target_sentence": "Thank you.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "싱싱한 토마토",
+      "foreign_phrase": "fresh tomatoes"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "두 팩",
+      "foreign_phrase": "two packs"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 2,
+      "korean_text": "네, 싱싱한 토마토는 얼마인가요?",
+      "foreign_text": "Yes, how much are the fresh tomatoes?",
+      "reason": "이 문장은 상품 가격을 묻는 핵심적인 질문입니다."
+    }
+  ]
+}

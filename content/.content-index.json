@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-29T16:43:56Z",
-  "total_count": 115,
+  "generated_at": "2026-06-03T17:10:39Z",
+  "total_count": 116,
   "weekly_plan": {
     "generated_at": "2026-05-31T15:27:10Z",
     "week_number": 22,
@@ -9,7 +9,7 @@
         "slug": "local-market-produce-shopping",
         "title": "지역 시장 농산물 구매",
         "category": "쇼핑",
-        "used": false
+        "used": true
       },
       {
         "slug": "new-city-public-transportation-navigation",
@@ -140,6 +140,7 @@
     "business-proposal-discussion",
     "doctor-follow-up-chronic-condition",
     "saving-for-down-payment",
-    "attending-pottery-class"
+    "attending-pottery-class",
+    "local-market-produce-shopping"
   ]
 }
