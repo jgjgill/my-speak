@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-03T17:10:39Z",
-  "total_count": 116,
+  "generated_at": "2026-06-08T16:45:33Z",
+  "total_count": 117,
   "weekly_plan": {
     "generated_at": "2026-06-07T15:29:40Z",
     "week_number": 23,
@@ -9,7 +9,7 @@
         "slug": "retirement-planning-discussion",
         "title": "은퇴 계획 논의",
         "category": "금융",
-        "used": false
+        "used": true
       },
       {
         "slug": "specialist-symptom-consultation",
@@ -141,6 +141,7 @@
     "doctor-follow-up-chronic-condition",
     "saving-for-down-payment",
     "attending-pottery-class",
-    "local-market-produce-shopping"
+    "local-market-produce-shopping",
+    "retirement-planning-discussion"
   ]
 }

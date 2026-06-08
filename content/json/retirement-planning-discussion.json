@@ -1,0 +1,390 @@
+{
+  "topic": {
+    "id": "360e4790-5725-41d9-a8c7-50da329251f5",
+    "title": "은퇴 계획 논의",
+    "category": "금융",
+    "difficulty": "초급",
+    "description": "은퇴 계획 수립에 대한 기초적인 대화를 통해 저축의 중요성과 목표 설정을 배웁니다.",
+    "language_code": "en",
+    "total_sentences": 7
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 은퇴 계획에 대해 이야기해 볼까요?"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "네, 좋아요. 제 생각에는 은퇴 자금을 얼마나 모아야 할지 잘 모르겠어요."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "걱정 마세요. 일반적으로 은퇴 후 생활비의 70~80% 정도를 저축하라고 권장합니다."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "그렇군요. 그럼 지금부터 꾸준히 저축하는 게 중요하겠네요."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "맞아요. 그리고 은퇴 후 예상되는 생활 방식에 맞춰 계획을 세워야 합니다."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "예를 들면 여행을 많이 다니고 싶으면 더 많은 돈이 필요하겠네요."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "네, 맞습니다. 지금부터 구체적인 목표를 세우고 실천하는 것이 좋습니다."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, shall we talk about retirement planning?",
+      "chunked_text": "Hello, | shall we talk about retirement planning?"
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Yes, great. I'm not sure how much I need to save for retirement.",
+      "chunked_text": "Yes, great. | I'm not sure | how much I need to save | for retirement."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Don't worry. Generally, it is recommended to save about 70-80% of your pre-retirement living expenses.",
+      "chunked_text": "Don't worry. | Generally, it is recommended | to save about 70-80% | of your pre-retirement living expenses."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "I see. So, it’s important to save consistently from now on.",
+      "chunked_text": "I see. | So, it’s important | to save consistently | from now on."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "That's right. And you need to plan according to your expected lifestyle after retirement.",
+      "chunked_text": "That's right. | And you need to plan | according to your expected lifestyle | after retirement."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "For example, if I want to travel a lot, I'll need more money.",
+      "chunked_text": "For example, | if I want to travel a lot, | I'll need more money."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "Yes, that's right. It’s good to set specific goals and act on them starting now.",
+      "chunked_text": "Yes, that's right. | It’s good to set specific goals | and act on them | starting now."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "Hello",
+        "shall we talk about retirement planning?"
+      ],
+      "target_sentence": "Hello, shall we talk about retirement planning?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "Yes",
+        "great. I'm not sure how much I need to save for retirement."
+      ],
+      "target_sentence": "Yes, great. not sure how much save for retirement.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "Don't worry. Generally",
+        "it is recommended to save about 70-80% of your pre-retirement living expenses."
+      ],
+      "target_sentence": "Don't worry. Generally, recommended save about 70-80% pre-retirement living expenses.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "I see. So",
+        "it’s important to save consistently from now on."
+      ],
+      "target_sentence": "I see. So, important save consistently from now on.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "That's right. And you need to plan according to your expected lifestyle after retirement."
+      ],
+      "target_sentence": "That's right. And need plan according to expected lifestyle after retirement.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "For example",
+        "if I want to travel a lot",
+        "I'll need more money."
+      ],
+      "target_sentence": "For example, want travel a lot, need more money.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "Yes",
+        "that's right. It’s good to set specific goals and act on them starting now."
+      ],
+      "target_sentence": "Yes, right. good set specific goals and act on them starting now.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "Hello",
+        "shall we talk about retirement planning?"
+      ],
+      "target_sentence": "Hello, retirement planning?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "Yes",
+        "great. I'm not sure how much I need to save for retirement."
+      ],
+      "target_sentence": "Yes, not sure how much save.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "Don't worry. Generally",
+        "it is recommended to save about 70-80% of your pre-retirement living expenses."
+      ],
+      "target_sentence": "Generally, recommended save 70-80% expenses.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "I see. So",
+        "it’s important to save consistently from now on."
+      ],
+      "target_sentence": "So, important save consistently.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "That's right. And you need to plan according to your expected lifestyle after retirement."
+      ],
+      "target_sentence": "Need plan lifestyle after retirement.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "For example",
+        "if I want to travel a lot",
+        "I'll need more money."
+      ],
+      "target_sentence": "Example, travel, need money.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "Yes",
+        "that's right. It’s good to set specific goals and act on them starting now."
+      ],
+      "target_sentence": "Good set goals, act now.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "Hello",
+        "shall we talk about retirement planning?"
+      ],
+      "target_sentence": "Hello, planning?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "Yes",
+        "great. I'm not sure how much I need to save for retirement."
+      ],
+      "target_sentence": "Yes, save?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "Don't worry. Generally",
+        "it is recommended to save about 70-80% of your pre-retirement living expenses."
+      ],
+      "target_sentence": "Recommended save expenses.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "I see. So",
+        "it’s important to save consistently from now on."
+      ],
+      "target_sentence": "Important save.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "That's right. And you need to plan according to your expected lifestyle after retirement."
+      ],
+      "target_sentence": "Plan lifestyle.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "For example",
+        "if I want to travel a lot",
+        "I'll need more money."
+      ],
+      "target_sentence": "Travel, money.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "Yes",
+        "that's right. It’s good to set specific goals and act on them starting now."
+      ],
+      "target_sentence": "Set goals.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "planning"
+      ],
+      "target_sentence": "planning",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "save"
+      ],
+      "target_sentence": "save",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "recommended"
+      ],
+      "target_sentence": "recommended",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "consistently"
+      ],
+      "target_sentence": "consistently",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "lifestyle"
+      ],
+      "target_sentence": "lifestyle",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "travel"
+      ],
+      "target_sentence": "travel",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "goals"
+      ],
+      "target_sentence": "goals",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [],
+  "highlight_sentences": [
+    {
+      "sentence_order": 3,
+      "korean_text": "일반적으로 은퇴 후 생활비의 70~80% 정도를 저축하라고 권장합니다.",
+      "foreign_text": "Generally, it is recommended to save about 70-80% of your pre-retirement living expenses.",
+      "reason": "은퇴 자금 마련에 대한 구체적인 가이드라인을 제시하여 초급 학습자에게 실질적인 도움을 주기 때문입니다."
+    }
+  ]
+}
