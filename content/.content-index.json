@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-08T16:45:33Z",
-  "total_count": 117,
+  "generated_at": "2026-06-10T16:42:21Z",
+  "total_count": 118,
   "weekly_plan": {
     "generated_at": "2026-06-07T15:29:40Z",
     "week_number": 23,
@@ -15,7 +15,7 @@
         "slug": "specialist-symptom-consultation",
         "title": "전문의 증상 상담",
         "category": "의료",
-        "used": false
+        "used": true
       },
       {
         "slug": "attending-a-wedding",
@@ -142,6 +142,7 @@
     "saving-for-down-payment",
     "attending-pottery-class",
     "local-market-produce-shopping",
-    "retirement-planning-discussion"
+    "retirement-planning-discussion",
+    "specialist-symptom-consultation"
   ]
 }

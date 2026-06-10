@@ -1,0 +1,487 @@
+{
+  "topic": {
+    "id": "a9720065-7c8d-4702-bed6-a3b086b5f36d",
+    "title": "전문의 증상 상담",
+    "category": "의료",
+    "difficulty": "초급",
+    "description": "진료 예약 후 전문의에게 자신의 증상을 정확히 설명하고 상담하는 방법을 배웁니다.",
+    "language_code": "en",
+    "total_sentences": 8
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 예약한 김민준입니다."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "네, 김민준님. 어디가 불편해서 오셨나요?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "머리가 아픈데요, 3일째 계속되고 있어요."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "두통이 언제부터 시작되었고, 어떤 종류의 통증인가요?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "찌르는 듯한 통증이고, 주로 이마 쪽이 아파요."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "메스꺼움이나 어지럼증은 없으신가요?"
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "아니요, 그런 증상은 없어요."
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "알겠습니다. 좀 더 자세히 진찰해 볼게요."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, I'm Kim Minjun, I have an appointment.",
+      "chunked_text": "Hello, | I'm Kim Minjun, | I have an appointment."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Yes, Mr. Kim Minjun. What brings you here today?",
+      "chunked_text": "Yes, | Mr. Kim Minjun. | What brings you here today?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "I have a headache, it's been three days.",
+      "chunked_text": "I have a headache, | it's been three days."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "When did the headache start, and what kind of pain is it?",
+      "chunked_text": "When did the headache start, | and what kind of pain is it?"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "It's a stabbing pain, and it mostly hurts on the forehead.",
+      "chunked_text": "It's a stabbing pain, | and it mostly hurts | on the forehead."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Do you have any nausea or dizziness?",
+      "chunked_text": "Do you have any nausea | or dizziness?"
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "No, I don't have those symptoms.",
+      "chunked_text": "No, | I don't have those symptoms."
+    },
+    {
+      "sentence_order": 8,
+      "foreign_text": "Understood. I will examine you more closely.",
+      "chunked_text": "Understood. | I will examine you | more closely."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "안녕하세요",
+        "예약했습니다"
+      ],
+      "target_sentence": "Hello, I'm Kim Minjun, I have an appointment.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "네",
+        "어디 불편",
+        "오셨나요"
+      ],
+      "target_sentence": "Yes, Mr. Kim Minjun. What brings you here today?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "머리 아프",
+        "3일째 계속"
+      ],
+      "target_sentence": "I have a headache, it's been three days.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "언제부터",
+        "어떤 종류",
+        "통증"
+      ],
+      "target_sentence": "When did the headache start, and what kind of pain is it?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "찌르는 듯",
+        "이마 쪽"
+      ],
+      "target_sentence": "It's a stabbing pain, and it mostly hurts on the forehead.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "메스꺼움",
+        "어지럼증",
+        "없으신가요"
+      ],
+      "target_sentence": "Do you have any nausea or dizziness?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "아니요",
+        "그런 증상",
+        "없어요"
+      ],
+      "target_sentence": "No, I don't have those symptoms.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 8,
+      "keywords": [
+        "알겠습니다",
+        "진찰"
+      ],
+      "target_sentence": "Understood. I will examine you more closely.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "안녕하세요",
+        "예약"
+      ],
+      "target_sentence": "Hello, I'm Kim Minjun, I have an appointment.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "어디 불편"
+      ],
+      "target_sentence": "What brings you here today?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "머리 아프",
+        "3일째"
+      ],
+      "target_sentence": "I have a headache, it's been three days.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "언제",
+        "어떤 종류"
+      ],
+      "target_sentence": "When did the headache start, and what kind of pain is it?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "찌르는",
+        "이마"
+      ],
+      "target_sentence": "It's a stabbing pain, and it mostly hurts on the forehead.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "메스꺼움",
+        "어지럼증"
+      ],
+      "target_sentence": "Do you have any nausea or dizziness?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 15,
+      "keywords": [
+        "증상 없음"
+      ],
+      "target_sentence": "No, I don't have those symptoms.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 16,
+      "keywords": [
+        "진찰"
+      ],
+      "target_sentence": "Understood. I will examine you more closely.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "예약"
+      ],
+      "target_sentence": "Hello, I'm Kim Minjun, I have an appointment.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "불편"
+      ],
+      "target_sentence": "What brings you here today?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "두통",
+        "3일"
+      ],
+      "target_sentence": "I have a headache, it's been three days.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "언제",
+        "종류"
+      ],
+      "target_sentence": "When did the headache start, and what kind of pain is it?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "이마"
+      ],
+      "target_sentence": "It's a stabbing pain, and it mostly hurts on the forehead.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 22,
+      "keywords": [
+        "메스꺼움",
+        "어지럼증"
+      ],
+      "target_sentence": "Do you have any nausea or dizziness?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 23,
+      "keywords": [
+        "없어요"
+      ],
+      "target_sentence": "No, I don't have those symptoms.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 24,
+      "keywords": [
+        "진찰"
+      ],
+      "target_sentence": "Understood. I will examine you more closely.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "appointment"
+      ],
+      "target_sentence": "Hello, I'm Kim Minjun, I have an appointment.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "here"
+      ],
+      "target_sentence": "What brings you here today?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "headache",
+        "three days"
+      ],
+      "target_sentence": "I have a headache, it's been three days.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "when",
+        "kind"
+      ],
+      "target_sentence": "When did the headache start, and what kind of pain is it?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 29,
+      "keywords": [
+        "forehead"
+      ],
+      "target_sentence": "It's a stabbing pain, and it mostly hurts on the forehead.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 30,
+      "keywords": [
+        "nausea",
+        "dizziness"
+      ],
+      "target_sentence": "Do you have any nausea or dizziness?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 31,
+      "keywords": [
+        "no symptoms"
+      ],
+      "target_sentence": "No, I don't have those symptoms.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 32,
+      "keywords": [
+        "examine"
+      ],
+      "target_sentence": "Understood. I will examine you more closely.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 3,
+      "korean_phrase": "머리가 아픈데요",
+      "foreign_phrase": "I have a headache"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "3일째 계속되고 있어요",
+      "foreign_phrase": "it's been three days"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "언제부터",
+      "foreign_phrase": "since when"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "어떤 종류",
+      "foreign_phrase": "what kind"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "찌르는 듯한",
+      "foreign_phrase": "stabbing"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "주로 이마 쪽",
+      "foreign_phrase": "mostly on the forehead"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "메스꺼움",
+      "foreign_phrase": "nausea"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "어지럼증",
+      "foreign_phrase": "dizziness"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "그런 증상은 없어요",
+      "foreign_phrase": "I don't have those symptoms"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 3,
+      "korean_text": "머리가 아픈데요, 3일째 계속되고 있어요.",
+      "foreign_text": "I have a headache, it's been three days.",
+      "reason": "환자가 자신의 주된 증상과 지속 기간을 명확하게 전달하는 핵심 문장입니다."
+    }
+  ]
+}
