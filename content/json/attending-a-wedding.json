@@ -1,0 +1,453 @@
+{
+  "topic": {
+    "id": "5206c981-e617-488d-b1fb-1b43cb1e79ea",
+    "title": "결혼식 참석",
+    "category": "레저",
+    "difficulty": "초급",
+    "description": "결혼식 참석 관련 기본적인 영어 표현을 익힙니다.",
+    "language_code": "en",
+    "total_sentences": 7
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요! 곧 친구 결혼식에 가는데, 무엇을 입어야 할지 모르겠어요."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "보통 정장을 입으면 괜찮아요. 아니면 깔끔한 원피스도 좋아요."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "선물을 꼭 챙겨야 하나요?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "축의금을 내는 것이 일반적이에요."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "얼마 정도 내는 게 좋을까요?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "보통 5만원 또는 10만원 정도 준비해요."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "걱정 마세요, 잘 다녀오세요!"
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello! I have a friend's wedding soon, and I don't know what to wear.",
+      "chunked_text": "Hello! | I have a friend's wedding soon, | and I don't know what to wear."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "It's usually okay to wear a suit. A neat dress is also good.",
+      "chunked_text": "It's usually okay | to wear a suit. | A neat dress is also good."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Do I have to prepare a gift?",
+      "chunked_text": "Do I have to prepare a gift?"
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "It is common to give a cash gift.",
+      "chunked_text": "It is common | to give a cash gift."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "How much should I give?",
+      "chunked_text": "How much should I give?"
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Usually, people prepare around 50,000 or 100,000 won.",
+      "chunked_text": "Usually, people prepare | around 50,000 or 100,000 won."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "Don't worry, have a good time!",
+      "chunked_text": "Don't worry, | have a good time!"
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "결혼식",
+        "무엇을 입을지"
+      ],
+      "target_sentence": "Hello! I have a friend's wedding soon, and I don't know what to wear.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "정장"
+      ],
+      "target_sentence": "It's usually okay to wear a suit.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "원피스"
+      ],
+      "target_sentence": "A neat dress is also good.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "선물"
+      ],
+      "target_sentence": "Do I have to prepare a gift?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "축의금"
+      ],
+      "target_sentence": "It is common to give a cash gift.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "얼마"
+      ],
+      "target_sentence": "How much should I give?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "5만원",
+        "10만원"
+      ],
+      "target_sentence": "Usually, people prepare around 50,000 or 100,000 won.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 8,
+      "keywords": [
+        "잘 다녀오세요"
+      ],
+      "target_sentence": "Don't worry, have a good time!",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "결혼식",
+        "옷"
+      ],
+      "target_sentence": "Hello! I have a friend's wedding soon, and I don't know what to wear.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "정장"
+      ],
+      "target_sentence": "It's usually okay to wear a suit.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "원피스"
+      ],
+      "target_sentence": "A neat dress is also good.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "선물?"
+      ],
+      "target_sentence": "Do I have to prepare a gift?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "축의금"
+      ],
+      "target_sentence": "It is common to give a cash gift.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "얼마?"
+      ],
+      "target_sentence": "How much should I give?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 15,
+      "keywords": [
+        "금액"
+      ],
+      "target_sentence": "Usually, people prepare around 50,000 or 100,000 won.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 16,
+      "keywords": [
+        "잘 다녀오세요"
+      ],
+      "target_sentence": "Don't worry, have a good time!",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "옷"
+      ],
+      "target_sentence": "I don't know what to wear.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "정장"
+      ],
+      "target_sentence": "Wear a suit.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "원피스"
+      ],
+      "target_sentence": "Neat dress is good.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "선물?"
+      ],
+      "target_sentence": "Prepare a gift?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "축의금"
+      ],
+      "target_sentence": "Cash gift is common.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 22,
+      "keywords": [
+        "얼마?"
+      ],
+      "target_sentence": "How much to give?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 23,
+      "keywords": [
+        "금액"
+      ],
+      "target_sentence": "50,000 or 100,000 won.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 24,
+      "keywords": [
+        "다녀오세요"
+      ],
+      "target_sentence": "Have a good time!",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "Wear"
+      ],
+      "target_sentence": "I don't know what to wear.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "Suit"
+      ],
+      "target_sentence": "It's usually okay to wear a suit.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "Dress"
+      ],
+      "target_sentence": "A neat dress is also good.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "Gift"
+      ],
+      "target_sentence": "Do I have to prepare a gift?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 29,
+      "keywords": [
+        "Cash"
+      ],
+      "target_sentence": "It is common to give a cash gift.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 30,
+      "keywords": [
+        "How much"
+      ],
+      "target_sentence": "How much should I give?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 31,
+      "keywords": [
+        "Amount"
+      ],
+      "target_sentence": "Usually, people prepare around 50,000 or 100,000 won.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 32,
+      "keywords": [
+        "Time"
+      ],
+      "target_sentence": "Don't worry, have a good time!",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 1,
+      "korean_phrase": "무엇을 입어야 할지 모르겠어요",
+      "foreign_phrase": "I don't know what to wear"
+    },
+    {
+      "sentence_order": 2,
+      "korean_phrase": "정장을 입으면 괜찮아요",
+      "foreign_phrase": "it's okay to wear a suit"
+    },
+    {
+      "sentence_order": 2,
+      "korean_phrase": "깔끔한 원피스",
+      "foreign_phrase": "a neat dress"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "선물을 꼭 챙겨야 하나요",
+      "foreign_phrase": "Do I have to prepare a gift"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "축의금",
+      "foreign_phrase": "cash gift"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "얼마 정도 내는 게 좋을까요",
+      "foreign_phrase": "How much should I give"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "5만원 또는 10만원",
+      "foreign_phrase": "50,000 or 100,000 won"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "잘 다녀오세요",
+      "foreign_phrase": "Have a good time"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 5,
+      "korean_text": "얼마 정도 내는 게 좋을까요?",
+      "foreign_text": "How much should I give?",
+      "reason": "결혼식 참석 시 필요한 금전적 준비에 대한 구체적인 정보를 제공하는 핵심 질문이기 때문입니다."
+    }
+  ]
+}

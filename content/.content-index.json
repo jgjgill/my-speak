@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-10T16:42:21Z",
-  "total_count": 118,
+  "generated_at": "2026-06-12T16:29:59Z",
+  "total_count": 119,
   "weekly_plan": {
     "generated_at": "2026-06-07T15:29:40Z",
     "week_number": 23,
@@ -21,7 +21,7 @@
         "slug": "attending-a-wedding",
         "title": "결혼식 참석",
         "category": "레저",
-        "used": false
+        "used": true
       }
     ]
   },
@@ -143,6 +143,7 @@
     "attending-pottery-class",
     "local-market-produce-shopping",
     "retirement-planning-discussion",
-    "specialist-symptom-consultation"
+    "specialist-symptom-consultation",
+    "attending-a-wedding"
   ]
 }
