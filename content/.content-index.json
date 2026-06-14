@@ -2,26 +2,26 @@
   "generated_at": "2026-06-12T16:29:59Z",
   "total_count": 119,
   "weekly_plan": {
-    "generated_at": "2026-06-07T15:29:40Z",
-    "week_number": 23,
+    "generated_at": "2026-06-14T15:32:42Z",
+    "week_number": 24,
     "planned_slugs": [
       {
-        "slug": "retirement-planning-discussion",
-        "title": "은퇴 계획 논의",
-        "category": "금융",
-        "used": true
+        "slug": "expressing-gratitude",
+        "title": "감사 표현하기",
+        "category": "회화",
+        "used": false
       },
       {
-        "slug": "specialist-symptom-consultation",
-        "title": "전문의 증상 상담",
+        "slug": "shopping-for-electronics",
+        "title": "전자제품 쇼핑하기",
+        "category": "쇼핑",
+        "used": false
+      },
+      {
+        "slug": "understanding-prescription",
+        "title": "처방전 이해하기",
         "category": "의료",
-        "used": true
-      },
-      {
-        "slug": "attending-a-wedding",
-        "title": "결혼식 참석",
-        "category": "레저",
-        "used": true
+        "used": false
       }
     ]
   },
