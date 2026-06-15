@@ -1,0 +1,274 @@
+{
+  "topic": {
+    "id": "5e1dd51e-43cf-425d-8d36-14c4f62cf861",
+    "title": "감사 표현하기",
+    "category": "회화",
+    "difficulty": "초급",
+    "description": "Learn basic phrases and dialogues for expressing gratitude in English.",
+    "language_code": "en",
+    "total_sentences": 5
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "어제 도와주신 것에 대해 감사드리고 싶었어요."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "천만에요! 도와드릴 수 있어서 기뻤어요."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "정말 큰 도움이 됐어요. 정말 감사합니다."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "도울 수 있어서 다행이에요."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "다시 한번 감사드려요."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "I wanted to thank you for your help yesterday.",
+      "chunked_text": "I wanted to thank you | for your help yesterday."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "You're welcome! I was happy to assist.",
+      "chunked_text": "You're welcome! | I was happy to assist."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "It made a big difference. I really appreciate it.",
+      "chunked_text": "It made a big difference. | I really appreciate it."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Glad I could help.",
+      "chunked_text": "Glad I could help."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Thank you again.",
+      "chunked_text": "Thank you again."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "어제 도와주신 것",
+        "감사드리고 싶었어요"
+      ],
+      "target_sentence": "I wanted to thank you for your help yesterday.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "천만에요",
+        "도와드릴 수 있어서 기뻤어요"
+      ],
+      "target_sentence": "You're welcome! I was happy to assist.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "정말 큰 도움이 됐어요",
+        "정말 감사합니다"
+      ],
+      "target_sentence": "It made a big difference. I really appreciate it.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "도울 수 있어서 다행이에요"
+      ],
+      "target_sentence": "Glad I could help.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "다시 한번 감사드려요"
+      ],
+      "target_sentence": "Thank you again.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 6,
+      "keywords": [
+        "어제 도움"
+      ],
+      "target_sentence": "I wanted to thank you for your help yesterday.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 7,
+      "keywords": [
+        "기쁘게 도와드림"
+      ],
+      "target_sentence": "You're welcome! I was happy to assist.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "큰 도움"
+      ],
+      "target_sentence": "It made a big difference. I really appreciate it.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "도움"
+      ],
+      "target_sentence": "Glad I could help.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "다시 감사"
+      ],
+      "target_sentence": "Thank you again.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 11,
+      "keywords": [
+        "도움"
+      ],
+      "target_sentence": "I wanted to thank you for your help yesterday.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 12,
+      "keywords": [
+        "천만에요"
+      ],
+      "target_sentence": "You're welcome! I was happy to assist.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 13,
+      "keywords": [
+        "감사"
+      ],
+      "target_sentence": "It made a big difference. I really appreciate it.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 14,
+      "keywords": [
+        "도움"
+      ],
+      "target_sentence": "Glad I could help.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "다시"
+      ],
+      "target_sentence": "Thank you again.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 16,
+      "keywords": [
+        "thank"
+      ],
+      "target_sentence": "I wanted to thank you for your help yesterday.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 17,
+      "keywords": [
+        "welcome"
+      ],
+      "target_sentence": "You're welcome! I was happy to assist.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 18,
+      "keywords": [
+        "appreciate"
+      ],
+      "target_sentence": "It made a big difference. I really appreciate it.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 19,
+      "keywords": [
+        "help"
+      ],
+      "target_sentence": "Glad I could help.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 20,
+      "keywords": [
+        "again"
+      ],
+      "target_sentence": "Thank you again.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [],
+  "highlight_sentences": [
+    {
+      "sentence_order": 1,
+      "korean_text": "어제 도와주신 것에 대해 감사드리고 싶었어요.",
+      "foreign_text": "I wanted to thank you for your help yesterday.",
+      "reason": "감사 표현의 시작을 알리는 문장으로, 구체적인 맥락을 제공하여 학습자가 상황을 이해하기 쉽습니다."
+    }
+  ]
+}
