@@ -1,0 +1,399 @@
+{
+  "topic": {
+    "id": "a1b50ccc-bf12-4dab-af11-1fe20ed528f8",
+    "title": "전자제품 쇼핑하기",
+    "category": "쇼핑",
+    "difficulty": "초급",
+    "description": "이 콘텐츠는 언어 학습자가 전자제품 매장에서 대화하는 방법을 배우는 데 도움이 됩니다.",
+    "language_code": "en",
+    "total_sentences": 7
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 무엇을 도와드릴까요?"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "저는 새로운 스마트폰을 보고 싶어요."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "네, 이쪽으로 오세요. 어떤 종류를 찾으시나요?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "최신 모델 중에서요."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "이 모델은 배터리가 오래가나요?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "네, 하루 종일 사용할 수 있어요."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "그럼 이걸로 할게요."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, what can I help you with?",
+      "chunked_text": "Hello, | what can I help you with?"
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "I'd like to see **a new smartphone**.",
+      "chunked_text": "I'd like to see | a new smartphone."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Sure, come this way. **What kind are you looking for?**",
+      "chunked_text": "Sure, come this way. | What kind are you looking for?"
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Among the **latest models**.",
+      "chunked_text": "Among the | latest models."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Yes, **it can last all day**.",
+      "chunked_text": "Does this model have | a long battery life?"
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "무엇을 도와드릴까요"
+      ],
+      "target_sentence": "Hello, what can I help you with?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "새로운 스마트폰",
+        "보고 싶어요"
+      ],
+      "target_sentence": "I'd like to see a new smartphone.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "어떤 종류",
+        "찾으시나요"
+      ],
+      "target_sentence": "What kind are you looking for?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "최신 모델",
+        "중에서요"
+      ],
+      "target_sentence": "Among the latest models.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "모델",
+        "배터리",
+        "오래가나요"
+      ],
+      "target_sentence": "Does this model have a long battery life?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "하루 종일",
+        "사용할 수 있어요"
+      ],
+      "target_sentence": "It can last all day.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "그럼",
+        "이걸로 할게요"
+      ],
+      "target_sentence": "Then I'll take this one.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "도와드릴까요"
+      ],
+      "target_sentence": "Hello, what can I help you with?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "스마트폰",
+        "싶어요"
+      ],
+      "target_sentence": "I'd like to see a new smartphone.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "어떤 종류"
+      ],
+      "target_sentence": "What kind are you looking for?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "최신 모델"
+      ],
+      "target_sentence": "Among the latest models.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "배터리",
+        "오래가나요"
+      ],
+      "target_sentence": "Does this model have a long battery life?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "하루 종일"
+      ],
+      "target_sentence": "It can last all day.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "이걸로 할게요"
+      ],
+      "target_sentence": "Then I'll take this one.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "도와드릴까요"
+      ],
+      "target_sentence": "What can I help you with?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "스마트폰"
+      ],
+      "target_sentence": "I'd like to see a new smartphone.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "종류"
+      ],
+      "target_sentence": "What kind are you looking for?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "최신"
+      ],
+      "target_sentence": "Among the latest models.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "배터리"
+      ],
+      "target_sentence": "Does this model have a long battery life?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "하루 종일"
+      ],
+      "target_sentence": "It can last all day.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "할게요"
+      ],
+      "target_sentence": "Then I'll take this one.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "help"
+      ],
+      "target_sentence": "Hello, what can I help you with?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "smartphone"
+      ],
+      "target_sentence": "I'd like to see a new smartphone.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "kind"
+      ],
+      "target_sentence": "What kind are you looking for?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "latest"
+      ],
+      "target_sentence": "Among the latest models.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "battery"
+      ],
+      "target_sentence": "Does this model have a long battery life?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "day"
+      ],
+      "target_sentence": "It can last all day.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "take"
+      ],
+      "target_sentence": "Then I'll take this one.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "새로운 스마트폰",
+      "foreign_phrase": "a new smartphone"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "어떤 종류를 찾으시나요?",
+      "foreign_phrase": "What kind are you looking for?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "최신 모델",
+      "foreign_phrase": "latest models"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "이 모델은 배터리가 오래가나요?",
+      "foreign_phrase": "Does this model have a long battery life?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "하루 종일 사용할 수 있어요",
+      "foreign_phrase": "It can last all day"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "그럼 이걸로 할게요.",
+      "foreign_phrase": "Then I'll take this one."
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 4,
+      "korean_text": "이 모델은 배터리가 오래가나요?",
+      "foreign_text": "Does this model have a long battery life?",
+      "reason": "전자제품 구매 시 사용자가 가장 중요하게 생각하는 기능 중 하나인 배터리 성능에 대해 묻는 핵심 질문입니다."
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-15T17:14:53Z",
-  "total_count": 120,
+  "generated_at": "2026-06-17T16:41:54Z",
+  "total_count": 121,
   "weekly_plan": {
     "generated_at": "2026-06-14T15:32:42Z",
     "week_number": 24,
@@ -15,7 +15,7 @@
         "slug": "shopping-for-electronics",
         "title": "전자제품 쇼핑하기",
         "category": "쇼핑",
-        "used": false
+        "used": true
       },
       {
         "slug": "understanding-prescription",
@@ -145,6 +145,7 @@
     "retirement-planning-discussion",
     "specialist-symptom-consultation",
     "attending-a-wedding",
-    "expressing-gratitude"
+    "expressing-gratitude",
+    "shopping-for-electronics"
   ]
 }
