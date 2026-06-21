@@ -2,25 +2,25 @@
   "generated_at": "2026-06-17T16:41:54Z",
   "total_count": 121,
   "weekly_plan": {
-    "generated_at": "2026-06-14T15:32:42Z",
-    "week_number": 24,
+    "generated_at": "2026-06-21T15:33:32Z",
+    "week_number": 25,
     "planned_slugs": [
       {
-        "slug": "expressing-gratitude",
-        "title": "감사 표현하기",
-        "category": "회화",
-        "used": true
+        "slug": "tourist-attraction-recommendations",
+        "title": "관광 명소 추천 요청하기",
+        "category": "여행",
+        "used": false
       },
       {
-        "slug": "shopping-for-electronics",
-        "title": "전자제품 쇼핑하기",
-        "category": "쇼핑",
-        "used": true
+        "slug": "salary-negotiation",
+        "title": "연봉 협상하기",
+        "category": "비즈니스",
+        "used": false
       },
       {
-        "slug": "understanding-prescription",
-        "title": "처방전 이해하기",
-        "category": "의료",
+        "slug": "grocery-shopping-list-creation",
+        "title": "식료품 쇼핑 목록 작성하기",
+        "category": "일상",
         "used": false
       }
     ]
