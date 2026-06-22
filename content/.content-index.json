@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-17T16:41:54Z",
-  "total_count": 121,
+  "generated_at": "2026-06-22T17:10:55Z",
+  "total_count": 122,
   "weekly_plan": {
     "generated_at": "2026-06-21T15:33:32Z",
     "week_number": 25,
@@ -9,7 +9,7 @@
         "slug": "tourist-attraction-recommendations",
         "title": "관광 명소 추천 요청하기",
         "category": "여행",
-        "used": false
+        "used": true
       },
       {
         "slug": "salary-negotiation",
@@ -146,6 +146,7 @@
     "specialist-symptom-consultation",
     "attending-a-wedding",
     "expressing-gratitude",
-    "shopping-for-electronics"
+    "shopping-for-electronics",
+    "tourist-attraction-recommendations"
   ]
 }
