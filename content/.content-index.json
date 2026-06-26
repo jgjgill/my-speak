@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-22T17:10:55Z",
-  "total_count": 122,
+  "generated_at": "2026-06-26T16:15:46Z",
+  "total_count": 123,
   "weekly_plan": {
     "generated_at": "2026-06-21T15:33:32Z",
     "week_number": 25,
@@ -15,7 +15,7 @@
         "slug": "salary-negotiation",
         "title": "연봉 협상하기",
         "category": "비즈니스",
-        "used": false
+        "used": true
       },
       {
         "slug": "grocery-shopping-list-creation",
@@ -147,6 +147,7 @@
     "attending-a-wedding",
     "expressing-gratitude",
     "shopping-for-electronics",
-    "tourist-attraction-recommendations"
+    "tourist-attraction-recommendations",
+    "salary-negotiation"
   ]
 }
