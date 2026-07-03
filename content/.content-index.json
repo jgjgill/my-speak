@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-26T16:15:46Z",
-  "total_count": 123,
+  "generated_at": "2026-07-03T16:03:20Z",
+  "total_count": 124,
   "weekly_plan": {
     "generated_at": "2026-06-21T15:33:32Z",
     "week_number": 25,
@@ -21,7 +21,7 @@
         "slug": "grocery-shopping-list-creation",
         "title": "식료품 쇼핑 목록 작성하기",
         "category": "일상",
-        "used": false
+        "used": true
       }
     ]
   },
@@ -148,6 +148,7 @@
     "expressing-gratitude",
     "shopping-for-electronics",
     "tourist-attraction-recommendations",
-    "salary-negotiation"
+    "salary-negotiation",
+    "grocery-shopping-list-creation"
   ]
 }

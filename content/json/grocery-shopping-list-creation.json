@@ -1,0 +1,485 @@
+{
+  "topic": {
+    "id": "bd42fbda-4e90-4e8c-a94f-1395573ee364",
+    "title": "식료품 쇼핑 목록 작성하기",
+    "category": "일상",
+    "difficulty": "초급",
+    "description": "마트에 가서 필요한 물건을 사는 대화를 통해 장보기 표현을 익힙니다.",
+    "language_code": "en",
+    "total_sentences": 8
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "오늘 저녁에 장 보러 가야 하는데, 뭘 좀 사 와야 할까?"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "음, 우유랑 계란은 거의 다 떨어졌어."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "알겠어. 빵도 하나 사자."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "그리고 사과랑 바나나도 좀 필요해."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "좋아. 양파랑 마늘도 있으면 좋겠어."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "치킨도 한 마리 사서 저녁에 구워 먹을까?"
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "그거 좋지! 토마토도 몇 개만 부탁해."
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "알았어, 전부 적어둘게."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "I need to go grocery shopping this evening. What should I buy?",
+      "chunked_text": "I need to go grocery shopping this evening. | What should I buy?"
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Hmm, we're almost out of milk and eggs.",
+      "chunked_text": "Hmm, | we're almost out of milk | and eggs."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Got it. Let's buy some bread too.",
+      "chunked_text": "Got it. | Let's buy some bread too."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "And we need some apples and bananas.",
+      "chunked_text": "And we need some apples | and bananas."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Okay. It would be good to have onions and garlic as well.",
+      "chunked_text": "Okay. | It would be good to have onions | and garlic as well."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Should we buy a chicken and roast it tonight?",
+      "chunked_text": "Should we buy a chicken | and roast it tonight?"
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "That sounds good! Please get a few tomatoes too.",
+      "chunked_text": "That sounds good! | Please get a few tomatoes too."
+    },
+    {
+      "sentence_order": 8,
+      "foreign_text": "Alright, I'll write everything down.",
+      "chunked_text": "Alright, | I'll write everything down."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "저녁",
+        "장 보기",
+        "살 것"
+      ],
+      "target_sentence": "I need to go grocery shopping this evening. What should I buy?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "우유",
+        "계란",
+        "떨어졌어"
+      ],
+      "target_sentence": "Hmm, we're almost out of milk and eggs.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "빵",
+        "사자"
+      ],
+      "target_sentence": "Got it. Let's buy some bread too.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "사과",
+        "바나나",
+        "필요해"
+      ],
+      "target_sentence": "And we need some apples and bananas.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "양파",
+        "마늘",
+        "있으면 좋겠어"
+      ],
+      "target_sentence": "Okay. It would be good to have onions and garlic as well.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "치킨",
+        "저녁",
+        "구워"
+      ],
+      "target_sentence": "Should we buy a chicken and roast it tonight?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "토마토",
+        "부탁해"
+      ],
+      "target_sentence": "That sounds good! Please get a few tomatoes too.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 8,
+      "keywords": [
+        "적어둘게"
+      ],
+      "target_sentence": "Alright, I'll write everything down.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "장 보기",
+        "살 것"
+      ],
+      "target_sentence": "I need to go grocery shopping this evening. What should I buy?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "우유",
+        "계란"
+      ],
+      "target_sentence": "Hmm, we're almost out of milk and eggs.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "빵"
+      ],
+      "target_sentence": "Got it. Let's buy some bread too.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "사과",
+        "바나나"
+      ],
+      "target_sentence": "And we need some apples and bananas.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "양파",
+        "마늘"
+      ],
+      "target_sentence": "Okay. It would be good to have onions and garlic as well.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "치킨",
+        "구워"
+      ],
+      "target_sentence": "Should we buy a chicken and roast it tonight?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 15,
+      "keywords": [
+        "토마토"
+      ],
+      "target_sentence": "That sounds good! Please get a few tomatoes too.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 16,
+      "keywords": [
+        "적어둘게"
+      ],
+      "target_sentence": "Alright, I'll write everything down.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "장 보기"
+      ],
+      "target_sentence": "What should I buy?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "우유",
+        "계란"
+      ],
+      "target_sentence": "milk and eggs.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "빵"
+      ],
+      "target_sentence": "bread too.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "사과",
+        "바나나"
+      ],
+      "target_sentence": "apples and bananas.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "양파",
+        "마늘"
+      ],
+      "target_sentence": "onions and garlic.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 22,
+      "keywords": [
+        "치킨",
+        "저녁"
+      ],
+      "target_sentence": "a chicken and roast it tonight?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 23,
+      "keywords": [
+        "토마토"
+      ],
+      "target_sentence": "tomatoes too.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 24,
+      "keywords": [
+        "적어둘게"
+      ],
+      "target_sentence": "write everything down.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "shopping"
+      ],
+      "target_sentence": "I need to go grocery shopping this evening. What should I buy?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "out"
+      ],
+      "target_sentence": "Hmm, we're almost out of milk and eggs.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "bread"
+      ],
+      "target_sentence": "Got it. Let's buy some bread too.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "apples"
+      ],
+      "target_sentence": "And we need some apples and bananas.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 29,
+      "keywords": [
+        "onions"
+      ],
+      "target_sentence": "Okay. It would be good to have onions and garlic as well.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 30,
+      "keywords": [
+        "chicken"
+      ],
+      "target_sentence": "Should we buy a chicken and roast it tonight?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 31,
+      "keywords": [
+        "tomatoes"
+      ],
+      "target_sentence": "That sounds good! Please get a few tomatoes too.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 32,
+      "keywords": [
+        "write"
+      ],
+      "target_sentence": "Alright, I'll write everything down.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "우유",
+      "foreign_phrase": "milk"
+    },
+    {
+      "sentence_order": 2,
+      "korean_phrase": "계란",
+      "foreign_phrase": "eggs"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "빵",
+      "foreign_phrase": "bread"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "사과",
+      "foreign_phrase": "apples"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "바나나",
+      "foreign_phrase": "bananas"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "양파",
+      "foreign_phrase": "onions"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "마늘",
+      "foreign_phrase": "garlic"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "치킨",
+      "foreign_phrase": "chicken"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "토마토",
+      "foreign_phrase": "tomatoes"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 2,
+      "korean_text": "음, 우유랑 계란은 거의 다 떨어졌어.",
+      "foreign_text": "Hmm, we're almost out of milk and eggs.",
+      "reason": "이 문장은 식료품 쇼핑의 맥락에서 자주 사용되는 '부족한 물건'에 대한 표현을 학습할 수 있기 때문입니다."
+    }
+  ]
+}
