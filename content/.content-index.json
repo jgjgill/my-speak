@@ -2,26 +2,26 @@
   "generated_at": "2026-07-03T16:03:20Z",
   "total_count": 124,
   "weekly_plan": {
-    "generated_at": "2026-06-21T15:33:32Z",
-    "week_number": 25,
+    "generated_at": "2026-07-05T15:26:27Z",
+    "week_number": 27,
     "planned_slugs": [
       {
-        "slug": "tourist-attraction-recommendations",
-        "title": "관광 명소 추천 요청하기",
-        "category": "여행",
-        "used": true
+        "slug": "describing-artwork",
+        "title": "미술 작품 묘사하기",
+        "category": "레저",
+        "used": false
       },
       {
-        "slug": "salary-negotiation",
-        "title": "연봉 협상하기",
+        "slug": "giving-team-feedback",
+        "title": "팀원에게 피드백 제공하기",
         "category": "비즈니스",
-        "used": true
+        "used": false
       },
       {
-        "slug": "grocery-shopping-list-creation",
-        "title": "식료품 쇼핑 목록 작성하기",
-        "category": "일상",
-        "used": true
+        "slug": "hotel-complaint-resolution",
+        "title": "호텔 불만 사항 해결하기",
+        "category": "여행",
+        "used": false
       }
     ]
   },
