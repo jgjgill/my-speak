@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-03T16:03:20Z",
-  "total_count": 124,
+  "generated_at": "2026-07-08T16:54:42Z",
+  "total_count": 125,
   "weekly_plan": {
     "generated_at": "2026-07-05T15:26:27Z",
     "week_number": 27,
@@ -9,7 +9,7 @@
         "slug": "describing-artwork",
         "title": "미술 작품 묘사하기",
         "category": "레저",
-        "used": false
+        "used": true
       },
       {
         "slug": "giving-team-feedback",
@@ -149,6 +149,7 @@
     "shopping-for-electronics",
     "tourist-attraction-recommendations",
     "salary-negotiation",
-    "grocery-shopping-list-creation"
+    "grocery-shopping-list-creation",
+    "describing-artwork"
   ]
 }
