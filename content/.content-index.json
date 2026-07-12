@@ -2,25 +2,25 @@
   "generated_at": "2026-07-10T17:15:14Z",
   "total_count": 126,
   "weekly_plan": {
-    "generated_at": "2026-07-05T15:26:27Z",
-    "week_number": 27,
+    "generated_at": "2026-07-12T15:50:22Z",
+    "week_number": 28,
     "planned_slugs": [
       {
-        "slug": "describing-artwork",
-        "title": "미술 작품 묘사하기",
+        "slug": "playing-basketball",
+        "title": "농구 경기하기",
         "category": "레저",
-        "used": true
+        "used": false
       },
       {
-        "slug": "giving-team-feedback",
-        "title": "팀원에게 피드백 제공하기",
-        "category": "비즈니스",
-        "used": true
+        "slug": "giving-constructive-feedback",
+        "title": "건설적인 피드백 주기",
+        "category": "일상",
+        "used": false
       },
       {
-        "slug": "hotel-complaint-resolution",
-        "title": "호텔 불만 사항 해결하기",
-        "category": "여행",
+        "slug": "insurance-policy-renewal",
+        "title": "보험 갱신 상담",
+        "category": "금융",
         "used": false
       }
     ]
