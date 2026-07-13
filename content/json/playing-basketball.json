@@ -1,0 +1,479 @@
+{
+  "topic": {
+    "id": "38d27d98-964d-4b26-9f7a-0def62fa22bf",
+    "title": "농구 경기하기",
+    "category": "레저",
+    "difficulty": "초급",
+    "description": "농구 게임을 시작하고 기본적인 농구 용어와 문장 구조를 배우는 대화입니다. 공원에서 함께 즐겁게 플레이하는 방법을 익힙니다.",
+    "language_code": "en",
+    "total_sentences": 20
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "농구 하자."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "재밌겠다! 나도 하고 싶어."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "어디로 가서 놀까?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "공원 코트는 어때?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "좋은 생각이야. 슛 잘 해?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "연습 중이야. 정확하게 슛하는 법을 배우고 싶어."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "좋---"
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "topic_id: \"38d27d98-964d-4b26-9f7a-0def62fa22bf\""
+    },
+    {
+      "sentence_order": 9,
+      "korean_text": "title: \"농구 경기하기\""
+    },
+    {
+      "sentence_order": 10,
+      "korean_text": "slug: \"playing-basketball\""
+    },
+    {
+      "sentence_order": 11,
+      "korean_text": "category: \"레저\""
+    },
+    {
+      "sentence_order": 12,
+      "korean_text": "difficulty: \"초급\""
+    },
+    {
+      "sentence_order": 13,
+      "korean_text": "description: \"농구 게임을 시작하고 기본적인 농구 용어와 문장 구조를 배우는 대화입니다. 공원에서 함께 즐겁게 플레이하는 방법을 익힙니다.\""
+    },
+    {
+      "sentence_order": 14,
+      "korean_text": "language_code: \"en\""
+    },
+    {
+      "sentence_order": 15,
+      "korean_text": "highlight_sentence:"
+    },
+    {
+      "sentence_order": 16,
+      "korean_text": "sentence_order: 7"
+    },
+    {
+      "sentence_order": 17,
+      "korean_text": "korean_text: \"좋아. 가서 재미있게 놀자.\""
+    },
+    {
+      "sentence_order": 18,
+      "korean_text": "foreign_text: \"Great. Let's go and have some fun.\""
+    },
+    {
+      "sentence_order": 19,
+      "korean_text": "reason: \"This sentence confirms readiness and expresses the positive anticipation of the activity.\""
+    },
+    {
+      "sentence_order": 20,
+      "korean_text": "---"
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Let's play basketball.",
+      "chunked_text": "Let's play basketball."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Sounds fun! I want to play too.",
+      "chunked_text": "Sounds fun! | I want to play too."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Where should we go play?",
+      "chunked_text": "Where should we go play?"
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "How about the park court?",
+      "chunked_text": "How about | the park court?"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Good idea. Are you good at shooting?",
+      "chunked_text": "Good idea. | Are you good at shooting?"
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "I'm practicing. I want to learn how to shoot accurately.",
+      "chunked_text": "I'm practicing. | I want to learn how to shoot accurately."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "Great. Let's go and have some fun.",
+      "chunked_text": "Great. | Let's go and have some fun."
+    },
+    {
+      "sentence_order": 8,
+      "foreign_text": "Okay, let's go!",
+      "chunked_text": "Okay, | let's go!"
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "농구",
+        "하자"
+      ],
+      "target_sentence": "Let's play basketball.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "재밌겠다",
+        "나도 하고 싶어"
+      ],
+      "target_sentence": "Sounds fun! I want to play too.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "어디 가서 놀까?"
+      ],
+      "target_sentence": "Where should we go play?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "공원 코트"
+      ],
+      "target_sentence": "How about the park court?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "좋은 생각이야",
+        "슛 잘 해?"
+      ],
+      "target_sentence": "Good idea. Are you good at shooting?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "연습 중이야",
+        "배우고 싶어",
+        "정확하게 슛"
+      ],
+      "target_sentence": "I'm practicing. I want to learn how to shoot accurately.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "좋아",
+        "가서 놀자"
+      ],
+      "target_sentence": "Great. Let's go and have some fun.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 8,
+      "keywords": [
+        "그래",
+        "가자"
+      ],
+      "target_sentence": "Okay, let's go!",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "농구"
+      ],
+      "target_sentence": "Let's play basketball.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "하고 싶어"
+      ],
+      "target_sentence": "Sounds fun! I want to play too.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "어디"
+      ],
+      "target_sentence": "Where should we go play?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "공원"
+      ],
+      "target_sentence": "How about the park court?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "슛"
+      ],
+      "target_sentence": "Good idea. Are you good at shooting?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "배우고 싶어"
+      ],
+      "target_sentence": "I'm practicing. I want to learn how to shoot accurately.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 15,
+      "keywords": [
+        "가서 놀자"
+      ],
+      "target_sentence": "Great. Let's go and have some fun.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 16,
+      "keywords": [
+        "가자"
+      ],
+      "target_sentence": "Okay, let's go!",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "하자"
+      ],
+      "target_sentence": "Let's play basketball.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "재밌겠다"
+      ],
+      "target_sentence": "Sounds fun! I want to play too.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "어디"
+      ],
+      "target_sentence": "Where should we go play?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "코트"
+      ],
+      "target_sentence": "How about the park court?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "잘 해?"
+      ],
+      "target_sentence": "Good idea. Are you good at shooting?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 22,
+      "keywords": [
+        "배우고 싶어"
+      ],
+      "target_sentence": "I'm practicing. I want to learn how to shoot accurately.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 23,
+      "keywords": [
+        "놀자"
+      ],
+      "target_sentence": "Great. Let's go and have some fun.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 24,
+      "keywords": [
+        "가자"
+      ],
+      "target_sentence": "Okay, let's go!",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "play"
+      ],
+      "target_sentence": "Let's play basketball.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "want to play"
+      ],
+      "target_sentence": "Sounds fun! I want to play too.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "Where play?"
+      ],
+      "target_sentence": "Where should we go play?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "park court"
+      ],
+      "target_sentence": "How about the park court?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 29,
+      "keywords": [
+        "shooting"
+      ],
+      "target_sentence": "Good idea. Are you good at shooting?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 30,
+      "keywords": [
+        "learn shoot"
+      ],
+      "target_sentence": "I'm practicing. I want to learn how to shoot accurately.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 31,
+      "keywords": [
+        "go fun"
+      ],
+      "target_sentence": "Great. Let's go and have some fun.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 32,
+      "keywords": [
+        "go"
+      ],
+      "target_sentence": "Okay, let's go!",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 6,
+      "korean_phrase": "정확하게 슛하는 법",
+      "foreign_phrase": "how to shoot accurately"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 7,
+      "korean_text": "좋아. 가서 재미있게 놀자.",
+      "foreign_text": "Great. Let's go and have some fun.",
+      "reason": "This sentence confirms readiness and expresses the positive anticipation of the activity."
+    }
+  ]
+}

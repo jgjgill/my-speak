@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-10T17:15:14Z",
-  "total_count": 126,
+  "generated_at": "2026-07-13T17:26:55Z",
+  "total_count": 127,
   "weekly_plan": {
     "generated_at": "2026-07-12T15:50:22Z",
     "week_number": 28,
@@ -9,7 +9,7 @@
         "slug": "playing-basketball",
         "title": "농구 경기하기",
         "category": "레저",
-        "used": false
+        "used": true
       },
       {
         "slug": "giving-constructive-feedback",
@@ -151,6 +151,7 @@
     "salary-negotiation",
     "grocery-shopping-list-creation",
     "describing-artwork",
-    "giving-team-feedback"
+    "giving-team-feedback",
+    "playing-basketball"
   ]
 }
