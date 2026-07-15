@@ -1,0 +1,371 @@
+{
+  "topic": {
+    "id": "22dd946d-557f-49b7-942f-2b13db7f5bf6",
+    "title": "건설적인 피드백 주기",
+    "category": "일상",
+    "difficulty": "초급",
+    "description": "상대방의 결과물이나 행동에 대해 개선점을 제시하며 조언하는 대화입니다. 긍정적인 태도로 개선점을 이야기하는 방법을 배웁니다.",
+    "language_code": "en",
+    "total_sentences": 7
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "와, 네가 만든 쿠키 정말 맛있어 보여!"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "고마워! 그런데 솔직히 말하면, 설탕이 좀 많은 것 같아."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "아, 정말? 조금 달긴 하지만, 그래도 괜찮아."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "다음엔 설탕 양을 조금 줄여볼게."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "좋은 생각이야."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "그렇게 하면 완벽할 것 같아."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "피드백 고마워!"
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Wow, the cookies you made look really delicious!",
+      "chunked_text": "A: Wow, | the cookies you made | look really delicious!"
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Thanks! But honestly, I think there's a bit too much sugar.",
+      "chunked_text": "B: Thanks! | But honestly, | I think there's a bit too much sugar."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Oh, really? It's a little sweet, but it's still good.",
+      "chunked_text": "A: Oh, really? | It's a little sweet, | but it's still good."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Next time, I'll try reducing the amount of sugar.",
+      "chunked_text": "B: Next time, | I'll try reducing the amount of sugar."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "That's a good idea.",
+      "chunked_text": "A: That's a good idea. | It will be perfect that way. | Thanks for the feedback!"
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "It will be perfect that way.",
+      "chunked_text": "B: Feedback is always welcome!"
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "Thanks for the feedback!",
+      "chunked_text": "Thanks for the feedback!"
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "A: 와",
+        "네가 만든 쿠키 정말 맛있어 보여!"
+      ],
+      "target_sentence": "Wow, the cookies you made look really delicious!",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "B: 고마워",
+        "솔직히 말하면",
+        "설탕이 좀 많아."
+      ],
+      "target_sentence": "Thanks! But honestly, I think there's a bit too much sugar.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "A: 아",
+        "정말? 조금 달아",
+        "그래도 괜찮아."
+      ],
+      "target_sentence": "Oh, really? It's a little sweet, but it's still good.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "B: 다음엔",
+        "설탕 양 줄여볼게."
+      ],
+      "target_sentence": "Next time, I'll try reducing the amount of sugar.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "A: 좋은 생각이야. 완벽할 거야. 피드백 고마워!"
+      ],
+      "target_sentence": "That's a good idea. It will be perfect that way. Thanks for the feedback!",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "B: 피드백 환영이야!"
+      ],
+      "target_sentence": "Feedback is always welcome!",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 7,
+      "keywords": [
+        "A: 쿠키",
+        "맛있어 보여"
+      ],
+      "target_sentence": "Wow, the cookies you made look really delicious!",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "B: 솔직히",
+        "설탕 많아"
+      ],
+      "target_sentence": "Thanks! But honestly, I think there's a bit too much sugar.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "A: 달아",
+        "괜찮아"
+      ],
+      "target_sentence": "Oh, really? It's a little sweet, but it's still good.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "B: 다음엔",
+        "줄여볼게"
+      ],
+      "target_sentence": "Next time, I'll try reducing the amount of sugar.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "A: 좋은 생각",
+        "완벽"
+      ],
+      "target_sentence": "That's a good idea. It will be perfect that way.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "B: 피드백"
+      ],
+      "target_sentence": "Feedback is always welcome!",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 13,
+      "keywords": [
+        "A: 쿠키"
+      ],
+      "target_sentence": "Wow, the cookies you made look really delicious!",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 14,
+      "keywords": [
+        "B: 설탕 많아"
+      ],
+      "target_sentence": "Thanks! But honestly, I think there's a bit too much sugar.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "A: 달아"
+      ],
+      "target_sentence": "Oh, really? It's a little sweet, but it's still good.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "B: 줄여볼게"
+      ],
+      "target_sentence": "Next time, I'll try reducing the amount of sugar.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "A: 완벽"
+      ],
+      "target_sentence": "That's a good idea. It will be perfect that way.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "B: 피드백"
+      ],
+      "target_sentence": "Feedback is always welcome!",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 19,
+      "keywords": [
+        "cookies"
+      ],
+      "target_sentence": "Wow, the cookies you made look really delicious!",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 20,
+      "keywords": [
+        "sugar"
+      ],
+      "target_sentence": "Thanks! But honestly, I think there's a bit too much sugar.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 21,
+      "keywords": [
+        "sweet"
+      ],
+      "target_sentence": "Oh, really? It's a little sweet, but it's still good.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "reducing"
+      ],
+      "target_sentence": "Next time, I'll try reducing the amount of sugar.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "perfect"
+      ],
+      "target_sentence": "That's a good idea. It will be perfect that way.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "Feedback"
+      ],
+      "target_sentence": "Feedback is always welcome!",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "그런데 솔직히 말하면, 설탕이 좀 많은 것 같아.",
+      "foreign_phrase": "But honestly, I think there's a bit too much sugar."
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "조금 달긴 하지만, 그래도 괜찮아.",
+      "foreign_phrase": "Oh, really? It's a little sweet, but it's still good."
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "다음엔 설탕 양을 조금 줄여볼게.",
+      "foreign_phrase": "Next time, I'll try reducing the amount of sugar."
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "좋은 생각이야.",
+      "foreign_phrase": "That's a good idea."
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "그렇게 하면 완벽할 것 같아.",
+      "foreign_phrase": "It will be perfect that way."
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "피드백 고마워!",
+      "foreign_phrase": "Thanks for the feedback!"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 4,
+      "korean_text": "그런데 솔직히 말하면, 설탕이 좀 많은 것 같아.",
+      "foreign_text": "But honestly, I think there's a bit too much sugar.",
+      "reason": "This sentence directly states a specific observation and suggests an area for improvement, which is the essence of constructive feedback."
+    }
+  ]
+}
