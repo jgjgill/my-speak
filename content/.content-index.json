@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-15T16:49:32Z",
-  "total_count": 128,
+  "generated_at": "2026-07-17T16:38:43Z",
+  "total_count": 129,
   "weekly_plan": {
     "generated_at": "2026-07-12T15:50:22Z",
     "week_number": 28,
@@ -21,7 +21,7 @@
         "slug": "insurance-policy-renewal",
         "title": "보험 갱신 상담",
         "category": "금융",
-        "used": false
+        "used": true
       }
     ]
   },
@@ -153,6 +153,7 @@
     "describing-artwork",
     "giving-team-feedback",
     "playing-basketball",
-    "giving-constructive-feedback"
+    "giving-constructive-feedback",
+    "insurance-policy-renewal"
   ]
 }

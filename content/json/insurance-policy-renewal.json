@@ -1,0 +1,503 @@
+{
+  "topic": {
+    "id": "02713d6d-2ceb-47cb-be1f-8c194cf1b274",
+    "title": "보험 갱신 상담",
+    "category": "금융",
+    "difficulty": "초급",
+    "description": "보험 갱신 절차와 비용에 대해 문의하는 대화입니다. 초급 학습자에게 적합합니다.",
+    "language_code": "en",
+    "total_sentences": 21
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 보험 갱신 관련해서 문의드리려고 합니다."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "네, 고객님. 기존 보험 증권 번호를 알려주시겠어요?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "제 보험 증권 번호는 ABC12345입니다. 갱신 비용에 변동이 있나요?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "잠시만요. 확인해보겠습니다. 보장 내역은 그대로 유지되나요?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "네, 고객님. 특별히 변경된 사항은 없습니다."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "그렇다면 다행입니다. 갱신 절차는 어떻게 진행되나요?"
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "간단합니다. 이메일로 안내를 보내드릴 예정이니, 확인 후 진행해주시면 됩니다."
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "네, 알겠습니다. 감사합니다---"
+    },
+    {
+      "sentence_order": 9,
+      "korean_text": "topic_id: \"02713d6d-2ceb-47cb-be1f-8c194cf1b274\""
+    },
+    {
+      "sentence_order": 10,
+      "korean_text": "title: \"보험 갱신 상담\""
+    },
+    {
+      "sentence_order": 11,
+      "korean_text": "slug: \"insurance-policy-renewal\""
+    },
+    {
+      "sentence_order": 12,
+      "korean_text": "category: \"금융\""
+    },
+    {
+      "sentence_order": 13,
+      "korean_text": "difficulty: \"초급\""
+    },
+    {
+      "sentence_order": 14,
+      "korean_text": "description: \"자신의 보험 갱신을 위해 보험사 직원과 상담하는 상황을 연습합니다.\""
+    },
+    {
+      "sentence_order": 15,
+      "korean_text": "language_code: \"en\""
+    },
+    {
+      "sentence_order": 16,
+      "korean_text": "highlight_sentence:"
+    },
+    {
+      "sentence_order": 17,
+      "korean_text": "sentence_order: 5"
+    },
+    {
+      "sentence_order": 18,
+      "korean_text": "korean_text: \"아니요, 그대로 유지하고 싶습니다. 갱신 보험료는 어떻게 되나요?\""
+    },
+    {
+      "sentence_order": 19,
+      "korean_text": "foreign_text: \"No, I'd like to keep it the same. What is the renewal premium?\""
+    },
+    {
+      "sentence_order": 20,
+      "korean_text": "reason: \"보험 갱신 시 가장 중요한 정보인 갱신 보험료를 문의하는 핵심 문장입니다.\""
+    },
+    {
+      "sentence_order": 21,
+      "korean_text": "---"
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, I'd like to renew my insurance.",
+      "chunked_text": "Hello, | I'd like to renew my insurance."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Hello! Of course. Which policy are you referring to?",
+      "chunked_text": "Hello! | Of course. | Which policy are you referring to?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "It's my car insurance. Policy number is XYZ123.",
+      "chunked_text": "It's my car insurance. | Policy number is XYZ123."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Yes, I've confirmed it. Are there any changes you'd like to make for the renewal?",
+      "chunked_text": "Yes, I've confirmed it. | Are there any changes you'd like to make | for the renewal?"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "No, I'd like to keep it the same. What is the renewal premium?",
+      "chunked_text": "No, | I'd like to keep it the same. | What is the renewal premium?"
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Due to inflation, the premium will be slightly higher. It's $500 for the year.",
+      "chunked_text": "Due to inflation, | the premium will be slightly higher. | It's $500 | for the year."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "Yes, I see. Please proceed with the renewal.",
+      "chunked_text": "Yes, I see. | Please proceed with the renewal."
+    },
+    {
+      "sentence_order": 8,
+      "foreign_text": "Certainly. I will send you the updated documents shortly.",
+      "chunked_text": "Certainly. | I will send you | the updated documents shortly."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "안녕하세요",
+        "제 **보험을 갱신**하고 싶어서요"
+      ],
+      "target_sentence": "Hello, I'd like to renew my insurance.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "제 **자동차 보험**이에요"
+      ],
+      "target_sentence": "It's my car insurance.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "갱신 시 **변경하고 싶은 사항**이 있으신가요?"
+      ],
+      "target_sentence": "Are there any changes you'd like to make for the renewal?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "아니요",
+        "**그대로 유지**하고 싶습니다."
+      ],
+      "target_sentence": "No, I'd like to keep it the same.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "**갱신 보험료**는 어떻게 되나요?"
+      ],
+      "target_sentence": "What is the renewal premium?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "**보험료가 소폭 인상**되었습니다."
+      ],
+      "target_sentence": "The premium will be slightly higher.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "**갱신 절차 진행** 부탁드립니다."
+      ],
+      "target_sentence": "Please proceed with the renewal.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 8,
+      "keywords": [
+        "곧 **갱신된 서류**를 보내드리겠습니다."
+      ],
+      "target_sentence": "I will send you the updated documents shortly.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "보험 갱신"
+      ],
+      "target_sentence": "Hello, I'd like to renew my insurance.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "자동차 보험"
+      ],
+      "target_sentence": "It's my car insurance.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "변경 사항"
+      ],
+      "target_sentence": "Are there any changes you'd like to make for the renewal?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "그대로 유지"
+      ],
+      "target_sentence": "No, I'd like to keep it the same.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "갱신 보험료"
+      ],
+      "target_sentence": "What is the renewal premium?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "보험료 인상"
+      ],
+      "target_sentence": "The premium will be slightly higher.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 15,
+      "keywords": [
+        "갱신 진행"
+      ],
+      "target_sentence": "Please proceed with the renewal.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 16,
+      "keywords": [
+        "갱신 서류"
+      ],
+      "target_sentence": "I will send you the updated documents shortly.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "갱신"
+      ],
+      "target_sentence": "Hello, I'd like to renew my insurance.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "보험"
+      ],
+      "target_sentence": "It's my car insurance.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "변경"
+      ],
+      "target_sentence": "Are there any changes you'd like to make for the renewal?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "유지"
+      ],
+      "target_sentence": "No, I'd like to keep it the same.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "보험료"
+      ],
+      "target_sentence": "What is the renewal premium?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 22,
+      "keywords": [
+        "인상"
+      ],
+      "target_sentence": "The premium will be slightly higher.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 23,
+      "keywords": [
+        "진행"
+      ],
+      "target_sentence": "Please proceed with the renewal.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 24,
+      "keywords": [
+        "서류"
+      ],
+      "target_sentence": "I will send you the updated documents shortly.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "renew"
+      ],
+      "target_sentence": "Hello, I'd like to renew my insurance.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "insurance"
+      ],
+      "target_sentence": "It's my car insurance.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "changes"
+      ],
+      "target_sentence": "Are there any changes you'd like to make for the renewal?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "same"
+      ],
+      "target_sentence": "No, I'd like to keep it the same.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 29,
+      "keywords": [
+        "premium"
+      ],
+      "target_sentence": "What is the renewal premium?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 30,
+      "keywords": [
+        "higher"
+      ],
+      "target_sentence": "The premium will be slightly higher.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 31,
+      "keywords": [
+        "proceed"
+      ],
+      "target_sentence": "Please proceed with the renewal.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 32,
+      "keywords": [
+        "documents"
+      ],
+      "target_sentence": "I will send you the updated documents shortly.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "기존 보험 증권 번호",
+      "foreign_phrase": "policy number"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "갱신 비용",
+      "foreign_phrase": "renewal cost"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "보장 내역",
+      "foreign_phrase": "coverage details"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "특별히 변경된 사항은 없습니다",
+      "foreign_phrase": "There are no specific changes"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "갱신 절차",
+      "foreign_phrase": "renewal process"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "이메일로 안내",
+      "foreign_phrase": "we will send an email guide"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 3,
+      "korean_text": "갱신 비용에 변동이 있나요?",
+      "foreign_text": "Are there any changes to the renewal cost?",
+      "reason": "이 문장은 보험 갱신 상담의 핵심 질문으로, 비용 변동 여부를 직접적으로 묻고 있어 학습자가 꼭 알아야 할 표현이기 때문입니다."
+    }
+  ]
+}
