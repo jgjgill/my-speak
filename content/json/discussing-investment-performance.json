@@ -1,0 +1,348 @@
+{
+  "topic": {
+    "id": "749893e3-1100-4224-bcd6-a3820c64ca63",
+    "title": "투자 포트폴리오 성과 논의하기",
+    "category": "금융",
+    "difficulty": "초급",
+    "description": "투자 성과에 대해 논의하는 간단한 대화입니다.",
+    "language_code": "en",
+    "total_sentences": 6
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 최근 저희 투자 포트폴리오 성과는 어떤가요?"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "사실 꽤 좋아요! 우리가 투자한 주식들이 성장했어요 (약 15% 정도)."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "채권은 어떤가요?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "채권은 안정적이에요 (3% 정도의 완만한 상승세)."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "전반적으로 포트폴리오가 잘 운영되고 있어요."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "그렇게 들으니 기쁘네요. 다음 분기에 다시 검토해 봐야겠어요."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, how has our investment portfolio performance been lately?",
+      "chunked_text": "Hello, | how has our investment portfolio performance been lately?"
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Actually, it's quite good! The stocks we invested in have grown (by about 15%).",
+      "chunked_text": "Actually, it's quite good! | The stocks we invested in have grown (by about 15%)."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "What about the bonds?",
+      "chunked_text": "What about the bonds?"
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "The bonds are stable (showing a modest gain of about 3%). Overall, the portfolio is performing well.",
+      "chunked_text": "The bonds are stable | (showing a modest gain of about 3%). | Overall, the portfolio is performing well."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "I'm glad to hear that. We should review it again next quarter.",
+      "chunked_text": "I'm glad to hear that. | We should review it again next quarter."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "안녕하세요",
+        "최근 저희 **투자 포트폴리오 성과**{investment portfolio performance}는 어떤가요?"
+      ],
+      "target_sentence": "Hello, how has our investment portfolio performance been lately?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "사실 꽤 좋아요! 우리가 투자한 **주식들이 성장했어요**{stocks have grown} (약 15% 정도)."
+      ],
+      "target_sentence": "Actually, it's quite good! The stocks we invested in have grown (by about 15%).",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "채권은 어떤가요?"
+      ],
+      "target_sentence": "What about the bonds?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "채권은 **안정적이에요**{is stable} (3% 정도의 **완만한 상승세**{modest gain})."
+      ],
+      "target_sentence": "The bonds are stable (showing a modest gain of about 3%).",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "전반적으로 포트폴리오가 **잘 운영되고 있어요**{performing well}."
+      ],
+      "target_sentence": "Overall, the portfolio is performing well.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "그렇게 들으니 기쁘네요. 다음 분기에 **다시 검토해 봐야겠어요**{should review it again}."
+      ],
+      "target_sentence": "I'm glad to hear that. We should review it again next quarter.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 7,
+      "keywords": [
+        "성과는 어떤가요?"
+      ],
+      "target_sentence": "How has our investment portfolio performance been lately?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "주식 성장"
+      ],
+      "target_sentence": "The stocks we invested in have grown.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "채권"
+      ],
+      "target_sentence": "What about the bonds?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "안정적",
+        "상승세"
+      ],
+      "target_sentence": "The bonds are stable (showing a modest gain).",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "잘 운영"
+      ],
+      "target_sentence": "Overall, the portfolio is performing well.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "검토"
+      ],
+      "target_sentence": "We should review it again.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 13,
+      "keywords": [
+        "성과"
+      ],
+      "target_sentence": "Performance lately?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 14,
+      "keywords": [
+        "성장"
+      ],
+      "target_sentence": "Stocks grown?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "채권"
+      ],
+      "target_sentence": "Bonds?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "안정"
+      ],
+      "target_sentence": "Stable.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "운영"
+      ],
+      "target_sentence": "Performing well?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "검토"
+      ],
+      "target_sentence": "Review again.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 19,
+      "keywords": [
+        "performance"
+      ],
+      "target_sentence": "Hello, how has our investment portfolio performance been lately?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 20,
+      "keywords": [
+        "grown"
+      ],
+      "target_sentence": "The stocks we invested in have grown.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 21,
+      "keywords": [
+        "bonds"
+      ],
+      "target_sentence": "What about the bonds?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "stable"
+      ],
+      "target_sentence": "The bonds are stable.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "performing"
+      ],
+      "target_sentence": "Overall, the portfolio is performing well.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "review"
+      ],
+      "target_sentence": "We should review it again.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 1,
+      "korean_phrase": "투자 포트폴리오 성과",
+      "foreign_phrase": "investment portfolio performance"
+    },
+    {
+      "sentence_order": 2,
+      "korean_phrase": "주식들이 성장했어요",
+      "foreign_phrase": "stocks have grown"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "안정적이에요",
+      "foreign_phrase": "is stable"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "완만한 상승세",
+      "foreign_phrase": "modest gain"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "잘 운영되고 있어요",
+      "foreign_phrase": "performing well"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "다시 검토해 봐야겠어요",
+      "foreign_phrase": "should review it again"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 2,
+      "korean_text": "사실 꽤 좋아요! 우리가 투자한 주식들이 약 15% 정도 성장했어요.",
+      "foreign_text": "Actually, it's quite good! The stocks we invested in have grown (by about 15%).",
+      "reason": "이 문장은 투자 성과의 긍정적인 결과와 구체적인 수치를 담고 있어 학습 내용의 핵심을 이룹니다."
+    }
+  ]
+}

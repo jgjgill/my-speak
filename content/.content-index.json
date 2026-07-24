@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-17T16:38:43Z",
-  "total_count": 129,
+  "generated_at": "2026-07-24T17:00:02Z",
+  "total_count": 130,
   "weekly_plan": {
     "generated_at": "2026-07-19T15:46:40Z",
     "week_number": 29,
@@ -9,7 +9,7 @@
         "slug": "discussing-investment-performance",
         "title": "투자 포트폴리오 성과 논의하기",
         "category": "금융",
-        "used": false
+        "used": true
       },
       {
         "slug": "asking-local-attraction-recommendations",
@@ -154,6 +154,7 @@
     "giving-team-feedback",
     "playing-basketball",
     "giving-constructive-feedback",
-    "insurance-policy-renewal"
+    "insurance-policy-renewal",
+    "discussing-investment-performance"
   ]
 }
