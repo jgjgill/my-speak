@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-24T17:00:02Z",
-  "total_count": 130,
+  "generated_at": "2026-07-29T16:45:56Z",
+  "total_count": 131,
   "weekly_plan": {
     "generated_at": "2026-07-26T15:55:17Z",
     "week_number": 30,
@@ -9,7 +9,7 @@
         "slug": "giving-compliments",
         "title": "칭찬하기",
         "category": "회화",
-        "used": false
+        "used": true
       },
       {
         "slug": "navigating-public-transportation",
@@ -155,6 +155,7 @@
     "playing-basketball",
     "giving-constructive-feedback",
     "insurance-policy-renewal",
-    "discussing-investment-performance"
+    "discussing-investment-performance",
+    "giving-compliments"
   ]
 }

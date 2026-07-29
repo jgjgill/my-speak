@@ -1,0 +1,416 @@
+{
+  "topic": {
+    "id": "036beb22-926f-4994-9c26-186344777695",
+    "title": "칭찬하기",
+    "category": "회화",
+    "difficulty": "초급",
+    "description": "This module teaches basic phrases for giving compliments in English, fostering positive interactions.",
+    "language_code": "en",
+    "total_sentences": 7
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "오늘 정말 멋져 보여요!"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "이 셔츠는 정말 당신에게 잘 어울려요."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "머리 스타일이 멋진데요!"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "와, 칭찬 감사합니다!"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "당신은 정말 친절해요."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "이 음식 정말 맛있어요!"
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "이거 정말 잘 만들었어요."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "You look great today!",
+      "chunked_text": "You look great today!"
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "This shirt really suits you.",
+      "chunked_text": "This shirt | really suits you."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Your hairstyle is cool!",
+      "chunked_text": "Your hairstyle | is cool!"
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Wow, thank you for the compliment!",
+      "chunked_text": "Wow, | thank you for the compliment!"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "You are very kind.",
+      "chunked_text": "You are | very kind."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "This food is really delicious!",
+      "chunked_text": "This food | is really delicious!"
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "You made this really well.",
+      "chunked_text": "You made this | really well."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "멋져 보여요",
+        "오늘"
+      ],
+      "target_sentence": "You look great today!",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "셔츠",
+        "정말 잘 어울려요"
+      ],
+      "target_sentence": "This shirt really suits you.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "머리 스타일",
+        "멋진데요"
+      ],
+      "target_sentence": "Your hairstyle is cool!",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "칭찬",
+        "감사합니다"
+      ],
+      "target_sentence": "Wow, thank you for the compliment!",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "정말",
+        "친절해요"
+      ],
+      "target_sentence": "You are very kind.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "음식",
+        "정말 맛있어요"
+      ],
+      "target_sentence": "This food is really delicious!",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "정말 잘 만들었어요"
+      ],
+      "target_sentence": "You made this really well.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "멋져요",
+        "오늘"
+      ],
+      "target_sentence": "You look great today!",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "셔츠",
+        "어울려요"
+      ],
+      "target_sentence": "This shirt suits you.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "머리",
+        "멋진데요"
+      ],
+      "target_sentence": "Your hairstyle is cool!",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "칭찬",
+        "감사"
+      ],
+      "target_sentence": "Thank you for the compliment!",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "친절해요"
+      ],
+      "target_sentence": "You are very kind.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "음식",
+        "맛있어요"
+      ],
+      "target_sentence": "This food is delicious!",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "잘 만들었어요"
+      ],
+      "target_sentence": "You made this well.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "멋져요"
+      ],
+      "target_sentence": "You look great today!",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "어울려요"
+      ],
+      "target_sentence": "Suits you.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "머리"
+      ],
+      "target_sentence": "Your hairstyle is cool!",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "감사"
+      ],
+      "target_sentence": "Thank you for the compliment!",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "친절해요"
+      ],
+      "target_sentence": "You are very kind.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "맛있어요"
+      ],
+      "target_sentence": "This food is delicious!",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "잘 만들었어요"
+      ],
+      "target_sentence": "You made this well.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "great"
+      ],
+      "target_sentence": "You look great today!",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "suits"
+      ],
+      "target_sentence": "This shirt really suits you.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "hairstyle"
+      ],
+      "target_sentence": "Your hairstyle is cool!",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "compliment"
+      ],
+      "target_sentence": "Wow, thank you for the compliment!",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "kind"
+      ],
+      "target_sentence": "You are very kind.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "delicious"
+      ],
+      "target_sentence": "This food is really delicious!",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "made"
+      ],
+      "target_sentence": "You made this really well.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 1,
+      "korean_phrase": "멋져 보여요",
+      "foreign_phrase": "look great today"
+    },
+    {
+      "sentence_order": 2,
+      "korean_phrase": "당신에게 잘 어울려요",
+      "foreign_phrase": "really suits you"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "머리 스타일이 멋진데요",
+      "foreign_phrase": "Your hairstyle is cool"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "칭찬 감사합니다",
+      "foreign_phrase": "thank you for the compliment"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "당신은 정말 친절해요",
+      "foreign_phrase": "You are very kind"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "정말 맛있어요",
+      "foreign_phrase": "is really delicious"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "정말 잘 만들었어요",
+      "foreign_phrase": "You made this really well"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 1,
+      "korean_text": "오늘 정말 멋져 보여요!",
+      "foreign_text": "You look great today!",
+      "reason": "This sentence is a foundational compliment, widely applicable in various social situations."
+    }
+  ]
+}
