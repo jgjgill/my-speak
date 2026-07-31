@@ -1,0 +1,353 @@
+{
+  "topic": {
+    "id": "00b799f8-5017-40d0-8d4d-07d55d3e1c2f",
+    "title": "대중교통 이용하기",
+    "category": "여행",
+    "difficulty": "초급",
+    "description": "서울 지하철과 같은 대중교통을 이용하여 목적지를 찾아가는 방법을 배우는 초급 영어 학습 콘텐츠입니다.",
+    "language_code": "en",
+    "total_sentences": 6
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 실례합니다. 지하철 3호선 타는 곳이 어디인가요?"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "표를 사는 곳은 저쪽에 있습니다."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "3호선은 B 플랫폼입니다."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "감사합니다. 몇 분 후에 도착하나요?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "5분 후에 도착 예정입니다."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "도와주셔서 감사합니다."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, excuse me. Where to catch subway line 3?",
+      "chunked_text": "Hello, | excuse me. | Where to catch subway line 3?"
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "The ticket purchase location is over there.",
+      "chunked_text": "The ticket purchase location | is over there."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Line 3 is Platform B.",
+      "chunked_text": "Line 3 | is Platform B."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Thank you. How many minutes until it arrives?",
+      "chunked_text": "Thank you. | How many minutes until it arrives?"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "It is scheduled to arrive in 5 minutes.",
+      "chunked_text": "It is scheduled to arrive | in 5 minutes."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Thank you for your help.",
+      "chunked_text": "Thank you for your help."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "안녕하세요",
+        "실례합니다",
+        "지하철 3호선 타는 곳",
+        "어디인가요?"
+      ],
+      "target_sentence": "Hello, excuse me. Where to catch subway line 3?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "표를 사는 곳",
+        "저쪽에 있습니다"
+      ],
+      "target_sentence": "The ticket purchase location is over there.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "3호선",
+        "B 플랫폼"
+      ],
+      "target_sentence": "Line 3 is Platform B.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "감사합니다",
+        "몇 분 후에 도착하나요?"
+      ],
+      "target_sentence": "Thank you. How many minutes until it arrives?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "5분 후에 도착 예정"
+      ],
+      "target_sentence": "It is scheduled to arrive in 5 minutes.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "도와주셔서 감사합니다"
+      ],
+      "target_sentence": "Thank you for your help.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 7,
+      "keywords": [
+        "실례합니다",
+        "3호선",
+        "타는 곳"
+      ],
+      "target_sentence": "Hello, excuse me. Where to catch subway line 3?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "표 사는 곳"
+      ],
+      "target_sentence": "The ticket purchase location is over there.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "3호선",
+        "B 플랫폼"
+      ],
+      "target_sentence": "Line 3 is Platform B.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "감사합니다",
+        "몇 분 후",
+        "도착?"
+      ],
+      "target_sentence": "Thank you. How many minutes until it arrives?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "5분 후",
+        "도착 예정"
+      ],
+      "target_sentence": "It is scheduled to arrive in 5 minutes.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "감사합니다"
+      ],
+      "target_sentence": "Thank you for your help.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 13,
+      "keywords": [
+        "실례합니다"
+      ],
+      "target_sentence": "Hello, excuse me. Where to catch subway line 3?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 14,
+      "keywords": [
+        "표"
+      ],
+      "target_sentence": "The ticket purchase location is over there.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "B 플랫폼"
+      ],
+      "target_sentence": "Line 3 is Platform B.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "몇 분 후?"
+      ],
+      "target_sentence": "Thank you. How many minutes until it arrives?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "5분"
+      ],
+      "target_sentence": "It is scheduled to arrive in 5 minutes.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "감사합니다"
+      ],
+      "target_sentence": "Thank you for your help.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 19,
+      "keywords": [
+        "Excuse me"
+      ],
+      "target_sentence": "Hello, excuse me. Where to catch subway line 3?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 20,
+      "keywords": [
+        "Ticket"
+      ],
+      "target_sentence": "The ticket purchase location is over there.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 21,
+      "keywords": [
+        "Platform B"
+      ],
+      "target_sentence": "Line 3 is Platform B.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "Minutes"
+      ],
+      "target_sentence": "Thank you. How many minutes until it arrives?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "5 minutes"
+      ],
+      "target_sentence": "It is scheduled to arrive in 5 minutes.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "Help"
+      ],
+      "target_sentence": "Thank you for your help.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 1,
+      "korean_phrase": "지하철 3호선 타는 곳",
+      "foreign_phrase": "where to catch subway line 3"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "3호선은 B 플랫폼",
+      "foreign_phrase": "Line 3 is Platform B"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "몇 분 후에 도착하나요?",
+      "foreign_phrase": "how many minutes until it arrives?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "5분 후에 도착 예정",
+      "foreign_phrase": "It is scheduled to arrive in 5 minutes"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 실례합니다. 지하철 3호선 타는 곳이 어디인가요?",
+      "foreign_text": "Hello, excuse me. Where to catch subway line 3?",
+      "reason": "가장 기본적인 질문으로, 길을 묻는 상황에서 필수적이기 때문입니다."
+    }
+  ]
+}
