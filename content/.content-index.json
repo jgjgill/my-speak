@@ -2,25 +2,25 @@
   "generated_at": "2026-07-31T17:00:48Z",
   "total_count": 132,
   "weekly_plan": {
-    "generated_at": "2026-07-26T15:55:17Z",
-    "week_number": 30,
+    "generated_at": "2026-08-02T15:53:22Z",
+    "week_number": 31,
     "planned_slugs": [
       {
-        "slug": "giving-compliments",
-        "title": "칭찬하기",
-        "category": "회화",
-        "used": true
+        "slug": "car-insurance-discussion",
+        "title": "자동차 보험 상담",
+        "category": "금융",
+        "used": false
       },
       {
-        "slug": "navigating-public-transportation",
-        "title": "대중교통 이용하기",
-        "category": "여행",
-        "used": true
-      },
-      {
-        "slug": "discussing-project-deadlines",
-        "title": "프로젝트 마감일 논의하기",
+        "slug": "requesting-recommendation-letter",
+        "title": "추천서 요청하기",
         "category": "비즈니스",
+        "used": false
+      },
+      {
+        "slug": "current-events-discussion",
+        "title": "시사 토론",
+        "category": "회화",
         "used": false
       }
     ]
