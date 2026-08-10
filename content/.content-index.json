@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-31T17:00:48Z",
-  "total_count": 132,
+  "generated_at": "2026-08-10T16:13:07Z",
+  "total_count": 133,
   "weekly_plan": {
     "generated_at": "2026-08-09T15:21:23Z",
     "week_number": 32,
@@ -9,7 +9,7 @@
         "slug": "dentist-symptom-discussion",
         "title": "치과 증상 상담",
         "category": "의료",
-        "used": false
+        "used": true
       },
       {
         "slug": "attending-football-match",
@@ -157,6 +157,7 @@
     "insurance-policy-renewal",
     "discussing-investment-performance",
     "giving-compliments",
-    "navigating-public-transportation"
+    "navigating-public-transportation",
+    "dentist-symptom-discussion"
   ]
 }
