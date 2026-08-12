@@ -1,0 +1,401 @@
+{
+  "topic": {
+    "id": "2b3caaf7-fc31-4c81-84ac-55ca5ca98bd7",
+    "title": "축구 경기 관람",
+    "category": "레저",
+    "difficulty": "초급",
+    "description": "이번 주말에 친구와 함께 축구 경기를 보러 가기로 했습니다. 경기 티켓 예매 방법, 경기하는 팀, 만나는 시간 등을 이야기하는 초급 대화입니다.",
+    "language_code": "en",
+    "total_sentences": 7
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "이번 주말에 축구 경기 보러 갈까?"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "오, 좋다! 표는 어떻게 구해?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "온라인으로 미리 예매하면 돼."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "어느 팀 경기야?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "우리 응원하는 팀이 홈 경기야."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "그럼 몇 시에 만나서 갈까?"
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "경기 시작 두 시간 전에 경기장 앞에서 보자."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "How about going to watch a football match this weekend?",
+      "chunked_text": "How about going to watch a football match this weekend?"
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Oh, great! How do we get tickets?",
+      "chunked_text": "Oh, great! | How do we get tickets?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "We can book them online in advance.",
+      "chunked_text": "We can book them online | in advance."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Which team is playing?",
+      "chunked_text": "Which team | is playing?"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Our favorite team has a home game.",
+      "chunked_text": "Our favorite team | has a home game."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "So, what time should we meet and go?",
+      "chunked_text": "So, what time | should we meet and go?"
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "Let's meet at the stadium two hours before the game starts.",
+      "chunked_text": "Let's meet at the stadium | two hours before the game starts."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "이번 주말",
+        "축구 경기",
+        "보러 갈까?"
+      ],
+      "target_sentence": "How about going to watch a football match this weekend?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "표",
+        "어떻게 구해?"
+      ],
+      "target_sentence": "How do we get tickets?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "온라인",
+        "미리",
+        "예매"
+      ],
+      "target_sentence": "We can book them online in advance.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "어느 팀",
+        "경기야?"
+      ],
+      "target_sentence": "Which team is playing?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "응원하는 팀",
+        "홈 경기"
+      ],
+      "target_sentence": "Our favorite team has a home game.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "몇 시",
+        "만나서 갈까?"
+      ],
+      "target_sentence": "So, what time should we meet and go?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "경기 시작",
+        "두 시간 전",
+        "경기장 앞"
+      ],
+      "target_sentence": "Let's meet at the stadium two hours before the game starts.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "축구 경기"
+      ],
+      "target_sentence": "How about going to watch a football match this weekend?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "표"
+      ],
+      "target_sentence": "How do we get tickets?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "온라인 예매"
+      ],
+      "target_sentence": "We can book them online in advance.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "어느 팀"
+      ],
+      "target_sentence": "Which team is playing?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "홈 경기"
+      ],
+      "target_sentence": "Our favorite team has a home game.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "몇 시 만나"
+      ],
+      "target_sentence": "So, what time should we meet and go?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "경기장",
+        "두 시간 전"
+      ],
+      "target_sentence": "Let's meet at the stadium two hours before the game starts.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "축구"
+      ],
+      "target_sentence": "How about going to watch a football match this weekend?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "표"
+      ],
+      "target_sentence": "How do we get tickets?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "온라인"
+      ],
+      "target_sentence": "We can book them online in advance.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "팀"
+      ],
+      "target_sentence": "Which team is playing?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "홈"
+      ],
+      "target_sentence": "Our favorite team has a home game.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "만나"
+      ],
+      "target_sentence": "So, what time should we meet and go?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "경기장"
+      ],
+      "target_sentence": "Let's meet at the stadium two hours before the game starts.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "weekend"
+      ],
+      "target_sentence": "How about going to watch a football match this weekend?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "tickets"
+      ],
+      "target_sentence": "How do we get tickets?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "online"
+      ],
+      "target_sentence": "We can book them online in advance.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "team"
+      ],
+      "target_sentence": "Which team is playing?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "home game"
+      ],
+      "target_sentence": "Our favorite team has a home game.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "meet"
+      ],
+      "target_sentence": "So, what time should we meet and go?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "stadium"
+      ],
+      "target_sentence": "Let's meet at the stadium two hours before the game starts.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "표는 어떻게 구해?",
+      "foreign_phrase": "How do we get tickets?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "온라인으로 미리 예매하면 돼.",
+      "foreign_phrase": "We can book them online in advance."
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "어느 팀 경기야?",
+      "foreign_phrase": "Which team is playing?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "그럼 몇 시에 만나서 갈까?",
+      "foreign_phrase": "So, what time should we meet and go?"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 2,
+      "korean_text": "표는 어떻게 구해?",
+      "foreign_text": "How do we get tickets?",
+      "reason": "이 문장은 이벤트 참석 계획 시 필수적인 질문입니다."
+    }
+  ]
+}

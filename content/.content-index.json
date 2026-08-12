@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-10T16:13:07Z",
-  "total_count": 133,
+  "generated_at": "2026-08-12T16:15:27Z",
+  "total_count": 134,
   "weekly_plan": {
     "generated_at": "2026-08-09T15:21:23Z",
     "week_number": 32,
@@ -15,7 +15,7 @@
         "slug": "attending-football-match",
         "title": "축구 경기 관람",
         "category": "레저",
-        "used": false
+        "used": true
       },
       {
         "slug": "requesting-business-reference",
@@ -158,6 +158,7 @@
     "discussing-investment-performance",
     "giving-compliments",
     "navigating-public-transportation",
-    "dentist-symptom-discussion"
+    "dentist-symptom-discussion",
+    "attending-football-match"
   ]
 }
