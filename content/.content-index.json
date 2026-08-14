@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-12T16:15:27Z",
-  "total_count": 134,
+  "generated_at": "2026-08-14T16:11:09Z",
+  "total_count": 135,
   "weekly_plan": {
     "generated_at": "2026-08-09T15:21:23Z",
     "week_number": 32,
@@ -21,7 +21,7 @@
         "slug": "requesting-business-reference",
         "title": "사업 추천 요청",
         "category": "비즈니스",
-        "used": false
+        "used": true
       }
     ]
   },
@@ -159,6 +159,7 @@
     "giving-compliments",
     "navigating-public-transportation",
     "dentist-symptom-discussion",
-    "attending-football-match"
+    "attending-football-match",
+    "requesting-business-reference"
   ]
 }

@@ -1,0 +1,438 @@
+{
+  "topic": {
+    "id": "a97e0a83-62eb-4c32-81bc-23f03e008961",
+    "title": "사업 추천 요청",
+    "category": "비즈니스",
+    "difficulty": "초급",
+    "description": "새로운 직장에 지원할 때 전 동료나 상사에게 추천인으로 나서달라고 정중하게 요청하는 방법을 배웁니다. 비즈니스 환경에서 긍정적인 추천을 받는 데 필요한 표현을 익힐 수 있습니다.",
+    "language_code": "en",
+    "total_sentences": 8
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, [이름]입니다. 잘 지내시죠?"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "네, [이름]님. 오랜만이네요. 저도 잘 지냅니다. 무슨 일로 연락 주셨어요?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "다름이 아니라, 제가 새로운 직장에 지원하게 되었는데, 혹시 추천인으로 몇 분의 성함을 적어도 괜찮을지 여쭤보고 싶어서요."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "아, 그러시군요. 어떤 회사인데요?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "[회사 이름]이라는 곳인데, [직무] 포지션입니다. 혹시 저에 대해 긍정적으로 이야기해 주실 수 있을까요?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "네, 물론이죠. 같이 일하면서 [이름]님은 정말 성실하고 능력이 뛰어나신 분이라고 생각했어요."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "정말 감사합니다. 그럼 추천인 명단에 성함과 연락처를 남겨도 될까요?"
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "네, 편하게 남기세요. 좋은 결과 있기를 바랍니다."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, this is [Name]. How are you?",
+      "chunked_text": "Hello, | this is [Name]. | How are you?"
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Yes, [Name]. It's been a while. I'm doing well too. What brings you to call?",
+      "chunked_text": "Yes, [Name]. | It's been a while. | I'm doing well too. | What brings you to call?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Actually, I'm applying for a new job, and I was wondering if it would be alright to list the names of a few people as references.",
+      "chunked_text": "Actually, | I'm applying for a new job, | and I was wondering | if it would be alright | to list the names of a few people as references."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Oh, I see. What kind of company is it?",
+      "chunked_text": "Oh, I see. | What kind of company is it?"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "It's a company called [Company Name], for the [Job Title] position. Would you be able to speak positively about me?",
+      "chunked_text": "It's a company called [Company Name], | for the [Job Title] position. | Would you be able to speak positively about me?"
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Yes, of course. While we worked together, I thought of you as a diligent and capable person.",
+      "chunked_text": "Yes, of course. | While we worked together, | I thought of you as | a diligent and capable person."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "Thank you so much. So, may I leave your name and contact information on the reference list?",
+      "chunked_text": "Thank you so much. | So, may I leave your name | and contact information | on the reference list?"
+    },
+    {
+      "sentence_order": 8,
+      "foreign_text": "Yes, feel free to leave it. I hope you get good results.",
+      "chunked_text": "Yes, feel free to leave it. | I hope you get good results."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "안녕하세요",
+        "[이름]입니다. 잘 지내시죠?"
+      ],
+      "target_sentence": "Hello, this is [Name]. How are you?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "네",
+        "[이름]님. 오랜만이네요. 저도 잘 지냅니다. 무슨 일로 연락 주셨어요?"
+      ],
+      "target_sentence": "Yes, [Name]. It's been a while. I'm doing well too. What brings you to call?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "다름이 아니라",
+        "제가 새로운 직장에 지원하게 되었는데",
+        "혹시 추천인으로 몇 분의 성함을 적어도 괜찮을지 여쭤보고 싶어서요."
+      ],
+      "target_sentence": "Actually, I'm applying for a new job, and I was wondering if it would be alright to list the names of a few people as references.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "아",
+        "그러시군요. 어떤 회사인데요?"
+      ],
+      "target_sentence": "Oh, I see. What kind of company is it?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "[회사 이름]이라는 곳인데",
+        "[직무] 포지션입니다. 혹시 저에 대해 긍정적으로 이야기해 주실 수 있을까요?"
+      ],
+      "target_sentence": "It's a company called [Company Name], for the [Job Title] position. Would you be able to speak positively about me?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "네",
+        "물론이죠. 같이 일하면서 [이름]님은 정말 성실하고 능력이 뛰어나신 분이라고 생각했어요."
+      ],
+      "target_sentence": "Yes, of course. While we worked together, I thought of you as a diligent and capable person.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "정말 감사합니다. 그럼 추천인 명단에 성함과 연락처를 남겨도 될까요?"
+      ],
+      "target_sentence": "Thank you so much. So, may I leave your name and contact information on the reference list?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 8,
+      "keywords": [
+        "네",
+        "편하게 남기세요. 좋은 결과 있기를 바랍니다."
+      ],
+      "target_sentence": "Yes, feel free to leave it. I hope you get good results.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "안녕하세요. 잘 지내시죠?"
+      ],
+      "target_sentence": "Hello. How are you?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "네. 무슨 일로 연락 주셨어요?"
+      ],
+      "target_sentence": "Yes. What brings you to call?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "새로운 직장 지원",
+        "추천인."
+      ],
+      "target_sentence": "Applying for a new job, references.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "어떤 회사?"
+      ],
+      "target_sentence": "What company?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "[회사 이름]",
+        "[직무] 포지션. 긍정적으로 이야기해 주실 수 있을까요?"
+      ],
+      "target_sentence": "[Company Name], [Job Title] position. Speak positively?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "물론이죠. 성실하고 능력 있는 분"
+      ],
+      "target_sentence": "Of course. Diligent and capable.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 15,
+      "keywords": [
+        "감사합니다. 추천인 명단",
+        "성함",
+        "연락처 남겨도 될까요?"
+      ],
+      "target_sentence": "Thanks. Reference list, name, contact info ok?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 16,
+      "keywords": [
+        "네. 좋은 결과 있기를 바랍니다."
+      ],
+      "target_sentence": "Yes. Hope good results.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "안녕."
+      ],
+      "target_sentence": "Hello.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "일?"
+      ],
+      "target_sentence": "Business?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "직장",
+        "추천인."
+      ],
+      "target_sentence": "Job, reference.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "회사?"
+      ],
+      "target_sentence": "Company?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "[회사]",
+        "[직무]. 긍정적?"
+      ],
+      "target_sentence": "[Company], [Job]. Positive?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 22,
+      "keywords": [
+        "성실",
+        "능력."
+      ],
+      "target_sentence": "Diligent, capable.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 23,
+      "keywords": [
+        "감사. 명단",
+        "연락처?"
+      ],
+      "target_sentence": "Thanks. List, contact?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 24,
+      "keywords": [
+        "네. 결과."
+      ],
+      "target_sentence": "Yes. Results.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "Hello"
+      ],
+      "target_sentence": "Hello, this is [Name]. How are you?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "call"
+      ],
+      "target_sentence": "What brings you to call?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "job",
+        "references"
+      ],
+      "target_sentence": "Actually, I'm applying for a new job, and I was wondering if it would be alright to list the names of a few people as references.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "company"
+      ],
+      "target_sentence": "What kind of company is it?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 29,
+      "keywords": [
+        "position",
+        "positively"
+      ],
+      "target_sentence": "It's a company called [Company Name], for the [Job Title] position. Would you be able to speak positively about me?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 30,
+      "keywords": [
+        "worked together",
+        "diligent",
+        "capable"
+      ],
+      "target_sentence": "While we worked together, I thought of you as a diligent and capable person.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 31,
+      "keywords": [
+        "reference list"
+      ],
+      "target_sentence": "So, may I leave your name and contact information on the reference list?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 32,
+      "keywords": [
+        "results"
+      ],
+      "target_sentence": "I hope you get good results.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [],
+  "highlight_sentences": [
+    {
+      "sentence_order": 5,
+      "korean_text": "혹시 저에 대해 긍정적으로 이야기해 주실 수 있을까요?",
+      "foreign_text": "Would you be able to speak positively about me?",
+      "reason": "새로운 직장 지원 시, 잠재적 고용주에게 자신을 추천해 줄 수 있는지 직접적으로 묻는 가장 중요한 질문이기 때문입니다."
+    }
+  ]
+}
