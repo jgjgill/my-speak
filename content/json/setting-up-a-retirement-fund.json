@@ -1,0 +1,453 @@
+{
+  "topic": {
+    "id": "cdeaf93d-c1e3-4dec-9033-973bec18c524",
+    "title": "은퇴 자금 마련하기",
+    "category": "Finance",
+    "difficulty": "초급",
+    "description": "은퇴 후 재정적 안정을 위해 지금부터 저축하고 투자하는 방법을 배우는 콘텐츠입니다.",
+    "language_code": "en",
+    "total_sentences": 8
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "은퇴 후에도 편안하게 살고 싶어요."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "그렇다면 지금부터 은퇴 자금 마련을 시작해야 해요."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "어디서부터 시작해야 할지 모르겠어요."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "먼저 정기적으로 저축하는 습관을 들이는 것이 중요해요."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "얼마나 저축해야 할까요?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "소득의 최소 10%는 저축하는 것을 목표로 삼으세요."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "투자 상품도 고려해 볼 수 있어요."
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "좋은 정보 감사합니다!"
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "I want to live comfortably after retirement.",
+      "chunked_text": "I want to live comfortably | after retirement."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Then you need to start setting up a retirement fund now.",
+      "chunked_text": "Then you need to start setting up | a retirement fund | now."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "I don't know where to start.",
+      "chunked_text": "I don't know | where to start."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "First, it's important to develop a habit of saving regularly.",
+      "chunked_text": "First, it's important | to develop a habit | of saving regularly."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "How much should I save?",
+      "chunked_text": "How much | should I save?"
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Aim to save at least 10% of your income.",
+      "chunked_text": "Aim to save | at least 10% of your income."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "You can also consider investment products.",
+      "chunked_text": "You can also consider | investment products."
+    },
+    {
+      "sentence_order": 8,
+      "foreign_text": "Thanks for the good information!",
+      "chunked_text": "Thanks for the good information!"
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "은퇴 후",
+        "살고 싶어요",
+        "편안하게"
+      ],
+      "target_sentence": "I want to live comfortably after retirement.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "시작해야 해요",
+        "은퇴 자금 마련",
+        "지금부터"
+      ],
+      "target_sentence": "Then you need to start setting up a retirement fund now.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "모르겠어요",
+        "어디서",
+        "시작해야 할지"
+      ],
+      "target_sentence": "I don't know where to start.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "중요해요",
+        "습관",
+        "정기적으로 저축하는"
+      ],
+      "target_sentence": "First, it's important to develop a habit of saving regularly.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "얼마나",
+        "저축해야 할까요"
+      ],
+      "target_sentence": "How much should I save?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "목표로 삼으세요",
+        "최소 10%",
+        "소득의"
+      ],
+      "target_sentence": "Aim to save at least 10% of your income.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "고려해 볼 수 있어요",
+        "투자 상품도"
+      ],
+      "target_sentence": "You can also consider investment products.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 8,
+      "keywords": [
+        "감사합니다",
+        "좋은 정보"
+      ],
+      "target_sentence": "Thanks for the good information!",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "은퇴 후",
+        "편안하게"
+      ],
+      "target_sentence": "I want to live comfortably after retirement.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "시작해요",
+        "은퇴 자금"
+      ],
+      "target_sentence": "Then you need to start setting up a retirement fund now.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "어디서 시작"
+      ],
+      "target_sentence": "I don't know where to start.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "습관",
+        "저축"
+      ],
+      "target_sentence": "First, it's important to develop a habit of saving regularly.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "얼마나 저축"
+      ],
+      "target_sentence": "How much should I save?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "10%",
+        "소득"
+      ],
+      "target_sentence": "Aim to save at least 10% of your income.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 15,
+      "keywords": [
+        "고려해요",
+        "투자"
+      ],
+      "target_sentence": "You can also consider investment products.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 16,
+      "keywords": [
+        "정보",
+        "감사"
+      ],
+      "target_sentence": "Thanks for the good information!",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "은퇴 후"
+      ],
+      "target_sentence": "I want to live comfortably after retirement.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "은퇴 자금"
+      ],
+      "target_sentence": "Then you need to start setting up a retirement fund now.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "시작"
+      ],
+      "target_sentence": "I don't know where to start.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "저축"
+      ],
+      "target_sentence": "First, it's important to develop a habit of saving regularly.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "얼마나"
+      ],
+      "target_sentence": "How much should I save?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 22,
+      "keywords": [
+        "10%"
+      ],
+      "target_sentence": "Aim to save at least 10% of your income.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 23,
+      "keywords": [
+        "투자"
+      ],
+      "target_sentence": "You can also consider investment products.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 24,
+      "keywords": [
+        "정보"
+      ],
+      "target_sentence": "Thanks for the good information!",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "retirement"
+      ],
+      "target_sentence": "I want to live comfortably after retirement.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "fund"
+      ],
+      "target_sentence": "Then you need to start setting up a retirement fund now.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "start"
+      ],
+      "target_sentence": "I don't know where to start.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "saving"
+      ],
+      "target_sentence": "First, it's important to develop a habit of saving regularly.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 29,
+      "keywords": [
+        "save"
+      ],
+      "target_sentence": "How much should I save?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 30,
+      "keywords": [
+        "income"
+      ],
+      "target_sentence": "Aim to save at least 10% of your income.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 31,
+      "keywords": [
+        "investment"
+      ],
+      "target_sentence": "You can also consider investment products.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 32,
+      "keywords": [
+        "information"
+      ],
+      "target_sentence": "Thanks for the good information!",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "은퇴 자금 마련",
+      "foreign_phrase": "setting up a retirement fund"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "정기적으로 저축하는 습관",
+      "foreign_phrase": "regularly saving habit"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "최소 10%",
+      "foreign_phrase": "at least 10% of your income"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 2,
+      "korean_text": "그렇다면 지금부터 은퇴 자금 마련을 시작해야 해요.",
+      "foreign_text": "Then you need to start setting up a retirement fund now.",
+      "reason": "이 문장은 은퇴 자금 마련의 필요성과 시작 시점을 명확히 알려주어 초급 학습자에게 중요합니다."
+    }
+  ]
+}

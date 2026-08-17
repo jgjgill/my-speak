@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-14T16:11:09Z",
-  "total_count": 135,
+  "generated_at": "2026-08-17T15:46:04Z",
+  "total_count": 136,
   "weekly_plan": {
     "generated_at": "2026-08-16T15:13:09Z",
     "week_number": 33,
@@ -9,7 +9,7 @@
         "slug": "setting-up-a-retirement-fund",
         "title": "은퇴 자금 마련하기",
         "category": "Finance",
-        "used": false
+        "used": true
       },
       {
         "slug": "organizing-a-board-game-night",
@@ -160,6 +160,7 @@
     "navigating-public-transportation",
     "dentist-symptom-discussion",
     "attending-football-match",
-    "requesting-business-reference"
+    "requesting-business-reference",
+    "setting-up-a-retirement-fund"
   ]
 }
