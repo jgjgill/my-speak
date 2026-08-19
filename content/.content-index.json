@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-17T15:46:04Z",
-  "total_count": 136,
+  "generated_at": "2026-08-19T15:53:29Z",
+  "total_count": 137,
   "weekly_plan": {
     "generated_at": "2026-08-16T15:13:09Z",
     "week_number": 33,
@@ -15,7 +15,7 @@
         "slug": "organizing-a-board-game-night",
         "title": "보드게임 밤 계획하기",
         "category": "Leisure",
-        "used": false
+        "used": true
       },
       {
         "slug": "booking-a-guided-nature-hike",
@@ -161,6 +161,7 @@
     "dentist-symptom-discussion",
     "attending-football-match",
     "requesting-business-reference",
-    "setting-up-a-retirement-fund"
+    "setting-up-a-retirement-fund",
+    "organizing-a-board-game-night"
   ]
 }
