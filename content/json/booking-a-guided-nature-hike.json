@@ -1,0 +1,496 @@
+{
+  "topic": {
+    "id": "a1dae110-0f6f-4df0-b716-82371a28dcc5",
+    "title": "자연 하이킹 가이드 예약하기",
+    "category": "Travel",
+    "difficulty": "초급",
+    "description": "자연 하이킹 가이드 예약을 하는 방법을 배우는 대화입니다.",
+    "language_code": "en",
+    "total_sentences": 8
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요. 자연 하이킹 가이드 예약을 하고 싶습니다."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "네, 좋습니다. 어떤 종류의 하이킹을 찾으시나요?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "하루 종일 진행되는 쉬운 코스가 있나요?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "네, 있습니다. 매주 토요일 오전 9시에 출발하는 인기 있는 코스가 있어요."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "얼마 동안 진행되나요?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "약 5시간 정도 걸립니다. 점심 식사도 포함되어 있어요."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "1인당 가격은 얼마인가요?"
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "50달러입니다."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello. I would like to book a guided nature hike.",
+      "chunked_text": "Hello. | I would like to book | a guided nature hike."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Yes, great. What kind of hike are you looking for?",
+      "chunked_text": "Yes, great. | What kind of hike | are you looking for?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Do you have a full-day easy trail?",
+      "chunked_text": "Do you have | a full-day | easy trail?"
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Yes, we do. We have a popular trail that departs every Saturday at 9 AM.",
+      "chunked_text": "Yes, we do. | We have a popular trail | that departs every Saturday at 9 AM."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "How long does it last?",
+      "chunked_text": "How long | does it last?"
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "It takes about 5 hours. Lunch is also included.",
+      "chunked_text": "It takes | about 5 hours. | Lunch is also included."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "How much is it per person?",
+      "chunked_text": "How much | is it per person?"
+    },
+    {
+      "sentence_order": 8,
+      "foreign_text": "It's 50 dollars.",
+      "chunked_text": "It's | 50 dollars."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "자연 하이킹",
+        "가이드 예약",
+        "하고 싶습니다"
+      ],
+      "target_sentence": "Hello. I would like to book a guided nature hike.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "어떤 종류",
+        "찾으시나요"
+      ],
+      "target_sentence": "Yes, great. What kind of hike are you looking for?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "하루 종일",
+        "쉬운 코스",
+        "있나요"
+      ],
+      "target_sentence": "Do you have a full-day easy trail?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "매주 토요일",
+        "오전 9시",
+        "출발",
+        "인기 있는 코스"
+      ],
+      "target_sentence": "Yes, we do. We have a popular trail that departs every Saturday at 9 AM.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "얼마 동안",
+        "진행되나요"
+      ],
+      "target_sentence": "How long does it last?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "약 5시간",
+        "점심 식사",
+        "포함"
+      ],
+      "target_sentence": "It takes about 5 hours. Lunch is also included.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "1인당 가격",
+        "얼마인가요"
+      ],
+      "target_sentence": "How much is it per person?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 8,
+      "keywords": [
+        "50달러",
+        "입니다"
+      ],
+      "target_sentence": "It's 50 dollars.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "하이킹 예약",
+        "싶습니다"
+      ],
+      "target_sentence": "I would like to book a guided nature hike.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "종류",
+        "찾으시나요"
+      ],
+      "target_sentence": "What kind of hike are you looking for?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "하루 종일",
+        "쉬운 코스"
+      ],
+      "target_sentence": "Do you have a full-day easy trail?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "토요일",
+        "9시",
+        "코스"
+      ],
+      "target_sentence": "We have a popular trail that departs every Saturday at 9 AM.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "얼마 동안"
+      ],
+      "target_sentence": "How long does it last?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "5시간",
+        "점심 포함"
+      ],
+      "target_sentence": "It takes about 5 hours. Lunch is also included.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 15,
+      "keywords": [
+        "가격",
+        "얼마인가요"
+      ],
+      "target_sentence": "How much is it per person?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 16,
+      "keywords": [
+        "50달러"
+      ],
+      "target_sentence": "It's 50 dollars.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "예약"
+      ],
+      "target_sentence": "I would like to book a guided nature hike.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "종류"
+      ],
+      "target_sentence": "What kind of hike are you looking for?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "쉬운 코스"
+      ],
+      "target_sentence": "Do you have a full-day easy trail?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "토요일 9시"
+      ],
+      "target_sentence": "We have a popular trail that departs every Saturday at 9 AM.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "얼마 동안"
+      ],
+      "target_sentence": "How long does it last?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 22,
+      "keywords": [
+        "5시간"
+      ],
+      "target_sentence": "It takes about 5 hours.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 23,
+      "keywords": [
+        "가격"
+      ],
+      "target_sentence": "How much is it per person?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 24,
+      "keywords": [
+        "50달러"
+      ],
+      "target_sentence": "It's 50 dollars.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "book"
+      ],
+      "target_sentence": "I would like to book a guided nature hike.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "kind"
+      ],
+      "target_sentence": "What kind of hike are you looking for?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "easy trail"
+      ],
+      "target_sentence": "Do you have a full-day easy trail?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "Saturday 9 AM"
+      ],
+      "target_sentence": "We have a popular trail that departs every Saturday at 9 AM.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 29,
+      "keywords": [
+        "long"
+      ],
+      "target_sentence": "How long does it last?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 30,
+      "keywords": [
+        "hours",
+        "lunch"
+      ],
+      "target_sentence": "It takes about 5 hours. Lunch is also included.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 31,
+      "keywords": [
+        "much",
+        "person"
+      ],
+      "target_sentence": "How much is it per person?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 32,
+      "keywords": [
+        "dollars"
+      ],
+      "target_sentence": "It's 50 dollars.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 1,
+      "korean_phrase": "자연 하이킹 가이드 예약",
+      "foreign_phrase": "booking a guided nature hike"
+    },
+    {
+      "sentence_order": 2,
+      "korean_phrase": "어떤 종류의 하이킹",
+      "foreign_phrase": "What kind of hike"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "하루 종일 진행되는",
+      "foreign_phrase": "a full-day"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "쉬운 코스",
+      "foreign_phrase": "an easy trail"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "매주 토요일 오전 9시",
+      "foreign_phrase": "every Saturday at 9 AM"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "인기 있는 코스",
+      "foreign_phrase": "a popular trail"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "얼마 동안 진행",
+      "foreign_phrase": "How long does it last"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "약 5시간",
+      "foreign_phrase": "About 5 hours"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "점심 식사",
+      "foreign_phrase": "lunch"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "1인당 가격",
+      "foreign_phrase": "price per person"
+    },
+    {
+      "sentence_order": 8,
+      "korean_phrase": "50달러",
+      "foreign_phrase": "50 dollars"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 7,
+      "korean_text": "1인당 가격은 얼마인가요?",
+      "foreign_text": "How much is it per person?",
+      "reason": "가격 정보는 예약 결정에 필수적이므로 중요한 학습 포인트입니다."
+    }
+  ]
+}
