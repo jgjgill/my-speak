@@ -2,26 +2,26 @@
   "generated_at": "2026-08-21T15:55:05Z",
   "total_count": 138,
   "weekly_plan": {
-    "generated_at": "2026-08-16T15:13:09Z",
-    "week_number": 33,
+    "generated_at": "2026-08-23T15:12:54Z",
+    "week_number": 34,
     "planned_slugs": [
       {
-        "slug": "setting-up-a-retirement-fund",
-        "title": "은퇴 자금 마련하기",
-        "category": "Finance",
-        "used": true
+        "slug": "discussing-job-performance",
+        "title": "직무 성과 논의",
+        "category": "비즈니스",
+        "used": false
       },
       {
-        "slug": "organizing-a-board-game-night",
-        "title": "보드게임 밤 계획하기",
-        "category": "Leisure",
-        "used": true
+        "slug": "organizing-barbecue-with-neighbors",
+        "title": "이웃과 바비큐 파티 준비",
+        "category": "레저",
+        "used": false
       },
       {
-        "slug": "booking-a-guided-nature-hike",
-        "title": "자연 하이킹 가이드 예약하기",
-        "category": "Travel",
-        "used": true
+        "slug": "asking-for-doctor-referral",
+        "title": "의사에게 전문의 추천 의뢰하기",
+        "category": "의료",
+        "used": false
       }
     ]
   },
