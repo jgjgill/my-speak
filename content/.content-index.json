@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-21T15:55:05Z",
-  "total_count": 138,
+  "generated_at": "2026-08-24T16:01:09Z",
+  "total_count": 139,
   "weekly_plan": {
     "generated_at": "2026-08-23T15:12:54Z",
     "week_number": 34,
@@ -9,7 +9,7 @@
         "slug": "discussing-job-performance",
         "title": "직무 성과 논의",
         "category": "비즈니스",
-        "used": false
+        "used": true
       },
       {
         "slug": "organizing-barbecue-with-neighbors",
@@ -163,6 +163,7 @@
     "requesting-business-reference",
     "setting-up-a-retirement-fund",
     "organizing-a-board-game-night",
-    "booking-a-guided-nature-hike"
+    "booking-a-guided-nature-hike",
+    "discussing-job-performance"
   ]
 }
