@@ -1,0 +1,362 @@
+{
+  "topic": {
+    "id": "fdfab750-fb61-4a5d-bd94-f7f3980f3d6f",
+    "title": "이웃과 바비큐 파티 준비",
+    "category": "레저",
+    "difficulty": "초급",
+    "description": "이웃과 함께 즐거운 바비큐 파티를 계획하고 준비하는 과정을 배우는 대화입니다.",
+    "language_code": "en",
+    "total_sentences": 6
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "이번 주말에 이웃들과 바비큐 파티를 열려고 하는데, 같이 준비할까요?"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "좋아요! 토요일 오후 5시에 시작하면 어떨까요?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "훌륭해요! 저는 그릴과 숯을 가져올게요."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "저는 음료수와 샐러드를 준비해 보겠어요."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "몇몇 다른 이웃들도 초대하면 더 재미있을 것 같아요."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "맞아요, 내일 초대 문자를 보내서 알려주죠."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "I'm planning to have a barbecue party with the neighbors this weekend, shall we prepare together?",
+      "chunked_text": "I'm planning to have a barbecue party with the neighbors this weekend, | shall we prepare together?"
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Sounds good! How about starting on Saturday at 5 PM?",
+      "chunked_text": "Sounds good! | How about starting on Saturday at 5 PM?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Great! I'll bring the grill and charcoal.",
+      "chunked_text": "Great! | I'll bring the grill and charcoal."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "I'll prepare the drinks and salad.",
+      "chunked_text": "I'll prepare the drinks and salad."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "I think it would be more fun if we invite some other neighbors.",
+      "chunked_text": "I think it would be more fun | if we invite some other neighbors."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Right, let's send out an invitation text tomorrow to let them know.",
+      "chunked_text": "Right, | let's send out an invitation text tomorrow | to let them know."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "이번 주말에 이웃들과 바비큐 파티를 열려고 하는데",
+        "같이 준비할까요?"
+      ],
+      "target_sentence": "I'm planning to have a barbecue party with the neighbors this weekend, shall we prepare together?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "토요일 오후 5시에 시작하면 어떨까요?"
+      ],
+      "target_sentence": "Sounds good! How about starting on Saturday at 5 PM?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "그릴과 숯을 가져올게요"
+      ],
+      "target_sentence": "Great! I'll bring the grill and charcoal.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "음료수와 샐러드를 준비해 보겠어요"
+      ],
+      "target_sentence": "I'll prepare the drinks and salad.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "몇몇 다른 이웃들도 초대하면 더 재미있을 것 같아요"
+      ],
+      "target_sentence": "I think it would be more fun if we invite some other neighbors.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "내일 초대 문자를 보내서 알려주죠"
+      ],
+      "target_sentence": "Right, let's send out an invitation text tomorrow to let them know.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 7,
+      "keywords": [
+        "주말",
+        "이웃",
+        "바비큐 파티",
+        "준비할까요"
+      ],
+      "target_sentence": "I'm planning to have a barbecue party with the neighbors this weekend, shall we prepare together?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "토요일",
+        "5시"
+      ],
+      "target_sentence": "Sounds good! How about starting on Saturday at 5 PM?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "그릴",
+        "숯"
+      ],
+      "target_sentence": "Great! I'll bring the grill and charcoal.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "음료수",
+        "샐러드"
+      ],
+      "target_sentence": "I'll prepare the drinks and salad.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "이웃",
+        "초대"
+      ],
+      "target_sentence": "I think it would be more fun if we invite some other neighbors.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "내일",
+        "초대 문자"
+      ],
+      "target_sentence": "Right, let's send out an invitation text tomorrow to let them know.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 13,
+      "keywords": [
+        "바비큐",
+        "준비"
+      ],
+      "target_sentence": "I'm planning to have a barbecue party with the neighbors this weekend, shall we prepare together?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 14,
+      "keywords": [
+        "토요일",
+        "시작"
+      ],
+      "target_sentence": "Sounds good! How about starting on Saturday at 5 PM?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "가져올게요"
+      ],
+      "target_sentence": "Great! I'll bring the grill and charcoal.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "준비하겠어요"
+      ],
+      "target_sentence": "I'll prepare the drinks and salad.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "초대"
+      ],
+      "target_sentence": "I think it would be more fun if we invite some other neighbors.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "내일"
+      ],
+      "target_sentence": "Right, let's send out an invitation text tomorrow to let them know.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 19,
+      "keywords": [
+        "weekend"
+      ],
+      "target_sentence": "I'm planning to have a barbecue party with the neighbors this weekend, shall we prepare together?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 20,
+      "keywords": [
+        "Saturday"
+      ],
+      "target_sentence": "Sounds good! How about starting on Saturday at 5 PM?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 21,
+      "keywords": [
+        "bring"
+      ],
+      "target_sentence": "Great! I'll bring the grill and charcoal.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "prepare"
+      ],
+      "target_sentence": "I'll prepare the drinks and salad.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "invite"
+      ],
+      "target_sentence": "I think it would be more fun if we invite some other neighbors.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "tomorrow"
+      ],
+      "target_sentence": "Right, let's send out an invitation text tomorrow to let them know.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 1,
+      "korean_phrase": "이웃들과 바비큐 파티",
+      "foreign_phrase": "barbecue party with neighbors"
+    },
+    {
+      "sentence_order": 2,
+      "korean_phrase": "토요일 오후 5시",
+      "foreign_phrase": "Saturday at 5 PM"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "그릴과 숯",
+      "foreign_phrase": "grill and charcoal"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "음료수와 샐러드",
+      "foreign_phrase": "drinks and salad"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "몇몇 다른 이웃들도 초대",
+      "foreign_phrase": "invite some other neighbors"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "내일 초대 문자",
+      "foreign_phrase": "invitation text tomorrow"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 5,
+      "korean_text": "몇몇 다른 이웃들도 초대하면 더 재미있을 것 같아요.",
+      "foreign_text": "I think it would be more fun if we invite some other neighbors.",
+      "reason": "이 문장은 파티의 범위를 확장하는 것을 제안하며, 파티 준비의 중요한 부분이기 때문에 핵심 문장으로 선정했습니다."
+    }
+  ]
+}

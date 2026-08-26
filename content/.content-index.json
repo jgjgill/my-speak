@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-24T16:01:09Z",
-  "total_count": 139,
+  "generated_at": "2026-08-26T16:35:51Z",
+  "total_count": 140,
   "weekly_plan": {
     "generated_at": "2026-08-23T15:12:54Z",
     "week_number": 34,
@@ -15,7 +15,7 @@
         "slug": "organizing-barbecue-with-neighbors",
         "title": "이웃과 바비큐 파티 준비",
         "category": "레저",
-        "used": false
+        "used": true
       },
       {
         "slug": "asking-for-doctor-referral",
@@ -164,6 +164,7 @@
     "setting-up-a-retirement-fund",
     "organizing-a-board-game-night",
     "booking-a-guided-nature-hike",
-    "discussing-job-performance"
+    "discussing-job-performance",
+    "organizing-barbecue-with-neighbors"
   ]
 }
