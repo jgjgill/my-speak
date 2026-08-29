@@ -1,0 +1,405 @@
+{
+  "topic": {
+    "id": "ba38f2d8-458d-4e29-9080-a4eb26230d77",
+    "title": "의사에게 전문의 추천 의뢰하기",
+    "category": "의료",
+    "difficulty": "초급",
+    "description": "환자가 지속적인 증상으로 인해 전문의의 진료를 받고 싶을 때, 담당 의사에게 추천서를 요청하는 상황에 대한 학습 콘텐츠입니다.",
+    "language_code": "en",
+    "total_sentences": 7
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 의사 선생님."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "괜찮으시면, 제가 기침 증상이 좀 오래 지속돼서요."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "폐 전문의를 한번 만나보고 싶은데, 추천서를 써주실 수 있을까요?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "네, 물론입니다. 증상에 대해 좀 더 자세히 얘기해볼까요?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "알겠습니다. 평소에도 숨쉬기가 좀 힘들 때가 있어요."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "그렇군요. 전문의에게 보내드릴 소견서를 작성해 주겠습니다."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "정말 감사합니다, 선생님."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, Doctor.",
+      "chunked_text": "Hello, | Doctor."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "If it's okay, I've had coughing symptoms for quite a while now.",
+      "chunked_text": "If it's okay, | I've had coughing symptoms | for quite a while now."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "I'd like to see a lung specialist, and I was wondering if you could write me a referral?",
+      "chunked_text": "I'd like to see a | lung specialist, | and I was wondering | if you could write me a referral?"
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Yes, of course. Shall we discuss the symptoms in more detail?",
+      "chunked_text": "Yes, | of course. | Shall we discuss the symptoms | in more detail?"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Okay. I sometimes have difficulty breathing as well.",
+      "chunked_text": "Okay. | I sometimes have difficulty breathing | as well."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "I see. I will write you a referral letter to the specialist.",
+      "chunked_text": "I see. | I will write you a | referral letter | to the specialist."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "Thank you so much, Doctor.",
+      "chunked_text": "Thank you so much, | Doctor."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "안녕하세요"
+      ],
+      "target_sentence": "Hello, Doctor.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "기침 증상",
+        "좀 오래 지속돼서요"
+      ],
+      "target_sentence": "If it's okay, I've had coughing symptoms for quite a while now.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "폐 전문의",
+        "만나보고 싶은데",
+        "추천서",
+        "써주실 수 있을까요"
+      ],
+      "target_sentence": "I'd like to see a lung specialist, and I was wondering if you could write me a referral?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "네",
+        "물론입니다. 증상에 대해 좀 더 자세히 얘기해볼까요"
+      ],
+      "target_sentence": "Yes, of course. Shall we discuss the symptoms in more detail?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "알겠습니다. 평소에도 숨쉬기가 좀 힘들 때가 있어요"
+      ],
+      "target_sentence": "Okay. I sometimes have difficulty breathing as well.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "그렇군요. 전문의에게 보내드릴 소견서를 작성해 주겠습니다"
+      ],
+      "target_sentence": "I see. I will write you a referral letter to the specialist.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "정말 감사합니다",
+        "선생님"
+      ],
+      "target_sentence": "Thank you so much, Doctor.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "안녕하세요"
+      ],
+      "target_sentence": "Hello, Doctor.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "기침 증상",
+        "오래"
+      ],
+      "target_sentence": "coughing symptoms for quite a while now.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "전문의",
+        "추천서"
+      ],
+      "target_sentence": "I'd like to see a lung specialist, and I was wondering if you could write me a referral?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "자세히 얘기"
+      ],
+      "target_sentence": "Shall we discuss the symptoms in more detail?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "숨쉬기 힘들 때"
+      ],
+      "target_sentence": "I sometimes have difficulty breathing as well.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "소견서 작성"
+      ],
+      "target_sentence": "I will write you a referral letter to the specialist.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "감사합니다"
+      ],
+      "target_sentence": "Thank you so much, Doctor.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "안녕하세요"
+      ],
+      "target_sentence": "Hello.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "기침"
+      ],
+      "target_sentence": "coughing symptoms.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "전문의",
+        "추천서"
+      ],
+      "target_sentence": "lung specialist, referral?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "자세히"
+      ],
+      "target_sentence": "discuss symptoms?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "숨쉬기 힘들 때"
+      ],
+      "target_sentence": "difficulty breathing.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "소견서"
+      ],
+      "target_sentence": "referral letter.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "감사합니다"
+      ],
+      "target_sentence": "Thank you.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "Doctor"
+      ],
+      "target_sentence": "Hello, Doctor.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "coughing symptoms"
+      ],
+      "target_sentence": "I've had coughing symptoms for quite a while now.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "specialist",
+        "referral"
+      ],
+      "target_sentence": "I'd like to see a lung specialist, and I was wondering if you could write me a referral?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "discuss"
+      ],
+      "target_sentence": "Shall we discuss the symptoms in more detail?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "breathing"
+      ],
+      "target_sentence": "I sometimes have difficulty breathing as well.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "letter"
+      ],
+      "target_sentence": "I will write you a referral letter to the specialist.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "Thank you"
+      ],
+      "target_sentence": "Thank you so much, Doctor.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "기침 증상",
+      "foreign_phrase": "coughing symptoms"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "폐 전문의",
+      "foreign_phrase": "lung specialist"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "추천서",
+      "foreign_phrase": "referral"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "평소에도 숨쉬기가 좀 힘들 때",
+      "foreign_phrase": "sometimes have difficulty breathing"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "전문의에게 보내드릴 소견서",
+      "foreign_phrase": "referral letter to the specialist"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 3,
+      "korean_text": "폐 전문의를 한번 만나보고 싶은데, 추천서를 써주실 수 있을까요?",
+      "foreign_text": "I'd like to see a lung specialist, and I was wondering if you could write me a referral?",
+      "reason": "환자의 주된 목적(전문의 추천 의뢰)을 명확히 나타내기 때문입니다."
+    }
+  ]
+}
