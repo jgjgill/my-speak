@@ -1,0 +1,448 @@
+{
+  "topic": {
+    "id": "06185f21-deda-449a-ae08-5d7ad95f5dea",
+    "title": "휴가 저축 계좌 개설",
+    "category": "금융",
+    "difficulty": "초급",
+    "description": "여행 경비를 모으기 위한 저축 계좌를 개설하는 방법에 대해 배웁니다.",
+    "language_code": "en",
+    "total_sentences": 8
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 휴가를 위한 저축 계좌를 만들고 싶어요."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "네, 어떤 종류의 휴가 계좌에 관심 있으신가요?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "휴가 저축 계좌를 개설하고 싶습니다."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "알겠습니다. 저희 은행에 기존 계좌가 있으신가요?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "아니요, 처음입니다."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "괜찮습니다. 제가 도와드릴게요. 특별한 휴가 저축 플랜이 있습니다."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "좋습니다. 제가 무엇을 해야 하나요?"
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "이 신청서를 작성하시고 신분증을 제시해주시면 됩니다."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, I want to open a savings account for my vacation.",
+      "chunked_text": "Hello, | I want to open a savings account for my vacation."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Yes, what kind of vacation account are you interested in?",
+      "chunked_text": "Yes, | what kind of vacation account | are you interested in?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "I would like to open a vacation savings account.",
+      "chunked_text": "I would like to open | a vacation savings account."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Okay. Do you have an existing account with us?",
+      "chunked_text": "Okay. | Do you have an existing account | with us?"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "No, this is my first time.",
+      "chunked_text": "No, | this is my first time."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "No problem. I can help you with that. We have a special vacation savings plan.",
+      "chunked_text": "No problem. | I can help you with that. | We have a special vacation savings plan."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "That sounds great. What do I need to do?",
+      "chunked_text": "That sounds great. | What do I need to do?"
+    },
+    {
+      "sentence_order": 8,
+      "foreign_text": "You'll need to fill out this application form and provide your ID.",
+      "chunked_text": "You'll need to fill out | this application form | and provide your ID."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "안녕하세요",
+        "휴가를 위한 저축 계좌를 만들고 싶어요"
+      ],
+      "target_sentence": "Hello, I want to open a savings account for my vacation.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "네",
+        "어떤 종류의 휴가 계좌에 관심 있으신가요?"
+      ],
+      "target_sentence": "Yes, what kind of vacation account are you interested in?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "휴가 저축 계좌를 개설하고 싶습니다"
+      ],
+      "target_sentence": "I would like to open a vacation savings account.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "기존 계좌가 있으신가요?"
+      ],
+      "target_sentence": "Do you have an existing account with us?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "아니요",
+        "처음입니다"
+      ],
+      "target_sentence": "No, this is my first time.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "도와드릴게요",
+        "특별한 휴가 저축 플랜"
+      ],
+      "target_sentence": "I can help you with that. We have a special vacation savings plan.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "좋습니다",
+        "제가 무엇을 해야 하나요?"
+      ],
+      "target_sentence": "That sounds great. What do I need to do?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 8,
+      "keywords": [
+        "작성하시고",
+        "제시해주시면 됩니다"
+      ],
+      "target_sentence": "You'll need to fill out this application form and provide your ID.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "휴가",
+        "만들고 싶어요"
+      ],
+      "target_sentence": "I want to open a savings account for my vacation.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "어떤 종류",
+        "관심 있으신가요?"
+      ],
+      "target_sentence": "What kind of vacation account are you interested in?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "휴가 계좌",
+        "개설하고 싶습니다"
+      ],
+      "target_sentence": "I would like to open a vacation savings account.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "기존 계좌"
+      ],
+      "target_sentence": "Do you have an existing account with us?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "처음입니다"
+      ],
+      "target_sentence": "This is my first time.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "도와드릴게요",
+        "휴가 플랜"
+      ],
+      "target_sentence": "I can help you with that. We have a special vacation savings plan.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 15,
+      "keywords": [
+        "좋습니다",
+        "무엇을 해야 하나요?"
+      ],
+      "target_sentence": "That sounds great. What do I need to do?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 16,
+      "keywords": [
+        "작성",
+        "제시"
+      ],
+      "target_sentence": "You'll need to fill out this application form and provide your ID.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "휴가"
+      ],
+      "target_sentence": "I want to open a savings account for my vacation.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "종류",
+        "관심?"
+      ],
+      "target_sentence": "What kind of vacation account are you interested in?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "계좌 개설"
+      ],
+      "target_sentence": "I would like to open a vacation savings account.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "기존 계좌?"
+      ],
+      "target_sentence": "Do you have an existing account with us?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "처음"
+      ],
+      "target_sentence": "This is my first time.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 22,
+      "keywords": [
+        "휴가 플랜"
+      ],
+      "target_sentence": "We have a special vacation savings plan.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 23,
+      "keywords": [
+        "무엇을 해야 하나요?"
+      ],
+      "target_sentence": "What do I need to do?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 24,
+      "keywords": [
+        "작성",
+        "제시"
+      ],
+      "target_sentence": "Fill out this application form and provide your ID.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "Hello"
+      ],
+      "target_sentence": "Hello, I want to open a savings account for my vacation.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "kind"
+      ],
+      "target_sentence": "Yes, what kind of vacation account are you interested in?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "open"
+      ],
+      "target_sentence": "I would like to open a vacation savings account.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "existing account"
+      ],
+      "target_sentence": "Do you have an existing account with us?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 29,
+      "keywords": [
+        "first time"
+      ],
+      "target_sentence": "No, this is my first time.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 30,
+      "keywords": [
+        "plan"
+      ],
+      "target_sentence": "We have a special vacation savings plan.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 31,
+      "keywords": [
+        "What"
+      ],
+      "target_sentence": "What do I need to do?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 32,
+      "keywords": [
+        "fill out"
+      ],
+      "target_sentence": "You'll need to fill out this application form and provide your ID.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 3,
+      "korean_phrase": "휴가 저축 계좌를 개설하고 싶습니다.",
+      "foreign_phrase": "I would like to open a vacation savings account."
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "특별한 휴가 저축 플랜",
+      "foreign_phrase": "a special vacation savings plan"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "제가 무엇을 해야 하나요?",
+      "foreign_phrase": "What do I need to do?"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 3,
+      "korean_text": "휴가 저축 계좌를 개설하고 싶습니다.",
+      "foreign_text": "I would like to open a vacation savings account.",
+      "reason": "고객이 은행에 방문한 목적을 명확하게 전달하는 핵심 문장입니다."
+    }
+  ]
+}

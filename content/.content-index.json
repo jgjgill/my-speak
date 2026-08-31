@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-29T00:05:31Z",
-  "total_count": 141,
+  "generated_at": "2026-08-31T20:54:04Z",
+  "total_count": 142,
   "weekly_plan": {
     "generated_at": "2026-08-30T18:16:13Z",
     "week_number": 35,
@@ -9,7 +9,7 @@
         "slug": "opening-vacation-savings-account",
         "title": "휴가 저축 계좌 개설",
         "category": "금융",
-        "used": false
+        "used": true
       },
       {
         "slug": "reporting-lost-item-rental-car",
@@ -166,6 +166,7 @@
     "booking-a-guided-nature-hike",
     "discussing-job-performance",
     "organizing-barbecue-with-neighbors",
-    "asking-for-doctor-referral"
+    "asking-for-doctor-referral",
+    "opening-vacation-savings-account"
   ]
 }
