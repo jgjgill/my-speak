@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-31T20:54:04Z",
-  "total_count": 142,
+  "generated_at": "2026-09-02T18:50:46Z",
+  "total_count": 143,
   "weekly_plan": {
     "generated_at": "2026-08-30T18:16:13Z",
     "week_number": 35,
@@ -15,7 +15,7 @@
         "slug": "reporting-lost-item-rental-car",
         "title": "렌터카 회사에 물품 분실 신고하기",
         "category": "여행",
-        "used": false
+        "used": true
       },
       {
         "slug": "learning-new-board-game",
@@ -167,6 +167,7 @@
     "discussing-job-performance",
     "organizing-barbecue-with-neighbors",
     "asking-for-doctor-referral",
-    "opening-vacation-savings-account"
+    "opening-vacation-savings-account",
+    "reporting-lost-item-rental-car"
   ]
 }

@@ -1,0 +1,391 @@
+{
+  "topic": {
+    "id": "dc1f78bb-9160-46a2-921e-538dece0d5d2",
+    "title": "렌터카 회사에 물품 분실 신고하기",
+    "category": "여행",
+    "difficulty": "초급",
+    "description": "렌터카 차량에서 물건을 분실했을 때, 렌터카 회사에 침착하게 분실 사실과 필요한 정보를 전달하는 방법을 배웁니다.",
+    "language_code": "en",
+    "total_sentences": 7
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 렌터카 고객센터입니다."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "네, 차량에서 제 물건을 잃어버린 것 같아요."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "어떤 물건을 잃어버리셨나요?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "제 휴대폰을 차 안에 두고 온 것 같습니다."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "대여하신 차량 번호와 이름, 연락처를 말씀해 주시겠어요?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "차량 번호는 567-XYZ이고, 이름은 박서준, 연락처는 010-9876-5432입니다."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "네, 확인 후 바로 연락드리겠습니다."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, this is the rental car customer service.",
+      "chunked_text": "Hello, | this is the rental car customer service."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Yes, I think I left something in the car.",
+      "chunked_text": "Yes, | I think I left something | in the car."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "What item did you leave behind?",
+      "chunked_text": "What item | did you leave behind?"
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "I believe I left my mobile phone in the car.",
+      "chunked_text": "I believe | I left my mobile phone | in the car."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Could you please tell me your rental car number, name, and contact number?",
+      "chunked_text": "Could you please tell me | your rental car number, | name, and contact number?"
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "The car number is 567-XYZ, my name is Park Seojun, and my contact number is 010-9876-5432.",
+      "chunked_text": "The car number is 567-XYZ, | my name is Park Seojun, | and my contact number is 010-9876-5432."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "Yes, we will check and contact you shortly.",
+      "chunked_text": "Yes, | we will check | and contact you shortly."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "안녕하세요",
+        "렌터카 고객센터입니다"
+      ],
+      "target_sentence": "Hello, this is the rental car customer service.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "차량에서",
+        "제 물건을",
+        "잃어버린 것 같아요"
+      ],
+      "target_sentence": "Yes, I think I left something in the car.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "어떤 물건을",
+        "잃어버리셨나요"
+      ],
+      "target_sentence": "What item did you leave behind?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "제 휴대폰을",
+        "차 안에",
+        "두고 온 것 같습니다"
+      ],
+      "target_sentence": "I believe I left my mobile phone in the car.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "차량 번호",
+        "이름",
+        "연락처",
+        "말씀해 주시겠어요"
+      ],
+      "target_sentence": "Could you please tell me your rental car number, name, and contact number?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "차량 번호는 567-XYZ",
+        "이름은 박서준",
+        "연락처는 010-9876-5432입니다"
+      ],
+      "target_sentence": "The car number is 567-XYZ, my name is Park Seojun, and my contact number is 010-9876-5432.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "확인 후",
+        "바로 연락드리겠습니다"
+      ],
+      "target_sentence": "Yes, we will check and contact you shortly.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "고객센터"
+      ],
+      "target_sentence": "Hello, this is the rental car customer service.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "물건을",
+        "잃어버린 것 같아요"
+      ],
+      "target_sentence": "Yes, I think I left something in the car.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "어떤 물건"
+      ],
+      "target_sentence": "What item did you leave behind?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "휴대폰",
+        "두고 온 것 같습니다"
+      ],
+      "target_sentence": "I believe I left my mobile phone in the car.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "차량 번호",
+        "이름",
+        "연락처"
+      ],
+      "target_sentence": "Could you please tell me your rental car number, name, and contact number?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "567-XYZ",
+        "박서준",
+        "010-9876-5432"
+      ],
+      "target_sentence": "The car number is 567-XYZ, my name is Park Seojun, and my contact number is 010-9876-5432.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "확인",
+        "연락드리겠습니다"
+      ],
+      "target_sentence": "Yes, we will check and contact you shortly.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "고객센터"
+      ],
+      "target_sentence": "Hello, rental car service.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "잃어버린 것 같아요"
+      ],
+      "target_sentence": "Left something in car.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "물건"
+      ],
+      "target_sentence": "Item?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "휴대폰"
+      ],
+      "target_sentence": "My mobile phone.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "차량 번호",
+        "이름",
+        "연락처"
+      ],
+      "target_sentence": "Car number, name, contact?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "567-XYZ",
+        "박서준"
+      ],
+      "target_sentence": "Car 567-XYZ, Park Seojun.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "연락"
+      ],
+      "target_sentence": "We will contact you.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "Hello"
+      ],
+      "target_sentence": "Hello, this is the rental car customer service.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "Left"
+      ],
+      "target_sentence": "Yes, I think I left something in the car.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "Item"
+      ],
+      "target_sentence": "What item did you leave behind?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "Phone"
+      ],
+      "target_sentence": "I believe I left my mobile phone in the car.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "Number"
+      ],
+      "target_sentence": "Could you please tell me your rental car number, name, and contact number?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "567-XYZ"
+      ],
+      "target_sentence": "The car number is 567-XYZ, my name is Park Seojun, and my contact number is 010-9876-5432.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "Contact"
+      ],
+      "target_sentence": "Yes, we will check and contact you shortly.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [],
+  "highlight_sentences": [
+    {
+      "sentence_order": 4,
+      "korean_text": "제 휴대폰을 차 안에 두고 온 것 같습니다.",
+      "foreign_text": "I believe I left my mobile phone in the car.",
+      "reason": "이 문장은 분실 사실과 분실물을 명확하게 전달하는 핵심적인 정보 전달 문장입니다."
+    }
+  ]
+}
