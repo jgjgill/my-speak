@@ -1,0 +1,124 @@
+{
+  "topic": {
+    "id": "605e6b3b-0369-425a-8dc5-a028cd724a5e",
+    "title": "새로운 보드게임 배우기",
+    "category": "레저",
+    "difficulty": "초급",
+    "description": "새로운 보드게임의 규칙을 배우고 플레이하는 과정을 담은 대화입니다. 초급 학습자에게 적합합니다.",
+    "language_code": "en",
+    "total_sentences": 7
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "와, 이 보드게임 정말 흥미로워 보여. 먼저 규칙서부터 훑어볼까?"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "좋아. 이 게임의 주요 목표가 뭔지 알아야 할 것 같아."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "그렇지. 설명서를 보니 점수를 많이 얻는 사람이 이기는 방식인가 봐."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "단계별로 천천히 읽어보자."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "캐릭터 능력이나 특별 규칙 같은 건 나중에 봐도 될까?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "응, 일단 기본적인 플레이 방식을 이해하는 게 중요해."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "알겠어. 시작할 때 필요한 준비물은 다 챙겼고."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Wow, this board game looks really interesting. | Shall we skim the rulebook first?",
+      "chunked_text": "Wow, this board game looks really interesting. | Shall we skim the rulebook first?"
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Sounds good. | I think we need to know what the main objective of this game is.",
+      "chunked_text": "Sounds good. | I think we need to know what the main objective of this game is."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Right. | Looking at the manual, | it seems the person who gets the most points wins.",
+      "chunked_text": "Right. | Looking at the manual, | it seems the person who gets the most points wins."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Let's read it slowly step by step.",
+      "chunked_text": "Let's read it | slowly | step by step."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Can we look at character abilities or special rules later?",
+      "chunked_text": "Can we look at | character abilities | or special rules | later?"
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Yes, | it's important to understand the basic gameplay first.",
+      "chunked_text": "Yes, | it's important to understand | the basic gameplay | first."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "Got it. | We've gathered all the necessary preparation items to start.",
+      "chunked_text": "Got it. | We've gathered all the necessary | preparation items | to start."
+    }
+  ],
+  "keyword_speeches": [],
+  "learning_points": [
+    {
+      "sentence_order": 1,
+      "korean_phrase": "먼저 규칙서부터 훑어볼까",
+      "foreign_phrase": "Shall we skim the rulebook first"
+    },
+    {
+      "sentence_order": 2,
+      "korean_phrase": "이 게임의 주요 목표가 뭔지 알아야 할 것 같아",
+      "foreign_phrase": "I think we need to know what the main objective of this game is"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "점수를 많이 얻는 사람이 이기는 방식인가 봐",
+      "foreign_phrase": "Looking at the manual, it seems the person who gets the most points wins"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "단계별로 천천히 읽어보자",
+      "foreign_phrase": "Let's read it slowly step by step"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "캐릭터 능력이나 특별 규칙 같은 건 나중에 봐도 될까",
+      "foreign_phrase": "Can we look at character abilities or special rules later"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "일단 기본적인 플레이 방식을 이해하는 게 중요해",
+      "foreign_phrase": "Yes, it's important to understand the basic gameplay first"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "시작할 때 필요한 준비물은 다 챙겼고",
+      "foreign_phrase": "Got it. We've gathered all the necessary preparation items to start"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 4,
+      "korean_text": "단계별로 천천히 읽어보자",
+      "foreign_text": "Let's read it slowly step by step.",
+      "reason": "새로운 규칙을 배울 때 가장 기본적인 학습 방법론을 제시하기 때문입니다."
+    }
+  ]
+}
