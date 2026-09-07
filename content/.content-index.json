@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-04T18:30:39Z",
-  "total_count": 144,
+  "generated_at": "2026-09-07T19:17:21Z",
+  "total_count": 145,
   "weekly_plan": {
     "generated_at": "2026-09-06T17:25:19Z",
     "week_number": 36,
@@ -9,7 +9,7 @@
         "slug": "performance-review-discussion",
         "title": "성과 검토 회의",
         "category": "비즈니스",
-        "used": false
+        "used": true
       },
       {
         "slug": "understanding-medical-report",
@@ -169,6 +169,7 @@
     "asking-for-doctor-referral",
     "opening-vacation-savings-account",
     "reporting-lost-item-rental-car",
-    "learning-new-board-game"
+    "learning-new-board-game",
+    "performance-review-discussion"
   ]
 }
