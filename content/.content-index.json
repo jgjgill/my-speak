@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-07T19:17:21Z",
-  "total_count": 145,
+  "generated_at": "2026-09-11T18:40:45Z",
+  "total_count": 146,
   "weekly_plan": {
     "generated_at": "2026-09-06T17:25:19Z",
     "week_number": 36,
@@ -15,7 +15,7 @@
         "slug": "understanding-medical-report",
         "title": "의료 보고서 이해하기",
         "category": "의료",
-        "used": false
+        "used": true
       },
       {
         "slug": "learning-new-sport",
@@ -170,6 +170,7 @@
     "opening-vacation-savings-account",
     "reporting-lost-item-rental-car",
     "learning-new-board-game",
-    "performance-review-discussion"
+    "performance-review-discussion",
+    "understanding-medical-report"
   ]
 }
