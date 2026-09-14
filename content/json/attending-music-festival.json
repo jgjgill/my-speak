@@ -1,0 +1,310 @@
+{
+  "topic": {
+    "id": "1d4e2efe-8408-429b-ae78-e1c1731fedc8",
+    "title": "음악 축제 참석하기",
+    "category": "레저",
+    "difficulty": "초급",
+    "description": "음악 축제에 참석하는 상황에서 친구와 만나고 즐거운 시간을 보내는 내용의 초급 회화입니다.",
+    "language_code": "en",
+    "total_sentences": 5
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 축제 갈 준비 됐어?"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "응! 정말 기대돼. 어디서 만날까?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "10분 뒤에 메인 스테이지 앞에서 만나자."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "좋아. 우리 최애 밴드를 볼 생각에 신나!"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "나도! 정말 재밌을 거야."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hi! Are you ready for the festival?",
+      "chunked_text": "Hi! | Are you ready for the festival?"
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Yeah! I'm really excited. Where should we meet?",
+      "chunked_text": "Yeah! | I'm really excited. | Where should we meet?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Let's meet by the main stage in 10 minutes.",
+      "chunked_text": "Let's meet | by the main stage | in 10 minutes."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Okay. I'm excited to see our favorite band!",
+      "chunked_text": "Okay. | I'm excited to see | our favorite band!"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Me too! It's going to be so much fun.",
+      "chunked_text": "Me too! | It's going to be so much fun."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "안녕",
+        "축제 갈 준비 됐어?"
+      ],
+      "target_sentence": "Hi! Are you ready for the festival?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "응",
+        "정말 기대돼",
+        "어디서 만날까?"
+      ],
+      "target_sentence": "Yeah! I'm really excited. Where should we meet?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "10분 뒤에",
+        "메인 스테이지 앞에서",
+        "만나자"
+      ],
+      "target_sentence": "Let's meet by the main stage in 10 minutes.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "좋아",
+        "우리 최애 밴드",
+        "볼 생각에 신나"
+      ],
+      "target_sentence": "Okay. I'm excited to see our favorite band!",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "나도",
+        "정말 재밌을 거야"
+      ],
+      "target_sentence": "Me too! It's going to be so much fun.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 6,
+      "keywords": [
+        "축제 준비"
+      ],
+      "target_sentence": "Hi! Are you ready for the festival?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 7,
+      "keywords": [
+        "기대돼",
+        "만날까?"
+      ],
+      "target_sentence": "Yeah! I'm really excited. Where should we meet?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "만나자",
+        "스테이지",
+        "10분"
+      ],
+      "target_sentence": "Let's meet by the main stage in 10 minutes.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "좋아",
+        "밴드",
+        "신나"
+      ],
+      "target_sentence": "Okay. I'm excited to see our favorite band!",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "재밌을 거야"
+      ],
+      "target_sentence": "Me too! It's going to be so much fun.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 11,
+      "keywords": [
+        "축제?"
+      ],
+      "target_sentence": "Hi! Are you ready for the festival?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 12,
+      "keywords": [
+        "만날까?"
+      ],
+      "target_sentence": "Yeah! I'm really excited. Where should we meet?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 13,
+      "keywords": [
+        "만나자"
+      ],
+      "target_sentence": "Let's meet by the main stage in 10 minutes.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 14,
+      "keywords": [
+        "밴드"
+      ],
+      "target_sentence": "Okay. I'm excited to see our favorite band!",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "재밌어"
+      ],
+      "target_sentence": "Me too! It's going to be so much fun.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 16,
+      "keywords": [
+        "ready"
+      ],
+      "target_sentence": "Hi! Are you ready for the festival?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 17,
+      "keywords": [
+        "meet"
+      ],
+      "target_sentence": "Yeah! I'm really excited. Where should we meet?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 18,
+      "keywords": [
+        "stage"
+      ],
+      "target_sentence": "Let's meet by the main stage in 10 minutes.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 19,
+      "keywords": [
+        "band"
+      ],
+      "target_sentence": "Okay. I'm excited to see our favorite band!",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 20,
+      "keywords": [
+        "fun"
+      ],
+      "target_sentence": "Me too! It's going to be so much fun.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 1,
+      "korean_phrase": "축제 갈 준비 됐어?",
+      "foreign_phrase": "Are you ready for the festival?"
+    },
+    {
+      "sentence_order": 2,
+      "korean_phrase": "어디서 만날까?",
+      "foreign_phrase": "Where should we meet?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "10분 뒤에 메인 스테이지 앞에서",
+      "foreign_phrase": "by the main stage"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "우리 최애 밴드",
+      "foreign_phrase": "our favorite band"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "정말 재밌을 거야",
+      "foreign_phrase": "It's going to be so much fun"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 2,
+      "korean_text": "어디서 만날까?",
+      "foreign_text": "Where should we meet?",
+      "reason": "이 문장은 친구와 약속 장소를 정하는 데 필수적이므로 학습자에게 중요합니다."
+    }
+  ]
+}
