@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-14T19:53:13Z",
-  "total_count": 147,
+  "generated_at": "2026-09-16T18:58:39Z",
+  "total_count": 148,
   "weekly_plan": {
     "generated_at": "2026-09-13T17:47:18Z",
     "week_number": 37,
@@ -15,7 +15,7 @@
         "slug": "discussing-market-trends",
         "title": "시장 동향 논의하기",
         "category": "비즈니스",
-        "used": false
+        "used": true
       },
       {
         "slug": "getting-flu-shot",
@@ -172,6 +172,7 @@
     "learning-new-board-game",
     "performance-review-discussion",
     "understanding-medical-report",
-    "attending-music-festival"
+    "attending-music-festival",
+    "discussing-market-trends"
   ]
 }

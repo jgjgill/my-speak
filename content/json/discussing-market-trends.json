@@ -1,0 +1,438 @@
+{
+  "topic": {
+    "id": "1bea07bc-9a40-407c-9c71-93671eece4f5",
+    "title": "시장 동향 논의하기",
+    "category": "비즈니스",
+    "difficulty": "초급",
+    "description": "초급 비즈니스 영어 학습자를 위한 시장 동향 관련 대화 연습입니다.",
+    "language_code": "en",
+    "total_sentences": 8
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "```korean"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "최근 시장 동향에 대해 이야기 좀 해볼까요?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "좋아요. 특히 어떤 점이 궁금하신가요?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "이번 분기 판매량이 크게 늘었다는 보고서를 봤어요. 이게 정말 놀랍네요."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "정말요? 그 이유가 뭐라고 생각하세요?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "아마 새로운 마케팅 캠페인 덕분인 것 같아요. 그것 때문에 더 많은 고객들이 관심을 보였어요."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "맞아요. 경쟁사들이 주춤하고 있는 것도 한몫한 것 같고요. 전반적으로 상황이 좋습니다."
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "네, 더 자세히 알아봐야겠어요."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "```english",
+      "chunked_text": "```english"
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Let's talk about recent market trends.",
+      "chunked_text": "Let's talk about | recent market trends."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Sure. What specifically are you interested in?",
+      "chunked_text": "Sure. | What specifically | are you interested in?"
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "I read that sales have increased significantly this quarter. This is very surprising.",
+      "chunked_text": "I read that | sales have increased significantly | this quarter. | This is very surprising."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Really? What do you think is the reason for that?",
+      "chunked_text": "Really? | What do you think is the reason for that?"
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Maybe it's because of the new marketing campaign; it attracted more customers.",
+      "chunked_text": "Maybe it's because of the | new marketing campaign; | it attracted more customers."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "I agree. Also, competitors are slowing down. The overall market looks positive.",
+      "chunked_text": "I agree. | Also, | competitors are slowing down. | The overall market looks positive."
+    },
+    {
+      "sentence_order": 8,
+      "foreign_text": "Yes, we should investigate this further.",
+      "chunked_text": "Yes, | we should investigate this further."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "talk about",
+        "recent market trends"
+      ],
+      "target_sentence": "Let's talk about recent market trends.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "What specifically",
+        "interested in"
+      ],
+      "target_sentence": "Sure. What specifically are you interested in?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "sales increased significantly",
+        "quarter",
+        "very surprising"
+      ],
+      "target_sentence": "I read that sales have increased significantly this quarter. This is very surprising.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "Really",
+        "reason"
+      ],
+      "target_sentence": "Really? What do you think is the reason for that?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "new marketing campaign",
+        "attracted more customers"
+      ],
+      "target_sentence": "Maybe it's because of the new marketing campaign; it attracted more customers.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "competitors slowing down",
+        "overall market positive"
+      ],
+      "target_sentence": "I agree. Also, competitors are slowing down. The overall market looks positive.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "investigate further"
+      ],
+      "target_sentence": "Yes, we should investigate this further.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "market trends"
+      ],
+      "target_sentence": "Let's talk about recent market trends.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "What",
+        "interested"
+      ],
+      "target_sentence": "Sure. What specifically are you interested in?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "sales increased",
+        "surprising"
+      ],
+      "target_sentence": "I read that sales have increased significantly this quarter. This is very surprising.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "reason"
+      ],
+      "target_sentence": "Really? What do you think is the reason for that?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "campaign",
+        "customers"
+      ],
+      "target_sentence": "Maybe it's because of the new marketing campaign; it attracted more customers.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "competitors",
+        "positive"
+      ],
+      "target_sentence": "I agree. Also, competitors are slowing down. The overall market looks positive.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "investigate"
+      ],
+      "target_sentence": "Yes, we should investigate this further.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "trends"
+      ],
+      "target_sentence": "Let's talk about recent market trends.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "What"
+      ],
+      "target_sentence": "Sure. What specifically are you interested in?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "sales",
+        "surprising"
+      ],
+      "target_sentence": "I read that sales have increased significantly this quarter. This is very surprising.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "reason"
+      ],
+      "target_sentence": "Really? What do you think is the reason for that?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "campaign",
+        "customers"
+      ],
+      "target_sentence": "Maybe it's because of the new marketing campaign; it attracted more customers.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "competitors",
+        "positive"
+      ],
+      "target_sentence": "I agree. Also, competitors are slowing down. The overall market looks positive.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "investigate"
+      ],
+      "target_sentence": "Yes, we should investigate this further.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "talk"
+      ],
+      "target_sentence": "Let's talk about recent market trends.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "specifically"
+      ],
+      "target_sentence": "Sure. What specifically are you interested in?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "sales"
+      ],
+      "target_sentence": "I read that sales have increased significantly this quarter. This is very surprising.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "reason"
+      ],
+      "target_sentence": "Really? What do you think is the reason for that?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "campaign"
+      ],
+      "target_sentence": "Maybe it's because of the new marketing campaign; it attracted more customers.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "competitors"
+      ],
+      "target_sentence": "I agree. Also, competitors are slowing down. The overall market looks positive.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "investigate"
+      ],
+      "target_sentence": "Yes, we should investigate this further.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 3,
+      "korean_phrase": "특히 어떤 점",
+      "foreign_phrase": "what specifically"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "판매량이 크게 늘었다",
+      "foreign_phrase": "sales have increased significantly"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "이게 정말 놀랍네요.",
+      "foreign_phrase": "This is really surprising."
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "그 이유가 뭐라고 생각하세요",
+      "foreign_phrase": "What do you think is the reason for that"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "새로운 마케팅 캠페인",
+      "foreign_phrase": "new marketing campaign"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "그것 때문에 더 많은 고객들이 관심을 보였어요.",
+      "foreign_phrase": "Because of that, more customers showed interest."
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "경쟁사들이 주춤하고 있는 것",
+      "foreign_phrase": "competitors are slowing down"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "전반적으로 상황이 좋습니다.",
+      "foreign_phrase": "Overall, the situation is good."
+    },
+    {
+      "sentence_order": 8,
+      "korean_phrase": "더 자세히 알아봐야겠어요.",
+      "foreign_phrase": "We should look into it further."
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 4,
+      "korean_text": "그 이유가 뭐라고 생각하세요?",
+      "foreign_text": "What do you think is the reason for that?",
+      "reason": "이 문장은 시장 동향의 원인을 묻는 핵심 질문이므로 학습에 중요합니다."
+    }
+  ]
+}
