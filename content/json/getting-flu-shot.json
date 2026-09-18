@@ -1,0 +1,395 @@
+{
+  "topic": {
+    "id": "dadc5c2d-f169-414b-ae6d-1743bdaa359f",
+    "title": "독감 예방 주사 맞기",
+    "category": "의료",
+    "difficulty": "초급",
+    "description": "독감 예방 주사를 맞으러 병원에 갔을 때 사용할 수 있는 간단한 영어 표현을 배웁니다.",
+    "language_code": "en",
+    "total_sentences": 7
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 독감 예방 주사를 맞으러 왔어요."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "네, 어디에 맞고 싶으세요? 팔 위쪽이 보통입니다."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "네, 팔 위쪽에 맞을게요."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "좋습니다. 잠깐 따끔할 수 있어요."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "네, 괜찮아요."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "(주사 후) 다 맞았습니다. 혹시 어지러우시면 말씀해주세요."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "네, 괜찮아요. 감사합니다."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, I came to get a flu shot.",
+      "chunked_text": "Hello, | I came to get a flu shot."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Yes, where would you like to get it? The upper arm is a common spot.",
+      "chunked_text": "Yes, | where would you like to get it? | The upper arm | is a common spot."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Yes, I'll get it on my upper arm.",
+      "chunked_text": "Yes, | I'll get it on my upper arm."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Alright. It might sting a little for a moment.",
+      "chunked_text": "Alright. | It might sting a little | for a moment."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Yes, I'm okay.",
+      "chunked_text": "Yes, | I'm okay."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "(After the shot) All done. Please let me know if you feel dizzy.",
+      "chunked_text": "(After the shot) | All done. | Please let me know | if you feel dizzy."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "Yes, I'm fine. Thank you.",
+      "chunked_text": "Yes, | I'm fine. | Thank you."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "안녕하세요",
+        "독감 예방 주사"
+      ],
+      "target_sentence": "Hello, I came to get a flu shot.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "네",
+        "어디에 맞고 싶으세요? 팔 위쪽"
+      ],
+      "target_sentence": "Yes, where would you like to get it? The upper arm is a common spot.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "네",
+        "팔 위쪽에 맞을게요"
+      ],
+      "target_sentence": "Yes, I'll get it on my upper arm.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "좋습니다",
+        "따끔"
+      ],
+      "target_sentence": "Alright. It might sting a little for a moment.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "네",
+        "괜찮아요"
+      ],
+      "target_sentence": "Yes, I'm okay.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "다 맞았습니다",
+        "어지러우시면"
+      ],
+      "target_sentence": "(After the shot) All done. Please let me know if you feel dizzy.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "네",
+        "괜찮아요",
+        "감사합니다"
+      ],
+      "target_sentence": "Yes, I'm fine. Thank you.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "독감 주사"
+      ],
+      "target_sentence": "I came to get a flu shot.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "어디에",
+        "팔 위쪽"
+      ],
+      "target_sentence": "Where would you like to get it? The upper arm is a common spot.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "팔 위쪽"
+      ],
+      "target_sentence": "I'll get it on my upper arm.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "따끔"
+      ],
+      "target_sentence": "It might sting a little for a moment.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "괜찮아요"
+      ],
+      "target_sentence": "I'm okay.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "어지러우시면"
+      ],
+      "target_sentence": "Please let me know if you feel dizzy.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "괜찮아요",
+        "감사합니다"
+      ],
+      "target_sentence": "Yes, I'm fine. Thank you.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "독감"
+      ],
+      "target_sentence": "I came to get a flu shot.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "팔 위쪽"
+      ],
+      "target_sentence": "The upper arm is a common spot.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "팔 위쪽"
+      ],
+      "target_sentence": "I'll get it on my upper arm.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "따끔"
+      ],
+      "target_sentence": "It might sting a little for a moment.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "괜찮아요"
+      ],
+      "target_sentence": "I'm okay.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "어지러우시면"
+      ],
+      "target_sentence": "If you feel dizzy.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "괜찮아요"
+      ],
+      "target_sentence": "I'm fine. Thank you.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "flu shot"
+      ],
+      "target_sentence": "I came to get a flu shot.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "upper arm"
+      ],
+      "target_sentence": "The upper arm is a common spot.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "upper arm"
+      ],
+      "target_sentence": "I'll get it on my upper arm.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "sting"
+      ],
+      "target_sentence": "It might sting a little for a moment.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "okay"
+      ],
+      "target_sentence": "I'm okay.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "dizzy"
+      ],
+      "target_sentence": "Please let me know if you feel dizzy.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "fine"
+      ],
+      "target_sentence": "Yes, I'm fine. Thank you.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "팔 위쪽",
+      "foreign_phrase": "upper arm"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "어지러우시면",
+      "foreign_phrase": "if you feel dizzy"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "괜찮아요",
+      "foreign_phrase": "I'm fine"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 독감 예방 주사를 맞으러 왔어요.",
+      "foreign_text": "Hello, I came to get a flu shot.",
+      "reason": "이 문장은 방문 목적을 명확히 전달하여 대화를 시작하는 핵심적인 역할을 합니다."
+    }
+  ]
+}

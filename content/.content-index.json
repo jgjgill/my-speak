@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-16T18:58:39Z",
-  "total_count": 148,
+  "generated_at": "2026-09-18T18:34:29Z",
+  "total_count": 149,
   "weekly_plan": {
     "generated_at": "2026-09-13T17:47:18Z",
     "week_number": 37,
@@ -21,7 +21,7 @@
         "slug": "getting-flu-shot",
         "title": "독감 예방 주사 맞기",
         "category": "의료",
-        "used": false
+        "used": true
       }
     ]
   },
@@ -173,6 +173,7 @@
     "performance-review-discussion",
     "understanding-medical-report",
     "attending-music-festival",
-    "discussing-market-trends"
+    "discussing-market-trends",
+    "getting-flu-shot"
   ]
 }
