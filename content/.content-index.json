@@ -2,26 +2,26 @@
   "generated_at": "2026-09-18T18:34:29Z",
   "total_count": 149,
   "weekly_plan": {
-    "generated_at": "2026-09-13T17:47:18Z",
-    "week_number": 37,
+    "generated_at": "2026-09-20T17:47:53Z",
+    "week_number": 38,
     "planned_slugs": [
       {
-        "slug": "attending-music-festival",
-        "title": "음악 축제 참석하기",
+        "slug": "cryptocurrency-investment-discussion",
+        "title": "암호화폐 투자 논의",
+        "category": "금융",
+        "used": false
+      },
+      {
+        "slug": "going-to-the-cinema",
+        "title": "영화관 가기",
         "category": "레저",
-        "used": true
+        "used": false
       },
       {
-        "slug": "discussing-market-trends",
-        "title": "시장 동향 논의하기",
+        "slug": "networking-at-a-conference",
+        "title": "컨퍼런스 네트워킹",
         "category": "비즈니스",
-        "used": true
-      },
-      {
-        "slug": "getting-flu-shot",
-        "title": "독감 예방 주사 맞기",
-        "category": "의료",
-        "used": true
+        "used": false
       }
     ]
   },
