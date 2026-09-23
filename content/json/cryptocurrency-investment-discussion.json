@@ -1,0 +1,374 @@
+{
+  "topic": {
+    "id": "53a519b9-f2df-4ed7-a28d-24b4eff3133c",
+    "title": "암호화폐 투자 논의",
+    "category": "금융",
+    "difficulty": "초급",
+    "description": "암호화폐 시장의 기본적인 투자 논의를 초급 수준에서 다루는 대화입니다.",
+    "language_code": "en",
+    "total_sentences": 7
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "```korean"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "요즘 암호화폐 시장이 정말 뜨거운데, 너도 관심 있니?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "응, 조금은. 근데 워낙 변동성이 커서 쉽게 뛰어들기가 어렵네."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "맞아. 소액으로 시작해볼까 하는데, 혹시 초보자를 위한 투자 조언 같은 게 있을까?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "당연하지. 제일 중요한 건 감당할 수 있는 만큼만 투자하는 거야. 그리고 무엇보다 스스로 공부하는 게 중요해."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "좋은 말이야. 그럼 처음 투자할 만한 코인으로는 뭐가 좋을까?"
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "비트코인이나 이더리움 같은 대장주들이 상대적으로 안정적이라고들 하지. 하지만 '안정적'이라는 것도 암호화폐 시장에서는 조심해야 할 단어지."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "```english",
+      "chunked_text": "```english"
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "The crypto market is really hot lately, are you interested too?",
+      "chunked_text": "The crypto market is really hot lately, | are you interested too?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Yes, a little. But it's so volatile that it's hard to jump in easily.",
+      "chunked_text": "Yes, a little. | But it's so volatile | that it's hard to jump in easily."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "That's true. I'm thinking of starting with a small amount. Do you have any investment advice for beginners?",
+      "chunked_text": "That's true. | I'm thinking of starting with a small amount. | Do you have any investment advice for beginners?"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Of course. The most important thing is to only invest what you can afford to lose. And research it yourself is crucial above all else.",
+      "chunked_text": "Of course. | The most important thing is to only invest what you can afford to lose. | And research it yourself is crucial above all else."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "That's good advice. So, what coins are good for starting with?",
+      "chunked_text": "That's good advice. | So, what coins are good for starting with?"
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "They say blue-chip coins like Bitcoin and Ethereum are relatively stable. But 'stable' is a word to be careful with in the crypto market.",
+      "chunked_text": "They say blue-chip coins like Bitcoin and Ethereum are relatively stable. | But 'stable' is a word to be careful with in the crypto market."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "암호화폐 시장 뜨겁다",
+        "관심 있니?"
+      ],
+      "target_sentence": "The crypto market is really hot lately, are you interested too?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "좀 따라가고 있어",
+        "변동성 커서 어렵네"
+      ],
+      "target_sentence": "Yes, a little. But it's so volatile that it's hard to jump in easily.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "소액 투자",
+        "고려 중",
+        "초보자 조언"
+      ],
+      "target_sentence": "That's true. I'm thinking of starting with a small amount. Do you have any investment advice for beginners?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "감당할 수 있는 만큼만",
+        "스스로 공부"
+      ],
+      "target_sentence": "The most important thing is to only invest what you can afford to lose. And research it yourself is crucial above all else.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "처음 투자할 만한 코인"
+      ],
+      "target_sentence": "So, what coins are good for starting with?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "대장주",
+        "안정적",
+        "조심"
+      ],
+      "target_sentence": "They say blue-chip coins like Bitcoin and Ethereum are relatively stable. But 'stable' is a word to be careful with in the crypto market.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 7,
+      "keywords": [
+        "암호화폐",
+        "관심?"
+      ],
+      "target_sentence": "The crypto market is really hot lately, are you interested too?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "변동성",
+        "어려움"
+      ],
+      "target_sentence": "It's so volatile that it's hard to jump in easily.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "소액",
+        "조언"
+      ],
+      "target_sentence": "Thinking of starting with a small amount. Any investment advice for beginners?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "감당 가능한 만큼",
+        "공부"
+      ],
+      "target_sentence": "Only invest what you can afford to lose. Research it yourself is crucial.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "투자할 만한 코인"
+      ],
+      "target_sentence": "What coins are good for starting with?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "대장주",
+        "안정적"
+      ],
+      "target_sentence": "Blue-chip coins like Bitcoin and Ethereum are relatively stable.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 13,
+      "keywords": [
+        "관심?"
+      ],
+      "target_sentence": "Are you interested too?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 14,
+      "keywords": [
+        "변동성"
+      ],
+      "target_sentence": "Volatile.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "조언"
+      ],
+      "target_sentence": "Any investment advice?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "감당",
+        "공부"
+      ],
+      "target_sentence": "Invest what you can afford. Research yourself.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "코인"
+      ],
+      "target_sentence": "Coins for starting?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "대장주"
+      ],
+      "target_sentence": "Blue-chip coins are stable.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 19,
+      "keywords": [
+        "Hot"
+      ],
+      "target_sentence": "The crypto market is really hot lately, are you interested too?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 20,
+      "keywords": [
+        "Volatile"
+      ],
+      "target_sentence": "It's so volatile that it's hard to jump in easily.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 21,
+      "keywords": [
+        "Advice"
+      ],
+      "target_sentence": "Do you have any investment advice for beginners?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "Invest",
+        "Research"
+      ],
+      "target_sentence": "Only invest what you can afford to lose. Research it yourself is crucial.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "Coins"
+      ],
+      "target_sentence": "What coins are good for starting with?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "Stable"
+      ],
+      "target_sentence": "Blue-chip coins like Bitcoin and Ethereum are relatively stable.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 4,
+      "korean_phrase": "소액으로 시작",
+      "foreign_phrase": "starting with a small amount"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "투자 조언",
+      "foreign_phrase": "investment advice"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "감당할 수 있는 만큼만",
+      "foreign_phrase": "only invest what you can afford to lose"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "무엇보다 스스로 공부",
+      "foreign_phrase": "research it yourself"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "처음 투자할 만한",
+      "foreign_phrase": "good for starting with"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "대장주",
+      "foreign_phrase": "blue-chip coins"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 4,
+      "korean_text": "제일 중요한 건 감당할 수 있는 만큼만 투자하는 거야. 그리고 무엇보다 스스로 공부하는 게 중요해.",
+      "foreign_text": "The most important thing is to only invest what you can afford to lose. And research it yourself is crucial above all else.",
+      "reason": "이 문장은 초보 투자자에게 가장 중요한 위험 관리 원칙과 정보 습득 방법을 제시하기 때문입니다."
+    }
+  ]
+}
