@@ -1,0 +1,408 @@
+{
+  "topic": {
+    "id": "61f0a3a1-4643-4b5d-bb63-affb2314f21a",
+    "title": "영화관 가기",
+    "category": "레저",
+    "difficulty": "초급",
+    "description": "영화관에서 영화표를 예매하고 관람하는 상황에 대한 기본적인 영어 회화 연습 콘텐츠입니다.",
+    "language_code": "en",
+    "total_sentences": 7
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요! 무엇을 도와드릴까요?"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "저는 영화표 두 장을 사고 싶어요."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "네, 어떤 영화로 드릴까요?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "가장 인기 있는 영화로 주세요."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "오늘 저녁 7시 상영으로 드릴까요?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "네, 좋아요. 결제는 어떻게 하시겠어요?"
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "카드로 결제할게요."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello! How can I help you?",
+      "chunked_text": "Hello! | How can I help you?"
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "I want to buy two movie tickets.",
+      "chunked_text": "I want to buy | two movie tickets."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Okay, which movie would you like?",
+      "chunked_text": "Okay, | which movie would you like?"
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Please give me the most popular movie.",
+      "chunked_text": "Please give me | the most popular movie."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Would you like the 7 PM showing tonight?",
+      "chunked_text": "Would you like | the 7 PM showing tonight?"
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Yes, that sounds good. How would you like to pay?",
+      "chunked_text": "Yes, that sounds good. | How would you like to pay?"
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "I'll pay by card.",
+      "chunked_text": "I'll pay by card."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "무엇을 도와드릴까요"
+      ],
+      "target_sentence": "Hello! How can I help you?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "영화표 두 장",
+        "사고 싶어요"
+      ],
+      "target_sentence": "I want to buy two movie tickets.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "어떤 영화",
+        "드릴까요"
+      ],
+      "target_sentence": "Okay, which movie would you like?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "가장 인기 있는 영화",
+        "주세요"
+      ],
+      "target_sentence": "Please give me the most popular movie.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "오늘 저녁 7시 상영",
+        "드릴까요"
+      ],
+      "target_sentence": "Would you like the 7 PM showing tonight?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "좋아요",
+        "결제",
+        "어떻게 하시겠어요"
+      ],
+      "target_sentence": "Yes, that sounds good. How would you like to pay?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "카드로",
+        "결제할게요"
+      ],
+      "target_sentence": "I'll pay by card.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "도와드릴까요"
+      ],
+      "target_sentence": "How can I help you?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "영화표",
+        "싶어요"
+      ],
+      "target_sentence": "I want to buy two movie tickets.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "영화",
+        "드릴까요"
+      ],
+      "target_sentence": "Which movie would you like?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "인기 영화",
+        "주세요"
+      ],
+      "target_sentence": "Please give me the most popular movie.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "7시 상영",
+        "드릴까요"
+      ],
+      "target_sentence": "Would you like the 7 PM showing tonight?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "결제",
+        "하시겠어요"
+      ],
+      "target_sentence": "How would you like to pay?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "카드로",
+        "할게요"
+      ],
+      "target_sentence": "I'll pay by card.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "도와드릴까요"
+      ],
+      "target_sentence": "How can I help you?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "영화표"
+      ],
+      "target_sentence": "I want to buy two movie tickets.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "영화"
+      ],
+      "target_sentence": "Which movie would you like?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "인기 영화"
+      ],
+      "target_sentence": "Please give me the most popular movie.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "7시 상영"
+      ],
+      "target_sentence": "Would you like the 7 PM showing tonight?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "결제"
+      ],
+      "target_sentence": "How would you like to pay?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "카드"
+      ],
+      "target_sentence": "I'll pay by card.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "help"
+      ],
+      "target_sentence": "How can I help you?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "tickets"
+      ],
+      "target_sentence": "I want to buy two movie tickets.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "movie"
+      ],
+      "target_sentence": "Which movie would you like?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "popular"
+      ],
+      "target_sentence": "Please give me the most popular movie.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "tonight"
+      ],
+      "target_sentence": "Would you like the 7 PM showing tonight?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "pay"
+      ],
+      "target_sentence": "How would you like to pay?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "card"
+      ],
+      "target_sentence": "I'll pay by card.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "영화표 두 장",
+      "foreign_phrase": "two movie tickets"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "가장 인기 있는 영화",
+      "foreign_phrase": "the most popular movie"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "오늘 저녁 7시 상영",
+      "foreign_phrase": "the 7 PM showing tonight"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "결제는 어떻게 하시겠어요?",
+      "foreign_phrase": "How would you like to pay?"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "카드로 결제할게요.",
+      "foreign_phrase": "I'll pay by card."
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 2,
+      "korean_text": "영화표 두 장을 사고 싶어요",
+      "foreign_text": "I want to buy two movie tickets.",
+      "reason": "영화를 보러 가는 상황에서 가장 직접적으로 필요한 구매 의사를 표현하는 문장입니다."
+    }
+  ]
+}
