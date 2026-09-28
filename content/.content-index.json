@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-25T19:21:54Z",
-  "total_count": 151,
+  "generated_at": "2026-09-28T21:17:54Z",
+  "total_count": 152,
   "weekly_plan": {
     "generated_at": "2026-09-27T18:46:12Z",
     "week_number": 39,
@@ -9,7 +9,7 @@
         "slug": "discussing-project-timelines",
         "title": "프로젝트 타임라인 논의",
         "category": "비즈니스",
-        "used": false
+        "used": true
       },
       {
         "slug": "going-fishing",
@@ -176,6 +176,7 @@
     "discussing-market-trends",
     "getting-flu-shot",
     "cryptocurrency-investment-discussion",
-    "going-to-the-cinema"
+    "going-to-the-cinema",
+    "discussing-project-timelines"
   ]
 }
