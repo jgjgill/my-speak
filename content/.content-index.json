@@ -2,25 +2,25 @@
   "generated_at": "2026-09-30T20:09:35Z",
   "total_count": 153,
   "weekly_plan": {
-    "generated_at": "2026-09-27T18:46:12Z",
-    "week_number": 39,
+    "generated_at": "2026-10-04T18:28:45Z",
+    "week_number": 40,
     "planned_slugs": [
       {
-        "slug": "discussing-project-timelines",
-        "title": "프로젝트 타임라인 논의",
+        "slug": "local-customs-interaction",
+        "title": "현지 문화 및 관습과의 상호작용",
+        "category": "여행",
+        "used": false
+      },
+      {
+        "slug": "business-presentation-delivery",
+        "title": "비즈니스 발표하기",
         "category": "비즈니스",
-        "used": true
+        "used": false
       },
       {
-        "slug": "going-fishing",
-        "title": "낚시하러 가기",
-        "category": "레저",
-        "used": true
-      },
-      {
-        "slug": "shopping-for-electronics",
-        "title": "전자기기 쇼핑하기",
-        "category": "쇼핑",
+        "slug": "chronic-condition-specialist-consultation",
+        "title": "만성 질환 전문의 상담",
+        "category": "의료",
         "used": false
       }
     ]
