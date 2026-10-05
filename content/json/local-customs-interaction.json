@@ -1,0 +1,388 @@
+{
+  "topic": {
+    "id": "d0dea551-f02f-456b-b1ac-6589b891c196",
+    "title": "현지 문화 및 관습과의 상호작용",
+    "category": "여행",
+    "difficulty": "초급",
+    "description": "여행 중 현지 문화를 존중하며 소통하는 방법을 배웁니다. 사원 방문 시 지켜야 할 예절을 알아봅니다.",
+    "language_code": "en",
+    "total_sentences": 7
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요! 죄송하지만 길 좀 물어볼 수 있을까요?"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "네, 물론입니다. 어디로 가시나요?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "가장 가까운 사원이 어디인지 알고 싶습니다."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "아, 저쪽으로 쭉 가시면 됩니다."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "감사합니다! 사원 방문 시 특별히 주의해야 할 문화적 관습이 있나요?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "네, 사원에 들어갈 때는 신발을 벗어야 합니다."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "아, 그렇군요. 알려주셔서 감사합니다!"
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello! Excuse me, could I ask for directions?",
+      "chunked_text": "Hello! | Excuse me, | could I ask for directions?"
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Yes, of course. Where are you going?",
+      "chunked_text": "Yes, of course. | Where are you going?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "I would like to know where the nearest temple is.",
+      "chunked_text": "I would like to know | where the nearest temple is."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Ah, you can go straight that way.",
+      "chunked_text": "Ah, | you can go straight that way."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Thank you! Are there any cultural customs I should be aware of when visiting temples?",
+      "chunked_text": "Thank you! | Are there any cultural customs | I should be aware of | when visiting temples?"
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Yes, when entering a temple, you must take off your shoes.",
+      "chunked_text": "Yes, | when entering a temple, | you must take off your shoes."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "Ah, I see. Thank you for letting me know!",
+      "chunked_text": "Ah, I see. | Thank you for letting me know!"
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "길",
+        "물어볼 수 있을까요"
+      ],
+      "target_sentence": "Hello! Excuse me, could I ask for directions?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "어디로 가시나요"
+      ],
+      "target_sentence": "Yes, of course. Where are you going?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "가까운 사원",
+        "어디"
+      ],
+      "target_sentence": "I would like to know where the nearest temple is.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "저쪽",
+        "쭉"
+      ],
+      "target_sentence": "Ah, you can go straight that way.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "문화적 관습"
+      ],
+      "target_sentence": "Thank you! Are there any cultural customs I should be aware of when visiting temples?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "신발 벗기"
+      ],
+      "target_sentence": "Yes, when entering a temple, you must take off your shoes.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "감사합니다"
+      ],
+      "target_sentence": "Ah, I see. Thank you for letting me know!",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "길"
+      ],
+      "target_sentence": "Hello! Excuse me, could I ask for directions?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "어디"
+      ],
+      "target_sentence": "Yes, of course. Where are you going?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "사원"
+      ],
+      "target_sentence": "I would like to know where the nearest temple is.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "쭉"
+      ],
+      "target_sentence": "Ah, you can go straight that way.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "관습"
+      ],
+      "target_sentence": "Thank you! Are there any cultural customs I should be aware of when visiting temples?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "신발"
+      ],
+      "target_sentence": "Yes, when entering a temple, you must take off your shoes.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "감사"
+      ],
+      "target_sentence": "Ah, I see. Thank you for letting me know!",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "질문"
+      ],
+      "target_sentence": "Hello! Excuse me, could I ask for directions?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "어디"
+      ],
+      "target_sentence": "Yes, of course. Where are you going?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "사원"
+      ],
+      "target_sentence": "I would like to know where the nearest temple is.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "가세요"
+      ],
+      "target_sentence": "Ah, you can go straight that way.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "예절"
+      ],
+      "target_sentence": "Thank you! Are there any cultural customs I should be aware of when visiting temples?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "벗기"
+      ],
+      "target_sentence": "Yes, when entering a temple, you must take off your shoes.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "감사"
+      ],
+      "target_sentence": "Ah, I see. Thank you for letting me know!",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "Directions"
+      ],
+      "target_sentence": "Hello! Excuse me, could I ask for directions?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "Going"
+      ],
+      "target_sentence": "Yes, of course. Where are you going?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "Temple"
+      ],
+      "target_sentence": "I would like to know where the nearest temple is.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "Straight"
+      ],
+      "target_sentence": "Ah, you can go straight that way.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "Customs"
+      ],
+      "target_sentence": "Thank you! Are there any cultural customs I should be aware of when visiting temples?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "Shoes"
+      ],
+      "target_sentence": "Yes, when entering a temple, you must take off your shoes.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "Thank you"
+      ],
+      "target_sentence": "Ah, I see. Thank you for letting me know!",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 3,
+      "korean_phrase": "가장 가까운 사원이 어디인지 알고 싶습니다.",
+      "foreign_phrase": "I would like to know where the nearest temple is."
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "문화적 관습",
+      "foreign_phrase": "cultural custom"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "신발을 벗어야 합니다",
+      "foreign_phrase": "you must take off your shoes"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 6,
+      "korean_text": "사원에 들어갈 때는 신발을 벗어야 합니다.",
+      "foreign_text": "when entering a temple, you must take off your shoes.",
+      "reason": "이 문장은 현지 문화(사원 예절)를 직접적으로 보여주는 핵심적인 표현으로, 여행자가 반드시 알아야 할 실용적인 정보를 제공합니다."
+    }
+  ]
+}

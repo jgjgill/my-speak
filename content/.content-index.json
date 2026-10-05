@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-30T20:09:35Z",
-  "total_count": 153,
+  "generated_at": "2026-10-05T22:05:41Z",
+  "total_count": 154,
   "weekly_plan": {
     "generated_at": "2026-10-04T18:28:45Z",
     "week_number": 40,
@@ -9,7 +9,7 @@
         "slug": "local-customs-interaction",
         "title": "현지 문화 및 관습과의 상호작용",
         "category": "여행",
-        "used": false
+        "used": true
       },
       {
         "slug": "business-presentation-delivery",
@@ -178,6 +178,7 @@
     "cryptocurrency-investment-discussion",
     "going-to-the-cinema",
     "discussing-project-timelines",
-    "going-fishing"
+    "going-fishing",
+    "local-customs-interaction"
   ]
 }
