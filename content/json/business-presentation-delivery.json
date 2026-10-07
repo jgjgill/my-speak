@@ -1,0 +1,481 @@
+{
+  "topic": {
+    "id": "d7bd1b8b-65a2-48fe-bd71-99bbeb195950",
+    "title": "비즈니스 발표하기",
+    "category": "비즈니스",
+    "difficulty": "초급",
+    "description": "이 콘텐츠는 비즈니스 환경에서 발표를 시작하고 주요 내용을 전달하는 데 필요한 기본적인 영어 표현을 학습합니다. 자신감 있게 발표를 진행하는 방법을 익힐 수 있습니다.",
+    "language_code": "en",
+    "total_sentences": 8
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하십니까, 여러분."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "제 이름은 김민준입니다."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "오늘은 저희 신제품에 대해 말씀드리고자 합니다."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "이 발표의 목표는 제품의 주요 특징을 소개하는 것입니다."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "세 가지 주요 내용을 다룰 것입니다."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "첫째는 시장 분석입니다."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "둘째는 제품 기능이고, 셋째는 향후 계획입니다."
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "발표가 끝나고 **질문 있으시면 편하게 해주세요**."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Good morning, everyone.",
+      "chunked_text": "Good morning, | everyone."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "My name is Kim Minjun.",
+      "chunked_text": "My name is | Kim Minjun."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Today, I would like to talk about our new product.",
+      "chunked_text": "Today, | I would like to talk about | our new product."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "The goal of this presentation is to introduce the key features of the product.",
+      "chunked_text": "The goal of this presentation is | to introduce the key features | of the product."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "We will cover three main points.",
+      "chunked_text": "We will cover | three main points."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "First is market analysis.",
+      "chunked_text": "First is | market analysis."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "Second is product features, and third is future plans.",
+      "chunked_text": "Second is | product features, | and third is | future plans."
+    },
+    {
+      "sentence_order": 8,
+      "foreign_text": "Please feel free to ask questions after the presentation.",
+      "chunked_text": "Please feel free to ask questions | after the presentation."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "안녕하십니까",
+        "여러분"
+      ],
+      "target_sentence": "Good morning, everyone.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "제 이름",
+        "김민준"
+      ],
+      "target_sentence": "My name is Kim Minjun.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "오늘",
+        "신제품",
+        "말씀"
+      ],
+      "target_sentence": "Today, I would like to talk about our new product.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "발표 목표",
+        "주요 특징",
+        "소개"
+      ],
+      "target_sentence": "The goal of this presentation is to introduce the key features of the product.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "세 가지",
+        "주요 내용",
+        "다룰 것"
+      ],
+      "target_sentence": "We will cover three main points.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "첫째",
+        "시장 분석"
+      ],
+      "target_sentence": "First is market analysis.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "둘째",
+        "제품 기능",
+        "셋째",
+        "향후 계획"
+      ],
+      "target_sentence": "Second is product features, and third is future plans.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 8,
+      "keywords": [
+        "질문",
+        "편하게"
+      ],
+      "target_sentence": "Please feel free to ask questions after the presentation.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "여러분"
+      ],
+      "target_sentence": "Good morning, everyone.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "이름",
+        "김민준"
+      ],
+      "target_sentence": "My name is Kim Minjun.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "신제품",
+        "말씀"
+      ],
+      "target_sentence": "Today, I would like to talk about our new product.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "목표",
+        "특징",
+        "소개"
+      ],
+      "target_sentence": "The goal of this presentation is to introduce the key features of the product.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "세 가지",
+        "내용"
+      ],
+      "target_sentence": "We will cover three main points.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "첫째",
+        "분석"
+      ],
+      "target_sentence": "First is market analysis.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 15,
+      "keywords": [
+        "둘째",
+        "기능",
+        "셋째",
+        "계획"
+      ],
+      "target_sentence": "Second is product features, and third is future plans.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 16,
+      "keywords": [
+        "질문",
+        "편하게"
+      ],
+      "target_sentence": "Please feel free to ask questions after the presentation.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "Good morning"
+      ],
+      "target_sentence": "Good morning, everyone.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "김민준"
+      ],
+      "target_sentence": "My name is Kim Minjun.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "신제품"
+      ],
+      "target_sentence": "Today, I would like to talk about our new product.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "목표",
+        "소개"
+      ],
+      "target_sentence": "The goal of this presentation is to introduce the key features of the product.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "내용"
+      ],
+      "target_sentence": "We will cover three main points.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 22,
+      "keywords": [
+        "첫째"
+      ],
+      "target_sentence": "First is market analysis.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 23,
+      "keywords": [
+        "둘째",
+        "셋째"
+      ],
+      "target_sentence": "Second is product features, and third is future plans.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 24,
+      "keywords": [
+        "질문"
+      ],
+      "target_sentence": "Please feel free to ask questions after the presentation.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "morning"
+      ],
+      "target_sentence": "Good morning, everyone.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "name"
+      ],
+      "target_sentence": "My name is Kim Minjun.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "product"
+      ],
+      "target_sentence": "Today, I would like to talk about our new product.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "goal",
+        "introduce"
+      ],
+      "target_sentence": "The goal of this presentation is to introduce the key features of the product.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 29,
+      "keywords": [
+        "points"
+      ],
+      "target_sentence": "We will cover three main points.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 30,
+      "keywords": [
+        "First"
+      ],
+      "target_sentence": "First is market analysis.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 31,
+      "keywords": [
+        "second",
+        "third"
+      ],
+      "target_sentence": "Second is product features, and third is future plans.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 32,
+      "keywords": [
+        "questions"
+      ],
+      "target_sentence": "Please feel free to ask questions after the presentation.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "김민준",
+      "foreign_phrase": "Kim Minjun"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "저희 신제품",
+      "foreign_phrase": "our new product"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "제품의 주요 특징을 소개하는 것",
+      "foreign_phrase": "to introduce the key features of the product"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "세 가지 주요 내용",
+      "foreign_phrase": "three main points"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "시장 분석",
+      "foreign_phrase": "market analysis"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "제품 기능",
+      "foreign_phrase": "product features"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "향후 계획",
+      "foreign_phrase": "future plans"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 4,
+      "korean_text": "이 발표의 목표는 제품의 주요 특징을 소개하는 것입니다.",
+      "foreign_text": "The goal of this presentation is to introduce the key features of the product.",
+      "reason": "이 문장은 발표의 핵심 목적을 명확히 제시하여 청중의 이해를 돕고 발표의 방향을 설정하는 데 중요합니다."
+    }
+  ]
+}

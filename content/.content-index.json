@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-05T22:05:41Z",
-  "total_count": 154,
+  "generated_at": "2026-10-07T20:41:22Z",
+  "total_count": 155,
   "weekly_plan": {
     "generated_at": "2026-10-04T18:28:45Z",
     "week_number": 40,
@@ -15,7 +15,7 @@
         "slug": "business-presentation-delivery",
         "title": "비즈니스 발표하기",
         "category": "비즈니스",
-        "used": false
+        "used": true
       },
       {
         "slug": "chronic-condition-specialist-consultation",
@@ -179,6 +179,7 @@
     "going-to-the-cinema",
     "discussing-project-timelines",
     "going-fishing",
-    "local-customs-interaction"
+    "local-customs-interaction",
+    "business-presentation-delivery"
   ]
 }
