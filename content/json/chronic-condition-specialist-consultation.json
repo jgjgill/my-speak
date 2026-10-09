@@ -1,0 +1,488 @@
+{
+  "topic": {
+    "id": "533c1cf1-9c96-4bbd-8ef1-18a378e0a800",
+    "title": "만성 질환 전문의 상담",
+    "category": "의료",
+    "difficulty": "초급",
+    "description": "만성 질환 전문의와의 상담을 위한 기본적인 영어 회화 연습입니다.",
+    "language_code": "en",
+    "total_sentences": 8
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 저는 오늘 만성 질환 전문의와 상담이 있어요."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "네, 예약 확인되었습니다. 어떤 점이 불편하신가요?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "저는 몇 달 동안 계속 피로를 느껴요."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "알겠습니다. 이전에 진단받은 만성 질환이 있으신가요?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "네, 고혈압이 있습니다."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "최근에 증상이 더 심해졌나요?"
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "네, 점점 더 나빠지는 것 같아요."
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "그렇다면 몇 가지 검사를 해보고 가장 적절한 치료법을 찾아봐야겠네요."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, I have an appointment with the chronic condition specialist today.",
+      "chunked_text": "Hello, | I have an appointment | with the chronic condition specialist today."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Yes, your appointment is confirmed. What are you feeling unwell with?",
+      "chunked_text": "Yes, | your appointment is confirmed. | What are you feeling unwell with?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "I have been feeling tired for several months.",
+      "chunked_text": "I have been feeling tired | for several months."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Understood. Do you have any previously diagnosed chronic conditions?",
+      "chunked_text": "Understood. | Do you have any | previously diagnosed chronic conditions?"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Yes, I have high blood pressure.",
+      "chunked_text": "Yes, | I have high blood pressure."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Have your symptoms worsened recently?",
+      "chunked_text": "Have your symptoms | worsened recently?"
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "Yes, it seems to be getting worse and worse.",
+      "chunked_text": "Yes, | it seems to be | getting worse and worse."
+    },
+    {
+      "sentence_order": 8,
+      "foreign_text": "In that case, we will do some tests and find the most appropriate treatment.",
+      "chunked_text": "In that case, | we will do some tests | and find the most appropriate treatment."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "안녕하세요",
+        "전문의",
+        "상담",
+        "오늘"
+      ],
+      "target_sentence": "Hello, I have an appointment with the chronic condition specialist today.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "네",
+        "확인",
+        "어떤 점",
+        "불편하신가요?"
+      ],
+      "target_sentence": "Yes, your appointment is confirmed. What are you feeling unwell with?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "몇 달",
+        "동안",
+        "계속",
+        "피로",
+        "느껴요"
+      ],
+      "target_sentence": "I have been feeling tired for several months.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "알겠습니다",
+        "이전에",
+        "진단받은",
+        "만성 질환"
+      ],
+      "target_sentence": "Understood. Do you have any previously diagnosed chronic conditions?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "네",
+        "고혈압"
+      ],
+      "target_sentence": "Yes, I have high blood pressure.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "최근에",
+        "증상",
+        "더 심해졌나요?"
+      ],
+      "target_sentence": "Have your symptoms worsened recently?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "네",
+        "점점 더",
+        "나빠지는 것 같아요."
+      ],
+      "target_sentence": "Yes, it seems to be getting worse and worse.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 8,
+      "keywords": [
+        "그렇다면",
+        "몇 가지 검사",
+        "해보고",
+        "가장 적절한",
+        "치료법",
+        "찾아봐야겠네요."
+      ],
+      "target_sentence": "In that case, we will do some tests and find the most appropriate treatment.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "안녕하세요",
+        "전문의",
+        "상담"
+      ],
+      "target_sentence": "Hello, I have an appointment with the chronic condition specialist today.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "확인",
+        "불편하신가요?"
+      ],
+      "target_sentence": "Yes, your appointment is confirmed. What are you feeling unwell with?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "피로",
+        "느껴요"
+      ],
+      "target_sentence": "I have been feeling tired for several months.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "이전에",
+        "만성 질환"
+      ],
+      "target_sentence": "Understood. Do you have any previously diagnosed chronic conditions?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "고혈압"
+      ],
+      "target_sentence": "Yes, I have high blood pressure.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "증상",
+        "심해졌나요?"
+      ],
+      "target_sentence": "Have your symptoms worsened recently?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 15,
+      "keywords": [
+        "점점",
+        "나빠지는"
+      ],
+      "target_sentence": "Yes, it seems to be getting worse and worse.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 16,
+      "keywords": [
+        "검사",
+        "치료법"
+      ],
+      "target_sentence": "In that case, we will do some tests and find the most appropriate treatment.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "전문의",
+        "상담"
+      ],
+      "target_sentence": "Hello, I have an appointment with the chronic condition specialist today.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "불편하신가요?"
+      ],
+      "target_sentence": "Yes, your appointment is confirmed. What are you feeling unwell with?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "피로"
+      ],
+      "target_sentence": "I have been feeling tired for several months.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "만성 질환"
+      ],
+      "target_sentence": "Understood. Do you have any previously diagnosed chronic conditions?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "고혈압"
+      ],
+      "target_sentence": "Yes, I have high blood pressure.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 22,
+      "keywords": [
+        "심해졌나요?"
+      ],
+      "target_sentence": "Have your symptoms worsened recently?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 23,
+      "keywords": [
+        "나빠지는"
+      ],
+      "target_sentence": "Yes, it seems to be getting worse and worse.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 24,
+      "keywords": [
+        "검사",
+        "치료법"
+      ],
+      "target_sentence": "In that case, we will do some tests and find the most appropriate treatment.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "specialist"
+      ],
+      "target_sentence": "Hello, I have an appointment with the chronic condition specialist today.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "unwell"
+      ],
+      "target_sentence": "Yes, your appointment is confirmed. What are you feeling unwell with?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "tired"
+      ],
+      "target_sentence": "I have been feeling tired for several months.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "diagnosed"
+      ],
+      "target_sentence": "Understood. Do you have any previously diagnosed chronic conditions?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 29,
+      "keywords": [
+        "blood pressure"
+      ],
+      "target_sentence": "Yes, I have high blood pressure.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 30,
+      "keywords": [
+        "worsened"
+      ],
+      "target_sentence": "Have your symptoms worsened recently?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 31,
+      "keywords": [
+        "worse"
+      ],
+      "target_sentence": "Yes, it seems to be getting worse and worse.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 32,
+      "keywords": [
+        "tests",
+        "treatment"
+      ],
+      "target_sentence": "In that case, we will do some tests and find the most appropriate treatment.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 3,
+      "korean_phrase": "몇 달 동안 계속 피로를 느껴요.",
+      "foreign_phrase": "I have been feeling tired for several months."
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "이전에 진단받은 만성 질환",
+      "foreign_phrase": "any previously diagnosed chronic conditions"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "고혈압",
+      "foreign_phrase": "high blood pressure"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "최근에 증상이 더 심해졌나요?",
+      "foreign_phrase": "Have your symptoms worsened recently?"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "점점 더 나빠지는 것 같아요.",
+      "foreign_phrase": "Yes, it seems to be getting worse and worse."
+    },
+    {
+      "sentence_order": 8,
+      "korean_phrase": "그렇다면 몇 가지 검사를 해보고",
+      "foreign_phrase": "In that case, we will do some tests"
+    },
+    {
+      "sentence_order": 8,
+      "korean_phrase": "가장 적절한 치료법을 찾아봐야겠네요.",
+      "foreign_phrase": "and find the most appropriate treatment."
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 3,
+      "korean_text": "저는 몇 달 동안 계속 피로를 느껴요.",
+      "foreign_text": "I have been feeling tired for several months.",
+      "reason": "이 문장은 환자가 병원을 방문한 주요 원인을 나타내어 대화의 핵심이 됩니다."
+    }
+  ]
+}

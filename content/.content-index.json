@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-07T20:41:22Z",
-  "total_count": 155,
+  "generated_at": "2026-10-09T20:10:06Z",
+  "total_count": 156,
   "weekly_plan": {
     "generated_at": "2026-10-04T18:28:45Z",
     "week_number": 40,
@@ -21,7 +21,7 @@
         "slug": "chronic-condition-specialist-consultation",
         "title": "만성 질환 전문의 상담",
         "category": "의료",
-        "used": false
+        "used": true
       }
     ]
   },
@@ -180,6 +180,7 @@
     "discussing-project-timelines",
     "going-fishing",
     "local-customs-interaction",
-    "business-presentation-delivery"
+    "business-presentation-delivery",
+    "chronic-condition-specialist-consultation"
   ]
 }
