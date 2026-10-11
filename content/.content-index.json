@@ -2,26 +2,26 @@
   "generated_at": "2026-10-09T20:10:06Z",
   "total_count": 156,
   "weekly_plan": {
-    "generated_at": "2026-10-04T18:28:45Z",
-    "week_number": 40,
+    "generated_at": "2026-10-11T19:16:19Z",
+    "week_number": 41,
     "planned_slugs": [
       {
-        "slug": "local-customs-interaction",
-        "title": "현지 문화 및 관습과의 상호작용",
+        "slug": "train-travel-booking",
+        "title": "기차 여행 예약하기",
         "category": "여행",
-        "used": true
+        "used": false
       },
       {
-        "slug": "business-presentation-delivery",
-        "title": "비즈니스 발표하기",
-        "category": "비즈니스",
-        "used": true
-      },
-      {
-        "slug": "chronic-condition-specialist-consultation",
-        "title": "만성 질환 전문의 상담",
+        "slug": "discussing-allergies",
+        "title": "알레르기 증상 상담하기",
         "category": "의료",
-        "used": true
+        "used": false
+      },
+      {
+        "slug": "stock-market-analysis",
+        "title": "주식 시장 분석하기",
+        "category": "금융",
+        "used": false
       }
     ]
   },
