@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-09T20:10:06Z",
-  "total_count": 156,
+  "generated_at": "2026-10-12T22:32:08Z",
+  "total_count": 157,
   "weekly_plan": {
     "generated_at": "2026-10-11T19:16:19Z",
     "week_number": 41,
@@ -9,7 +9,7 @@
         "slug": "train-travel-booking",
         "title": "기차 여행 예약하기",
         "category": "여행",
-        "used": false
+        "used": true
       },
       {
         "slug": "discussing-allergies",
@@ -181,6 +181,7 @@
     "going-fishing",
     "local-customs-interaction",
     "business-presentation-delivery",
-    "chronic-condition-specialist-consultation"
+    "chronic-condition-specialist-consultation",
+    "train-travel-booking"
   ]
 }
