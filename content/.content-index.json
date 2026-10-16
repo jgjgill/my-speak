@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-12T22:32:08Z",
-  "total_count": 157,
+  "generated_at": "2026-10-16T18:52:04Z",
+  "total_count": 158,
   "weekly_plan": {
     "generated_at": "2026-10-11T19:16:19Z",
     "week_number": 41,
@@ -15,7 +15,7 @@
         "slug": "discussing-allergies",
         "title": "알레르기 증상 상담하기",
         "category": "의료",
-        "used": false
+        "used": true
       },
       {
         "slug": "stock-market-analysis",
@@ -182,6 +182,7 @@
     "local-customs-interaction",
     "business-presentation-delivery",
     "chronic-condition-specialist-consultation",
-    "train-travel-booking"
+    "train-travel-booking",
+    "discussing-allergies"
   ]
 }

@@ -1,0 +1,343 @@
+{
+  "topic": {
+    "id": "9eec053c-e013-4222-9b71-0f13b4b885d3",
+    "title": "알레르기 증상 상담하기",
+    "category": "의료",
+    "difficulty": "초급",
+    "description": "이 콘텐츠는 알레르기 증상으로 병원을 방문했을 때 의사에게 자신의 상태를 설명하는 방법을 배웁니다. 초급 학습자를 위한 기본적인 의료 대화 연습입니다.",
+    "language_code": "en",
+    "total_sentences": 6
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 의사 선생님. 제가 알레르기 증상이 좀 있어서요."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "아이고, 그러시군요. 어떤 증상이신가요?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "며칠 전부터 콧물이 나고 눈이 가려워요."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "혹시 무엇 때문에 심해지는 것 같으신가요?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "밖에 나가면 더 심해지는 것 같아서, 아마 꽃가루 때문인 것 같아요."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "네, 알겠습니다. 우선 체온이랑 혈압을 재 볼게요."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, doctor. I've been having some allergy symptoms.",
+      "chunked_text": "Hello, doctor. | I've been having some allergy symptoms."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Oh, I'm sorry to hear that. What seems to be the problem?",
+      "chunked_text": "Oh, I'm sorry to hear that. | What seems to be the problem?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "I've had a runny nose and itchy eyes for a few days.",
+      "chunked_text": "I've had a runny nose | and itchy eyes for a few days."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Have you noticed anything that might be causing it?",
+      "chunked_text": "Have you noticed anything | that might be causing it?"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "I think it might be pollen, as it's worse when I go outside.",
+      "chunked_text": "I think it might be pollen, | as it's worse when I go outside."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Okay, I'll take a look. Let's check your temperature and blood pressure first.",
+      "chunked_text": "Okay, I'll take a look. | Let's check your temperature | and blood pressure first."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "안녕하세요",
+        "의사 선생님",
+        "알레르기 증상"
+      ],
+      "target_sentence": "Hello, doctor. I've been having some allergy symptoms.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "어떤 증상",
+        "그러시군요"
+      ],
+      "target_sentence": "Oh, I'm sorry to hear that. What seems to be the problem?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "며칠 전부터",
+        "콧물",
+        "눈이 가려워요"
+      ],
+      "target_sentence": "I've had a runny nose and itchy eyes for a few days.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "무엇 때문에",
+        "심해지는 것 같으신가요"
+      ],
+      "target_sentence": "Have you noticed anything that might be causing it?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "밖에 나가면",
+        "더 심해지는 것 같아서",
+        "아마 꽃가루"
+      ],
+      "target_sentence": "I think it might be pollen, as it's worse when I go outside.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "체온이랑 혈압",
+        "재 볼게요"
+      ],
+      "target_sentence": "Okay, I'll take a look. Let's check your temperature and blood pressure first.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 7,
+      "keywords": [
+        "안녕하세요",
+        "증상"
+      ],
+      "target_sentence": "Hello, doctor. I've been having some allergy symptoms.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "어떤 증상"
+      ],
+      "target_sentence": "Oh, I'm sorry to hear that. What seems to be the problem?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "콧물",
+        "가려워요"
+      ],
+      "target_sentence": "I've had a runny nose and itchy eyes for a few days.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "원인"
+      ],
+      "target_sentence": "Have you noticed anything that might be causing it?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "꽃가루"
+      ],
+      "target_sentence": "I think it might be pollen, as it's worse when I go outside.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "체온",
+        "혈압"
+      ],
+      "target_sentence": "Okay, I'll take a look. Let's check your temperature and blood pressure first.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 13,
+      "keywords": [
+        "증상"
+      ],
+      "target_sentence": "I've been having some allergy symptoms.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 14,
+      "keywords": [
+        "어떤"
+      ],
+      "target_sentence": "What seems to be the problem?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "콧물"
+      ],
+      "target_sentence": "I've had a runny nose.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "원인"
+      ],
+      "target_sentence": "What might be causing it?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "꽃가루"
+      ],
+      "target_sentence": "It might be pollen.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "체온"
+      ],
+      "target_sentence": "Let's check your temperature.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 19,
+      "keywords": [
+        "allergy"
+      ],
+      "target_sentence": "I've been having some allergy symptoms.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 20,
+      "keywords": [
+        "symptoms"
+      ],
+      "target_sentence": "What seems to be the problem?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 21,
+      "keywords": [
+        "runny nose"
+      ],
+      "target_sentence": "I've had a runny nose.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "pollen"
+      ],
+      "target_sentence": "I think it might be pollen.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "temperature"
+      ],
+      "target_sentence": "Let's check your temperature and blood pressure first.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 3,
+      "korean_phrase": "콧물",
+      "foreign_phrase": "runny nose"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "눈이 가려워요",
+      "foreign_phrase": "itchy eyes"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "아마 꽃가루",
+      "foreign_phrase": "I think it might be pollen"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "체온이랑 혈압",
+      "foreign_phrase": "temperature and blood pressure"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 3,
+      "korean_text": "며칠 전부터 콧물이 나고 눈이 가려워요.",
+      "foreign_text": "I've had a runny nose and itchy eyes for a few days.",
+      "reason": "환자가 겪고 있는 주요 알레르기 증상(콧물, 가려운 눈)을 구체적으로 설명하는 핵심 문장입니다."
+    }
+  ]
+}
