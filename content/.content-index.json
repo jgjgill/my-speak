@@ -2,24 +2,24 @@
   "generated_at": "2026-10-16T18:52:04Z",
   "total_count": 158,
   "weekly_plan": {
-    "generated_at": "2026-10-11T19:16:19Z",
-    "week_number": 41,
+    "generated_at": "2026-10-18T17:41:13Z",
+    "week_number": 42,
     "planned_slugs": [
       {
-        "slug": "train-travel-booking",
-        "title": "기차 여행 예약하기",
+        "slug": "dealing-with-lost-item-at-hotel",
+        "title": "호텔에서 분실물 대처하기",
         "category": "여행",
-        "used": true
+        "used": false
       },
       {
-        "slug": "discussing-allergies",
-        "title": "알레르기 증상 상담하기",
-        "category": "의료",
-        "used": true
+        "slug": "practicing-polite-requests-to-shopkeepers",
+        "title": "가게 주인에게 정중하게 요청하기",
+        "category": "회화",
+        "used": false
       },
       {
-        "slug": "stock-market-analysis",
-        "title": "주식 시장 분석하기",
+        "slug": "understanding-credit-card-statements-and-fees",
+        "title": "신용카드 명세서 및 수수료 이해하기",
         "category": "금융",
         "used": false
       }
