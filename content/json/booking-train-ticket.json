@@ -1,0 +1,510 @@
+{
+  "topic": {
+    "id": "83f6e21a-5d4b-4b25-a78c-9c8c58ee8f38",
+    "title": "기차표 예매하기",
+    "category": "여행",
+    "difficulty": "초급",
+    "description": "기차 여행을 계획할 때 필요한 기본적인 영어 표현을 배울 수 있습니다. 출발지와 목적지를 말하고 원하는 시간과 좌석 등급을 선택하는 방법을 익힙니다.",
+    "language_code": "en",
+    "total_sentences": 9
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요. 기차표를 예매하고 싶습니다."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "어디서 어디로 가시나요?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "서울에서 부산까지 가는 표 한 장 부탁드립니다."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "네, 몇 시 기차를 원하시나요?"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "내일 오전 10시에 출발하는 기차가 있을까요?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "네, 있습니다. 10시 15분 기차가 있습니다. 좌석 등급은 어떻게 하시겠어요?"
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "일반석으로 부탁드립니다."
+    },
+    {
+      "sentence_order": 8,
+      "korean_text": "총 35,000원입니다. 결제는 어떻게 하시겠어요?"
+    },
+    {
+      "sentence_order": 9,
+      "korean_text": "카드로 하겠습니다."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello. I want to book a train ticket.",
+      "chunked_text": "Hello. | I want to book a train ticket."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Where are you going from and to?",
+      "chunked_text": "Where are you going | from and to?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "One ticket from Seoul to Busan, please.",
+      "chunked_text": "One ticket | from Seoul to Busan, | please."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Okay, what time train would you like?",
+      "chunked_text": "Okay, | what time train | would you like?"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Is there a train departing tomorrow around 10 AM?",
+      "chunked_text": "Is there a train departing | tomorrow around 10 AM?"
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Yes, there is. There's a 10:15 AM train. What class of seat would you like?",
+      "chunked_text": "Yes, there is. | There's a 10:15 AM train. | What class of seat | would you like?"
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "Standard class, please.",
+      "chunked_text": "Standard class, | please."
+    },
+    {
+      "sentence_order": 8,
+      "foreign_text": "It's 35,000 won total. How would you like to pay?",
+      "chunked_text": "It's 35,000 won total. | How would you like | to pay?"
+    },
+    {
+      "sentence_order": 9,
+      "foreign_text": "I'll pay by card.",
+      "chunked_text": "I'll pay | by card."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "안녕하세요",
+        "기차표",
+        "예매하고 싶습니다"
+      ],
+      "target_sentence": "Hello. I want to book a train ticket.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "어디서",
+        "어디로",
+        "가시나요"
+      ],
+      "target_sentence": "Where are you going from and to?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "서울",
+        "부산",
+        "가는 표",
+        "한 장",
+        "부탁드립니다"
+      ],
+      "target_sentence": "One ticket from Seoul to Busan, please.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "몇 시",
+        "기차",
+        "원하시나요"
+      ],
+      "target_sentence": "Okay, what time train would you like?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "내일",
+        "오전 10시",
+        "출발하는",
+        "기차"
+      ],
+      "target_sentence": "Is there a train departing tomorrow around 10 AM?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "있습니다",
+        "10시 15분",
+        "좌석 등급"
+      ],
+      "target_sentence": "Yes, there is. There's a 10:15 AM train. What class of seat would you like?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "일반석",
+        "부탁드립니다"
+      ],
+      "target_sentence": "Standard class, please.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 8,
+      "keywords": [
+        "35",
+        "000원",
+        "결제",
+        "어떻게"
+      ],
+      "target_sentence": "It's 35,000 won total. How would you like to pay?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 9,
+      "keywords": [
+        "카드로",
+        "하겠습니다"
+      ],
+      "target_sentence": "I'll pay by card.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "안녕하세요",
+        "기차표"
+      ],
+      "target_sentence": "Hello. I want to book a train ticket.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "어디로"
+      ],
+      "target_sentence": "Where are you going from and to?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "서울",
+        "부산",
+        "표"
+      ],
+      "target_sentence": "One ticket from Seoul to Busan, please.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "기차",
+        "시간"
+      ],
+      "target_sentence": "Okay, what time train would you like?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "내일",
+        "10시",
+        "출발"
+      ],
+      "target_sentence": "Is there a train departing tomorrow around 10 AM?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 15,
+      "keywords": [
+        "10:15분",
+        "좌석"
+      ],
+      "target_sentence": "Yes, there is. There's a 10:15 AM train. What class of seat would you like?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 16,
+      "keywords": [
+        "일반석"
+      ],
+      "target_sentence": "Standard class, please.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 17,
+      "keywords": [
+        "결제"
+      ],
+      "target_sentence": "It's 35,000 won total. How would you like to pay?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 18,
+      "keywords": [
+        "카드"
+      ],
+      "target_sentence": "I'll pay by card.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "기차표"
+      ],
+      "target_sentence": "Hello. I want to book a train ticket.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "어디"
+      ],
+      "target_sentence": "Where are you going from and to?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "부산"
+      ],
+      "target_sentence": "One ticket from Seoul to Busan, please.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 22,
+      "keywords": [
+        "시간"
+      ],
+      "target_sentence": "Okay, what time train would you like?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 23,
+      "keywords": [
+        "10시"
+      ],
+      "target_sentence": "Is there a train departing tomorrow around 10 AM?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 24,
+      "keywords": [
+        "좌석"
+      ],
+      "target_sentence": "Yes, there is. There's a 10:15 AM train. What class of seat would you like?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 25,
+      "keywords": [
+        "일반석"
+      ],
+      "target_sentence": "Standard class, please.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 26,
+      "keywords": [
+        "결제"
+      ],
+      "target_sentence": "It's 35,000 won total. How would you like to pay?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 27,
+      "keywords": [
+        "카드"
+      ],
+      "target_sentence": "I'll pay by card.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "ticket"
+      ],
+      "target_sentence": "Hello. I want to book a train ticket.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 29,
+      "keywords": [
+        "where"
+      ],
+      "target_sentence": "Where are you going from and to?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 30,
+      "keywords": [
+        "Seoul"
+      ],
+      "target_sentence": "One ticket from Seoul to Busan, please.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 31,
+      "keywords": [
+        "time"
+      ],
+      "target_sentence": "Okay, what time train would you like?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 32,
+      "keywords": [
+        "10 AM"
+      ],
+      "target_sentence": "Is there a train departing tomorrow around 10 AM?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 33,
+      "keywords": [
+        "seat"
+      ],
+      "target_sentence": "Yes, there is. There's a 10:15 AM train. What class of seat would you like?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 34,
+      "keywords": [
+        "Standard"
+      ],
+      "target_sentence": "Standard class, please.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 35,
+      "keywords": [
+        "pay"
+      ],
+      "target_sentence": "It's 35,000 won total. How would you like to pay?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 36,
+      "keywords": [
+        "card"
+      ],
+      "target_sentence": "I'll pay by card.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 3,
+      "korean_phrase": "서울에서 부산까지",
+      "foreign_phrase": "from Seoul to Busan"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "내일 오전 10시",
+      "foreign_phrase": "tomorrow around 10 AM"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "일반석",
+      "foreign_phrase": "standard class"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 3,
+      "korean_text": "서울에서 부산까지 가는 표 한 장 부탁드립니다.",
+      "foreign_text": "One ticket from Seoul to Busan, please.",
+      "reason": "여행 목적지(도시)를 명확히 전달하는 핵심 문장이므로."
+    }
+  ]
+}

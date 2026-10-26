@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-23T19:22:07Z",
-  "total_count": 160,
+  "generated_at": "2026-10-26T20:38:28Z",
+  "total_count": 161,
   "weekly_plan": {
     "generated_at": "2026-10-25T17:58:51Z",
     "week_number": 43,
@@ -9,7 +9,7 @@
         "slug": "booking-train-ticket",
         "title": "기차표 예매하기",
         "category": "여행",
-        "used": false
+        "used": true
       },
       {
         "slug": "attending-cooking-class",
@@ -185,6 +185,7 @@
     "train-travel-booking",
     "discussing-allergies",
     "dealing-with-lost-item-at-hotel",
-    "practicing-polite-requests-to-shopkeepers"
+    "practicing-polite-requests-to-shopkeepers",
+    "booking-train-ticket"
   ]
 }
