@@ -1,0 +1,374 @@
+{
+  "topic": {
+    "id": "8e281385-11fb-41a8-a776-7d43c98433c8",
+    "title": "요리 수업 참석하기",
+    "category": "레저",
+    "difficulty": "초급",
+    "description": "요리 수업에 참석하여 배우는 과정을 다루는 초급 대화입니다.",
+    "language_code": "en",
+    "total_sentences": 6
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 요리 수업에 왔어요."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "네, 예약하셨나요? 성함이 어떻게 되세요?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "네, 홍길동이라고 합니다. 제 이름은 등록되어 있나요?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "네, 등록되어 있습니다. 앞쪽 자리에 앉으시면 됩니다."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "감사합니다. 이 수업은 무엇을 배우나요?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "오늘은 이탈리아 파스타 만드는 법을 배웁니다."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, I'm here for the cooking class.",
+      "chunked_text": "Hello, | I'm here for the cooking class."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Yes, did you make a reservation? What is your name?",
+      "chunked_text": "Yes, did you make a reservation? | What is your name?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Yes, my name is Gildong Hong. Is my name registered?",
+      "chunked_text": "Yes, my name is Gildong Hong. | Is my name registered?"
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Yes, it is registered. You can sit at the front desk.",
+      "chunked_text": "Yes, it is registered. | You can sit at the front desk."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Thank you. What will we learn in this class?",
+      "chunked_text": "Thank you. | What will we learn in this class?"
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Today, we will learn how to make Italian pasta.",
+      "chunked_text": "Today, we will learn how to make Italian pasta."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "안녕하세요",
+        "요리 수업"
+      ],
+      "target_sentence": "Hello, I'm here for the cooking class.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "예약하셨나요",
+        "이름"
+      ],
+      "target_sentence": "Yes, did you make a reservation? What is your name?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "홍길동",
+        "등록"
+      ],
+      "target_sentence": "Yes, my name is Gildong Hong. Is my name registered?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "등록",
+        "앞쪽 자리"
+      ],
+      "target_sentence": "Yes, it is registered. You can sit at the front desk.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "감사합니다",
+        "배울 것"
+      ],
+      "target_sentence": "Thank you. What will we learn in this class?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "오늘",
+        "이탈리아 파스타"
+      ],
+      "target_sentence": "Today, we will learn how to make Italian pasta.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 7,
+      "keywords": [
+        "요리 수업"
+      ],
+      "target_sentence": "Hello, I'm here for the cooking class.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "예약",
+        "이름"
+      ],
+      "target_sentence": "Yes, did you make a reservation? What is your name?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "홍길동"
+      ],
+      "target_sentence": "Yes, my name is Gildong Hong. Is my name registered?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "등록",
+        "자리"
+      ],
+      "target_sentence": "Yes, it is registered. You can sit at the front desk.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "배울 것"
+      ],
+      "target_sentence": "Thank you. What will we learn in this class?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "파스타"
+      ],
+      "target_sentence": "Today, we will learn how to make Italian pasta.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 13,
+      "keywords": [
+        "수업"
+      ],
+      "target_sentence": "Hello, I'm here for the cooking class.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 14,
+      "keywords": [
+        "이름"
+      ],
+      "target_sentence": "Yes, did you make a reservation? What is your name?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "홍"
+      ],
+      "target_sentence": "Yes, my name is Gildong Hong. Is my name registered?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "자리"
+      ],
+      "target_sentence": "Yes, it is registered. You can sit at the front desk.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "무엇"
+      ],
+      "target_sentence": "Thank you. What will we learn in this class?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "이탈리아"
+      ],
+      "target_sentence": "Today, we will learn how to make Italian pasta.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 19,
+      "keywords": [
+        "class"
+      ],
+      "target_sentence": "Hello, I'm here for the cooking class.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 20,
+      "keywords": [
+        "reservation"
+      ],
+      "target_sentence": "Yes, did you make a reservation? What is your name?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 21,
+      "keywords": [
+        "Hong"
+      ],
+      "target_sentence": "Yes, my name is Gildong Hong. Is my name registered?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "sit"
+      ],
+      "target_sentence": "Yes, it is registered. You can sit at the front desk.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "learn"
+      ],
+      "target_sentence": "Thank you. What will we learn in this class?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "pasta"
+      ],
+      "target_sentence": "Today, we will learn how to make Italian pasta.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 1,
+      "korean_phrase": "요리 수업",
+      "foreign_phrase": "cooking class"
+    },
+    {
+      "sentence_order": 2,
+      "korean_phrase": "예약하셨나요",
+      "foreign_phrase": "did you make a reservation"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "홍길동",
+      "foreign_phrase": "Gildong Hong"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "제 이름은 등록되어 있나요",
+      "foreign_phrase": "is my name registered"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "등록되어 있습니다",
+      "foreign_phrase": "yes, it is registered"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "앞쪽 자리에 앉으시면 됩니다",
+      "foreign_phrase": "you can sit at the front desk"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "감사합니다",
+      "foreign_phrase": "thank you"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "이 수업은 무엇을 배우나요",
+      "foreign_phrase": "what will we learn in this class"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "이탈리아 파스타",
+      "foreign_phrase": "Italian pasta"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 요리 수업에 왔어요.",
+      "foreign_text": "Hello, I'm here for the cooking class.",
+      "reason": "이 문장은 요리 수업 참석의 시작을 알리며, 대화의 맥락을 설정하는 핵심 문장입니다."
+    }
+  ]
+}
