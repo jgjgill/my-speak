@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-28T20:24:00Z",
-  "total_count": 162,
+  "generated_at": "2026-10-30T19:58:13Z",
+  "total_count": 163,
   "weekly_plan": {
     "generated_at": "2026-10-25T17:58:51Z",
     "week_number": 43,
@@ -21,7 +21,7 @@
         "slug": "discussing-medication-side-effects",
         "title": "약물 부작용 논의하기",
         "category": "의료",
-        "used": false
+        "used": true
       }
     ]
   },
@@ -187,6 +187,7 @@
     "dealing-with-lost-item-at-hotel",
     "practicing-polite-requests-to-shopkeepers",
     "booking-train-ticket",
-    "attending-cooking-class"
+    "attending-cooking-class",
+    "discussing-medication-side-effects"
   ]
 }
