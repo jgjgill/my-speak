@@ -2,26 +2,26 @@
   "generated_at": "2026-10-30T19:58:13Z",
   "total_count": 163,
   "weekly_plan": {
-    "generated_at": "2026-10-25T17:58:51Z",
-    "week_number": 43,
+    "generated_at": "2026-11-01T19:16:37Z",
+    "week_number": 44,
     "planned_slugs": [
       {
-        "slug": "booking-train-ticket",
-        "title": "기차표 예매하기",
+        "slug": "visiting-a-museum",
+        "title": "박물관 방문하기",
         "category": "여행",
-        "used": true
+        "used": false
       },
       {
-        "slug": "attending-cooking-class",
-        "title": "요리 수업 참석하기",
-        "category": "레저",
-        "used": true
+        "slug": "discussing-personal-loan-with-bank-officer",
+        "title": "은행 직원과 개인 대출 상담하기",
+        "category": "금융",
+        "used": false
       },
       {
-        "slug": "discussing-medication-side-effects",
-        "title": "약물 부작용 논의하기",
-        "category": "의료",
-        "used": true
+        "slug": "complaining-about-faulty-product",
+        "title": "불량 제품에 대해 불평하기",
+        "category": "쇼핑",
+        "used": false
       }
     ]
   },
