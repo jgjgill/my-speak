@@ -2,25 +2,25 @@
   "generated_at": "2026-10-30T19:58:13Z",
   "total_count": 163,
   "weekly_plan": {
-    "generated_at": "2026-11-01T19:16:37Z",
-    "week_number": 44,
+    "generated_at": "2026-11-08T19:14:40Z",
+    "week_number": 45,
     "planned_slugs": [
       {
-        "slug": "visiting-a-museum",
-        "title": "박물관 방문하기",
+        "slug": "planning-a-road-trip",
+        "title": "자동차 여행 계획하기",
         "category": "여행",
         "used": false
       },
       {
-        "slug": "discussing-personal-loan-with-bank-officer",
-        "title": "은행 직원과 개인 대출 상담하기",
-        "category": "금융",
+        "slug": "discussing-vaccination-options",
+        "title": "백신 접종 옵션 논의하기",
+        "category": "의료",
         "used": false
       },
       {
-        "slug": "complaining-about-faulty-product",
-        "title": "불량 제품에 대해 불평하기",
-        "category": "쇼핑",
+        "slug": "discussing-career-goals",
+        "title": "경력 목표에 대해 논의하기",
+        "category": "비즈니스",
         "used": false
       }
     ]
