@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-30T19:58:13Z",
-  "total_count": 163,
+  "generated_at": "2026-11-09T23:48:51Z",
+  "total_count": 164,
   "weekly_plan": {
     "generated_at": "2026-11-08T19:14:40Z",
     "week_number": 45,
@@ -9,7 +9,7 @@
         "slug": "planning-a-road-trip",
         "title": "자동차 여행 계획하기",
         "category": "여행",
-        "used": false
+        "used": true
       },
       {
         "slug": "discussing-vaccination-options",
@@ -188,6 +188,7 @@
     "practicing-polite-requests-to-shopkeepers",
     "booking-train-ticket",
     "attending-cooking-class",
-    "discussing-medication-side-effects"
+    "discussing-medication-side-effects",
+    "planning-a-road-trip"
   ]
 }

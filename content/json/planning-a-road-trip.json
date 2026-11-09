@@ -1,0 +1,416 @@
+{
+  "topic": {
+    "id": "cadfc4d3-244e-4489-8b03-7be57fb902ca",
+    "title": "자동차 여행 계획하기",
+    "category": "여행",
+    "difficulty": "초급",
+    "description": "이번 여름휴가, 잊지 못할 자동차 여행을 떠나보세요! 기본적인 경로 계획부터 짐 싸기, 차량 점검까지, 초보 여행자도 쉽게 따라 할 수 있는 여행 준비 방법을 배워봅니다.",
+    "language_code": "en",
+    "total_sentences": 7
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "이번 휴가 때 자동차 여행을 계획해 볼까요?"
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "좋아요! 어디로 갈까요?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "산이나 바다는 어때요?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "바다가 재미있겠네요!"
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "좋아요, 그럼 경로를 계획하고 짐을 싸야겠어요."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "차도 점검해야 해요."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "좋은 생각이에요!"
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Let's plan a road trip for our vacation.",
+      "chunked_text": "Let's plan a road trip | for our vacation."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Great idea! Where should we go?",
+      "chunked_text": "Great idea! | Where should we go?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "How about the mountains or the beach?",
+      "chunked_text": "How about the mountains | or the beach?"
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "The beach sounds fun!",
+      "chunked_text": "The beach sounds fun!"
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Okay, then let's plan the route and what to pack.",
+      "chunked_text": "Okay, | then let's plan the route | and what to pack."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "We need to check the car too.",
+      "chunked_text": "We need to check the car | too."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "That's a good idea!",
+      "chunked_text": "That's a good idea!"
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "자동차 여행을 계획해 볼까요"
+      ],
+      "target_sentence": "Let's plan a road trip for our vacation.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "좋아요",
+        "어디로 갈까요"
+      ],
+      "target_sentence": "Great idea! Where should we go?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "산이나 바다"
+      ],
+      "target_sentence": "How about the mountains or the beach?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "바다가 재미있겠네요"
+      ],
+      "target_sentence": "The beach sounds fun!",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "경로 계획하고 짐을 싸야겠어요"
+      ],
+      "target_sentence": "Okay, then let's plan the route and what to pack.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "차도 점검해야 해요"
+      ],
+      "target_sentence": "We need to check the car too.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "좋은 생각이에요"
+      ],
+      "target_sentence": "That's a good idea!",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "계획",
+        "여행"
+      ],
+      "target_sentence": "Let's plan a road trip for our vacation.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "어디로 갈까요"
+      ],
+      "target_sentence": "Great idea! Where should we go?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "산",
+        "바다"
+      ],
+      "target_sentence": "How about the mountains or the beach?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "바다",
+        "재미있겠네요"
+      ],
+      "target_sentence": "The beach sounds fun!",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "계획",
+        "짐 싸기"
+      ],
+      "target_sentence": "Okay, then let's plan the route and what to pack.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "점검"
+      ],
+      "target_sentence": "We need to check the car too.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "생각"
+      ],
+      "target_sentence": "That's a good idea!",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "자동차 여행"
+      ],
+      "target_sentence": "Let's plan a road trip for our vacation.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "어디"
+      ],
+      "target_sentence": "Great idea! Where should we go?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "바다"
+      ],
+      "target_sentence": "How about the mountains or the beach?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "재미있겠네요"
+      ],
+      "target_sentence": "The beach sounds fun!",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "계획",
+        "짐"
+      ],
+      "target_sentence": "Okay, then let's plan the route and what to pack.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "점검"
+      ],
+      "target_sentence": "We need to check the car too.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "생각"
+      ],
+      "target_sentence": "That's a good idea!",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "plan"
+      ],
+      "target_sentence": "Let's plan a road trip for our vacation.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "Where"
+      ],
+      "target_sentence": "Great idea! Where should we go?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "mountains"
+      ],
+      "target_sentence": "How about the mountains or the beach?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "beach"
+      ],
+      "target_sentence": "The beach sounds fun!",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "route"
+      ],
+      "target_sentence": "Okay, then let's plan the route and what to pack.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "check"
+      ],
+      "target_sentence": "We need to check the car too.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "good"
+      ],
+      "target_sentence": "That's a good idea!",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 1,
+      "korean_phrase": "자동차 여행을 계획해 볼까요",
+      "foreign_phrase": "Let's plan a road trip for our vacation"
+    },
+    {
+      "sentence_order": 2,
+      "korean_phrase": "좋아요",
+      "foreign_phrase": "Great idea"
+    },
+    {
+      "sentence_order": 2,
+      "korean_phrase": "어디로 갈까요",
+      "foreign_phrase": "Where should we go"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "산이나 바다",
+      "foreign_phrase": "mountains or the beach"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "바다가 재미있겠네요",
+      "foreign_phrase": "The beach sounds fun"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "그럼 경로를 계획하고 짐을 싸야겠어요",
+      "foreign_phrase": "then let's plan the route and what to pack"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "차도 점검해야 해요",
+      "foreign_phrase": "We need to check the car too"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "좋은 생각이에요",
+      "foreign_phrase": "That's a good idea"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 1,
+      "korean_text": "자동차 여행을 계획해 볼까요",
+      "foreign_text": "Let's plan a road trip for our vacation",
+      "reason": "This sentence introduces the main topic of planning a road trip."
+    }
+  ]
+}
