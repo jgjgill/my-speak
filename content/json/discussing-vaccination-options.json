@@ -1,0 +1,501 @@
+{
+  "topic": {
+    "id": "ecdd88ad-d2cd-4c02-8813-7789671aebe3",
+    "title": "백신 접종 옵션 논의하기",
+    "category": "의료",
+    "difficulty": "초급",
+    "description": "다양한 백신 접종 옵션에 대해 의료 전문가와 상담하며 정보를 얻는 대화입니다.",
+    "language_code": "en",
+    "total_sentences": 7
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 선생님. 백신 접종 옵션에 대해 좀 여쭤보려고요."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "네, 어떤 백신에 대해 궁금하신가요?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "제가 맞을 수 있는 백신들과 각각의 효과 및 부작용에 대해 알고 싶습니다."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "현재 A형 백신이 가장 효과적이라고 알려져 있습니다. 90% 이상의 예방 효과가 있고, 흔한 부작용으로는 가벼운 발열이나 근육통이 있을 수 있습니다."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "그렇다면 B형 백신은?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "B형은 효과가 약간 더 낮고 접종 횟수가 더 필요합니다. A형을 추천합니다."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "네, A형 백신으로 접종하겠습니다. 감사합니다."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, doctor. I wanted to ask about vaccination options.",
+      "chunked_text": "Hello, doctor. | I wanted to ask about vaccination options."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Yes, what vaccines are you curious about?",
+      "chunked_text": "Yes, | what vaccines are you curious about?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "I'd like to know about the vaccines I can get and their effectiveness and side effects.",
+      "chunked_text": "I'd like to know about the vaccines I can get | and their effectiveness and side effects."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Currently, Type A vaccine is known to be the most effective. It has over 90% effectiveness, and common side effects may include mild fever or muscle soreness.",
+      "chunked_text": "Currently, Type A vaccine is known to be the most effective. | It has over 90% effectiveness, | and common side effects may include mild fever or muscle soreness."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "What about Type B vaccines, then?",
+      "chunked_text": "What about Type B vaccines, then?"
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Type B is slightly less effective and requires more doses. I recommend Type A.",
+      "chunked_text": "Type B is slightly less effective | and requires more doses. | I recommend Type A."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "Yes, I will get the Type A vaccine. Thank you.",
+      "chunked_text": "Yes, I will get the Type A vaccine. | Thank you."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "안녕하세요",
+        "선생님. 백신 접종 옵션에 대해 좀 여쭤보려고요"
+      ],
+      "target_sentence": "Hello, doctor. I wanted to ask about vaccination options.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "네",
+        "어떤 백신에 대해 궁금하신가요?"
+      ],
+      "target_sentence": "Yes, what vaccines are you curious about?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "제가 맞을 수 있는 백신들과 각각의 효과 및 부작용에 대해 알고 싶습니다"
+      ],
+      "target_sentence": "I'd like to know about the vaccines I can get and their effectiveness and side effects.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "현재 A형 백신이 가장 효과적이라고 알려져 있습니다. 90% 이상의 예방 효과가 있고"
+      ],
+      "target_sentence": "Currently, Type A vaccine is known to be the most effective. It has over 90% effectiveness,",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "흔한 부작용으로는 가벼운 발열이나 근육통이 있을 수 있습니다"
+      ],
+      "target_sentence": "and common side effects may include mild fever or muscle soreness.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "그렇다면 B형 백신은?"
+      ],
+      "target_sentence": "What about Type B vaccines, then?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "B형은 효과가 약간 더 낮고 접종 횟수가 더 필요합니다. A형을 추천합니다"
+      ],
+      "target_sentence": "Type B is slightly less effective and requires more doses. I recommend Type A.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 8,
+      "keywords": [
+        "네",
+        "A형 백신으로 접종하겠습니다. 감사합니다"
+      ],
+      "target_sentence": "Yes, I will get the Type A vaccine. Thank you.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "백신 옵션"
+      ],
+      "target_sentence": "Hello, doctor. I wanted to ask about vaccination options.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "백신",
+        "궁금하신가요"
+      ],
+      "target_sentence": "Yes, what vaccines are you curious about?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "백신들",
+        "효과",
+        "부작용"
+      ],
+      "target_sentence": "I'd like to know about the vaccines I can get and their effectiveness and side effects.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "A형 백신",
+        "효과적",
+        "예방 효과"
+      ],
+      "target_sentence": "Currently, Type A vaccine is known to be the most effective. It has over 90% effectiveness,",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "부작용",
+        "발열",
+        "근육통"
+      ],
+      "target_sentence": "and common side effects may include mild fever or muscle soreness.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "B형 백신"
+      ],
+      "target_sentence": "What about Type B vaccines, then?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 15,
+      "keywords": [
+        "B형",
+        "낮고",
+        "필요합니다",
+        "추천"
+      ],
+      "target_sentence": "Type B is slightly less effective and requires more doses. I recommend Type A.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 16,
+      "keywords": [
+        "A형",
+        "접종하겠습니다",
+        "감사합니다"
+      ],
+      "target_sentence": "Yes, I will get the Type A vaccine. Thank you.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "백신 옵션"
+      ],
+      "target_sentence": "Hello, doctor. I wanted to ask about vaccination options.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "백신"
+      ],
+      "target_sentence": "Yes, what vaccines are you curious about?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "효과",
+        "부작용"
+      ],
+      "target_sentence": "I'd like to know about the vaccines I can get and their effectiveness and side effects.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "A형",
+        "효과적"
+      ],
+      "target_sentence": "Currently, Type A vaccine is known to be the most effective. It has over 90% effectiveness,",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "부작용"
+      ],
+      "target_sentence": "and common side effects may include mild fever or muscle soreness.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 22,
+      "keywords": [
+        "B형"
+      ],
+      "target_sentence": "What about Type B vaccines, then?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 23,
+      "keywords": [
+        "추천"
+      ],
+      "target_sentence": "I recommend Type A.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 24,
+      "keywords": [
+        "접종",
+        "감사합니다"
+      ],
+      "target_sentence": "Yes, I will get the Type A vaccine. Thank you.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "vaccination options"
+      ],
+      "target_sentence": "Hello, doctor. I wanted to ask about vaccination options.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "vaccines"
+      ],
+      "target_sentence": "Yes, what vaccines are you curious about?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "effectiveness",
+        "side effects"
+      ],
+      "target_sentence": "I'd like to know about the vaccines I can get and their effectiveness and side effects.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "Type A",
+        "effective"
+      ],
+      "target_sentence": "Currently, Type A vaccine is known to be the most effective. It has over 90% effectiveness,",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 29,
+      "keywords": [
+        "side effects"
+      ],
+      "target_sentence": "and common side effects may include mild fever or muscle soreness.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 30,
+      "keywords": [
+        "Type B"
+      ],
+      "target_sentence": "What about Type B vaccines, then?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 31,
+      "keywords": [
+        "recommend"
+      ],
+      "target_sentence": "I recommend Type A.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 32,
+      "keywords": [
+        "get",
+        "Thank you"
+      ],
+      "target_sentence": "Yes, I will get the Type A vaccine. Thank you.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 1,
+      "korean_phrase": "백신 접종 옵션",
+      "foreign_phrase": "vaccination options"
+    },
+    {
+      "sentence_order": 2,
+      "korean_phrase": "백신",
+      "foreign_phrase": "vaccines"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "제가 맞을 수 있는 백신들",
+      "foreign_phrase": "the vaccines I can get"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "각각의 효과 및 부작용",
+      "foreign_phrase": "their effectiveness and side effects"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "A형 백신이 가장 효과적",
+      "foreign_phrase": "Type A vaccine is the most effective"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "90% 이상의 예방 효과",
+      "foreign_phrase": "over 90% effectiveness"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "흔한 부작용",
+      "foreign_phrase": "common side effects"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "가벼운 발열이나 근육통",
+      "foreign_phrase": "mild fever or muscle soreness"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "그렇다면 B형 백신은",
+      "foreign_phrase": "What about Type B vaccines, then"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "효과가 약간 더 낮고",
+      "foreign_phrase": "slightly less effective"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "접종 횟수가 더 필요합니다",
+      "foreign_phrase": "requires more doses"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "A형을 추천",
+      "foreign_phrase": "I recommend Type A"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "A형 백신으로 접종하겠습니다",
+      "foreign_phrase": "I will get the Type A vaccine"
+    },
+    {
+      "sentence_order": 7,
+      "korean_phrase": "감사합니다",
+      "foreign_phrase": "Thank you"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 7,
+      "korean_text": "네, A형 백신으로 접종하겠습니다. 감사합니다.",
+      "foreign_text": "Yes, I will get the Type A vaccine. Thank you.",
+      "reason": "이 문장은 논의 끝에 최종 결정을 내리고 감사를 표하는 핵심적인 부분입니다."
+    }
+  ]
+}
