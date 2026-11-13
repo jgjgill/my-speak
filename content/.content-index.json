@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-11T22:04:29Z",
-  "total_count": 165,
+  "generated_at": "2026-11-13T21:28:27Z",
+  "total_count": 166,
   "weekly_plan": {
     "generated_at": "2026-11-08T19:14:40Z",
     "week_number": 45,
@@ -21,7 +21,7 @@
         "slug": "discussing-career-goals",
         "title": "경력 목표에 대해 논의하기",
         "category": "비즈니스",
-        "used": false
+        "used": true
       }
     ]
   },
@@ -190,6 +190,7 @@
     "attending-cooking-class",
     "discussing-medication-side-effects",
     "planning-a-road-trip",
-    "discussing-vaccination-options"
+    "discussing-vaccination-options",
+    "discussing-career-goals"
   ]
 }

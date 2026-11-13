@@ -1,0 +1,409 @@
+{
+  "topic": {
+    "id": "20e0b8cb-c099-4e02-b647-62e3ea0516a3",
+    "title": "경력 목표에 대해 논의하기",
+    "category": "비즈니스",
+    "difficulty": "초급",
+    "description": "경력 목표에 대해 건설적으로 논의하는 방법을 배울 수 있는 비즈니스 영어 학습 콘텐츠입니다. 초급 학습자를 대상으로 합니다.",
+    "language_code": "en",
+    "total_sentences": 7
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "안녕하세요, 오늘 시간 내주셔서 감사합니다."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "저는 제 경력 목표에 대해 논의하고 싶습니다."
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "좋습니다. 미래에 대한 계획은 어떻게 되시나요?"
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "저는 리더십 역할을 더 많이 맡고 싶습니다."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "팀 리드 위치로 승진하는 것을 목표로 하고 있습니다."
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "알겠습니다. 관리 기술을 개발하는 데 집중해야 할 것 같습니다."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "네, 그렇게 하겠습니다."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Hello, thank you for your time today.",
+      "chunked_text": "Hello, | thank you for your time today."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "I want to discuss my career goals.",
+      "chunked_text": "I want to discuss | my career goals."
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "Great. What are your plans for the future?",
+      "chunked_text": "Great. | What are your plans | for the future?"
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "I want to take on more leadership roles.",
+      "chunked_text": "I want to take on | more leadership roles."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "I am aiming to be promoted to a team lead position.",
+      "chunked_text": "I am aiming to be promoted | to a team lead position."
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "I understand. We should focus on developing management skills.",
+      "chunked_text": "I understand. | We should focus on developing | management skills."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "Yes, I will do that.",
+      "chunked_text": "Yes, | I will do that."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "안녕하세요",
+        "오늘 시간 내주셔서 감사합니다"
+      ],
+      "target_sentence": "Hello, thank you for your time today.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "경력 목표",
+        "논의하고 싶습니다"
+      ],
+      "target_sentence": "I want to discuss my career goals.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "좋습니다",
+        "미래에 대한 계획"
+      ],
+      "target_sentence": "Great. What are your plans for the future?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "리더십 역할",
+        "더 많이",
+        "맡고 싶습니다"
+      ],
+      "target_sentence": "I want to take on more leadership roles.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "팀 리드",
+        "위치",
+        "승진",
+        "목표"
+      ],
+      "target_sentence": "I am aiming to be promoted to a team lead position.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "알겠습니다",
+        "관리 기술",
+        "개발",
+        "집중"
+      ],
+      "target_sentence": "I understand. We should focus on developing management skills.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "네",
+        "그렇게 하겠습니다"
+      ],
+      "target_sentence": "Yes, I will do that.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "안녕하세요"
+      ],
+      "target_sentence": "Hello, thank you for your time today.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "목표",
+        "논의"
+      ],
+      "target_sentence": "I want to discuss my career goals.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "계획"
+      ],
+      "target_sentence": "Great. What are your plans for the future?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "리더십"
+      ],
+      "target_sentence": "I want to take on more leadership roles.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "팀 리드"
+      ],
+      "target_sentence": "I am aiming to be promoted to a team lead position.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "관리",
+        "개발"
+      ],
+      "target_sentence": "I understand. We should focus on developing management skills.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "네"
+      ],
+      "target_sentence": "Yes, I will do that.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "시간"
+      ],
+      "target_sentence": "Hello, thank you for your time today.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "논의"
+      ],
+      "target_sentence": "I want to discuss my career goals.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "계획"
+      ],
+      "target_sentence": "What are your plans for the future?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "리더십"
+      ],
+      "target_sentence": "Take on leadership roles.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "팀 리드"
+      ],
+      "target_sentence": "Aiming for team lead position.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "관리"
+      ],
+      "target_sentence": "Focus on management skills.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "네"
+      ],
+      "target_sentence": "Yes, I will do that.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "time"
+      ],
+      "target_sentence": "Hello, thank you for your time today.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "discuss"
+      ],
+      "target_sentence": "I want to discuss my career goals.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "plans"
+      ],
+      "target_sentence": "What are your plans for the future?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "leadership"
+      ],
+      "target_sentence": "I want to take on more leadership roles.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "team lead"
+      ],
+      "target_sentence": "I am aiming to be promoted to a team lead position.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "management"
+      ],
+      "target_sentence": "We should focus on developing management skills.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "will do"
+      ],
+      "target_sentence": "Yes, I will do that.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 2,
+      "korean_phrase": "경력 목표",
+      "foreign_phrase": "career goals"
+    },
+    {
+      "sentence_order": 3,
+      "korean_phrase": "미래에 대한 계획",
+      "foreign_phrase": "plans for the future"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "리더십 역할",
+      "foreign_phrase": "leadership role"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "팀 리드",
+      "foreign_phrase": "team lead"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "관리 기술",
+      "foreign_phrase": "management skills"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 2,
+      "korean_text": "저는 제 경력 목표에 대해 논의하고 싶습니다.",
+      "foreign_text": "I want to discuss my career goals.",
+      "reason": "This sentence directly states the purpose of the conversation, making it the most crucial for understanding the topic."
+    }
+  ]
+}
