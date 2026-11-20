@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-18T22:38:51Z",
-  "total_count": 167,
+  "generated_at": "2026-11-20T22:16:33Z",
+  "total_count": 168,
   "weekly_plan": {
     "generated_at": "2026-11-15T20:01:47Z",
     "week_number": 46,
@@ -15,7 +15,7 @@
         "slug": "dealing-with-flight-delay",
         "title": "공항에서 항공편 지연 대처하기",
         "category": "여행",
-        "used": false
+        "used": true
       },
       {
         "slug": "credit-card-statement-management",
@@ -192,6 +192,7 @@
     "planning-a-road-trip",
     "discussing-vaccination-options",
     "discussing-career-goals",
-    "discussing-life-goals-with-friends"
+    "discussing-life-goals-with-friends",
+    "dealing-with-flight-delay"
   ]
 }

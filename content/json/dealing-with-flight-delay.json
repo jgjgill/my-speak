@@ -1,0 +1,428 @@
+{
+  "topic": {
+    "id": "13474d05-a4ec-4eb1-9be6-17e1d2fa8b28",
+    "title": "공항에서 항공편 지연 대처하기",
+    "category": "여행",
+    "difficulty": "초급",
+    "description": "비행기가 예상치 못하게 지연될 경우 공항에서 필요한 정보와 도움을 요청하는 상황에 대한 학습 자료입니다. 초급 학습자를 대상으로 합니다.",
+    "language_code": "en",
+    "total_sentences": 7
+  },
+  "korean_scripts": [
+    {
+      "sentence_order": 1,
+      "korean_text": "실례합니다. 제 비행기가 지연되었어요."
+    },
+    {
+      "sentence_order": 2,
+      "korean_text": "아, 그러시군요. 항공편 번호가 어떻게 되시나요?"
+    },
+    {
+      "sentence_order": 3,
+      "korean_text": "뉴욕행 KE123편입니다."
+    },
+    {
+      "sentence_order": 4,
+      "korean_text": "잠시만요. 악천후 때문에 약 두 시간 지연되었습니다."
+    },
+    {
+      "sentence_order": 5,
+      "korean_text": "두 시간이요? 꽤 기네요. 앉을 곳이나 간단히 먹을 것이 있을까요?"
+    },
+    {
+      "sentence_order": 6,
+      "korean_text": "네, 저쪽에 라운지 공간이 있고, 음식 쿠폰도 제공됩니다."
+    },
+    {
+      "sentence_order": 7,
+      "korean_text": "정보 감사합니다."
+    }
+  ],
+  "foreign_scripts": [
+    {
+      "sentence_order": 1,
+      "foreign_text": "Excuse me. My flight has been **delayed**.",
+      "chunked_text": "Excuse me. | My flight has been delayed."
+    },
+    {
+      "sentence_order": 2,
+      "foreign_text": "Oh, I'm sorry to hear that. What is your **flight number**?",
+      "chunked_text": "Oh, I'm sorry to hear that. | What is your flight number?"
+    },
+    {
+      "sentence_order": 3,
+      "foreign_text": "It's flight KE123 to New York.",
+      "chunked_text": "It's flight KE123 | to New York."
+    },
+    {
+      "sentence_order": 4,
+      "foreign_text": "Just a moment. It's delayed by about two hours **due to weather**.",
+      "chunked_text": "Just a moment. | It's delayed by about two hours | due to weather."
+    },
+    {
+      "sentence_order": 5,
+      "foreign_text": "Two hours? That's quite long. Is there **a place to sit** or **can I get a snack**?",
+      "chunked_text": "Two hours? | That's quite long. | Is there a place to sit | or can I get a snack?"
+    },
+    {
+      "sentence_order": 6,
+      "foreign_text": "Yes, there's **a lounge area** over there, and food **vouchers** are also provided.",
+      "chunked_text": "Yes, there's a lounge area | over there, | and food vouchers | are also provided."
+    },
+    {
+      "sentence_order": 7,
+      "foreign_text": "Thank you for the information.",
+      "chunked_text": "Thank you | for the information."
+    }
+  ],
+  "keyword_speeches": [
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 1,
+      "keywords": [
+        "실례합니다",
+        "제 비행기 **지연되었어요**"
+      ],
+      "target_sentence": "Excuse me. My flight has been delayed.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 2,
+      "keywords": [
+        "아",
+        "그러시군요. **항공편 번호**"
+      ],
+      "target_sentence": "Oh, I'm sorry to hear that. What is your flight number?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 3,
+      "keywords": [
+        "뉴욕행 **KE123편**"
+      ],
+      "target_sentence": "It's flight KE123 to New York.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 4,
+      "keywords": [
+        "잠시만요. **악천후 때문에** 두 시간 지연"
+      ],
+      "target_sentence": "Just a moment. It's delayed by about two hours due to weather.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 5,
+      "keywords": [
+        "**두 시간이요?** **앉을 곳**이나 **간단히 먹을 것**"
+      ],
+      "target_sentence": "Two hours? That's quite long. Is there a place to sit or can I get a snack?",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 6,
+      "keywords": [
+        "**라운지 공간**",
+        "**쿠폰** 제공"
+      ],
+      "target_sentence": "Yes, there's a lounge area over there, and food vouchers are also provided.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 1,
+      "sequence_order": 7,
+      "keywords": [
+        "**정보 감사합니다**"
+      ],
+      "target_sentence": "Thank you for the information.",
+      "difficulty_percentage": 70
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 8,
+      "keywords": [
+        "비행기 **지연**"
+      ],
+      "target_sentence": "My flight has been delayed.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 9,
+      "keywords": [
+        "**항공편 번호**"
+      ],
+      "target_sentence": "What is your flight number?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 10,
+      "keywords": [
+        "**뉴욕행 KE123**"
+      ],
+      "target_sentence": "It's flight KE123 to New York.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 11,
+      "keywords": [
+        "**두 시간** **악천후**"
+      ],
+      "target_sentence": "It's delayed by about two hours due to weather.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 12,
+      "keywords": [
+        "**긴 시간**? **앉을 곳** / **먹을 것**"
+      ],
+      "target_sentence": "That's quite long. Is there a place to sit or can I get a snack?",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 13,
+      "keywords": [
+        "**라운지** / **쿠폰**"
+      ],
+      "target_sentence": "Yes, there's a lounge area over there, and food vouchers are also provided.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 2,
+      "sequence_order": 14,
+      "keywords": [
+        "**정보**"
+      ],
+      "target_sentence": "Thank you for the information.",
+      "difficulty_percentage": 50
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 15,
+      "keywords": [
+        "지연"
+      ],
+      "target_sentence": "My flight has been delayed.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 16,
+      "keywords": [
+        "항공편"
+      ],
+      "target_sentence": "What is your flight number?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 17,
+      "keywords": [
+        "KE123"
+      ],
+      "target_sentence": "It's flight KE123 to New York.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 18,
+      "keywords": [
+        "두 시간"
+      ],
+      "target_sentence": "It's delayed by about two hours.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 19,
+      "keywords": [
+        "앉을 곳 / 먹을 것"
+      ],
+      "target_sentence": "Is there a place to sit or can I get a snack?",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 20,
+      "keywords": [
+        "라운지 / 쿠폰"
+      ],
+      "target_sentence": "Yes, there's a lounge area over there, and food vouchers are also provided.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 3,
+      "sequence_order": 21,
+      "keywords": [
+        "감사"
+      ],
+      "target_sentence": "Thank you for the information.",
+      "difficulty_percentage": 30
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 22,
+      "keywords": [
+        "delayed"
+      ],
+      "target_sentence": "My flight has been delayed.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 23,
+      "keywords": [
+        "flight number"
+      ],
+      "target_sentence": "What is your flight number?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 24,
+      "keywords": [
+        "KE123"
+      ],
+      "target_sentence": "It's flight KE123 to New York.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 25,
+      "keywords": [
+        "hours"
+      ],
+      "target_sentence": "It's delayed by about two hours.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 26,
+      "keywords": [
+        "sit"
+      ],
+      "target_sentence": "Is there a place to sit?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 27,
+      "keywords": [
+        "snack"
+      ],
+      "target_sentence": "or can I get a snack?",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 28,
+      "keywords": [
+        "lounge"
+      ],
+      "target_sentence": "Yes, there's a lounge area over there.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 29,
+      "keywords": [
+        "vouchers"
+      ],
+      "target_sentence": "and food vouchers are also provided.",
+      "difficulty_percentage": 0
+    },
+    {
+      "stage": 4,
+      "level": 4,
+      "sequence_order": 30,
+      "keywords": [
+        "information"
+      ],
+      "target_sentence": "Thank you for the information.",
+      "difficulty_percentage": 0
+    }
+  ],
+  "learning_points": [
+    {
+      "sentence_order": 1,
+      "korean_phrase": "지연되었어요",
+      "foreign_phrase": "delayed"
+    },
+    {
+      "sentence_order": 2,
+      "korean_phrase": "항공편 번호",
+      "foreign_phrase": "flight number"
+    },
+    {
+      "sentence_order": 4,
+      "korean_phrase": "악천후 때문에",
+      "foreign_phrase": "due to weather"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "앉을 곳",
+      "foreign_phrase": "a place to sit"
+    },
+    {
+      "sentence_order": 5,
+      "korean_phrase": "간단히 먹을 것",
+      "foreign_phrase": "get a snack"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "라운지 공간",
+      "foreign_phrase": "lounge area"
+    },
+    {
+      "sentence_order": 6,
+      "korean_phrase": "쿠폰",
+      "foreign_phrase": "voucher"
+    }
+  ],
+  "highlight_sentences": [
+    {
+      "sentence_order": 1,
+      "korean_text": "제 비행기가 지연되었어요.",
+      "foreign_text": "My flight has been delayed.",
+      "reason": "This sentence states the core problem of the conversation."
+    }
+  ]
+}
